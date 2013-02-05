@@ -1,0 +1,24 @@
+ATTENTION: the script do NOT check for existing DB, that would be removed/overwritten in case of name clashing!
+
+REQUIREMENTS:
+ - bash
+ - svn client environment
+ - mysql client environment
+
+
+QUICK TUTORIAL:
+
+	CONFIGURATION: configure in the config.ini files the URL of the schema in the SVN you want to access and the user/pass credentials if needed, 
+                       configure also mysql host,port,user,pass and the basename for the DB you are installing
+
+	USAGE: there three scripts:
+		- download.sh: downloads all the revisions of the specified schema file (SQL dump of the schema)
+
+		- createDB.sh: create the one DB for each revision of the schema and load the schema
+	
+		- dropDB.sh: clean up the MySQL DBMS from the installation of the DB (all revisions)
+		
+		- stats.sh: compute basic statistics in on the install data (querying the information_schema)
+
+		- cleanup.sh: remove all the temporary results (do not reset your config.ini file)
+
