@@ -4773,7 +4773,7 @@ CREATE TABLE tiki_registration_fields (
 DROP TABLE IF EXISTS tiki_actionlog_conf;
 CREATE TABLE tiki_actionlog_conf (
  action varchar(32) NOT NULL default '',
- objectTypevarchar(32) NOT NULL default '',
+ objectType varchar(32) NOT NULL default '',
  status char(1) default '',
 PRIMARY KEY (action, objectType)
 ) TYPE=MyISAM;
