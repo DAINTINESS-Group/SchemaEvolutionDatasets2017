@@ -827,7 +827,7 @@ INSERT INTO `#__core_acl_aro_sections` VALUES (10,'users',1,'Users',0);
 #
 # Table structure for table `#__migration_backlinks`
 #
-CREATE TABLE #__migration_backlinks (
+CREATE TABLE `#__migration_backlinks` (
 	`itemid` INT(11) NOT NULL,
 	`name` VARCHAR(100) NOT NULL,
 	`url` TEXT NOT NULL,

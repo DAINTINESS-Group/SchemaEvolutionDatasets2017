@@ -4113,7 +4113,7 @@ CREATE TABLE users_groups (
   registrationUsersFieldIds text,
   userChoice char(1) default NULL,
   groupDefCat int(12) default 0,
-  groupThemechar(1) varchar(255) default '',  
+  groupThemechar varchar(255) default '',  
   PRIMARY KEY  (groupName(30))
 ) ENGINE=MyISAM;
 # --------------------------------------------------------
