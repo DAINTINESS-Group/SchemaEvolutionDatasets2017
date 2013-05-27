@@ -19,6 +19,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__banner</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -29,6 +33,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__categories</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -39,6 +47,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__contact_details</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -49,6 +61,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__content</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -59,6 +75,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -69,6 +89,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__newsfeeds</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -79,6 +103,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__polls</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -89,6 +117,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__sections</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -99,6 +131,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__weblinks</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alias</name>
@@ -116,6 +152,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>#__template_positions</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>description</name>
@@ -138,6 +178,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>#__core_acl_aro_sections</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>id</name>
@@ -148,6 +192,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>#__core_acl_aro_sections</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>section_id</name>
@@ -161,6 +209,10 @@
         <update type="TypeChange">
             <table>
                 <name>#__session</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>data</name>
@@ -173,6 +225,10 @@
         <insersion type="NewTable">
             <table>
                 <name>#__core_acl_aro_map</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>acl_id</name>
@@ -199,8 +255,37 @@
     <transition newVersion="rev_008856.sql" oldVersion="rev_008776.sql">
         <insersion type="NewTable">
             <table>
-                <name>itemid</name>
+                <name>#__migration_backlinks</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
+            <attribute>
+                <name>itemid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>newurl</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sefurl</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>url</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
         </insersion>
     </transition>
     <transition newVersion="rev_008859.sql" oldVersion="rev_008856.sql"/>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition newVersion="rev_1.02.sql" oldVersion="rev_1.01.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>online</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>online_pagecount</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.03.sql" oldVersion="rev_1.02.sql"/>
+    <transition newVersion="rev_1.04.sql" oldVersion="rev_1.03.sql">
+        <insersion type="NewTable">
+            <table>
+                <name>parser</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>parser_id</name>
+                <type>INT(10)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>parser_pluginname</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>parser_regexp</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.05.sql" oldVersion="rev_1.04.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>submitnews</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>submitnews_category</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+        <insersion type="UpdateTable">
+            <table>
+                <name>upload</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>upload_category</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.06.sql" oldVersion="rev_1.05.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>submitnews</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>submitnews_file</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.07.sql" oldVersion="rev_1.06.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>comments</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>comment_pid</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>comment_subject</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.08.sql" oldVersion="rev_1.07.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>user</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>user_customtitle</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.09.sql" oldVersion="rev_1.08.sql">
+        <update type="TypeChange">
+            <table>
+                <name>chatbox</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>cb_nick</name>
+                <type>VARCHAR(30)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition newVersion="rev_1.10.sql" oldVersion="rev_1.09.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>download</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>download_comment</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.11.sql" oldVersion="rev_1.10.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>userclass_classes</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>userclass_editclass</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.12.sql" oldVersion="rev_1.11.sql">
+        <update type="TypeChange">
+            <table>
+                <name>comments</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>comment_type</name>
+                <type>VARCHAR(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition newVersion="rev_1.13.sql" oldVersion="rev_1.12.sql"/>
+    <transition newVersion="rev_1.14.sql" oldVersion="rev_1.13.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>poll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>poll_comment</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_1.15.sql" oldVersion="rev_1.14.sql"/>
+    <transition newVersion="rev_1.16.sql" oldVersion="rev_1.15.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>menus</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>menu_pages</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+</transitions>

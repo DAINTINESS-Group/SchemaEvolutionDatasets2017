@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition newVersion="rev_3928.sql" oldVersion="rev_3908.sql"/>
+    <transition newVersion="rev_4111.sql" oldVersion="rev_3928.sql">
+        <insersion type="NewTable">
+            <table>
+                <name>accesslog</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>agent</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>bytes_sent</name>
+                <type>SMALLINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>referer</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>remote_host</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>remote_user</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_args</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_duration</name>
+                <type>FLOAT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_file</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_line</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_method</name>
+                <type>VARCHAR(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_time</name>
+                <type>CHAR(28)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>request_uri</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>status</name>
+                <type>SMALLINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>time_stamp</name>
+                <type>INTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_4259.sql" oldVersion="rev_4111.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>page</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>cached_html</name>
+                <type>MEDIUMBLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_4451.sql" oldVersion="rev_4259.sql"/>
+    <transition newVersion="rev_4561.sql" oldVersion="rev_4451.sql"/>
+    <transition newVersion="rev_4602.sql" oldVersion="rev_4561.sql"/>
+    <transition newVersion="rev_4717.sql" oldVersion="rev_4602.sql">
+        <update type="TypeChange">
+            <table>
+                <name>session</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>sess_ip</name>
+                <type>CHAR(40)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition newVersion="rev_4885.sql" oldVersion="rev_4717.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>pref</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>groupname</name>
+                <type>CHAR(48)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>passwd</name>
+                <type>CHAR(48)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>user</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>passwd</name>
+                <type>CHAR(48)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>userid</name>
+                <type>CHAR(48)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition newVersion="rev_4982.sql" oldVersion="rev_4885.sql">
+        <insersion type="UpdateTable">
+            <table>
+                <name>link</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>relation</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+    </transition>
+    <transition newVersion="rev_5084.sql" oldVersion="rev_4982.sql"/>
+    <transition newVersion="rev_5194.sql" oldVersion="rev_5084.sql">
+        <update type="TypeChange">
+            <table>
+                <name>pref</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>groupname</name>
+                <type>VARCHAR(48)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>passwd</name>
+                <type>VARCHAR(48)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>userid</name>
+                <type>VARCHAR(48)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition newVersion="rev_5212.sql" oldVersion="rev_5194.sql">
+        <update type="TypeChange">
+            <table>
+                <name>accesslog</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>remote_host</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition newVersion="rev_5417.sql" oldVersion="rev_5212.sql"/>
+    <transition newVersion="rev_5868.sql" oldVersion="rev_5417.sql"/>
+    <transition newVersion="rev_5870.sql" oldVersion="rev_5868.sql"/>
+    <transition newVersion="rev_5921.sql" oldVersion="rev_5870.sql"/>
+    <transition newVersion="rev_6203.sql" oldVersion="rev_5921.sql"/>
+    <transition newVersion="rev_7117.sql" oldVersion="rev_6203.sql">
+        <update type="TypeChange">
+            <table>
+                <name>rating</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>tstamp</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition newVersion="rev_8335.sql" oldVersion="rev_7117.sql"/>
+    <transition newVersion="rev_8713.sql" oldVersion="rev_8335.sql"/>
+    <transition newVersion="rev_8718.sql" oldVersion="rev_8713.sql"/>
+</transitions>

@@ -4,6 +4,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_comments</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>msg_hdr_ip</name>
@@ -21,6 +25,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_pictures</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>pic_hdr_ip</name>
@@ -38,6 +46,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_banned</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>ban_id</name>
@@ -65,6 +77,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_categories</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>thumb</name>
@@ -75,6 +91,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_exif</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>exifData</name>
@@ -92,6 +112,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_filetypes</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>content</name>
@@ -101,7 +125,7 @@
             <attribute>
                 <name>extension</name>
                 <type>CHAR(7)</type>
-                <isKey>true</isKey>
+                <isKey>false</isKey>
             </attribute>
             <attribute>
                 <name>mime</name>
@@ -114,6 +138,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_ecards</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>date</name>
@@ -161,10 +189,14 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>keyword</name>
-                <type>VARCHAR( 50 )</type>
+                <type>VARCHAR(50)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
@@ -174,6 +206,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_temp_data</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>encoded_string</name>
@@ -182,18 +218,22 @@
             </attribute>
             <attribute>
                 <name>timestamp</name>
-                <type>INT( 11 ) UNSIGNED</type>
+                <type>INT(11)</type>
                 <isKey>false</isKey>
             </attribute>
             <attribute>
                 <name>unique_ID</name>
-                <type>CHAR( 8 )</type>
+                <type>CHAR(8)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_usergroups</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>custom_user_upload</name>
@@ -221,6 +261,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_group_list</name>
@@ -231,6 +275,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_lang</name>
@@ -239,11 +287,30 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000811.sql" oldVersion="rev_000785.sql"/>
+    <transition newVersion="rev_000811.sql" oldVersion="rev_000785.sql">
+        <update type="KeyChange">
+            <table>
+                <name>CPG_filetypes</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>extension</name>
+                <type>CHAR(7)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
     <transition newVersion="rev_000831.sql" oldVersion="rev_000811.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_favpics</name>
@@ -256,6 +323,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_pictures</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>lasthit_ip</name>
@@ -268,6 +339,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_favpics</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_favpics</name>
@@ -276,13 +351,17 @@
             </attribute>
             <attribute>
                 <name>user_id</name>
-                <type>INT( 11 )</type>
+                <type>INT(11)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_favpics</name>
@@ -295,6 +374,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_dict</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>keyId</name>
@@ -312,6 +395,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_interests</name>
@@ -337,6 +424,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_profile1</name>
@@ -374,6 +465,10 @@
         <update type="TypeChange">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_profile6</name>
@@ -382,26 +477,19 @@
             </attribute>
         </update>
     </transition>
-    <transition newVersion="rev_000951.sql" oldVersion="rev_000914.sql">
-        <update type="KeyChange">
-            <table>
-                <name>CPG_pictures</name>
-            </table>
-            <attribute>
-                <name>owner_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-        </update>
-    </transition>
+    <transition newVersion="rev_000951.sql" oldVersion="rev_000914.sql"/>
     <transition newVersion="rev_000980.sql" oldVersion="rev_000951.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alb_password</name>
-                <type>VARCHAR( 32 )</type>
+                <type>VARCHAR(32)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
@@ -410,25 +498,29 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_plugins</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>name</name>
                 <type>VARCHAR(64)</type>
-                <isKey>true</isKey>
+                <isKey>false</isKey>
             </attribute>
             <attribute>
                 <name>path</name>
                 <type>VARCHAR(128)</type>
-                <isKey>true</isKey>
+                <isKey>false</isKey>
             </attribute>
             <attribute>
                 <name>plugin_id</name>
-                <type>INT(10) UNSIGNED</type>
+                <type>INT(10)</type>
                 <isKey>true</isKey>
             </attribute>
             <attribute>
                 <name>priority</name>
-                <type>INT(10) UNSIGNED</type>
+                <type>INT(10)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
@@ -437,6 +529,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alb_password_hint</name>
@@ -451,6 +547,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_banned</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>brute_force</name>
@@ -463,6 +563,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_pictures</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>position</name>
@@ -475,6 +579,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_bridge</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>name</name>
@@ -492,17 +600,59 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_hit_stats</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
-                <name> (
-  </name>
-                <type>SID</type>
+                <name>browser</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>ip</name>
+                <type>VARCHAR(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>os</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pid</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>referer</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sdate</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>search_phrase</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sid</name>
+                <type>INT(11)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
         <insersion type="NewTable">
             <table>
                 <name>CPG_vote_stats</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>browser</name>
@@ -547,259 +697,19 @@
         </insersion>
     </transition>
     <transition newVersion="rev_001512.sql" oldVersion="rev_001491.sql"/>
-    <transition newVersion="rev_001518.sql" oldVersion="rev_001512.sql">
-        <deletion type="UpdateTable">
-            <table>
-                <name>CPG_hit_stats</name>
-            </table>
-            <attribute>
-                <name> (
-  </name>
-                <type>SID</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <insersion type="UpdateTable">
-            <table>
-                <name>CPG_hit_stats</name>
-            </table>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>search_phrase</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-    </transition>
-    <transition newVersion="rev_001585.sql" oldVersion="rev_001518.sql">
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_hit_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>search_phrase</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_vote_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>rating</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-    </transition>
-    <transition newVersion="rev_001606.sql" oldVersion="rev_001585.sql">
-        <update type="KeyChange">
-            <table>
-                <name>CPG_bridge</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>true</isKey>
-            </attribute>
-        </update>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_hit_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>search_phrase</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_vote_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>rating</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-    </transition>
+    <transition newVersion="rev_001518.sql" oldVersion="rev_001512.sql"/>
+    <transition newVersion="rev_001585.sql" oldVersion="rev_001518.sql"/>
+    <transition newVersion="rev_001606.sql" oldVersion="rev_001585.sql"/>
     <transition newVersion="rev_001699.sql" oldVersion="rev_001606.sql"/>
     <transition newVersion="rev_001823.sql" oldVersion="rev_001699.sql"/>
     <transition newVersion="rev_002023.sql" oldVersion="rev_001823.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_filetypes</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>player</name>
@@ -810,6 +720,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_pictures</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>galleryicon</name>
@@ -820,6 +734,10 @@
         <update type="TypeChange">
             <table>
                 <name>CPG_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>user_password</name>
@@ -832,6 +750,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_sessions</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>remember</name>
@@ -859,6 +781,10 @@
         <update type="TypeChange">
             <table>
                 <name>CPG_pictures</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>mtime</name>
@@ -871,6 +797,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>last_addition</name>
@@ -888,6 +818,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>pic_count</name>
@@ -898,6 +832,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_categories</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alb_count</name>
@@ -925,11 +863,15 @@
         <deletion type="UpdateTable">
             <table>
                 <name>CPG_pictures</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>randpos</name>
                 <type>INT(11)</type>
-                <isKey>true</isKey>
+                <isKey>false</isKey>
             </attribute>
         </deletion>
     </transition>
@@ -943,6 +885,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_comments</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>approval</name>
@@ -959,6 +905,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>moderator_group</name>
@@ -972,10 +922,14 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>alb_hits</name>
-                <type>INT( 10 )</type>
+                <type>INT(10)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
@@ -985,6 +939,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>CPG_vote_stats</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>uid</name>
@@ -997,6 +955,10 @@
         <insersion type="NewTable">
             <table>
                 <name>CPG_temp_messages</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>message</name>
@@ -1024,6 +986,10 @@
         <update type="TypeChange">
             <table>
                 <name>CPG_temp_messages</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>message_id</name>
@@ -1041,6 +1007,10 @@
         <update type="TypeChange">
             <table>
                 <name>CPG_filetypes</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>mime</name>
@@ -1053,6 +1023,10 @@
         <update type="TypeChange">
             <table>
                 <name>CPG_filetypes</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>mime</name>
@@ -1062,1744 +1036,61 @@
         </update>
     </transition>
     <transition newVersion="rev_004123.sql" oldVersion="rev_003975.sql">
-        <deletion type="DeleteTable">
+        <insersion type="UpdateTable">
             <table>
                 <name>CPG_albums</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
-            <attribute>
-                <name>aid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>alb_hits</name>
-                <type>INT( 10 )</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>alb_password</name>
-                <type>VARCHAR( 32 )</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>alb_password_hint</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>category</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>comments</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>description</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>keyword</name>
-                <type>VARCHAR( 50 )</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>moderator_group</name>
-                <type>INT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pos</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>thumb</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>title</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>uploads</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>visibility</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>votes</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_banned</name>
-            </table>
-            <attribute>
-                <name>ban_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>brute_force</name>
-                <type>TINYINT(5)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>expiry</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip_addr</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_bridge</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>value</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_categories</name>
-            </table>
-            <attribute>
-                <name>cid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>description</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>owner_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>parent</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>pos</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>thumb</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_categorymap</name>
-            </table>
-            <attribute>
-                <name>cid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_comments</name>
-            </table>
-            <attribute>
-                <name>approval</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>author_id</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>author_md5_id</name>
-                <type>VARCHAR(32)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_author</name>
-                <type>VARCHAR(25)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_body</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_date</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_hdr_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_id</name>
-                <type>MEDIUMINT(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_raw_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>MEDIUMINT(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_config</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>value</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_dict</name>
-            </table>
-            <attribute>
-                <name>keyId</name>
-                <type>BIGINT(20)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>keyword</name>
-                <type>VARCHAR(60)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_ecards</name>
-            </table>
-            <attribute>
-                <name>date</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>eid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>link</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>recipient_email</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>recipient_name</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sender_email</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sender_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sender_name</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_exif</name>
-            </table>
-            <attribute>
-                <name>exifData</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>filename</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_favpics</name>
-            </table>
-            <attribute>
-                <name>user_favpics</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT( 11 )</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_filetypes</name>
-            </table>
-            <attribute>
-                <name>content</name>
-                <type>CHAR(15)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>extension</name>
-                <type>CHAR(7)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>mime</name>
-                <type>VARCHAR(70)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>player</name>
-                <type>VARCHAR(5)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_hit_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>search_phrase</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_pictures</name>
-            </table>
-            <attribute>
-                <name>aid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>approved</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>caption</name>
-                <type>TEXT</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>ctime</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>filename</name>
-                <type>VARCHAR(255)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>filepath</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>filesize</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>galleryicon</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hits</name>
-                <type>INT(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>keywords</name>
-                <type>VARCHAR(255)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>lasthit_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>mtime</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>owner_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>owner_name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pheight</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pic_hdr_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pic_rating</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>pic_raw_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>position</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pwidth</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>title</name>
-                <type>VARCHAR(255)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>total_filesize</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>url_prefix</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user1</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user2</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user3</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user4</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>votes</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_plugins</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(64)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>path</name>
-                <type>VARCHAR(128)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>plugin_id</name>
-                <type>INT(10) UNSIGNED</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>priority</name>
-                <type>INT(10) UNSIGNED</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_temp_data</name>
-            </table>
-            <attribute>
-                <name>encoded_string</name>
-                <type>BLOB</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>timestamp</name>
-                <type>INT( 11 ) UNSIGNED</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>unique_ID</name>
-                <type>CHAR( 8 )</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_temp_messages</name>
-            </table>
-            <attribute>
-                <name>message</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>message_id</name>
-                <type>VARCHAR(80)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>time</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_usergroups</name>
-            </table>
-            <attribute>
-                <name>can_create_albums</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_post_comments</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_rate_pictures</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_send_ecards</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_upload_pictures</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>custom_user_upload</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>group_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>group_name</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>group_quota</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>has_admin_access</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>num_URI_upload</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>num_file_upload</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>priv_upl_need_approval</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pub_upl_need_approval</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>upload_form_config</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_users</name>
-            </table>
-            <attribute>
-                <name>user_active</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_actkey</name>
-                <type>VARCHAR(32)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_email</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_group</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_group_list</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>user_lastvisit</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_name</name>
-                <type>VARCHAR(25)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>user_password</name>
-                <type>VARCHAR(40)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile1</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile2</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile3</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile4</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile5</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile6</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_regdate</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_vote_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>rating</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>uid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-        <deletion type="DeleteTable">
-            <table>
-                <name>CPG_votes</name>
-            </table>
-            <attribute>
-                <name>pic_id</name>
-                <type>MEDIUMINT(9)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>user_md5_id</name>
-                <type>VARCHAR(32)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>vote_time</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-    </transition>
-    <transition newVersion="rev_004162.sql" oldVersion="rev_004123.sql"/>
-    <transition newVersion="rev_004224.sql" oldVersion="rev_004162.sql"/>
-    <transition newVersion="rev_004260.sql" oldVersion="rev_004224.sql">
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_albums</name>
-            </table>
-            <attribute>
-                <name>aid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>alb_hits</name>
-                <type>INT( 10 )</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>alb_password</name>
-                <type>VARCHAR( 32 )</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>alb_password_hint</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>category</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>comments</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>description</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>keyword</name>
-                <type>VARCHAR( 50 )</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>moderator_group</name>
-                <type>INT</type>
-                <isKey>false</isKey>
-            </attribute>
             <attribute>
                 <name>owner</name>
                 <type>INT(11)</type>
                 <isKey>false</isKey>
             </attribute>
-            <attribute>
-                <name>pos</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>thumb</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>title</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>uploads</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>visibility</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>votes</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
         </insersion>
         <insersion type="NewTable">
             <table>
-                <name>CPG_banned</name>
+                <name>CPG_categorymap</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
-                <name>ban_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>brute_force</name>
-                <type>TINYINT(5)</type>
+                <name>COMMENT</name>
+                <type>'ID OF THE GROUP'</type>
                 <isKey>false</isKey>
             </attribute>
-            <attribute>
-                <name>expiry</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip_addr</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_bridge</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>value</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_categories</name>
-            </table>
             <attribute>
                 <name>cid</name>
                 <type>INT(11)</type>
                 <isKey>true</isKey>
             </attribute>
             <attribute>
-                <name>description</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>owner_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>parent</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>pos</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>thumb</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <update type="KeyChange">
-            <table>
-                <name>CPG_categorymap</name>
-            </table>
-            <attribute>
-                <name>cid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-        </update>
-        <insersion type="UpdateTable">
-            <table>
-                <name>CPG_categorymap</name>
-            </table>
-            <attribute>
                 <name>group_id</name>
                 <type>INT(11)</type>
                 <isKey>true</isKey>
             </attribute>
         </insersion>
-        <insersion type="NewTable">
+    </transition>
+    <transition newVersion="rev_004162.sql" oldVersion="rev_004123.sql"/>
+    <transition newVersion="rev_004224.sql" oldVersion="rev_004162.sql"/>
+    <transition newVersion="rev_004260.sql" oldVersion="rev_004224.sql">
+        <deletion type="UpdateTable">
             <table>
-                <name>CPG_comments</name>
+                <name>CPG_categorymap</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
-                <name>approval</name>
-                <type>ENUM('YES','NO')</type>
+                <name>COMMENT</name>
+                <type>'ID OF THE GROUP'</type>
                 <isKey>false</isKey>
             </attribute>
-            <attribute>
-                <name>author_id</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>author_md5_id</name>
-                <type>VARCHAR(32)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_author</name>
-                <type>VARCHAR(25)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_body</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_date</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_hdr_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_id</name>
-                <type>MEDIUMINT(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>msg_raw_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>MEDIUMINT(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_config</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>value</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_dict</name>
-            </table>
-            <attribute>
-                <name>keyId</name>
-                <type>BIGINT(20)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>keyword</name>
-                <type>VARCHAR(60)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_ecards</name>
-            </table>
-            <attribute>
-                <name>date</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>eid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>link</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>recipient_email</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>recipient_name</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sender_email</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sender_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sender_name</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_exif</name>
-            </table>
-            <attribute>
-                <name>exifData</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>filename</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_favpics</name>
-            </table>
-            <attribute>
-                <name>user_favpics</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT( 11 )</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_filetypes</name>
-            </table>
-            <attribute>
-                <name>content</name>
-                <type>CHAR(15)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>extension</name>
-                <type>CHAR(7)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>mime</name>
-                <type>VARCHAR(70)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>player</name>
-                <type>VARCHAR(5)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_hit_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>search_phrase</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_pictures</name>
-            </table>
-            <attribute>
-                <name>aid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>approved</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>caption</name>
-                <type>TEXT</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>ctime</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>filename</name>
-                <type>VARCHAR(255)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>filepath</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>filesize</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>galleryicon</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hits</name>
-                <type>INT(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>keywords</name>
-                <type>VARCHAR(255)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>lasthit_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>mtime</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>owner_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>owner_name</name>
-                <type>VARCHAR(40)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pheight</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pic_hdr_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pic_rating</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>pic_raw_ip</name>
-                <type>TINYTEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>position</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pwidth</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>title</name>
-                <type>VARCHAR(255)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>total_filesize</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>url_prefix</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user1</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user2</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user3</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user4</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>votes</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_plugins</name>
-            </table>
-            <attribute>
-                <name>name</name>
-                <type>VARCHAR(64)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>path</name>
-                <type>VARCHAR(128)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>plugin_id</name>
-                <type>INT(10) UNSIGNED</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>priority</name>
-                <type>INT(10) UNSIGNED</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_temp_data</name>
-            </table>
-            <attribute>
-                <name>encoded_string</name>
-                <type>BLOB</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>timestamp</name>
-                <type>INT( 11 ) UNSIGNED</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>unique_ID</name>
-                <type>CHAR( 8 )</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_temp_messages</name>
-            </table>
-            <attribute>
-                <name>message</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>message_id</name>
-                <type>VARCHAR(80)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>time</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_usergroups</name>
-            </table>
-            <attribute>
-                <name>can_create_albums</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_post_comments</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_rate_pictures</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_send_ecards</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>can_upload_pictures</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>custom_user_upload</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>group_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>group_name</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>group_quota</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>has_admin_access</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>num_URI_upload</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>num_file_upload</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>priv_upl_need_approval</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pub_upl_need_approval</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>upload_form_config</name>
-                <type>TINYINT(4)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_users</name>
-            </table>
-            <attribute>
-                <name>user_active</name>
-                <type>ENUM('YES','NO')</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_actkey</name>
-                <type>VARCHAR(32)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_email</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_group</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_group_list</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_id</name>
-                <type>INT(11)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>user_lastvisit</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_name</name>
-                <type>VARCHAR(25)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>user_password</name>
-                <type>VARCHAR(40)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile1</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile2</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile3</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile4</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile5</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_profile6</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>user_regdate</name>
-                <type>DATETIME</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_vote_stats</name>
-            </table>
-            <attribute>
-                <name>browser</name>
-                <type>VARCHAR(255)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>ip</name>
-                <type>VARCHAR(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>os</name>
-                <type>VARCHAR(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>pid</name>
-                <type>VARCHAR(100)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>rating</name>
-                <type>SMALLINT(6)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>referer</name>
-                <type>TEXT</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sdate</name>
-                <type>BIGINT(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>sid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>uid</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>CPG_votes</name>
-            </table>
-            <attribute>
-                <name>pic_id</name>
-                <type>MEDIUMINT(9)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>user_md5_id</name>
-                <type>VARCHAR(32)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>vote_time</name>
-                <type>INT(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
+        </deletion>
     </transition>
 </transitions>

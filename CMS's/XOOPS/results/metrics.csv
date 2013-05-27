@@ -1,0 +1,8 @@
+# oldVersion,newVersion,#oldTables,#newTables,#oldAttrs,newAttr,tableIns,tableDel,attrIns,attrDel,attrTypeAlt,keyAlt,totalAlt
+rev_000008.sql,rev_000696.sql,31,31,227,227,0,0,0,0,0,0,0
+rev_000696.sql,rev_000833.sql,31,31,227,227,0,0,0,0,0,0,0
+rev_000833.sql,rev_001017.sql,31,31,227,227,0,0,0,0,0,0,0
+rev_001017.sql,rev_001228.sql,31,31,227,227,0,0,0,0,3,0,3
+rev_001228.sql,rev_001388.sql,31,32,227,230,1,0,3,0,0,0,0
+rev_001388.sql,rev_001436.sql,32,32,230,230,0,0,3,3,0,0,0
+rev_001436.sql,rev_001503.sql,32,32,230,230,0,0,0,0,0,0,0

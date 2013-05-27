@@ -1,0 +1,16 @@
+# oldVersion,newVersion,#oldTables,#newTables,#oldAttrs,newAttr,tableIns,tableDel,attrIns,attrDel,attrTypeAlt,keyAlt,totalAlt
+rev_1.01.sql,rev_1.02.sql,33,33,261,262,0,0,1,0,0,0,0
+rev_1.02.sql,rev_1.03.sql,33,33,262,262,0,0,0,0,0,0,0
+rev_1.03.sql,rev_1.04.sql,33,34,262,265,1,0,3,0,0,0,0
+rev_1.04.sql,rev_1.05.sql,34,34,265,267,0,0,2,0,0,0,0
+rev_1.05.sql,rev_1.06.sql,34,34,267,268,0,0,1,0,0,0,0
+rev_1.06.sql,rev_1.07.sql,34,34,268,270,0,0,2,0,0,0,0
+rev_1.07.sql,rev_1.08.sql,34,34,270,271,0,0,1,0,0,0,0
+rev_1.08.sql,rev_1.09.sql,34,34,271,271,0,0,0,0,1,0,1
+rev_1.09.sql,rev_1.10.sql,34,34,271,272,0,0,1,0,0,0,0
+rev_1.10.sql,rev_1.11.sql,34,34,272,273,0,0,1,0,0,0,0
+rev_1.11.sql,rev_1.12.sql,34,34,273,273,0,0,0,0,1,0,1
+rev_1.12.sql,rev_1.13.sql,34,34,273,273,0,0,0,0,0,0,0
+rev_1.13.sql,rev_1.14.sql,34,34,273,274,0,0,1,0,0,0,0
+rev_1.14.sql,rev_1.15.sql,34,34,274,274,0,0,0,0,0,0,0
+rev_1.15.sql,rev_1.16.sql,34,34,274,275,0,0,1,0,0,0,0

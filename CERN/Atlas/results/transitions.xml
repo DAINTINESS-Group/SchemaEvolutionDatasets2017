@@ -6,6 +6,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_tc_to_st</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2st_id</name>
@@ -43,6 +47,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_l2_or_ef</name>
@@ -53,6 +61,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_id</name>
@@ -88,6 +100,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts_id</name>
@@ -126,6 +142,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_alias</name>
@@ -141,6 +161,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_name</name>
@@ -153,6 +177,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_fa_rate</name>
@@ -163,6 +191,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_pass_through_rate</name>
@@ -175,6 +207,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_version</name>
@@ -185,6 +221,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_environment</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hen_version</name>
@@ -195,6 +235,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hmt_version</name>
@@ -205,6 +249,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_version</name>
@@ -215,6 +263,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_setup</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst_version</name>
@@ -225,6 +277,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_version</name>
@@ -235,6 +291,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_version</name>
@@ -245,6 +305,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_version</name>
@@ -255,6 +319,10 @@
         <update type="TypeChange">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_version</name>
@@ -267,6 +335,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_pass_through_rate</name>
@@ -279,6 +351,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_id</name>
@@ -314,7 +390,16 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
+            <attribute>
+                <name>hts_id</name>
+                <type>NUMBER(10)</type>
+                <isKey>true</isKey>
+            </attribute>
             <attribute>
                 <name>hts_modified_time</name>
                 <type>TIMESTAMP</type>
@@ -347,6 +432,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_obeyLB</name>
@@ -367,6 +456,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_stream_letter</name>
@@ -379,6 +472,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_avl</name>
@@ -456,6 +553,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_value</name>
@@ -468,6 +569,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_value</name>
@@ -478,6 +583,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bunch_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg_version</name>
@@ -488,6 +597,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bunch_group_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs_version</name>
@@ -498,6 +611,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_version</name>
@@ -508,6 +625,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_sin_cos</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1csc_version</name>
@@ -518,6 +639,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ctp_files</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1cf_version</name>
@@ -528,6 +653,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_version</name>
@@ -538,6 +667,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_dead_time</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1dt_version</name>
@@ -548,6 +681,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_jet_input</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ji_version</name>
@@ -558,6 +695,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_version</name>
@@ -568,6 +709,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muctpi_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mi_version</name>
@@ -578,6 +723,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_version</name>
@@ -588,6 +737,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_version</name>
@@ -598,6 +751,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescaled_clock</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pc_version</name>
@@ -608,6 +765,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_version</name>
@@ -618,6 +779,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_version</name>
@@ -628,6 +793,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm_version</name>
@@ -638,6 +807,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt_version</name>
@@ -648,6 +821,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_version</name>
@@ -658,6 +835,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tty_version</name>
@@ -670,6 +851,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_value</name>
@@ -682,6 +867,10 @@
         <update type="TypeChange">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_name</name>
@@ -694,6 +883,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_trigger_stream_prescale</name>
@@ -704,6 +897,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_trigger_element_counter</name>
@@ -713,42 +910,11 @@
         </insersion>
         <update type="TypeChange">
             <table>
-                <name>hlt_trigger_chain</name>
-            </table>
-            <attribute>
-                <name>htc_lower_chain_name</name>
-                <type>VARCHAR2(20) BINARY</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htc_name</name>
-                <type>VARCHAR2(20) BINARY</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-        <update type="TypeChange">
-            <table>
-                <name>hlt_trigger_element</name>
-            </table>
-            <attribute>
-                <name>hte_name</name>
-                <type>VARCHAR2(30) BINARY</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-        <update type="TypeChange">
-            <table>
-                <name>hlt_trigger_menu</name>
-            </table>
-            <attribute>
-                <name>htm_name</name>
-                <type>VARCHAR2(15) BINARY</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-        <update type="TypeChange">
-            <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_stream_type</name>
@@ -759,6 +925,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_id</name>
@@ -794,6 +964,10 @@
         <update type="TypeChange">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_name</name>
@@ -806,6 +980,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_threshold</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt_active</name>
@@ -823,6 +1001,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_username</name>
@@ -833,6 +1015,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_cp_to_pa</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2pa_username</name>
@@ -843,6 +1029,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_dll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hdl_username</name>
@@ -853,6 +1043,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_environment</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hen_username</name>
@@ -863,6 +1057,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_force_dll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hfd_username</name>
@@ -873,6 +1071,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hmt_username</name>
@@ -883,6 +1085,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_username</name>
@@ -893,6 +1099,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_username</name>
@@ -903,6 +1113,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_username</name>
@@ -913,6 +1127,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_property</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpy_username</name>
@@ -923,6 +1141,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_re_to_dl</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre2dl_username</name>
@@ -933,6 +1155,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_username</name>
@@ -943,6 +1169,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_setup</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst_username</name>
@@ -953,6 +1183,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_source</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hso_username</name>
@@ -963,6 +1197,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_st_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst2cp_username</name>
@@ -973,6 +1211,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_username</name>
@@ -983,6 +1225,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tc_to_ts</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2ts_username</name>
@@ -993,6 +1239,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_username</name>
@@ -1003,6 +1253,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_username</name>
@@ -1013,6 +1267,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tm_to_tc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm2tc_username</name>
@@ -1023,6 +1281,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_username</name>
@@ -1033,6 +1295,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_username</name>
@@ -1043,6 +1309,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_username</name>
@@ -1053,6 +1323,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_signature</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts_username</name>
@@ -1063,6 +1337,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_username</name>
@@ -1073,6 +1351,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_username</name>
@@ -1083,6 +1365,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_ts_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts2te_username</name>
@@ -1093,6 +1379,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bg_to_b</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg2b_username</name>
@@ -1103,6 +1393,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bgs_to_bg</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs2bg_username</name>
@@ -1113,6 +1407,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bunch_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg_username</name>
@@ -1123,6 +1421,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bunch_group_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs_username</name>
@@ -1133,6 +1435,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_username</name>
@@ -1143,6 +1449,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_sin_cos</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1csc_username</name>
@@ -1153,6 +1463,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ci_to_csc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci2csc_username</name>
@@ -1163,6 +1477,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ctp_files</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1cf_username</name>
@@ -1173,6 +1491,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_username</name>
@@ -1183,6 +1505,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_dead_time</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1dt_username</name>
@@ -1193,6 +1519,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_jet_input</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ji_username</name>
@@ -1203,6 +1533,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_username</name>
@@ -1213,6 +1547,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muctpi_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mi_username</name>
@@ -1223,6 +1561,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_username</name>
@@ -1233,6 +1575,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_username</name>
@@ -1243,6 +1589,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescaled_clock</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pc_username</name>
@@ -1253,6 +1603,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_username</name>
@@ -1263,6 +1617,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ti_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti2tt_username</name>
@@ -1273,6 +1631,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_ti</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ti_username</name>
@@ -1283,6 +1645,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_username</name>
@@ -1293,6 +1659,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_tt_forced</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttf_username</name>
@@ -1303,6 +1673,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_username</name>
@@ -1313,6 +1687,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm_username</name>
@@ -1323,6 +1701,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt_username</name>
@@ -1333,6 +1715,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_username</name>
@@ -1343,6 +1729,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tty_username</name>
@@ -1353,6 +1743,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tt_to_ttv</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt2ttv_username</name>
@@ -1363,6 +1757,10 @@
         <update type="TypeChange">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_username</name>
@@ -1373,6 +1771,10 @@
         <update type="TypeChange">
             <table>
                 <name>trigger_next_run</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tnr_username</name>
@@ -1381,48 +1783,16 @@
             </attribute>
         </update>
     </transition>
-    <transition newVersion="rev_1.19.sql" oldVersion="rev_1.18.sql">
-        <update type="TypeChange">
-            <table>
-                <name>hlt_trigger_chain</name>
-            </table>
-            <attribute>
-                <name>htc_lower_chain_name</name>
-                <type>VARCHAR2(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htc_name</name>
-                <type>VARCHAR2(20)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-        <update type="TypeChange">
-            <table>
-                <name>hlt_trigger_element</name>
-            </table>
-            <attribute>
-                <name>hte_name</name>
-                <type>VARCHAR2(30)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-        <update type="TypeChange">
-            <table>
-                <name>hlt_trigger_menu</name>
-            </table>
-            <attribute>
-                <name>htm_name</name>
-                <type>VARCHAR2(15)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-    </transition>
+    <transition newVersion="rev_1.19.sql" oldVersion="rev_1.18.sql"/>
     <transition newVersion="rev_1.20.sql" oldVersion="rev_1.19.sql"/>
     <transition newVersion="rev_1.21.sql" oldVersion="rev_1.20.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_dl_to_en</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hdl2en_dll_id</name>
@@ -1443,6 +1813,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_dll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hdl_cmt_version</name>
@@ -1483,6 +1857,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_environment</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hen_id</name>
@@ -1523,6 +1901,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_value</name>
@@ -1533,6 +1915,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_property</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpy_id</name>
@@ -1573,6 +1959,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_re_to_dl</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre2dl_dll_id</name>
@@ -1608,6 +1998,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_so_to_dl</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hso2dl_dll_id</name>
@@ -1628,6 +2022,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_so_to_py</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hso2py_id</name>
@@ -1648,6 +2046,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_source</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hso_gaudi_type</name>
@@ -1685,6 +2087,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_tm_to_tc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm2tc_chain_counter</name>
@@ -1695,6 +2101,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_chain_counter</name>
@@ -1705,6 +2115,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_name</name>
@@ -1715,6 +2129,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_stream_name</name>
@@ -1725,6 +2143,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tm_to_ti</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ti_ctp_id</name>
@@ -1735,6 +2157,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_ctp_id</name>
@@ -1747,6 +2173,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_lumi</name>
@@ -1757,6 +2187,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_priority</name>
@@ -1769,6 +2203,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_lumi</name>
@@ -1779,6 +2217,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_priority</name>
@@ -1791,6 +2233,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_global_scale</name>
@@ -1801,6 +2247,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_trigger_type_id</name>
@@ -1811,6 +2261,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_lumi</name>
@@ -1821,6 +2275,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_trigger_type</name>
@@ -1831,6 +2289,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_priority</name>
@@ -1848,6 +2310,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_global_scale</name>
@@ -1858,6 +2324,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_em_isolation</name>
@@ -1890,6 +2360,10 @@
         <insersion type="NewTable">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_hlt_prescale_set_id</name>
@@ -1937,6 +2411,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_hlt_prescale_set_id</name>
@@ -1954,6 +2432,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pa_alias</name>
@@ -1994,6 +2476,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_default</name>
@@ -2006,6 +2492,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_comment</name>
@@ -2018,6 +2508,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_status</name>
@@ -2028,6 +2522,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_cp_to_pa</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2pa_status</name>
@@ -2038,6 +2536,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_force_dll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hfd_status</name>
@@ -2048,6 +2550,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hmt_status</name>
@@ -2058,6 +2564,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_status</name>
@@ -2068,6 +2578,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_status</name>
@@ -2078,6 +2592,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_status</name>
@@ -2088,6 +2606,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_status</name>
@@ -2098,6 +2620,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_setup</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst_status</name>
@@ -2108,6 +2634,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_st_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst2cp_status</name>
@@ -2118,6 +2648,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_status</name>
@@ -2128,6 +2662,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_tc_to_ts</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2ts_status</name>
@@ -2138,6 +2676,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_status</name>
@@ -2148,6 +2690,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_status</name>
@@ -2158,6 +2704,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_tm_to_tc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm2tc_status</name>
@@ -2168,6 +2718,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_status</name>
@@ -2178,6 +2732,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_status</name>
@@ -2188,6 +2746,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_status</name>
@@ -2198,6 +2760,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_signature</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts_status</name>
@@ -2208,6 +2774,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_status</name>
@@ -2218,6 +2788,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_status</name>
@@ -2228,6 +2802,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_ts_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts2te_status</name>
@@ -2238,6 +2816,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_bg_to_b</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg2b_status</name>
@@ -2248,6 +2830,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_bgs_to_bg</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg2bgs_status</name>
@@ -2258,6 +2844,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_bunch_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg_status</name>
@@ -2268,6 +2858,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_bunch_group_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs_status</name>
@@ -2278,6 +2872,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_status</name>
@@ -2288,6 +2886,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_calo_sin_cos</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1csc_status</name>
@@ -2298,6 +2900,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_ci_to_csc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci2csc_status</name>
@@ -2308,6 +2914,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_ctp_files</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1cf_status</name>
@@ -2318,6 +2928,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_status</name>
@@ -2328,6 +2942,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_dead_time</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1dt_status</name>
@@ -2338,6 +2956,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_jet_input</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ji_status</name>
@@ -2348,6 +2970,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_status</name>
@@ -2358,6 +2984,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_muctpi_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mi_status</name>
@@ -2368,6 +2998,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_status</name>
@@ -2378,6 +3012,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_status</name>
@@ -2388,6 +3026,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pa_status</name>
@@ -2398,6 +3040,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_prescaled_clock</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pc_status</name>
@@ -2408,6 +3054,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_status</name>
@@ -2418,6 +3068,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_ti_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti2tt_status</name>
@@ -2428,6 +3082,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tm_to_ti</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ti_status</name>
@@ -2438,6 +3096,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_status</name>
@@ -2448,6 +3110,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt_forced</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttf_status</name>
@@ -2458,6 +3124,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_status</name>
@@ -2468,6 +3138,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm_status</name>
@@ -2478,6 +3152,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_threshold</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt_status</name>
@@ -2488,6 +3166,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_status</name>
@@ -2498,6 +3180,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tty_status</name>
@@ -2508,6 +3194,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tt_to_ttv</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt2ttv_status</name>
@@ -2518,6 +3208,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_status</name>
@@ -2528,6 +3222,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_status</name>
@@ -2538,6 +3236,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>trigger_next_run</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tnr_status</name>
@@ -2550,6 +3252,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_status</name>
@@ -2560,6 +3266,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_cp_to_pa</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2pa_status</name>
@@ -2570,6 +3280,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_force_dll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hfd_status</name>
@@ -2580,6 +3294,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_status</name>
@@ -2590,6 +3308,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_status</name>
@@ -2600,6 +3322,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_status</name>
@@ -2610,6 +3336,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpsa_alias</name>
@@ -2650,6 +3380,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_status</name>
@@ -2660,6 +3394,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_setup</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst_status</name>
@@ -2670,6 +3408,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_st_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst2cp_status</name>
@@ -2680,6 +3422,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_status</name>
@@ -2690,6 +3436,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_tc_to_ts</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2ts_status</name>
@@ -2700,6 +3450,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_status</name>
@@ -2710,6 +3464,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_status</name>
@@ -2720,6 +3478,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_tm_to_tc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm2tc_status</name>
@@ -2730,6 +3492,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_status</name>
@@ -2740,6 +3506,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_status</name>
@@ -2750,6 +3520,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_consistent</name>
@@ -2760,6 +3534,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_shift_safe</name>
@@ -2775,6 +3553,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_signature</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts_status</name>
@@ -2785,6 +3567,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_status</name>
@@ -2795,6 +3581,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_status</name>
@@ -2805,6 +3595,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_ts_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts2te_status</name>
@@ -2815,6 +3609,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_bg_to_b</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg2b_status</name>
@@ -2825,6 +3623,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_bgs_to_bg</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg2bgs_status</name>
@@ -2835,6 +3637,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_bunch_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg_status</name>
@@ -2845,6 +3651,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_bunch_group_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs_status</name>
@@ -2855,6 +3665,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_status</name>
@@ -2865,6 +3679,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_calo_sin_cos</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1csc_status</name>
@@ -2875,6 +3693,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_ci_to_csc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci2csc_status</name>
@@ -2885,6 +3707,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_ctp_files</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1cf_status</name>
@@ -2895,6 +3721,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_status</name>
@@ -2905,6 +3735,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_dead_time</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1dt_status</name>
@@ -2915,6 +3749,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_jet_input</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ji_status</name>
@@ -2925,6 +3763,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_muctpi_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mi_status</name>
@@ -2935,6 +3777,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_status</name>
@@ -2945,6 +3791,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_status</name>
@@ -2955,6 +3805,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pa_status</name>
@@ -2965,6 +3819,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_prescaled_clock</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pc_status</name>
@@ -2975,6 +3833,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_seed1</name>
@@ -2990,6 +3852,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_status</name>
@@ -3000,6 +3866,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_random_rates</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1rr_id</name>
@@ -3015,6 +3885,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_ti_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti2tt_status</name>
@@ -3025,6 +3899,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tm_to_ti</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ti_status</name>
@@ -3035,6 +3913,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_status</name>
@@ -3045,6 +3927,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt_forced</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttf_status</name>
@@ -3055,6 +3941,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_status</name>
@@ -3065,6 +3955,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm_shift_safe</name>
@@ -3080,6 +3974,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_trigger_threshold</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt_status</name>
@@ -3090,6 +3988,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_status</name>
@@ -3100,6 +4002,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tty_status</name>
@@ -3110,6 +4016,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tt_to_ttv</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt2ttv_status</name>
@@ -3120,6 +4030,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_status</name>
@@ -3130,6 +4044,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>trigger_next_run</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tnr_status</name>
@@ -3142,6 +4060,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_autoseed1</name>
@@ -3157,6 +4079,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_random_rates</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1rr_active_from</name>
@@ -3167,6 +4093,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_random_rates</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1rr_id</name>
@@ -3184,6 +4114,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_alias</name>
@@ -3199,6 +4133,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_te_counter</name>
@@ -3224,6 +4162,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_trigger_element_counter</name>
@@ -3244,6 +4186,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_name</name>
@@ -3254,6 +4200,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_trigger_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htg_id</name>
@@ -3289,6 +4239,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_description</name>
@@ -3304,6 +4258,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_obeyLB</name>
@@ -3314,6 +4272,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_stream_description</name>
@@ -3333,6 +4295,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_force_dll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hfd_dll_name</name>
@@ -3368,6 +4334,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_ctp_files</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1cf_mon_dec_ctpmon</name>
@@ -3413,6 +4383,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_identifier</name>
@@ -3435,6 +4409,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_value</name>
@@ -3445,6 +4423,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_identifier</name>
@@ -3455,6 +4437,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_mon_name</name>
@@ -3467,6 +4453,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_value</name>
@@ -3477,6 +4467,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_pits</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pit_id</name>
@@ -3517,6 +4511,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_identifier</name>
@@ -3542,6 +4540,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_tm_to_tt_mon</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttm_bunch_group_set_id</name>
@@ -3604,6 +4606,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_lower_chain_name</name>
@@ -3621,6 +4627,10 @@
         <insersion type="NewTable">
             <table>
                 <name>trigger_schema</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>ts_id</name>
@@ -3644,6 +4654,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_name</name>
@@ -3656,6 +4670,10 @@
         <update type="TypeChange">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_name</name>
@@ -3668,6 +4686,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_name</name>
@@ -3680,6 +4702,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_te_inp_id</name>
@@ -3692,6 +4718,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_name</name>
@@ -3704,6 +4734,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_username</name>
@@ -3714,6 +4748,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_cp_to_pa</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2pa_username</name>
@@ -3721,9 +4759,32 @@
                 <isKey>false</isKey>
             </attribute>
         </update>
-        <deletion type="DeleteTable">
+        <insersion type="UpdateTable">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>hmt_ef_setup_id</name>
+                <type>NUMBER(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>hmt_l2_setup_id</name>
+                <type>NUMBER(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insersion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hmt_forced_setup_id</name>
@@ -3731,59 +4792,32 @@
                 <isKey>false</isKey>
             </attribute>
             <attribute>
-                <name>hmt_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_modified_time</name>
-                <type>TIMESTAMP</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_name</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
                 <name>hmt_prescale_set_id</name>
                 <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_release_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_status</name>
-                <type>NUMBER(2)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_trigger_menu_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_used</name>
-                <type>CHAR</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_username</name>
-                <type>VARCHAR2(30)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_version</name>
-                <type>NUMBER(11)</type>
                 <isKey>false</isKey>
             </attribute>
         </deletion>
         <update type="TypeChange">
             <table>
+                <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
+            </table>
+            <attribute>
+                <name>hmt_username</name>
+                <type>VARCHAR2(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_username</name>
@@ -3794,6 +4828,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_pass_through_rate</name>
@@ -3804,6 +4842,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_prescale</name>
@@ -3819,6 +4861,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_username</name>
@@ -3829,6 +4875,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpsa_alias</name>
@@ -3844,6 +4894,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_username</name>
@@ -3854,6 +4908,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_setup</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst_l2_or_ef</name>
@@ -3864,6 +4922,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_setup</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst_username</name>
@@ -3874,6 +4936,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_st_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hst2cp_username</name>
@@ -3884,6 +4950,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_username</name>
@@ -3894,6 +4964,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tc_to_ts</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2ts_username</name>
@@ -3904,6 +4978,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_username</name>
@@ -3914,6 +4992,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2te_username</name>
@@ -3924,6 +5006,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tm_to_tc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm2tc_username</name>
@@ -3934,6 +5020,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_pass_through_rate</name>
@@ -3949,6 +5039,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_username</name>
@@ -3959,6 +5053,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_element</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte_username</name>
@@ -3969,6 +5067,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htg_name</name>
@@ -3984,6 +5086,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm_phase</name>
@@ -3999,6 +5105,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_signature</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts_username</name>
@@ -4009,6 +5119,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_name</name>
@@ -4029,6 +5143,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_username</name>
@@ -4039,6 +5157,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_ts_to_te</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hts2te_username</name>
@@ -4049,6 +5171,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bg_to_b</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg2b_username</name>
@@ -4059,6 +5185,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bgs_to_bg</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs2bg_username</name>
@@ -4069,6 +5199,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bunch_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg_name</name>
@@ -4084,6 +5218,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_bunch_group_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs_name</name>
@@ -4099,6 +5237,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_name</name>
@@ -4114,6 +5256,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_sin_cos</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1csc_name</name>
@@ -4129,6 +5275,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ci_to_csc</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci2csc_username</name>
@@ -4139,6 +5289,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ctp_files</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1cf_name</name>
@@ -4154,6 +5308,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_name</name>
@@ -4169,6 +5327,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_dead_time</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1dt_name</name>
@@ -4184,6 +5346,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_jet_input</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ji_name</name>
@@ -4199,6 +5365,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_name</name>
@@ -4214,6 +5384,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_prescale_set_id</name>
@@ -4224,6 +5398,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muctpi_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mi_name</name>
@@ -4239,6 +5417,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_name</name>
@@ -4254,6 +5436,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_pits</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pit_username</name>
@@ -4264,6 +5450,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_name</name>
@@ -4279,6 +5469,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pa_alias</name>
@@ -4294,6 +5488,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescaled_clock</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pc_name</name>
@@ -4309,6 +5507,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_name</name>
@@ -4324,6 +5526,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_ti_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti2tt_username</name>
@@ -4334,6 +5540,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_ti</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ti_username</name>
@@ -4344,6 +5554,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2tt_username</name>
@@ -4354,6 +5568,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_tt_forced</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttf_username</name>
@@ -4364,6 +5582,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tm_to_tt_mon</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttm_name</name>
@@ -4379,6 +5601,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_item</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ti_username</name>
@@ -4389,6 +5615,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm_name</name>
@@ -4409,6 +5639,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt_name</name>
@@ -4424,6 +5658,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_name</name>
@@ -4439,6 +5677,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tty_name</name>
@@ -4454,6 +5696,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_tt_to_ttv</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tt2ttv_username</name>
@@ -4464,6 +5710,10 @@
         <update type="TypeChange">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_username</name>
@@ -4474,6 +5724,10 @@
         <update type="TypeChange">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_trigger_alias</name>
@@ -4489,6 +5743,10 @@
         <update type="TypeChange">
             <table>
                 <name>trigger_next_run</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tnr_username</name>
@@ -4499,6 +5757,10 @@
         <update type="TypeChange">
             <table>
                 <name>trigger_schema</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>ts_trigdb_tag</name>
@@ -4513,68 +5775,17 @@
         </update>
     </transition>
     <transition newVersion="rev_1.49.sql" oldVersion="rev_1.48.sql">
-        <insersion type="NewTable">
+        <insersion type="UpdateTable">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
-            <attribute>
-                <name>hmt_ef_setup_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
             <attribute>
                 <name>hmt_forced_setup_id</name>
                 <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_l2_setup_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_modified_time</name>
-                <type>TIMESTAMP</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_name</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_release_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_status</name>
-                <type>NUMBER(2)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_trigger_menu_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_used</name>
-                <type>CHAR</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_username</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>hmt_version</name>
-                <type>NUMBER(11)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
@@ -4583,6 +5794,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hmt_comment</name>
@@ -4593,6 +5808,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_comment</name>
@@ -4603,6 +5822,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_bin_slot7</name>
@@ -4623,6 +5846,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_ctp_smx</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1smx_svfi_slot7</name>
@@ -4643,6 +5870,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_comment</name>
@@ -4653,6 +5884,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_comment</name>
@@ -4663,6 +5898,10 @@
         <insersion type="NewTable">
             <table>
                 <name>trigger_log</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tlog_message</name>
@@ -4686,6 +5925,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_name</name>
@@ -4696,6 +5939,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_id</name>
@@ -4736,6 +5983,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_tc_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tt_id</name>
@@ -4771,6 +6022,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_type</name>
@@ -4781,6 +6036,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_trigger_streamtag</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_id</name>
@@ -4811,6 +6070,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_id</name>
@@ -4846,7 +6109,16 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
+            <attribute>
+                <name>hty_id</name>
+                <type>NUMBER(10)</type>
+                <isKey>true</isKey>
+            </attribute>
             <attribute>
                 <name>hty_modified_time</name>
                 <type>TIMESTAMP</type>
@@ -4876,6 +6148,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_tt_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt2tr_id</name>
@@ -4916,6 +6192,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_name</name>
@@ -4928,15 +6208,19 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_id</name>
                 <type>NUMBER(10)</type>
-                <isKey>false</isKey>
+                <isKey>true</isKey>
             </attribute>
             <attribute>
                 <name>htc2tr_modified_time</name>
-                <type>TIMESTAMP</type>
+                <type>TIMESTAMPHTC2TR_USEDCHAR</type>
                 <isKey>false</isKey>
             </attribute>
             <attribute>
@@ -4963,6 +6247,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_tc_to_tt</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tt_id</name>
@@ -4995,39 +6283,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <update type="KeyChange">
-            <table>
-                <name>hlt_trigger_stream</name>
-            </table>
-            <attribute>
-                <name>htr_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </update>
-        <deletion type="UpdateTable">
-            <table>
-                <name>hlt_trigger_stream</name>
-            </table>
-            <attribute>
-                <name>htr_modified_time</name>
-                <type>TIMESTAMP</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htr_obeyLB</name>
-                <type>NUMBER(1)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htr_username</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_stream</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htr_type</name>
@@ -5038,6 +6300,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_trigger_streamtag</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_id</name>
@@ -5068,6 +6334,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt_id</name>
@@ -5103,7 +6373,16 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
+            <attribute>
+                <name>hty_id</name>
+                <type>NUMBER(10)</type>
+                <isKey>true</isKey>
+            </attribute>
             <attribute>
                 <name>hty_modified_time</name>
                 <type>TIMESTAMP</type>
@@ -5133,6 +6412,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>hlt_tt_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htt2tr_id</name>
@@ -5172,58 +6455,31 @@
         </deletion>
     </transition>
     <transition newVersion="rev_1.54.sql" oldVersion="rev_1.53.sql">
-        <update type="KeyChange">
+        <update type="TypeChange">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
-                <name>htc2tr_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>true</isKey>
+                <name>htc2tr_modified_time</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
             </attribute>
         </update>
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_used</name>
                 <type>CHAR</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
-        <update type="KeyChange">
-            <table>
-                <name>hlt_trigger_stream</name>
-            </table>
-            <attribute>
-                <name>htr_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-        </update>
-        <insersion type="UpdateTable">
-            <table>
-                <name>hlt_trigger_stream</name>
-            </table>
-            <attribute>
-                <name>htr_modified_time</name>
-                <type>TIMESTAMP</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htr_obeyLB</name>
-                <type>NUMBER(1)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htr_used</name>
-                <type>CHAR</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>htr_username</name>
-                <type>VARCHAR2(50)</type>
                 <isKey>false</isKey>
             </attribute>
         </insersion>
@@ -5232,6 +6488,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_algorithm_name</name>
@@ -5242,6 +6502,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_component_id</name>
@@ -5254,6 +6518,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt_mon</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttm_bunch_group_id</name>
@@ -5264,6 +6532,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_tm_to_tt_mon</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ttm_bunch_group_set_id</name>
@@ -5274,6 +6546,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>l1_trigger_type</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tty_bit0</name>
@@ -5349,6 +6625,10 @@
         <insersion type="NewTable">
             <table>
                 <name>tt_users</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tt_level</name>
@@ -5371,6 +6651,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_algorithm_name</name>
@@ -5383,6 +6667,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_algorithm_alias</name>
@@ -5393,6 +6681,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_algorithm_name</name>
@@ -5406,6 +6698,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_version</name>
@@ -5418,6 +6714,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>trigger_log</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tlog_shrot</name>
@@ -5430,6 +6730,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>trigger_log</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tlog_short</name>
@@ -5440,6 +6744,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>trigger_log</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tlog_shrot</name>
@@ -5453,6 +6761,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpr_pass_through_rate</name>
@@ -5468,6 +6780,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_tc_to_tr</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc2tr_trigger_stream_prescale</name>
@@ -5480,6 +6796,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_topalg</name>
@@ -5490,6 +6810,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_type</name>
@@ -5500,6 +6824,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_cp_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2cp_algo_comp_id</name>
@@ -5535,6 +6863,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_algorithm_alias</name>
@@ -5550,6 +6882,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_component_id</name>
@@ -5560,6 +6896,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_te_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hte2cp_username</name>
@@ -5572,6 +6912,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_flag</name>
@@ -5582,6 +6926,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_type</name>
@@ -5592,6 +6940,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_cp_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2cp_algo_comp_id</name>
@@ -5607,6 +6959,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_cp_to_cp</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp2cp_child_comp_id</name>
@@ -5622,6 +6978,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_trigger_menu_id</name>
@@ -5632,6 +6992,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_tm_to_ps</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htm2ps_id</name>
@@ -5667,6 +7031,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_user_version</name>
@@ -5677,6 +7045,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_calo_info</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ci_global_scale</name>
@@ -5687,6 +7059,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_bunch_group_set_id</name>
@@ -5697,6 +7073,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_lumi</name>
@@ -5707,6 +7087,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_trigger_menu_id</name>
@@ -5717,6 +7101,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_tm_to_ps</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm2ps_id</name>
@@ -5752,6 +7140,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_threshold_value</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ttv_em_isolation</name>
@@ -5784,6 +7176,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hps_comment</name>
@@ -5794,6 +7190,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_bunch_group_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bgs_comment</name>
@@ -5804,6 +7204,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_comment</name>
@@ -5814,6 +7218,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>super_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt_origin</name>
@@ -5831,6 +7239,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_bunch_group</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1bg_comment</name>
@@ -5841,6 +7253,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_muon_threshold_set_id</name>
@@ -5851,6 +7267,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_muon_threshold_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_id</name>
@@ -5976,6 +7396,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>l1_muon_threshold_sets</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_avl</name>
@@ -6053,6 +7477,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_HRC_TO_HRP</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrc2rp_component_id</name>
@@ -6088,6 +7516,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_HRS_TO_HRU</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrs2ru_id</name>
@@ -6123,6 +7555,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_HRU_TO_HRC</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hru2rc_component_id</name>
@@ -6163,6 +7599,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_RULE</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hru_id</name>
@@ -6203,6 +7643,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_RULE_COMPONENT</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrc_alias</name>
@@ -6248,6 +7692,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_RULE_PARAMETER</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrp_id</name>
@@ -6288,6 +7736,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_RULE_SET</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrs_id</name>
@@ -6325,6 +7777,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_py_name</name>
@@ -6340,6 +7796,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_component</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hcp_type</name>
@@ -6350,6 +7810,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_parameter</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpa_chain_user_version</name>
@@ -6358,92 +7822,15 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_1.71.sql" oldVersion="rev_1.70.sql">
-        <deletion type="DeleteTable">
-            <table>
-                <name>l1_master_table</name>
-            </table>
-            <attribute>
-                <name>l1mt_calo_info_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_comment</name>
-                <type>VARCHAR2(200)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_dead_time_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_modified_time</name>
-                <type>TIMESTAMP</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_muctpi_info_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_muon_threshold_set_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_name</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_prescaled_clock_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_random_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_status</name>
-                <type>NUMBER(2)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_trigger_menu_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_used</name>
-                <type>CHAR</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_username</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_version</name>
-                <type>NUMBER(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </deletion>
-    </transition>
+    <transition newVersion="rev_1.71.sql" oldVersion="rev_1.70.sql"/>
     <transition newVersion="rev_1.72.sql" oldVersion="rev_1.71.sql">
         <insersion type="NewTable">
             <table>
                 <name>HLT_HRE_TO_HRS</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre2rs_id</name>
@@ -6479,6 +7866,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>HLT_HRS_TO_HRU</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrs2ru_rule_counter</name>
@@ -6489,6 +7880,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>HLT_RULE_COMPONENT</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hrc_py_name</name>
@@ -6501,91 +7896,15 @@
                 <isKey>false</isKey>
             </attribute>
         </insersion>
-        <insersion type="NewTable">
-            <table>
-                <name>l1_master_table</name>
-            </table>
-            <attribute>
-                <name>l1mt_calo_info_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_comment</name>
-                <type>VARCHAR2(200)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_dead_time_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>true</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_modified_time</name>
-                <type>TIMESTAMP</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_muctpi_info_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_muon_threshold_set_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_name</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_prescaled_clock_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_random_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_status</name>
-                <type>NUMBER(2)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_trigger_menu_id</name>
-                <type>NUMBER(10)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_used</name>
-                <type>CHAR</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_username</name>
-                <type>VARCHAR2(50)</type>
-                <isKey>false</isKey>
-            </attribute>
-            <attribute>
-                <name>l1mt_version</name>
-                <type>NUMBER(11)</type>
-                <isKey>false</isKey>
-            </attribute>
-        </insersion>
     </transition>
     <transition newVersion="rev_1.73.sql" oldVersion="rev_1.72.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_calo_info_id</name>
@@ -6668,6 +7987,10 @@
         <insersion type="NewTable">
             <table>
                 <name>l1_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mt_calo_info_id</name>
@@ -6751,6 +8074,10 @@
         <insersion type="NewTable">
             <table>
                 <name>HLT_SMT_TO_HRE</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>smt2re_id</name>
@@ -6786,6 +8113,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_master_table</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hmt_release_id</name>
@@ -6796,6 +8127,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_base</name>
@@ -6816,6 +8151,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_name</name>
@@ -6826,6 +8165,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hlt_release</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hre_version</name>
@@ -6838,6 +8181,10 @@
         <update type="TypeChange">
             <table>
                 <name>hlt_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpsa_default</name>
@@ -6848,6 +8195,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_muon_threshold_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_name</name>
@@ -6878,6 +8229,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>l1_muon_threshold_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_rpc_set_name</name>
@@ -6893,6 +8248,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>l1_muon_threshold_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1mts_tgc_pt1_ext_id</name>
@@ -6928,6 +8287,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1ps_default</name>
@@ -6943,6 +8306,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_prescale_set_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1pa_default</name>
@@ -6953,6 +8320,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_random</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1r_autoseed1</name>
@@ -6968,6 +8339,10 @@
         <update type="TypeChange">
             <table>
                 <name>l1_trigger_menu</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>l1tm_ctp_safe</name>
@@ -6978,6 +8353,10 @@
         <update type="TypeChange">
             <table>
                 <name>trigger_alias</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tal_default</name>
@@ -6988,6 +8367,10 @@
         <update type="TypeChange">
             <table>
                 <name>trigger_log</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>tlog_message</name>
@@ -7006,6 +8389,10 @@
         <insersion type="NewTable">
             <table>
                 <name>DBCOPY_SOURCE_DATABASE</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>NAME_OF_DB</name>
@@ -7018,6 +8405,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_trigger_chain</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>htc_rerun_prescale</name>
@@ -7031,6 +8422,10 @@
         <insersion type="NewTable">
             <table>
                 <name>hlt_prescale_set_coll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpsc_hltpsk</name>
@@ -7053,6 +8448,10 @@
         <insersion type="UpdateTable">
             <table>
                 <name>hlt_prescale_set_coll</name>
+                <pKey>
+                    <mode>0</mode>
+                </pKey>
+                <fKey/>
             </table>
             <attribute>
                 <name>hpsc_partition</name>
