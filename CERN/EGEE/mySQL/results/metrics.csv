@@ -1,0 +1,17 @@
+# oldVersion,newVersion,#oldTables,#newTables,#oldAttrs,newAttr,tableIns,tableDel,attrIns,attrDel,attrTypeAlt,keyAlt,totalAlt
+rev_1.01.sql,rev_1.02.sql,6,6,34,39,0,0,6,2,0,0,0
+rev_1.02.sql,rev_1.03.sql,6,4,39,34,0,2,6,12,4,0,4
+rev_1.03.sql,rev_1.04.sql,4,4,34,35,0,0,1,0,0,0,0
+rev_1.04.sql,rev_1.05.sql,4,4,35,38,0,0,3,0,2,0,2
+rev_1.05.sql,rev_1.06.sql,4,4,38,38,0,0,0,0,1,0,1
+rev_1.06.sql,rev_1.07.sql,4,4,38,40,0,0,2,0,0,0,0
+rev_1.07.sql,rev_1.08.sql,4,8,40,59,4,0,29,18,0,1,1
+rev_1.08.sql,rev_1.09.sql,8,8,59,59,0,0,0,0,1,0,1
+rev_1.09.sql,rev_1.10.sql,8,8,59,60,0,0,1,0,0,0,0
+rev_1.10.sql,rev_1.11.sql,8,8,60,60,0,0,0,0,4,0,4
+rev_1.11.sql,rev_1.12.sql,8,8,60,60,0,0,0,0,4,0,4
+rev_1.12.sql,rev_1.13.sql,8,8,60,60,0,0,0,0,0,0,0
+rev_1.13.sql,rev_1.14.sql,8,8,60,61,0,0,1,0,0,0,0
+rev_1.14.sql,rev_1.15.sql,8,9,61,63,1,0,2,0,0,0,0
+rev_1.15.sql,rev_1.16.sql,9,9,63,63,0,0,0,0,2,0,2
+rev_1.16.sql,rev_1.17.sql,9,10,63,71,1,0,8,0,0,0,0
