@@ -1,0 +1,3462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- ViewVC :: http://www.viewvc.org/ --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>[ensembl] Log of /ensembl/sql/foreign_keys.sql</title>
+<meta name="generator" content="ViewVC 1.0.5">
+<link rel="stylesheet" href="%5Bensembl%5D%20Log%20of%20_ensembl_sql_foreign_keys.sql_files/styles.css" type="text/css">
+
+<script type="text/javascript" src="%5Bensembl%5D%20Log%20of%20_ensembl_sql_foreign_keys.sql_files/urchin.js"></script>
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+<body>
+<div class="vc_navheader">
+
+<form method="get" action="/cgi-bin/viewvc.cgi/">
+
+<table style="padding:0.1em;">
+<tbody><tr>
+<td>
+<strong>
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/?root=ensembl">
+
+[ensembl]</a>
+/
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/?root=ensembl">
+
+ensembl</a>
+/
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/?root=ensembl">
+
+sql</a>
+/
+
+
+
+foreign_keys.sql
+
+
+</strong>
+
+</td>
+<td style="text-align:right;">
+
+
+<strong>Repository:</strong>
+<select name="root" onchange="submit()">
+
+
+<option value="*viewroots*">Repository Listing</option>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<optgroup label="CVS Repositories"><option>Bio-Das-ProServer</option><option>Bio-DasLite</option><option>biomart</option><option selected="selected">ensembl</option><option>hpag</option><option>pathsoft</option><option>team17</option><option>treefam</option></optgroup>
+
+
+</select>
+<input value="Go" type="submit">
+
+</td>
+</tr>
+</tbody></table>
+
+</form>
+
+</div>
+<div style="float: right; padding: 5px;"><a href="http://www.viewvc.org/"><img src="%5Bensembl%5D%20Log%20of%20_ensembl_sql_foreign_keys.sql_files/logo.png" alt="ViewVC logotype" height="48" width="128"></a></div>
+<h1>Log of /ensembl/sql/foreign_keys.sql</h1>
+
+<p style="margin:0;">
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/?root=ensembl"><img src="%5Bensembl%5D%20Log%20of%20_ensembl_sql_foreign_keys.sql_files/back_small.png" alt="Parent Directory" height="16" width="16"> Parent Directory</a>
+
+
+| <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;view=graph"><img src="%5Bensembl%5D%20Log%20of%20_ensembl_sql_foreign_keys.sql_files/cvsgraph_16x16.png" alt="View Revision Graph" height="16" width="16"> Revision Graph</a>
+
+
+
+</p>
+
+<hr>
+<table class="auto">
+
+
+
+<tbody><tr>
+<td>Links to HEAD:</td>
+<td>
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;view=markup">view</a>)
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;view=co">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=annotate&amp;root=ensembl">annotate</a>)
+</td>
+</tr>
+
+
+
+<tr>
+<td>Sticky Tag:</td>
+<td><form method="get" action="/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql" style="display: inline">
+<div style="display: inline">
+<input name="view" value="log" type="hidden"><input name="root" value="ensembl" type="hidden">
+
+
+<select name="pathrev" onchange="submit()">
+<option selected="selected" value=""></option>
+
+<optgroup label="Branches">
+
+
+<option>xref-new-methods</option>
+
+
+
+<option>projection_genebuild_2011_07</option>
+
+
+
+<option>multispecies-core-dev</option>
+
+
+
+<option>ensembl_all_alleles</option>
+
+
+
+<option>branched-annot-ext-devel</option>
+
+
+
+<option>branch-vega-61-1</option>
+
+
+
+<option>branch-vega-59-1</option>
+
+
+
+<option>branch-vega-55-1</option>
+
+
+
+<option>branch-vega-49-dev</option>
+
+
+
+<option>branch-vega-49-5</option>
+
+
+
+<option>branch-vega-49-3</option>
+
+
+
+<option>branch-vega-49-2</option>
+
+
+
+<option>branch-vega-49-1</option>
+
+
+
+<option>branch-vega-48-dev</option>
+
+
+
+<option>branch-vega-46-dev</option>
+
+
+
+<option>branch-vega-46-4</option>
+
+
+
+<option>branch-vega-46-3</option>
+
+
+
+<option>branch-vega-46-1</option>
+
+
+
+<option>branch-vega-44-dev</option>
+
+
+
+<option>branch-vega-44-3</option>
+
+
+
+<option>branch-vega-44-2</option>
+
+
+
+<option>branch-vega-44</option>
+
+
+
+<option>branch-vega-43-dev</option>
+
+
+
+<option>branch-vega-43</option>
+
+
+
+<option>branch-vega-41-dev</option>
+
+
+
+<option>branch-vega-41-1</option>
+
+
+
+<option>branch-vega-41</option>
+
+
+
+<option>branch-vega-40-dev</option>
+
+
+
+<option>branch-vega-40-1</option>
+
+
+
+<option>branch-vega-39-dev</option>
+
+
+
+<option>branch-vega-39</option>
+
+
+
+<option>branch-expression_data</option>
+
+
+
+<option>branch-ensemblgenomes-9-62</option>
+
+
+
+<option>branch-ensemblgenomes-8-61</option>
+
+
+
+<option>branch-ensemblgenomes-7-60</option>
+
+
+
+<option>branch-ensemblgenomes-6-59</option>
+
+
+
+<option>branch-ensemblgenomes-56</option>
+
+
+
+<option>branch-ensemblgenomes-5-58</option>
+
+
+
+<option>branch-ensemblgenomes-4-56</option>
+
+
+
+<option>branch-ensemblgenomes-18-71</option>
+
+
+
+<option>branch-ensemblgenomes-17-70</option>
+
+
+
+<option>branch-ensemblgenomes-16-69</option>
+
+
+
+<option>branch-ensemblgenomes-15-68</option>
+
+
+
+<option>branch-ensemblgenomes-14-67</option>
+
+
+
+<option>branch-ensemblgenomes-13-66</option>
+
+
+
+<option>branch-ensemblgenomes-12-65</option>
+
+
+
+<option>branch-ensemblgenomes-11-64</option>
+
+
+
+<option>branch-ensemblgenomes-10-63</option>
+
+
+
+<option>branch-ensembl-xrefconfig</option>
+
+
+
+<option>branch-ensembl-magic</option>
+
+
+
+<option>branch-ensembl-dec09</option>
+
+
+
+<option>branch-ensembl-72</option>
+
+
+
+<option>branch-ensembl-71-mapping_with_biotype</option>
+
+
+
+<option>branch-ensembl-71</option>
+
+
+
+<option>branch-ensembl-70</option>
+
+
+
+<option>branch-ensembl-69</option>
+
+
+
+<option>branch-ensembl-68</option>
+
+
+
+<option>branch-ensembl-67</option>
+
+
+
+<option>branch-ensembl-66</option>
+
+
+
+<option>branch-ensembl-65</option>
+
+
+
+<option>branch-ensembl-64</option>
+
+
+
+<option>branch-ensembl-63</option>
+
+
+
+<option>branch-ensembl-62</option>
+
+
+
+<option>branch-ensembl-61</option>
+
+
+
+<option>branch-ensembl-60</option>
+
+
+
+<option>branch-ensembl-59</option>
+
+
+
+<option>branch-ensembl-58</option>
+
+
+
+<option>branch-ensembl-57</option>
+
+
+
+<option>branch-ensembl-56</option>
+
+
+
+<option>branch-ensembl-55</option>
+
+
+
+<option>branch-ensembl-54</option>
+
+
+
+<option>branch-ensembl-53</option>
+
+
+
+<option>branch-ensembl-52</option>
+
+
+
+<option>branch-ensembl-51</option>
+
+
+
+<option>branch-ensembl-50-dev</option>
+
+
+
+<option>branch-ensembl-50</option>
+
+
+
+<option>branch-ensembl-49</option>
+
+
+
+<option>branch-ensembl-48</option>
+
+
+
+<option>branch-ensembl-47</option>
+
+
+
+<option>branch-ensembl-46</option>
+
+
+
+<option>branch-ensembl-45</option>
+
+
+
+<option>branch-ensembl-44</option>
+
+
+
+<option>branch-ensembl-43</option>
+
+
+
+<option>branch-ensembl-42</option>
+
+
+
+<option>branch-ensembl-41</option>
+
+
+
+<option>branch-ensembl-40</option>
+
+
+
+<option>branch-ensembl-39</option>
+
+
+
+<option>branch-eg-misc-scripts</option>
+
+
+
+<option>branch-eg-56</option>
+
+
+
+<option>branch-e70-db-portability</option>
+
+
+
+<option>MAIN</option>
+
+
+
+<option>LRG</option>
+
+
+</optgroup>
+
+<optgroup label="Non-branch tags">
+
+
+<option>vega-61-1-branchpoint</option>
+
+
+
+<option>vega-59-1-branchpoint</option>
+
+
+
+<option>vega-55-1-branchpoint</option>
+
+
+
+<option>vega-49-dev-branchpoint</option>
+
+
+
+<option>vega-49-5-branchpoint</option>
+
+
+
+<option>vega-49-3-branchpoint</option>
+
+
+
+<option>vega-49-2-branchpoint</option>
+
+
+
+<option>vega-49-1-branchpoint</option>
+
+
+
+<option>vega-48-dev-branchpoint</option>
+
+
+
+<option>vega-46-dev-branchpoint</option>
+
+
+
+<option>vega-46-4-branchpoint</option>
+
+
+
+<option>vega-46-3-branchpoint</option>
+
+
+
+<option>vega-46-1-branchpoint</option>
+
+
+
+<option>vega-44-dev-branchpoint</option>
+
+
+
+<option>vega-44-branchpoint</option>
+
+
+
+<option>vega-44-3-branchpoint</option>
+
+
+
+<option>vega-44-2-branchpoint</option>
+
+
+
+<option>vega-43-dev-branchpoint</option>
+
+
+
+<option>vega-43-branchpoint</option>
+
+
+
+<option>vega-41-dev-branchpoint</option>
+
+
+
+<option>vega-41-branchpoint</option>
+
+
+
+<option>vega-41-1-branchpoint</option>
+
+
+
+<option>vega-40-dev-branchpoint</option>
+
+
+
+<option>vega-40-1-branchpoint</option>
+
+
+
+<option>vega-39-branchpoint</option>
+
+
+
+<option>tagged-annotext-devel</option>
+
+
+
+<option>tag_associated_xrefs_pre_HEAD_merge</option>
+
+
+
+<option>tag-ensemblgenomes-18-71</option>
+
+
+
+<option>tag-ensemblgenomes-16-69</option>
+
+
+
+<option>pre-merge-eg-misc-scripts</option>
+
+
+
+<option>pre-mapper-fix</option>
+
+
+
+<option>mergepoint_ensembl_all_alleles_ensembl-70-branchpoint</option>
+
+
+
+<option>mergepoint-vega-49-dev-head</option>
+
+
+
+<option>mergepoint-vega-48dev_HEAD</option>
+
+
+
+<option>mergepoint-vega-46-dev-head-1</option>
+
+
+
+<option>mergepoint-vega-46-dev-e48</option>
+
+
+
+<option>mergepoint-vega-44-dev-head-1</option>
+
+
+
+<option>mergepoint-branch-ensembl-dec09-head</option>
+
+
+
+<option>merge-eg-misc-scripts</option>
+
+
+
+<option>expression_data</option>
+
+
+
+<option>ensemblgenomes-9-62-branchpoint</option>
+
+
+
+<option>ensemblgenomes-8-61-branchpoint</option>
+
+
+
+<option>ensemblgenomes-7-60-branchpoint</option>
+
+
+
+<option>ensemblgenomes-6-59-branchpoint</option>
+
+
+
+<option>ensemblgenomes-56-branchpoint</option>
+
+
+
+<option>ensemblgenomes-5-58-branchpoint</option>
+
+
+
+<option>ensemblgenomes-4-56-branchpoint</option>
+
+
+
+<option>ensemblgenomes-12-65-branchpoint</option>
+
+
+
+<option>ensemblgenomes-11-64-branchpoint</option>
+
+
+
+<option>ensemblgenomes-10-63-branchpoint</option>
+
+
+
+<option>ensembl-magic-branchpoint</option>
+
+
+
+<option>ensembl-72-branchpoint</option>
+
+
+
+<option>ensembl-71-branchpoint</option>
+
+
+
+<option>ensembl-70-branchpoint</option>
+
+
+
+<option>ensembl-69-branchpoint</option>
+
+
+
+<option>ensembl-68-branchpoint</option>
+
+
+
+<option>ensembl-67-branchpoint</option>
+
+
+
+<option>ensembl-66-branchpoint</option>
+
+
+
+<option>ensembl-65-branchpoint</option>
+
+
+
+<option>ensembl-64-branchpoint</option>
+
+
+
+<option>ensembl-63-branchpoint</option>
+
+
+
+<option>ensembl-62-branchpoint</option>
+
+
+
+<option>ensembl-61-branchpoint</option>
+
+
+
+<option>ensembl-60-branchpoint</option>
+
+
+
+<option>ensembl-59-branchpoint</option>
+
+
+
+<option>ensembl-58-branchpoint</option>
+
+
+
+<option>ensembl-57-branchpoint</option>
+
+
+
+<option>ensembl-57-2-branchpoint</option>
+
+
+
+<option>ensembl-56-branchpoint</option>
+
+
+
+<option>ensembl-55-branchpoint</option>
+
+
+
+<option>ensembl-54-branchpoint</option>
+
+
+
+<option>ensembl-53-branchpoint</option>
+
+
+
+<option>ensembl-52-branchpoint</option>
+
+
+
+<option>ensembl-51-branchpoint</option>
+
+
+
+<option>ensembl-50-branchpoint</option>
+
+
+
+<option>ensembl-49-branchpoint</option>
+
+
+
+<option>ensembl-48-branchpoint</option>
+
+
+
+<option>ensembl-47-mp-1</option>
+
+
+
+<option>ensembl-47-mergepoint-1</option>
+
+
+
+<option>ensembl-47-branchpoint</option>
+
+
+
+<option>ensembl-46-branchpoint</option>
+
+
+
+<option>ensembl-45-branchpoint</option>
+
+
+
+<option>ensembl-44-branchpoint</option>
+
+
+
+<option>ensembl-43-branchpoint</option>
+
+
+
+<option>ensembl-42-branchpoint</option>
+
+
+
+<option>ensembl-41-mergpoint-4</option>
+
+
+
+<option>ensembl-41-branchpoint</option>
+
+
+
+<option>ensembl-40-branchpoint</option>
+
+
+
+<option>ensembl-39-branchpoint</option>
+
+
+
+<option>eg-56-branchpoint</option>
+
+
+
+<option>e70-db-portability-branchpoint</option>
+
+
+
+<option>branchpoint-vega-39-dev</option>
+
+
+
+<option>branchpoint-eg-misc-scripts</option>
+
+
+
+<option>branch-ensemblgenomes-17-70-branchpoint</option>
+
+
+
+<option>branch-1000genomes-13-69</option>
+
+
+
+<option>Root_ensembl_all_alleles</option>
+
+
+
+<option>Root_branch-ensembl-xrefconfig</option>
+
+
+
+<option>HEAD</option>
+
+
+</optgroup>
+
+</select>
+
+<input value="Set" type="submit">
+</div>
+</form>
+
+</td>
+</tr>
+</tbody></table>
+ 
+
+
+
+
+
+
+
+
+<div>
+<hr>
+
+<a name="rev1.18"></a>
+<a name="ensembl-72-branchpoint"></a>
+<a name="HEAD"></a>
+
+
+Revision <strong>1.18</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.18&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.18&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.18&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.18&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Thu May  2 08:16:16 2013 UTC</em> (4 weeks, 6 days ago) by <em>ady</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=HEAD"><strong>HEAD</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-72-branchpoint"><strong>ensembl-72-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-72"><strong>branch-ensembl-72</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.17: +2 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.17&amp;r2=1.18">previous 1.17</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">removing the foreign key from the table.sql and patch. Moved it into the foreign_keys.sql
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.17"></a>
+<a name="ensembl-68-branchpoint"></a>
+<a name="ensembl-69-branchpoint"></a>
+<a name="Root_ensembl_all_alleles"></a>
+<a name="Root_branch-ensembl-xrefconfig"></a>
+<a name="mergepoint_ensembl_all_alleles_ensembl-70-branchpoint"></a>
+<a name="tag-ensemblgenomes-16-69"></a>
+<a name="expression_data"></a>
+<a name="branch-1000genomes-13-69"></a>
+<a name="tag-ensemblgenomes-18-71"></a>
+<a name="ensembl-70-branchpoint"></a>
+<a name="branch-ensemblgenomes-17-70-branchpoint"></a>
+<a name="ensembl-71-branchpoint"></a>
+<a name="e70-db-portability-branchpoint"></a>
+
+
+Revision <strong>1.17</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.17&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.17&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.17&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.17&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Fri Jun  1 11:06:24 2012 UTC</em> (12 months ago) by <em>ady</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=Root_branch-ensembl-xrefconfig"><strong>Root_branch-ensembl-xrefconfig</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=Root_ensembl_all_alleles"><strong>Root_ensembl_all_alleles</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-1000genomes-13-69"><strong>branch-1000genomes-13-69</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-17-70-branchpoint"><strong>branch-ensemblgenomes-17-70-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=e70-db-portability-branchpoint"><strong>e70-db-portability-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-68-branchpoint"><strong>ensembl-68-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-69-branchpoint"><strong>ensembl-69-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-70-branchpoint"><strong>ensembl-70-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-71-branchpoint"><strong>ensembl-71-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=expression_data"><strong>expression_data</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint_ensembl_all_alleles_ensembl-70-branchpoint"><strong>mergepoint_ensembl_all_alleles_ensembl-70-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=tag-ensemblgenomes-16-69"><strong>tag-ensemblgenomes-16-69</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=tag-ensemblgenomes-18-71"><strong>tag-ensemblgenomes-18-71</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-e70-db-portability"><strong>branch-e70-db-portability</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-68"><strong>branch-ensembl-68</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-69"><strong>branch-ensembl-69</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-70"><strong>branch-ensembl-70</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-71"><strong>branch-ensembl-71</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-71-mapping_with_biotype"><strong>branch-ensembl-71-mapping_with_biotype</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-xrefconfig"><strong>branch-ensembl-xrefconfig</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-15-68"><strong>branch-ensemblgenomes-15-68</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-16-69"><strong>branch-ensemblgenomes-16-69</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-17-70"><strong>branch-ensemblgenomes-17-70</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-18-71"><strong>branch-ensemblgenomes-18-71</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-expression_data"><strong>branch-expression_data</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl_all_alleles"><strong>ensembl_all_alleles</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.16: +7 -4 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.16&amp;r2=1.17">previous 1.16</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">ENSCORESW-165. changes intron_supporting_evidence to allow linkage to a transcript
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.16"></a>
+<a name="merge-eg-misc-scripts"></a>
+<a name="tag_associated_xrefs_pre_HEAD_merge"></a>
+<a name="branchpoint-eg-misc-scripts"></a>
+<a name="ensembl-66-branchpoint"></a>
+<a name="pre-merge-eg-misc-scripts"></a>
+<a name="ensembl-67-branchpoint"></a>
+<a name="tagged-annotext-devel"></a>
+
+
+Revision <strong>1.16</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.16&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.16&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.16&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.16&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Mon Feb 13 16:21:58 2012 UTC</em> (15 months, 3 weeks ago) by <em>ady</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branchpoint-eg-misc-scripts"><strong>branchpoint-eg-misc-scripts</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-66-branchpoint"><strong>ensembl-66-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-67-branchpoint"><strong>ensembl-67-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=merge-eg-misc-scripts"><strong>merge-eg-misc-scripts</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=pre-merge-eg-misc-scripts"><strong>pre-merge-eg-misc-scripts</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=tag_associated_xrefs_pre_HEAD_merge"><strong>tag_associated_xrefs_pre_HEAD_merge</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=tagged-annotext-devel"><strong>tagged-annotext-devel</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-eg-misc-scripts"><strong>branch-eg-misc-scripts</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-66"><strong>branch-ensembl-66</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-67"><strong>branch-ensembl-67</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-13-66"><strong>branch-ensemblgenomes-13-66</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-14-67"><strong>branch-ensemblgenomes-14-67</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branched-annot-ext-devel"><strong>branched-annot-ext-devel</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.15: +3 -12 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.15&amp;r2=1.16">previous 1.15</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Removed stable ID foreign keys and added data file ones
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.15"></a>
+<a name="ensembl-65-branchpoint"></a>
+<a name="ensembl-64-branchpoint"></a>
+<a name="ensemblgenomes-12-65-branchpoint"></a>
+<a name="ensemblgenomes-11-64-branchpoint"></a>
+
+
+Revision <strong>1.15</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.15&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.15&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.15&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.15&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Mon Aug 22 12:54:00 2011 UTC</em> (21 months, 2 weeks ago) by <em>mk8</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-64-branchpoint"><strong>ensembl-64-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-65-branchpoint"><strong>ensembl-65-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-11-64-branchpoint"><strong>ensemblgenomes-11-64-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-12-65-branchpoint"><strong>ensemblgenomes-12-65-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-64"><strong>branch-ensembl-64</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-65"><strong>branch-ensembl-65</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-11-64"><strong>branch-ensemblgenomes-11-64</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-12-65"><strong>branch-ensemblgenomes-12-65</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.14: +14 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.14&amp;r2=1.15">previous 1.14</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added foreign keys to operon tables.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.14"></a>
+<a name="ensemblgenomes-10-63-branchpoint"></a>
+<a name="ensembl-63-branchpoint"></a>
+<a name="ensemblgenomes-7-60-branchpoint"></a>
+<a name="vega-61-1-branchpoint"></a>
+<a name="ensemblgenomes-8-61-branchpoint"></a>
+<a name="ensembl-60-branchpoint"></a>
+<a name="ensembl-61-branchpoint"></a>
+<a name="ensembl-62-branchpoint"></a>
+<a name="ensemblgenomes-9-62-branchpoint"></a>
+
+
+Revision <strong>1.14</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.14&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.14&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.14&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.14&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Fri Aug 27 13:31:10 2010 UTC</em> (2 years, 9 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-60-branchpoint"><strong>ensembl-60-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-61-branchpoint"><strong>ensembl-61-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-62-branchpoint"><strong>ensembl-62-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-63-branchpoint"><strong>ensembl-63-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-10-63-branchpoint"><strong>ensemblgenomes-10-63-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-7-60-branchpoint"><strong>ensemblgenomes-7-60-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-8-61-branchpoint"><strong>ensemblgenomes-8-61-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-9-62-branchpoint"><strong>ensemblgenomes-9-62-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-61-1-branchpoint"><strong>vega-61-1-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-60"><strong>branch-ensembl-60</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-61"><strong>branch-ensembl-61</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-62"><strong>branch-ensembl-62</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-63"><strong>branch-ensembl-63</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-10-63"><strong>branch-ensemblgenomes-10-63</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-7-60"><strong>branch-ensemblgenomes-7-60</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-8-61"><strong>branch-ensemblgenomes-8-61</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-9-62"><strong>branch-ensemblgenomes-9-62</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-61-1"><strong>branch-vega-61-1</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.13: +2 -2 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.13&amp;r2=1.14">previous 1.13</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">go_xref-&gt;ontology_xref for release 60.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.13"></a>
+<a name="ensembl-58-branchpoint"></a>
+<a name="ensemblgenomes-5-58-branchpoint"></a>
+<a name="ensembl-59-branchpoint"></a>
+<a name="vega-59-1-branchpoint"></a>
+<a name="ensemblgenomes-6-59-branchpoint"></a>
+
+
+Revision <strong>1.13</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.13&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.13&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.13&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.13&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Mon Mar  1 09:44:46 2010 UTC</em> (3 years, 3 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-58-branchpoint"><strong>ensembl-58-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-59-branchpoint"><strong>ensembl-59-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-5-58-branchpoint"><strong>ensemblgenomes-5-58-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-6-59-branchpoint"><strong>ensemblgenomes-6-59-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-59-1-branchpoint"><strong>vega-59-1-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-58"><strong>branch-ensembl-58</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-59"><strong>branch-ensembl-59</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-5-58"><strong>branch-ensemblgenomes-5-58</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-6-59"><strong>branch-ensemblgenomes-6-59</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-59-1"><strong>branch-vega-59-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=projection_genebuild_2011_07"><strong>projection_genebuild_2011_07</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.12: +23 -10 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.12&amp;r2=1.13">previous 1.12</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added new tables and columns, removed old ones (e.g. oligo_*)
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.12"></a>
+<a name="ensembl-56-branchpoint"></a>
+<a name="ensembl-57-2-branchpoint"></a>
+<a name="ensembl-57-branchpoint"></a>
+<a name="eg-56-branchpoint"></a>
+<a name="vega-55-1-branchpoint"></a>
+<a name="ensemblgenomes-56-branchpoint"></a>
+<a name="ensembl-54-branchpoint"></a>
+<a name="mergepoint-vega-49-dev-head"></a>
+<a name="mergepoint-branch-ensembl-dec09-head"></a>
+<a name="ensemblgenomes-4-56-branchpoint"></a>
+<a name="ensembl-55-branchpoint"></a>
+
+
+Revision <strong>1.12</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.12&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.12&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.12&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.12&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Thu Apr  2 13:34:41 2009 UTC</em> (4 years, 2 months ago) by <em>nj1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=eg-56-branchpoint"><strong>eg-56-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-54-branchpoint"><strong>ensembl-54-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-55-branchpoint"><strong>ensembl-55-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-56-branchpoint"><strong>ensembl-56-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-57-2-branchpoint"><strong>ensembl-57-2-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-57-branchpoint"><strong>ensembl-57-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-4-56-branchpoint"><strong>ensemblgenomes-4-56-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensemblgenomes-56-branchpoint"><strong>ensemblgenomes-56-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint-branch-ensembl-dec09-head"><strong>mergepoint-branch-ensembl-dec09-head</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint-vega-49-dev-head"><strong>mergepoint-vega-49-dev-head</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-55-1-branchpoint"><strong>vega-55-1-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=LRG"><strong>LRG</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-eg-56"><strong>branch-eg-56</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-54"><strong>branch-ensembl-54</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-55"><strong>branch-ensembl-55</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-56"><strong>branch-ensembl-56</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-57"><strong>branch-ensembl-57</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-dec09"><strong>branch-ensembl-dec09</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-4-56"><strong>branch-ensemblgenomes-4-56</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensemblgenomes-56"><strong>branch-ensemblgenomes-56</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-55-1"><strong>branch-vega-55-1</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.11: +2 -1 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.11&amp;r2=1.12">previous 1.11</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">moved analysis_id key from id_xref to oxref
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.11"></a>
+<a name="ensembl-51-branchpoint"></a>
+<a name="ensembl-53-branchpoint"></a>
+<a name="ensembl-52-branchpoint"></a>
+
+
+Revision <strong>1.11</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.11&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.11&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.11&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.11&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Fri Apr 11 15:03:49 2008 UTC</em> (5 years, 1 month ago) by <em>ak4</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-51-branchpoint"><strong>ensembl-51-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-52-branchpoint"><strong>ensembl-52-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-53-branchpoint"><strong>ensembl-53-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-51"><strong>branch-ensembl-51</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-52"><strong>branch-ensembl-52</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-53"><strong>branch-ensembl-53</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=multispecies-core-dev"><strong>multispecies-core-dev</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.10: +0 -11 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.10&amp;r2=1.11">previous 1.10</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Tables with regulatory data was dropped with 'patch_48_49_c.sql', this
+has consequences for the foreign keys-file.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.10"></a>
+<a name="vega-49-2-branchpoint"></a>
+<a name="mergepoint-vega-46-dev-head-1"></a>
+<a name="ensembl-48-branchpoint"></a>
+<a name="mergepoint-vega-48dev_HEAD"></a>
+<a name="ensembl-magic-branchpoint"></a>
+<a name="vega-48-dev-branchpoint"></a>
+<a name="ensembl-47-mp-1"></a>
+<a name="vega-49-dev-branchpoint"></a>
+<a name="ensembl-47-branchpoint"></a>
+<a name="ensembl-47-mergepoint-1"></a>
+<a name="ensembl-49-branchpoint"></a>
+<a name="ensembl-50-branchpoint"></a>
+<a name="vega-49-1-branchpoint"></a>
+<a name="mergepoint-vega-46-dev-e48"></a>
+<a name="vega-49-5-branchpoint"></a>
+<a name="vega-49-3-branchpoint"></a>
+
+
+Revision <strong>1.10</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.10&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.10&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.10&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.10&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Mon Sep 10 14:31:25 2007 UTC</em> (5 years, 8 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-47-branchpoint"><strong>ensembl-47-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-47-mergepoint-1"><strong>ensembl-47-mergepoint-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-47-mp-1"><strong>ensembl-47-mp-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-48-branchpoint"><strong>ensembl-48-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-49-branchpoint"><strong>ensembl-49-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-50-branchpoint"><strong>ensembl-50-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-magic-branchpoint"><strong>ensembl-magic-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint-vega-46-dev-e48"><strong>mergepoint-vega-46-dev-e48</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint-vega-46-dev-head-1"><strong>mergepoint-vega-46-dev-head-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint-vega-48dev_HEAD"><strong>mergepoint-vega-48dev_HEAD</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-48-dev-branchpoint"><strong>vega-48-dev-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-49-1-branchpoint"><strong>vega-49-1-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-49-2-branchpoint"><strong>vega-49-2-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-49-3-branchpoint"><strong>vega-49-3-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-49-5-branchpoint"><strong>vega-49-5-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-49-dev-branchpoint"><strong>vega-49-dev-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-47"><strong>branch-ensembl-47</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-48"><strong>branch-ensembl-48</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-49"><strong>branch-ensembl-49</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-50"><strong>branch-ensembl-50</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-50-dev"><strong>branch-ensembl-50-dev</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-magic"><strong>branch-ensembl-magic</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-48-dev"><strong>branch-vega-48-dev</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-49-1"><strong>branch-vega-49-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-49-2"><strong>branch-vega-49-2</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-49-3"><strong>branch-vega-49-3</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-49-5"><strong>branch-vega-49-5</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-49-dev"><strong>branch-vega-49-dev</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.9: +2 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.9&amp;r2=1.10">previous 1.9</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added dna_align_feature.external_db_id and protein_align_feature.external_db_id.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.9"></a>
+<a name="vega-46-1-branchpoint"></a>
+<a name="mergepoint-vega-44-dev-head-1"></a>
+<a name="vega-46-3-branchpoint"></a>
+<a name="vega-46-4-branchpoint"></a>
+<a name="vega-46-dev-branchpoint"></a>
+<a name="ensembl-46-branchpoint"></a>
+
+
+Revision <strong>1.9</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.9&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.9&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.9&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.9&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Thu Jul  5 11:09:54 2007 UTC</em> (5 years, 11 months ago) by <em>whs</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-46-branchpoint"><strong>ensembl-46-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=mergepoint-vega-44-dev-head-1"><strong>mergepoint-vega-44-dev-head-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-46-1-branchpoint"><strong>vega-46-1-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-46-3-branchpoint"><strong>vega-46-3-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-46-4-branchpoint"><strong>vega-46-4-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-46-dev-branchpoint"><strong>vega-46-dev-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-46"><strong>branch-ensembl-46</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-46-1"><strong>branch-vega-46-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-46-3"><strong>branch-vega-46-3</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-46-4"><strong>branch-vega-46-4</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-46-dev"><strong>branch-vega-46-dev</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.8: +1 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.8&amp;r2=1.9">previous 1.8</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added go_xref.source_xref_id field
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.8"></a>
+<a name="ensembl-45-branchpoint"></a>
+
+
+Revision <strong>1.8</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.8&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.8&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.8&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.8&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Mon Jun  4 11:05:01 2007 UTC</em> (6 years ago) by <em>ak4</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-45-branchpoint"><strong>ensembl-45-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-45"><strong>branch-ensembl-45</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.7: +0 -2 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.7&amp;r2=1.8">previous 1.7</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Revert the addition of a source_external_db_id field to go_xref table,
+as per email from Glenn on the core list (won't be in release 45 as it
+was not declared, but is likely to be in release 46).
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.7"></a>
+
+
+Revision <strong>1.7</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.7&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.7&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.7&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.7&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Thu May 31 09:51:44 2007 UTC</em> (6 years ago) by <em>whs</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br>Changes since <strong>1.6: +2 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.6&amp;r2=1.7">previous 1.6</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added a source_external_db_id field to go_xref table
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.6"></a>
+<a name="vega-44-branchpoint"></a>
+<a name="vega-44-2-branchpoint"></a>
+<a name="vega-44-dev-branchpoint"></a>
+<a name="vega-44-3-branchpoint"></a>
+<a name="ensembl-44-branchpoint"></a>
+
+
+Revision <strong>1.6</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.6&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.6&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.6&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.6&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Sun Mar 25 20:09:15 2007 UTC</em> (6 years, 2 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-44-branchpoint"><strong>ensembl-44-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-44-2-branchpoint"><strong>vega-44-2-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-44-3-branchpoint"><strong>vega-44-3-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-44-branchpoint"><strong>vega-44-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-44-dev-branchpoint"><strong>vega-44-dev-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-44"><strong>branch-ensembl-44</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-44"><strong>branch-vega-44</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-44-2"><strong>branch-vega-44-2</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-44-3"><strong>branch-vega-44-3</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-44-dev"><strong>branch-vega-44-dev</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.5: +3 -1 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.5&amp;r2=1.6">previous 1.5</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added marker.display_marker_synonym_id-&gt;marker_synonym
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.5"></a>
+<a name="ensembl-43-branchpoint"></a>
+<a name="vega-43-dev-branchpoint"></a>
+<a name="vega-43-branchpoint"></a>
+
+
+Revision <strong>1.5</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.5&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.5&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.5&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.5&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Fri Feb  9 09:46:46 2007 UTC</em> (6 years, 3 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-43-branchpoint"><strong>ensembl-43-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-43-branchpoint"><strong>vega-43-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-43-dev-branchpoint"><strong>vega-43-dev-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-43"><strong>branch-ensembl-43</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-43"><strong>branch-vega-43</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-43-dev"><strong>branch-vega-43-dev</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.4: +1 -1 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.4&amp;r2=1.5">previous 1.4</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Commented out unmapped_object.external_id as this is not required to be set for all types of unmapped objects.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.4"></a>
+
+
+Revision <strong>1.4</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.4&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.4&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.4&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.4&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Wed Jan  3 13:47:10 2007 UTC</em> (6 years, 5 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br>Changes since <strong>1.3: +3 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.3&amp;r2=1.4">previous 1.3</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added unconventional_transcript_association keys.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.3"></a>
+<a name="ensembl-41-mergpoint-4"></a>
+<a name="ensembl-41-branchpoint"></a>
+<a name="vega-41-branchpoint"></a>
+<a name="vega-41-1-branchpoint"></a>
+<a name="vega-41-dev-branchpoint"></a>
+<a name="ensembl-42-branchpoint"></a>
+
+
+Revision <strong>1.3</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.3&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.3&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.3&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.3&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Tue Aug 29 08:13:40 2006 UTC</em> (6 years, 9 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-41-branchpoint"><strong>ensembl-41-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-41-mergpoint-4"><strong>ensembl-41-mergpoint-4</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-42-branchpoint"><strong>ensembl-42-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-41-1-branchpoint"><strong>vega-41-1-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-41-branchpoint"><strong>vega-41-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-41-dev-branchpoint"><strong>vega-41-dev-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-41"><strong>branch-ensembl-41</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-42"><strong>branch-ensembl-42</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-41"><strong>branch-vega-41</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-41-1"><strong>branch-vega-41-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-41-dev"><strong>branch-vega-41-dev</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.2: +9 -1 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.2&amp;r2=1.3">previous 1.2</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added some missing foreign keys, and also keys for ditag tables.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.2"></a>
+<a name="ensembl-39-branchpoint"></a>
+<a name="vega-40-1-branchpoint"></a>
+<a name="pre-mapper-fix"></a>
+<a name="ensembl-40-branchpoint"></a>
+<a name="vega-39-branchpoint"></a>
+<a name="branchpoint-vega-39-dev"></a>
+<a name="vega-40-dev-branchpoint"></a>
+
+
+Revision <strong>1.2</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.2&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.2&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.2&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.2&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Wed Jun  7 13:50:19 2006 UTC</em> (6 years, 11 months ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br>CVS Tags:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branchpoint-vega-39-dev"><strong>branchpoint-vega-39-dev</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-39-branchpoint"><strong>ensembl-39-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=ensembl-40-branchpoint"><strong>ensembl-40-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=pre-mapper-fix"><strong>pre-mapper-fix</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-39-branchpoint"><strong>vega-39-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-40-1-branchpoint"><strong>vega-40-1-branchpoint</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=vega-40-dev-branchpoint"><strong>vega-40-dev-branchpoint</strong></a>
+
+
+
+<br>Branch point for:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-39"><strong>branch-ensembl-39</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-ensembl-40"><strong>branch-ensembl-40</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-39"><strong>branch-vega-39</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-39-dev"><strong>branch-vega-39-dev</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-40-1"><strong>branch-vega-40-1</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=branch-vega-40-dev"><strong>branch-vega-40-dev</strong></a>,
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=xref-new-methods"><strong>xref-new-methods</strong></a>
+
+
+
+
+
+<br>Changes since <strong>1.1: +2 -0 lines</strong>
+
+
+
+
+
+
+
+<br>Diff to <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.1&amp;r2=1.2">previous 1.1</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added stable_id_event -&gt; mapping_session link.
+</pre>
+</div>
+
+
+
+<div>
+<hr>
+
+<a name="rev1.1"></a>
+
+
+Revision <strong>1.1</strong> -
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.1&amp;root=ensembl&amp;view=markup">view</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?revision=1.1&amp;root=ensembl">download</a>)
+
+(<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?annotate=1.1&amp;root=ensembl">annotate</a>)
+
+
+
+- <a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?root=ensembl&amp;r1=1.1&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br>
+
+<em>Fri Jun  2 13:49:19 2006 UTC</em> (7 years ago) by <em>gp1</em>
+
+
+<br>Branch:
+
+<a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql?view=log&amp;root=ensembl&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Foreign key definitions for Ensembl schema. Needs InnoDB tables.
+</pre>
+</div>
+
+ 
+
+
+
+ <hr>
+<p><a name="diff"></a>
+This form allows you to request diffs between any two revisions of this file.
+For each of the two "sides" of the diff,
+
+select a symbolic revision name using the selection box, or choose
+'Use Text Field' and enter a numeric revision.
+
+</p>
+<form method="get" action="/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql" id="diff_select">
+<table class="auto" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td>&nbsp;</td>
+<td>
+<input name="root" value="ensembl" type="hidden"><input name="view" value="diff" type="hidden">
+Diffs between
+
+<select name="r1">
+<option value="text" selected="selected">Use Text Field</option>
+
+<option value="1.2:xref-new-methods">xref-new-methods</option>
+
+<option value="1.14:vega-61-1-branchpoint">vega-61-1-branchpoint</option>
+
+<option value="1.13:vega-59-1-branchpoint">vega-59-1-branchpoint</option>
+
+<option value="1.12:vega-55-1-branchpoint">vega-55-1-branchpoint</option>
+
+<option value="1.10:vega-49-dev-branchpoint">vega-49-dev-branchpoint</option>
+
+<option value="1.10:vega-49-5-branchpoint">vega-49-5-branchpoint</option>
+
+<option value="1.10:vega-49-3-branchpoint">vega-49-3-branchpoint</option>
+
+<option value="1.10:vega-49-2-branchpoint">vega-49-2-branchpoint</option>
+
+<option value="1.10:vega-49-1-branchpoint">vega-49-1-branchpoint</option>
+
+<option value="1.10:vega-48-dev-branchpoint">vega-48-dev-branchpoint</option>
+
+<option value="1.9:vega-46-dev-branchpoint">vega-46-dev-branchpoint</option>
+
+<option value="1.9:vega-46-4-branchpoint">vega-46-4-branchpoint</option>
+
+<option value="1.9:vega-46-3-branchpoint">vega-46-3-branchpoint</option>
+
+<option value="1.9:vega-46-1-branchpoint">vega-46-1-branchpoint</option>
+
+<option value="1.6:vega-44-dev-branchpoint">vega-44-dev-branchpoint</option>
+
+<option value="1.6:vega-44-branchpoint">vega-44-branchpoint</option>
+
+<option value="1.6:vega-44-3-branchpoint">vega-44-3-branchpoint</option>
+
+<option value="1.6:vega-44-2-branchpoint">vega-44-2-branchpoint</option>
+
+<option value="1.5:vega-43-dev-branchpoint">vega-43-dev-branchpoint</option>
+
+<option value="1.5:vega-43-branchpoint">vega-43-branchpoint</option>
+
+<option value="1.3:vega-41-dev-branchpoint">vega-41-dev-branchpoint</option>
+
+<option value="1.3:vega-41-branchpoint">vega-41-branchpoint</option>
+
+<option value="1.3:vega-41-1-branchpoint">vega-41-1-branchpoint</option>
+
+<option value="1.2:vega-40-dev-branchpoint">vega-40-dev-branchpoint</option>
+
+<option value="1.2:vega-40-1-branchpoint">vega-40-1-branchpoint</option>
+
+<option value="1.2:vega-39-branchpoint">vega-39-branchpoint</option>
+
+<option value="1.16:tagged-annotext-devel">tagged-annotext-devel</option>
+
+<option value="1.16:tag_associated_xrefs_pre_HEAD_merge">tag_associated_xrefs_pre_HEAD_merge</option>
+
+<option value="1.17:tag-ensemblgenomes-18-71">tag-ensemblgenomes-18-71</option>
+
+<option value="1.17:tag-ensemblgenomes-16-69">tag-ensemblgenomes-16-69</option>
+
+<option value="1.13:projection_genebuild_2011_07">projection_genebuild_2011_07</option>
+
+<option value="1.16:pre-merge-eg-misc-scripts">pre-merge-eg-misc-scripts</option>
+
+<option value="1.2:pre-mapper-fix">pre-mapper-fix</option>
+
+<option value="1.11:multispecies-core-dev">multispecies-core-dev</option>
+
+<option value="1.17:mergepoint_ensembl_all_alleles_ensembl-70-branchpoint">mergepoint_ensembl_all_alleles_ensembl-70-branchpoint</option>
+
+<option value="1.12:mergepoint-vega-49-dev-head">mergepoint-vega-49-dev-head</option>
+
+<option value="1.10:mergepoint-vega-48dev_HEAD">mergepoint-vega-48dev_HEAD</option>
+
+<option value="1.10:mergepoint-vega-46-dev-head-1">mergepoint-vega-46-dev-head-1</option>
+
+<option value="1.10:mergepoint-vega-46-dev-e48">mergepoint-vega-46-dev-e48</option>
+
+<option value="1.9:mergepoint-vega-44-dev-head-1">mergepoint-vega-44-dev-head-1</option>
+
+<option value="1.12:mergepoint-branch-ensembl-dec09-head">mergepoint-branch-ensembl-dec09-head</option>
+
+<option value="1.16:merge-eg-misc-scripts">merge-eg-misc-scripts</option>
+
+<option value="1.17:expression_data">expression_data</option>
+
+<option value="1.14:ensemblgenomes-9-62-branchpoint">ensemblgenomes-9-62-branchpoint</option>
+
+<option value="1.14:ensemblgenomes-8-61-branchpoint">ensemblgenomes-8-61-branchpoint</option>
+
+<option value="1.14:ensemblgenomes-7-60-branchpoint">ensemblgenomes-7-60-branchpoint</option>
+
+<option value="1.13:ensemblgenomes-6-59-branchpoint">ensemblgenomes-6-59-branchpoint</option>
+
+<option value="1.12:ensemblgenomes-56-branchpoint">ensemblgenomes-56-branchpoint</option>
+
+<option value="1.13:ensemblgenomes-5-58-branchpoint">ensemblgenomes-5-58-branchpoint</option>
+
+<option value="1.12:ensemblgenomes-4-56-branchpoint">ensemblgenomes-4-56-branchpoint</option>
+
+<option value="1.15:ensemblgenomes-12-65-branchpoint">ensemblgenomes-12-65-branchpoint</option>
+
+<option value="1.15:ensemblgenomes-11-64-branchpoint">ensemblgenomes-11-64-branchpoint</option>
+
+<option value="1.14:ensemblgenomes-10-63-branchpoint">ensemblgenomes-10-63-branchpoint</option>
+
+<option value="1.17:ensembl_all_alleles">ensembl_all_alleles</option>
+
+<option value="1.10:ensembl-magic-branchpoint">ensembl-magic-branchpoint</option>
+
+<option value="1.18:ensembl-72-branchpoint">ensembl-72-branchpoint</option>
+
+<option value="1.17:ensembl-71-branchpoint">ensembl-71-branchpoint</option>
+
+<option value="1.17:ensembl-70-branchpoint">ensembl-70-branchpoint</option>
+
+<option value="1.17:ensembl-69-branchpoint">ensembl-69-branchpoint</option>
+
+<option value="1.17:ensembl-68-branchpoint">ensembl-68-branchpoint</option>
+
+<option value="1.16:ensembl-67-branchpoint">ensembl-67-branchpoint</option>
+
+<option value="1.16:ensembl-66-branchpoint">ensembl-66-branchpoint</option>
+
+<option value="1.15:ensembl-65-branchpoint">ensembl-65-branchpoint</option>
+
+<option value="1.15:ensembl-64-branchpoint">ensembl-64-branchpoint</option>
+
+<option value="1.14:ensembl-63-branchpoint">ensembl-63-branchpoint</option>
+
+<option value="1.14:ensembl-62-branchpoint">ensembl-62-branchpoint</option>
+
+<option value="1.14:ensembl-61-branchpoint">ensembl-61-branchpoint</option>
+
+<option value="1.14:ensembl-60-branchpoint">ensembl-60-branchpoint</option>
+
+<option value="1.13:ensembl-59-branchpoint">ensembl-59-branchpoint</option>
+
+<option value="1.13:ensembl-58-branchpoint">ensembl-58-branchpoint</option>
+
+<option value="1.12:ensembl-57-branchpoint">ensembl-57-branchpoint</option>
+
+<option value="1.12:ensembl-57-2-branchpoint">ensembl-57-2-branchpoint</option>
+
+<option value="1.12:ensembl-56-branchpoint">ensembl-56-branchpoint</option>
+
+<option value="1.12:ensembl-55-branchpoint">ensembl-55-branchpoint</option>
+
+<option value="1.12:ensembl-54-branchpoint">ensembl-54-branchpoint</option>
+
+<option value="1.11:ensembl-53-branchpoint">ensembl-53-branchpoint</option>
+
+<option value="1.11:ensembl-52-branchpoint">ensembl-52-branchpoint</option>
+
+<option value="1.11:ensembl-51-branchpoint">ensembl-51-branchpoint</option>
+
+<option value="1.10:ensembl-50-branchpoint">ensembl-50-branchpoint</option>
+
+<option value="1.10:ensembl-49-branchpoint">ensembl-49-branchpoint</option>
+
+<option value="1.10:ensembl-48-branchpoint">ensembl-48-branchpoint</option>
+
+<option value="1.10:ensembl-47-mp-1">ensembl-47-mp-1</option>
+
+<option value="1.10:ensembl-47-mergepoint-1">ensembl-47-mergepoint-1</option>
+
+<option value="1.10:ensembl-47-branchpoint">ensembl-47-branchpoint</option>
+
+<option value="1.9:ensembl-46-branchpoint">ensembl-46-branchpoint</option>
+
+<option value="1.8:ensembl-45-branchpoint">ensembl-45-branchpoint</option>
+
+<option value="1.6:ensembl-44-branchpoint">ensembl-44-branchpoint</option>
+
+<option value="1.5:ensembl-43-branchpoint">ensembl-43-branchpoint</option>
+
+<option value="1.3:ensembl-42-branchpoint">ensembl-42-branchpoint</option>
+
+<option value="1.3:ensembl-41-mergpoint-4">ensembl-41-mergpoint-4</option>
+
+<option value="1.3:ensembl-41-branchpoint">ensembl-41-branchpoint</option>
+
+<option value="1.2:ensembl-40-branchpoint">ensembl-40-branchpoint</option>
+
+<option value="1.2:ensembl-39-branchpoint">ensembl-39-branchpoint</option>
+
+<option value="1.12:eg-56-branchpoint">eg-56-branchpoint</option>
+
+<option value="1.17:e70-db-portability-branchpoint">e70-db-portability-branchpoint</option>
+
+<option value="1.2:branchpoint-vega-39-dev">branchpoint-vega-39-dev</option>
+
+<option value="1.16:branchpoint-eg-misc-scripts">branchpoint-eg-misc-scripts</option>
+
+<option value="1.16:branched-annot-ext-devel">branched-annot-ext-devel</option>
+
+<option value="1.14:branch-vega-61-1">branch-vega-61-1</option>
+
+<option value="1.13:branch-vega-59-1">branch-vega-59-1</option>
+
+<option value="1.12:branch-vega-55-1">branch-vega-55-1</option>
+
+<option value="1.10:branch-vega-49-dev">branch-vega-49-dev</option>
+
+<option value="1.10:branch-vega-49-5">branch-vega-49-5</option>
+
+<option value="1.10:branch-vega-49-3">branch-vega-49-3</option>
+
+<option value="1.10:branch-vega-49-2">branch-vega-49-2</option>
+
+<option value="1.10:branch-vega-49-1">branch-vega-49-1</option>
+
+<option value="1.10:branch-vega-48-dev">branch-vega-48-dev</option>
+
+<option value="1.9:branch-vega-46-dev">branch-vega-46-dev</option>
+
+<option value="1.9:branch-vega-46-4">branch-vega-46-4</option>
+
+<option value="1.9:branch-vega-46-3">branch-vega-46-3</option>
+
+<option value="1.9:branch-vega-46-1">branch-vega-46-1</option>
+
+<option value="1.6:branch-vega-44-dev">branch-vega-44-dev</option>
+
+<option value="1.6:branch-vega-44-3">branch-vega-44-3</option>
+
+<option value="1.6:branch-vega-44-2">branch-vega-44-2</option>
+
+<option value="1.6:branch-vega-44">branch-vega-44</option>
+
+<option value="1.5:branch-vega-43-dev">branch-vega-43-dev</option>
+
+<option value="1.5:branch-vega-43">branch-vega-43</option>
+
+<option value="1.3:branch-vega-41-dev">branch-vega-41-dev</option>
+
+<option value="1.3:branch-vega-41-1">branch-vega-41-1</option>
+
+<option value="1.3:branch-vega-41">branch-vega-41</option>
+
+<option value="1.2:branch-vega-40-dev">branch-vega-40-dev</option>
+
+<option value="1.2:branch-vega-40-1">branch-vega-40-1</option>
+
+<option value="1.2:branch-vega-39-dev">branch-vega-39-dev</option>
+
+<option value="1.2:branch-vega-39">branch-vega-39</option>
+
+<option value="1.17:branch-expression_data">branch-expression_data</option>
+
+<option value="1.14:branch-ensemblgenomes-9-62">branch-ensemblgenomes-9-62</option>
+
+<option value="1.14:branch-ensemblgenomes-8-61">branch-ensemblgenomes-8-61</option>
+
+<option value="1.14:branch-ensemblgenomes-7-60">branch-ensemblgenomes-7-60</option>
+
+<option value="1.13:branch-ensemblgenomes-6-59">branch-ensemblgenomes-6-59</option>
+
+<option value="1.12:branch-ensemblgenomes-56">branch-ensemblgenomes-56</option>
+
+<option value="1.13:branch-ensemblgenomes-5-58">branch-ensemblgenomes-5-58</option>
+
+<option value="1.12:branch-ensemblgenomes-4-56">branch-ensemblgenomes-4-56</option>
+
+<option value="1.17:branch-ensemblgenomes-18-71">branch-ensemblgenomes-18-71</option>
+
+<option value="1.17:branch-ensemblgenomes-17-70-branchpoint">branch-ensemblgenomes-17-70-branchpoint</option>
+
+<option value="1.17:branch-ensemblgenomes-17-70">branch-ensemblgenomes-17-70</option>
+
+<option value="1.17:branch-ensemblgenomes-16-69">branch-ensemblgenomes-16-69</option>
+
+<option value="1.17:branch-ensemblgenomes-15-68">branch-ensemblgenomes-15-68</option>
+
+<option value="1.16:branch-ensemblgenomes-14-67">branch-ensemblgenomes-14-67</option>
+
+<option value="1.16:branch-ensemblgenomes-13-66">branch-ensemblgenomes-13-66</option>
+
+<option value="1.15:branch-ensemblgenomes-12-65">branch-ensemblgenomes-12-65</option>
+
+<option value="1.15:branch-ensemblgenomes-11-64">branch-ensemblgenomes-11-64</option>
+
+<option value="1.14:branch-ensemblgenomes-10-63">branch-ensemblgenomes-10-63</option>
+
+<option value="1.17:branch-ensembl-xrefconfig">branch-ensembl-xrefconfig</option>
+
+<option value="1.10:branch-ensembl-magic">branch-ensembl-magic</option>
+
+<option value="1.12:branch-ensembl-dec09">branch-ensembl-dec09</option>
+
+<option value="1.18:branch-ensembl-72">branch-ensembl-72</option>
+
+<option value="1.17:branch-ensembl-71-mapping_with_biotype">branch-ensembl-71-mapping_with_biotype</option>
+
+<option value="1.17:branch-ensembl-71">branch-ensembl-71</option>
+
+<option value="1.17:branch-ensembl-70">branch-ensembl-70</option>
+
+<option value="1.17:branch-ensembl-69">branch-ensembl-69</option>
+
+<option value="1.17:branch-ensembl-68">branch-ensembl-68</option>
+
+<option value="1.16:branch-ensembl-67">branch-ensembl-67</option>
+
+<option value="1.16:branch-ensembl-66">branch-ensembl-66</option>
+
+<option value="1.15:branch-ensembl-65">branch-ensembl-65</option>
+
+<option value="1.15:branch-ensembl-64">branch-ensembl-64</option>
+
+<option value="1.14:branch-ensembl-63">branch-ensembl-63</option>
+
+<option value="1.14:branch-ensembl-62">branch-ensembl-62</option>
+
+<option value="1.14:branch-ensembl-61">branch-ensembl-61</option>
+
+<option value="1.14:branch-ensembl-60">branch-ensembl-60</option>
+
+<option value="1.13:branch-ensembl-59">branch-ensembl-59</option>
+
+<option value="1.13:branch-ensembl-58">branch-ensembl-58</option>
+
+<option value="1.12:branch-ensembl-57">branch-ensembl-57</option>
+
+<option value="1.12:branch-ensembl-56">branch-ensembl-56</option>
+
+<option value="1.12:branch-ensembl-55">branch-ensembl-55</option>
+
+<option value="1.12:branch-ensembl-54">branch-ensembl-54</option>
+
+<option value="1.11:branch-ensembl-53">branch-ensembl-53</option>
+
+<option value="1.11:branch-ensembl-52">branch-ensembl-52</option>
+
+<option value="1.11:branch-ensembl-51">branch-ensembl-51</option>
+
+<option value="1.10:branch-ensembl-50-dev">branch-ensembl-50-dev</option>
+
+<option value="1.10:branch-ensembl-50">branch-ensembl-50</option>
+
+<option value="1.10:branch-ensembl-49">branch-ensembl-49</option>
+
+<option value="1.10:branch-ensembl-48">branch-ensembl-48</option>
+
+<option value="1.10:branch-ensembl-47">branch-ensembl-47</option>
+
+<option value="1.9:branch-ensembl-46">branch-ensembl-46</option>
+
+<option value="1.8:branch-ensembl-45">branch-ensembl-45</option>
+
+<option value="1.6:branch-ensembl-44">branch-ensembl-44</option>
+
+<option value="1.5:branch-ensembl-43">branch-ensembl-43</option>
+
+<option value="1.3:branch-ensembl-42">branch-ensembl-42</option>
+
+<option value="1.3:branch-ensembl-41">branch-ensembl-41</option>
+
+<option value="1.2:branch-ensembl-40">branch-ensembl-40</option>
+
+<option value="1.2:branch-ensembl-39">branch-ensembl-39</option>
+
+<option value="1.16:branch-eg-misc-scripts">branch-eg-misc-scripts</option>
+
+<option value="1.12:branch-eg-56">branch-eg-56</option>
+
+<option value="1.17:branch-e70-db-portability">branch-e70-db-portability</option>
+
+<option value="1.17:branch-1000genomes-13-69">branch-1000genomes-13-69</option>
+
+<option value="1.17:Root_ensembl_all_alleles">Root_ensembl_all_alleles</option>
+
+<option value="1.17:Root_branch-ensembl-xrefconfig">Root_branch-ensembl-xrefconfig</option>
+
+<option value="1.18:MAIN">MAIN</option>
+
+<option value="1.12:LRG">LRG</option>
+
+<option value="1.18:HEAD">HEAD</option>
+
+</select>
+<input size="12" name="tr1" value="1.18" onchange="document.getElementById('diff_select').r1.selectedIndex=0" type="text">
+
+and
+
+<select name="r2">
+<option value="text" selected="selected">Use Text Field</option>
+
+<option value="1.2:xref-new-methods">xref-new-methods</option>
+
+<option value="1.14:vega-61-1-branchpoint">vega-61-1-branchpoint</option>
+
+<option value="1.13:vega-59-1-branchpoint">vega-59-1-branchpoint</option>
+
+<option value="1.12:vega-55-1-branchpoint">vega-55-1-branchpoint</option>
+
+<option value="1.10:vega-49-dev-branchpoint">vega-49-dev-branchpoint</option>
+
+<option value="1.10:vega-49-5-branchpoint">vega-49-5-branchpoint</option>
+
+<option value="1.10:vega-49-3-branchpoint">vega-49-3-branchpoint</option>
+
+<option value="1.10:vega-49-2-branchpoint">vega-49-2-branchpoint</option>
+
+<option value="1.10:vega-49-1-branchpoint">vega-49-1-branchpoint</option>
+
+<option value="1.10:vega-48-dev-branchpoint">vega-48-dev-branchpoint</option>
+
+<option value="1.9:vega-46-dev-branchpoint">vega-46-dev-branchpoint</option>
+
+<option value="1.9:vega-46-4-branchpoint">vega-46-4-branchpoint</option>
+
+<option value="1.9:vega-46-3-branchpoint">vega-46-3-branchpoint</option>
+
+<option value="1.9:vega-46-1-branchpoint">vega-46-1-branchpoint</option>
+
+<option value="1.6:vega-44-dev-branchpoint">vega-44-dev-branchpoint</option>
+
+<option value="1.6:vega-44-branchpoint">vega-44-branchpoint</option>
+
+<option value="1.6:vega-44-3-branchpoint">vega-44-3-branchpoint</option>
+
+<option value="1.6:vega-44-2-branchpoint">vega-44-2-branchpoint</option>
+
+<option value="1.5:vega-43-dev-branchpoint">vega-43-dev-branchpoint</option>
+
+<option value="1.5:vega-43-branchpoint">vega-43-branchpoint</option>
+
+<option value="1.3:vega-41-dev-branchpoint">vega-41-dev-branchpoint</option>
+
+<option value="1.3:vega-41-branchpoint">vega-41-branchpoint</option>
+
+<option value="1.3:vega-41-1-branchpoint">vega-41-1-branchpoint</option>
+
+<option value="1.2:vega-40-dev-branchpoint">vega-40-dev-branchpoint</option>
+
+<option value="1.2:vega-40-1-branchpoint">vega-40-1-branchpoint</option>
+
+<option value="1.2:vega-39-branchpoint">vega-39-branchpoint</option>
+
+<option value="1.16:tagged-annotext-devel">tagged-annotext-devel</option>
+
+<option value="1.16:tag_associated_xrefs_pre_HEAD_merge">tag_associated_xrefs_pre_HEAD_merge</option>
+
+<option value="1.17:tag-ensemblgenomes-18-71">tag-ensemblgenomes-18-71</option>
+
+<option value="1.17:tag-ensemblgenomes-16-69">tag-ensemblgenomes-16-69</option>
+
+<option value="1.13:projection_genebuild_2011_07">projection_genebuild_2011_07</option>
+
+<option value="1.16:pre-merge-eg-misc-scripts">pre-merge-eg-misc-scripts</option>
+
+<option value="1.2:pre-mapper-fix">pre-mapper-fix</option>
+
+<option value="1.11:multispecies-core-dev">multispecies-core-dev</option>
+
+<option value="1.17:mergepoint_ensembl_all_alleles_ensembl-70-branchpoint">mergepoint_ensembl_all_alleles_ensembl-70-branchpoint</option>
+
+<option value="1.12:mergepoint-vega-49-dev-head">mergepoint-vega-49-dev-head</option>
+
+<option value="1.10:mergepoint-vega-48dev_HEAD">mergepoint-vega-48dev_HEAD</option>
+
+<option value="1.10:mergepoint-vega-46-dev-head-1">mergepoint-vega-46-dev-head-1</option>
+
+<option value="1.10:mergepoint-vega-46-dev-e48">mergepoint-vega-46-dev-e48</option>
+
+<option value="1.9:mergepoint-vega-44-dev-head-1">mergepoint-vega-44-dev-head-1</option>
+
+<option value="1.12:mergepoint-branch-ensembl-dec09-head">mergepoint-branch-ensembl-dec09-head</option>
+
+<option value="1.16:merge-eg-misc-scripts">merge-eg-misc-scripts</option>
+
+<option value="1.17:expression_data">expression_data</option>
+
+<option value="1.14:ensemblgenomes-9-62-branchpoint">ensemblgenomes-9-62-branchpoint</option>
+
+<option value="1.14:ensemblgenomes-8-61-branchpoint">ensemblgenomes-8-61-branchpoint</option>
+
+<option value="1.14:ensemblgenomes-7-60-branchpoint">ensemblgenomes-7-60-branchpoint</option>
+
+<option value="1.13:ensemblgenomes-6-59-branchpoint">ensemblgenomes-6-59-branchpoint</option>
+
+<option value="1.12:ensemblgenomes-56-branchpoint">ensemblgenomes-56-branchpoint</option>
+
+<option value="1.13:ensemblgenomes-5-58-branchpoint">ensemblgenomes-5-58-branchpoint</option>
+
+<option value="1.12:ensemblgenomes-4-56-branchpoint">ensemblgenomes-4-56-branchpoint</option>
+
+<option value="1.15:ensemblgenomes-12-65-branchpoint">ensemblgenomes-12-65-branchpoint</option>
+
+<option value="1.15:ensemblgenomes-11-64-branchpoint">ensemblgenomes-11-64-branchpoint</option>
+
+<option value="1.14:ensemblgenomes-10-63-branchpoint">ensemblgenomes-10-63-branchpoint</option>
+
+<option value="1.17:ensembl_all_alleles">ensembl_all_alleles</option>
+
+<option value="1.10:ensembl-magic-branchpoint">ensembl-magic-branchpoint</option>
+
+<option value="1.18:ensembl-72-branchpoint">ensembl-72-branchpoint</option>
+
+<option value="1.17:ensembl-71-branchpoint">ensembl-71-branchpoint</option>
+
+<option value="1.17:ensembl-70-branchpoint">ensembl-70-branchpoint</option>
+
+<option value="1.17:ensembl-69-branchpoint">ensembl-69-branchpoint</option>
+
+<option value="1.17:ensembl-68-branchpoint">ensembl-68-branchpoint</option>
+
+<option value="1.16:ensembl-67-branchpoint">ensembl-67-branchpoint</option>
+
+<option value="1.16:ensembl-66-branchpoint">ensembl-66-branchpoint</option>
+
+<option value="1.15:ensembl-65-branchpoint">ensembl-65-branchpoint</option>
+
+<option value="1.15:ensembl-64-branchpoint">ensembl-64-branchpoint</option>
+
+<option value="1.14:ensembl-63-branchpoint">ensembl-63-branchpoint</option>
+
+<option value="1.14:ensembl-62-branchpoint">ensembl-62-branchpoint</option>
+
+<option value="1.14:ensembl-61-branchpoint">ensembl-61-branchpoint</option>
+
+<option value="1.14:ensembl-60-branchpoint">ensembl-60-branchpoint</option>
+
+<option value="1.13:ensembl-59-branchpoint">ensembl-59-branchpoint</option>
+
+<option value="1.13:ensembl-58-branchpoint">ensembl-58-branchpoint</option>
+
+<option value="1.12:ensembl-57-branchpoint">ensembl-57-branchpoint</option>
+
+<option value="1.12:ensembl-57-2-branchpoint">ensembl-57-2-branchpoint</option>
+
+<option value="1.12:ensembl-56-branchpoint">ensembl-56-branchpoint</option>
+
+<option value="1.12:ensembl-55-branchpoint">ensembl-55-branchpoint</option>
+
+<option value="1.12:ensembl-54-branchpoint">ensembl-54-branchpoint</option>
+
+<option value="1.11:ensembl-53-branchpoint">ensembl-53-branchpoint</option>
+
+<option value="1.11:ensembl-52-branchpoint">ensembl-52-branchpoint</option>
+
+<option value="1.11:ensembl-51-branchpoint">ensembl-51-branchpoint</option>
+
+<option value="1.10:ensembl-50-branchpoint">ensembl-50-branchpoint</option>
+
+<option value="1.10:ensembl-49-branchpoint">ensembl-49-branchpoint</option>
+
+<option value="1.10:ensembl-48-branchpoint">ensembl-48-branchpoint</option>
+
+<option value="1.10:ensembl-47-mp-1">ensembl-47-mp-1</option>
+
+<option value="1.10:ensembl-47-mergepoint-1">ensembl-47-mergepoint-1</option>
+
+<option value="1.10:ensembl-47-branchpoint">ensembl-47-branchpoint</option>
+
+<option value="1.9:ensembl-46-branchpoint">ensembl-46-branchpoint</option>
+
+<option value="1.8:ensembl-45-branchpoint">ensembl-45-branchpoint</option>
+
+<option value="1.6:ensembl-44-branchpoint">ensembl-44-branchpoint</option>
+
+<option value="1.5:ensembl-43-branchpoint">ensembl-43-branchpoint</option>
+
+<option value="1.3:ensembl-42-branchpoint">ensembl-42-branchpoint</option>
+
+<option value="1.3:ensembl-41-mergpoint-4">ensembl-41-mergpoint-4</option>
+
+<option value="1.3:ensembl-41-branchpoint">ensembl-41-branchpoint</option>
+
+<option value="1.2:ensembl-40-branchpoint">ensembl-40-branchpoint</option>
+
+<option value="1.2:ensembl-39-branchpoint">ensembl-39-branchpoint</option>
+
+<option value="1.12:eg-56-branchpoint">eg-56-branchpoint</option>
+
+<option value="1.17:e70-db-portability-branchpoint">e70-db-portability-branchpoint</option>
+
+<option value="1.2:branchpoint-vega-39-dev">branchpoint-vega-39-dev</option>
+
+<option value="1.16:branchpoint-eg-misc-scripts">branchpoint-eg-misc-scripts</option>
+
+<option value="1.16:branched-annot-ext-devel">branched-annot-ext-devel</option>
+
+<option value="1.14:branch-vega-61-1">branch-vega-61-1</option>
+
+<option value="1.13:branch-vega-59-1">branch-vega-59-1</option>
+
+<option value="1.12:branch-vega-55-1">branch-vega-55-1</option>
+
+<option value="1.10:branch-vega-49-dev">branch-vega-49-dev</option>
+
+<option value="1.10:branch-vega-49-5">branch-vega-49-5</option>
+
+<option value="1.10:branch-vega-49-3">branch-vega-49-3</option>
+
+<option value="1.10:branch-vega-49-2">branch-vega-49-2</option>
+
+<option value="1.10:branch-vega-49-1">branch-vega-49-1</option>
+
+<option value="1.10:branch-vega-48-dev">branch-vega-48-dev</option>
+
+<option value="1.9:branch-vega-46-dev">branch-vega-46-dev</option>
+
+<option value="1.9:branch-vega-46-4">branch-vega-46-4</option>
+
+<option value="1.9:branch-vega-46-3">branch-vega-46-3</option>
+
+<option value="1.9:branch-vega-46-1">branch-vega-46-1</option>
+
+<option value="1.6:branch-vega-44-dev">branch-vega-44-dev</option>
+
+<option value="1.6:branch-vega-44-3">branch-vega-44-3</option>
+
+<option value="1.6:branch-vega-44-2">branch-vega-44-2</option>
+
+<option value="1.6:branch-vega-44">branch-vega-44</option>
+
+<option value="1.5:branch-vega-43-dev">branch-vega-43-dev</option>
+
+<option value="1.5:branch-vega-43">branch-vega-43</option>
+
+<option value="1.3:branch-vega-41-dev">branch-vega-41-dev</option>
+
+<option value="1.3:branch-vega-41-1">branch-vega-41-1</option>
+
+<option value="1.3:branch-vega-41">branch-vega-41</option>
+
+<option value="1.2:branch-vega-40-dev">branch-vega-40-dev</option>
+
+<option value="1.2:branch-vega-40-1">branch-vega-40-1</option>
+
+<option value="1.2:branch-vega-39-dev">branch-vega-39-dev</option>
+
+<option value="1.2:branch-vega-39">branch-vega-39</option>
+
+<option value="1.17:branch-expression_data">branch-expression_data</option>
+
+<option value="1.14:branch-ensemblgenomes-9-62">branch-ensemblgenomes-9-62</option>
+
+<option value="1.14:branch-ensemblgenomes-8-61">branch-ensemblgenomes-8-61</option>
+
+<option value="1.14:branch-ensemblgenomes-7-60">branch-ensemblgenomes-7-60</option>
+
+<option value="1.13:branch-ensemblgenomes-6-59">branch-ensemblgenomes-6-59</option>
+
+<option value="1.12:branch-ensemblgenomes-56">branch-ensemblgenomes-56</option>
+
+<option value="1.13:branch-ensemblgenomes-5-58">branch-ensemblgenomes-5-58</option>
+
+<option value="1.12:branch-ensemblgenomes-4-56">branch-ensemblgenomes-4-56</option>
+
+<option value="1.17:branch-ensemblgenomes-18-71">branch-ensemblgenomes-18-71</option>
+
+<option value="1.17:branch-ensemblgenomes-17-70-branchpoint">branch-ensemblgenomes-17-70-branchpoint</option>
+
+<option value="1.17:branch-ensemblgenomes-17-70">branch-ensemblgenomes-17-70</option>
+
+<option value="1.17:branch-ensemblgenomes-16-69">branch-ensemblgenomes-16-69</option>
+
+<option value="1.17:branch-ensemblgenomes-15-68">branch-ensemblgenomes-15-68</option>
+
+<option value="1.16:branch-ensemblgenomes-14-67">branch-ensemblgenomes-14-67</option>
+
+<option value="1.16:branch-ensemblgenomes-13-66">branch-ensemblgenomes-13-66</option>
+
+<option value="1.15:branch-ensemblgenomes-12-65">branch-ensemblgenomes-12-65</option>
+
+<option value="1.15:branch-ensemblgenomes-11-64">branch-ensemblgenomes-11-64</option>
+
+<option value="1.14:branch-ensemblgenomes-10-63">branch-ensemblgenomes-10-63</option>
+
+<option value="1.17:branch-ensembl-xrefconfig">branch-ensembl-xrefconfig</option>
+
+<option value="1.10:branch-ensembl-magic">branch-ensembl-magic</option>
+
+<option value="1.12:branch-ensembl-dec09">branch-ensembl-dec09</option>
+
+<option value="1.18:branch-ensembl-72">branch-ensembl-72</option>
+
+<option value="1.17:branch-ensembl-71-mapping_with_biotype">branch-ensembl-71-mapping_with_biotype</option>
+
+<option value="1.17:branch-ensembl-71">branch-ensembl-71</option>
+
+<option value="1.17:branch-ensembl-70">branch-ensembl-70</option>
+
+<option value="1.17:branch-ensembl-69">branch-ensembl-69</option>
+
+<option value="1.17:branch-ensembl-68">branch-ensembl-68</option>
+
+<option value="1.16:branch-ensembl-67">branch-ensembl-67</option>
+
+<option value="1.16:branch-ensembl-66">branch-ensembl-66</option>
+
+<option value="1.15:branch-ensembl-65">branch-ensembl-65</option>
+
+<option value="1.15:branch-ensembl-64">branch-ensembl-64</option>
+
+<option value="1.14:branch-ensembl-63">branch-ensembl-63</option>
+
+<option value="1.14:branch-ensembl-62">branch-ensembl-62</option>
+
+<option value="1.14:branch-ensembl-61">branch-ensembl-61</option>
+
+<option value="1.14:branch-ensembl-60">branch-ensembl-60</option>
+
+<option value="1.13:branch-ensembl-59">branch-ensembl-59</option>
+
+<option value="1.13:branch-ensembl-58">branch-ensembl-58</option>
+
+<option value="1.12:branch-ensembl-57">branch-ensembl-57</option>
+
+<option value="1.12:branch-ensembl-56">branch-ensembl-56</option>
+
+<option value="1.12:branch-ensembl-55">branch-ensembl-55</option>
+
+<option value="1.12:branch-ensembl-54">branch-ensembl-54</option>
+
+<option value="1.11:branch-ensembl-53">branch-ensembl-53</option>
+
+<option value="1.11:branch-ensembl-52">branch-ensembl-52</option>
+
+<option value="1.11:branch-ensembl-51">branch-ensembl-51</option>
+
+<option value="1.10:branch-ensembl-50-dev">branch-ensembl-50-dev</option>
+
+<option value="1.10:branch-ensembl-50">branch-ensembl-50</option>
+
+<option value="1.10:branch-ensembl-49">branch-ensembl-49</option>
+
+<option value="1.10:branch-ensembl-48">branch-ensembl-48</option>
+
+<option value="1.10:branch-ensembl-47">branch-ensembl-47</option>
+
+<option value="1.9:branch-ensembl-46">branch-ensembl-46</option>
+
+<option value="1.8:branch-ensembl-45">branch-ensembl-45</option>
+
+<option value="1.6:branch-ensembl-44">branch-ensembl-44</option>
+
+<option value="1.5:branch-ensembl-43">branch-ensembl-43</option>
+
+<option value="1.3:branch-ensembl-42">branch-ensembl-42</option>
+
+<option value="1.3:branch-ensembl-41">branch-ensembl-41</option>
+
+<option value="1.2:branch-ensembl-40">branch-ensembl-40</option>
+
+<option value="1.2:branch-ensembl-39">branch-ensembl-39</option>
+
+<option value="1.16:branch-eg-misc-scripts">branch-eg-misc-scripts</option>
+
+<option value="1.12:branch-eg-56">branch-eg-56</option>
+
+<option value="1.17:branch-e70-db-portability">branch-e70-db-portability</option>
+
+<option value="1.17:branch-1000genomes-13-69">branch-1000genomes-13-69</option>
+
+<option value="1.17:Root_ensembl_all_alleles">Root_ensembl_all_alleles</option>
+
+<option value="1.17:Root_branch-ensembl-xrefconfig">Root_branch-ensembl-xrefconfig</option>
+
+<option value="1.18:MAIN">MAIN</option>
+
+<option value="1.12:LRG">LRG</option>
+
+<option value="1.18:HEAD">HEAD</option>
+
+</select>
+<input size="12" name="tr2" value="1.1" onchange="document.getElementById('diff_select').r2.selectedIndex=0" type="text">
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+Type of Diff should be a
+<select name="diff_format" onchange="submit()">
+<option value="h" selected="selected">Colored Diff</option>
+<option value="l">Long Colored Diff</option>
+<option value="u">Unidiff</option>
+<option value="c">Context Diff</option>
+<option value="s">Side by Side</option>
+</select>
+<input value=" Get Diffs " type="submit">
+</td>
+</tr>
+</tbody></table>
+</form>
+
+
+<form method="get" action="/cgi-bin/viewvc.cgi/ensembl/sql/foreign_keys.sql">
+<div>
+<hr>
+<a name="logsort"></a>
+<input name="root" value="ensembl" type="hidden"><input name="view" value="log" type="hidden">
+Sort log by:
+<select name="logsort" onchange="submit()">
+<option value="cvs">Not sorted</option>
+<option value="date" selected="selected">Commit date</option>
+<option value="rev">Revision</option>
+</select>
+<input value=" Sort " type="submit">
+</div>
+</form>
+
+
+<hr>
+<table>
+<tbody><tr>
+<td><address><a href="mailto:syshelp@sanger.ac.uk">Sanger Helpdesk</a></address><br><p><a href="http://cvs.sanger.ac.uk/cvs.users.shtml">Instructions for use of the Sanger External CVS server</a></p></td>
+<td style="text-align: right;"><strong><a href="http://cvs.sanger.ac.uk/cgi-bin/viewvc.cgi/*docroot*/help_log.html">ViewVC Help</a></strong></td>
+</tr>
+<tr>
+<td>Powered by <a href="http://viewvc.tigris.org/">ViewVC 1.0.5</a></td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+_userv=0;
+urchinTracker();
+</script>
+
+
+
+
+</body></html>
