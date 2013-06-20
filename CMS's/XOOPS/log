@@ -1,0 +1,746 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- ViewVC :: http://www.viewvc.org/ -->
+<head>
+<title>SourceForge.net Repository - [xoops] Log of /XoopsCore/trunk/htdocs/install/sql/mysql.data.sql</title>
+<meta name="generator" content="ViewVC 1.1.6" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The world's largest development and download repository of Open Source code and applications" />
+<meta name="keywords" content="Open Source, Development, Developers, Projects, Downloads, OSTG, VA Software, SF.net, SourceForge" />
+<title>SourceForge.net Repository - xoops Index of /</title>
+<link rel="shortcut icon" href="http://a.fsdn.com/con/img/favicon.ico" />
+<link rel="stylesheet" href="/viewvc-static/styles.css" type="text/css" />
+<style type="text/css">
+#doc3 { max-width: 1000px; margin: 0 auto; }
+#hd .logo {
+background: url("http://a.fsdn.com/sf/images/phoneix/sf_phoneix.png") no-repeat;
+color: transparent;
+display: inline-block;
+height: 36px;
+}
+#hd .search { display: none; }
+#breadcrumbs { margin-bottom: 1em; }
+#fad83 { float: right; }
+#yui-main { min-height: 100px; }
+#ft .yui-u { display: inline-block; margin-right: 2em; }
+</style>
+
+<!-- BEGIN: AdSolution-Tag 4.2: Global-Code [PLACE IN HTML-HEAD-AREA!] -->
+<!-- DoubleClick Random Number -->
+<script language="JavaScript" type="text/javascript">
+dfp_ord=Math.random()*10000000000000000;
+dfp_tile = 1;
+</script>
+<!-- End DoubleClick Random Number -->
+<script type="text/javascript">
+var google_page_url = 'http://sourceforge.net/projects/xoops/';
+var sourceforge_project_name = 'xoops';
+var sourceforge_project_description = '';
+</script>
+<!-- END: AdSolution-Tag 4.2: Global-Code -->
+<!-- after META tags -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-32013-37']);
+_gaq.push(['_setDomainName', '.sourceforge.net']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['t2._setAccount', 'UA-36130941-4']);
+_gaq.push(['t2._setDomainName', '.sourceforge.net']);
+_gaq.push(['t2._trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+<body class="short-head">
+<!--[if IE 7]><div id="ie7only"><![endif]-->
+<!--[if IE 6]><div id="ie6only"><![endif]-->
+<!--[if IE]><div id="ieonly"><![endif]-->
+<div id="doc3">
+<div id="hd">
+<div class="yui-b">
+<div class="yui-gc">
+<div class="yui-u first">
+<a href="http://sourceforge.net/" class="logo">Find and develop open source software</a>
+</div>
+<div class="yui-u">
+<div class="search">
+<form action="http://sourceforge.net/search/" method="get" name="searchform" id="searchform">
+<input type="hidden" name="type_of_search" value="soft" />
+<input type="text" class="text clear hint" name="words" id="words" value="enter keyword" />
+<span class="yui-button yui-push-button default"><span class="first-child"><button type="submit" value="Search">Search</button></span></span>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="bd" class="inner-bd">
+<div id="doc4" class="yui-t6">
+<div id="breadcrumbs">
+
+<a href="http://sourceforge.net/">SourceForge.net</a>
+&gt; <a href="http://sourceforge.net/softwaremap/">Find Software</a>
+&gt; <a href="http://sourceforge.net/projects/xoops/">xoops</a>
+&gt; SCM Repositories
+
+
+<a href="/viewvc/xoops/">
+
+
+&gt; xoops
+
+
+</a>
+
+
+
+<a href="/viewvc/xoops/XoopsCore/">
+
+
+&gt; XoopsCore
+
+
+</a>
+
+
+
+<a href="/viewvc/xoops/XoopsCore/trunk/">
+
+
+&gt; trunk
+
+
+</a>
+
+
+
+<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/">
+
+
+&gt; htdocs
+
+
+</a>
+
+
+
+<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/">
+
+
+&gt; install
+
+
+</a>
+
+
+
+<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/">
+
+
+&gt; sql
+
+
+</a>
+
+
+
+
+&gt; mysql.data.sql
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="project_nav_container">
+<small><div>
+
+<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/"><img src="/viewvc-static/images/back_small.png" width="16" height="16" alt="Parent Directory" /> Parent Directory</a>
+
+| <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?view=log"><img src="/viewvc-static/images/log.png" width="16" height="16" alt="Revision Log" /> Revision Log</a>
+
+
+
+
+</div>
+</small>
+<h1>SCM Repositories - <a href="http://sourceforge.net/projects/xoops">xoops</a></h1>
+</div>
+<hr class="clear">
+<div class="yui-b">
+<div id="fad83">
+<!-- DoubleClick Ad Tag -->
+<script type="text/javascript">
+//<![CDATA[
+document.write('<script src="http://ad.doubleclick.net/adj/ostg.sourceforge/pg_viewvc_p88_shortrec;pg=viewvc;tile='+dfp_tile+';tpc=xoops;ord='+dfp_ord+';sz=1x1?" type="text/javascript"><\/script>');
+dfp_tile++;
+//]]>
+</script>
+<!-- End DoubleClick Ad Tag -->
+</div>
+</div>
+<div id="yui-main">
+<div class="yui-b sfBox">
+<table class="auto">
+
+
+
+<tr>
+<td>Links to HEAD:</td>
+<td>
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=10228&amp;view=markup">view</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=10228">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=10228&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=10228">annotate</a>)
+mime-type: text/x-sql
+</td>
+</tr>
+
+
+
+<tr>
+<td>Sticky Revision:</td>
+<td><form method="get" action="/viewvc/xoops" style="display: inline">
+<div style="display: inline">
+<input type="hidden" name="orig_pathtype" value="FILE"/><input type="hidden" name="orig_view" value="log"/><input type="hidden" name="orig_path" value="XoopsCore/trunk/htdocs/install/sql/mysql.data.sql"/><input type="hidden" name="view" value="redirect_pathrev"/>
+
+<input type="text" name="pathrev" value="" size="6"/>
+
+<input type="submit" value="Set" />
+</div>
+</form>
+
+</td>
+</tr>
+</table>
+ 
+
+
+</div>
+</div>
+<hr class="clear">
+<div>
+
+
+
+
+
+
+<div>
+<hr />
+
+<a name="rev3616"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=3616"><strong>3616</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3616&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3616">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3616&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=3616">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3616&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep 10 20:39:31 2009 UTC</em>
+(3 years, 8 months ago)
+by <em>trabis</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 3940 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3397&amp;r2=3616">previous 3397</a>
+
+
+
+
+
+
+
+<pre class="vc_log">removing soap authentication - we need to add this as module.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3397"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=3397"><strong>3397</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3397&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3397">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3397&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=3397">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3397&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Aug  2 05:02:25 2009 UTC</em>
+(3 years, 10 months ago)
+by <em>wishcraft</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 4022 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3240&amp;r2=3397">previous 3240</a>
+
+
+
+
+
+
+
+<pre class="vc_log">See Changelog.txt (SOAP API, Auth, Profile 1.53 ++ more)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3240"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=3240"><strong>3240</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3240&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3240">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3240&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=3240">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3240&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu May 14 01:47:58 2009 UTC</em>
+(4 years ago)
+by <em>wishcraft</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 4024 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3205&amp;r2=3240">previous 3205</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Reverting mysql.data.sql to 2.3.4 standardisation - remmed extra lines.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3205"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=3205"><strong>3205</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3205&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3205">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=3205&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=3205">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=3205&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Apr 28 21:47:34 2009 UTC</em>
+(4 years, 1 month ago)
+by <em>wishcraft</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 4022 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=1923&amp;r2=3205">previous 1923</a>
+
+
+
+
+
+
+
+<pre class="vc_log">New Authentication library as per request of Catzwolf for 2.3.4 (Not updated before 2003) - User Pooling now a commitment as per Innovation award 2008... SOAP libraries included, nusoap was used as recommended by IBM for mainframe and congruency</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1923"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=1923"><strong>1923</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1923&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1923">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1923&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=1923">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=1923&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Jul 27 14:22:14 2008 UTC</em>
+(4 years, 10 months ago)
+by <em>phppp</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 3940 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=1922&amp;r2=1923">previous 1922</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Rollback commits from 2.3.1 branch. Will be re-committed once 2.3.0 final is released</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1922"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=1922"><strong>1922</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1922&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1922">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1922&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=1922">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=1922&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Jul 27 13:22:16 2008 UTC</em>
+(4 years, 10 months ago)
+by <em>wishcraft</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 4022 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=1775&amp;r2=1922">previous 1775</a>
+
+
+
+
+
+
+
+<pre class="vc_log">phppp - gave the make is so a -&quot;good&quot; after the user testing for 2.3.1 reported OK and in all my test bench ok, this is an Auth System on a water proof keyboard. $siteinfo array needs to have refactorisation but this will be in the multixoops with policy management system.. Seeming in that environment for example you can have multiple admins etc.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1775"></a>
+
+
+Revision <a href="/viewvc/xoops?view=revision&amp;revision=1775"><strong>1775</strong></a> -
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1775&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1775">download</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?revision=1775&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?annotate=1775">annotate</a>)
+
+
+
+- <a href="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql?r1=1775&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Added
+
+<em>Sun May 25 06:25:42 2008 UTC</em>
+(5 years ago)
+by <em>phppp</em>
+
+
+
+
+
+
+
+<br />File length: 3940 byte(s)
+
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">It was not able to revert to a previous stable revision thus we re-created the trunk from 2.3.0 alpha 3 release branch</pre>
+</div>
+
+ 
+
+
+
+ <div class="sfBox">
+<hr class="clear"/>
+<a name="diff"></a>
+This form allows you to request diffs between any two revisions of this file.
+For each of the two "sides" of the diff,
+
+enter a numeric revision.
+
+<form method="get" action="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql" id="diff_select">
+<table cellpadding="2" cellspacing="0" class="auto">
+<tr>
+<td>&nbsp;</td>
+<td>
+
+<input type="hidden" name="view" value="diff"/>
+
+Diffs between
+
+<input type="text" size="12" name="r1"
+value="3616" />
+
+and
+
+<input type="text" size="12" name="r2" value="1775" />
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+Type of Diff should be a
+<select name="diff_format" onchange="submit()">
+<option value="h" selected="selected">Colored Diff</option>
+<option value="l" >Long Colored Diff</option>
+<option value="f" >Full Colored Diff</option>
+<option value="u" >Unidiff</option>
+<option value="c" >Context Diff</option>
+<option value="s" >Side by Side</option>
+</select>
+<input type="submit" value=" Get Diffs " />
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+
+<form method="get" action="/viewvc/xoops/XoopsCore/trunk/htdocs/install/sql/mysql.data.sql">
+<div>
+<hr />
+<a name="logsort"></a>
+<input type="hidden" name="view" value="log"/>
+Sort log by:
+<select name="logsort" onchange="submit()">
+<option value="cvs" >Not sorted</option>
+<option value="date" >Commit date</option>
+<option value="rev" >Revision</option>
+</select>
+<input type="submit" value=" Sort " />
+</div>
+</form>
+
+
+<br />
+</div>
+</div>
+</div>
+<div id="ft">
+<div class="yui-b">
+<div class="yui-gb">
+<div class="yui-u first" style="text-align: center;"> <a href="http://p.sf.net/sourceforge/support">SourceForge Help<a/> </div>
+<div class="yui-u" style="text-align: center;"> <strong><a href="/viewvc-static/help_log.html">ViewVC Help</a></strong> </div>
+<div class="yui-u" style="text-align: center;"> <a href="http://viewvc.tigris.org/">Powered by ViewVC 1.1.6</a> </div>
+</div>
+<p class="copyright">Copyright &copy; 2010 <a title="Network which provides and promotes Open Source software downloads, development, discussion and news." href="http://geek.net">Geeknet, Inc.</a> All rights reserved. <a href="http://p.sf.net/sourceforge/terms">Terms of Use</a></p>
+</div>
+</div>
+</div>
+<!--[if IE]></div><![endif]-->
+<!--[if IE 6]></div><![endif]-->
+<!--[if IE 7]></div><![endif]-->
+</body>
+</html>
+
+

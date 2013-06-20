@@ -1,0 +1,6325 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- ViewVC :: http://www.viewvc.org/ -->
+<head>
+<title>[atlas] Log of /offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql</title>
+<meta name="generator" content="ViewVC 1.0.9" />
+<link rel="stylesheet" href="/cgi-bin/viewcvs-atlas.cgi/*docroot*/styles.css" type="text/css" />
+
+</head>
+<body>
+<div class="vc_navheader">
+
+<form method="get" action="/cgi-bin/viewcvs-atlas.cgi/">
+
+<table style="padding:0.1em;">
+<tr>
+<td>
+<strong>
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/">
+
+[atlas]</a>
+/
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/">
+
+offline</a>
+/
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/">
+
+Trigger</a>
+/
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/">
+
+TrigConfiguration</a>
+/
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/">
+
+TrigDb</a>
+/
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/">
+
+share</a>
+/
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/">
+
+sql</a>
+/
+
+
+
+combined_schema.sql
+
+
+</strong>
+
+</td>
+<td style="text-align:right;">
+
+
+<strong>Repository:</strong>
+<select name="root" onchange="submit()">
+
+
+<option value="*viewroots*">Repository Listing</option>
+
+
+
+
+
+
+
+
+
+
+<optgroup label="CVS Repositories"><option selected="selected">atlas</option></optgroup>
+
+
+</select>
+<input type="submit" value="Go" />
+
+</td>
+</tr>
+</table>
+
+</form>
+
+</div>
+<div style="float: right; padding: 5px;"><a href="http://www.viewvc.org/"><img src="/cgi-bin/viewcvs-atlas.cgi/*docroot*/images/logo.png" alt="ViewVC logotype" width="128" height="48" /></a></div>
+<h1>Log of /offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql</h1>
+
+<p style="margin:0;">
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/"><img src="/cgi-bin/viewcvs-atlas.cgi/*docroot*/images/back_small.png" width="16" height="16" alt="Parent Directory" /> Parent Directory</a>
+
+
+| <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=graph"><img src="/cgi-bin/viewcvs-atlas.cgi/*docroot*/images/cvsgraph_16x16.png" width="16" height="16" alt="View Revision Graph" /> Revision Graph</a>
+
+
+
+</p>
+
+<hr />
+<table class="auto">
+
+
+
+<tr>
+<td>Links to HEAD:</td>
+<td>
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=markup">view</a>)
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=co">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=annotate">annotate</a>)
+</td>
+</tr>
+
+
+
+<tr>
+<td>Sticky Tag:</td>
+<td><form method="get" action="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql" style="display: inline">
+<div style="display: inline">
+<input type="hidden" name="view" value="log" />
+
+
+<select name="pathrev" onchange="submit()">
+<option value=""></option>
+
+<optgroup label="Branches">
+
+
+<option>TrigDb-00-00-39-branch</option>
+
+
+
+<option>TrigDb-00-00-21-branch</option>
+
+
+
+<option>TrigDb-00-00-07-branch</option>
+
+
+
+<option>TrigDb-00-00-05-branch</option>
+
+
+
+<option>MAIN</option>
+
+
+
+<option>ATLAS</option>
+
+
+</optgroup>
+
+<optgroup label="Non-branch tags">
+
+
+<option>TrigDb-00-01-10</option>
+
+
+
+<option>TrigDb-00-01-09</option>
+
+
+
+<option>TrigDb-00-01-08</option>
+
+
+
+<option>TrigDb-00-01-07</option>
+
+
+
+<option>TrigDb-00-01-06</option>
+
+
+
+<option>TrigDb-00-01-05</option>
+
+
+
+<option>TrigDb-00-01-04</option>
+
+
+
+<option>TrigDb-00-01-03</option>
+
+
+
+<option>TrigDb-00-01-02</option>
+
+
+
+<option>TrigDb-00-01-01</option>
+
+
+
+<option>TrigDb-00-01-00</option>
+
+
+
+<option>TrigDb-00-00-39</option>
+
+
+
+<option>TrigDb-00-00-38</option>
+
+
+
+<option>TrigDb-00-00-37</option>
+
+
+
+<option>TrigDb-00-00-36</option>
+
+
+
+<option>TrigDb-00-00-35</option>
+
+
+
+<option>TrigDb-00-00-34</option>
+
+
+
+<option>TrigDb-00-00-33</option>
+
+
+
+<option>TrigDb-00-00-32</option>
+
+
+
+<option>TrigDb-00-00-31</option>
+
+
+
+<option>TrigDb-00-00-30</option>
+
+
+
+<option>TrigDb-00-00-29</option>
+
+
+
+<option>TrigDb-00-00-28</option>
+
+
+
+<option>TrigDb-00-00-27</option>
+
+
+
+<option>TrigDb-00-00-26</option>
+
+
+
+<option>TrigDb-00-00-25</option>
+
+
+
+<option>TrigDb-00-00-24</option>
+
+
+
+<option>TrigDb-00-00-23</option>
+
+
+
+<option>TrigDb-00-00-22</option>
+
+
+
+<option>TrigDb-00-00-21-02</option>
+
+
+
+<option>TrigDb-00-00-21-01</option>
+
+
+
+<option>TrigDb-00-00-21</option>
+
+
+
+<option>TrigDb-00-00-20</option>
+
+
+
+<option>TrigDb-00-00-19</option>
+
+
+
+<option>TrigDb-00-00-18</option>
+
+
+
+<option>TrigDb-00-00-17</option>
+
+
+
+<option>TrigDb-00-00-16</option>
+
+
+
+<option>TrigDb-00-00-15</option>
+
+
+
+<option>TrigDb-00-00-14</option>
+
+
+
+<option>TrigDb-00-00-13</option>
+
+
+
+<option>TrigDb-00-00-12</option>
+
+
+
+<option>TrigDb-00-00-11</option>
+
+
+
+<option>TrigDb-00-00-10</option>
+
+
+
+<option>TrigDb-00-00-09</option>
+
+
+
+<option>TrigDb-00-00-08</option>
+
+
+
+<option>TrigDb-00-00-07-02</option>
+
+
+
+<option>TrigDb-00-00-07-01</option>
+
+
+
+<option>TrigDb-00-00-07</option>
+
+
+
+<option>TrigDb-00-00-06</option>
+
+
+
+<option>TrigDb-00-00-05-02</option>
+
+
+
+<option>TrigDb-00-00-05-01</option>
+
+
+
+<option>TrigDb-00-00-05</option>
+
+
+
+<option>TrigDb-00-00-04</option>
+
+
+
+<option>TrigDb-00-00-03</option>
+
+
+
+<option>TrigDb-00-00-02</option>
+
+
+
+<option>TrigDb-00-00-01</option>
+
+
+
+<option>HEAD</option>
+
+
+</optgroup>
+
+</select>
+
+<input type="submit" value="Set" />
+</div>
+</form>
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+
+
+
+
+
+<div>
+<hr />
+
+<a name="rev1.83"></a>
+<a name="TrigDb-00-01-10"></a>
+<a name="HEAD"></a>
+
+
+Revision <strong>1.83</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.83&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.83">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.83">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.83&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Sun Mar 29 08:14:27 2009 UTC</em> (4 years, 2 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=HEAD"><strong>HEAD</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-10"><strong>TrigDb-00-01-10</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.82: +1744 -1743 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.82&amp;r2=1.83">previous 1.82</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">bug fix in table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.82"></a>
+<a name="TrigDb-00-01-09"></a>
+
+
+Revision <strong>1.82</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.82&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.82">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.82">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.82&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Mar 24 13:39:12 2009 UTC</em> (4 years, 2 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-09"><strong>TrigDb-00-01-09</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.81: +39 -22 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.81&amp;r2=1.82">previous 1.81</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">added LB-HLTPSK association table for online running
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.81"></a>
+<a name="TrigDb-00-01-08"></a>
+
+
+Revision <strong>1.81</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.81&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.81">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.81">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.81&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Jan 22 10:03:54 2009 UTC</em> (4 years, 4 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-08"><strong>TrigDb-00-01-08</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.80: +3 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.80&amp;r2=1.81">previous 1.80</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">increment to version 8
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.80"></a>
+<a name="TrigDb-00-01-07"></a>
+
+
+Revision <strong>1.80</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.80&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.80">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.80">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.80&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Dec 19 13:38:07 2008 UTC</em> (4 years, 5 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-07"><strong>TrigDb-00-01-07</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.79: +4 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.79&amp;r2=1.80">previous 1.79</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">rerun prescale
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.79"></a>
+
+
+Revision <strong>1.79</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.79&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.79">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.79">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.79&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Dec 10 13:28:06 2008 UTC</em> (4 years, 5 months ago) by <em>mgoebel</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.78: +10 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.78&amp;r2=1.79">previous 1.78</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">add DBCOPY_SOURCE_DATABASE table; to make sure that tables from different DB are not copied into the same target DB
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.78"></a>
+<a name="TrigDb-00-01-06"></a>
+
+
+Revision <strong>1.78</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.78&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.78">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.78">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.78&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Nov 25 12:27:53 2008 UTC</em> (4 years, 6 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-06"><strong>TrigDb-00-01-06</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.77: +2 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.77&amp;r2=1.78">previous 1.77</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">small fix in sqlite creation
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.77"></a>
+<a name="TrigDb-00-01-05"></a>
+
+
+Revision <strong>1.77</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.77&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.77">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.77">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.77&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Aug  6 16:13:57 2008 UTC</em> (4 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-05"><strong>TrigDb-00-01-05</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.76: +1867 -1208 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.76&amp;r2=1.77">previous 1.76</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">named constraints and indices
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.76"></a>
+<a name="TrigDb-00-01-04"></a>
+
+
+Revision <strong>1.76</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.76&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.76">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.76">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.76&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Aug  1 08:32:46 2008 UTC</em> (4 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-04"><strong>TrigDb-00-01-04</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.75: +26 -10 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.75&amp;r2=1.76">previous 1.75</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">n:m release table link
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.75"></a>
+<a name="TrigDb-00-01-03"></a>
+
+
+Revision <strong>1.75</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.75&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.75">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.75">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.75&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jul 30 13:18:48 2008 UTC</em> (4 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-03"><strong>TrigDb-00-01-03</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.74: +5 -7 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.74&amp;r2=1.75">previous 1.74</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">tagging 00-01-03
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.74"></a>
+
+
+Revision <strong>1.74</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.74&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.74">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.74">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.74&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Jul 29 09:08:33 2008 UTC</em> (4 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.73: +2 -14 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.73&amp;r2=1.74">previous 1.73</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">new views for new schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.73"></a>
+
+
+Revision <strong>1.73</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.73&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.73">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.73">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.73&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Jul 29 09:05:51 2008 UTC</em> (4 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.72: +21 -5 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.72&amp;r2=1.73">previous 1.72</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">new views for new schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.72"></a>
+
+
+Revision <strong>1.72</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.72&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.72">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.72">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.72&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jul 23 13:50:17 2008 UTC</em> (4 years, 10 months ago) by <em>nozicka</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.71: +49 -35 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.71&amp;r2=1.72">previous 1.71</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Changes in offline rules part
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.71"></a>
+
+
+Revision <strong>1.71</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.71&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.71">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.71">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.71&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jul 23 12:45:33 2008 UTC</em> (4 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.70: +32 -32 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.70&amp;r2=1.71">previous 1.70</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">changes to hlt_component
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.70"></a>
+
+
+Revision <strong>1.70</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.70&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.70">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.70">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.70&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Jul  8 16:36:47 2008 UTC</em> (4 years, 11 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.69: +14 -11 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.69&amp;r2=1.70">previous 1.69</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">last schema changes?
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.69"></a>
+
+
+Revision <strong>1.69</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.69&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.69">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.69">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.69&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Jul  4 15:03:33 2008 UTC</em> (4 years, 11 months ago) by <em>nozicka</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.68: +123 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.68&amp;r2=1.69">previous 1.68</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Adding the rules in schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.68"></a>
+<a name="TrigDb-00-01-02"></a>
+
+
+Revision <strong>1.68</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.68&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.68">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.68">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.68&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jul  2 12:54:01 2008 UTC</em> (4 years, 11 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-02"><strong>TrigDb-00-01-02</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.67: +39 -19 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.67&amp;r2=1.68">previous 1.67</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">L1 Schema changes
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.67"></a>
+<a name="TrigDb-00-01-01"></a>
+
+
+Revision <strong>1.67</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.67&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.67">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.67">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.67&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jun 18 15:04:47 2008 UTC</em> (4 years, 11 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-01"><strong>TrigDb-00-01-01</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.66: +8 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.66&amp;r2=1.67">previous 1.66</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">schema changes continue
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.66"></a>
+
+
+Revision <strong>1.66</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.66&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.66">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.66">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.66&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jun 11 16:30:32 2008 UTC</em> (4 years, 11 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.65: +245 -217 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.65&amp;r2=1.66">previous 1.65</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">more schema changes
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.65"></a>
+<a name="TrigDb-00-01-00"></a>
+
+
+Revision <strong>1.65</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.65&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.65">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.65">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.65&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue May 27 14:39:40 2008 UTC</em> (5 years ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-01-00"><strong>TrigDb-00-01-00</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.64: +29 -8 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.64&amp;r2=1.65">previous 1.64</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">schema changes
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.64"></a>
+
+
+Revision <strong>1.64</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.64&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.64">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.64">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.64&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue May 27 14:02:25 2008 UTC</em> (5 years ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.63: +5 -5 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.63&amp;r2=1.64">previous 1.63</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">start of schema change
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.63"></a>
+<a name="TrigDb-00-00-39"></a>
+
+
+Revision <strong>1.63</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.63&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.63">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.63">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.63&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Apr 15 08:45:12 2008 UTC</em> (5 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-39"><strong>TrigDb-00-00-39</strong></a>
+
+
+
+<br />Branch point for:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-39-branch"><strong>TrigDb-00-00-39-branch</strong></a>
+
+
+
+
+
+<br />Changes since <strong>1.62: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.62&amp;r2=1.63">previous 1.62</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Fixed l1_tm_to_tt_mon
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.62"></a>
+
+
+Revision <strong>1.62</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.62&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.62">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.62">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.62&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Apr 14 15:00:08 2008 UTC</em> (5 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.61: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.61&amp;r2=1.62">previous 1.61</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">fixed typo
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.61"></a>
+
+
+Revision <strong>1.61</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.61&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.61">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.61">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.61&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Apr 14 14:54:25 2008 UTC</em> (5 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.60: +4 -4 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.60&amp;r2=1.61">previous 1.60</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">v6, removed tm_to_tt_mon bg constraint
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.60"></a>
+<a name="TrigDb-00-00-38"></a>
+
+
+Revision <strong>1.60</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.60&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.60">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.60">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.60&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Apr 10 11:22:03 2008 UTC</em> (5 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-38"><strong>TrigDb-00-00-38</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.59: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.59&amp;r2=1.60">previous 1.59</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">v5, hre_version is int
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.59"></a>
+
+
+Revision <strong>1.59</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.59&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.59">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.59">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.59&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Apr 10 11:20:18 2008 UTC</em> (5 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.58: +3 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.58&amp;r2=1.59">previous 1.58</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">v5
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.58"></a>
+<a name="TrigDb-00-00-37"></a>
+
+
+Revision <strong>1.58</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.58&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.58">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.58">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.58&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Apr 10 09:51:18 2008 UTC</em> (5 years, 1 month ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-37"><strong>TrigDb-00-00-37</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.57: +4 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.57&amp;r2=1.58">previous 1.57</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">new tag for new schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.57"></a>
+<a name="TrigDb-00-00-36"></a>
+
+
+Revision <strong>1.57</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.57&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.57">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.57">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.57&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  9 16:14:47 2008 UTC</em> (5 years, 1 month ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-36"><strong>TrigDb-00-00-36</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.56: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.56&amp;r2=1.57">previous 1.56</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">fixes
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.56"></a>
+
+
+Revision <strong>1.56</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.56&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.56">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.56">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.56&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  9 13:09:11 2008 UTC</em> (5 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.55: +13 -28 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.55&amp;r2=1.56">previous 1.55</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Schema version 4
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.55"></a>
+
+
+Revision <strong>1.55</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.55&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.55">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.55">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.55&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  9 09:15:38 2008 UTC</em> (5 years, 1 month ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.54: +4 -8 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.54&amp;r2=1.55">previous 1.54</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">final fixes to new schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.54"></a>
+
+
+Revision <strong>1.54</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.54&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.54">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.54">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.54&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  9 08:36:47 2008 UTC</em> (5 years, 1 month ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.53: +4 -5 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.53&amp;r2=1.54">previous 1.53</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">final fixes to new schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.53"></a>
+
+
+Revision <strong>1.53</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.53&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.53">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.53">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.53&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  9 08:16:40 2008 UTC</em> (5 years, 1 month ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.52: +23 -46 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.52&amp;r2=1.53">previous 1.52</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">remove streamtag table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.52"></a>
+
+
+Revision <strong>1.52</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.52&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.52">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.52">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.52&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Apr  8 08:56:41 2008 UTC</em> (5 years, 2 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.51: +49 -26 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.51&amp;r2=1.52">previous 1.51</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">streamtag table added
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.51"></a>
+
+
+Revision <strong>1.51</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.51&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.51">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.51">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.51&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  2 16:51:46 2008 UTC</em> (5 years, 2 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.50: +9 -9 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.50&amp;r2=1.51">previous 1.50</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Schema updates continue..
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.50"></a>
+
+
+Revision <strong>1.50</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.50&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.50">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.50">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.50&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr  2 16:14:38 2008 UTC</em> (5 years, 2 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.49: +46 -6 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.49&amp;r2=1.50">previous 1.49</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Schema updates continue..
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.49"></a>
+
+
+Revision <strong>1.49</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.49&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.49">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.49">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.49&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Mar 11 17:24:17 2008 UTC</em> (5 years, 2 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.48: +5 -4 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.48&amp;r2=1.49">previous 1.48</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">schema changes
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.48"></a>
+
+
+Revision <strong>1.48</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.48&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.48">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.48">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.48&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Mar 10 16:14:44 2008 UTC</em> (5 years, 2 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.47: +133 -137 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.47&amp;r2=1.48">previous 1.47</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">long awaited schema changes in progress
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.47"></a>
+<a name="TrigDb-00-00-30"></a>
+<a name="TrigDb-00-00-33"></a>
+<a name="TrigDb-00-00-32"></a>
+<a name="TrigDb-00-00-35"></a>
+<a name="TrigDb-00-00-34"></a>
+<a name="TrigDb-00-00-31"></a>
+<a name="TrigDb-00-00-28"></a>
+<a name="TrigDb-00-00-29"></a>
+<a name="TrigDb-00-00-27"></a>
+
+
+Revision <strong>1.47</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.47&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.47">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.47">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.47&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Jan 17 19:56:48 2008 UTC</em> (5 years, 4 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-27"><strong>TrigDb-00-00-27</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-28"><strong>TrigDb-00-00-28</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-29"><strong>TrigDb-00-00-29</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-30"><strong>TrigDb-00-00-30</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-31"><strong>TrigDb-00-00-31</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-32"><strong>TrigDb-00-00-32</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-33"><strong>TrigDb-00-00-33</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-34"><strong>TrigDb-00-00-34</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-35"><strong>TrigDb-00-00-35</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.46: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.46&amp;r2=1.47">previous 1.46</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">l1 item name length increased
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.46"></a>
+<a name="TrigDb-00-00-26"></a>
+<a name="TrigDb-00-00-24"></a>
+<a name="TrigDb-00-00-25"></a>
+<a name="TrigDb-00-00-23"></a>
+
+
+Revision <strong>1.46</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.46&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.46">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.46">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.46&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Nov 29 10:12:22 2007 UTC</em> (5 years, 6 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-23"><strong>TrigDb-00-00-23</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-24"><strong>TrigDb-00-00-24</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-25"><strong>TrigDb-00-00-25</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-26"><strong>TrigDb-00-00-26</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.45: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.45&amp;r2=1.46">previous 1.45</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">te_to_te table had shorter TE names than the trigger_element table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.45"></a>
+<a name="TrigDb-00-00-21-01"></a>
+<a name="TrigDb-00-00-21-02"></a>
+<a name="TrigDb-00-00-22"></a>
+
+
+Revision <strong>1.45</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.45&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.45">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.45">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.45&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Oct 23 17:44:48 2007 UTC</em> (5 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-21-01"><strong>TrigDb-00-00-21-01</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-21-02"><strong>TrigDb-00-00-21-02</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-22"><strong>TrigDb-00-00-22</strong></a>
+
+
+
+<br />Branch point for:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-21-branch"><strong>TrigDb-00-00-21-branch</strong></a>
+
+
+
+
+
+<br />Changes since <strong>1.44: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.44&amp;r2=1.45">previous 1.44</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">prescale set name increased to 50
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.44"></a>
+
+
+Revision <strong>1.44</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.44&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.44">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.44">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.44&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Oct 22 15:42:54 2007 UTC</em> (5 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.43: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.43&amp;r2=1.44">previous 1.43</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">long name for supermastertable
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.43"></a>
+
+
+Revision <strong>1.43</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.43&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.43">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.43">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.43&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Sun Oct 21 18:30:29 2007 UTC</em> (5 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.42: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.42&amp;r2=1.43">previous 1.42</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Longer name for trigger menu table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.42"></a>
+
+
+Revision <strong>1.42</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.42&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.42">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.42">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.42&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Oct 16 15:33:37 2007 UTC</em> (5 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.41: +2 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.41&amp;r2=1.42">previous 1.41</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">test rev tags in file
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.41"></a>
+<a name="TrigDb-00-00-21"></a>
+
+
+Revision <strong>1.41</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.41&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.41">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.41">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.41&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Oct 16 14:21:55 2007 UTC</em> (5 years, 7 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-21"><strong>TrigDb-00-00-21</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.40: +12 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.40&amp;r2=1.41">previous 1.40</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">trigger_schema table added
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.40"></a>
+<a name="TrigDb-00-00-20"></a>
+
+
+Revision <strong>1.40</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.40&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.40">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.40">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.40&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Oct  8 09:18:55 2007 UTC</em> (5 years, 8 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-20"><strong>TrigDb-00-00-20</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.39: +2 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.39&amp;r2=1.40">previous 1.39</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">schema graphic
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.39"></a>
+<a name="TrigDb-00-00-19"></a>
+
+
+Revision <strong>1.39</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.39&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.39">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.39">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.39&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Sun Oct  7 12:56:49 2007 UTC</em> (5 years, 8 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-19"><strong>TrigDb-00-00-19</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.38: +40 -7 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.38&amp;r2=1.39">previous 1.38</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">L1 Mon added
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.38"></a>
+
+
+Revision <strong>1.38</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.38&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.38">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.38">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.38&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Sep 21 17:38:42 2007 UTC</em> (5 years, 8 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.37: +5 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.37&amp;r2=1.38">previous 1.37</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">tech run fix
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.37"></a>
+
+
+Revision <strong>1.37</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.37&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.37">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.37">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.37&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Sep 10 07:37:38 2007 UTC</em> (5 years, 8 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.36: +26 -16 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.36&amp;r2=1.37">previous 1.36</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">l1 ctp monitoring
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.36"></a>
+
+
+Revision <strong>1.36</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.36&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.36">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.36">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.36&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Aug 21 15:25:23 2007 UTC</em> (5 years, 9 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.35: +60 -57 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.35&amp;r2=1.36">previous 1.35</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">PURGE on Oracle
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.35"></a>
+
+
+Revision <strong>1.35</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.35&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.35">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.35">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.35&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Jul 26 17:03:09 2007 UTC</em> (5 years, 10 months ago) by <em>pbell</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.34: +1 -1 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.34&amp;r2=1.35">previous 1.34</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">small fix in combined_schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.34"></a>
+<a name="TrigDb-00-00-17"></a>
+<a name="TrigDb-00-00-18"></a>
+
+
+Revision <strong>1.34</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.34&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.34">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.34">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.34&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Jul 13 16:48:23 2007 UTC</em> (5 years, 10 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-17"><strong>TrigDb-00-00-17</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-18"><strong>TrigDb-00-00-18</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.33: +174 -160 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.33&amp;r2=1.34">previous 1.33</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Updated schema
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.33"></a>
+
+
+Revision <strong>1.33</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.33&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.33">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.33">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.33&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Jul  4 13:46:14 2007 UTC</em> (5 years, 11 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.32: +4 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.32&amp;r2=1.33">previous 1.32</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">L1 Random Updates
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.32"></a>
+
+
+Revision <strong>1.32</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.32&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.32">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.32">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.32&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Jul  3 11:48:39 2007 UTC</em> (5 years, 11 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.31: +32 -62 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.31&amp;r2=1.32">previous 1.31</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">status field updates
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.31"></a>
+
+
+Revision <strong>1.31</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.31&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.31">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.31">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.31&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Jul  3 08:37:44 2007 UTC</em> (5 years, 11 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.30: +56 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.30&amp;r2=1.31">previous 1.30</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Added status flag
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.30"></a>
+
+
+Revision <strong>1.30</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.30&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.30">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.30">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.30&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Jun  4 10:23:12 2007 UTC</em> (6 years ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.29: +1 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.29&amp;r2=1.30">previous 1.29</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">added comment to L1 Trigger Item
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.29"></a>
+
+
+Revision <strong>1.29</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.29&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.29">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.29">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.29&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed May 30 09:26:30 2007 UTC</em> (6 years ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.28: +16 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.28&amp;r2=1.29">previous 1.28</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">l1 prescale set alias added
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.28"></a>
+
+
+Revision <strong>1.28</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.28&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.28">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.28">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.28&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed May 23 13:53:34 2007 UTC</em> (6 years ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.27: +0 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.27&amp;r2=1.28">previous 1.27</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">removed prescale keys from trigger_alias
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.27"></a>
+
+
+Revision <strong>1.27</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.27&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.27">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.27">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.27&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri May 18 13:31:29 2007 UTC</em> (6 years ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.26: +16 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.26&amp;r2=1.27">previous 1.26</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">trigger_alias added
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.26"></a>
+<a name="TrigDb-00-00-15"></a>
+<a name="TrigDb-00-00-16"></a>
+
+
+Revision <strong>1.26</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.26&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.26">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.26">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.26&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon May  7 14:25:35 2007 UTC</em> (6 years, 1 month ago) by <em>tkohno</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-15"><strong>TrigDb-00-00-15</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-16"><strong>TrigDb-00-00-16</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.25: +8 -8 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.25&amp;r2=1.26">previous 1.25</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Update of LVL1 schema
+- FLOAT -&gt; FLOAT(24)
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.25"></a>
+<a name="TrigDb-00-00-14"></a>
+<a name="TrigDb-00-00-13"></a>
+
+
+Revision <strong>1.25</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.25&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.25">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.25">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.25&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Sun May  6 20:56:23 2007 UTC</em> (6 years, 1 month ago) by <em>tkohno</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-13"><strong>TrigDb-00-00-13</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-14"><strong>TrigDb-00-00-14</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.24: +6 -8 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.24&amp;r2=1.25">previous 1.24</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Update of combined schema.
+- Move LVL1 TriggerType to a field of each TriggerItem
+- Change DECIMAL(11,5) to FLOAT. (floating point number)
+- Change types of TriggerThresholdValue.pt_cut, CaloInfo.global_scale to FLOAT.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.24"></a>
+<a name="TrigDb-00-00-12"></a>
+
+
+Revision <strong>1.24</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.24&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.24">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.24">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.24&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Apr 30 12:55:14 2007 UTC</em> (6 years, 1 month ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-12"><strong>TrigDb-00-00-12</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.23: +2 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.23&amp;r2=1.24">previous 1.23</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Change from FLOAT(11,5) to DECIMAL(11,5) to work for ORACLE,sqlite
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.23"></a>
+<a name="TrigDb-00-00-11"></a>
+
+
+Revision <strong>1.23</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.23&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.23">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.23">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.23&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Apr 30 08:12:07 2007 UTC</em> (6 years, 1 month ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-11"><strong>TrigDb-00-00-11</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.22: +2 -2 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.22&amp;r2=1.23">previous 1.22</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">share/sql/combined_schema.sql change NUMBER(11,5) to FLOAT(11,5) to avoid CORAL::MySQLAccess problem with NUMBER floats
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.22"></a>
+
+
+Revision <strong>1.22</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.22&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.22">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.22">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.22&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Apr 26 13:15:15 2007 UTC</em> (6 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.21: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.21&amp;r2=1.22">previous 1.21</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">moved chain counter and ctp id
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.21"></a>
+
+
+Revision <strong>1.21</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.21&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.21">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.21">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.21&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr 25 16:35:23 2007 UTC</em> (6 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.20: +3 -136 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.20&amp;r2=1.21">previous 1.20</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">l1 and hlt example data fixes
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.20"></a>
+<a name="TrigDb-00-00-10"></a>
+
+
+Revision <strong>1.20</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.20&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.20">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.20">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.20&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Apr 23 16:44:35 2007 UTC</em> (6 years, 1 month ago) by <em>berge</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-10"><strong>TrigDb-00-00-10</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.19: +11 -10 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.19&amp;r2=1.20">previous 1.19</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Db changes for Point1 commissioing activities. Added a proper default menu to work with at Point 1.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.19"></a>
+
+
+Revision <strong>1.19</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.19&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.19">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.19">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.19&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Apr 13 12:08:08 2007 UTC</em> (6 years, 1 month ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.18: +9 -11 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.18&amp;r2=1.19">previous 1.18</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">SQLite support added
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.15.2.1"></a>
+<a name="TrigDb-00-00-07-02"></a>
+
+<a name="TrigDb-00-00-07-branch"></a>
+
+Revision <strong>1.15.2.1</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.15.2.1&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.15.2.1">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.15.2.1">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.15.2.1&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Apr 11 12:15:26 2007 UTC</em> (6 years, 1 month ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-07-branch"><strong>TrigDb-00-00-07-branch</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-07-02"><strong>TrigDb-00-00-07-02</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.15: +1 -1 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.15&amp;r2=1.15.2.1">previous 1.15</a>
+
+
+
+
+
+
+, to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.83&amp;r2=1.15.2.1">next main 1.83</a>
+
+
+
+
+
+
+
+<pre class="vc_log">extented length of field name in SM table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.18"></a>
+
+
+Revision <strong>1.18</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.18&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.18">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.18">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.18&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Mar 28 15:55:26 2007 UTC</em> (6 years, 2 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.17: +58 -58 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.17&amp;r2=1.18">previous 1.17</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Increased username length
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.17"></a>
+<a name="TrigDb-00-00-09"></a>
+
+
+Revision <strong>1.17</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.17&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.17">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.17">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.17&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Mar 14 12:42:01 2007 UTC</em> (6 years, 2 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-09"><strong>TrigDb-00-00-09</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.16: +2 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.16&amp;r2=1.17">previous 1.16</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">combined_schema: new fields 'active NUMBER(1)' and 'mapping NUMBER (10) NOT NULL'
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.16"></a>
+<a name="TrigDb-00-00-08"></a>
+
+
+Revision <strong>1.16</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.16&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.16">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.16">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.16&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Mar  6 14:55:59 2007 UTC</em> (6 years, 3 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-08"><strong>TrigDb-00-00-08</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.15: +52 -34 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.15&amp;r2=1.16">previous 1.15</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">new table HLT_Trigger_Type, new field TE_counter in TE_TO_TE table, removed link HLT_Master to Setup
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.15"></a>
+<a name="TrigDb-00-00-07-01"></a>
+<a name="TrigDb-00-00-07"></a>
+<a name="TrigDb-00-00-06"></a>
+
+
+Revision <strong>1.15</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.15&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.15">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.15">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.15&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Feb 16 13:17:38 2007 UTC</em> (6 years, 3 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-06"><strong>TrigDb-00-00-06</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-07"><strong>TrigDb-00-00-07</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-07-01"><strong>TrigDb-00-00-07-01</strong></a>
+
+
+
+<br />Branch point for:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-07-branch"><strong>TrigDb-00-00-07-branch</strong></a>
+
+
+
+
+
+<br />Changes since <strong>1.14: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.14&amp;r2=1.15">previous 1.14</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">remove setup as foreign key constraint in hlt_master_table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.14"></a>
+
+
+Revision <strong>1.14</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.14&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.14">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.14">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.14&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Feb 12 11:29:07 2007 UTC</em> (6 years, 3 months ago) by <em>simon</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.13: +19 -19 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.13&amp;r2=1.14">previous 1.13</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">L1 version changed to int
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.13.2.1"></a>
+<a name="TrigDb-00-00-05-01"></a>
+<a name="TrigDb-00-00-05-02"></a>
+
+<a name="TrigDb-00-00-05-branch"></a>
+
+Revision <strong>1.13.2.1</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.13.2.1&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.13.2.1">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.13.2.1">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.13.2.1&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Nov  7 15:22:44 2006 UTC</em> (6 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-05-branch"><strong>TrigDb-00-00-05-branch</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-05-01"><strong>TrigDb-00-00-05-01</strong></a>,
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-05-02"><strong>TrigDb-00-00-05-02</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.13: +1 -1 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.13&amp;r2=1.13.2.1">previous 1.13</a>
+
+
+
+
+
+
+, to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.83&amp;r2=1.13.2.1">next main 1.83</a>
+
+
+
+
+
+
+
+<pre class="vc_log">New branch for the LST with inceased parameter value size
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.13"></a>
+<a name="TrigDb-00-00-05"></a>
+
+
+Revision <strong>1.13</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.13&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.13">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.13">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.13&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Nov  7 10:13:03 2006 UTC</em> (6 years, 7 months ago) by <em>wengler</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-05"><strong>TrigDb-00-00-05</strong></a>
+
+
+
+<br />Branch point for:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-05-branch"><strong>TrigDb-00-00-05-branch</strong></a>
+
+
+
+
+
+<br />Changes since <strong>1.12: +27 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.12&amp;r2=1.13">previous 1.12</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">add muon threshold sets table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.12"></a>
+<a name="TrigDb-00-00-04"></a>
+
+
+Revision <strong>1.12</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.12&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.12">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.12">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.12&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Oct 30 19:30:13 2006 UTC</em> (6 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-04"><strong>TrigDb-00-00-04</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.11: +3 -1 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.11&amp;r2=1.12">previous 1.11</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">New startup script, loads lvl1 and hlt
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.11"></a>
+<a name="TrigDb-00-00-03"></a>
+
+
+Revision <strong>1.11</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.11&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.11">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.11">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.11&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Oct 25 20:26:49 2006 UTC</em> (6 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-03"><strong>TrigDb-00-00-03</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.10: +8 -8 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.10&amp;r2=1.11">previous 1.10</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">	* share/sql/joview.sql: Added HLT Views to retrieve JobOptions
+	* share/sql/lvl1_ins_all: Change some default inserts
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.10"></a>
+
+
+Revision <strong>1.10</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.10&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.10">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.10">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.10&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Oct 17 10:03:06 2006 UTC</em> (6 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.9: +26 -16 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.9&amp;r2=1.10">previous 1.9</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">fixed bug: wrong order of inserting the stream table and the connector table
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.9"></a>
+
+
+Revision <strong>1.9</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.9&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.9">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.9">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.9&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Thu Oct 12 13:14:36 2006 UTC</em> (6 years, 7 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.8: +1 -1 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.8&amp;r2=1.9">previous 1.8</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">See CL
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.8"></a>
+<a name="TrigDb-00-00-02"></a>
+
+
+Revision <strong>1.8</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.8&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.8">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.8">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.8&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Sep 27 17:01:59 2006 UTC</em> (6 years, 8 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-02"><strong>TrigDb-00-00-02</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.7: +11 -11 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.7&amp;r2=1.8">previous 1.7</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">versions for all HLT tables are now integers
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.7"></a>
+
+
+Revision <strong>1.7</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.7&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.7">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.7">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.7&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Sep 27 16:16:41 2006 UTC</em> (6 years, 8 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.6: +3 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.6&amp;r2=1.7">previous 1.6</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">forced accept -&gt; pass_through
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.6"></a>
+
+
+Revision <strong>1.6</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.6&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.6">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.6">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.6&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Sep 27 12:50:02 2006 UTC</em> (6 years, 8 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.5: +11 -11 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.5&amp;r2=1.6">previous 1.5</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">extented the prescale table with level info and allow longer names/aliases for the components
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.5"></a>
+
+
+Revision <strong>1.5</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.5&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.5">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.5">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.5&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Sep 27 10:51:05 2006 UTC</em> (6 years, 8 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.4: +6 -6 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.4&amp;r2=1.5">previous 1.4</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">bug fix
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.4"></a>
+
+
+Revision <strong>1.4</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.4&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.4">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.4">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.4&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Wed Sep 27 10:45:29 2006 UTC</em> (6 years, 8 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.3: +41 -8 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.3&amp;r2=1.4">previous 1.3</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Updated schema:
+  - level information to prescales
+  - new table 'hlt_stream' to contain stream configuration
+  - new M:N connector between chains and streams 'hlt_tc_to_tr'
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.3"></a>
+
+
+Revision <strong>1.3</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.3&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.3">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.3">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.3&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Tue Aug 29 14:58:45 2006 UTC</em> (6 years, 9 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.2: +16 -16 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.2&amp;r2=1.3">previous 1.2</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">removed table hlt_tc_to_ts
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.2"></a>
+
+
+Revision <strong>1.2</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.2&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.2">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.2">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.2&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Fri Aug  4 13:41:41 2006 UTC</em> (6 years, 10 months ago) by <em>haller</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+
+
+
+<br />Changes since <strong>1.1: +4 -3 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.1&amp;r2=1.2">previous 1.1</a>
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">adapting the logic expressions in items to new syntax
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.1.1.1"></a>
+<a name="TrigDb-00-00-01"></a>
+
+<a name="ATLAS"></a>
+
+Revision <strong>1.1.1.1</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.1.1.1&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.1.1.1">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.1.1.1">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.1.1.1&amp;view=log">[select for diffs]</a>
+
+
+
+
+<em>(vendor branch)</em>
+
+<br />
+
+<em>Mon Jul 31 15:14:12 2006 UTC</em> (6 years, 10 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=ATLAS"><strong>ATLAS</strong></a>
+
+
+
+<br />CVS Tags:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=TrigDb-00-00-01"><strong>TrigDb-00-00-01</strong></a>
+
+
+
+
+
+
+<br />Changes since <strong>1.1: +0 -0 lines</strong>
+
+
+
+
+
+
+
+<br />Diff to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.1&amp;r2=1.1.1.1">previous 1.1</a>
+
+
+
+
+
+
+, to <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.83&amp;r2=1.1.1.1">next main 1.83</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Creating TrigDb Package
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev1.1"></a>
+
+
+Revision <strong>1.1</strong> -
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.1&amp;view=markup">view</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?revision=1.1">download</a>)
+
+(<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?annotate=1.1">annotate</a>)
+
+
+
+- <a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?r1=1.1&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+<em>Mon Jul 31 15:14:12 2006 UTC</em> (6 years, 10 months ago) by <em>stelzer</em>
+
+
+<br />Branch:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=MAIN"><strong>MAIN</strong></a>
+
+
+
+
+<br />Branch point for:
+
+<a href="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql?view=log&amp;pathrev=ATLAS"><strong>ATLAS</strong></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Initial revision
+</pre>
+</div>
+
+ 
+
+
+
+ <hr />
+<p><a name="diff"></a>
+This form allows you to request diffs between any two revisions of this file.
+For each of the two "sides" of the diff,
+
+select a symbolic revision name using the selection box, or choose
+'Use Text Field' and enter a numeric revision.
+
+</p>
+<form method="get" action="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql" id="diff_select">
+<table cellpadding="2" cellspacing="0" class="auto">
+<tr>
+<td>&nbsp;</td>
+<td>
+<input type="hidden" name="view" value="diff" />
+Diffs between
+
+<select name="r1">
+<option value="text" selected="selected">Use Text Field</option>
+
+<option value="1.83:TrigDb-00-01-10">TrigDb-00-01-10</option>
+
+<option value="1.82:TrigDb-00-01-09">TrigDb-00-01-09</option>
+
+<option value="1.81:TrigDb-00-01-08">TrigDb-00-01-08</option>
+
+<option value="1.80:TrigDb-00-01-07">TrigDb-00-01-07</option>
+
+<option value="1.78:TrigDb-00-01-06">TrigDb-00-01-06</option>
+
+<option value="1.77:TrigDb-00-01-05">TrigDb-00-01-05</option>
+
+<option value="1.76:TrigDb-00-01-04">TrigDb-00-01-04</option>
+
+<option value="1.75:TrigDb-00-01-03">TrigDb-00-01-03</option>
+
+<option value="1.68:TrigDb-00-01-02">TrigDb-00-01-02</option>
+
+<option value="1.67:TrigDb-00-01-01">TrigDb-00-01-01</option>
+
+<option value="1.65:TrigDb-00-01-00">TrigDb-00-01-00</option>
+
+<option value="1.63:TrigDb-00-00-39-branch">TrigDb-00-00-39-branch</option>
+
+<option value="1.63:TrigDb-00-00-39">TrigDb-00-00-39</option>
+
+<option value="1.60:TrigDb-00-00-38">TrigDb-00-00-38</option>
+
+<option value="1.58:TrigDb-00-00-37">TrigDb-00-00-37</option>
+
+<option value="1.57:TrigDb-00-00-36">TrigDb-00-00-36</option>
+
+<option value="1.47:TrigDb-00-00-35">TrigDb-00-00-35</option>
+
+<option value="1.47:TrigDb-00-00-34">TrigDb-00-00-34</option>
+
+<option value="1.47:TrigDb-00-00-33">TrigDb-00-00-33</option>
+
+<option value="1.47:TrigDb-00-00-32">TrigDb-00-00-32</option>
+
+<option value="1.47:TrigDb-00-00-31">TrigDb-00-00-31</option>
+
+<option value="1.47:TrigDb-00-00-30">TrigDb-00-00-30</option>
+
+<option value="1.47:TrigDb-00-00-29">TrigDb-00-00-29</option>
+
+<option value="1.47:TrigDb-00-00-28">TrigDb-00-00-28</option>
+
+<option value="1.47:TrigDb-00-00-27">TrigDb-00-00-27</option>
+
+<option value="1.46:TrigDb-00-00-26">TrigDb-00-00-26</option>
+
+<option value="1.46:TrigDb-00-00-25">TrigDb-00-00-25</option>
+
+<option value="1.46:TrigDb-00-00-24">TrigDb-00-00-24</option>
+
+<option value="1.46:TrigDb-00-00-23">TrigDb-00-00-23</option>
+
+<option value="1.45:TrigDb-00-00-22">TrigDb-00-00-22</option>
+
+<option value="1.45:TrigDb-00-00-21-branch">TrigDb-00-00-21-branch</option>
+
+<option value="1.45:TrigDb-00-00-21-02">TrigDb-00-00-21-02</option>
+
+<option value="1.45:TrigDb-00-00-21-01">TrigDb-00-00-21-01</option>
+
+<option value="1.41:TrigDb-00-00-21">TrigDb-00-00-21</option>
+
+<option value="1.40:TrigDb-00-00-20">TrigDb-00-00-20</option>
+
+<option value="1.39:TrigDb-00-00-19">TrigDb-00-00-19</option>
+
+<option value="1.34:TrigDb-00-00-18">TrigDb-00-00-18</option>
+
+<option value="1.34:TrigDb-00-00-17">TrigDb-00-00-17</option>
+
+<option value="1.26:TrigDb-00-00-16">TrigDb-00-00-16</option>
+
+<option value="1.26:TrigDb-00-00-15">TrigDb-00-00-15</option>
+
+<option value="1.25:TrigDb-00-00-14">TrigDb-00-00-14</option>
+
+<option value="1.25:TrigDb-00-00-13">TrigDb-00-00-13</option>
+
+<option value="1.24:TrigDb-00-00-12">TrigDb-00-00-12</option>
+
+<option value="1.23:TrigDb-00-00-11">TrigDb-00-00-11</option>
+
+<option value="1.20:TrigDb-00-00-10">TrigDb-00-00-10</option>
+
+<option value="1.17:TrigDb-00-00-09">TrigDb-00-00-09</option>
+
+<option value="1.16:TrigDb-00-00-08">TrigDb-00-00-08</option>
+
+<option value="1.15.2.1:TrigDb-00-00-07-branch">TrigDb-00-00-07-branch</option>
+
+<option value="1.15.2.1:TrigDb-00-00-07-02">TrigDb-00-00-07-02</option>
+
+<option value="1.15:TrigDb-00-00-07-01">TrigDb-00-00-07-01</option>
+
+<option value="1.15:TrigDb-00-00-07">TrigDb-00-00-07</option>
+
+<option value="1.15:TrigDb-00-00-06">TrigDb-00-00-06</option>
+
+<option value="1.13.2.1:TrigDb-00-00-05-branch">TrigDb-00-00-05-branch</option>
+
+<option value="1.13.2.1:TrigDb-00-00-05-02">TrigDb-00-00-05-02</option>
+
+<option value="1.13.2.1:TrigDb-00-00-05-01">TrigDb-00-00-05-01</option>
+
+<option value="1.13:TrigDb-00-00-05">TrigDb-00-00-05</option>
+
+<option value="1.12:TrigDb-00-00-04">TrigDb-00-00-04</option>
+
+<option value="1.11:TrigDb-00-00-03">TrigDb-00-00-03</option>
+
+<option value="1.8:TrigDb-00-00-02">TrigDb-00-00-02</option>
+
+<option value="1.1.1.1:TrigDb-00-00-01">TrigDb-00-00-01</option>
+
+<option value="1.83:MAIN">MAIN</option>
+
+<option value="1.83:HEAD">HEAD</option>
+
+<option value="1.1.1.1:ATLAS">ATLAS</option>
+
+</select>
+<input type="text" size="12" name="tr1"
+value="1.83"
+onchange="document.getElementById('diff_select').r1.selectedIndex=0" />
+
+and
+
+<select name="r2">
+<option value="text" selected="selected">Use Text Field</option>
+
+<option value="1.83:TrigDb-00-01-10">TrigDb-00-01-10</option>
+
+<option value="1.82:TrigDb-00-01-09">TrigDb-00-01-09</option>
+
+<option value="1.81:TrigDb-00-01-08">TrigDb-00-01-08</option>
+
+<option value="1.80:TrigDb-00-01-07">TrigDb-00-01-07</option>
+
+<option value="1.78:TrigDb-00-01-06">TrigDb-00-01-06</option>
+
+<option value="1.77:TrigDb-00-01-05">TrigDb-00-01-05</option>
+
+<option value="1.76:TrigDb-00-01-04">TrigDb-00-01-04</option>
+
+<option value="1.75:TrigDb-00-01-03">TrigDb-00-01-03</option>
+
+<option value="1.68:TrigDb-00-01-02">TrigDb-00-01-02</option>
+
+<option value="1.67:TrigDb-00-01-01">TrigDb-00-01-01</option>
+
+<option value="1.65:TrigDb-00-01-00">TrigDb-00-01-00</option>
+
+<option value="1.63:TrigDb-00-00-39-branch">TrigDb-00-00-39-branch</option>
+
+<option value="1.63:TrigDb-00-00-39">TrigDb-00-00-39</option>
+
+<option value="1.60:TrigDb-00-00-38">TrigDb-00-00-38</option>
+
+<option value="1.58:TrigDb-00-00-37">TrigDb-00-00-37</option>
+
+<option value="1.57:TrigDb-00-00-36">TrigDb-00-00-36</option>
+
+<option value="1.47:TrigDb-00-00-35">TrigDb-00-00-35</option>
+
+<option value="1.47:TrigDb-00-00-34">TrigDb-00-00-34</option>
+
+<option value="1.47:TrigDb-00-00-33">TrigDb-00-00-33</option>
+
+<option value="1.47:TrigDb-00-00-32">TrigDb-00-00-32</option>
+
+<option value="1.47:TrigDb-00-00-31">TrigDb-00-00-31</option>
+
+<option value="1.47:TrigDb-00-00-30">TrigDb-00-00-30</option>
+
+<option value="1.47:TrigDb-00-00-29">TrigDb-00-00-29</option>
+
+<option value="1.47:TrigDb-00-00-28">TrigDb-00-00-28</option>
+
+<option value="1.47:TrigDb-00-00-27">TrigDb-00-00-27</option>
+
+<option value="1.46:TrigDb-00-00-26">TrigDb-00-00-26</option>
+
+<option value="1.46:TrigDb-00-00-25">TrigDb-00-00-25</option>
+
+<option value="1.46:TrigDb-00-00-24">TrigDb-00-00-24</option>
+
+<option value="1.46:TrigDb-00-00-23">TrigDb-00-00-23</option>
+
+<option value="1.45:TrigDb-00-00-22">TrigDb-00-00-22</option>
+
+<option value="1.45:TrigDb-00-00-21-branch">TrigDb-00-00-21-branch</option>
+
+<option value="1.45:TrigDb-00-00-21-02">TrigDb-00-00-21-02</option>
+
+<option value="1.45:TrigDb-00-00-21-01">TrigDb-00-00-21-01</option>
+
+<option value="1.41:TrigDb-00-00-21">TrigDb-00-00-21</option>
+
+<option value="1.40:TrigDb-00-00-20">TrigDb-00-00-20</option>
+
+<option value="1.39:TrigDb-00-00-19">TrigDb-00-00-19</option>
+
+<option value="1.34:TrigDb-00-00-18">TrigDb-00-00-18</option>
+
+<option value="1.34:TrigDb-00-00-17">TrigDb-00-00-17</option>
+
+<option value="1.26:TrigDb-00-00-16">TrigDb-00-00-16</option>
+
+<option value="1.26:TrigDb-00-00-15">TrigDb-00-00-15</option>
+
+<option value="1.25:TrigDb-00-00-14">TrigDb-00-00-14</option>
+
+<option value="1.25:TrigDb-00-00-13">TrigDb-00-00-13</option>
+
+<option value="1.24:TrigDb-00-00-12">TrigDb-00-00-12</option>
+
+<option value="1.23:TrigDb-00-00-11">TrigDb-00-00-11</option>
+
+<option value="1.20:TrigDb-00-00-10">TrigDb-00-00-10</option>
+
+<option value="1.17:TrigDb-00-00-09">TrigDb-00-00-09</option>
+
+<option value="1.16:TrigDb-00-00-08">TrigDb-00-00-08</option>
+
+<option value="1.15.2.1:TrigDb-00-00-07-branch">TrigDb-00-00-07-branch</option>
+
+<option value="1.15.2.1:TrigDb-00-00-07-02">TrigDb-00-00-07-02</option>
+
+<option value="1.15:TrigDb-00-00-07-01">TrigDb-00-00-07-01</option>
+
+<option value="1.15:TrigDb-00-00-07">TrigDb-00-00-07</option>
+
+<option value="1.15:TrigDb-00-00-06">TrigDb-00-00-06</option>
+
+<option value="1.13.2.1:TrigDb-00-00-05-branch">TrigDb-00-00-05-branch</option>
+
+<option value="1.13.2.1:TrigDb-00-00-05-02">TrigDb-00-00-05-02</option>
+
+<option value="1.13.2.1:TrigDb-00-00-05-01">TrigDb-00-00-05-01</option>
+
+<option value="1.13:TrigDb-00-00-05">TrigDb-00-00-05</option>
+
+<option value="1.12:TrigDb-00-00-04">TrigDb-00-00-04</option>
+
+<option value="1.11:TrigDb-00-00-03">TrigDb-00-00-03</option>
+
+<option value="1.8:TrigDb-00-00-02">TrigDb-00-00-02</option>
+
+<option value="1.1.1.1:TrigDb-00-00-01">TrigDb-00-00-01</option>
+
+<option value="1.83:MAIN">MAIN</option>
+
+<option value="1.83:HEAD">HEAD</option>
+
+<option value="1.1.1.1:ATLAS">ATLAS</option>
+
+</select>
+<input type="text" size="12" name="tr2"
+value="1.1"
+onchange="document.getElementById('diff_select').r2.selectedIndex=0" />
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+Type of Diff should be a
+<select name="diff_format" onchange="submit()">
+<option value="h" selected="selected">Colored Diff</option>
+<option value="l" >Long Colored Diff</option>
+<option value="u" >Unidiff</option>
+<option value="c" >Context Diff</option>
+<option value="s" >Side by Side</option>
+</select>
+<input type="submit" value=" Get Diffs " />
+</td>
+</tr>
+</table>
+</form>
+
+
+<form method="get" action="/cgi-bin/viewcvs-atlas.cgi/offline/Trigger/TrigConfiguration/TrigDb/share/sql/combined_schema.sql">
+<div>
+<hr />
+<a name="logsort"></a>
+<input type="hidden" name="view" value="log" />
+Sort log by:
+<select name="logsort" onchange="submit()">
+<option value="cvs" >Not sorted</option>
+<option value="date" selected="selected">Commit date</option>
+<option value="rev" >Revision</option>
+</select>
+<input type="submit" value=" Sort " />
+</div>
+</form>
+
+
+<hr />
+<table>
+<tr>
+<td><address><a href="http://cvs.web.cern.ch/cvs">CERN Central CVS service</a></address></td>
+<td style="text-align: right;"><strong><a href="/cgi-bin/viewcvs-atlas.cgi/*docroot*/help_log.html">ViewVC Help</a></strong></td>
+</tr>
+<tr>
+<td>Powered by <a href="http://viewvc.tigris.org/">ViewVC 1.0.9</a></td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+</table>
+</body>
+</html>
+
+

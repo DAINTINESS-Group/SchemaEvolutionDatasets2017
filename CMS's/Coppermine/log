@@ -1,0 +1,3913 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- ViewVC :: http://www.viewvc.org/ -->
+<head>
+<title>SourceForge.net Repository - [coppermine] Log of /trunk/cpg1.5.x/sql/schema.sql</title>
+<meta name="generator" content="ViewVC 1.1.6" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The world's largest development and download repository of Open Source code and applications" />
+<meta name="keywords" content="Open Source, Development, Developers, Projects, Downloads, OSTG, VA Software, SF.net, SourceForge" />
+<title>SourceForge.net Repository - coppermine Index of /</title>
+<link rel="shortcut icon" href="http://a.fsdn.com/con/img/favicon.ico" />
+<link rel="stylesheet" href="/viewvc-static/styles.css" type="text/css" />
+<style type="text/css">
+#doc3 { max-width: 1000px; margin: 0 auto; }
+#hd .logo {
+background: url("http://a.fsdn.com/sf/images/phoneix/sf_phoneix.png") no-repeat;
+color: transparent;
+display: inline-block;
+height: 36px;
+}
+#hd .search { display: none; }
+#breadcrumbs { margin-bottom: 1em; }
+#fad83 { float: right; }
+#yui-main { min-height: 100px; }
+#ft .yui-u { display: inline-block; margin-right: 2em; }
+</style>
+
+<!-- BEGIN: AdSolution-Tag 4.2: Global-Code [PLACE IN HTML-HEAD-AREA!] -->
+<!-- DoubleClick Random Number -->
+<script language="JavaScript" type="text/javascript">
+dfp_ord=Math.random()*10000000000000000;
+dfp_tile = 1;
+</script>
+<!-- End DoubleClick Random Number -->
+<script type="text/javascript">
+var google_page_url = 'http://sourceforge.net/projects/coppermine/';
+var sourceforge_project_name = 'coppermine';
+var sourceforge_project_description = '';
+</script>
+<!-- END: AdSolution-Tag 4.2: Global-Code -->
+<!-- after META tags -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-32013-37']);
+_gaq.push(['_setDomainName', '.sourceforge.net']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['t2._setAccount', 'UA-36130941-4']);
+_gaq.push(['t2._setDomainName', '.sourceforge.net']);
+_gaq.push(['t2._trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+<body class="short-head">
+<!--[if IE 7]><div id="ie7only"><![endif]-->
+<!--[if IE 6]><div id="ie6only"><![endif]-->
+<!--[if IE]><div id="ieonly"><![endif]-->
+<div id="doc3">
+<div id="hd">
+<div class="yui-b">
+<div class="yui-gc">
+<div class="yui-u first">
+<a href="http://sourceforge.net/" class="logo">Find and develop open source software</a>
+</div>
+<div class="yui-u">
+<div class="search">
+<form action="http://sourceforge.net/search/" method="get" name="searchform" id="searchform">
+<input type="hidden" name="type_of_search" value="soft" />
+<input type="text" class="text clear hint" name="words" id="words" value="enter keyword" />
+<span class="yui-button yui-push-button default"><span class="first-child"><button type="submit" value="Search">Search</button></span></span>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="bd" class="inner-bd">
+<div id="doc4" class="yui-t6">
+<div id="breadcrumbs">
+
+<a href="http://sourceforge.net/">SourceForge.net</a>
+&gt; <a href="http://sourceforge.net/softwaremap/">Find Software</a>
+&gt; <a href="http://sourceforge.net/projects/coppermine/">coppermine</a>
+&gt; SCM Repositories
+
+
+<a href="/viewvc/coppermine/">
+
+
+&gt; coppermine
+
+
+</a>
+
+
+
+<a href="/viewvc/coppermine/trunk/">
+
+
+&gt; trunk
+
+
+</a>
+
+
+
+<a href="/viewvc/coppermine/trunk/cpg1.5.x/">
+
+
+&gt; cpg1.5.x
+
+
+</a>
+
+
+
+<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/">
+
+
+&gt; sql
+
+
+</a>
+
+
+
+
+&gt; schema.sql
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="project_nav_container">
+<small><div>
+
+<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/"><img src="/viewvc-static/images/back_small.png" width="16" height="16" alt="Parent Directory" /> Parent Directory</a>
+
+| <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?view=log"><img src="/viewvc-static/images/log.png" width="16" height="16" alt="Revision Log" /> Revision Log</a>
+
+
+
+
+</div>
+</small>
+<h1>SCM Repositories - <a href="http://sourceforge.net/projects/coppermine">coppermine</a></h1>
+</div>
+<hr class="clear">
+<div class="yui-b">
+<div id="fad83">
+<!-- DoubleClick Ad Tag -->
+<script type="text/javascript">
+//<![CDATA[
+document.write('<script src="http://ad.doubleclick.net/adj/ostg.sourceforge/pg_viewvc_p88_shortrec;pg=viewvc;tile='+dfp_tile+';tpc=coppermine;ord='+dfp_ord+';sz=1x1?" type="text/javascript"><\/script>');
+dfp_tile++;
+//]]>
+</script>
+<!-- End DoubleClick Ad Tag -->
+</div>
+</div>
+<div id="yui-main">
+<div class="yui-b sfBox">
+<table class="auto">
+
+
+
+<tr>
+<td>Links to HEAD:</td>
+<td>
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8517&amp;view=markup">view</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8517">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8517&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8517">annotate</a>)
+mime-type: text/x-sql
+</td>
+</tr>
+
+
+
+<tr>
+<td>Sticky Revision:</td>
+<td><form method="get" action="/viewvc/coppermine" style="display: inline">
+<div style="display: inline">
+<input type="hidden" name="orig_pathtype" value="FILE"/><input type="hidden" name="orig_view" value="log"/><input type="hidden" name="orig_path" value="trunk/cpg1.5.x/sql/schema.sql"/><input type="hidden" name="view" value="redirect_pathrev"/>
+
+<input type="text" name="pathrev" value="" size="6"/>
+
+<input type="submit" value="Set" />
+</div>
+</form>
+
+</td>
+</tr>
+</table>
+ 
+
+
+</div>
+</div>
+<hr class="clear">
+<div>
+
+
+
+
+
+
+<div>
+<hr />
+
+<a name="rev8362"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8362"><strong>8362</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8362&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8362">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8362&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8362">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8362&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Mar 29 15:52:51 2012 UTC</em>
+(14 months, 1 week ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8359&amp;r2=8362">previous 8359</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.20 to cpg1.5.21. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8359"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8359"><strong>8359</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8359&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8359">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8359&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8359">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8359&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Mar 29 14:32:35 2012 UTC</em>
+(14 months, 1 week ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8307&amp;r2=8359">previous 8307</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing release of cpg1.5.20. 
+Removed blank lines from SVN header. 
+Unified 'Not in Coppermine...' code lines. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8307"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8307"><strong>8307</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8307&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8307">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8307&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8307">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8307&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan 10 15:48:04 2012 UTC</em>
+(16 months, 3 weeks ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8304&amp;r2=8307">previous 8304</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.18 to cpg1.5.19.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8304"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8304"><strong>8304</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8304&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8304">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8304&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8304">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8304&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan 10 12:20:18 2012 UTC</em>
+(16 months, 3 weeks ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8247&amp;r2=8304">previous 8247</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated header information to reflect new year. 
+Preparing release of cpg1.5.18. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8247"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8247"><strong>8247</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8247&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8247">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8247&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8247">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8247&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep  1 15:08:40 2011 UTC</em>
+(21 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8243&amp;r2=8247">previous 8243</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.16 to cpg1.5.17.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8243"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8243"><strong>8243</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8243&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8243">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8243&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8243">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8243&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep  1 12:43:07 2011 UTC</em>
+(21 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8232&amp;r2=8243">previous 8232</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing release of cpg1.5.16.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8232"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8232"><strong>8232</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8232&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8232">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8232&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8232">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8232&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Aug  2 08:37:10 2011 UTC</em>
+(22 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8229&amp;r2=8232">previous 8229</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.14 to cpg1.5.15. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8229"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8229"><strong>8229</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8229&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8229">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8229&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8229">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8229&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Aug  1 10:58:04 2011 UTC</em>
+(22 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8157&amp;r2=8229">previous 8157</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing release of cpg1.5.14.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8157"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8157"><strong>8157</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8157&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8157">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8157&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8157">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8157&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Jan  3 13:43:13 2011 UTC</em>
+(2 years, 5 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8154&amp;r2=8157">previous 8154</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.12 to cpg1.5.13. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8154"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8154"><strong>8154</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8154&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8154">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8154&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8154">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8154&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Jan  2 19:44:22 2011 UTC</em>
+(2 years, 5 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8114&amp;r2=8154">previous 8114</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing release of cpg1.5.12. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8114"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8114"><strong>8114</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8114&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8114">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8114&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8114">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8114&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Nov 30 16:25:32 2010 UTC</em>
+(2 years, 6 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8107&amp;r2=8114">previous 8107</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.10 to cpg1.5.11. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8107"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8107"><strong>8107</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8107&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8107">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8107&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8107">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8107&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Nov 30 06:37:44 2010 UTC</em>
+(2 years, 6 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13059 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8031&amp;r2=8107">previous 8031</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing release of cpg1.5.10. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev8031"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=8031"><strong>8031</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8031&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8031">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=8031&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=8031">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=8031&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Nov 10 20:04:20 2010 UTC</em>
+(2 years, 6 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13058 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7910&amp;r2=8031">previous 7910</a>
+
+
+
+
+
+
+
+<pre class="vc_log">No longer specify a MySQL engine - use the server default.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7910"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7910"><strong>7910</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7910&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7910">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7910&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7910">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7910&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep 16 12:25:46 2010 UTC</em>
+(2 years, 8 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13330 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7809&amp;r2=7910">previous 7809</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fixed registration process if both email verification and admin activation enabled (thread ID 67095). </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7809"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7809"><strong>7809</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7809&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7809">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7809&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7809">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7809&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Aug 10 10:53:32 2010 UTC</em>
+(2 years, 9 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13274 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7805&amp;r2=7809">previous 7805</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.8 to cpg1.5.9. </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7805"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7805"><strong>7805</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7805&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7805">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7805&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7805">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7805&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Aug  6 09:59:36 2010 UTC</em>
+(2 years, 10 months ago)
+by <em>eenemeenemuu</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13274 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7649&amp;r2=7805">previous 7649</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing the release of cpg1.5.8.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7649"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7649"><strong>7649</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7649&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7649">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7649&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7649">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7649&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Jun  7 06:57:41 2010 UTC</em>
+(3 years ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13274 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7620&amp;r2=7649">previous 7620</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version count up in SVN repository from cpg1.5.6 to cpg1.5.7</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7620"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7620"><strong>7620</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7620&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7620">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7620&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7620">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7620&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Jun  3 12:14:33 2010 UTC</em>
+(3 years ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13274 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7597&amp;r2=7620">previous 7597</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing release of cpg1.5.6</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7597"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7597"><strong>7597</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7597&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7597">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7597&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7597">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7597&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun May 30 20:14:44 2010 UTC</em>
+(3 years ago)
+by <em>phill104</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13274 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7577&amp;r2=7597">previous 7577</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Add missing token entry - guest_token varchar(32) default ''</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7577"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7577"><strong>7577</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7577&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7577">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7577&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7577">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7577&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed May 26 12:30:55 2010 UTC</em>
+(3 years ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13231 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7335&amp;r2=7577">previous 7335</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Removing reference to author/lastchangedby line from svn headers</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7335"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7335"><strong>7335</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7335&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7335">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7335&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7335">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7335&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Mar 23 07:38:51 2010 UTC</em>
+(3 years, 2 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12881 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7167&amp;r2=7335">previous 7167</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Counted version number up from in file headers from cpg1.5.3 to cpg1.5.4 as a preparation for the next release.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev7167"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=7167"><strong>7167</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7167&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7167">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=7167&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=7167">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=7167&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jan 30 15:52:43 2010 UTC</em>
+(3 years, 4 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12881 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6985&amp;r2=7167">previous 6985</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fulltext index is no longer used when searching, drop it</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev6985"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=6985"><strong>6985</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6985&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6985">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6985&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=6985">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6985&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jan  2 10:38:29 2010 UTC</em>
+(3 years, 5 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12941 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6849&amp;r2=6985">previous 6849</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated header information to reflect new year</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev6849"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=6849"><strong>6849</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6849&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6849">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6849&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=6849">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6849&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Dec 11 08:49:36 2009 UTC</em>
+(3 years, 5 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12941 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6410&amp;r2=6849">previous 6410</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated version count from cpg1.5.2 to cpg1.5.3 to prepare the next release</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev6410"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=6410"><strong>6410</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6410&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6410">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6410&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=6410">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6410&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Aug  3 19:44:52 2009 UTC</em>
+(3 years, 10 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12941 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6360&amp;r2=6410">previous 6360</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Add the keys usermgr needs</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev6360"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=6360"><strong>6360</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6360&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6360">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6360&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=6360">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6360&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Jul 24 06:26:16 2009 UTC</em>
+(3 years, 10 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12882 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6071&amp;r2=6360">previous 6071</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated version count from cpg1.5.1 to cpg1.5.2 to prepare the next release and mark the passed release of cpg1.5.1</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev6071"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=6071"><strong>6071</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6071&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6071">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=6071&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=6071">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=6071&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Jun  4 16:03:00 2009 UTC</em>
+(4 years ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12882 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5807&amp;r2=6071">previous 5807</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Use username from users table now, dropping owner_name field in pictures table</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5807"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5807"><strong>5807</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5807&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5807">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5807&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5807">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5807&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Apr  4 12:30:54 2009 UTC</em>
+(4 years, 2 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12928 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5790&amp;r2=5807">previous 5790</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Extend pic_aid index over pid field - performance tweak</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5790"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5790"><strong>5790</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5790&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5790">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5790&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5790">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5790&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Mar 28 16:14:46 2009 UTC</em>
+(4 years, 2 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12986 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5775&amp;r2=5790">previous 5775</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Removed unneeded fields from usergroups table.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5775"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5775"><strong>5775</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5775&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5775">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5775&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5775">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5775&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Mar 26 18:19:13 2009 UTC</em>
+(4 years, 2 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13195 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5770&amp;r2=5775">previous 5770</a>
+
+
+
+
+
+
+
+<pre class="vc_log">CPG_temp_data table no longer required</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5770"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5770"><strong>5770</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5770&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5770">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5770&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5770">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5770&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Mar 25 23:50:11 2009 UTC</em>
+(4 years, 2 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13561 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5698&amp;r2=5770">previous 5698</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Changing the session_id field to to char(32) gain the advantages of fixed length row format</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5698"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5698"><strong>5698</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5698&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5698">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5698&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5698">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5698&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Jan 19 22:03:53 2009 UTC</em>
+(4 years, 4 months ago)
+by <em>saweyyy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13563 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5689&amp;r2=5698">previous 5689</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fixed missing delimiter in schema.sql</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5689"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5689"><strong>5689</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5689&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5689">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5689&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5689">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5689&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Jan 15 21:31:01 2009 UTC</em>
+(4 years, 4 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13562 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5600&amp;r2=5689">previous 5600</a>
+
+
+
+
+
+
+
+<pre class="vc_log">EXIF table now uses pid instead of filename for indexing</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5600"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5600"><strong>5600</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5600&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5600">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5600&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5600">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5600&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Jan  7 10:23:47 2009 UTC</em>
+(4 years, 4 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13597 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5589&amp;r2=5600">previous 5589</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Changed documentation link in admin menu to localized version if available</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5589"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5589"><strong>5589</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5589&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5589">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5589&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5589">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5589&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan  6 08:42:39 2009 UTC</em>
+(4 years, 5 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13557 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5459&amp;r2=5589">previous 5459</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated version count from cpg1.5.0 to cpg1.5.1 to prepare upcoming alpha release</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5459"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5459"><strong>5459</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5459&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5459">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5459&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5459">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5459&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Dec 20 21:36:43 2008 UTC</em>
+(4 years, 5 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13546 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5457&amp;r2=5459">previous 5457</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Sorted schema.sql</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5457"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5457"><strong>5457</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5457&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5457">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5457&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5457">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5457&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Dec 20 21:16:10 2008 UTC</em>
+(4 years, 5 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13412 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5416&amp;r2=5457">previous 5416</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Removed unneeded coma</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5416"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5416"><strong>5416</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5416&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5416">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5416&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5416">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5416&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Dec 16 10:23:45 2008 UTC</em>
+(4 years, 5 months ago)
+by <em>pvanrompay</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13415 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5347&amp;r2=5416">previous 5347</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added keyword separator</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5347"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5347"><strong>5347</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5347&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5347">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5347&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5347">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5347&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Dec 11 22:21:11 2008 UTC</em>
+(4 years, 5 months ago)
+by <em>saweyyy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13401 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5345&amp;r2=5347">previous 5345</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fixed schema and insert statement of access levels</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5345"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5345"><strong>5345</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5345&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5345">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5345&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5345">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5345&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Dec 11 21:32:51 2008 UTC</em>
+(4 years, 5 months ago)
+by <em>pvanrompay</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13400 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5335&amp;r2=5345">previous 5335</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fix default value of groups-based access_level</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5335"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5335"><strong>5335</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5335&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5335">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5335&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5335">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5335&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Dec 11 08:30:26 2008 UTC</em>
+(4 years, 5 months ago)
+by <em>pvanrompay</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13400 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5282&amp;r2=5335">previous 5282</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added group-based access levels (thumbs,intermediate,full-size)
+Started upload_swf integration into config setting - not implemented yet
+Removed old upload options from groups manager - commented out, will remove soon</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5282"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5282"><strong>5282</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5282&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5282">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5282&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5282">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5282&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Nov 24 11:48:10 2008 UTC</em>
+(4 years, 6 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13353 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5243&amp;r2=5282">previous 5243</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added Akismet option for comment filtering</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5243"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5243"><strong>5243</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5243&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5243">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5243&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5243">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5243&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Nov 11 16:23:37 2008 UTC</em>
+(4 years, 6 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13306 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5207&amp;r2=5243">previous 5207</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Preparing advanced banning screen</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5207"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5207"><strong>5207</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5207&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5207">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5207&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5207">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5207&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Oct 31 19:06:32 2008 UTC</em>
+(4 years, 7 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13206 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5175&amp;r2=5207">previous 5175</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Removed come queries from updater, as those updates have already been run from cpg1.3.x to cpg1.4.x. Since a direct upgrade from cpg1.3.x to cpg1.5.x is no longer supported we can drop the queries.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5175"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5175"><strong>5175</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5175&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5175">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5175&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5175">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5175&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Oct 24 07:13:37 2008 UTC</em>
+(4 years, 7 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13208 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5129&amp;r2=5175">previous 5129</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added profile field user_language (thread ID 15977)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5129"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5129"><strong>5129</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5129&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5129">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5129&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5129">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5129&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Oct 18 10:33:12 2008 UTC</em>
+(4 years, 7 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13159 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5067&amp;r2=5129">previous 5067</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added  HeadURL to SVN properties to populate the page header as expected</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev5067"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=5067"><strong>5067</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5067&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5067">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=5067&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=5067">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=5067&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Oct  2 17:33:16 2008 UTC</em>
+(4 years, 8 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 13159 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4749&amp;r2=5067">previous 4749</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added language manager (work in progress)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev4749"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=4749"><strong>4749</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4749&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4749">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4749&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=4749">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4749&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Aug  1 07:15:18 2008 UTC</em>
+(4 years, 10 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12631 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4579&amp;r2=4749">previous 4579</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added recording of user id for hit stats</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev4579"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=4579"><strong>4579</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4579&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4579">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4579&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=4579">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4579&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Jun 15 20:15:17 2008 UTC</em>
+(4 years, 11 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12593 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4260&amp;r2=4579">previous 4260</a>
+
+
+
+
+
+
+
+<pre class="vc_log">DB changes for cat system</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev4260"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=4260"><strong>4260</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4260&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4260">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4260&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=4260">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4260&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Feb 10 23:52:58 2008 UTC</em>
+(5 years, 3 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12373 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4224&amp;r2=4260">previous 4224</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Removing column comments for compatibility</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev4224"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=4224"><strong>4224</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4224&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4224">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4224&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=4224">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4224&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jan 26 11:42:00 2008 UTC</em>
+(5 years, 4 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12428 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4162&amp;r2=4224">previous 4162</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated year info in header (copyright line)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev4162"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=4162"><strong>4162</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4162&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4162">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4162&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=4162">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4162&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Dec 21 21:32:59 2007 UTC</em>
+(5 years, 5 months ago)
+by <em>nibbler999</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12439 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4123&amp;r2=4162">previous 4123</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Should have indexes for the moderator group and visibility fields</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev4123"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=4123"><strong>4123</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4123&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4123">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=4123&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=4123">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=4123&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Dec 14 07:35:49 2007 UTC</em>
+(5 years, 5 months ago)
+by <em>saweyyy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12359 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3975&amp;r2=4123">previous 3975</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added posibility for users to create albums in admin allowed categories + Fixed parent category on category-edit + spell checked some dev docs</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3975"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3975"><strong>3975</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3975&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3975">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3975&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3975">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3975&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep 20 11:41:39 2007 UTC</em>
+(5 years, 8 months ago)
+by <em>bmossavari</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 11942 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3973&amp;r2=3975">previous 3973</a>
+
+
+
+
+
+
+
+<pre class="vc_log">changing mime column type from char to varchar suggested by Nibbler #topic=46853.0</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3973"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3973"><strong>3973</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3973&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3973">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3973&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3973">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3973&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep 20 11:31:20 2007 UTC</em>
+(5 years, 8 months ago)
+by <em>bmossavari</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 11939 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3877&amp;r2=3973">previous 3877</a>
+
+
+
+
+
+
+
+<pre class="vc_log">added more storage length to mime column #topic=46239.0</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3877"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3877"><strong>3877</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3877&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3877">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3877&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3877">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3877&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Aug 20 07:13:15 2007 UTC</em>
+(5 years, 9 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 11939 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3786&amp;r2=3877">previous 3786</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Removed default values for text field (thread id 46239)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3786"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3786"><strong>3786</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3786&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3786">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3786&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3786">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3786&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Jul 27 14:44:45 2007 UTC</em>
+(5 years, 10 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 11952 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3763&amp;r2=3786">previous 3763</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated license reference from GNU GPL v2 to GNU GPL v3.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3763"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3763"><strong>3763</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3763&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3763">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3763&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3763">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3763&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Jul 19 10:14:45 2007 UTC</em>
+(5 years, 10 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12013 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3586&amp;r2=3763">previous 3586</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Changed default upload form configuration to one file and zero uri fields.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3586"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3586"><strong>3586</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3586&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3586">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3586&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3586">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3586&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Jun  4 00:15:41 2007 UTC</em>
+(6 years ago)
+by <em>donnoman</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 12013 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3482&amp;r2=3586">previous 3482</a>
+
+
+
+
+
+
+
+<pre class="vc_log">2007-06-03 [B] Increased CPG_filetypes mime field length {Donnoman}
+2007-06-03 [O] Removed &quot;CREATE TABLE IF NOT EXISTS&quot; in update.sql; this case is already handled by the nature of update.php, a failure is preferred. {Donnoman}
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev3482"></a>
+
+
+Revision <a href="/viewvc/coppermine?view=revision&amp;revision=3482"><strong>3482</strong></a> -
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3482&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3482">download</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?revision=3482&amp;content-type=text%2Fplain">as text</a>)
+(<a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?annotate=3482">annotate</a>)
+
+
+
+- <a href="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql?r1=3482&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Added
+
+<em>Sun Mar 18 13:49:25 2007 UTC</em>
+(6 years, 2 months ago)
+by <em>gaugau</em>
+
+
+
+
+
+
+
+<br />File length: 12041 byte(s)
+
+
+
+
+
+
+
+
+
+
+
+<pre class="vc_log">Cleaning up garbage - deleting sub-folders of the SVN that have been added in error.</pre>
+</div>
+
+ 
+
+
+
+ <div class="sfBox">
+<hr class="clear"/>
+<a name="diff"></a>
+This form allows you to request diffs between any two revisions of this file.
+For each of the two "sides" of the diff,
+
+enter a numeric revision.
+
+<form method="get" action="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql" id="diff_select">
+<table cellpadding="2" cellspacing="0" class="auto">
+<tr>
+<td>&nbsp;</td>
+<td>
+
+<input type="hidden" name="view" value="diff"/>
+
+Diffs between
+
+<input type="text" size="12" name="r1"
+value="8362" />
+
+and
+
+<input type="text" size="12" name="r2" value="3482" />
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+Type of Diff should be a
+<select name="diff_format" onchange="submit()">
+<option value="h" selected="selected">Colored Diff</option>
+<option value="l" >Long Colored Diff</option>
+<option value="f" >Full Colored Diff</option>
+<option value="u" >Unidiff</option>
+<option value="c" >Context Diff</option>
+<option value="s" >Side by Side</option>
+</select>
+<input type="submit" value=" Get Diffs " />
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+
+<form method="get" action="/viewvc/coppermine/trunk/cpg1.5.x/sql/schema.sql">
+<div>
+<hr />
+<a name="logsort"></a>
+<input type="hidden" name="view" value="log"/>
+Sort log by:
+<select name="logsort" onchange="submit()">
+<option value="cvs" >Not sorted</option>
+<option value="date" >Commit date</option>
+<option value="rev" >Revision</option>
+</select>
+<input type="submit" value=" Sort " />
+</div>
+</form>
+
+
+<br />
+</div>
+</div>
+</div>
+<div id="ft">
+<div class="yui-b">
+<div class="yui-gb">
+<div class="yui-u first" style="text-align: center;"> <a href="http://p.sf.net/sourceforge/support">SourceForge Help<a/> </div>
+<div class="yui-u" style="text-align: center;"> <strong><a href="/viewvc-static/help_log.html">ViewVC Help</a></strong> </div>
+<div class="yui-u" style="text-align: center;"> <a href="http://viewvc.tigris.org/">Powered by ViewVC 1.1.6</a> </div>
+</div>
+<p class="copyright">Copyright &copy; 2010 <a title="Network which provides and promotes Open Source software downloads, development, discussion and news." href="http://geek.net">Geeknet, Inc.</a> All rights reserved. <a href="http://p.sf.net/sourceforge/terms">Terms of Use</a></p>
+</div>
+</div>
+</div>
+<!--[if IE]></div><![endif]-->
+<!--[if IE 6]></div><![endif]-->
+<!--[if IE 7]></div><![endif]-->
+</body>
+</html>
+
+
