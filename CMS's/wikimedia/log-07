@@ -1,0 +1,3358 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- ViewVC :: http://www.viewvc.org/ -->
+<head>
+<title>[mediawiki] Log of /trunk/phase3/maintenance/tables.sql</title>
+<meta name="generator" content="ViewVC 1.1.5" />
+<!-- <link rel="shortcut icon" href="/viewvc/*docroot*/images/favicon.ico" /> -->
+<link rel="stylesheet" href="/viewvc/*docroot*/styles.css" type="text/css" />
+
+</head>
+<body>
+<div class="vc_navheader">
+<table><tr>
+<td><strong><a href="/viewvc"><span class="pathdiv">/</span></a><a href="/viewvc/mediawiki/">[mediawiki]</a><span class="pathdiv">/</span><a href="/viewvc/mediawiki/trunk/">trunk</a><span class="pathdiv">/</span><a href="/viewvc/mediawiki/trunk/phase3/">phase3</a><span class="pathdiv">/</span><a href="/viewvc/mediawiki/trunk/phase3/maintenance/">maintenance</a><span class="pathdiv">/</span>tables.sql</strong></td>
+<td style="text-align: right;"></td>
+</tr></table>
+</div>
+<div style="float: right; padding: 5px;"><a href="http://www.wikimedia.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Wikimedia_logo_text_RGB.svg/76px-Wikimedia_logo_text_RGB.svg.png" alt="Wikimedia" height="35" width="38">&nbsp;&nbsp;<a href="http://www.viewvc.org/" title="ViewVC Home"><img src="/viewvc/*docroot*/images/viewvc-logo.png" alt="ViewVC logotype" width="120" height="35" /></a></div><h1>Log of /trunk/phase3/maintenance/tables.sql</h1>
+
+<p style="margin:0;">
+
+<a href="/viewvc/mediawiki/trunk/phase3/maintenance/"><img src="/viewvc/*docroot*/images/back_small.png" class="vc_icon" alt="Parent Directory" /> Parent Directory</a>
+
+| <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?view=log"><img src="/viewvc/*docroot*/images/log.png" class="vc_icon" alt="Revision Log" /> Revision Log</a>
+
+
+
+
+</p>
+
+<hr />
+<table class="auto">
+
+
+
+<tr>
+<td>Links to HEAD:</td>
+<td>
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?view=markup">view</a>)
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?view=annotate">annotate</a>)
+</td>
+</tr>
+
+
+
+<tr>
+<td>Sticky Revision:</td>
+<td><form method="get" action="/viewvc/mediawiki" style="display: inline">
+<div style="display: inline">
+<input type="hidden" name="orig_pathtype" value="FILE"/><input type="hidden" name="orig_view" value="log"/><input type="hidden" name="orig_path" value="trunk/phase3/maintenance/tables.sql"/><input type="hidden" name="view" value="redirect_pathrev"/>
+
+<input type="text" name="pathrev" value="" size="6"/>
+
+<input type="submit" value="Set" />
+</div>
+</form>
+
+</td>
+</tr>
+</table>
+ 
+
+<hr />
+<form method="get" action="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql">
+<input type="hidden" name="view" value="log"/>
+<input type="submit" value="Go to:">
+<select name="log_pagestart" onchange="submit()">
+
+
+<option selected value="0">Page 1: 113110 - 80443</option>
+
+
+
+<option  value="50">Page 2: 79763 - 46460</option>
+
+
+
+<option  value="100">Page 3: 45897 - 28446</option>
+
+
+
+<option  value="150">Page 4: 28386 ...</option>
+
+
+</select>
+</form>
+
+
+
+
+
+
+
+
+<div>
+<hr />
+
+<a name="rev113110"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=113110"><strong>113110</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=113110&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=113110&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=113110">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=113110&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Mar  6 00:09:18 2012 UTC</em>
+(15 months ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 54092 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=111686&amp;r2=113110">previous 111686</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Followup r113109, forward port the rest of r25267 for Bug 10788 - Filter page histories by user, or contributions by title</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev111686"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=111686"><strong>111686</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=111686&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=111686&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=111686">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=111686&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Feb 16 21:32:53 2012 UTC</em>
+(15 months, 2 weeks ago)
+by <em>platonides</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 54001 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=111590&amp;r2=111686">previous 111590</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fix r111590 typo.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev111590"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=111590"><strong>111590</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=111590&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=111590&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=111590">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=111590&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Feb 15 22:42:09 2012 UTC</em>
+(15 months, 3 weeks ago)
+by <em>platonides</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53998 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=110752&amp;r2=111590">previous 110752</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Improve table comments.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev110752"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=110752"><strong>110752</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=110752&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=110752&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=110752">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=110752&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Feb  6 16:07:52 2012 UTC</em>
+(16 months ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53888 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=108601&amp;r2=110752">previous 108601</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Not much point making user_groups.ug_group 32 chars if we leave user_former_groups.ufg_group at 16
+
+Also fix modify field to use correct table/column</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev108601"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=108601"><strong>108601</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=108601&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=108601&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=108601">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=108601&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Jan 11 09:05:56 2012 UTC</em>
+(16 months, 3 weeks ago)
+by <em>hashar</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53888 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=108559&amp;r2=108601">previous 108559</a>
+
+
+
+
+
+
+
+<pre class="vc_log">reverts Concurrency works
+
+trunk is frozen pending stabilisation so we can release MediaWiki 1.19.
+Those changes introduces API changes and new SQL tables, so that sounds like
+new feature we do not have time to review right now.
+
+Please reapply changes in branches/concurrency and have code review handled
+there. Once the branch has been reviewed, please hold. Once trunk is stable
+enough and 1.19 got branched, you are welcome to merge the branch in trunk.
+
+Note: we can have a Jenkins jobs setup to run the branch tests if you need.
+
+Reverts:
+r108595 r108591 r108585 r108584 108572 r108564 108560 r108559
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev108559"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=108559"><strong>108559</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=108559&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=108559&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=108559">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=108559&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan 10 23:03:03 2012 UTC</em>
+(16 months, 3 weeks ago)
+by <em>raindrift</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 54840 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107919&amp;r2=108559">previous 107919</a>
+
+
+
+
+
+
+
+<pre class="vc_log">MERGE branches/concurrency 108301:108557 into trunk</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev107919"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=107919"><strong>107919</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107919&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107919&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=107919">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107919&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan  3 18:33:26 2012 UTC</em>
+(17 months ago)
+by <em>hashar</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53888 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107887&amp;r2=107919">previous 107887</a>
+
+
+
+
+
+
+
+<pre class="vc_log">merge JSTesting branch into trunk
+
+Changed written by Timo and reviewed by Hashar. This should be harmless.
+
+To enable the feature:
+  $wgEnableJavaScriptTest = true;
+
+Then head to:
+  [[Special:JavaScriptTest/qunit]]
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev107887"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=107887"><strong>107887</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107887&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107887&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=107887">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107887&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan  3 15:14:35 2012 UTC</em>
+(17 months ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53888 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107886&amp;r2=107887">previous 107886</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fix non reverted job_insert_timestamp
+
+Fixup timestamp addition per Roan
+
+Ping r107886</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev107886"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=107886"><strong>107886</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107886&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107886&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=107886">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107886&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jan  3 15:08:05 2012 UTC</em>
+(17 months ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53902 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107064&amp;r2=107886">previous 107064</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* (bug 27724) Add timestamp to job queue.
+
+Designed for administration purposes, not to be exposed to front end users
+
+Useful for administration purposes (like WMF with job runners), we can look at the &quot;highest&quot; jobs, and find out whether enwiki is just busy, or the jobs have been there a while (signalling that the job runners potentially have issues)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev107064"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=107064"><strong>107064</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107064&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=107064&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=107064">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=107064&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Dec 22 13:18:49 2011 UTC</em>
+(17 months, 2 weeks ago)
+by <em>j</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53676 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104687&amp;r2=107064">previous 104687</a>
+
+
+
+
+
+
+
+<pre class="vc_log">- add comment to document us_chunk_inx in sql file
+- fix chunk upload to work with recent filerepo changes
+Follow up r104687
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev104687"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=104687"><strong>104687</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104687&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104687&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=104687">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104687&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Nov 30 14:56:40 2011 UTC</em>
+(18 months, 1 week ago)
+by <em>j</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53610 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104680&amp;r2=104687">previous 104680</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Use database to track uploaded chunks and concatenate at the end.
+with i18n documentation dont break phpunit
+
+follow up r93720
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev104680"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=104680"><strong>104680</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104680&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104680&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=104680">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104680&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Nov 30 13:54:35 2011 UTC</em>
+(18 months, 1 week ago)
+by <em>catrope</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53575 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104659&amp;r2=104680">previous 104659</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Revert r104659 and its followup r104665: break the unit tests with a fatal error. This cripples our CI system, we can't detect new failures this way.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev104659"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=104659"><strong>104659</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104659&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104659&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=104659">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104659&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Nov 30 08:55:16 2011 UTC</em>
+(18 months, 1 week ago)
+by <em>j</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53610 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104051&amp;r2=104659">previous 104051</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Use database to track uploaded chunks and concatenate at the end.
+follow up r93720
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev104051"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=104051"><strong>104051</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104051&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=104051&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=104051">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=104051&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Nov 23 17:14:03 2011 UTC</em>
+(18 months, 2 weeks ago)
+by <em>demon</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53575 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=103685&amp;r2=104051">previous 103685</a>
+
+
+
+
+
+
+
+<pre class="vc_log">(bug 29475) Remove &quot;trackback&quot; feature entirely from core. This has been disabled-by-default since its inception and nobody uses it.
+
+If someone really really wants this, they can write an extension.
+
+Language files need rebuilding, but I took care of En and messages.inc.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev103685"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=103685"><strong>103685</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=103685&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=103685&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=103685">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=103685&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Nov 19 16:26:28 2011 UTC</em>
+(18 months, 2 weeks ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53887 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=102798&amp;r2=103685">previous 102798</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* (bug 32470) Increase the length of ug_group
+
+
+Postgres doesn't need extending...</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev102798"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=102798"><strong>102798</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=102798&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=102798&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=102798">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=102798&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Nov 11 16:37:38 2011 UTC</em>
+(18 months, 3 weeks ago)
+by <em>catrope</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53887 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=102785&amp;r2=102798">previous 102785</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Followup r102785, fix wrong index order in tables.sql. The patches are fine
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev102785"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=102785"><strong>102785</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=102785&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=102785&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=102785">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=102785&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Nov 11 14:28:44 2011 UTC</em>
+(18 months, 3 weeks ago)
+by <em>freakolowsky</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53887 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=102690&amp;r2=102785">previous 102690</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* applyed the patch from bug 26393 (please comment on the bug page)
+
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev102690"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=102690"><strong>102690</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=102690&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=102690&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=102690">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=102690&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Nov 10 21:03:23 2011 UTC</em>
+(18 months, 3 weeks ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53783 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=101293&amp;r2=102690">previous 101293</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added some revision table comments</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev101293"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=101293"><strong>101293</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=101293&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=101293&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=101293">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=101293&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Oct 30 00:36:30 2011 UTC</em>
+(19 months, 1 week ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53734 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=101247&amp;r2=101293">previous 101247</a>
+
+
+
+
+
+
+
+<pre class="vc_log">rc_cur_time is obsolete; added comment</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev101247"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=101247"><strong>101247</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=101247&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=101247&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=101247">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=101247&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Oct 29 09:53:55 2011 UTC</em>
+(19 months, 1 week ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53705 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=101021&amp;r2=101247">previous 101021</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Updated rc_type documentation</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev101021"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=101021"><strong>101021</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=101021&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=101021&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=101021">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=101021&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Oct 27 18:44:10 2011 UTC</em>
+(19 months, 1 week ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53595 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=98467&amp;r2=101021">previous 98467</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Reinstated r94289 et all - rev_sha1/ar_sha1 field for bug 21860</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev98467"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=98467"><strong>98467</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=98467&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=98467&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=98467">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=98467&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Sep 29 22:08:00 2011 UTC</em>
+(20 months, 1 week ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53422 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=98339&amp;r2=98467">previous 98339</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Back out r95396 and friends</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev98339"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=98339"><strong>98339</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=98339&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=98339&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=98339">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=98339&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Sep 28 18:08:48 2011 UTC</em>
+(20 months, 1 week ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 56087 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=95396&amp;r2=98339">previous 95396</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* (bug 31204) Remove old user.user_options
+
+Added run of ConvertUserOptions maintenance script into update.php before dropping the column
+
+Removed usages of user_options in code
+
+Marked User::decodeOptions() deprecated as of 1.19.
+
+Made ConvertUserOptions drop out early if the user_options field doesn't exist
+
+Made ConvertUserOptions update user_options to '' after migration of user options to mOptions</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev95396"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=95396"><strong>95396</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=95396&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=95396&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=95396">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=95396&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Aug 24 13:03:03 2011 UTC</em>
+(21 months, 2 weeks ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 56308 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=94541&amp;r2=95396">previous 94541</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Merge the iwtransclusion branch back into trunk
+
+Hexmode fixed broken unit tests in revisions after last time</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev94541"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=94541"><strong>94541</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=94541&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=94541&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=94541">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=94541&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon Aug 15 18:24:38 2011 UTC</em>
+(21 months, 3 weeks ago)
+by <em>brion</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53642 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=94289&amp;r2=94541">previous 94289</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Revert r94289, r94290, r94294, r94333, r94345, r94362, r94370 -- core schema change with no discussion
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev94289"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=94289"><strong>94289</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=94289&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=94289&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=94289">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=94289&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Aug 11 21:52:54 2011 UTC</em>
+(21 months, 3 weeks ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53815 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=94239&amp;r2=94289">previous 94239</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* Added rev_sha1 and ar_sha1 columns to revision/archive tables (useful for bug 25312)
+* Created a script to populate these fields (doesn't handle archive rows without ar_rev_id set though)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev94239"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=94239"><strong>94239</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=94239&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=94239&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=94239">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=94239&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Aug 11 12:49:30 2011 UTC</em>
+(21 months, 3 weeks ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53642 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=93534&amp;r2=94239">previous 93534</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Followup r93211, add log_timestamp to end of the index
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev93534"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=93534"><strong>93534</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=93534&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=93534&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=93534">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=93534&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jul 30 15:56:54 2011 UTC</em>
+(22 months, 1 week ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53627 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=93530&amp;r2=93534">previous 93530</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Back out r93533, r93531, r93530
+
+Breaks unit tests as below, not going to be able to fix them before I disappear for the evening, so might aswell leave trunk clean
+
+ArticleTablesTest testbug14404
+
+Error:
+ArticleTablesTest::testbug14404
+Undefined offset: 0
+
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/includes/ArticleTablesTest.php:31
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiTestCase.php:60
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiPHPUnitCommand.php:20
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/phpunit.php:60
+
+ParserTests testParserTest #552 - testParserTest with data set #551
+
+Failure:
+ParserTests::testParserTest with data set #551 ('RAW magic word', '{{RAW:QUERTY}}', '&lt;p&gt;&lt;a href=&quot;/index.php?title=Template:QUERTY&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new&quot; title=&quot;Template:QUERTY (page does not exist)&quot;&gt;Template:QUERTY&lt;/a&gt;
+&lt;/p&gt;', '', '')
+RAW magic word
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-&lt;p&gt;&lt;a href=&quot;/index.php?title=Template:QUERTY&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new&quot; title=&quot;Template:QUERTY (page does not exist)&quot;&gt;Template:QUERTY&lt;/a&gt;
++&lt;p&gt;&lt;a href=&quot;/index.php?title=Template:RAW:QUERTY&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new&quot; title=&quot;Template:RAW:QUERTY (page does not exist)&quot;&gt;Template:RAW:QUERTY&lt;/a&gt;
+ &lt;/p&gt;
+
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/includes/parser/NewParserTest.php:545
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiTestCase.php:60
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiPHPUnitCommand.php:20
+/home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/phpunit.php:60</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev93530"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=93530"><strong>93530</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=93530&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=93530&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=93530">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=93530&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jul 30 15:30:01 2011 UTC</em>
+(22 months, 1 week ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 56293 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=93211&amp;r2=93530">previous 93211</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Merge iwtransclusion branch into trunk</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev93211"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=93211"><strong>93211</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=93211&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=93211&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=93211">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=93211&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jul 26 17:03:14 2011 UTC</em>
+(22 months, 1 week ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53627 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92932&amp;r2=93211">previous 92932</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* (bug 22744) Add/Update indexes for queries done by the API
+
+Add index to logging table accross log_type and log_action
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev92932"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=92932"><strong>92932</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92932&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92932&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=92932">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92932&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jul 23 08:15:11 2011 UTC</em>
+(22 months, 2 weeks ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53558 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92081&amp;r2=92932">previous 92081</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Follow-up r86482, r86485: removed user_name portion of user_email index per CR</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev92081"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=92081"><strong>92081</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92081&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92081&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=92081">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92081&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Jul 13 19:08:51 2011 UTC</em>
+(22 months, 3 weeks ago)
+by <em>raindrift</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53576 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92039&amp;r2=92081">previous 92039</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added us_status column for future expansion re Bryan's suggestion
+Implemented changes suggested in code review on r92009:
+ constructor bug handling passed repo/stash
+ up-to-date timestamp generation
+ fetching db handle from repo
+ iterating over select results according to convention
+ changed uploadstash.us_media_type to enum to mirror image.img_media_type
+ removed (most) new references to $wgUser, instead using ApiBase::createContext to find the user
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev92039"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=92039"><strong>92039</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92039&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92039&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=92039">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92039&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Jul 13 00:38:04 2011 UTC</em>
+(22 months, 3 weeks ago)
+by <em>raindrift</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53320 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92035&amp;r2=92039">previous 92035</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added index for abandoned uploads maintenance script
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev92035"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=92035"><strong>92035</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92035&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92035&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=92035">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92035&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Jul 13 00:21:02 2011 UTC</em>
+(22 months, 3 weeks ago)
+by <em>raindrift</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53203 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92009&amp;r2=92035">previous 92009</a>
+
+
+
+
+
+
+
+<pre class="vc_log">changing smallint to int for image sizes, re bug 26179 comment 13
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev92009"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=92009"><strong>92009</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92009&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=92009&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=92009">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=92009&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Jul 12 21:11:43 2011 UTC</em>
+(22 months, 3 weeks ago)
+by <em>raindrift</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 53213 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=90753&amp;r2=92009">previous 90753</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Refactored UploadStash and related classes to use the database for file metadata storage instead of the session, see bug 26179
+
+Tweaked the UploadWizard to work properly with the new backend code, updated tests
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev90753"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=90753"><strong>90753</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=90753&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=90753&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=90753">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=90753&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jun 25 04:11:20 2011 UTC</em>
+(23 months, 1 week ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51818 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=90749&amp;r2=90753">previous 90749</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Follow-up r90749:
+* Removed useless ufg_group index from user_former_groups
+* Index name consistency</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev90749"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=90749"><strong>90749</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=90749&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=90749&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=90749">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=90749&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sat Jun 25 02:52:30 2011 UTC</em>
+(23 months, 1 week ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51886 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=88296&amp;r2=90749">previous 88296</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Added one-time promote support via Autopromote::autopromoteOnceHook function. This is still a bit rough on the edges. This uses a hook since extension may want to control when it's called for performance reasons. Patch by lampak. (for bug 24948)</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev88296"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=88296"><strong>88296</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=88296&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=88296&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=88296">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=88296&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue May 17 11:56:53 2011 UTC</em>
+(2 years ago)
+by <em>mah</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51439 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=88270&amp;r2=88296">previous 88270</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Follow up r88270 — remove commas from table creation that break a
+sqlite install.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev88270"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=88270"><strong>88270</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=88270&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=88270&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=88270">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=88270&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Mon May 16 21:04:55 2011 UTC</em>
+(2 years ago)
+by <em>demon</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51440 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=87357&amp;r2=88270">previous 87357</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Initial commit of configuration management backend proposal. Feedback desired before I go much further.
+* Common use case is Conf::get( 'myVar' );
+* Support for default install (new `config` table) added, should be trivial to add backends for CDB, Memcache, etc...
+* </pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev87357"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=87357"><strong>87357</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=87357&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=87357&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=87357">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=87357&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue May  3 21:08:44 2011 UTC</em>
+(2 years, 1 month ago)
+by <em>demon</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51090 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=86741&amp;r2=87357">previous 86741</a>
+
+
+
+
+
+
+
+<pre class="vc_log">(bug 19408) user_properties.up_property: 32 bytes is not enough.
+Increased it to 255 bytes to be like page titles
+Some minor tweaks to modifyField() in the installer to make it more useful and added insertUpdateRow()</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev86741"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=86741"><strong>86741</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=86741&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=86741&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=86741">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=86741&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Fri Apr 22 21:37:16 2011 UTC</em>
+(2 years, 1 month ago)
+by <em>brion</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51089 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=86527&amp;r2=86741">previous 86527</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Breaking the 'math' table setup out to Math extension. Should be the last main step in extension-ification of the math options!
+
+The 'math' table will no longer be created on a default install unless you've explicitly enabled the Math plugin at install time; the usual update.php procedure will add it in.
+
+Postgres, Oracle, MSSQL, and DB2 variants are included -- broken out from the core files -- but have not been tested.
+
+I know there has been some code duplication in parser test infrastructure but could only find one instance of the parser test temporary table setup to remove the 'math' table from (the extension adds it back via the hook). If the phpunit-based runner breaks, please track it down and fix it there too.
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev86527"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=86527"><strong>86527</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=86527&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=86527&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=86527">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=86527&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Apr 20 19:02:51 2011 UTC</em>
+(2 years, 1 month ago)
+by <em>happy-melon</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51775 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=84394&amp;r2=86527">previous 84394</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Follow-up r86485: SQL error in patch, and also add the index to tables.sql.</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev84394"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=84394"><strong>84394</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=84394&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=84394&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=84394">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=84394&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Mar 20 16:30:59 2011 UTC</em>
+(2 years, 2 months ago)
+by <em>catrope</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51705 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=84071&amp;r2=84394">previous 84071</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Revert r83812 (schema change for cl_type enum), no longer needed after r84392. Also reverts r83821 (followup to r83812, add /*_*/ )
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev84071"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=84071"><strong>84071</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=84071&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=84071&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=84071">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=84071&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Mar 16 00:13:10 2011 UTC</em>
+(2 years, 2 months ago)
+by <em>reedy</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51832 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=83993&amp;r2=84071">previous 83993</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Revert r83993</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev83993"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=83993"><strong>83993</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=83993&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=83993&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=83993">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=83993&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Tue Mar 15 02:53:00 2011 UTC</em>
+(2 years, 2 months ago)
+by <em>saper</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51705 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=83812&amp;r2=83993">previous 83812</a>
+
+
+
+
+
+
+
+<pre class="vc_log">r83812, r83814: Don't use cl_type at all when paging categorylinks
+
+* Remove cl_type from paging in categorylinks - it's not
+  really needed there. Although cl_type is in WHERE but not
+  in ORDER BY clause the worst thing that can happen
+  is to have a filesort going again through &lt;500 entries
+  selected by index. Or will FORCE INDEX work anyway?
+
+* Revert schema change, as we don't need cl_type there
+  anyway (or even if we wanted to compare, it should
+  work as expected by using INT values against ENUM).
+
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev83812"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=83812"><strong>83812</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=83812&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=83812&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=83812">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=83812&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Sun Mar 13 10:35:06 2011 UTC</em>
+(2 years, 2 months ago)
+by <em>catrope</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51832 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=83137&amp;r2=83812">previous 83137</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Schema change: change cl_type from ENUM('page', 'subcat', 'file') to varchar(6). This is needed because MySQL sorts 'page' &lt; 'subcat' &lt; 'file' when using ORDER BY cl_type but uses 'file' &lt; 'page' &lt; 'subcat' for the purposes of WHERE clauses, making paging impossible. Changing the ENUM() order to be alphabetical would fix the order discrepancy, but leave range scans like WHERE cl_type &gt; 'page' unindexed. Varchars do behave correctly. Changing to an int was not an option because existing data would have to be migrated.
+
+This commit does not include a patch for SQLite, because ALTER TABLE MODIFY is apparently not supported by SQLite as far as I could tell by Googling. Leaving resolution of this issue for SQLite to the SQLite experts; maybe SQLite's enum implementation is saner than MySQL and it doesn't even need this schema change, I don't know.
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev83137"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=83137"><strong>83137</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=83137&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=83137&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=83137">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=83137&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Mar  3 06:28:43 2011 UTC</em>
+(2 years, 3 months ago)
+by <em>aaron</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51705 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=80665&amp;r2=83137">previous 80665</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Fixed patch from r33520</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev80665"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=80665"><strong>80665</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=80665&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=80665&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=80665">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=80665&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Thu Jan 20 23:56:47 2011 UTC</em>
+(2 years, 4 months ago)
+by <em>catrope</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51704 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=80547&amp;r2=80665">previous 80547</a>
+
+
+
+
+
+
+
+<pre class="vc_log">Self-revert r80547 per CR, breaks stuff and is undesirable
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev80547"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=80547"><strong>80547</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=80547&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=80547&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=80547">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=80547&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Modified
+
+<em>Wed Jan 19 01:11:21 2011 UTC</em>
+(2 years, 4 months ago)
+by <em>catrope</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51538 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=80443&amp;r2=80547">previous 80443</a>
+
+
+
+
+
+
+
+<pre class="vc_log">War on varchar. Changed all occurrences of varchar(N) and varchar(N) binary to varbinary(N). varchars cause problems (&quot;Invalid mix of collations&quot; errors) on MySQL databases with certain configs, most notably the default MySQL config
+</pre>
+</div>
+
+
+
+<div>
+<hr />
+
+<a name="rev80443"></a>
+
+
+Revision <a href="/viewvc/mediawiki?view=revision&amp;revision=80443"><strong>80443</strong></a> -
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=80443&amp;view=markup">view</a>)
+
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?revision=80443&amp;view=co">download</a>)
+
+(<a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?annotate=80443">annotate</a>)
+
+
+
+- <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=80443&amp;view=log">[select for diffs]</a>
+
+
+
+
+<br />
+
+Added
+
+<em>Mon Jan 17 14:02:22 2011 UTC</em>
+(2 years, 4 months ago)
+by <em>tstarling</em>
+
+
+
+
+
+
+
+
+
+<br />File length: 51704 byte(s)
+
+
+
+
+
+
+
+<br />Diff to <a href="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql?r1=79763&amp;r2=80443">previous 79763</a>
+
+
+
+
+
+
+
+<pre class="vc_log">* Introduced a non-dummy collation for $wgCategoryCollation, namely UCA with default tables. 
+* Added a maintenance script which generates a list of first letters. Unified Han are omitted for performance, and because they shouldn't be used as headings anyway. A future collation specific to Chinese would provide the KangXi radicals as &quot;first letters&quot;.
+* Provided a precomputed list of first letters. Used Unicode 6.0.0 data and ICU 4.2. 
+* Moved collation functionality from Language to a Collation class hierarchy with factory function. Removed the recently-added methods from Language and updated all callers.
+* Changed Title::getCategorySortkey() to separate its parts with a line break instead of a null character. All collations supported by the intl extension ignore the null character, i.e. &quot;ab&quot; == &quot;a\0b&quot;. It would have required a lot of hacking to make it work.
+* Fixed the uppercase collation to handle non-ASCII characters, redundantly with r80436. I don't think it's necessary to change the collation name as was done there, so I reverted that in the course of my conflict merge. A --force option to updateCollation.php might be nice though.
+
+</pre>
+</div>
+
+ 
+
+<hr />
+<form method="get" action="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql">
+<input type="hidden" name="view" value="log"/>
+<input type="submit" value="Go to:">
+<select name="log_pagestart" onchange="submit()">
+
+
+<option selected value="0">Page 1: 113110 - 80443</option>
+
+
+
+<option  value="50">Page 2: 79763 - 46460</option>
+
+
+
+<option  value="100">Page 3: 45897 - 28446</option>
+
+
+
+<option  value="150">Page 4: 28386 ...</option>
+
+
+</select>
+</form>
+
+
+
+ <hr />
+<p><a name="diff"></a>
+This form allows you to request diffs between any two revisions of this file.
+For each of the two "sides" of the diff,
+
+enter a numeric revision.
+
+</p>
+<form method="get" action="/viewvc/mediawiki/trunk/phase3/maintenance/tables.sql" id="diff_select">
+<table cellpadding="2" cellspacing="0" class="auto">
+<tr>
+<td>&nbsp;</td>
+<td>
+<input type="hidden" name="view" value="diff"/>
+Diffs between
+
+<input type="text" size="12" name="r1"
+value="113110" />
+
+and
+
+<input type="text" size="12" name="r2" value="80443" />
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+Type of Diff should be a
+<select name="diff_format" onchange="submit()">
+<option value="h" selected="selected">Colored Diff</option>
+<option value="l" >Long Colored Diff</option>
+<option value="f" >Full Colored Diff</option>
+<option value="u" >Unidiff</option>
+<option value="c" >Context Diff</option>
+<option value="s" >Side by Side</option>
+</select>
+<input type="submit" value=" Get Diffs " />
+</td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+<hr />
+<table>
+<tr>
+<td><a href="https://bugzilla.wikimedia.org/"><img border="0" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Buggie.svg/38px-Buggie.svg.png" width="38" height="50">Bug the devs</a></td>
+<td style="text-align: right;"><strong><a href="/viewvc/*docroot*/help_log.html">ViewVC Help</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+</table>
+<center>Powered by <a href="http://viewvc.tigris.org/">ViewVC 1.1.5</a></center>
+</body>
+</html>
+
+
