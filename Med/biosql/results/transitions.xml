@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <transitions>
-    <transition newVersion="rev_000007.sql" oldVersion="rev_000003.sql">
+    <transition newVersion="1014631726.sql" oldVersion="1012181431.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>location_qualifier_value</name>
@@ -30,8 +30,8 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000010.sql" oldVersion="rev_000007.sql"/>
-    <transition newVersion="rev_000012.sql" oldVersion="rev_000010.sql">
+    <transition newVersion="1014707807.sql" oldVersion="1014631726.sql"/>
+    <transition newVersion="1014889243.sql" oldVersion="1014707807.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>bioentry_date</name>
@@ -356,8 +356,8 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000014.sql" oldVersion="rev_000012.sql"/>
-    <transition newVersion="rev_000015.sql" oldVersion="rev_000014.sql">
+    <transition newVersion="1014901725.sql" oldVersion="1014889243.sql"/>
+    <transition newVersion="1014975574.sql" oldVersion="1014901725.sql">
         <insersion type="NewTable">
             <table>
                 <name>seqfeature_relationship</name>
@@ -393,9 +393,9 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000030.sql" oldVersion="rev_000015.sql"/>
-    <transition newVersion="rev_000031.sql" oldVersion="rev_000030.sql"/>
-    <transition newVersion="rev_000049.sql" oldVersion="rev_000031.sql">
+    <transition newVersion="1019860813.sql" oldVersion="1014975574.sql"/>
+    <transition newVersion="1020121353.sql" oldVersion="1019860813.sql"/>
+    <transition newVersion="1031164716.sql" oldVersion="1020121353.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>biodatabase</name>
@@ -439,7 +439,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000050.sql" oldVersion="rev_000049.sql">
+    <transition newVersion="1031709232.sql" oldVersion="1031164716.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>bioentry</name>
@@ -460,7 +460,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000056.sql" oldVersion="rev_000050.sql">
+    <transition newVersion="1031817528.sql" oldVersion="1031709232.sql">
         <update type="TypeChange">
             <table>
                 <name>bioentry</name>
@@ -951,7 +951,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000058.sql" oldVersion="rev_000056.sql">
+    <transition newVersion="1032765746.sql" oldVersion="1031817528.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>bioentry_dblink</name>
@@ -1014,7 +1014,7 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000061.sql" oldVersion="rev_000058.sql">
+    <transition newVersion="1033520952.sql" oldVersion="1032765746.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>ontology_term</name>
@@ -1077,7 +1077,7 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000062.sql" oldVersion="rev_000061.sql">
+    <transition newVersion="1034036778.sql" oldVersion="1033520952.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>taxon</name>
@@ -1093,8 +1093,8 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000063.sql" oldVersion="rev_000062.sql"/>
-    <transition newVersion="rev_000067.sql" oldVersion="rev_000063.sql">
+    <transition newVersion="1034619576.sql" oldVersion="1034036778.sql"/>
+    <transition newVersion="1034907910.sql" oldVersion="1034619576.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>bioentry</name>
@@ -1138,7 +1138,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000071.sql" oldVersion="rev_000067.sql">
+    <transition newVersion="1035366075.sql" oldVersion="1034907910.sql">
         <update type="TypeChange">
             <table>
                 <name>bioentry</name>
@@ -1211,7 +1211,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000072.sql" oldVersion="rev_000071.sql">
+    <transition newVersion="1037042231.sql" oldVersion="1035366075.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>bioentry_qualifier_value</name>
@@ -1256,7 +1256,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000073.sql" oldVersion="rev_000072.sql">
+    <transition newVersion="1038213294.sql" oldVersion="1037042231.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>reference</name>
@@ -1300,7 +1300,7 @@
             </attribute>
         </update>
     </transition>
-    <transition newVersion="rev_000081.sql" oldVersion="rev_000073.sql">
+    <transition newVersion="1045468374.sql" oldVersion="1038213294.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>reference</name>
@@ -1340,7 +1340,7 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000082.sql" oldVersion="rev_000081.sql">
+    <transition newVersion="1045475435.sql" oldVersion="1045468374.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>reference</name>
@@ -1370,7 +1370,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000084.sql" oldVersion="rev_000082.sql">
+    <transition newVersion="1045603387.sql" oldVersion="1045475435.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>bioentry</name>
@@ -2209,7 +2209,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000085.sql" oldVersion="rev_000084.sql">
+    <transition newVersion="1045605692.sql" oldVersion="1045603387.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>taxon</name>
@@ -2259,7 +2259,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000089.sql" oldVersion="rev_000085.sql">
+    <transition newVersion="1045618809.sql" oldVersion="1045605692.sql">
         <update type="TypeChange">
             <table>
                 <name>biodatabase</name>
@@ -2478,7 +2478,7 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000092.sql" oldVersion="rev_000089.sql">
+    <transition newVersion="1045626347.sql" oldVersion="1045618809.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>bioentry_dbxref</name>
@@ -2584,7 +2584,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000093.sql" oldVersion="rev_000092.sql">
+    <transition newVersion="1045691561.sql" oldVersion="1045626347.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>biosequence</name>
@@ -2605,7 +2605,7 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000094.sql" oldVersion="rev_000093.sql">
+    <transition newVersion="1045699202.sql" oldVersion="1045691561.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>ontology_dbxref</name>
@@ -2645,7 +2645,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000102.sql" oldVersion="rev_000094.sql">
+    <transition newVersion="1047465289.sql" oldVersion="1045699202.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>bioentry_path</name>
@@ -3095,7 +3095,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000104.sql" oldVersion="rev_000102.sql">
+    <transition newVersion="1047466335.sql" oldVersion="1047465289.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>ontology_path</name>
@@ -3228,7 +3228,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000105.sql" oldVersion="rev_000104.sql">
+    <transition newVersion="1047886539.sql" oldVersion="1047466335.sql">
         <insersion type="UpdateTable">
             <table>
                 <name>term</name>
@@ -3263,7 +3263,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000106.sql" oldVersion="rev_000105.sql">
+    <transition newVersion="1047967554.sql" oldVersion="1047886539.sql">
         <update type="KeyChange">
             <table>
                 <name>dbxref_qualifier_value</name>
@@ -3303,8 +3303,8 @@
             </attribute>
         </deletion>
     </transition>
-    <transition newVersion="rev_000107.sql" oldVersion="rev_000106.sql"/>
-    <transition newVersion="rev_000110.sql" oldVersion="rev_000107.sql">
+    <transition newVersion="1048021292.sql" oldVersion="1047967554.sql"/>
+    <transition newVersion="1049270935.sql" oldVersion="1048021292.sql">
         <update type="KeyChange">
             <table>
                 <name>bioentry_path</name>
@@ -3449,7 +3449,7 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000111.sql" oldVersion="rev_000110.sql">
+    <transition newVersion="1049813903.sql" oldVersion="1049270935.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>bioentry_path</name>
@@ -3603,11 +3603,11 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000112.sql" oldVersion="rev_000111.sql"/>
-    <transition newVersion="rev_000118.sql" oldVersion="rev_000112.sql"/>
-    <transition newVersion="rev_000122.sql" oldVersion="rev_000118.sql"/>
-    <transition newVersion="rev_000134.sql" oldVersion="rev_000122.sql"/>
-    <transition newVersion="rev_000182.sql" oldVersion="rev_000134.sql">
+    <transition newVersion="1054073713.sql" oldVersion="1049813903.sql"/>
+    <transition newVersion="1054456376.sql" oldVersion="1054073713.sql"/>
+    <transition newVersion="1054501384.sql" oldVersion="1054456376.sql"/>
+    <transition newVersion="1054782914.sql" oldVersion="1054501384.sql"/>
+    <transition newVersion="1096853196.sql" oldVersion="1054782914.sql">
         <insersion type="NewTable">
             <table>
                 <name>term_relationship_term</name>
@@ -3628,13 +3628,13 @@
             </attribute>
         </insersion>
     </transition>
-    <transition newVersion="rev_000194.sql" oldVersion="rev_000182.sql"/>
-    <transition newVersion="rev_000201.sql" oldVersion="rev_000194.sql"/>
-    <transition newVersion="rev_000255.sql" oldVersion="rev_000201.sql"/>
-    <transition newVersion="rev_000258.sql" oldVersion="rev_000255.sql"/>
-    <transition newVersion="rev_000268.sql" oldVersion="rev_000258.sql"/>
-    <transition newVersion="rev_000269.sql" oldVersion="rev_000268.sql"/>
-    <transition newVersion="rev_000286.sql" oldVersion="rev_000269.sql">
+    <transition newVersion="1099532981.sql" oldVersion="1096853196.sql"/>
+    <transition newVersion="1113801698.sql" oldVersion="1099532981.sql"/>
+    <transition newVersion="1203569193.sql" oldVersion="1113801698.sql"/>
+    <transition newVersion="1203613747.sql" oldVersion="1203569193.sql"/>
+    <transition newVersion="1203732725.sql" oldVersion="1203613747.sql"/>
+    <transition newVersion="1203733325.sql" oldVersion="1203732725.sql"/>
+    <transition newVersion="1217564276.sql" oldVersion="1203733325.sql">
         <update type="TypeChange">
             <table>
                 <name>bioentry</name>
@@ -3664,4 +3664,5 @@
             </attribute>
         </update>
     </transition>
+    <transition newVersion="1347272320.sql" oldVersion="1217564276.sql"/>
 </transitions>
