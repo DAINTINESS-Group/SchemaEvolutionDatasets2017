@@ -4,7 +4,7 @@
 #--------------------------------------------------------
 # Server version	3.22.27
 #
-# TYPO3 CVS ID: $Id: tables.sql 670 2005-04-27 09:57:56Z typo3 $
+# TYPO3 CVS ID: $Id$
 
 #
 # Table structure for table 'be_groups'

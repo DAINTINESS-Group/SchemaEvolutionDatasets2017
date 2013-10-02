@@ -1,5 +1,5 @@
 #
-# TYPO3 CVS ID: $Id: tables.sql 2237 2007-04-02 19:13:23Z mundaun $
+# TYPO3 CVS ID: $Id$
 #
 
 #
