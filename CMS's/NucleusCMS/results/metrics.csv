@@ -1,5 +1,0 @@
-# oldVersion,newVersion,#oldTables,#newTables,#oldAttrs,newAttr,tableIns,tableDel,attrIns,attrDel,attrTypeAlt,keyAlt,totalAlt
-rev_1651.sql,rev_1678.sql,20,20,110,110,0,0,1,2,0,0,0
-rev_1678.sql,rev_1714.sql,20,20,110,110,0,0,0,0,0,23,23
-rev_1714.sql,rev_1889.sql,20,20,110,112,0,0,2,0,0,0,0
-rev_1889.sql,rev_1902.sql,20,20,112,112,0,0,0,0,0,0,0
