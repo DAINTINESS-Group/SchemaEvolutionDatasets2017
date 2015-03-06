@@ -312,7 +312,7 @@ CREATE TABLE CPG_bridge (
 ) TYPE=MyISAM;
 
 #
-# Table structure for table 'CPG_vote_stats
+# Table structure for table 'CPG_vote_stats'
 #
 CREATE TABLE `CPG_vote_stats` (
   `sid` int(11) NOT NULL auto_increment,
@@ -326,7 +326,7 @@ CREATE TABLE `CPG_vote_stats` (
   PRIMARY KEY  (`sid`)
 );
 
-CREATE TABLE CPG_hit_stats` (
+CREATE TABLE `CPG_hit_stats` (
   `sid` int(11) NOT NULL auto_increment,
   `pid` varchar(100) NOT NULL default '',
   `ip` varchar(20) NOT NULL default '',
