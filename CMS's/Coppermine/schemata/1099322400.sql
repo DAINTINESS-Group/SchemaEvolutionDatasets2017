@@ -309,11 +309,11 @@ CREATE TABLE CPG_dict (
 CREATE TABLE CPG_bridge (
   name varchar(40) NOT NULL default '0',
   value varchar(255) NOT NULL default '',
-  UNIQUE KEY name`(name)
+  UNIQUE KEY name(name)
 ) TYPE=MyISAM;
 
 #
-# Table structure for table 'CPG_vote_stats
+# Table structure for table `CPG_vote_stats`
 #
 CREATE TABLE `CPG_vote_stats` (
   `sid` int(11) NOT NULL auto_increment,
