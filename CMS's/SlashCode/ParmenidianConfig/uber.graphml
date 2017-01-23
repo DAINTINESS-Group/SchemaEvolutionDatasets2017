@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml">
+<key id="x" for="node">
+<default>0</default>
+</key>
+<key id="y" for="node">
+<default>0</default>
+</key>
+<graph edgedefault="directed">
+<node id="css">
+<data key="x">2646.566368597295</data>
+<data key="y">783.5115396936617</data>
+</node>
+<node id="comment_log">
+<data key="x">2221.638819048969</data>
+<data key="y">686.1983399021667</data>
+</node>
+<node id="sectionblocks">
+<data key="x">1154.4915487146336</data>
+<data key="y">722.7789540543044</data>
+</node>
+<node id="globj_types">
+<data key="x">2996.12563943654</data>
+<data key="y">926.9827098003684</data>
+</node>
+<node id="discussions">
+<data key="x">1875.9825267467395</data>
+<data key="y">843.6378962441427</data>
+</node>
+<node id="users_prefs">
+<data key="x">2980.379000850357</data>
+<data key="y">1428.540462761509</data>
+</node>
+<node id="querylog">
+<data key="x">2988.7896970877573</data>
+<data key="y">1023.4312979917568</data>
+</node>
+<node id="open_proxies">
+<data key="x">3253.3419027604305</data>
+<data key="y">802.6764211624345</data>
+</node>
+<node id="story_static_files">
+<data key="x">2681.6121325906524</data>
+<data key="y">717.1556590387762</data>
+</node>
+<node id="content_filters">
+<data key="x">3129.560478809799</data>
+<data key="y">1100.1184684135246</data>
+</node>
+<node id="session_login">
+<data key="x">3096.3822352825273</data>
+<data key="y">1004.6875096416215</data>
+</node>
+<node id="skins">
+<data key="x">3356.0624541841025</data>
+<data key="y">1193.9184076869788</data>
+</node>
+<node id="al2_log">
+<data key="x">2332.84794218197</data>
+<data key="y">849.0072916974398</data>
+</node>
+<node id="vars">
+<data key="x">3343.2111856232113</data>
+<data key="y">1117.8395755612173</data>
+</node>
+<node id="commentmodes">
+<data key="x">2194.8018367234395</data>
+<data key="y">842.7152391273535</data>
+</node>
+<node id="story_files">
+<data key="x">2932.8485390145515</data>
+<data key="y">834.387902895377</data>
+</node>
+<node id="sessions">
+<data key="x">2082.025512669054</data>
+<data key="y">1801.5555618925564</data>
+</node>
+<node id="story_text">
+<data key="x">1626.5755230373834</data>
+<data key="y">1147.2978574333306</data>
+</node>
+<node id="templates">
+<data key="x">1047.0918525928405</data>
+<data key="y">1852.1464503058305</data>
+</node>
+<node id="globjs">
+<data key="x">1423.0399780188059</data>
+<data key="y">679.8432098402218</data>
+</node>
+<node id="accesslog_artcom">
+<data key="x">3204.2605330280203</data>
+<data key="y">704.8609218517668</data>
+</node>
+<node id="topic_images">
+<data key="x">3162.345922100554</data>
+<data key="y">867.1858785023362</data>
+</node>
+<node id="section_extras">
+<data key="x">1814.6629937841017</data>
+<data key="y">1654.6474253251354</data>
+</node>
+<node id="submissions">
+<data key="x">1506.2509910475874</data>
+<data key="y">1871.4946711014172</data>
+</node>
+<node id="sortcodes">
+<data key="x">2679.890421817381</data>
+<data key="y">845.7999393555947</data>
+</node>
+<node id="threshcodes">
+<data key="x">3092.291818626535</data>
+<data key="y">852.7310110282845</data>
+</node>
+<node id="file_queue">
+<data key="x">1570.1800940297571</data>
+<data key="y">679.2253853870561</data>
+</node>
+<node id="users_param">
+<data key="x">2726.6795745219615</data>
+<data key="y">1765.2498820168166</data>
+</node>
+<node id="issuemodes">
+<data key="x">1953.5601928640572</data>
+<data key="y">677.9314042869762</data>
+</node>
+<node id="al2_types">
+<data key="x">2667.819739286078</data>
+<data key="y">945.4436785893818</data>
+</node>
+<node id="modreasons">
+<data key="x">1250.7186646878881</data>
+<data key="y">832.7622945147273</data>
+</node>
+<node id="authors">
+<data key="x">3278.142892899887</data>
+<data key="y">1093.421059292114</data>
+</node>
+<node id="topic_param">
+<data key="x">2394.34539105875</data>
+<data key="y">703.5421071425158</data>
+</node>
+<node id="users_hits">
+<data key="x">1305.0160689818604</data>
+<data key="y">732.2509295408559</data>
+</node>
+<node id="story_render_dirty">
+<data key="x">2319.2112209703737</data>
+<data key="y">723.4304586758956</data>
+</node>
+<node id="topic_nexus_extras">
+<data key="x">1135.4494312790175</data>
+<data key="y">840.4582123025343</data>
+</node>
+<node id="tzcodes">
+<data key="x">2827.309432022791</data>
+<data key="y">714.9762213462059</data>
+</node>
+<node id="story_topics">
+<data key="x">1450.9268513129032</data>
+<data key="y">1256.3446233155928</data>
+</node>
+<node id="dateformats">
+<data key="x">2161.494480843202</data>
+<data key="y">745.487614378575</data>
+</node>
+<node id="story_topics_rendered">
+<data key="x">972.7473862545953</data>
+<data key="y">1351.6679927758505</data>
+</node>
+<node id="section_subsections">
+<data key="x">1724.7124901243642</data>
+<data key="y">1738.6807209856188</data>
+</node>
+<node id="section_topics">
+<data key="x">1328.0411734996705</data>
+<data key="y">1538.7188018918414</data>
+</node>
+<node id="newstories">
+<data key="x">1109.931621674441</data>
+<data key="y">673.0164478444456</data>
+</node>
+<node id="categories">
+<data key="x">1522.4753547432592</data>
+<data key="y">1749.818610904711</data>
+</node>
+<node id="moderatorlog">
+<data key="x">2421.3236879847527</data>
+<data key="y">1707.7942619198725</data>
+</node>
+<node id="hooks">
+<data key="x">1908.3664142675734</data>
+<data key="y">733.2676683469836</data>
+</node>
+<node id="related_stories">
+<data key="x">3151.1452555308706</data>
+<data key="y">790.3310188422779</data>
+</node>
+<node id="blocks_param">
+<data key="x">2947.128185184739</data>
+<data key="y">954.2007792761606</data>
+</node>
+<node id="sections_contained">
+<data key="x">1808.238941007634</data>
+<data key="y">1524.1115639589539</data>
+</node>
+<node id="comment_text">
+<data key="x">1087.8283240605251</data>
+<data key="y">1195.7970875254778</data>
+</node>
+<node id="statuscodes">
+<data key="x">2832.987147845371</data>
+<data key="y">971.0995392067863</data>
+</node>
+<node id="related_links">
+<data key="x">3345.099290577211</data>
+<data key="y">1291.6471730365051</data>
+</node>
+<node id="topics">
+<data key="x">1052.6678825350477</data>
+<data key="y">1413.2793441681206</data>
+</node>
+<node id="al2">
+<data key="x">2510.209400398272</data>
+<data key="y">776.2389620779926</data>
+</node>
+<node id="misc_user_opts">
+<data key="x">2431.4638835465375</data>
+<data key="y">888.6305535728688</data>
+</node>
+<node id="slashslices">
+<data key="x">2768.747536049734</data>
+<data key="y">641.8396182884512</data>
+</node>
+<node id="comments_hash">
+<data key="x">2955.196018436641</data>
+<data key="y">672.569610460108</data>
+</node>
+<node id="users_logtokens">
+<data key="x">1191.9896223625365</data>
+<data key="y">667.8499031359715</data>
+</node>
+<node id="skin_colors">
+<data key="x">3186.4311875386475</data>
+<data key="y">1072.8988815020143</data>
+</node>
+<node id="commentcodes">
+<data key="x">1509.3465453848348</data>
+<data key="y">676.990524712533</data>
+</node>
+<node id="al2_log_comments">
+<data key="x">1348.044949426674</data>
+<data key="y">846.7735765233738</data>
+</node>
+<node id="discussion_kinds">
+<data key="x">1456.8441761246968</data>
+<data key="y">827.6279044520788</data>
+</node>
+<node id="slashd_errnotes">
+<data key="x">2748.355047574345</data>
+<data key="y">784.7894001917184</data>
+</node>
+<node id="accesslog">
+<data key="x">1840.1810287550088</data>
+<data key="y">750.1022824889274</data>
+</node>
+<node id="dbs_readerstatus_queries">
+<data key="x">2641.381643767317</data>
+<data key="y">652.9388115251636</data>
+</node>
+<node id="subsections">
+<data key="x">1518.8181487811512</data>
+<data key="y">1485.3182343831759</data>
+</node>
+<node id="metamodlog">
+<data key="x">2512.686820870647</data>
+<data key="y">1588.5871987886476</data>
+</node>
+<node id="globj_urls">
+<data key="x">2322.616656946081</data>
+<data key="y">677.6791510799189</data>
+</node>
+<node id="backup_blocks">
+<data key="x">1205.252485026389</data>
+<data key="y">1859.0254625185453</data>
+</node>
+<node id="users_index">
+<data key="x">3056.9292329888754</data>
+<data key="y">1523.638244217159</data>
+</node>
+<node id="pollanswers">
+<data key="x">2050.1224866623734</data>
+<data key="y">1245.477108157239</data>
+</node>
+<node id="site_info">
+<data key="x">2526.9675465208948</data>
+<data key="y">865.1006647187169</data>
+</node>
+<node id="accesslog_admin">
+<data key="x">3312.4654830257678</data>
+<data key="y">1006.4816880623475</data>
+</node>
+<node id="abusers">
+<data key="x">3210.921536089625</data>
+<data key="y">1005.3222461792814</data>
+</node>
+<node id="storiestuff">
+<data key="x">3275.2439909062814</data>
+<data key="y">1187.8348605609135</data>
+</node>
+<node id="story_dirty">
+<data key="x">1363.288425736635</data>
+<data key="y">672.7913579908754</data>
+</node>
+<node id="users_acl">
+<data key="x">2540.664625875357</data>
+<data key="y">1708.0525059958</data>
+</node>
+<node id="authors_cache">
+<data key="x">3255.780569135285</data>
+<data key="y">861.1699586234522</data>
+</node>
+<node id="comment_heap">
+<data key="x">2109.1494178209978</data>
+<data key="y">831.5088204027054</data>
+</node>
+<node id="sections">
+<data key="x">1661.758082155296</data>
+<data key="y">1656.4861215973374</data>
+</node>
+<node id="users">
+<data key="x">2724.3993668894173</data>
+<data key="y">1289.9589284160866</data>
+</node>
+<node id="pollvoters">
+<data key="x">2176.079750637163</data>
+<data key="y">1431.4539915148034</data>
+</node>
+<node id="newcomments">
+<data key="x">1278.586543054289</data>
+<data key="y">667.8014742709167</data>
+</node>
+<node id="dbs">
+<data key="x">2959.5676220167875</data>
+<data key="y">907.2672555610893</data>
+</node>
+<node id="postmodes">
+<data key="x">2001.5804334864624</data>
+<data key="y">749.0006351072216</data>
+</node>
+<node id="topic_parents">
+<data key="x">2413.422558927651</data>
+<data key="y">785.3380771151706</data>
+</node>
+<node id="users_clout">
+<data key="x">1847.2135861424636</data>
+<data key="y">689.7859483101493</data>
+</node>
+<node id="maillist">
+<data key="x">1205.980336959321</data>
+<data key="y">864.0454493684638</data>
+</node>
+<node id="topic_nexus_dirty">
+<data key="x">3021.736797825827</data>
+<data key="y">844.04404715635</data>
+</node>
+<node id="soap_methods">
+<data key="x">1721.1058911139153</data>
+<data key="y">783.6523369751685</data>
+</node>
+<node id="dst">
+<data key="x">1454.1757456427158</data>
+<data key="y">768.322900899976</data>
+</node>
+<node id="classes">
+<data key="x">2878.3828232353494</data>
+<data key="y">831.7091056760064</data>
+</node>
+<node id="topic_nexus">
+<data key="x">3336.7117747941384</data>
+<data key="y">771.2838573448898</data>
+</node>
+<node id="hitters">
+<data key="x">1151.502266963524</data>
+<data key="y">786.2956402253681</data>
+</node>
+<node id="users_info">
+<data key="x">2842.096068002975</data>
+<data key="y">1693.6784566323436</data>
+</node>
+<node id="urls">
+<data key="x">2593.285552199155</data>
+<data key="y">771.1587872444813</data>
+</node>
+<node id="string_param">
+<data key="x">2249.7298640989316</data>
+<data key="y">797.2057190271612</data>
+</node>
+<node id="badpasswords">
+<data key="x">1468.553427080913</data>
+<data key="y">732.6892021570175</data>
+</node>
+<node id="displaycodes">
+<data key="x">1583.2090225259435</data>
+<data key="y">809.0431192376923</data>
+</node>
+<node id="slashd_status">
+<data key="x">1054.5639910098307</data>
+<data key="y">825.4137416499734</data>
+</node>
+<node id="css_type">
+<data key="x">2778.7729907651155</data>
+<data key="y">889.0686984418157</data>
+</node>
+<node id="spamarmors">
+<data key="x">3106.548347814429</data>
+<data key="y">919.6849043866841</data>
+</node>
+<node id="menus">
+<data key="x">1237.4225124202694</data>
+<data key="y">723.0693088049943</data>
+</node>
+<node id="topic_image_sections">
+<data key="x">1372.0240795995487</data>
+<data key="y">795.2803286254871</data>
+</node>
+<node id="users_count">
+<data key="x">3324.9664277128186</data>
+<data key="y">892.1746231162456</data>
+</node>
+<node id="story_topics_chosen">
+<data key="x">950.09320725366</data>
+<data key="y">1473.6955869625708</data>
+</node>
+<node id="stories">
+<data key="x">1649.052082420022</data>
+<data key="y">1287.5436446366798</data>
+</node>
+<node id="comments">
+<data key="x">1081.6623823995615</data>
+<data key="y">1087.7010406647632</data>
+</node>
+<node id="users_key">
+<data key="x">3285.1334658052965</data>
+<data key="y">703.5699151835549</data>
+</node>
+<node id="blocks">
+<data key="x">1107.3820518458538</data>
+<data key="y">1749.2053110022644</data>
+</node>
+<node id="isolatemodes">
+<data key="x">2531.5237372782663</data>
+<data key="y">702.8943407411216</data>
+</node>
+<node id="code_param">
+<data key="x">1627.9606814834501</data>
+<data key="y">733.0236414338742</data>
+</node>
+<node id="users_comments">
+<data key="x">2605.0922699720613</data>
+<data key="y">1765.0441863993342</data>
+</node>
+<node id="signoff">
+<data key="x">3199.9901846270914</data>
+<data key="y">1214.8313030611594</data>
+</node>
+<node id="globj_adminnotes">
+<data key="x">1702.4505207453008</data>
+<data key="y">692.3437555372602</data>
+</node>
+<node id="clout_types">
+<data key="x">2978.551386961586</data>
+<data key="y">738.2934759526154</data>
+</node>
+<node id="dbs_readerstatus">
+<data key="x">3067.2947813977025</data>
+<data key="y">702.0487349147611</data>
+</node>
+<node id="submission_param">
+<data key="x">2090.3103218842944</data>
+<data key="y">676.572360044589</data>
+</node>
+<node id="story_heap">
+<data key="x">3200.1909714056064</data>
+<data key="y">650.0364291060175</data>
+</node>
+<node id="pollquestions">
+<data key="x">1908.1612168399088</data>
+<data key="y">1288.8736926841993</data>
+</node>
+<node id="accesslist">
+<data key="x">2855.501255597243</data>
+<data key="y">647.7750066038311</data>
+</node>
+<node id="discussion_hitparade">
+<data key="x">1988.1843485111112</data>
+<data key="y">1004.5259336187978</data>
+</node>
+<node id="formkeys">
+<data key="x">2958.762838937466</data>
+<data key="y">1662.9219931798125</data>
+</node>
+<node id="rss_raw">
+<data key="x">1180.36964226609</data>
+<data key="y">1666.692971218151</data>
+</node>
+<node id="remarks">
+<data key="x">1776.4216191483883</data>
+<data key="y">700.7987943520443</data>
+</node>
+<node id="story_param">
+<data key="x">2915.473243562387</data>
+<data key="y">747.2859439241515</data>
+</node>
+<edge source="stories" target="topics"/>
+<edge source="users_comments" target="users"/>
+<edge source="discussion_hitparade" target="discussions"/>
+<edge source="users_info" target="users"/>
+<edge source="pollanswers" target="pollquestions"/>
+<edge source="stories" target="sections"/>
+<edge source="sessions" target="submissions"/>
+<edge source="users_acl" target="users"/>
+<edge source="backup_blocks" target="blocks"/>
+<edge source="story_topics" target="topics"/>
+<edge source="section_topics" target="sections"/>
+<edge source="stories" target="users"/>
+<edge source="submissions" target="topics"/>
+<edge source="sections" target="pollquestions"/>
+<edge source="submissions" target="users"/>
+<edge source="sections" target="stories"/>
+<edge source="sections_contained" target="sections"/>
+<edge source="comment_text" target="comments"/>
+<edge source="discussions" target="stories"/>
+<edge source="rss_raw" target="blocks"/>
+<edge source="users_param" target="users"/>
+<edge source="story_text" target="stories"/>
+<edge source="section_extras" target="sections"/>
+<edge source="story_topics_chosen" target="topics"/>
+<edge source="pollvoters" target="pollquestions"/>
+<edge source="stories" target="subsections"/>
+<edge source="story_topics" target="stories"/>
+<edge source="metamodlog" target="users"/>
+<edge source="section_topics" target="topics"/>
+<edge source="pollvoters" target="users"/>
+<edge source="blocks" target="templates"/>
+<edge source="users_prefs" target="users"/>
+<edge source="stories" target="pollquestions"/>
+<edge source="section_subsections" target="sections"/>
+<edge source="subsections" target="sections"/>
+<edge source="pollquestions" target="sections"/>
+<edge source="formkeys" target="users"/>
+<edge source="pollquestions" target="users"/>
+<edge source="story_topics_rendered" target="topics"/>
+<edge source="pollquestions" target="discussions"/>
+<edge source="users_index" target="users"/>
+<edge source="metamodlog" target="moderatorlog"/>
+<edge source="rss_raw" target="submissions"/>
+<edge source="categories" target="sections"/>
+<edge source="sessions" target="users"/>
+<edge source="discussions" target="topics"/>
+<edge source="discussions" target="users"/>
+</graph>
+</graphml>
