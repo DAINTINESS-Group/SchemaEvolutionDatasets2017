@@ -1,0 +1,3 @@
+CASTOR:
+Two version were excluded from the processing from Parmenidian Truth, specifically : (a)rev_1.058.2.1 and (b)rev_1.066
+Both versions deleted more than 50 tables and were reversed in less than a day.
