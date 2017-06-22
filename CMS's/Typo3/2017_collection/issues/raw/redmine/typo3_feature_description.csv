@@ -1,0 +1,1599 @@
+#;Project;Tracker;Parent task;Status;Priority;Subject;Author;Assigned To;Updated;Category;Target version;Start date;Due date;Estimated time;% Done;Created;Story points;Velocity based estimate;Position;Remaining (hours);Tags;Description
+75839;TYPO3 Skinning Reference;Feature;;New;Should have;2 Icons for intermediate tables;David Bruchmann;;21/4/2016 13:17;;;21/4/2016;;;0;21/4/2016 13:17;;;-750200;;;"Using intermediate table like described here:
+http://stackoverflow.com/questions/26733567/typo3-extbase-irre-add-existing-records-with-foreign-selector/26746960#26746960
+
+... tables should have the possibility getting two icons assigned.
+While it's in general possible to override any icons with hooks like overrideIconOverlay it's much work and I never found any description about that, so I still have to fiddle that out, especially concerning ajax-calls from inside of inherited BE-forms.
+
+An option to assign two different icons where each one is used depending on the perspective, the logic of IRRE would be much more comfortable.
+
+I know it's getting deeper than just skinning, so I don't mind if the issue is sorted somewhere else."
+72329;Documentation Rendering;Feature;Epic #57147: Rework design and general content of docs.typo3.org;Accepted;Must have;"Prepare a 7.6 IntroductionPackage for the ""Glue Pages""";Martin Bless;Martin Bless;18/12/2015 23:27;;;18/12/2015;;;0;18/12/2015 23:27;;;-600750;;;"
+I'm planning to use a TYPO3 7.6 LTS installation for the glue page. Start would be the official Introduction Package. Visual appearance and contents needs to be tailored to documentation."
+69508;Documentation;Feature;;Rejected;Should have;Auto-link references to forge tickets in changelog;Urs Braem;;7/9/2015 12:30;Manuals;;3/9/2015;;;0;3/9/2015 16:43;;;-460050;;;"Would it be possible to render references to forge tickets (like #69424) in the changelog of an extension automatically as links to forge?
+
+See for example:
+https://docs.typo3.org/typo3cms/extensions/powermail/Changelog/Index.html
+
+If the references to forge would be linked, it would be much easier to access the corresponding issues (e.g, if you're updating after a while and want to read up)"
+65931;Documentation Rendering;Feature;;Resolved;Must have;Allow syntax highlighting of PHP in reST for fragments;Simon Schaufelberger;Martin Bless;28/4/2015 9:18;;;23/3/2015;;;100;23/3/2015 13:26;;;-282300;;;"in github you can syntax highlight a block with the following annotation:
+
+<pre>
+```php
+//phpcode
+```
+</pre>
+
+See https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/pull/23#issuecomment-84913690"
+65715;Documentation Rendering;Feature;;Resolved;Must have;"Introduce flag TER=1 to distinguish TER extensions from ""static"" manuals";Martin Bless;Xavier Perseguers;16/3/2015 17:35;;;13/3/2015;;;80;13/3/2015 11:53;;;-271500;;;"We have at least two distinguishable kinds of documentation projects:
+
+1. ""regular"" projects
+2. TER extensions
+
+The workflow differs at some points so we should set a flag.
+
+Suggested procedure:
+
+1. Set TER=1 in cron_rebuild.conf for the TER extensions. This should be easy as it's rather centralized.
+
+2. Over time add TER=0 in the cron_rebuild.conf files of regular projects though this is technically not needed. But it's good for clarification and documentation.
+
+3. cron_rebuild.sh should not remove existing 'stable' symlinks for regular projects.
+
+4. The 'stable' symlink of Flow should point to 2.3"
+63117;TypoScript Reference (TSref);Feature;;Closed;Must have;FLUIDTEMPLATE now supports fallback paths;Markus Klein;Francois Suter;27/11/2014 21:51;;6.2;20/11/2014;;;100;20/11/2014 23:54;;;-141750;;;"This is a backport from version 7.
+Please check Feature-61361-FallbackTemplatePathsForFluidStandaloneView.rst file there."
+62597;Documentation Rendering;Feature;Epic #60470: Enhance PDF rendering;Closed;Should have;Higher output resolution for images;Xavier Perseguers;Xavier Perseguers;3/11/2014 7:11;;;1/11/2014;;;100;1/11/2014 13:49;;;-115750;;;"Embedded images automatically adjust to fit the width of a text line.
+
+However smaller images are shown at a (typically) 72 dpi resolution and don't look as good as larger ones which have been resized:
+
+Small image:
+
+!small.png!
+
+Large image:
+
+!large.png!"
+62512;TSconfig;Feature;;New;Should have;Make properties linkable;Christian Weiske;;28/10/2014 12:49;;;28/10/2014;;;0;28/10/2014 11:31;;;-111500;;;"I wanted to link to property ""defLangBinding"" on page
+http://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/Index.html, but there is no anchor in the HTML for that property."
+62099;TypoScript Reference (TSref);Feature;;Resolved;Should have;IMGRESOURCE: Document stdWrap for frame property;Stefan Froemken;Chris topher;28/11/2014 15:27;;6.2;8/10/2014;;;100;8/10/2014 10:13;;;-90850;;;"Hallo Docu-Team,
+
+Please add ""stdWrap"" to property ""frame"" here:
+https://review.typo3.org/#/c/33179/
+
+Wouter has added them to the 6.2 branch here:
+https://review.typo3.org/#/c/33188/2/typo3/sysext/frontend/Classes/ContentObject/ContentObjectRenderer.php
+
+Stefan"
+60719;Documentation Rendering;Feature;;Closed;Should have;Add piwik tracking code;Francois Suter;;21/8/2014 21:22;;;1/8/2014;;;100;1/8/2014 12:48;;;-22150;;;"As I'm cleaning up the tickets in OTRS, I moving this request to a Forge issue. From Steffen Gebert:
+
+could you please include the following Piwik code in the docs.typo3.org web site?
+
+Would be interesting to see the amount of visitors.
+<pre>
+<!-- Piwik -->
+<script type=""text/javascript"">
+  var _paq = _paq || [],
+  _paq.push([""trackPageView""]),
+  _paq.push([""enableLinkTracking""]),
+
+  (function() {
+    var u=((""https:"" == document.location.protocol) ? ""https"" : ""http"") +
+""://piwik.typo3.org/"",
+    _paq.push([""setTrackerUrl"", u+""piwik.php""]),
+    _paq.push([""setSiteId"", ""26""]),
+    var d=document, g=d.createElement(""script""), s=d.getElementsByTagName(""script"")[0],
+g.type=""text/javascript"",
+    g.defer=true, g.async=true, g.src=u+""piwik.js"", s.parentNode.insertBefore(g,s),
+  })(),
+</script>
+<!-- End Piwik Code -->
+</pre>"
+29181;Official Doc Extension Template;Feature;;Closed;Should have;Include font files in extension;Francois Suter;Chris topher;23/8/2011 22:22;;1.6.0;23/8/2011;;;100;23/8/2011 10:46;;;230800;;;"Now that the extension template has been updated to the new design, questions are appearing about the fonts.
+
+I saw that there are no mentions of the fonts in the document. I think it should be added (probably in the last chapter, about guidelines).
+
+Furthermore what about packaging the fonts within the extension itself, inside a resources folder with a README.txt file explaining where they come from?"
+30511;TSconfig;Feature;;Closed;Should have;Added description of #25705;Christian Woebbeking;Christian Woebbeking;27/10/2011 21:07;;4.6.0;2/10/2011;;;0;2/10/2011 11:31;;;295800;;;Add option to hide BE search box in list module
+30815;Extbase Book Translation;Feature;;Resolved;Should have;Add definition for inline markup methodname;Fabien Udriot;Fabien Udriot;25/10/2011 7:26;;;12/10/2011;;;100;12/10/2011 6:32;;;310650;;;Dig into Sphinx documentation how custom markup can be added.
+31403;TCA Reference;Feature;;Closed;Must have;Refine Extending $TCA chapter;Francois Suter;Francois Suter;21/11/2011 20:58;;4.6.0;29/10/2011;;;100;29/10/2011 22:02;;;339400;;;"The ""Extending the $TCA array"" chapter was introduced with version 4.5.0 as part of restructuring the document. It is however very short. There should be more examples and the current example should be more detailed."
+31768;TypoScript Reference (TSref);Feature;;Closed;Should have;New property config.htmlTag_stdWrap;Oliver Hader;Chris topher;23/4/2012 20:46;;4.7.0;12/11/2011;;;100;12/11/2011 11:36;;;357300;;;"In ""CONFIG"" section, add a new property below ""htmlTag_setParams"":
+
+<pre>
+Property: htmlTag_stdWrap
+Type: stdWrap
+Description: Modify the whole <html> tag with stdWrap functionality. This can be used to extend or override this tag.
+</pre>
+
+See #31767"
+32081;TCA Reference;Feature;;New;Should have;document timezone handling / eval datetime;Peter Niederlag;;11/10/2015 7:09;;;25/11/2011;;;0;25/11/2011 10:28;;;372800;;;"for type=input there is a js eval func that makes sure a datetime value is entered.
+
+The value will be converted from Client-TZ(Browser) to UTC by JS and then the UTC-Value will be sent to TCEmain.
+
+Inside TCEmain the value will then be converted to the TZ of the Server by applying the offset From UTC to Server-Timezone."
+32116;wiki.typo3.org;Feature;;Resolved;Should have;Test / install the reST plugin for MediaWiki;Fabien Udriot;Chris topher;16/12/2011 3:41;;;27/11/2011;;;100;27/11/2011 15:15;;;374500;;;"Could we give a try to RstToHtml extension which enables the reST syntax into our Wiki?
+
+http://www.mediawiki.org/wiki/Extension%3aRstToHtml
+
+MediaWiki will then identify the following markup.
+
+<pre>
+<rst>
+
+Take some reST as header
+========================
+
+* bla
+* bla
+
+</rst>
+</pre>"
+32120;wiki.typo3.org;Feature;;Resolved;Should have;Clean up the Wiki;Fabien Udriot;Chris topher;7/12/2011 15:36;;;28/11/2011;;;100;28/11/2011 6:53;;;374700;;;Some work (mainly maintenance) has been done recently on the Wiki. This ticket is for keeping track and reporting the tasks being achieved - in an effort to better document how the system works / evolves. 
+32310;Documentation;Feature;;Closed;Should have;Add the Security Guide to the list of documents on typo3.org;Chris topher;Francois Suter;6/12/2011 16:09;;;5/12/2011;;;0;5/12/2011 20:39;;;384200;;;Add the new Security Guide to the preview page.
+32347;TypoScript Reference (TSref);Feature;;Closed;Must have;Add documentation for new sub-properties of filelink.icon;Lorenz Ulrich;Chris topher;23/4/2012 20:46;;4.7.0;6/12/2011;;;100;6/12/2011 19:47;;;386050;;;"In #23624 new properties for cObject filelink were introduced.
+
+New sub properties of filelink.icon:
+
+* path: path to icon set (default: tslib/media/fileicons/)
+* ext: file extension of icons (default: gif)
+* widthAttribute: width of icons (default: 18)
+* heightAttribute: height of icons (default: 16)
+
+This change was applied to master and will therefore be in TYPO3 4.7. Thanks!"
+32572;wiki.typo3.org;Feature;;Resolved;Should have;After login the user should be redirected to the wiki page from which he came;Chris topher;Helmut Hummel;10/3/2012 16:16;;;14/12/2011;;;100;14/12/2011 22:09;;;396850;;;"SSO is ready. There is only one thing, which still has to be done:
+
+When you click the login link, a URL on typo3.org is called like that:
+https://typo3.org/community/your-account/wiki-login/?returnTo=Main_Page
+
+Currently there is no redirection after successful login, you always land on the Main Page of the Wiki. This is still rather annoying.
+
+After successful login, the user should be redirected to the wiki page, from which he came. This can be done using the value of the part @returnto=XXX@ in the URL with which typo3.org is called. 
+"
+32662;TypoScript Reference (TSref);Feature;Feature #25404: Add the possibility to store anonymized log information;Closed;Must have;New config.stat_* options to allow anonymized storage of statistic log information;Steffen Gebert;Chris topher;23/4/2012 20:46;;4.7.0;18/12/2011;;;100;18/12/2011 14:05;;;401350;;;"New options in config allow the anonymized storage of statistic log information.
+(necessary e.g. in Germany: see e.g. http://www.saechsdsb.de/ipmask)
+
+
+config.stat_IP_anonymize:
+set to 1 to activate anonymized logging
+config.stat_IP_anonymize_mask_ipv4:
+config.stat_IP_anonymize_mask_ipv6:
+Prefix-mask (0..32 for IPv4, 0..128 for IPv6) to use for
+anonymisation. Setting this to will log an empty hostname.
+Recommendation for Germany: config.stat_IP_anonymize_ipv4 = 24
+if not set, defaults to 24 and 64, resp.
+
+config.stat_logUser: configure username logging
+
+
+"
+33510;Core APIs;Feature;;Closed;Should have;displayCond within Flexform sections;Tolleiv Nietsch;Francois Suter;17/2/2013 20:53;;4.7.0;28/1/2012;;;100;28/1/2012 15:44;;;442050;;;https://review.typo3.org/#change,8677 introduced this feature which should be mentioned in the manual.
+33715;TypoScript Reference (TSref);Feature;;Closed;Should have;Document orderedStdWrap;Philipp Gampe;Chris topher;23/4/2012 20:46;;4.7.0;6/2/2012;;;100;6/2/2012 20:16;;;452200;;;"Here is an example:
+<pre><code class=""TXT"">
+10 = TEXT
+10.value = a
+10.orderedStdWrap {
+  30.wrap = |.
+
+  10.wrap = is | working
+  10.innerWrap = &nbsp,|&nbsp,
+
+  20.wrap = This|solution
+  20.stdWrap.wrap = &nbsp,|&nbsp,
+}
+</code></pre>
+This results in ""@This is a working solution.@""
+
+The purpose of this property is to allow the integrator to add multiply stdWrap statements without having to remember the rather complex sorting order in which the stdWrap functions are executed.
+
+orderedStdWrap consists of an array of keys (like COA). Each key carries the value of content and then a normal stdWrap is done. So one could think each key as a TEXT object with the value of the current content.
+
+The execution is done in order which means that all keys are first sorted and then process separately.
+In this example 10.innerWrap is executed first, followed by 10.wrap.
+Then the next key is processed which is 20. Afterwards the 30.wrap is executed on what is already created.
+
+orderedStdWrap returns the content after processing it with each given key.
+
+https://review.typo3.org/#change,3922"
+33724;TypoScript Reference (TSref);Feature;;Closed;Should have;Add conditions as page.includeCSS.if and page.includeJS*.if;Tolleiv Nietsch;Chris topher;23/4/2012 20:46;;4.7.0;7/2/2012;;;100;7/2/2012 7:55;;;452650;;;"WIthin #29423 the following options were added:
+* page.includeCSS.fileX.if
+* page.includeJS.fileX.if
+* page.includeJSlibs.fileX.if
+* page.includeJSFooter.fileX.if
+* page.includeJSFooterlibs.fileX.if 
+
+""Diff"":http://forge.typo3.org/projects/typo3v4-core/repository/revisions/6ad942e8c16ba0be01bfe24816a7fdb0b70c4fcd/diff/typo3/sysext/cms/tslib/class.tslib_pagegen.php
+They need to be added to the related parts in the tsref.
+
+They're all of type ""->if"" and in case the condition does not validate to TRUE, the related file will not be used as resource during rendering."
+33880;Documentation;Feature;;New;Should have;New TypoScript-Option for Formwizard and Subject;Steffen Ritter;;31/3/2012 14:41;Manuals;;13/2/2012;;;0;13/2/2012 13:58;;;460400;;;"Has been merged http://forge.typo3.org/issues/32132
+
+""I'm attaching my slightly modified TS, which was originally generated by the FormWizard.
+The new thing is actually:
+subjectField = subject
+""
+
+As I haven't found the right place where to open a documentation ticket, I'll do it here.
+please move the ticket accordingly and drop me a short note"
+34021;Documentation;Feature;;Resolved;Should have;Update Documentation of Form Wizard to include postprocessors;Franz Geiger;Franz Geiger;21/10/2012 22:46;Manuals;;14/2/2012;;;100;17/2/2012 2:45;;;467350;;;"Using postprocessors is not documented in the Form Wizard documentation.
+Also issue #32701 added an interface for postprocessors.
+
+Attached is a draft to be included in the Form Wizard documentation to describe how to use postprocessors.
+
+Please inlcude this in the manual. Thanks"
+34055;Coding Guidelines;Feature;;Resolved;Should have;Adapt note on complete removal of all debug output;Franz Holzinger;Chris topher;19/5/2013 14:36;;;18/2/2012;;;100;18/2/2012 9:56;;;469050;;;"The text currently says ""all debug statements must be removed"". This is generally correct, but not completely, sometimes it is necessary to have error debug output.
+
+E.g. t3lib_div::getUserObj produces the debug output
+debug(""Class '"" . $class . ""' was not prepended with '"" . $checkPrefix . ""'"", 't3lib_div::getUserObj'),
+
+The developer will add more debug commands when the PHP code is under development.
+At the end a tool should help to remove all debug commands. However there are debug commands which should remain and never be removed.
+
+So I need a hint at the end of the debug command.
+
+E.g.
+
+debug(""Class '"" . $class . ""' was not prepended with '"" . $checkPrefix . ""'"", 't3lib_div::getUserObj'), // must remain
+
+or
+
+debug(""Class '"" . $class . ""' was not prepended with '"" . $checkPrefix . ""'"", 't3lib_div::getUserObj'), // %keep
+
+Then a tool could search and remove all debug commands in the PHP code except the line which have the '%keep' at the end.
+
+or use this convention
+
+debug(""* Class '"" . $class . ""' was not prepended with '"" . $checkPrefix . ""'"", 't3lib_div::getUserObj'),
+A leading '*' in the debug output means that this is an error debugging."
+34307;TypoScript Reference (TSref);Feature;;Closed;Should have;"Add documentation for stdWrap function ""cache""";Tolleiv Nietsch;Chris topher;23/4/2012 20:46;;4.7.0;26/2/2012;;;100;26/2/2012 23:14;;;481400;;;"The stdWrap options to store and read data from the cachingframework will be added within #34299
+
+The commit message already gives a good explaination:
+
+Problem:
+* Cacheable content is always page specific.
+Pages cannot share cached content.
+* Cacheable content has no individual lifetime
+but is bound to the lifetime of the page where it is placed.
+
+Solution:
+Introduce new configuration options that will store the
+content into the caching framework:
+
+Examples:
+5 = TEXT
+5 {
+cache.key = mycurrenttimestamp
+cache.tags = tag_a,tag_b,tag_c
+cache.lifetime = 3600
+data = date : U
+strftime = %H:%M:%S
+}
+
+or (for page specific cache that doesn't take
+other parameters into account)
+5 = TEXT
+5 {
+cache.key = mycurrenttimestamp_{page:id}
+cache.key.insertData = 1
+}
+
+See details on http://www.fabrizio-branca.de/typo3-individual-cobject-caching.html
+"
+35999;TypoScript Reference (TSref);Feature;;Closed;Should have;Add documentation for stdWrap of the cObject USER;most wanted;Chris topher;3/3/2013 20:51;;6.0;13/4/2012;;;100;13/4/2012 18:18;;;564350;;;"In #35305 the cObject USER got the new property stdWrap, type ->stdWrap.
+
+Please see (1) https://review.typo3.org/#/c/9966/ and (2) #35305 for more information."
+36389;TCA Reference;Feature;;Closed;Should have;Integrate column configuration appearance/headerThumbnail (type inline);Oliver Hader;Francois Suter;29/4/2013 22:40;;6.0.0;20/4/2012;;;100;20/4/2012 19:17;;;582900;;;"For type ""inline"" (IRRE)
+
+Integrate column configuration appearance/headerThumbnail
+
+@todo Write documentation once issue #33751 is accepted that way"
+36390;TCA Reference;Feature;;Closed;Should have;Integrate column configuration foreign_selector_fieldTcaOverride (type inline);Oliver Hader;Francois Suter;29/4/2013 22:40;;6.0.0;20/4/2012;;;100;20/4/2012 19:19;;;582950;;;"For type ""inline"" (IRRE)
+
+Integrate column configuration foreign_selector_fieldTcaOverride (to override TCA configuration for a given IRRE context)
+
+@todo Write documentation once issue #33751 is accepted that way
+"
+36391;TypoScript Reference (TSref);Feature;;Closed;Should have;Integrate new cObject FILES;Oliver Hader;Chris topher;3/3/2013 20:51;;6.0;20/4/2012;;;100;20/4/2012 19:21;;;583000;;;"Integrate new cObject FILES
+
+@todo Write documentation once issue #33752 is accepted that way"
+36876;TCA Reference;Feature;;Closed;Should have;"Documentation for [FEATURE] Item filters for TCA types ""group"" and ""inline""";Ingmar Schlecht;Francois Suter;29/4/2013 22:40;;6.0.0;6/5/2012;;;100;6/5/2012 8:19;;;607000;;;"This is the documentation for https://review.typo3.org/#/c/10953/
+
+(see attachment)"
+37234;TypoScript Reference (TSref);Feature;;Closed;Should have;HMENU: sectionIndex.useColPos allows configuration of the value for colPos;Stefan Galinski;Chris topher;3/3/2013 20:51;;6.0;16/5/2012;;;100;16/5/2012 18:15;;;624500;;;"In HMENUs @sectionIndex.where@ can be used to customize the sectionIndex' where clause used for the generation of the section menus. 
+
+By default the where clause contains ""colPos=0"". The value ""0"" can now be manipulated. stdWrap is available. See #21142 for details."
+38551;Templating Tutorial;Feature;;New;Should have;Explain concepts for structure;Francois Suter;;2/7/2012 15:36;;;2/7/2012;;;0;2/7/2012 15:36;;;690050;;;"Maybe this is already included, but someone in the English mailing list asked the following:
+
+_""obviously much thought has gone into the creation of the new Introduction package ... i was wondering if there is some documentation available that explains the different parts and concepts, why things are setup the way they are or just a general overview and insights from the people who created this ?""_
+
+I was wondering if this new tutorial followed the same structure as the Introduction Package, and thus could explain the logic. Else it could be an appendix to the Getting Started tutorial, although it's somewhat out of scope (but maybe ok as an appendix)."
+38682;TypoScript Reference (TSref);Feature;;Closed;Should have;"Add javascriptLibs.jQuery to ""PAGE""";Lars Malach;Francois Suter;3/3/2013 20:51;;6.0;5/7/2012;;;100;5/7/2012 16:22;;;696450;;;"Add code example to documentation for #12630.
+
+"
+39012;TypoScript Reference (TSref);Feature;;Resolved;Should have;"Enhance documentation of ""prefixLocalAnchors""";Ernesto Baschny;;2/8/2012 18:35;;;17/7/2012;;;100;17/7/2012 10:25;;;712450;;;"See #17013 where a misunderstanding was interpreted as a bug.
+
+We need to add information that once baseURL is set, the user also needs to make sure prefixLocalAnchors is set to all, else all ""anchors"" on the page won't work."
+39179;TypoScript Reference (TSref);Feature;;Rejected;Should have;New property config.typolinkUseCacheHash;Francois Suter;Francois Suter;2/8/2012 18:10;;6.0;23/7/2012;;;0;23/7/2012 9:43;;;720800;;;"Feature request #39178 add a new property ""config.typolinkUseCacheHash"" to activate the use of cHashes on all typolinks. This must be documented in the TypoScript reference."
+39185;Core APIs;Feature;;Closed;Should have;Add documentation on t3lib_mail;Ernesto Baschny;Francois Suter;6/1/2013 20:26;;4.5.0;3/11/2012;3/11/2012;;100;23/7/2012 12:21;;;721100;;;"The new t3lib_mail API since TYPO3 4.5 was documented here:
+
+http://wiki.typo3.org/Pending_Documentation#t3lib_mail
+
+This information should be migrated to the Core API some day, I guess."
+39186;Core APIs;Feature;;Closed;Should have;Document form protection API (backend) in Core API;Ernesto Baschny;Francois Suter;6/1/2013 20:26;;4.5.0;3/11/2012;3/11/2012;;100;23/7/2012 12:22;;;721150;;;"Since 4.5 the Core provides a form protection against Cross-Site-Request Forgery (XSRF/CSRF). How to use this was documented here:
+
+http://wiki.typo3.org/Pending_Documentation#The_back-end_and_install_tool_form_protection
+
+This should be migrated to the Core APIs some day."
+39783;Documentation Rendering;Feature;;Resolved;Should have;Display queue status and some stats;Fabien Udriot;;15/8/2012 18:20;;Workflow automation;13/8/2012;;;100;13/8/2012 19:01;;;750650;;;"Beanstalk is capable of giving back some stats and info about its queue. A basic stats page has been ""created"":http://preview.docs.typo3.org/render/stats that displays some info."
+39794;ReST tools;Feature;;Closed;Should have;Sphinx should read Settings.yml besides conf.py for configuration;Martin Bless;Martin Bless;14/8/2012 23:13;;;14/8/2012;;;0;14/8/2012 10:55;;;751200;;;
+39872;Documentation Rendering;Feature;;Resolved;Should have;Supplement the GlobalSettings (.yml) of TYPO3 Sphinx rendering;Martin Bless;Martin Bless;27/9/2012 16:24;;"TYPO3 TER & typo3.org integ.";16/8/2012;;;0;16/8/2012 22:45;;;755100;;;"I just saw that we can turn on the Sphinx extension ``sphinx.ext.extlinks``.
+
+Then we add to our configuration:
+
+  extlinks = {
+    'forge': ('http://forge.typo3.org/issues/%s',
+              'issue #')}
+
+Afterwards we can write::
+
+  :forge:`39834`
+
+to create a link to ``http://forge.typo3.org/issues/39834`` with caption (title tag) ``issue #39834``.
+
+Pretty cool. I'll add that to our GlobalSettings.yml."
+39888;TypoScript Reference (TSref);Feature;;Closed;Should have;TypoScript Conditions: Allow easy comparison against multiple values;Wouter Wolters;Chris topher;3/3/2013 20:51;;6.0;17/8/2012;;;100;17/8/2012 14:55;;;755900;;;"TypoScript Conditions: Allow easy comparison against multiple values
+
+This allows easy comparison like:
+[globalVar = TSFE:id = 10|12|15] (in list)
+[globalVar = TSFE:id != 10|12|15] (not in list)
+
+See https://review.typo3.org/#/c/13589/."
+39924;TCA Reference;Feature;;Closed;Should have;TCA tree supports width setting;Christian Kuhn;Francois Suter;29/4/2013 22:40;;6.0.0;18/8/2012;;;100;18/8/2012 13:52;;;757650;;;"Section
+""select"" -> ""treeConfig"" -> listing ""appearance"" settings (next to nonSelectableLevels): 'width'
+
+Set a custom width of the tree select field in pixel. Easy way to make the field wider."
+39992;Documentation Rendering;Feature;;Resolved;Should have;Implement the TerDocument Command;Fabien Udriot;Fabien Udriot;20/8/2012 17:24;;Workflow automation;20/8/2012;;;100;20/8/2012 11:35;;;761050;;;"@TerDocumentCommand@ class will be shipped with three main commands:
+
+<pre>
+terdocument:fetch       Fetch and extract extension from the TER
+terdocument:render      Render a TER document. This will basically create and add a document job into the queu"
+40013;Documentation Rendering;Feature;;Resolved;Should have;Extract Documentation directory from t3x files;Fabien Udriot;Fabien Udriot;29/8/2012 18:48;;Workflow automation;21/8/2012;;;100;21/8/2012 10:52;;;762100;;;In the current implementation, only the OpenOffice file (manual.sxw) is extracted from the t3x. Since, developers are going to migrate their documentation to reST, we should also extract the @Documentation@ directory and give this source of documentation the priority in case both are present.
+40014;Documentation Rendering;Feature;;Resolved;Should have;Display message before executing resource consuming action;Fabien Udriot;Fabien Udriot;21/8/2012 14:36;;Workflow automation;21/8/2012;;;100;21/8/2012 10:57;;;762150;;;Some actions such as synchronizing, fetching, rendering require a lot of hardware resource. A flag @limit@ already exists to limit the number of item being processed and thus save resources. However, if not limit is given, we could display a message to the user on the console to indicate how big is the task. In addition, a flag @silent@ could be added to bypass this message.
+40020;Documentation Rendering;Feature;;Resolved;Should have;Implement the GitDocument Command;Fabien Udriot;Fabien Udriot;23/8/2012 18:53;;Workflow automation;21/8/2012;;;100;21/8/2012 12:58;;;762450;;;"@GitDocument@ command will deal with documentation coming from git.typo3.org. Basically; it will be shipping three main commands:
+
+<pre>
+gitdocument:fetch       Fetch and extract extension from the git.typo3.org
+gitdocument:render      Render a docume"
+40021;Documentation Rendering;Feature;;Rejected;Should have;Implement the SvnDocument Command;Fabien Udriot;;5/10/2012 10:32;;;21/8/2012;;;0;21/8/2012 12:59;;;762500;;;"@SvnDocument@ command will deal with documentation coming from svn.typo3.org. Basically; it will be shipping three main commands:
+
+<pre>
+svndocument:fetch       Fetch and extract extension from the svn.typo3.org
+svndocument:render      Render a docume"
+40374;TYPO3.Docs;Feature;;New;Should have;Detect whether a document really needs to be rendered or can be copied from another version;Fabien Udriot;;13/10/2012 17:29;;;29/8/2012;;;0;29/8/2012 12:41;;;778250;;;"Since documentation does not always change from one version to another; it could be detected whether a rendering is really necessary or if the build of the documentation can be taken from an existing version."
+40378;Documentation Rendering;Feature;;Needs Feedback;Should have;Add a package and version domain model;Fabien Udriot;;29/8/2012 18:46;;;29/8/2012;;;0;29/8/2012 13:02;;;778450;;;"There currently is two data sources; one for the TER and the other for Git containing all packages with their version. The data sources are cached for obvious performance reasons and used to retrieve information upon dealing with document (e.g what will be the document version; document title; etc..). 
+
+The drawback is that one data source relies on XML technology for storing its data while the other is a JSON serialized array. This could be improved if we put the data of these data sources into the database which would be more convenient to query. We could thus introduce a package and version domain model."
+40379;TYPO3.Docs;Feature;;Resolved;Should have;Create a view listing all documents;Fabien Udriot;;3/12/2012 23:36;;;29/8/2012;;;100;29/8/2012 13:04;;;778500;;;Add a view that will list all documents. Filters and command buttons could be added in a second step.
+41318;Coding Guidelines;Feature;;Rejected;Should have;Use PSR-0 for Namespace CGL ;Stefano Kowalke;Chris topher;9/5/2013 21:46;;;24/9/2012;;;100;24/9/2012 15:04;;;823200;;;"After the switch to the namespaces in TYPO3 6.0 we should start using the ""PSR-0"":https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md which defines ready-to-use rules for namespaces. TYPO3 6.0 follows these rules already so far I see. "
+41377;ReST tools;Feature;;Resolved;Should have;Write explanatory Yaml files to Project.git.make folders on server srv123;Martin Bless;Martin Bless;27/9/2012 16:25;;Workflow automation;26/9/2012;;;0;26/9/2012 9:59;;;826150;;;
+41430;Documentation Rendering;Feature;;Resolved;Should have;Create textrole :api:`something` to link to TYPO3 API targets;Martin Bless;Martin Bless;14/9/2013 2:47;;Output tuning and integration;27/9/2012;;;100;27/9/2012 16:22;;;828800;;;"see: http://lists.typo3.org/pipermail/typo3-project-documentation/2012-September/004126.html
+
+"
+41456;ReST tools;Feature;;Resolved;Should have;Make RestTools a FLOW3 package;Fabien Udriot;Fabien Udriot;28/9/2012 19:35;;Workflow automation;28/9/2012;;;100;28/9/2012 19:21;;;830100;;;RestTools should be a FLOW3 packages in term that it can be seen and activated by FLOW3. Having a proper FLOW3 package enables to compute path during the rendering process.
+41458;Documentation Rendering;Feature;Task #40019: Integrate the scripts from RestTools package;Resolved;Should have;Integrate sxw2html script into the pipline;Fabien Udriot;Fabien Udriot;28/9/2012 19:42;;1.0.0dev;28/9/2012;;;100;28/9/2012 19:32;;;830200;;;sxw2html script renders legacy sxw manual to HTML. The script should be integrated and called by the rendering workflow
+42653;Core APIs;Feature;Task #41919: Integrate changes for TYPO3 4.4 and 4.5;Closed;Should have;Add documentation about Ext.Direct;Francois Suter;Francois Suter;11/1/2013 9:44;;6.0;2/11/2012;;;100;2/11/2012 21:44;;;887000;;;"Get information from the wiki; rework it and integrate it."
+42741;TCA Reference;Feature;;Closed;Should have;New section $TCA['ctrl]['table']['security'];Oliver Hader;Francois Suter;29/4/2013 22:40;;6.0.0;6/11/2012;;;100;6/11/2012 22:43;;;891300;;;"Add a new control section ""security"" to TCA
+
+* TCA/<table>/ctrl/security/ignoreWebMountRestriction
+** Allows users to access records that are not in their defined web-mount and by-passes this restriction..
+* TCA/<table>/ctrl/security/ignoreRootLevelRestriction
+** Allows users (non-admins) to access records that are stored on the root-level (page-id 0) and by-passes this restriction."
+42851;Core APIs;Feature;Task #41919: Integrate changes for TYPO3 4.4 and 4.5;Closed;Should have;Add documentation about TYPO3 Viewport;Francois Suter;Francois Suter;11/1/2013 9:44;;6.0;11/11/2012;;;100;11/11/2012 11:35;;;896650;;;"Add documentation about the viewport used to structure the backend. This goes into the ExtJS chapter.
+
+Reference: http://wiki.typo3.org/TYPO3Viewport"
+42866;ReStructured Text Infrastructure;Feature;;Closed;Should have;Add Share LaTeX font;Andreas Wolf;Andreas Wolf;14/9/2013 2:44;;;12/11/2012;;;0;12/11/2012 10:03;;;897400;;;"Some time ago; I converted the Share ttf files to a format that can be used with LaTeX. I can provide these files for the documentation project; together with installation instructions (only for TeXlive 2012 as that's the distribution I use). I'll try to create an archive and a list of instructions soon."
+43181;TypoScript Reference (TSref);Feature;;Closed;Should have;Integrate NULL value handling stdWrap.ifNull and stdWrap.if.isNull;Oliver Hader;Chris topher;3/3/2013 20:51;;6.0;20/11/2012;;;100;20/11/2012 23:23;;;913100;;;"Please add the following new properties to TSref - one name is *if*Null (like ifBlank; ifEmpty) and the other one is *is*Null (like isTrue; isFalse); so please watch on ""if"" vs. ""is"" since that happened to me as well... ;-)
+
+1) In stdWrap section; before ifEmpty property; add new property
+
+* Property: ifNull
+* Datatype: string/stdWrap
+* Description: If the content is null (PHP NULL type); the content is overridden with the value defined here.
+
+2) In if section; before isTrue; add new property
+
+* Property: isNull
+* Datatype: stdWrap
+* Description: If the resulting content of the stdWrap is null (PHP NULL type). Since null values cannot be assigned in TypoScript; only the stdWrap features are available below this property.
+
+See #43133."
+43246;Core APIs;Feature;Task #41919: Integrate changes for TYPO3 4.4 and 4.5;Closed;Should have;New extension configuration option: docPath;Francois Suter;Francois Suter;6/1/2013 20:26;;4.5.0;23/11/2012;;;100;23/11/2012 13:50;;;916350;;;Document new extension configuration option: docPath
+43248;Core APIs;Feature;Task #41919: Integrate changes for TYPO3 4.4 and 4.5;Closed;Should have;Page tree and context-sensitive menu;Francois Suter;Francois Suter;6/1/2013 20:26;;4.5.0;23/11/2012;;;100;23/11/2012 14:24;;;916450;;;Document the ExtJS-powered page tree and how to add contextual menu items to it.
+43704;ReST tools;Feature;;Resolved;Should have;"Provide new theme ""typo3""";Martin Bless;Martin Bless;7/12/2012 12:35;;;7/12/2012;;;100;7/12/2012 10:34;;;939050;;;"Up to now since Nov. 2011 we've been using the ""hacked adhoc"" theme ""typo3sphinx"". Currently we have the new much more TYPO3-alike theme ""t3org"".
+
+Let's create a variant of ""t3org"" theme and name it ""typo3"" and deliver this as new rendering default. It would look like typo3.org and like docs.typo3.org but does not have the menu in it."
+43754;Get The Docs;Feature;;Resolved;Should have;Clean up files after a grace period of time;Fabien Udriot;;13/12/2012 23:36;;;8/12/2012;;;100;8/12/2012 13:59;;;941550;;;
+43770;TYPO3.Docs;Feature;;New;Should have;Generate a parameterizable JSON view for Documents;Fabien Udriot;;8/12/2012 17:37;;;8/12/2012;;;0;8/12/2012 17:37;;;942350;;;
+43775;ReST tools;Feature;;Resolved;Should have;Improve navigation;Jigal van Hemert;Martin Bless;12/3/2014 12:18;;;8/12/2012;;;0;8/12/2012 17:50;;;942600;;;"Especially when the long chapters will be cut into smaller chapters (perhaps even single properties) local navigation (to neighbouring chapters) becomes more important.
+Also navigation to the same chapter/page in the documentation for other branches of TYPO3 will be useful (once we them).
+
+Examples:
+
+http://dev.mysql.com/doc/refman/5.1/en/replace.html
+http://nl3.php.net/preg_match"
+44053;TYPO3.Docs;Feature;;New;Should have;Enable to fetch documentation from other data-source;Fabien Udriot;;17/12/2012 14:29;;;17/12/2012;;;0;17/12/2012 14:29;;;956400;;;"* Github would be the first ""repository type"" crossing my mind. 
+* Define a namespace for that documentation (e.g ""draft""; ""contrib"")
+* Maintain a data-source file
+"
+44901;TypoScript Reference (TSref);Feature;;Closed;Should have;"Add documentation for new property ""template"" of cObject FLUIDTEMPLATE";Christian Kuhn;Chris topher;29/4/2013 23:38;;6.1;29/1/2013;;;100;29/1/2013 11:30;;;998600;;;Documentation for feature #39767
+44987;TypoScript Reference (TSref);Feature;;Closed;Should have;"Add documentation for ""settings"" of cObject FLUIDTEMPLATE";Christian Kuhn;Chris topher;29/4/2013 23:38;;6.1;30/1/2013;;;100;30/1/2013 17:42;;;1001800;;;
+45047;Documentation;Feature;;New;Must have;Assign documentation to version;Patrick Crausaz;;1/7/2013 18:20;;;31/1/2013;;;0;31/1/2013 18:13;;;1004650;;;"Any documentation must have an assignment to the software version that is documented.
+A lot of documentation is totaly obsolete; because a lot of code has changed. 
+How can you be sure; that the documentation is up to date?
+
+Core:
+For example the documentation ""File Abstraction Layer"" must have in the documentation header: ""assigned to:  TYPO3 v6.0.0""
+http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/
+
+Extensions:
+This would also be very useful for TER extension documentations.
+If the ext developpers needs to fill in this information; I think the documentation would gain more quality.
+Imagin an update of your extension to 2.0 but the documentation is still assigned to version 1.4 - you will soon have a issue on forge to update your documentation.
+
+(with the upcomming TER clean up 2013; this would be the perfect date to do such changes; as the ext devs anyway has to update their documentations )"
+45558;Core APIs;Feature;;Closed;Should have;Records collections;Francois Suter;Francois Suter;16/5/2013 23:13;;6.0;18/2/2013;;;100;18/2/2013 8:38;;;1029800;;;"In TYPO3 4.7 records collections were introduced (table sys_collection). Although not used yet in the Core; this feature should be documented (usage; API).
+
+References:
+
+* http://forge.typo3.org/issues/32076
+* http://forge.typo3.org/issues/32147
+* https://review.typo3.org/#/c/6968/
+"
+46347;Core APIs;Feature;;Closed;Should have;Document namespaces;Francois Suter;Francois Suter;16/5/2013 23:13;;6.0;15/3/2013;;;100;15/3/2013 22:51;;;1068550;;;"Explanations from Helmut in the dev list:
+
+Currently for extensions there can only be one segment for the vendor name.
+
+The rule is \<VendorName>\<ExtensionKey>\<Folder1>\<Folder2>\<ClassName>
+
+While the extension key must be transformed from underscores to upper camel case and the folders must reside in a ""Classes"" folder on the top level inside the extension folder and lastly the class file must be named exatly like the class (case sensitive!) with a trailing "".php""
+
+For core classes we built in exceptions in many places; so that we coud use ""TYPO3"" as the vendor and ""CMS"" as the product name; before the segment with the extension key starts. This has been done to not have conflicting namespaces e.g. for Fluid if we would have skipped the product name ""CMS""
+"
+46390;TypoScript Reference (TSref);Feature;;Closed;Should have;Add documentation of stdWrap to config.pageTitleSeparator;Christian Kuhn;Chris topher;29/4/2013 23:38;;6.1;17/3/2013;;;100;17/3/2013 21:46;;;1070700;;;#35223 added stdWrap to config.pageTitleSeparator
+46392;Core APIs;Feature;;Closed;Should have;Xclass changes;Francois Suter;Francois Suter;16/5/2013 23:13;;6.0;17/3/2013;;;100;17/3/2013 22:15;;;1070800;;;"Update the section about XCLASSes to reflect the new way of doing things since TYPO3 CMS 6.0.
+
+http://wiki.typo3.org/Xclass"
+46440;TCA Reference;Feature;;Closed;Should have;Add 'foreign_table_defaultValues' to 'inline' type documentation;Sebastian Michaelsen;Francois Suter;1/8/2014 14:22;;6.2.0;19/3/2013;;;100;19/3/2013 16:53;;;1073200;;;"'foreign_table_defaultValues' is an associative array; where the keys are fields of the table 'foreign_table' and the values are default values that are set whenever a new record is created for that table in this inline field.
+
+*Example*
+<pre>
+config => array(
+  'type' => 'inline';
+  'foreign_table' => 'tt_content';
+  'foreign_table_defaultValues' => array(
+    'CType' => 'image'
+  );
+)
+</pre>
+*This feature is present since TYPO3 6.1; see #46124*"
+46667;TSconfig;Feature;;Closed;Should have;mod.web_list.noExportRecordsLinks;Christian Kuhn;Christian Woebbeking;29/4/2013 23:38;;6.1;25/3/2013;;0.50;100;25/3/2013 21:02;;;1084350;;;"Page TSconfig
+
+Section mod -> web_list
+
+Property: noExportRecordsLinks
+
+Data type: boolean
+
+If set; the ""Export"" and ""Download CSV file"" buttons are not shown."
+46687;ReST tools;Feature;;Rejected;Could have;Advertise Sphinx usage;Francois Suter;;17/7/2013 11:59;;;26/3/2013;;;0;26/3/2013 14:29;;;1085350;;;"I don't know if it makes sense and it is definitely nothing urgent; but it seems possible for the tool Wappalyzed to detect usage of Sphinx in a site; if it finds some specific snippet of code in the page.
+
+See http://forge.typo3.org/issues/46661"
+46800;TypoScript Reference (TSref);Feature;;Closed;Should have;Document new stdWrap feature addPageCacheTags;Christian Kuhn;Chris topher;29/4/2013 23:38;;6.1;30/3/2013;;;100;30/3/2013 12:27;;;1090750;;;"Property: addPageCacheTags
+Data type: string /stdWrap
+Description: Comma separated list of cache tags; which should be added to the page cache.
+
+See #34403."
+46819;TCA Reference;Feature;;Closed;Should have;Support multiple display conditions in TCA;Christian Kuhn;Francois Suter;29/4/2013 22:39;;6.1.0;31/3/2013;;;100;31/3/2013 17:01;;;1091650;;;"http://docs.typo3.org/typo3cms/TCAReference/Reference/Columns/Index.html
+
+TCA reference
+Section ""columns""
+Part ""displayCond""
+
+Single display conditions can be combined with boolean logic and nested; possible keys are OR and AND:
+Example:
+
+<pre>
+array(
+	'AND' => array(
+		'FIELD:testField:>:9';
+		'FIELD:testField:<:11';
+	);
+);
+</pre>"
+46945;Coding Guidelines;Feature;;Resolved;Should have;Improve readability of long conditions;Markus Klein;Chris topher;8/5/2013 2:05;;6.0.0;5/4/2013;;;100;5/4/2013 17:25;;;1097900;;;"As agreed on the Core list. The following Change is suggested:
+
+Whenever long conditions require a wrap; the individual lines should be formatted as follows.
+
+<pre>
+<if|while|...> (condition1 && condition2
+     && condition3
+     && averylongcondition4
+) {
+     statement;
+}
+</pre>
+"
+47862;TSconfig;Feature;;Closed;Should have;RTE configuration;Francois Suter;;11/8/2016 17:02;;;3/5/2013;;;0;3/5/2013 11:55;;;1143300;;;"The RTE configuration is done using Page TSconfig. This is actually documented in Core APIs.
+
+There should be a link to that section from the TSconfig Reference; for the sake of completeness.
+
+The target is @<t3api:transformations-tsconfig>@ (label available in the upcoming version 6.0 of Core APIs)."
+47944;TCA Reference;Feature;;Closed;Should have;TCA displayCond options BIT and !BIT;Stefan Neufeind;Francois Suter;1/8/2014 14:22;;6.2.0;5/5/2013;;;100;5/5/2013 13:53;;;1147400;;;"http://docs.typo3.org/typo3cms/TCAReference/Reference/Columns/Index.html
+
+Currently these rule values can be used:
+    FIELD:
+
+
+[...]
+
+Add:
+BIT / !BIT : Considers the field value as an integer; applys the given bitmask and evaluates it if one of the bits is set (result is not zero)."
+47945;TypoScript Reference (TSref);Feature;;Resolved;Should have;Document stdWrap for strPad properties;Stefan Neufeind;Chris topher;29/5/2013 19:36;;6.2;5/5/2013;;;100;5/5/2013 14:01;;;1147450;;;"Just add ""stdWrap"" to the data-type in the doc:
+http://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Strpad/Index.html
+for all three properties. For example:
+length: integer -> integer /stdWrap
+
+See #43604."
+48283;FAL Documentation;Feature;;New;Should have;FAL and selicon_field;Sabine Deeken;;21/12/2013 19:19;;;16/5/2013;;;0;16/5/2013 16:29;;;1164100;;;"Hi there;
+I'm trying FAL at my current work - and can not find how to create a selicon from a FAL-field - is this already possible or not?
+
+
+'selicon_field' => 'img';
+'selicon_field_path' => 'fileadmin/user_upload/gameimg/'; (but would be obsolete; not?)
+
+best regards;
+Sabine
+
+
+		"
+48759;Core APIs;Feature;;Resolved;Should have;Describe folder structure;Felix Kopp;Francois Suter;6/3/2014 16:37;;6.2;1/6/2013;;;100;2/6/2013 0:03;;;1187750;;;"http://docs.typo3.org/typo3cms/CoreApiReference/ExtensionArchitecture/FilesAndLocations/Index.html mentions extension builder to kick start.
+
+
+To document the central folder structure and to point out that flow folder structure is used we should include:
+
+Flow:
+http://docs.typo3.org/flow/TYPO3FlowDocumentation/TheDefinitiveGuide/PartIII/PackageManagement.html#package-directory-layout
+
+TYPO3 CMS:
+
+- Classes/Controller (MVC Controller)
+- Classes/Domain/Model (MVC Domain model classes)
+- Classes/Domain/Model/Repository (MVC Repositories)
+- Classes/ViewHelpers (helper classes used in view)
+- Configuration/TypoScript (setup.txt/?)
+- Configuration/TCA (one file per database table named as table)
+- Documentation
+- Resources/Private/Languages (XLF files)
+- Resources/Private/Layouts (central layout)
+- Resources/Private/Partials (partial layouts for repetitive use)
+- Resources/Private/Templates (one template per action)
+- Resources/Public/Css
+- Resources/Public/JavaScript
+- Tests/Unit"
+48761;Core APIs;Feature;;Resolved;Should have;Auto-Loading;Felix Kopp;Francois Suter;6/3/2014 17:35;;6.2;2/6/2013;;;100;2/6/2013 0:26;;;1187850;;;"According to http://docs.typo3.org/typo3cms/CoreApiReference/ApiOverview/Autoloading/Index.html#autoload-examples-extbase class name should reflect folder structure. That is not state-of the art.
+
+Since namespaces were introduced class names do not reflect the folder path any longer:
+
+EXT: be_user
+
+namespace TYPO3\CMS\Beuser\Domain\Model;
+class BackendUser extends ? {}
+
+in folder
+-> EXT: be_users/Classes/Domain/Model/BackendUser.php
+
+Thus namespace reflects the folder structure while class name is as short as possible.
+
+
+
+So:
+
+In chapter ""Consider the following"".
+Let us add the namespace
+and strip the class name.
+
+"
+48928;ReST tools;Feature;;New;Should have;Tool to convert GoogleDoc to ReST;Xavier Perseguers;;6/6/2013 18:48;;;6/6/2013;;;0;6/6/2013 18:48;;;1196100;;;"Here is a project converting GoogleDoc to Markdown:
+
+https://github.com/mangini/gdocs2md
+
+Don't know if it can be useful but I document it here."
+49106;TypoScript Reference (TSref);Feature;;Resolved;Should have;"Add new option ""includeRecordsWithoutDefaultTranslation"" for select() function";Markus Klein;Chris topher;19/3/2014 18:36;;6.2;13/6/2013;;;100;13/6/2013 18:40;;;1204950;;;"A new option is being introduced for the select() function. [1]
+
+See #24005:
+
+If content language overlay is activated and the option ""languageField"" is set; the new option ""includeRecordsWithoutDefaultTranslation"" (bool) allows to additionally fetch records; which do *not* have a parent in the default language.
+
+[1] http://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Select/Index.html"
+49107;TypoScript Reference (TSref);Feature;;Resolved;Should have;Allow stdWrap functionality for _DEFAULT_PI_VARS;Markus Klein;Chris topher;7/8/2013 17:35;;6.2;13/6/2013;;;100;13/6/2013 19:33;;;1205000;;;Allow recursive stdWrap on _DEFAULT_PI_VARS. See #22045.
+49356;TSconfig;Feature;;Resolved;Should have;Exclude doktypes from pagetree by user TSconfig;Christian Kuhn;;10/10/2013 21:35;;6.2;23/6/2013;;;100;23/6/2013 14:04;;;1217400;;;"Document the new User TSconfig property excludeDoktypes; which
+allows to hide pages with certain doktypes in the page tree.
+
+See #49279"
+49468;TypoScript Reference (TSref);Feature;;Resolved;Could have;Alphabetical ordering for Content Objects;Francois Suter;Chris topher;28/6/2013 21:17;;4.7.0;27/6/2013;;;100;27/6/2013 12:58;;;1223000;;;"In page http://docs.typo3.org/typo3cms/TyposcriptReference/ContentObjects/Index.html; the content objects are ordered in no particular way. I suppose that - historically - there might have been an order of importance; but it has been lost as objects were added. I would suggest to make the TOC alphabetical. It would make it much easier to spot a particular object's chapter.
+
+What do you think?"
+49517;TypoScript Reference (TSref);Feature;;Resolved;Should have;getText: Debug output for register and page variables;Stefan Neufeind;Chris topher;29/6/2013 18:36;;6.2;29/6/2013;;;100;29/6/2013 14:30;;;1225450;;;"It was already possible to show data- and rootline-information as debug-output via TypoScript.
+
+10 = TEXT
+10.data = debug:data
+
+New since 6.2 is to be able to debug $GLOBALS['TSFE']->register and $GLOBALS['TSFE']->page.
+
+20 = TEXT
+20.data = debug:register
+
+30 = TEXT
+30.data = debug:page
+
+
+http://wiki.typo3.org/TSref/getText#debug:.3Cparameter.3E
+
+
+Maybe in this step also check if other debug-params need to be added to the documentation as well."
+49674;TSconfig;Feature;;Closed;Must have;New option for UserTS: options.pageTree.searchInAlias;Philipp Gampe;Christian Woebbeking;23/2/2014 22:50;;6.2;23/2/2014;23/2/2014;0.40;100;5/7/2013 10:23;;;1233200;0.00;;"If set; the search in the pagetree (filter) also filters on the alias field. There will be no highlight of matches in the search result for alias hits."
+49716;TCA Reference;Feature;;Closed;Must have;label_func addition for rendering IRRE headers;Markus Klein;Francois Suter;1/8/2014 14:22;;6.2.0;5/7/2013;;;100;5/7/2013 21:17;;;1235200;;;"The new TCA option 'label_userFunc_options' allows to pass additional information to the label_userFunc.
+
+Example:
+<pre>
+'ctrl' => array(
+	'title' => 'LLL:EXT:lang/locallang_tca.xlf:theTable';
+	'label' => 'uid';
+	'label_userFunc' => 'UserFunc.php:UserFunc->getInlineLabel';
+	'label_userFunc_options' => array(
+		'special' => array(
+			'this';
+			'that'
+		)
+	)
+)
+</pre>
+
+The <code>getInlineLabel()</code> can set the title as follows:
+<pre>
+public function getInlineLabel(array &$params) {
+	$fields = isset($params['options']['special']) && is_array($params['options']['special'])
+		? $params['options']['special']
+		: array();
+	$title = array();
+	foreach ($fields as $f) {
+		$title[] = $params['row'][$f];
+	}
+	$params['title'] = '<dl>' . implode(''; $title) . '</dl>';
+</pre>"
+49752;TSconfig;Feature;;Resolved;Should have;Add documentation of .icon to TCEFORMS.<table>.<field>.addItems;Benni Mack;;13/8/2016 17:37;;7;6/7/2013;;;0;6/7/2013 22:52;;;1237000;;;"For pageTSconfig TCEFORMS.<table>.<field>.addItems one can now add an icon as well. 
+
+If someone adds a new value/label pair for a select field in
+TCEforms/FormEngine; it is not possible to also add an icon to
+the new option.
+
+The patch adds another subelement for TSconfig to also add an
+icon
+<pre>
+TCEFORM.pages.doktype.addItems {
+	13 = My Label
+	13.icon = sysext/t3skin/icons/gfx/i/pages.gif
+}
+</pre>
+The icon path must be relative to the typo3/ directory.
+
+See the syntax here: https://review.typo3.org/22067"
+49807;Documentation;Feature;;Closed;Should have;Access extConf in displayCond;Sebastian Michaelsen;Sebastian Michaelsen;8/12/2015 18:19;;;9/7/2013;;;0;9/7/2013 10:30;;;1239700;;;Write documentation for http://forge.typo3.org/issues/49805 as soon as there is a patch.
+49880;ReST tools;Feature;;Resolved;Must have;TypoScript Highlighting;Michiel Roos;Michiel Roos;24/8/2013 21:12;;Output tuning and integration;11/7/2013;;;100;11/7/2013 9:37;;;1243200;;;"Sections marked with :ts: should be syntaxhighlighted as TypoScript.
+
+This requires a TypoScript Lexer for the Pygments code highlighter.
+
+Please find a testing version attached.
+
+I still need to fix the highlighting of the inclusion of toplevel objects (lib.something =< lib.somethingElse).
+
+Otherwise it works fine for:
+- comments
+- braces
+- numbers
+- functions
+- content objects 
+- operators
+- punctuation
+- constants
+- registers etc.
+- paths
+- strings (html)
+- markers"
+49975;Documentation;Feature;;New;Should have;stdWrap on form-element-defaultvalues;Stefan Neufeind;;12/7/2013 16:04;;;12/7/2013;;;0;12/7/2013 13:55;;;1247750;;;"Since #38163 it is now possible to also perform stdWrap on form-element defaultvalues.
+https://review.typo3.org/#/c/12190/
+
+imho it might be enough to just add /stdWrap to the documentation for value.
+
+value
+string /stdWrap
+This attribute assigns the initial value to the object.
+
+
+Example for adding a GET-variable to a subject-line for a contact-form:
+value.dataWrap = {GP:subject}"
+50119;TypoScript Reference (TSref);Feature;;Closed;Should have;Document FILES references offset and max;Marc Bastian Heinrichs;;14/10/2013 17:53;;;17/7/2013;;;0;17/7/2013 15:31;;;1254750;;;"Currently it is only possible to render all files by references
+with the content object FILES. But a common use case is
+that e.g. only the first image should be rendered.
+This patch adds support for rendering files by reference
+with a offset and maximum.
+
+For the cObject FILES add
+
+*offset*
+integer /stdWrap
+Offset of the first relation to return. If not set (default); relations beginning with the first one are returned.
+
+and 
+
+*max*
+integer /stdWrap
+Maximum number of relations to return. If not set (default); relations until the last one are returned.
+
+See #44113."
+50174;Core APIs;Feature;;Resolved;Should have;Add new chapter about ApplicationContext;Steffen Müller;;17/8/2013 13:35;;6.2;18/7/2013;;;100;18/7/2013 23:56;;;1257450;;;"ApplicationContext from Flow has been backported to TYPO3 CMS.
+
+We have to backport the chapter about ApplicationContext from the ""TYPO3 Flow Documentation (definite guide)"":docs.typo3.org/flow/TYPO3FlowDocumentation/TheDefinitiveGuide/PartIII/Bootstrapping.html#the-typo3-flow-application-context
+"
+50748;ReST tools;Feature;;Resolved;Should have;Convert GIFs to PNGs in T3PythonDocBuilder;Martin Bless;Martin Bless;3/8/2013 0:49;;;2/8/2013;;;100;2/8/2013 23:44;;;1285750;;;
+51003;FAL Documentation;Feature;;Resolved;Must have;Add explanation how to set user permissions;Helmut Hummel;;11/8/2013 21:36;;;10/8/2013;;;100;10/8/2013 18:03;;;1298350;;;"It is currently undocumented; that setting file permissions should not be set via the user record; but with User TSconfig instead.
+
+Add that section to the FAL Documentation"
+51162;TypoScript Reference (TSref);Feature;;Resolved;Must have;New categories special menu;Francois Suter;Francois Suter;29/8/2013 17:35;;6.2;18/8/2013;;;100;18/8/2013 22:05;;;1306250;;;"Feature #51161 proposes a new type of menu based on categories. For rendering this relies on a new type of special HMENU called ""categories""; which also makes it possible to create categories-based menu. The following will be added to the documentation:
+
+# the new type of special menu ""categories""
+# usage of "".value"" property to hold a list of comma-separated system categories uid's
+# the two properties ""sort"" and ""order"" which allow to define a sorting for the pages
+
+All properties have stdWrap capabilities.
+
+The documentation will also mention additional values available for each page (currently; this is a field called ""_categories""; which contains the list of related categories; as a comma-separated list of uid's)."
+51248;TypoScript Reference (TSref);Feature;;Closed;Should have;Adding Documentation for responsive Images;Ingo Schmitt;;22/8/2013 13:55;;6.2;22/8/2013;;2.00;100;22/8/2013 10:53;;;1310500;;;The Core Issue 49723 will add a new typoscript definition for sourcecollection and will add a layout key to the image rendering. The documentation must be added to TSref. 
+51279;Documentation;Feature;;New;Should have;Add singlehtml link into extension docs;d.ros no-lastname-given;;23/8/2013 9:25;Documentation on typo3.org;;23/8/2013;;;0;23/8/2013 9:25;;;1312050;;;"At the moment the docs; eg. for news are missing the button for the singlehtml view. The functionality is there; so no big effort.
+
+
+http://docs.typo3.org/typo3cms/extensions/news/latest
+
+http://docs.typo3.org/typo3cms/extensions/news/latest/singlehtml/
+
+Cheers
+
+David"
+51463;Inside TYPO3;Feature;;New;Should have;Import default data .t3d files if installing extension;Christian Kuhn;;28/8/2013 16:29;;;28/8/2013;;;0;28/8/2013 16:29;;;1321200;;;"I'm unsure if this is the correct documentation document.
+
+The em patch introduced a nice feature: If a data.t3d file is delivered in an extenion in Initialisation/data.t3d; this t3d file is applied during *first* installation of the extension.
+
+This will be used for the package management (intro / gov) later on to import default data sets like pages and content.
+
+target version: 6.2"
+51653;Documentation;Feature;;New;Must have;Add a nice message, how to create a manual, if a special version misses a manual;Kay Strobach;Martin Bless;2/9/2013 17:18;;;2/9/2013;;;0;2/9/2013 16:51;;;1330700;;;"Example:
+
+http://docs.typo3.org/typo3cms/extensions/basictemplate/1.0.5/
+
+The Page should contain this information:
+
+* for this version there is no manual
+* manuals for other versions
+* a link where the author of the extension can learn how to built a documentation
+* a link to the support forums like on: https://typo3.org/support/"
+51846;ReST tools;Feature;;Resolved;Should have;Inclusion of video;Xavier Perseguers;Xavier Perseguers;9/9/2013 15:59;;;9/9/2013;;;100;9/9/2013 10:51;;;1340200;;;"It would be really nice to be able to include video in the documentation.
+
+I created a few of them on Youtube and I could imagine including them in the HTML output solely using:
+
+<pre>
+.. only:: html
+
+       .. youtube:: TShEf6YkREA
+
+.. only:: pdf
+
+       You may watch this for further help: http://www.youtube.com/watch?v=TShEf6YkREA
+</pre>
+
+!video.png!"
+51954;Documentation;Feature;;Closed;Should have;Add documentation for the Categorization API.;Sebastian Michaelsen;;12/9/2013 16:08;Manuals;;12/9/2013;;;0;12/9/2013 15:34;;;1345550;;;"In TYPO3 6.0 a generic Categorization API was introduced which is missing official documentation. This is what we have so far: http://wiki.typo3.org/TYPO3_6.0#Category
+IMO it should be a new chapter in ""TYPO3 API overview"":http://docs.typo3.org/typo3cms/CoreApiReference/ApiOverview/Index.html#api-overview ."
+52001;TSconfig;Feature;;New;Should have;Document backend layout TS;Philipp Gampe;;16/9/2013 9:36;;;14/9/2013;;;0;14/9/2013 12:00;;;1347900;;;"The syntax of the backend layout records should be described in an own chapter.
+
+The syntax definition can be derived from the backend layout wizard."
+52079;Core APIs;Feature;;On Hold;Could have;New parameter for ExtensionManagementUtility::addModule;Ernesto Baschny;Francois Suter;8/10/2015 17:54;;6.2;17/9/2013;;;0;17/9/2013 15:21;;;1351750;;;"In #49643 Benni introduced a new parameter to ExtensionManagementUtility::addModule to be able to override (or completely replace) the conf.php file for BE modules.
+
+The method is documented in Documentation/ApiOverview/MainClasses/UsefulFunctions/Index.rst and so this new parameter should be mentioned there.
+
+Additionally a new option ""inheritNavigationComponentFromMainModule"" is available if one want to put a BE module in Web> without a pagetree.
+
+This also makes the ""conf.php"" file and the included $MCONF and $MLANG variables obsolete. There are some mentions to $MCONF in the same documentation; those could adapted too."
+52190;ReStructured Text Infrastructure;Feature;;Accepted;Should have;Create Settings.yml file upon conversion;Francois Suter;Martin Bless;12/3/2014 11:55;;;23/9/2013;;;0;23/9/2013 14:50;;;1357300;;;"I'm not sure in which subproject this should be reported; so I'm putting it at the root for now. When using ""get the docs"" to convert a manual; it would be nice if a default Settings.yml file were created. It is easy to forget it otherwise."
+52427;Core APIs;Feature;;Resolved;Must have;Configuration/TCA/{tablename}.php undocumented;Stephan Schuler;Francois Suter;15/3/2014 22:36;;6.2;1/10/2013;;;100;1/10/2013 14:57;;;1368950;;;"Hey there.
+
+
+Seems like the new feature about adding new TCA elements isn't well documented; currently.
+
+Changes to 6.2 are:
+* Having slots preconfigured in ext_tables isn't required any longer; it's just enough to have proper files placed in Configuration/TCA/{tablename}.php
+* They kind of take the place of dynamicConfigFile
+* Format is ""return the tca array part of that particular table"" instead of ""just overwrite/merge the $GLOBAL['TCA'] array"".
+
+Maybe this documentation section should clearly point out that it's *only for new TCA objects*. When extending existing tables; like pages; you sill need to have ext_tables.php lines and use the _\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette_ call.
+
+The current documentation sticks to the old fashioned way of always adding tca types to the ext_tables.php.
+
+
+[1] http://typo3.org/fileadmin/t3org/images/FM-news/2013/releases/TYPO3-v6-1-whats-new.pdf; page 34
+[2]: http://docs.typo3.org/TYPO3/CoreApiReference/ExtensionArchitecture/FilesAndLocations/Index.html
+
+
+Kind regards;
+Stephan."
+52451;Core APIs;Feature;;Resolved;Should have;"Include a chapter on ""documenting your extension""";Ernesto Baschny;;7/11/2013 17:37;;6.2;2/10/2013;;;100;2/10/2013 10:00;;;1370150;;;"This part of the Docs:
+
+http://docs.typo3.org/typo3cms/CoreApiReference/latest/ExtensionArchitecture/Index.html
+
+could contain a chapter on how to document your extension. Some infos were already written in the comment box here by Xavier:
+
+https://typo3.org/news/article/typo3-cms-62-lts-alpha3-released/
+
+Xavier asked me to open this issue and assign it to him. Here is the issue; but I cannot assign it to him because he is not in the select box. :)"
+52692;TSconfig;Feature;;Closed;Must have;Document User TSconfig for controlling  BE module visibility;Fabien Udriot;Francois Suter;27/11/2014 14:19;;6.2;11/10/2013;;;100;11/10/2013 11:20;;;1382100;;;"With #52482 we are about introducing User TSconfig for controlling 
+BE module visibility. The patch introduces User TSconfig
+which can be used to hide modules from the main menu.
+
+In some User TSconfig:
+
+<pre>
+# Hide module groups ""file"" + ""help""
+options.hideModules = file; help
+
+# Append configuration to hide module ""func"" and ""info""
+options.hideModules.web := addToList(func;info)
+
+# Hide module BELogLog
+options.hideModules.system = BelogLog
+</pre>
+
+The same effect can be achieved by putting in some ext_tables.php. The difference is that it will
+apply to all BE Users / Groups.
+
+<pre>
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.hideModules := addToList(file; help)');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.hideModules.web := addToList(func;info)');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.hideModules.system = BelogLog');
+
+</pre>"
+52730;TCA Reference;Feature;;Closed;Should have;Placeholder property in some fields;Christian Kuhn;Francois Suter;1/8/2014 14:22;;6.2.0;12/10/2013;;;100;12/10/2013 21:54;;;1383950;;;"A happy little feature was introduced in 4.7 already; but never documented:
+
+Some TCA fields (input / text?) can have a placeholder config option to hold a 'placeholder' value until user input was supplied.
+
+See issue #33235 for the feature introduction and #52630 for a bugfix in this area."
+52732;Installation and Upgrade Guide;Feature;;Resolved;Must have;"Document Install Tool Core Update and ""TYPO3_DISABLE_CORE_UPDATER""";Ernesto Baschny;Chris topher;1/4/2014 20:42;;6.2;12/10/2013;;;100;12/10/2013 22:49;;;1384050;;;"6.2 has received a new ""core updater"" mechanism in the Install Tool. And with it; a new setting provided for hosters who want to disable this feature. This has to be documented ""somewhere"" (most probably the ""Installation Guide"". I.e. the following:
+
+h2. Core Updater Tool
+
+The Install Tool provides a tool to update the TYPO3 Core itself under ""Important Actions"". For this to work; the following setup is required:
+
+* Only works under Unix and MacOS (symlink support)
+* typo3_src must be a symlink
+* This symlink needs to be writable (and deletable) by the Webserver user
+* Document Root needs to be writable
+* One path above document root (""../"") needs to be writable (new directories allowed to be created)
+* ""tar"" command available for extracting the core package
+
+h3. Disabling the Core Updater
+
+To disable the Core Updater functionality altogether (in order to avoid users using it in the Install Tool; i.e. if you have your own update mechanism); you can set this environment variable:
+
+ TYPO3_DISABLE_CORE_UPDATER=1
+
+For example in Apache:
+
+ SetEnv TYPO3_DISABLE_CORE_UPDATER 1
+
+This will disable the button in the Install Tool and all related functionality in the Install Tool."
+52769;FAL Documentation;Feature;;New;Should have;Document advanced metadata for File;Fabien Udriot;;14/10/2013 0:21;;;14/10/2013;;;0;14/10/2013 0:19;;;1385900;;;"The Core provides advanced metadata for File within a Core 
+extension. The extension is not activated by default but can be
+when advanced metadata are needed.
+
+The main benefit is to have unified metadata in TYPO3. 
+As a result; third-party extensions can build upon a common
+base preventing segmentation."
+52781;TSconfig;Feature;;Resolved;Should have;Alternative domain for preview;Stefan Neufeind;;2/12/2015 9:38;;6.2;14/10/2013;;;0;14/10/2013 12:08;;;1386500;;;"Usally the first domainrecord is used to create links for previewing a page (clicking ""view""-icon in BE). It's possible to override this setting via PageTS:
+
+TCEMAIN.viewDomain = example.com"
+52783;TSconfig;Feature;;Closed;Must have;Make frame sizes in viewpage module configurable;Markus Klein;Christian Woebbeking;23/2/2014 22:49;;6.2;14/10/2013;26/1/2014;0.45;100;14/10/2013 12:29;;;1386600;;;"Since #51148 we have a view page selector to emulate device widths. With #51865 this is now configurable per project; providing maximal flexibility for integrators.
+
+It is now possible to make the size of the view in the BE module configurable.
+
+Example:
+
+<pre>
+mod.web_view.previewFrameWidths {
+  1780.label = <any LLL or string>
+  1780.height = 145
+</pre>
+
+The height property is optional."
+52826;TSconfig;Feature;;Closed;Must have;Add language switcher for backend pagetree;Markus Klein;Christian Woebbeking;25/10/2015 23:05;;7;15/10/2013;;;0;15/10/2013 0:08;;;1388750;;;"New TSConfig options:
+
+options.pageTree.languageSelection.hide = 1
+  in the user TSConfig will hide the language switcher for
+  this user.
+
+options.pageTree.languageSelection.sortAlphabetically = 1
+  in the user TSConfig will sort the language selection
+  alphabetically for this user."
+52827;TypoScript Reference (TSref);Feature;;Resolved;Should have;Document keyword devIP for IP condition;Ingo Renner;Ingo Renner;16/10/2013 17:35;;6.2;15/10/2013;;;100;15/10/2013 0:09;;;1388800;;;"Support devIp keyword in IP condition:
+
+[IP = devIP]
+
+See #50092"
+52832;TypoScript Syntax;Feature;;Resolved;Should have;Allow relative include paths in files;Philipp Gampe;Chris topher;19/3/2014 22:36;;;15/10/2013;;;100;15/10/2013 9:34;;;1389050;;;"#52018 = https://review.typo3.org/#/c/23842/ allows to include files relative to a parent file for the @<INCLUDE_TYPOSCRIPT: source=""FILE:../filename.ts"">@ directive.
+
+Allows to pass relative paths to INCLUDE_TYPOSCRIPT if the inclusion
+is called recursively from a file.
+Those paths start with ./ or ../
+The ./ is needed to distinguish them from paths relative to PATH_SITE.
+
+This allows simple nested TypoScript templates that can be moved or
+copied without the need to adapt all includes.
+Relative paths will also remain unchanged between loading/saving.
+
+Besides this the patch now also keeps ""optional properties""
+given in an include-tag for FILE unchanged. So far this only
+worked for DIR."
+52839;TCA Reference;Feature;;Closed;Should have;itemsProcFunc may throw exceptions;Francois Suter;Francois Suter;1/8/2014 14:22;;6.2.0;15/10/2013;;;100;15/10/2013 11:06;;;1389400;;;"With #52836 it becomes possible to throw exceptions in itemsProcFunc (for field types ""select""; ""radio"" and ""check""). This should be mentioned in the relevant properties descriptions."
+52853;TYPO3 Skinning Reference;Feature;;New;Should have;High density sprite images;Christian Kuhn;;15/10/2013 16:29;;;15/10/2013;;;0;15/10/2013 16:03;;;1390100;;;
+52920;TypoScript Reference (TSref);Feature;;Resolved;Should have;Support categories in RECORDS object;Francois Suter;Francois Suter;22/1/2014 18:35;;6.2;17/10/2013;;;100;17/10/2013 15:19;;;1393450;;;"The RECORDS object gets a new property called ""categories""; which can contain a comma-separated list of sys_category uid's. It has a sub-property called ""relation""; to define the specific categories-relation field to use.
+
+Both properties had stdWrap capabilities.
+
+The ""categories"" property acts at the same level as the ""source"" property; but has less precedence. If both properties are not empty; the ""source"" property will be considered and the ""categories"" property ignored. This is because the ""source"" property is considered more targeted than the ""categories"" property."
+53025;TCA Reference;Feature;;Closed;Should have;Dokument new IRRE appearance property;Alexander Stehlik;Francois Suter;1/8/2014 14:22;;6.2.0;22/10/2013;;;100;22/10/2013 8:53;;;1398700;;;"A new appearance property ""newRecordLinkTitle"" was added for inline TCA columns; see:
+
+* http://forge.typo3.org/issues/53007
+* https://review.typo3.org/24924
+
+So in the file ""/Documentation/Reference/Columns/Inline/Index.rst after line 88"":http://forge.typo3.org/projects/typo3v4-doc_core_tca/repository/revisions/master/entry/Documentation/Reference/Columns/Inline/Index.rst#L88 (after bullet point ""newRecordLinkAddTitle"") something like this should be added:
+
+<pre>
+         - *newRecordLinkTitle* (string) (since TYPO3 CMS 6.2) Overwrites the
+           title of of the ""New record"" link; e.g.
+           ""LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label"".
+           This will only work if newRecordLinkAddTitle is **not** set to true.
+</pre>
+
+"
+53225;TypoScript Reference (TSref);Feature;;Closed;Should have;Special handling of noTrimWrap in FILES cObj;Stefan Froemken;Chris topher;30/10/2013 22:42;;;30/10/2013;;;0;30/10/2013 12:47;;;1408700;;;"Hello Docu-Team;
+
+ALL values of renderObj will be parsed through optionSpliFunc. But in case of noTrimValue; you HAVE to set splitChar explicit:
+
+<pre>
+page.1 = FILES
+page.1 {
+  folders = 1:user_upload/images/examples/
+  sorting = date
+  sorting.direction = ASC
+  renderObj = COA
+  renderObj {
+    10 = TEXT
+    10.value = aaa
+    20 = TEXT
+    20.value = bbb
+    20.noTrimWrap = $ - $$
+    20.noTrimWrap.splitChar = $
+  }
+}
+</pre>
+
+Stefan"
+53412;TypoScript Reference (TSref);Feature;;Resolved;Should have;Highlight code blocks as Typoscript by default;Francois Suter;;6/12/2015 21:33;;;7/11/2013;;;0;7/11/2013 13:42;;;1417900;;;"The Includes.txt file should be changed to that:
+<pre>
+.. highlight:: typoscript
+</pre>
+so that all code block are considered Typoscript by default. I thought this was already the case. Of course existing code block must be checked. If in some other language; they should be marked as such with @.. code-block@."
+54846;Core APIs;Feature;;Resolved;Should have;Add link to reST introduction in documentation guide;Dan Untenzu;Francois Suter;19/3/2014 17:37;;6.2;8/1/2014;;;100;8/1/2014 17:08;;;1488550;;;"Xavier Perseguers wrote a nice; comprehensible introduction to reST:
+http://docs.typo3.org/typo3cms/drafts/github/xperseguers/RstPrimer/
+
+Please add a link to this document in the core reference:
+http://docs.typo3.org/typo3cms/CoreApiReference/latest/ExtensionArchitecture/Documentation/Index.html"
+55007;TCA Reference;Feature;;Closed;Should have;Document t3editor wizard;Francois Suter;Francois Suter;1/8/2014 14:22;;6.2.0;15/1/2014;;;100;15/1/2014 8:31;;;1496350;;;Usage of the t3editor wizard should be documented. It goes into the Tca/Documentation/AdditionalFeatures/CoreWizardScripts/Index.rst file.
+55038;TSconfig;Feature;;Resolved;Must have;New option for cache clearing;Markus Klein;Christian Woebbeking;24/3/2014 0:40;;6.2;16/1/2014;;0.50;100;16/1/2014 0:10;;;1497900;;;"New option
+
+options.clearCache.system
+
+If this option is set; the non-admin user is able to clear the system cache.
+Note: It should not be necessary to do so for a normal user.
+
+Clearing the system caches will impose a very large delay for the first load."
+55188;TCA Reference;Feature;;Closed;Should have;Allow unique evaulation for TCA type 'check';Oliver Hader;Francois Suter;1/8/2014 14:22;;6.2.0;20/1/2014;;;100;20/1/2014 19:58;;;1504850;;;The 'eval' property can have 'unique' and 'uniqueInPid' for TCA type 'check' as well
+55718;Core APIs;Feature;;Resolved;Should have;Category registry allows overriding exclude flag;Francois Suter;Francois Suter;19/3/2014 18:36;;6.2;6/2/2014;;;100;6/2/2014 10:34;;;1530600;;;"Currently the CategoryRegistry class sets the exclude flag to a hard-coded value of 0. A proposed change to the current will change the default value to 1 and allow it to be overridden; as it is already possible to do with the label property.
+
+Reference: http://docs.typo3.org/typo3cms/CoreApiReference/ApiOverview/Categories/Index.html#categories-activating"
+56123;TCA Reference;Feature;;Closed;Should have;Introduce MM_oppositeUsage property;Oliver Hader;Francois Suter;1/8/2014 14:22;;6.2.0;19/2/2014;;;100;19/2/2014 14:15;;;1550400;;;"For group; select and inline types (all TCA types that support MM relations)
+
+Description:
+MM_oppositeUsage defines an array with maps table names to field names; pointing to possible opposite relations. Since the current relation allows any table; these pointers are checked on creating new MM relations and will apply the MM_match_fields from the accordant opposite configuration. TYPO3 CMS uses this for e.g. sys_category and tt_content relations.
+
+Example:
+@
+...
+'allowed' => '*';
+'MM' => 'tx_myextension_first_second_mm';
+'MM_oppositeUsage' => array(
+  'tt_content' => array('somefield');
+  'tx_myextension_domain_model' => array('some_property');
+);
+...
+@"
+56518;ReStructured Text Infrastructure;Feature;;Resolved;Should have;Recognize more of the old table data to provide special styling;Martin Bless;;4/3/2014 10:36;;;4/3/2014;;;100;4/3/2014 10:05;;;1570050;;;"Add to our TYPO3-specific Sphinx-extension ""t3tablerows.py"". Recognize more of the old tables to be displayed in ""Show properties styling"". Add these title combinations:
+
+<pre>section; description
+uid_local; uid_foreign; tablename; sorting
+int.type; indatabase; whengiventotceforms
+currentdbvalue; submitteddatafromtceforms; newdbvalue; processingdone
+element; description; childelements
+keyword; description
+keyword; description; valuesyntax
+keyword; description; valuesyntax; examples
+softrefkey; description
+key; type; description
+int.pointer; title; description
+fieldname; 5thparam; ""colorschemepnt""; ""styleschemepnt""; ""borderschemepnt""
+element; format; description
+key; subkeys; description
+key; type; description
+variable; phptype; description
+variable; phptype; description; default
+directory; description
+name; description
+</pre>
+
+The TCA documentation should now be fully covered."
+56662;Core APIs;Feature;;Resolved;Should have;Changes for CacheManager;Francois Suter;Francois Suter;20/3/2014 23:40;;6.2;7/3/2014;;;100;7/3/2014 22:02;;;1577250;;;"In version 6.2; the CacheManager should not be fetched using:
+<pre>
+$GLOBALS['typo3CacheManager']->getCache('myext_mycache')
+</pre>
+but instead:
+<pre>
+GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Cache\\CacheManager')->getCache('myext_mycache')
+</pre>"
+56665;TypoScript Reference (TSref);Feature;;Resolved;Should have;"New stdWrap property ""escapeJsValue""";Jigal van Hemert;;9/3/2014 18:36;;;8/3/2014;;;100;8/3/2014 10:26;;;1577400;;;"escapeJsValue
+
+Property
+escapeJsValue
+
+Data type
+boolean
+
+Description
+Escapes content to be used safely inside strings in JavaScript. Characters which can cause problems inside JavaScript strings are replaced with their encoded equivalents.
+Passes the content through the core function \TYPO3\CMS\Core\Utility\GeneralUtility::quoteJSvalue() but removes the surrounding quotes.
+
+Example:
+10 = TEXT
+10 {
+  data = GP:sWord
+  escapeJsValue = 1
+  wrap = setSearchWord('|');
+}
+"
+56749;TCA Reference;Feature;;Closed;Should have;New TCA control property shadowColumnsForMovePlaceholders;Oliver Hader;Francois Suter;1/8/2014 14:22;;6.2.0;11/3/2014;;;100;11/3/2014 11:02;;;1581600;;;"* new $TCA[<table>]['ctrl']['shadowColumnsForMovePlaceholders']
+* which is evaluated in the DataHandlerHook of ext:version
+* similar to the existing 'shadowColumnsForNewPlaceholders' but for move placeholders only
+** on changing the sorting order of elements on the same page
+** on moving elements to a different page
+* move placeholders are only created if $TCA[<table>]['ctrl']['versioningWS'] is set to ""2"" (two - instead of ""1"" or ""TRUE"") to enable this feature"
+57121;TypoScript Reference (TSref);Feature;;Rejected;Should have;Possible new option for preventing links to non translated pages;Alexander Stehlik;;13/8/2016 19:31;;;20/3/2014;;;0;20/3/2014 20:46;;;1600100;;;"There is a quite old feature request in #20043.
+
+My suggestion is to introduce a new config option called
+
+<pre>
+config.typolinkDisableLinksToNonTranslatedPages = 1
+</pre>
+
+If this is enabled the typolink function will not link to pages that are not available in the current translation.
+
+This is work in progress!"
+57171;TypoScript Reference (TSref);Feature;;Resolved;Should have;"select: Enable queries using ""root"" and ""-1"" for pidInList";Oliver Hader;Chris topher;25/3/2014 13:47;;6.2;22/3/2014;;;100;22/3/2014 0:05;;;1602550;;;"The change refers to http://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Select/Index.html
+
+select.pidInList now supports the new values ""root"" and ""-1"".
+
+_Add to documentation_
+
+Since TYPO3 CMS 6.2 it is possible to select records from the root-page level; like from the table ""sys_category"". For this case; it is required that ""root"" is set.
+Besides that; version records can be selected directly by setting the value to ""-1""; this allows to directly select workspace versioned records.
+
+Special keyword: ""this"" is replaced with the id of the current page; ""root"" is replaced with the root-page level (records with pid=0)
+
+Example:
+<pre>
+// Fetching related sys_category records
+// stored in the MM intermediate table
+10 = CONTENT
+10 {
+	table = sys_category
+	select {
+		pidInList = root;-1
+		selectFields = sys_category.*
+		join = sys_category_record_mm ON sys_category_record_mm.uid_local = sys_category.uid
+		where.data = field:_ORIG_uid // field:uid
+		where.intval = 1
+		where.wrap = sys_category_record_mm.uid_foreign=|
+		orderBy = sys_category_record_mm.sorting_foreign
+		languageField = sys_category.sys_language_uid
+	}
+}
+</pre>
+
+See #57168"
+57253;Core APIs;Feature;;New;Should have;Document usage of composer manifest;Francois Suter;;25/3/2014 11:40;;;24/3/2014;;;0;24/3/2014 21:41;;;1606650;;;The section about Extension Architecture should now include a mention of the composer manifest. How should this file look like and what is it good for?
+57667;TSconfig;Feature;;New;Should have;Conditions: Add information about features of available conditions;Philipp Gampe;;24/4/2014 20:14;;;5/4/2014;;;0;5/4/2014 1:59;;;1627200;;;"Pretty much all conditions from frontend also apply to TSconfig and can be used in UserTS; PageTS or Backend Layouts.
+
+Inside backend layouts; it is also possible to test for TSconfig via:
+<pre>
+[globalVar = SOBE|modSharedTSconfig|properties|test = 1]
+tests on mod.SHARED.test = 1
+
+[globalVar = SOBE|modTSconfig|properties|test = 1]
+tests on mod.web_layout.test = 1
+</pre>
+
+One can test for the properties of the current page via:
+<pre>
+[globalVar = SOBE|pageinfo|layout = 1;2;3]
+</pre>
+"
+57821;Templating Tutorial (Files);Feature;;New;Could have;Package as a distribution;Francois Suter;;11/4/2014 11:48;;;11/4/2014;;;0;11/4/2014 11:48;;;1634900;;;"Check if it would make sense to package this extension as a distribution; so that it could be installed on a blank TYPO3 CMS 6.2 setup."
+57837;Official Doc Extension Template;Feature;;Resolved;Should have;Make this example the only reference;Francois Suter;Francois Suter;11/4/2014 18:43;;1.7.0;11/4/2014;;;100;11/4/2014 16:20;;;1635700;;;"After discussion during the Documentation Team code sprint (T3DOCS14); we figured that we need to reduce the number of entry points into documentation in order not to confuse developers.
+
+We don't need an Official Manual example; because new official manuals are created only rarely and can be created from existing ones. Some example reST constructs must be moved from the Official Manual example to the Extension Manual example.
+
+As a single entry point to reST and to avoid content duplication; the example manual should only point to Xavier's reST primer http://docs.typo3.org/typo3cms/drafts/github/xperseguers/RstPrimer/ ; source: https://github.com/xperseguers/TYPO3.docs.rst-primer)."
+57895;TCA Reference;Feature;;Closed;Should have;New signal in loadBaseTca after building the cached TCA from files;Stefan Neufeind;Francois Suter;1/8/2014 14:22;;6.2.0;14/4/2014;;;100;14/4/2014 14:18;;;1638550;;;"from review:
+To improve performance in backend context; final
+TCA should be cached in contrast to only parts of it.
+
+To be able to cache the complete TCA; we need to introduce a signal
+after building the cached TCA from files."
+57910;Templating Tutorial;Feature;;Needs Feedback;Should have;Make comments for editors unreadable for general public;Dominik Lenné;Francois Suter;14/4/2014 20:27;;;14/4/2014;;;0;14/4/2014 18:48;;;1639300;;;"I would strongly suggest this; because the comments for editors are very disturbing; when you are working hard to just get the meaning of the text."
+57911;Templating Tutorial;Feature;;New;Should have;Less screenshots, more short writings;Dominik Lenné;;14/4/2014 21:18;;;14/4/2014;;;0;14/4/2014 19:01;;;1639350;;;"Screenshots hamper the flux of reading. I would suggest to replace some of them by short code like:
+
+> (left side) template module > (middle) select page home > (right top) info/ modifiy > edit whole template record < (template edit window opens) > options-tab > template on next level: browse-icon < (popup with page tree appears) > select page > template-list: select template
+
+and so on and so forth.
+
+Of course one could shorten this; referring to earlier stage; may be like this:
+
+(template edit window of template xyz) > includes-tab > css styled content typo3 6.1 > (top right) save-icon
+
+If this short click-through code is well made;it is faster to edit and to work on as screenshots. 
+
+
+
+"
+57951;TCA Reference;Feature;;Closed;Should have;API to add cached TCA changes;Stefan Neufeind;Francois Suter;1/8/2014 14:22;;6.2.0;15/4/2014;;;100;15/4/2014 16:08;;;1641350;;;"Files in the extension directory Configuration/TCA/Overrides/ will be executed right before building the cached
+TCA. These files must *only* contain PHP code that manipulate TCA (like addTCAColumns or addToAllTCATypes).
+
+All code manipulating the TCA that previously was in ext_tables.php and therefore was uncachable; can now be in a defined location and is only executed when TCA is built and after that cached.
+
+Category Registry changes will also be applied after Configuration/TCA/Overrides/ has been processed
+so that makeCategorizable calls can now also happen in files in this locations and do not need to stay
+in ext_localconf.php where they also would be executed on every request.
+
+This will give backend requests quite a performance boost once extensions start using these files."
+58104;TSconfig;Feature;;Needs Feedback;Should have;Hide cols in BE-Layouts;Stefan Froemken;;5/5/2014 14:46;;;22/4/2014;;;0;22/4/2014 21:45;;;1649000;;;"Hello;
+
+http://docs.typo3.org/typo3cms/TSconfigReference/singlehtml/Index.html#example-for-backend-layout
+
+You write:
+
+""Since TYPO3 6.0 mod.SHARED.colPos_list is no longer working. Instead; use backend layouts.""
+
+Funny...but in your example there is no solution how to hide/deactivate cols in BE-Layouts.
+
+There is only a hint in sourcecode:
+
+<pre>
+// Draw the pre-generated header with edit and new buttons if a colPos is assigned.
+// If not; a new header without any buttons will be generated.
+</pre>
+
+I think it would be good; to add this information also in documentation.
+
+Stefan"
+58698;ReST tools;Feature;;New;Should have;develop pygments TypoScript syntax-highlighter »plugin« + develop pygments Fluid-Templating syntax-highlighter plugin;Stephan Jorek;;17/8/2015 7:57;;;11/5/2014;;;0;11/5/2014 15:12;;;1678550;;;"h1. The Proposal - Part I:
+
+As a first step the current ""TypoScript syntax-highlighter"":http://forge.typo3.org/projects/tools-rest/repository/revisions/master/entry/ExtendingPygmentsForTYPO3/ should be installable via pip; setup tools or the like.
+
+This would allow external projects to integrate TypoScript syntax-highlighting much easier; simply by issuing a command like:
+<pre>
+$ easy_install Pygments-Typo3-Lexers
+</pre>
+
+The project I'm actively using; which would benefit from this solution: http://nevir.github.io/groc/ 
+
+h1. The Proposal  - Part II:
+
+Later on this separate plugin could get merged directly into _pygments_. Then external _pygments_-related projects and users are able to render syntax-highlighted TypoScript out-of-the-box. The main user of _pygments_ I know for sure is: ""Github"":https://help.github.com/articles/using-jekyll-with-pages#defaults ? They are using (at least) _pygments_ to provide syntax-highlighting. A initial hint I stumbled upon is ""published here"":http://www.pocoo.org/#users . I followed this path and had in another project I'm contributing to; the chance to talk to some github-staff; who confirmed my assumption (verbally). They said; that they update their _pygments_ quite frequently; often daily or whenever a new syntax-lexer has been added. Therefore it should not be too difficult to get _TypoScript_- and maybe also _Fluid_-syntax-highlighting support into their platform; as long as we implement it properly and convince ""Georg Brandl"":https://bitbucket.org/birkenfeld to merge it into his _pygments_. He (and most other folks from this project) seem to be very kind and will certainly helps us to get this done right. But we should not start empty - and of course we don't need to. I think we need to offer something installable or at least merge-able in order to get them to work with us.
+
+h1. Suggested Solution:
+
+In order to achieve this goal it is necessary to stick to python's and especially _pygments_' development process. Therefore I created ""a new mercurial-based project on bitbucket"":https://bitbucket.org/sjorek/pygments-typo3-lexers that currently contains everything I found and is (if not already; then very soon) installable as suggested in Part I from above. I opened up this project to invite everybody interested to join the discussion and development-process there. I promise to manage this project open; transparent and as often as I can. But I don't want to ?over-pace? the whole process. I'm convinced that I'm a experienced enough Python-; _pygments_ and TYPO3/Flow developer to guide this process - at least I hope so for now. :-)
+
+h1. Open Questions:
+
+# Did I violate any licences by creating the project on bitbucket and distributing the current TypoScript-syntax-highlighter as a installable _pygments_-plugin ?
+# Does the project on bitbucket violate any specifications or guidelines ?
+# Who developed the current ""TypoScript-syntax-highlighter"":http://forge.typo3.org/projects/tools-rest/repository/revisions/master/entry/ExtendingPygmentsForTYPO3/_incoming/typoscript.py and how can I get in touch with them ? (Who is behind _?Donation Based Hosting?_ ?)
+# Shall we provide a combined _pygments_-plugin for TypoScript and Fluid or two separate _pygments_-plugins ?
+# The current TypoScript-syntax-highlighter seems to be incomplete; right ?
+  - The lastest addition to paths is missing; ie.: @TCEFORMS.table.field.""flex-form.sub-path"".?@
+
+h1. Open Tasks:
+
+# Write a simple roadmap
+# Invite everybody interested and able to use mercurial to the bitbucket project.
+
+
+
+As always I appreciate any feedback I can get here. Please do *not* use the bitbucket issue tracker to discuss this proposal yet. Use bitbucket only it for real code-issues only or better ignore it until we officially decide to use it.
+
+Cheerio + Thx;
+Stephan Jorek
+
+P.S.: Apologies for my weak english ? if anybody wants to talk to me in my native language - its german ?
+PPS.: Um präzise zu sein - ick bin Berliner; also immer her mit der Kritik; den Nachfragen und all dem Geplänkel; ick kann det vertragen :-)"
+59048;Core APIs;Feature;;Resolved;Should have;Document TCA/Overrides;Francois Suter;Francois Suter;24/5/2014 22:36;;6.2;22/5/2014;;;100;22/5/2014 22:00;;;1695850;;;The new preferred way of storing TCA customizations should be mentioned in the Extension Architecture chapter. The actual usage details are in the TCA Reference.
+59089;Core APIs;Feature;;New;Should have;Document Signal/Slot mechanism;Francois Suter;;22/12/2015 13:31;;6.2;24/5/2014;;;0;24/5/2014 21:37;;;1697900;;;"Hooks are extensively documented in Core APIs; signal/slots should also be documented. Their usage is much easier anyway."
+59162;ReStructured Text Infrastructure;Feature;;Accepted;Must have;Make the the Github hook receiver handle branches;Martin Bless;Martin Bless;28/5/2014 9:41;;;28/5/2014;;;0;28/5/2014 9:41;;;1701550;;;
+60046;TSconfig;Feature;;Closed;Should have;Document mod.web_ts.disableCacheClearing;Alexander Stehlik;;16/11/2014 17:17;;7;1/7/2014;;;0;1/7/2014 22:05;;;1745550;;;"If #60045 is merged a new Page TSconfig option is introduced:
+
+<pre>
+mod.web_ts.disableCacheClearing = 1
+</pre>
+
+The option is of type @boolean@.
+
+If set to TRUE the cache will *not* be cleared automatically when changes are made in the template modules."
+1660;Documentation;Feature;;Closed;Should have;sync with http://tswiki.net ?;Daniel Brüßler;Daniel Brüßler;20/10/2010 11:40;;sprint 2008/11;7/10/2008;15/10/2008;;100;7/10/2008 17:35;;;1818150;;;"Hello Martin;
+
+Seems so; that not many edit content there.
+
+Do you see a way to syncronize or link between wiki.typo3.org / documentation.typo3.org / TSref docbook / snippets.typo3.org ?
+
+And would would be an advantage?
+
+Cheers!
+Daniel
+"
+1039;Documentation;Feature;;Closed;Should have;syntax highlighting for HTML;Susanne Moog;Susanne Moog;20/10/2010 11:40;;sprint 2008/05;10/7/2008;10/7/2008;0.00;100;10/7/2008 22:06;;;1818450;;;we should have syntax highlighting also for HTML in the wiki. Everything else seems to be there already.
+1026;wiki.typo3.org;Feature;;Closed;Must have;Explain how to add a new page in wiki;Martin Holtz;Martin Holtz;26/9/2011 11:18;;;9/7/2008;23/7/2008;0.00;100;9/7/2008 20:05;;;1818500;;;"Describe how a newbie could add a page (small tutorial or small howto)
+
+Topics which should be explained
+* Tagging
+* Images
+* Whats up with category
+* How to Start a New Page
+
+aktuelle Seiten nicht einsteigerfreundlich; insbesondere Basissachen wie Seiten anlegen und das neue Tagging besser erklären"
+861;TypoScript in 45 Minutes;Feature;;Closed;Must have;Help Martijn and Kees to start 45-minutes-translation;Daniel Brüßler;Daniel Brüßler;26/9/2011 12:53;;;25/6/2008;25/6/2008;0.00;100;25/6/2008 11:17;;;1818700;;;"* create issue: start in the wiki
+* create issue: what topic to start with"
+817;wiki.typo3.org;Feature;;Closed;Should have;News für Suche von Martin;Daniel Brüßler;Daniel Brüßler;26/9/2011 12:44;;;18/6/2008;29/7/2008;0.00;100;18/6/2008 20:28;;;1818850;;;"sobald sie wirklich ""reif"" ist - scheint aber schon echt gut zu passen!"
+1396;Documentation;Feature;;Rejected;Should have;link-collection: RSS-feed-import;Daniel Brüßler;Daniel Brüßler;30/10/2010 11:20;;sprint 2010/03;28/8/2008;31/3/2010;;50;28/8/2008 10:37;;;1819050;;;"a) import into the wiki
+
+b) import into documentation.typo3.org - not the content just as link-list because external content is not under OCL
+"
+690;wiki.typo3.org;Feature;;Closed;Could have;google-box-Search / with documentation in wiki;Daniel Brüßler;Martin Holtz;26/9/2011 11:17;;;31/5/2008;30/6/2008;0.00;100;31/5/2008 13:25;;;1819100;;;"Die google-box-Suche ist super!! Wäre sehr gut das auf der deutschen Wiki-Startseite als box hinzuzufügen. Kann auch gern auf Deine eigene Website verweisen; da spricht nichts dagegen.
+
+Zwei Dinge sind dafür sinnvoll:
+* auf Deiner eigenen Website legst Du eine Seite an; wo es nur darum geht. Am besten mit ein zwei Screenshots. Erst nur die simple Variante für z.B. Suche nach IMAGE; weiter unten die speziellen Features wie z.B. Suche nach extension im TER und nach einem TS-objekt.
+* auf der WikiStartseiteDeutsch eine eher kleine(!) box (kann nach oben rechts - da ist eine freie Stelle) - und auch mit kleinem Screenshot (=vom ""Hinzufügen"" Link in der Googlebox)
+"
+10954;wiki.typo3.org;Feature;;Closed;Should have;wiki.typo3.org - remove Captcha when User is logged in;Fabien Udriot;Daniel Brüßler;26/9/2011 11:14;;;19/11/2010;;;100;19/11/2010 12:23;;;1819150;;;"When a user is *logged in* in the Wiki; I would like to remove the Captcha that appears when updating content. Under extensive writing; this captcha is annoying and is lost time IMO. Security speaking; I don't consider a too big issue as the Captcha will *stay* if the User is not logged in."
+13201;wiki.typo3.org;Feature;;Closed;Must have;Add the website-selector on top-right;Daniel Brüßler;Daniel Brüßler;26/9/2011 11:14;;;26/2/2011;26/2/2011;;100;20/2/2011 18:30;;;1819500;;;see www.typo3.org
+13200;wiki.typo3.org;Feature;;Closed;Must have;"Add field for ""most important"" (tag, project, team)";Daniel Brüßler;Daniel Brüßler;26/9/2011 11:14;;;1/3/2011;8/3/2011;;100;20/2/2011 18:19;;;1819550;;;So this will be the content for the list in the top menu bar
+13199;wiki.typo3.org;Feature;;Closed;Must have;Add orange navigation-bar;Daniel Brüßler;Daniel Brüßler;26/9/2011 11:14;;;28/2/2011;1/3/2011;;100;20/2/2011 17:58;;;1819600;;;"see http://www.darmstadt-typo3.de/typowikimenu/menue.html
+"
+13198;wiki.typo3.org;Feature;;Closed;Should have;Add the new design as new skin;Daniel Brüßler;Daniel Brüßler;26/9/2011 11:14;;;20/2/2011;23/2/2011;;100;20/2/2011 17:55;;;1819650;;;"the base for the new layout:
+http://www.darmstadt-typo3.de/wiki-b/
+"
+13453;wiki.typo3.org;Feature;;Closed;Should have;optimize background and blocks;Daniel Brüßler;Daniel Brüßler;26/9/2011 11:14;;;1/3/2011;22/3/2011;;100;28/2/2011 19:21;;;1819700;;;
+13204;wiki.typo3.org;Feature;;Closed;Should have;"What features of ""t3o"" could we use also in the wiki? (e.g. the contribution-block)";Daniel Brüßler;Daniel Brüßler;26/9/2011 11:14;;;21/2/2011;21/3/2011;;100;20/2/2011 20:49;;;1819750;;;"http://t3o.typo3.org/about/the-typo3org-design/
+
+nice to have:
+* contribution-block on bottom-right
+"
+25693;wiki.typo3.org;Feature;;Closed;Should have;Open external links in a new window;Sabine Hueber;Daniel Brüßler;26/9/2011 11:14;;;3/4/2011;3/4/2011;;100;1/4/2011 10:47;;;1819850;;;"The external links in the wiki open in the same window. It would be better; when they open by default in an external window. "
+14515;Documentation;Feature;;Rejected;Won't have this time;Add a version row for each property in the reference manuals (TSref, TSconfig, ...);Volker Graubaum;Chris topher;1/12/2011 17:03;;;29/1/2005;;;100;29/1/2005 16:45;;;2332400;;;"All Documentations with TypoScript referenzes should get another coloumn for the version of each typoScript value.
+
+for example if CURIFSUB will be added in 3.8.0.dev this should be added in TSREF. So if you are reading the documentation and using an older version of typo3 or the used extension you know that you couldn't use it :-)
+
+
+
+Maybe start with the my_extension documentation and add an coloumn here?
+
+http://typo3.org/documentation/document-library/doc_template/Reference-10/
+(issue imported from #M721)"
+7843;Core APIs;Feature;;New;Could have;anchor all specific settings;Felix Oertel;;3/5/2013 17:54;;;19/5/2010;;;0;19/5/2010 22:00;;;2858750;;;"Hey ho;
+
+often you want to show something from doc_core_api to someone else; especially on discussions in forums or mailinglists. unfortunately it's only possible to link to sections; not to specific settings.
+
+example: i want to show the definition of ""sortby"" in ""$TCA - ['ctrl'] section"":http://typo3.org/documentation/document-library/core-documentation/doc_core_api/4.1.0/view/4/2/#id4055459 (you have to scroll down a little; cause i can't link it directly ;) )
+
+it would be great if the table-rows had own anchors so they could be linked directly"
+6859;Core APIs;Feature;;New;Should have;Document how to add a language to TYPO3;Francois Suter;;3/11/2012 0:32;;;15/3/2010;;;0;15/3/2010 22:03;;;2858800;;;"As reported by Michael Stucki.
+
+See Ingmar's notes: http://lists.typo3.org/pipermail/typo3-team-core/2007-August/008851.html"
+12062;Coding Guidelines;Feature;;Rejected;Should have;Handling of unconditional if statements;Stefano Kowalke;;1/4/2011 11:55;;;10/1/2011;;;0;10/1/2011 17:13;;;2859000;;;"We got a suggestion to enable a sniff which detects unconditional if statements like:
+
+<pre>
+class Foo
+{
+    public function close()
+    {
+        if (true)
+        {
+            // ...
+        }
+    }
+}
+</pre>
+
+
+The current CGL don't prohibit such things but its a better style to avoid this."
+12059;Coding Guidelines;Feature;;Rejected;Should have;Which logical operators are allowed?;Stefano Kowalke;Francois Suter;7/4/2011 15:52;;;10/1/2011;;;0;10/1/2011 16:20;;;2859050;;;"Are both (textual/sign) versions of some logical operators allowed?
+<pre>
+
+AND / &&
+OR  / || 
+XOR / nothing there
+</pre> 
+
+and should they written down in uppercase like FALSE; TRUE and NULL?"
+10783;Coding Guidelines;Feature;Task #48382: Non-rst documentation for display on docs.typo3.org;Resolved;Should have;Condensed version of the TYPO3 CMS CGL on just one page;Andy Grunwald;Chris topher;22/5/2013 16:48;;;14/11/2010;;;100;14/11/2010 19:35;;;2859100;;;"Today i`ve found the ""FLOW3 CGL on one page""-PDF:
+
+http://flow3.typo3.org/fileadmin/CGL/FLOW3_CGL_on_one_page-v10.pdf
+
+It would be cool to provide such a pdf for the coding guidelines of TYPO3 CMS"
+9492;Coding Guidelines;Feature;;Rejected;Should have;allow global variables;Franz Holzinger;Francois Suter;20/10/2010 11:51;;;30/8/2010;;;0;30/8/2010 8:58;;;2859250;;;"The document says:
+""Global variables
+Use of global is not recommended. Always use $GLOBALS['variable'].""
+
+I disagree.
+Please allow the TYPO3 globals:
+
+global $TSFE; $TYPO3_DB;
+
+This makes the PHP code shorter and more readable.
+allow also 
+
+$pid = intval($TSFE->id);
+
+and not only
+
+$pid = intval($GLOBALS['TSFE']->id);
+
+I have changed this in all extensions where I have coded; because of the shortness.
+
+"
+14061;Coding Guidelines;Feature;;Closed;Could have;"Default ""Code Style Scheme"" for most used IDE";Laurent Cherpit;Francois Suter;8/4/2011 15:36;;4.5.0;25/3/2011;;;100;25/3/2011 23:40;;;2859400;;;"Hello;
+
+It would be nice to have some ""code style scheme"" already defined for some most used IDE.
+Here is mine for PhpStorm. Is far from perfect. So feel free to correct it. If you think that it could be helpful.
+
+On osx; it should be stored in:
+<pre>
+~/Library/Preferences/WebIDE10/codestyles/
+</pre>
+
+"
+11109;Coding Guidelines;Feature;;Closed;Should have;phpDoc comments for objects;Jigal van Hemert;;8/4/2011 15:36;;4.5.0;27/11/2010;;;0;27/11/2010 15:55;;;2859500;;;"To enable IDEs to perform code completion and other checks on objects which are instantiated by calling t3lib_div::makeInstance() a phpDoc comment can be added with the class name as the type:
+
+/** @var $myObject tslib_content_abstract */
+$myObject = t3lib_div::makeInstance('tslib_content_abstract');
+
+(tested in phpStorm 1.02 and NetBeans 6.9.1; but many IDEs will support this)
+
+
+
+For arrays of objects of single class some IDEs support code completion and inspection:
+
+/** @var $myObjectArray tslib_content_abstract[] */
+$myObjectArray[0] = t3lib_div::makeInstance('tslib_content_abstract');
+ 
+(phpStorm 1.02 supports this; NetBeans 6.9.1 does not support this)"
+10644;Coding Guidelines;Feature;;Closed;Should have;function information block;Franz Holzinger;Francois Suter;8/4/2011 15:36;;4.5.0;5/11/2010;;;100;5/11/2010 12:39;;;2859550;;;"The function information block is missing in the CGL.
+It is described under 'Using phpDoc'
+However this topic is hard to find. Could you rename this?
+
+"
+10328;Coding Guidelines;Feature;;Closed;Must have;Move to new documentation template;Francois Suter;Francois Suter;8/4/2011 15:36;;4.5.0;19/10/2010;;;100;19/10/2010 8:59;;;2859650;;;The title says it all...
+9487;Coding Guidelines;Feature;;Closed;Should have;allow utf-8 for files;Franz Holzinger;Francois Suter;8/4/2011 15:36;;4.5.0;28/8/2010;;;100;28/8/2010 22:42;;;2859800;;;"You have written:
+""Character set
+TYPO3 PHP files use iso-8859-1 character set.""
+
+TYPO3 allows UTF-8 everywhere. So please allow UTF-8 for all php files.
+"
+8909;Coding Guidelines;Feature;;Closed;Should have;Document usage of $_ in foreach loops;Francois Suter;Francois Suter;8/4/2011 15:36;;4.5.0;16/7/2010;;;100;16/7/2010 22:23;;;2859850;;;"When only the key; but not the value; is of importance in a foreach loop; $_ should be used as a variable name for the value; to show that it is not used within the loop. Example:
+
+<pre>
+foreach ($array as $key => $_) {
+    ...
+}
+</pre>
+
+This must be documented."
+25839;TypoScript Syntax;Feature;;Closed;Should have;Concepts to explain;Chris topher;;7/12/2015 22:48;;;8/4/2011;;;0;8/4/2011 1:28;;;2860150;;;"Some notes by Kasper:
+
+General:
+* Generally create an overview of TypoScript; properties; how it all relates to each other etc.
+
+Concepts to explain?
+* stdWrap
+* CSS usage
+* USER_INT"
+25838;TypoScript Syntax;Feature;;Closed;Should have;Information about TypoScript Syntax, PHP arrays, objects, properties and so on;Chris topher;Chris topher;7/12/2015 20:27;;;8/4/2011;;;100;8/4/2011 1:28;;;2860200;;;"Some notes by Kasper:
+
+Intro (things to tell):
+- TypoScript syntax and TypoScript templates
+- TypoScript and PHP arrays 
+- Objects; properties and sub-properties - what they are called
+
+These notes were part of a TXT file in TSref. I think they fit here."
+25841;TypoScript Reference (TSref);Feature;;New;Should have;Data Types;Chris topher;;15/12/2012 1:07;;;8/4/2011;;;0;8/4/2011 1:28;;;2861050;;;"Some notes by Kasper:
+
+TODO: DATA TYPES
+
+* review the data type names; the relations between things and consider how it all works best with the TS browser.
+* Consistent data types... [value] / ->[properties]
+
+Formats: 
+<pre>
+[datatype] - for a value string; possibly with properties if found; e.g. cObject
+	Example: 	int
+
+[datatype] / ->[object] - ""object"" can be a) any of the ""functions"" or b) a content objects name.
+	Example:	int / ->stdWrap
+	Example:	->stdWrap
+
+""string""  - adhoc datatype obvious from the content of the quoted string
+	Example: 	""x;y;z""
+
+'[list of]' + datatype	- a comma list of values for the data type; normally with no space between.
+	Example: 	[list of] int
+
+[datatype] '(.....)' - additional information to the data type; like a range for values.
+	Example: 	int (1-100)
+	Example:	string (divided by ""|"")
+
+[datatype] '[or]' [datatype]
+	Example:	boolean [or] string
+
+
+'[array of strings]' + datatype - 
+	Example: 	[array of strings]
+'[array of]' + datatype -
+</pre> "
+25840;TypoScript Syntax;Feature;;Resolved;Should have;Introduction;Chris topher;Chris topher;7/12/2015 22:31;;;8/4/2011;;;100;8/4/2011 1:28;;;2861100;;;"Some notes by Kasper:
+
+* Debugging TypoScript with Admin Panel
+* Breakpoints with Template Analyser
+"
+12185;TypoScript Reference (TSref);Feature;;New;Should have;CONTENT cObject should mention recordRegister;Rik Willems;;13/1/2011 14:24;;;13/1/2011;;;0;13/1/2011 14:24;;;2861300;;;The current cObject CONTENT makes use of the recordRegister so records are not called more than once. There is no notice in the documentation of this restriction.
+10419;TypoScript Reference (TSref);Feature;;Closed;Must have;Move to new documentation template;Francois Suter;Chris topher;10/4/2011 21:42;;4.4.0;24/10/2010;;;100;24/10/2010 21:59;;;2862050;;;
+11564;TypoScript Reference (TSref);Feature;;New;Should have;Add list of registers to the relevant TS objects;Francois Suter;;15/2/2014 5:08;;;18/12/2010;;;0;18/12/2010 15:30;;;2862700;;;"As per list ""established by Victor Livakovsky"":http://lists.typo3.org/pipermail/typo3-english/2010-December/072420.html:
+
+---
+
+They would fit into an appendix. A note would make sense for the cObjects LOAD_REGISTER and RESTORE_REGISTER and for those data types; which might be used to access the registers. They might also be a help for the cObjects RECORDS or CONTENT.
+
+---
+
+For anyone; who will search for same topic; I've made a research by simple search of '$GLOBALS['TSFE']->register' ($TSFE->register gave 0 results) in content of all PHP files in TYPO3 4.4. Here is a list with some my explanations:
+
+class.tx_cssstyled_content_pi1.php
+
+function render_uploads($content;$conf) - Rendering the ""Filelinks"" type content element; called from TypoScript (tt_content.uploads.20):
+$GLOBALS['TSFE']->register['ICON_REL_PATH'] - keeps relative path to file + filename
+$GLOBALS['TSFE']->register['filename'] - self-explainable
+$GLOBALS['TSFE']->register['path'] - self-explainable
+$GLOBALS['TSFE']->register['fileSize'] - self-explainable
+$GLOBALS['TSFE']->register['fileExtension'] - self-explainable
+$GLOBALS['TSFE']->register['description'] - description for current file from 'imagecaption' field
+$GLOBALS['TSFE']->register['linkedIcon'] - not sure about that; but I think is is bool value; defining; should file icon be linked or not
+$GLOBALS['TSFE']->register['linkedLabel'] - same as above; but for label
+
+function render_textpic($content; $conf) - Rendering the IMGTEXT content element; called from TypoScript (tt_content.textpic.20)
+$GLOBALS['TSFE']->register['imageCount'] - count of all image in block
+$GLOBALS['TSFE']->register['renderGlobalCaption'] - bool value; which defines; shoul a global caption be rendered below image block
+$GLOBALS['TSFE']->register['IMAGE_NUM'] - number of current image in set (DEPRECATED)
+$GLOBALS['TSFE']->register['IMAGE_NUM_CURRENT'] - number of current image in set (not deprecated :))
+$GLOBALS['TSFE']->register['ORIG_FILENAME'] - path to the image + image name
+$GLOBALS['TSFE']->register['imagewidth'] - self-explainable
+$GLOBALS['TSFE']->register['imagespace'] - self-explainable
+$GLOBALS['TSFE']->register['imageheight'] - self-explainable
+$GLOBALS['TSFE']->register['rowwidth'] - width of whole block of images
+$GLOBALS['TSFE']->register['rowWidthPlusTextMargin'] - same; as above + margin to the text
+$GLOBALS['TSFE']->register['columnwidth'] - maximum possible width of image block + spaces at left and right side of block
+$GLOBALS['TSFE']->register['totalwidth'] - not sure; but I guess it is same as $GLOBALS['TSFE']->register['rowwidth']
+
+
+class.tslib_content.php
+
+function IMGTEXT($conf)
+$GLOBALS['TSFE']->register['IMAGE_NUM']
+$GLOBALS['TSFE']->register['IMAGE_NUM_CURRENT']
+
+function HMENU($conf)
+$GLOBALS['TSFE']->register['count_HMENU'] - current number of a generated HMENU on a website
+$GLOBALS['TSFE']->register['count_HMENU_MENUOBJ'] - number of current menu item for current HMENU object
+
+function SEARCHRESULT($conf)
+$GLOBALS['TSFE']->register['SWORD_PARAMS'] - search words
+
+function TEMPLATE($conf)
+$GLOBALS['TSFE']->register['SUBPART_'.$theKey] - contains html code of subpart; defined by $theKey
+
+public function SWFOBJECT($conf)
+$GLOBALS['TSFE']->register['MMSWFID'] - not sure; what it used for; but it holds: uniqid('mmswf');
+
+public function QTOBJECT($conf)
+$GLOBALS['TSFE']->register['MMQTID'] - uniqid('mmqt');
+
+function lastChanged($tstamp) - Sets the SYS_LASTCHANGED timestamp
+$GLOBALS['TSFE']->register['SYS_LASTCHANGED'] - timestamp of page (or content on current page) last modification
+
+function splitObj($value; $conf) - Implements the ""split"" property of stdWrap; Splits a string based on a token (given in TypoScript properties); sets the ""current"" value to each part and then renders a content object pointer to by a number.
+$GLOBALS['TSFE']->register['SPLIT_COUNT'] - current number of item in split
+
+
+class.tslib_menu.php
+function makeMenu() - Creates the menu in the internal variables; ready for output.
+$GLOBALS['TSFE']->register['count_menuItems'] - number of all items in current menu
+
+function subMenu($uid; $objSuffix='') - Creates a submenu level to the current level - if configured for.
+$GLOBALS['TSFE']->register['count_menuItems'] - as I understood this register holds number of items not for the whole menu; but for current menu level
+
+function writeMenu() - Traverses the result array of menu items configuration (made by generate()) and renders each item.
+$GLOBALS['TSFE']->register['count_HMENU_MENUOBJ'] - number of current menu item for current HMENU object
+$GLOBALS['TSFE']->register['count_MENUOBJ'] - number of current menu item for ALL HMENU objects on a page
+
+Hope; that can help for someone after me :)
+"
+11382;Getting Started;Feature;;Resolved;Must have;Add version number to cover page;Francois Suter;Francois Suter;21/5/2011 0:19;;4.5.0;10/12/2010;;;100;10/12/2010 15:09;;;2872900;;;"As per new official template. See:
+
+http://forge.typo3.org/issues/11369"
+13132;Installation and Upgrade Guide;Feature;;Resolved;Should have;In-Depth Installation: Add a section on how to translate the Backend;Andrey Aksenov;Chris topher;21/8/2013 16:47;;4.5;17/2/2011;;;100;17/2/2011 12:40;;;2873100;;;"Since the system of TYPO3 is positioned as an international; in no small part of the attention should be paid to the translation of various parts of the system interface.
+
+Therefore; in my opinion; at the end of the section on installing the system is necessary to mention the possibility of translating the interface of the system:
+- loading language through the module extensions management;
+- setting the selected language in the properties of the backend user.
+
+In my opinion all just ..."
+13130;Installation and Upgrade Guide;Feature;;Resolved;Should have;"Section ""Update"": Add a paragraph on updating extensions";Andrey Aksenov;Chris topher;21/8/2013 12:35;;4.5;17/2/2011;;;100;17/2/2011 12:32;;;2873150;;;"When you upgrade TYPO3; in my view; first would be good to consider the possibility of extension updates; and then - Update the core system.
+Therefore; we can consider adding the section ""Updating extensions."
+11380;TypoScript in 45 Minutes;Feature;;Closed;Must have;Add version number to cover page;Francois Suter;Susanne Moog;18/5/2011 15:38;;;10/12/2010;;;0;10/12/2010 15:06;;;2873450;;;"As per modified official template. See:
+
+http://forge.typo3.org/issues/11369"
+12965;TYPO3 Skinning Reference;Feature;;New;Should have;Mention extdeveval usage;Francois Suter;;11/2/2011 8:52;;;11/2/2011;;;0;11/2/2011 8:52;;;2873550;;;Extension extdeveval has been updated and now includes very useful functions related to sprites. I think this information should be included in this manual.
+12964;TYPO3 Skinning Reference;Feature;;New;Should have;Update for TYPO3 4.5;Francois Suter;;11/2/2011 8:55;;;11/2/2011;;;0;11/2/2011 8:50;;;2873600;;;Just a reminder. It would be nice if someone from the team could update this guide with whatever relevant information must be included regarding TYPO3 4.5.
+11381;TYPO3 Skinning Reference;Feature;;Resolved;Must have;Add version number to cover page;Francois Suter;Francois Suter;10/12/2010 15:59;;;10/12/2010;;;100;10/12/2010 15:07;;;2873750;;;"As per new official template. See:
+
+http://forge.typo3.org/issues/11369"
+8906;TYPO3 Skinning Reference;Feature;;Resolved;Should have;Icon reference is not enough handy;Fabien Udriot;Fabien Udriot;20/10/2010 11:52;;;16/7/2010;;;100;16/7/2010 17:13;;;2873850;;;"André Wartmann did a good job at the t3uxw by referencing all icons available for the Backend. Unfortunately; the current approach is not very handy in term of maintenance because each icon's change must be reported manually onto the document and I am pretty sure nobody will take care of it.
+
+Thus; I propose a much more automatic approach. I have written a PHP script that traverses the icons and outputs a nicely formatted HTML file. In a second step; this file is transformed to a PDF; via the ""wkhtmltopdf"" utility.
+
+So; it is becoming easier to maintain the icon reference by simply running the script after each new TYPO3 version."
+13137;TCA Reference;Feature;;Closed;Should have;"Update the description of input-type field option ""checkbox""";Francois Suter;Francois Suter;30/10/2011 19:49;;4.5.0;17/2/2011;;;0;17/2/2011 15:35;;;2894100;;;"The checkbox has been replaced by a ""clear"" icon inside the field and its behavior is really just to clear.
+
+Check if it is always present; in which case the option can be marked as deprecated altogether."
+8821;Documentation;Feature;;Closed;Must have;Define structure of TypoScript reference;Francois Suter;Tobias Liebig;27/7/2014 17:43;;;12/7/2010;;;0;12/7/2010 17:12;;;2894400;;;Define the XML structure for the central XML reference.

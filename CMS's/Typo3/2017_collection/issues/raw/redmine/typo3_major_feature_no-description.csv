@@ -1,0 +1,13 @@
+#,Project,Tracker,Parent task,Status,Priority,Subject,Author,Assigned To,Updated,Category,Target version,Start date,Due date,Estimated time,% Done,Created,Story points,Velocity based estimate,Position,Remaining (hours),Tags
+31714,TCA Reference,Major Feature,"",Closed,Must have,Update manual for TYPO3 4.6,Francois Suter,Francois Suter,2011-11-21 20:58,"",4.6.0,2011-11-09,"","",100,2011-11-09 17:57,"","",354600,"",""
+39834,ReST tools,Major Feature,"",Resolved,Should have,"Create Sphinx extension for ""field-list-table"" directive",Martin Bless,Martin Bless,2012-08-20 22:35,"","TYPO3, TER & typo3.org integ.",2012-08-15,"","",100,2012-08-15 16:05,"","",753200,"",""
+39835,ReST tools,Major Feature,"",Resolved,Must have,"Improve the ""typo3sphinx"" theme",Martin Bless,Martin Bless,2012-12-07 10:35,"","TYPO3, TER & typo3.org integ.",2012-08-15,"","",100,2012-08-15 16:20,"","",753250,"",""
+42162,Core APIs,Major Feature,"",Closed,Must have,New bootstrapping process,Francois Suter,Francois Suter,2013-05-16 23:14,"",6.0,2012-10-19,"","",100,2012-10-19 09:05,"","",862850,"",""
+42668,ReST tools,Major Feature,"",Resolved,Should have,NEW: Add t3sphinx.ext.targets Sphinx extension to list :ref:`TARGETS`,Martin Bless,Martin Bless,2012-11-04 14:35,"","",2012-11-04,"","",100,2012-11-04 14:06,"","",887700,"",""
+45059,FAL Documentation,Major Feature,"",New,Must have,Missing FAL documentation for extension devs,Patrick Crausaz,"",2013-11-10 15:06,"","",2013-02-01,"","",0,2013-02-01 07:57,"","",1005200,"",""
+45060,FAL Documentation,Major Feature,"",Closed,Must have,Missing FAL documentation,Patrick Crausaz,"",2016-08-06 13:44,"","",2013-02-01,"","",0,2013-02-01 08:03,"","",1005250,"",""
+46368,Core APIs,Major Feature,"",Closed,Must have,Use namespaces,Francois Suter,Francois Suter,2013-05-16 23:13,"",6.0,2013-03-16,"","",100,2013-03-16 18:58,"","",1069600,"",""
+59861,Templating Tutorial,Major Feature,"",Closed,Should have,doc_tut_templating extension can't be installed on 6.2.x,XIA IT Support,"",2014-06-25 08:31,"","",2014-06-25,"","",0,2014-06-25 08:18,"","",1736400,"",""
+12618,Core APIs,Major Feature,"",Closed,Should have,Move TCA reference to doc_core_tca,Francois Suter,Francois Suter,2012-03-23 14:24,"",4.3.1,2011-01-28,"","",100,2011-01-28 15:38,"","",2858900,"",""
+25953,TCA Reference,Major Feature,"",Closed,Should have,"Review all code examples in ""ctrl"" section",Francois Suter,Francois Suter,2011-10-30 19:49,"",4.5.0,2011-04-13,"","",100,2011-04-13 20:22,"","",2894150,"",""
+12603,TCA Reference,Major Feature,"",Closed,Should have,Import content from Core API,Francois Suter,Francois Suter,2011-10-30 19:49,"",4.5.0,2011-01-28,"","",100,2011-01-28 11:03,"","",2894250,"",""

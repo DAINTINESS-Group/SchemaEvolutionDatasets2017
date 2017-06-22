@@ -1,0 +1,187 @@
+#;Project;Tracker;Parent task;Status;Priority;Subject;Author;Assigned To;Updated;Category;Target version;Start date;Due date;Estimated time;% Done;Created;Story points;Velocity based estimate;Position;Remaining (hours);Tags;Description
+73465;Extbase Book Translation;Suggestion;;New;Should have;Change db fieldnames from l18n_* to l10n_*;Tobias Schächtelin;;16/2/2016 9:16;;;16/2/2016;;;0;16/2/2016 9:16;;;-656550;;;"Hi,
+
+since @l18n@ (as in @l18n_parent@ and @l18n_diffsource@) is semantically wrong and it is my understanding that recent db tables as well as the Extension Builder use @l10n_parent@ and @l10n_diffsource@, shouldn't this be changed throughout the book, maybe with an aditional note explaining the continuous usage of the old naming in existing tables.
+
+What do you think? I would be willing to pull request those changes, of course.
+
+Best
+Tobias
+"
+72729;Documentation;Suggestion;;New;Should have;Use Markdown and Gitbook instead of rst and Sphinx;Ingo Pfennigstorf;;15/1/2016 14:46;;;15/1/2016;;;0;15/1/2016 13:13;;;-620650;;;"As reStructured Text is quite uncommon to most people and markdown is a de-facto standard in this area, I suggest using markdown as documentation language.
+Using sphinx also creates quite an overhead and needs to be installed locally in order to compile and view documentation. A great service taking care of this problem is https://www.gitbook.com where anyone can write documentation in markdown and add collaborators to a project.
+
+This would rather simplify the process of writing documentation."
+68167;Security Guide;Suggestion;;Needs Feedback;Should have;Create section with recommendations for developers;Stefan Neufeind;Stefan Neufeind;19/11/2015 17:23;Guidelines for Developers;;19/11/2015;;;0;15/7/2015 14:50;;;-393800;;;"During review of patches we came across one topic that might be a starting-point for a section targeted at developers. (I discussed that with Helmut.)
+
+It is best practice to make sure you always know which values are safe for output to the browser (htmlspecialchars, quoteJS) and which are not. A general rule we follow is to prepare variables in a raw form (putting together a title, a link or similar) and doing the actual encoding/safety later when outputting it.
+Example:
+  $link = $baseUrl . '?foo=bar',
+  $output .= '<a href=""' . htmlspecialchars($link) . '>something</a>',
+Even if the same link might be used two or three times, it might still be a good idea to encoding it where the final HTML-code is put together and NOT do it one (""for performance-reasons"") some lines above. The same goes with JS-escaping.
+
+Another thing would be to make sure to typecast an integer-variable to (int) when you add it to HTML-output and not rely on that ""some earlier part"" would have made sure it's only a number."
+61669;ReStructured Text Infrastructure;Suggestion;;Resolved;Should have;Banner when documentation is using OpenOffice;Xavier Perseguers;Xavier Perseguers;2/10/2014 12:02;;;17/9/2014;;;100;17/9/2014 8:58;;;-69600;;;"In order to raise awareness that OpenOffice documentation is deprecated (although still supported), I would suggest to show a warning banner on each generated HTML page, similar to the ""outdated banner on TER"":http://typo3.org/extensions/repository/view/powermailext.
+
+This could be easily implemented by adding a conditional HTML block in our template and enabling it during rendering, since original manual format is known.
+
+Let us discuss that during our meeting, tomorrow."
+27371;Documentation;Suggestion;;Resolved;Should have;What shall we do with the manuals, which are featured in the documentation section on typo3.org?;Chris topher;Chris topher;8/3/2015 16:12;Documentation on typo3.org;;11/6/2011;;;100;11/6/2011 2:13;;;143600;;;"The ""documentation section on typo3.org"":http://typo3.org/documentation/document-library/ contains links to some of the most important manuals.
+Most of them are already maintained by the DocTeam (e.g. Getting Started, TypoScript in Depth, TSconfig or TSref).
+But there also are some other manuals which are linked there, but for which noone takes care.
+
+These are:
+* ""Futuristic Template Building (doc_tut_ftb1)"":http://typo3.org/documentation/document-library/tutorials/doc_tut_ftb1/current/
+* ""TypoScript by example (doc_core_tsbyex)"":http://typo3.org/documentation/document-library/tutorials/doc_core_tsbyex/current/
+* ""Modern Template Building, Part 1 (doc_tut_templselect)"":http://typo3.org/documentation/document-library/tutorials/doc_tut_templselect/current/
+* ""Modern Template Building, Part 23 (doc_tut_templselect2)"":http://typo3.org/documentation/document-library/tutorials/doc_tut_templselect2/current/
+
+Currently these documents are old and rather outdated. This does not make a good impression on people looking for information there.
+
+So what should we do?
+* Should we keep those manuals there? Then I guess someone would have to update them.
+* If that is not possible, we should remove the links to these outdated manuals. Then we could put those manuals in an archive somewhere.
+
+Suggestions? "
+30297;Documentation;Suggestion;;Closed;Should have;Add a list of documentation ressources to typo3.org/documentation;Chris topher;;12/4/2012 21:12;Documentation on typo3.org;;26/9/2011;;;100;26/9/2011 16:49;;;285350;;;"The current http://typo3.org/documentation always makes me think that I am on a 404 page. :-( 
+It is outdated and it is not structured ideally. 
+The first thing you see is an advert for an old book. I guess most people do not want to spend 30 ? and wait some days, before they get some information, when they visit the documentation page. 
+Then there are many sections, but e.g. as an absolute beginner, several seem more or less right, but none is the one where you really think: *This* is the *one* for me. 
+Judging it from todays point of view, this section only contains a small fraction of the available ""sources of knowledge"". But the beginner does not know that and the ""Ressources"" section mainly contains broken links (which really creates no good impression). So he most probably does not know where the different sources are and how they are structured. That way he is more or less helpless after scanning through the few texts on there.
+
+To improve the situation I would like to update the documentation pages. I think that small changes can already make things noticeably better:
+On the starting page the advert for that old book should go away. All groups of users should get clear pointers on where to look for what.
+We should update the ""Ressources"" section. I would replace the broken links with an overview, which lists all the different ressources we have (e.g. newsgroups, documentation extensions in TER, the same documentation in HTML pages on typo3.org, the wiki...) and what they are useful for. 
+
+And when we are at it: The present content must be updated."
+30506;Documentation;Suggestion;;Closed;Should have;Add outdated official manuals, which we will no longer update, to SVN;Chris topher;Chris topher;3/10/2011 16:29;;;1/10/2011;;;100;1/10/2011 15:55;;;295550;;;"Some time ago I talked with Francois about those old manuals, which are kind of official, but outdated and for which no one cares (e.g. doc_core_tsbyex).
+
+Francois proposed to do an inventory of all existing official manuals (i.e all old manuals written by Kasper). 
+It would be good to do this cleanup before we start migrating the existing manuals to DocBook. 
+
+We realized that we do not have the man power to update them and to keep all these manuals updated. We looked them through and found doc_tut to be rather helpful. The plan is to keep that manual updated in the future. A first version was already re-released as doc_tut_editors. 
+However, we will not update all the other old manuals.
+
+But obviously those old manuals should still be kept in an archive somewhere, if only for the documentation team to refer to them, if needed (for example, when one decides to write on a given topic and wants to look at stuff that Kasper may have written on that topic back then).
+
+I think we could create a folder in SVN and store the sxw files there, maybe in separate subfolders each.
+An a Readme.txt, which shortly describes the content of each manual, would be great."
+31154;Documentation;Suggestion;;Resolved;Should have;Remove the SVN folder doc_core_tstemplates;Chris topher;Chris topher;20/10/2011 21:21;;;20/10/2011;;;100;20/10/2011 21:09;;;327050;;;Reason: The folder still contains a manual, which was forgotten when doing the cleanup a few weeks ago. It is absolutely outdated. It was not maintained at all in the last 10 years, we don't have a project for it currently and we decided not to maintain it anymore.
+32389;Security Guide;Suggestion;;Closed;Should have;"Tone of voice in paragraph ""Difference between core and extensions""";Michael Schams;Michael Schams;22/3/2012 17:15;;1.0.1;8/12/2011;;;90;8/12/2011 11:43;;;388100;;;"Reported by ""Choong Wei Tjeng"":http://forge.typo3.org/users/36685 as #32385 (separated from this ticket):
+
+Under General Information->Difference between core and extensions: ""Since everybody can submit extensions to the TER, the code quality varies greatly. Some extensions show a very high level of code quality, while others have been written by amateurs. Most of the known security issues in TYPO3 have been found in these extensions, which are not part of the core system. *Therefore, this does not imply that TYPO3 is insecure in general. It is possible, that none of these issues are related to TYPO3 itself but have been found in extensions.*""
+
+I think the bold sentences put too much emphasis on vulnability of extensions. It is probably true that there are more vulnerabilities found in extensions than in the core, and I agree that the reader should be made aware of that fact. But even without the bold part, this message is conveyed. In my opinion the bold part is too defensive and sounds a bit like ""hey, dont look at us, it's those amateur extension writers who are the bad guys!"""
+35075;Documentation;Suggestion;;Closed;Should have;INSTALL.TXT: Permissions and ownership for typo3/ext are not set;Oliver Salzburg;;29/3/2014 14:16;;;21/3/2012;;;0;21/3/2012 11:14;;;519050;;;"INSTALL.TXT gives the following post-installation advice:
+
+<pre>
+Change permissions and ownership of the directories. This usually requires the
+""sudo"" command. Assuming that the web server user is in the group named
+""apache"", execute the following commands in the web site root directory:
+        sudo chgrp -R apache fileadmin typo3temp typo3conf uploads
+        sudo chmod -R g+rwX,o-w fileadmin typo3temp typo3conf uploads
+</pre>
+
+While that is good advice, the install tool will complain after installation about not being able to write to typo3/ext.
+
+Personally, I use:
+<pre>
+sudo chgrp --recursive $HTTPD_GROUP $BASE/fileadmin $BASE/typo3temp $BASE/typo3conf $BASE/uploads $BASE/typo3/ext
+sudo chmod --recursive g+rwX,o-w $BASE/fileadmin $BASE/typo3temp $BASE/typo3conf $BASE/uploads $BASE/typo3/ext
+</pre>
+
+The variables in the snippet above should be self-explanatory. 
+
+Using this approach leaves TYPO3 in a state where all directory write checks will be passed successfully in the install tool."
+50012;ReStructured Text Infrastructure;Suggestion;;Resolved;Could have;The readability of the highlighted TypoScript can be improved by using different CSS;Michiel Roos;Martin Bless;19/7/2013 19:33;;;13/7/2013;;;0;13/7/2013 23:40;;;1249600;;;"The highlighting of code on docs.typo3.org is rather blue-grayish.
+
+Here are some lines of CSS I cobbled together with the great Chrome extension 'Style Bot' [1]. For some reason there is a border around span.c? Why is that?
+
+I used the page Imagelinkwrap as a baseline [2].
+
+TypoScript looks more readable using this setup. PHP doesn't look half bad either [3].
+
+If you open stylebot on docs.typo3.org, you will find a button 'edit css' in the bottom left of the panel. Just paste this css right in there and play with it.
+
+
+div.highlight pre {
+    background-color: #f7f7f7,
+    color: #000,
+}
+
+span.c1, span.sd, span.c {
+    border-bottom-style: none,
+    border-left-style: none,
+    border-right-style: none,
+    border-top-style: none,
+    color: #bababa,
+}
+
+span.mi {
+    color: #db2c00,
+}
+
+span.nb {
+    color: #340bd6,
+}
+
+span.nc {
+    color: #c20fc2,
+}
+
+span.no {
+    color: #2271d1,
+}
+
+span.o {
+    color: #f58006,
+    font-weight: normal,
+}
+
+span.p {
+    background-color: #f7f7f7,
+    color: #db2c00,
+}
+
+span.s {
+    color: #587ea8,
+    font-style: normal,
+}
+
+span.ss {
+    color: #db2c00,
+}
+
+span.nf {
+    color: #2bcc22,
+}
+
+span.nv {
+    color: #2271d1,
+}
+
+span.m {
+    color: #db2c00,
+}
+
+
+[1] - https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha
+[2] - http://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Imagelinkwrap/Index.html
+[3] - http://docs.typo3.org/typo3cms/TyposcriptReference/ContentObjects/UserAndUserInt/Index.html"
+52191;ReStructured Text Infrastructure;Suggestion;;Resolved;Should have;Version switch quickly loose user friendliness;Xavier Perseguers;Xavier Perseguers;10/3/2014 20:57;;;23/9/2013;;;100;23/9/2013 14:56;;;1357350;;;"The version switch integrates localized versions as well. However as the list grows (see http://docs.typo3.org/typo3cms/extensions/sphinx/), it becomes less and less user-friendly:
+
+!l10n_in_versions.png!
+
+Localization alternatives should be shown as language links just as for any multilingual website:
+
+!languages.png!"
+53048;TYPO3 CMS - What's New;Suggestion;;Closed;Should have;"Move example ""Responsive Image Rendering"" to Wiki";Michael Schams;;27/3/2014 23:52;TYPO3 6.2 - Slides (LaTeX);TYPO3 CMS 6.2;23/10/2013;;;0;23/10/2013 9:31;;;1399850;;;"I would suggest to create a new page in http://wiki.typo3.org (if it does not exist) and load the example of *Responsive Image Rendering* (typovision's, German version pages 38, 39, and 40) in a nice styled (code-style) format, instead of having them in the ""What's New"" slides.
+
+Main reasons:
+
+* it's a great example, but very long
+* nobody reads/understands such a listing during a presentation
+* the Wiki is the better place in my view (e.g. can be updated if something changes or is incorrect - the slides can't be updated once published and distributed)
+* the Wiki supports comments, notes, further example added by the community (the slides does not)
+
+See attached files (this is the example and the generated HTML output)"

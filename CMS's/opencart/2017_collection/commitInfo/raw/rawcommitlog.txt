@@ -1,0 +1,1179 @@
+* NEWCOMMIT:7078ace932bfc2d3c26e19f7c330863cc6dde214$$^1485793020$$^Tue Jan 31 00:17:00 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more extension system changes
+|  
+* NEWCOMMIT:f06aff631338c17ae8b1fc5828ea79a36bc32b39$$^1485502949$$^Fri Jan 27 15:42:29 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more dev work
+|  
+* NEWCOMMIT:db510a2922c22a7a943b55ee129422a044e28562$$^1485501106$$^Fri Jan 27 15:11:46 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^ec ship
+|  
+* NEWCOMMIT:f660a37f34d13920c7026624e846e5abadc411d4$$^1485495344$$^Fri Jan 27 13:35:44 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more extension changes
+|  
+* NEWCOMMIT:88a62e94ef42ec7e9352c0715edaad4e8fda817c$$^1485442237$$^Thu Jan 26 22:50:37 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated allowed extension codes format.
+|  
+* NEWCOMMIT:214138241ccca519ff7f9f01ac6379d9f887407c$$^1484122748$$^Wed Jan 11 16:19:08 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more dev store work
+|  
+* NEWCOMMIT:3ed54b391f4ad1704c7a443d14c5e0e1a8ad83dc$$^1484064455$$^Wed Jan 11 00:07:35 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more store work
+|  
+* NEWCOMMIT:410cbbf9ded7249b051f821ef2d9ae0d46b86ac6$$^1484062277$$^Tue Jan 10 23:31:17 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more extension store work
+|  
+* NEWCOMMIT:6fc01bdf3ecb3d6193f260b07aa41f0ce4809026$$^1483981222$$^Tue Jan 10 01:00:22 2017 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more extension store work.
+|    
+*   NEWCOMMIT:fb89a3ac924ffda23b67fb78ea32cc9138c5e087$$^1478094782$$^Wed Nov 2 21:53:02 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge branch 'master' of https://github.com/opencart/opencart into dev
+|\  
+| | # Conflicts:
+| | #	upload/admin/index.php
+| | #	upload/admin/language/en-gb/design/translation.php
+| | #	upload/admin/language/en-gb/extension/analytics/google_analytics.php
+| | #	upload/admin/model/design/menu.php
+| | #	upload/admin/model/localisation/language.php
+| | #	upload/admin/view/template/extension/payment/klarna_checkout.tpl
+| | #	upload/admin/view/template/sale/order_form.twig
+| | #	upload/admin/view/template/setting/setting.tpl
+| | #	upload/catalog/controller/extension/payment/klarna_checkout.php
+| | #	upload/catalog/view/theme/default/template/checkout/register.tpl
+| | #	upload/catalog/view/theme/default/template/extension/payment/klarna_checkout_sidebar.twig
+| | #	upload/index.php
+| |   
+* | NEWCOMMIT:93f387902afe36db85e603effe0857e72125f26c$$^1472198462$$^Fri Aug 26 16:01:02 2016 +0800$$^Teddy Chan$$^teddy@aftership.com$$^add 2 mysql tables: oc_order_shipment & oc_shipping_courier. Support add tracking number in order page, so that merchant can input the shipping courier name and tracking number in the order
+| |   
+* | NEWCOMMIT:576914e9e3aae493afb18031ead6d6660faa1b9f$$^1469637561$$^Thu Jul 28 00:39:21 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated permissions
+| |   
+* | NEWCOMMIT:55feffafd2e57e89b08fc9813e25d904b457a9e9$$^1469631446$$^Wed Jul 27 22:57:26 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^finished translation system finally!!!
+| |   
+* | NEWCOMMIT:866ee8f1edc2c64192513e7b492bb14c1763b242$$^1469557336$$^Wed Jul 27 02:22:16 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more language translation work done
+| |   
+* | NEWCOMMIT:2f14cb6a06003e4a00f7b636a65e8deedda0b8e8$$^1468903507$$^Tue Jul 19 12:45:07 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/4676
+| |     
+| | * NEWCOMMIT:d452fc816c768816e007efed071e1015a95a311b$$^1479328558$$^Wed Nov 16 15:35:58 2016 -0500$$^Tyler Benzing$$^tylerbenzing@users.noreply.github.com$$^Made `shipping_company` the same character count as `payment_company` in `oc_order`
+| |/  
+| |   Addresses issue #5005
+| * NEWCOMMIT:dc3063eb3ec3c2e4a66969f40ade3dec1b2c6bc5$$^1475192397$$^Thu Sep 29 19:39:57 2016 -0400$$^OpenCartAddons$$^joel@opencartaddons.com$$^Update opencart.sql
+| | 
+| | https://github.com/opencart/opencart/issues/4831
+* | NEWCOMMIT:b5a9c73b8a4e0349f29f22f731c9da4f9e009828$$^1468556560$$^Fri Jul 15 12:22:40 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/4663
+| |   
+* | NEWCOMMIT:82aa15c79af50ed26cce747520e12261da180df8$$^1468435500$$^Thu Jul 14 02:45:00 2016 +0800$$^Daniel Kerr$$^webmaster@opencat.com$$^Hey Daniel - I had 20,000 orders in OC 2.2.0.0 and [Reports > Customer > Orders] was timing out..
+| | 
+| | ALTER TABLE `oc_order_product` ADD INDEX `order_id` (`order_id`);
+| | 
+| | Fixed it to a couple of seconds :)  I highly recommend adding that to the base product !!
+| |   
+* | NEWCOMMIT:e99e66af0d88312776c4d3f9060b1c28c209ec47$$^1468419872$$^Wed Jul 13 22:24:32 2016 +0800$$^Daniel Kerr$$^webmaster@opencat.com$$^more theme work done
+| | moved the reports under extension folders.
+| |   
+* | NEWCOMMIT:99e4b2a32112b237ea270c013176c1eadf07ea67$$^1468324632$$^Tue Jul 12 19:57:12 2016 +0800$$^Daniel Kerr$$^webmaster@opencat.com$$^more twig conversions
+| |   
+* | NEWCOMMIT:d9f7d5f160ed7dd638d7a1e69bcafa7ade10ae54$$^1467879621$$^Thu Jul 7 16:20:21 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more theme editor work done
+| |     
+* |   NEWCOMMIT:2b13bbe0055a743bc04478696a128d661c83b161$$^1467718385$$^Tue Jul 5 19:33:05 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge branch 'master' of https://github.com/opencart/opencart into dev
+|\ \  
+| |/  # Conflicts:
+| |   #	upload/admin/controller/event/compatibility.php
+| |   #	upload/admin/controller/extension/extension/module.php
+| |   #	upload/admin/controller/startup/compatibility.php
+| |   
+| * NEWCOMMIT:da8f335ec9a74da435a079e05598544e3ba9429f$$^1467707864$$^Tue Jul 5 16:37:44 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^permission update
+| |   
+* | NEWCOMMIT:b31a6192a36cbbf4d2900e59dd4dfcc6975ea705$$^1467705148$$^Tue Jul 5 15:52:28 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^readded menu sql
+| |     
+* |   NEWCOMMIT:9cc779ae8a2ea02520eaa58ee08dd38aab2d8e71$$^1467610068$$^Mon Jul 4 13:27:48 2016 +0800$$^Daniel Kerr$$^danielkerr@users.noreply.github.com$$^Merge pull request #4610 from opencart/master
+|\ \  
+| |/  merge with latest brance
+| * NEWCOMMIT:74af340150d6ce3c939d77f06a644a3f3ccdccb9$$^1467563934$$^Sun Jul 3 18:38:54 2016 +0200$$^Alen Androsevic$$^alenandrosevic@gmail.com$$^Replaced whitespace with dash between cardinal direction & geographical names in Dutch provinces
+| |   
+* | NEWCOMMIT:431230168d3009aa4cdad8d6f1e527b5b406c3f6$$^1467449990$$^Sat Jul 2 16:59:50 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more crowdin translation work
+|/  
+|  
+* NEWCOMMIT:248bf46d897385bd6de70404fa37d3a6a2857453$$^1467014813$$^Mon Jun 27 16:06:53 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/4246
+|  
+* NEWCOMMIT:da6d9a83c7770f49bd411f45e055cdeb736540d2$$^1466944942$$^Sun Jun 26 20:42:22 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added the sql for updated permissions
+|  
+* NEWCOMMIT:9c716cae7258c486cca76a64cafb35144c707a01$$^1466867937$$^Sat Jun 25 23:18:57 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added the dashboard sql
+|  
+* NEWCOMMIT:e26b6a49a98a63fc501533989e8dac0fe7fdd8ed$$^1466705183$$^Thu Jun 23 20:06:23 2016 +0200$$^p0v1n0m$$^p0v1n0m@gmail.com$$^Added customer searches report
+|  
+* NEWCOMMIT:e0f77f0f46a3fda4632d22e66f827e74ac1e9f06$$^1466684582$$^Thu Jun 23 20:23:02 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^install sql update
+|  
+* NEWCOMMIT:70aa7da933c9f7755c93fa9136099851fbf4b310$$^1466681771$$^Thu Jun 23 13:36:11 2016 +0200$$^p0v1n0m$$^p0v1n0m@gmail.com$$^Alert mail settings in one place
+|  
+* NEWCOMMIT:1a8a8df0991c38e3d26dcf76d26973696487a8c8$$^1466503079$$^Tue Jun 21 11:57:59 2016 +0200$$^p0v1n0m$$^p0v1n0m@gmail.com$$^Added switch Customers Activity in the settings
+|  
+* NEWCOMMIT:12c8c756197f7ef5cdb896349e7f9808351c4e56$$^1466496949$$^Tue Jun 21 16:15:49 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/4217
+|  
+* NEWCOMMIT:f60cd68c9108dc8316906b7ad6d1073b7b499452$$^1465968943$$^Wed Jun 15 13:35:43 2016 +0800$$^opencarteli$$^eli@opencart.com$$^opencart.sql #4154
+|  
+* NEWCOMMIT:8d6a200aca6490225201662fb4e8dc0f6b0e8daa$$^1465964163$$^Wed Jun 15 12:16:03 2016 +0800$$^opencarteli$$^eli@opencart.com$$^merge fix
+|  
+* NEWCOMMIT:7c1e64356b1db2a7af2f3ab43d7ca8ded020d52c$$^1465963997$$^Wed Jun 15 12:13:17 2016 +0800$$^opencarteli$$^eli@opencart.com$$^Opencart 2.2.0 Voucher notification event issue! #4133
+|    
+*   NEWCOMMIT:1df385dc7e6fc19ecee3cac4a0433027d221d151$$^1465963816$$^Wed Jun 15 12:10:16 2016 +0800$$^opencarteli$$^eli@opencart.com$$^Merge branch 'master' of https://github.com/opencart/opencart
+|\  
+| | # Conflicts:
+| | #	upload/install/opencart.sql
+| |   
+| * NEWCOMMIT:7eeea291578eb09ecb1ce526d73feb9aae83cd01$$^1465475363$$^Thu Jun 9 14:29:23 2016 +0200$$^p0v1n0m$$^p0v1n0m@gmail.com$$^Update admin permission in opencart.sql
+| |     
+| *   NEWCOMMIT:8b0084e0538949d1118dd6fca12806c6400aa3a7$$^1465449156$$^Thu Jun 9 13:12:36 2016 +0800$$^Daniel Kerr$$^danielkerr@users.noreply.github.com$$^Merge pull request #4456 from opencarteli/master
+| |\  
+| | | issues update
+| * | NEWCOMMIT:560e5a4c83c87abd28edf52940cf37195896b319$$^1465390980$$^Wed Jun 8 21:03:00 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more extensions moving into its own folder
+| | |    
+| * | NEWCOMMIT:d2feed5e0057bf8d933b1ae90ff890715f828ba1$$^1465234973$$^Mon Jun 6 12:42:53 2016 -0500$$^Qphoria$$^qphoria@gmail.com$$^- Removed wildcard search for config files because it was matching other stores in subfolders on the same site
+| | | - Add most common chrome match for en browsers (en-US) to language locale
+| | | - Fix image path change in welcome module conversion.
+| | |    
+| * | NEWCOMMIT:5bd61c058849f4f7e498b8b9a9e521baf4aaccb1$$^1464885264$$^Fri Jun 3 00:34:24 2016 +0800$$^Daniel Kerr$$^webmaster@opencat.com$$^more theme work done
+| | |    
+* | | NEWCOMMIT:337ae60a165a9adef8db924096de6e65bd5033ad$$^1465960402$$^Wed Jun 15 11:13:22 2016 +0800$$^opencarteli$$^eli@opencart.com$$^Opencart 2.2.0 Voucher notification event issue! #4133
+| |/  
+|/|   
+| |   
+* | NEWCOMMIT:68a12f92f17780eba3b65f88467a1eb0b414f09d$$^1465356729$$^Wed Jun 8 11:32:09 2016 +0800$$^opencarteli$$^eli@opencart.com$$^Longer company names would be appreciated. #4431
+|/  
+|  
+* NEWCOMMIT:ff81065adf08dfcac1789190918b47e212f511d9$$^1463295909$$^Sun May 15 15:05:09 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^menu sql
+|  
+* NEWCOMMIT:ef2bc9abd54a970f7b237a99d22eecea1d25af7b$$^1463026374$$^Thu May 12 09:42:54 2016 +0530$$^Robin Singh$$^robin.flyhigh@gmail.com$$^Added missing permission for 'Administrator' (oc_user_group) in  opencart.sql
+|  
+* NEWCOMMIT:47b5b0c8b234ead7af14eb18811823e09324fcbf$$^1462427291$$^Thu May 5 13:48:11 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added an events page
+| removed old extension pages
+|  
+* NEWCOMMIT:a3a98f87bb7a038b9a1465c43f435356485f6ce5$$^1460918013$$^Mon Apr 18 02:33:33 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^oc_translation update
+|  
+* NEWCOMMIT:bdecea924d236e018b7c7f6087c507152140fd77$$^1460645191$$^Thu Apr 14 09:46:31 2016 -0500$$^Qphoria$$^qphoria@gmail.com$$^- Increase max coupon code size to 20 instead of 10
+|  
+* NEWCOMMIT:aae326f90a874f054735d1bfbcfcc368123ce11b$$^1459187226$$^Tue Mar 29 01:47:06 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^remove hash equal files
+|  
+* NEWCOMMIT:2a1436e07fd3800ca83d0b75c64746d878e3509f$$^1459100187$$^Mon Mar 28 01:36:27 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^translation
+|  
+* NEWCOMMIT:ab8c4b3932e747b658e095155cb86d8bbd319a73$$^1459012743$$^Sun Mar 27 01:19:03 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^translation
+|  
+* NEWCOMMIT:41045d12209abd42f83e6061a248005d5ae7dc22$$^1459007941$$^Sat Mar 26 23:59:01 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^translation sql
+|  
+* NEWCOMMIT:f874cedc7d8a76613e773800fbc15b308dbd0b2a$$^1458209766$$^Thu Mar 17 18:16:06 2016 +0800$$^Felix-Ho$$^felix@opencart.com$$^adding china zone
+| 
+| adding china zone
+| (4232, 44, 'Qinghai', 'QH', 1)
+* NEWCOMMIT:b3e8abf97ca876a0610d4bd0dd8f41a05ee14f6c$$^1457855729$$^Sun Mar 13 15:55:29 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more banner images work done
+|  
+* NEWCOMMIT:2460313872f5cb38f96ab0099bb887f65fe8ac4e$$^1457695428$$^Fri Mar 11 19:23:48 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^banner sql
+|  
+* NEWCOMMIT:b8a79c422b5b4ad8fd17b60949d71301e65252d0$$^1455798046$$^Thu Feb 18 14:20:46 2016 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Added customer password reset
+|  
+* NEWCOMMIT:f75eb7ece1a3d488306de24cb696fa25c19abba7$$^1453672797$$^Sun Jan 24 18:59:57 2016 -0300$$^Valdeir Santana$$^wallace_gatinho_cat@hotmail.com$$^Change image size products related.
+* NEWCOMMIT:a7fa67900e15d609fa1a871db02f1c551eafaa4d$$^1453384386$$^Thu Jan 21 16:53:06 2016 +0300$$^savage4pro$$^php5specialist@gmail.com$$^AUTO_INCREMENT in some tables leads to disruption of data integrity
+|  
+* NEWCOMMIT:60a5dcab4b75ae1d2136398f1d702d7bb9058af1$$^1453304865$$^Wed Jan 20 15:47:45 2016 +0000$$^James Allsup$$^james@allsup.eu$$^Increased max cart_id storage size
+| 
+| Close #3837
+|  
+* NEWCOMMIT:7bf15107f225221781a531d0dcb299223c382798$$^1453106845$$^Mon Jan 18 16:47:25 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3818
+|    
+*   NEWCOMMIT:6a2e1dde498b155a8836864ffc9141c71eaed0ba$$^1452926633$$^Sat Jan 16 14:43:53 2016 +0800$$^Daniel Kerr$$^danielkerr@users.noreply.github.com$$^Merge pull request #3814 from robinflyhigh/master
+|\  
+| | SQL install script fix for product description meta_title vs tags
+| * NEWCOMMIT:b5c0e5ded4906d2053a524f32c5ae732acf4f4e4$$^1452714773$$^Thu Jan 14 01:22:53 2016 +0530$$^Robin Singh$$^robin.flyhigh@gmail.com$$^SQL install script fix for product description meta_title vs tags
+| |   
+| * NEWCOMMIT:c04c3c114b23ae142791c52671168bfbea02a2db$$^1452714658$$^Thu Jan 14 01:20:58 2016 +0530$$^Robin Singh$$^robin.flyhigh@gmail.com$$^opencart.sql rollback
+| |     
+* |   NEWCOMMIT:60dd27871eadbfccec241ad9c3875472151c5064$$^1452760712$$^Thu Jan 14 16:38:32 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge branch 'master' of https://github.com/opencart/opencart
+|\ \  
+| |/  
+| |   
+| * NEWCOMMIT:a22b2f2f435958f2aaec724a76ac1d915d127022$$^1452703730$$^Wed Jan 13 22:18:50 2016 +0530$$^Robin Singh$$^robin.flyhigh@gmail.com$$^SQL install script fix for product description meta_title vs tags
+| |   
+| * NEWCOMMIT:0d94d302e8d1073c2b7b0bf86ceae306173043df$$^1452697909$$^Wed Jan 13 20:41:49 2016 +0530$$^Robin Singh$$^robin.flyhigh@gmail.com$$^Added meta_title in install sql
+| |   
+* | NEWCOMMIT:923dd453d7fa643bfd11c69f79572bf73fd215f4$$^1452760697$$^Thu Jan 14 16:38:17 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated settings
+|/  
+|  
+* NEWCOMMIT:1243f65a87060c02f31c365cf639f59f6cab1897$$^1452591705$$^Tue Jan 12 17:41:45 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more event system changes
+|  
+* NEWCOMMIT:cfd690fbe8c00a5e525c3a38426a77e252c93a03$$^1452243929$$^Fri Jan 8 17:05:29 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix sql
+|  
+* NEWCOMMIT:113a0313e9b0fc7066493bf88fd398fa15391a88$$^1452164687$$^Thu Jan 7 19:04:47 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more theme work
+|  
+* NEWCOMMIT:50988e2e2cedbcd3ec163a12569303a0014f1af2$$^1452154367$$^Thu Jan 7 16:12:47 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more theme work done
+|  
+* NEWCOMMIT:821b7474cdeb6b5960431dd7ede2b66b8ad7d7f1$$^1452153046$$^Thu Jan 7 15:50:46 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more theme work done
+|  
+* NEWCOMMIT:925cb3b7e53f3f48a7e4c9f8be4717ecdcc6061a$$^1451892196$$^Mon Jan 4 15:23:16 2016 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3758
+|  
+* NEWCOMMIT:7b58f554d527fd36eb9081d4cf7bc805df022667$$^1451541199$$^Thu Dec 31 13:53:19 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more upgrade script work done.
+|  
+* NEWCOMMIT:12173b4b588fec4a7020318d3d86e7507ab09bad$$^1451277757$$^Mon Dec 28 12:42:37 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more upgrade work done
+|  
+* NEWCOMMIT:b8296236a1cfdd72e86e7aaa6e01964b6c9dada6$$^1451018790$$^Fri Dec 25 12:46:30 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^instaLLER UPDATE
+|  
+* NEWCOMMIT:0ea5ef15c853bbc64ce5d7ca60dc5d484b39a247$$^1450931907$$^Thu Dec 24 12:38:27 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more framework changes done
+|  
+* NEWCOMMIT:c14bfa64d52f91a70979855af6ae10d86534a84e$$^1450877126$$^Wed Dec 23 21:25:26 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^config update
+|  
+* NEWCOMMIT:46bee8a9adc7174fa7d93ca0625c4df1bf773853$$^1449761975$$^Thu Dec 10 23:39:35 2015 +0800$$^Daniel Kerr$$^webmaster@opencat.com$$^event sql updated
+|  
+* NEWCOMMIT:3fc82d951bbe372d649a22f283e7fad44366c7ee$$^1449752995$$^Thu Dec 10 21:09:55 2015 +0800$$^Daniel Kerr$$^webmaster@opencat.com$$^$total_data['totals']
+|  
+* NEWCOMMIT:06ec77a943b35d0e94d3484f9ec878571bebc322$$^1448001656$$^Fri Nov 20 04:40:56 2015 -0200$$^valdeir2000$$^=$$^Add field to validate the custom fields.
+|  
+* NEWCOMMIT:58deb16903616ef011a3be0bf29ed470e88146be$$^1446405882$$^Mon Nov 2 01:24:42 2015 +0600$$^GreenRobot$$^greenrobotmail@gmail.com$$^Delete a non-existent city 'Gomo-Altaysk'
+| 
+| There are no cities with such name in Russia (Russian Federation).
+| The right city is 'GoRNo-Altaysk', not 'GoMo-Altaysk'. It is OCR mistake, probably.
+| Please, keep this string:
+| (2738, 176, 'Gorno-Altaysk', 'GA', 1),
+| And delete this:
+| (2737, 176, 'Gomo-Altaysk', 'GA', 1),
+*   NEWCOMMIT:cbcba37ebfe8b05cdc98ef860043db77dbc227d2$$^1444801786$$^Wed Oct 14 13:49:46 2015 +0800$$^Daniel Kerr$$^danielkerr@users.noreply.github.com$$^Merge pull request #3421 from hoermannklaus/umlauts
+|\  
+| | Replace html entities with real umlauts
+| * NEWCOMMIT:26d6caf0ef0fed78fb05dba19ecda634afea4da8$$^1444134102$$^Tue Oct 6 14:21:42 2015 +0200$$^Klaus Hörmann-Engl$$^kho@world-direct.at$$^Replace html entities with real umlauts.
+| |     
+* |   NEWCOMMIT:cd1b3aef482345233d9d787d042a7aa8741cc75f$$^1444801713$$^Wed Oct 14 13:48:33 2015 +0800$$^Daniel Kerr$$^danielkerr@users.noreply.github.com$$^Merge pull request #3437 from OpenCartAddons/patch-5
+|\ \  
+| | | Update opencart.sql
+| * | NEWCOMMIT:c07d582cfdad5242b25002c4e52167203599e36b$$^1444235822$$^Wed Oct 7 12:37:02 2015 -0400$$^OpenCartAddons$$^joel@opencartaddons.com$$^Update opencart.sql
+| | | 
+| | | Missed some of the category meta titles.
+* | | NEWCOMMIT:46424e1373bd2058a3bb1719ea942b352ca59c32$$^1444670767$$^Tue Oct 13 01:26:07 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3395
+| | |    
+* | | NEWCOMMIT:c7638cc4ab1ea8dcdf5520ac7b4b83cc66d3f991$$^1444668844$$^Tue Oct 13 00:54:04 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3420
+|/ /  
+| |   
+* | NEWCOMMIT:6ea12cb5d4f974fc97ba2e5c433e7d52695d051b$$^1444226874$$^Wed Oct 7 10:07:54 2015 -0400$$^OpenCartAddons$$^joel@opencartaddons.com$$^Update opencart.sql
+|/  
+|   Added Meta Title content to installation.
+* NEWCOMMIT:2431f8d67442b91d12c8dd812d92e17e52a615d5$$^1443116357$$^Thu Sep 24 18:39:17 2015 +0100$$^David Teal$$^david@welfordmedia.co.uk$$^Adding config_login_attempts = 5 to install sql
+|  
+* NEWCOMMIT:f97a7467c71e875c05e7584a678cfaf59637f573$$^1442648027$$^Sat Sep 19 15:33:47 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more wishlist work done
+|  
+* NEWCOMMIT:5a3f887caae335e6825618506f193bebb01487c5$$^1442405080$$^Wed Sep 16 20:04:40 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3349
+|  
+* NEWCOMMIT:1bf51393540e09a34219a7b9ca16888205eafe72$$^1442340485$$^Wed Sep 16 02:08:05 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/2704
+|  
+* NEWCOMMIT:7d37c83d5eaa492cc460ddf8c855646f59904681$$^1442313928$$^Tue Sep 15 18:45:28 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/commit/b2014e284619fcb24f02b300de5d11e4d5d8716e
+|  
+* NEWCOMMIT:b2014e284619fcb24f02b300de5d11e4d5d8716e$$^1442307004$$^Tue Sep 15 16:50:04 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/2704
+|  
+* NEWCOMMIT:710f4f294d1e7b5e761b2de497812d83876f119b$$^1441297562$$^Fri Sep 4 00:26:02 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^install sql updated for to account for using json
+|  
+* NEWCOMMIT:1bf4005900a8d76704aa136adca500992bc0a4c6$$^1440928076$$^Sun Aug 30 17:47:56 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the image size for the front also started the analytics code.
+|  
+* NEWCOMMIT:fe3a3f07ba9d735c4f78addd21d00149517359de$$^1439896854$$^Tue Aug 18 12:20:54 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3251
+|  
+* NEWCOMMIT:c1714a0ec5803eca3f39c35da3fc3cc2d6865868$$^1439821707$$^Mon Aug 17 15:28:27 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/pull/3239
+|  
+* NEWCOMMIT:5afff4615ed2edefa01e59026a4903efc04843cc$$^1439819649$$^Mon Aug 17 14:54:09 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^permissions update
+|  
+* NEWCOMMIT:9ff9adbf952c2002290702a4bcd6f17843cd0f04$$^1439817207$$^Mon Aug 17 14:13:27 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/pull/3239
+|    
+*   NEWCOMMIT:3b9906501886fe0303d367eaf1eb5fe5e70fe7d9$$^1439812208$$^Mon Aug 17 12:50:08 2015 +0100$$^Daniel Kerr$$^danielkerr@users.noreply.github.com$$^Merge pull request #3244 from vivekkiran/patch-1
+|\  
+| | Update opencart.sql
+| * NEWCOMMIT:6ca2cdd46a04ba5468c63e1d61ecc1e47a471562$$^1439546472$$^Fri Aug 14 15:31:12 2015 +0530$$^Vivek Kiran$$^vivek.kiran@outlook.com$$^Update opencart.sql
+| | 
+| | Added Telangana as a state
+| | zone_id 4231, country_id 99, name Telangana, code, ts, status 1
+| | https://en.wikipedia.org/wiki/Telangana
+* | NEWCOMMIT:a63c2e5f7337dd2a36cf69bbe001ea1706c26cd5$$^1439761340$$^Sun Aug 16 22:42:20 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^more voucher work done
+|/  
+|  
+* NEWCOMMIT:e90e7fd40884e6fdea9bf0ec83e4cb43177dbd95$$^1438647449$$^Tue Aug 4 01:17:29 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^fraud ip
+|  
+* NEWCOMMIT:c02ea0d554e3ac478e1e40ec691128a5f9ec7d56$$^1438187254$$^Wed Jul 29 17:27:34 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^lots of api work done
+| also added some upgrade code for seralise to json
+|  
+* NEWCOMMIT:2712f4158bca6fa955ee63e67311b2dc11861fb3$$^1437996162$$^Mon Jul 27 12:22:42 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/3202
+|  
+* NEWCOMMIT:d0c5674bba7ff596b8cd0a75930cab0934348b27$$^1437820588$$^Sat Jul 25 11:36:28 2015 +0100$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the sql to drop tables if exist because the data still gets dumped in
+|  
+* NEWCOMMIT:84cb7f3eb48415606fa088d763f259231fe45f12$$^1437427926$$^Tue Jul 21 05:32:06 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated config values for json
+|  
+* NEWCOMMIT:569ec9761532c7316efc25cfefcc22403b3b0960$$^1437112721$$^Fri Jul 17 13:58:41 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more api work done
+|  
+* NEWCOMMIT:64d143bc291cdadd9dd9e343b78e1275dd3a5523$$^1436461332$$^Fri Jul 10 01:02:12 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more order editing work done
+|  
+* NEWCOMMIT:6933ac7c50a9bc3be2ca1f6328cc0c9566450d74$$^1436355915$$^Wed Jul 8 19:45:15 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added api IP table
+|  
+* NEWCOMMIT:86d9ee2c559f1da087ddfdb2e9ed4f0a3145eb30$$^1436077307$$^Sun Jul 5 14:21:47 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more order editing stuff done
+|  
+* NEWCOMMIT:c1da341df8ad9f9ebac5f0d834e4f9d73eeeec8d$$^1435325755$$^Fri Jun 26 21:35:55 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^api login moved also added a proper encryption key
+|  
+* NEWCOMMIT:dae5e0d42869ce1765661597d6677e4afcd3afcb$$^1433921246$$^Wed Jun 10 12:57:26 2015 +0530$$^Syam Mohan$$^syamvilakudy@gmail.com$$^Country named corrected
+* NEWCOMMIT:8cd608374aa9555936def5f4892fde07ff0f9f57$$^1432988149$$^Sat May 30 17:45:49 2015 +0530$$^Syam Mohan$$^syamvilakudy@gmail.com$$^State name changed
+| 
+| Historically known as Pondicherry, the territory changed its official name to Puducherry on 20 September 2006
+* NEWCOMMIT:a810c40e98edff4a9f2adec6edd899baea985188$$^1432738625$$^Wed May 27 15:57:05 2015 +0100$$^James Allsup$$^james@allsup.eu$$^Updated changelog.md to include latest fixes.
+|  
+* NEWCOMMIT:ea1ef5dd7716637defea742d1e78bab40471caea$$^1432308369$$^Fri May 22 12:26:09 2015 -0300$$^Manoel Vidal$$^manoel.vidal@opencartbrasil.com.br$$^Added permission Anti-Fraud
+* NEWCOMMIT:fa0c7a633a392f0eacf70356da92851f207d3ebf$$^1430199263$$^Tue Apr 28 11:04:23 2015 +0530$$^Syam Mohan$$^syamvilakudy@gmail.com$$^Lebanon regions added
+* NEWCOMMIT:5a1ab9462411221e1c459dbfadb5711a344964f9$$^1429957006$$^Sat Apr 25 15:46:46 2015 +0530$$^Syam Mohan$$^syamvilakudy@gmail.com$$^Zone name corrected
+* NEWCOMMIT:2af0a9bd864c49acf0263c56d4c99082138daf8a$$^1429466267$$^Mon Apr 20 01:57:47 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^anti-fraud
+|  
+* NEWCOMMIT:e5dca8de505a64873c93913b6ba4d132abbc1f31$$^1427887069$$^Wed Apr 1 12:17:49 2015 +0100$$^James Allsup$$^james@allsup.eu$$^Order status id INT size in install.sql
+| 
+| Close #2820
+|  
+* NEWCOMMIT:cafc89ef3fc43c40ac33d14debdab663f76a4dd3$$^1422783860$$^Sun Feb 1 17:44:20 2015 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added more zip and rar mime types for allowed upload file types
+|  
+* NEWCOMMIT:e1ec0a32a6f942247c15354bb4ec0dc8f02a45a1$$^1417756676$$^Fri Dec 5 13:17:56 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/pull/2439
+|  
+* NEWCOMMIT:a4bcb64e5fa7b8e34a0e0681da1fe19fddc6b841$$^1417756156$$^Fri Dec 5 13:09:16 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix for bad commits done by opencart-russia
+|  
+* NEWCOMMIT:48c6891283dd84f07ca6b59b50d087118ed3de61$$^1417630732$$^Thu Dec 4 02:18:52 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^idiot russian sent a commit and put the account module on the category page!
+|  
+* NEWCOMMIT:682e35b6b97fdcdb93aa6a624420c1b0a42bc048$$^1417118794$$^Thu Nov 27 16:06:34 2014 -0400$$^TECHDEV EIRL$$^CoverUp@users.noreply.github.com$$^Update opencart.sql
+| 
+| added missing default layouts
+* NEWCOMMIT:01a3f8474ede672d5f22824d297b0641bfa847a5$$^1416895950$$^Tue Nov 25 14:12:30 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^module work done
+|    
+*   NEWCOMMIT:eae1fb2ced70036cb74802ab9e5f0bb847c61a32$$^1416824246$$^Mon Nov 24 18:17:26 2014 +0800$$^Daniel Kerr$$^info@welfordmedia.co.uk$$^Merge pull request #2337 from OC2PS/hungarian-regions
+|\  
+| | Remove Hungarian Regions
+| * NEWCOMMIT:06d109f39cf395bb3018e959361691f15e9a0953$$^1416819071$$^Mon Nov 24 09:51:11 2014 +0100$$^OC2PS$$^vivek@csillamvilag.com$$^Remove Hungarian Regions
+| | 
+| | 1. Regions are not used with addresses within Hungary
+| | 2. Regions in the OpenCart list are inconsistent - they include
+| | counties, count seats etc.
+| | This patch removes Hungarian regions altogether.
+| |   
+* | NEWCOMMIT:8bb5b7b78b960902b93a4cc86bba6ea4225712bd$$^1416821623$$^Mon Nov 24 17:33:43 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more module work done
+|/  
+|  
+* NEWCOMMIT:4dcec9a58a1ff9fc335b7b4c108bcb43c4b5c2e9$$^1416769792$$^Mon Nov 24 03:09:52 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^module system update.
+| 
+| unfinished.
+|  
+* NEWCOMMIT:e75d034d1817ce7546f2b2d294f662d1c01dd441$$^1416450388$$^Thu Nov 20 02:26:28 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^module updates
+|  
+* NEWCOMMIT:a8b8a29a8b632051c99cf33ca353d1723ef43312$$^1416434926$$^Wed Nov 19 22:08:46 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^ok module work finished.
+| 
+| just need to test the ebay module
+|  
+* NEWCOMMIT:9a5523fc7062956a2b19ac4ab7e768f23bbaa90a$$^1416408693$$^Wed Nov 19 14:51:33 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^module system update.
+| 
+| about to update all the modules code.
+|  
+* NEWCOMMIT:aa3d0946440a91fd22679c78cf3babf234c39f25$$^1415802652$$^Wed Nov 12 14:30:52 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^sql update for featured module
+|  
+* NEWCOMMIT:aff78bae1fbbbd02c8bfcb1a8aa78da0594ef693$$^1415554254$$^Sun Nov 9 17:30:54 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^removed some test code from the install sql
+|  
+* NEWCOMMIT:fdd40a330f0dfa8e3136870fbb47edca07c2ceb0$$^1414404572$$^Mon Oct 27 10:09:32 2014 +0000$$^James Allsup$$^james@allsup.eu$$^Added DB indexes to OC URL table. REF: #2120
+|  
+* NEWCOMMIT:b3a9e43a6b40f1969fa9cfec758aa3e4c9efaf54$$^1414176993$$^Fri Oct 24 19:56:33 2014 +0100$$^Simon Powers$$^info@uksitebuilder.net$$^Fix Layout Routes
+| 
+| Removed some erroneous routes from Layouts
+| 
+| Manufacturer Layouts does not need common/home route
+| Default Layout is a catchall and should not have any route
+|  
+* NEWCOMMIT:bf282982a95acae6fc8f1d29ca332a6925e99a57$$^1413808183$$^Mon Oct 20 20:29:43 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^https://github.com/opencart/opencart/pull/2064
+|  
+* NEWCOMMIT:7194dc5454dbed96b53cae9f2066156b9b70ae4a$$^1413788845$$^Mon Oct 20 15:07:25 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^https://github.com/opencart/opencart/issues/2060
+|    
+*   NEWCOMMIT:63f96ea31167abd88d567d922baa7d19d83ba713$$^1413566975$$^Sat Oct 18 01:29:35 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^Merge branch 'master' of https://github.com/opencart/opencart
+|\  
+| | Conflicts:
+| | 	upload/install/opencart.sql
+| |   
+| * NEWCOMMIT:5bc128b44705607e20cf7d2aa080e48edd4231fb$$^1413555526$$^Fri Oct 17 17:18:46 2014 +0300$$^Anton Izrailtyanko$$^stalker780@users.noreply.github.com$$^Update opencart.sql
+| | 
+| | Ukrainian region names fixes.
+| | Fix for bug since OC 1.4 with "Kharkiv Kherson" as single region.
+| | Region codes in ISO 3166
+* | NEWCOMMIT:8a166d0a6ca0000b717ca788e72826eaadbfdfd9$$^1413566835$$^Sat Oct 18 01:27:15 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^modification update. added more vqmod features.
+| | 
+| | also added a unique code feature for uploaded xml
+| |   
+* | NEWCOMMIT:c15ec10cb7c420c1e289a0557d4090ef92e6cbb9$$^1413562048$$^Sat Oct 18 00:07:28 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^modification update
+|/  
+|  
+* NEWCOMMIT:13767b075ab0ca2b3b963fb83dbecc36f22b100d$$^1413533989$$^Fri Oct 17 16:19:49 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^sql fix
+|  
+* NEWCOMMIT:1ef938300271280a824a4f5b0541e87376cbe055$$^1413533746$$^Fri Oct 17 16:15:46 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^I have removed the need for a language filename
+| it will now try to load a file called default in the chosen language folder
+| i think its required for importing the language files properly
+|  
+* NEWCOMMIT:32cb600a2621c00a300bbac1cf17721d9a5cda59$$^1413479895$$^Fri Oct 17 01:18:15 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^adding a login system that will block to many wrong attempts.
+|    
+*   NEWCOMMIT:a8bcf46818850d45093b114c6d8bccb27a010448$$^1413463153$$^Thu Oct 16 20:39:13 2014 +0800$$^Daniel Kerr$$^info@welfordmedia.co.uk$$^Merge pull request #2016 from CoverUp/patch-2
+|\  
+| | Update opencart.sql
+| * NEWCOMMIT:9d8b2647df8837a89024ae33b51236d517e44b04$$^1413432235$$^Thu Oct 16 00:03:55 2014 -0400$$^TECHDEV EIRL$$^CoverUp@users.noreply.github.com$$^Update opencart.sql
+| | 
+| | Added the 2 regions missing in Chile according to current law (from year 1976), this fix the shipping and profile address for the people that live in that regions.
+| | Also fixed the incomplete name of Ohiggins region
+| | References:
+| | http://en.wikipedia.org/wiki/ISO_3166-2:CL
+| | http://en.wikipedia.org/wiki/Regions_of_Chile
+* | NEWCOMMIT:3655afcda5fb68435a5afca4a8080c230c68b1a1$$^1413392480$$^Wed Oct 15 21:01:20 2014 +0400$$^opencart-russia$$^info@forum.opencart-russia.ru$$^Update opencart.sql
+|/  
+* NEWCOMMIT:f87714d380cd1f87a298826216d98bd320cf4221$$^1413136833$$^Sun Oct 12 13:00:33 2014 -0500$$^opencarthelp$$^git@opencarthelp.com$$^Fix admin permissions/unserialize error (#1989)
+|  
+* NEWCOMMIT:6921f74b67f0cf539b416ed8108ec3901ed17a0a$$^1413036858$$^Sat Oct 11 22:14:18 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^bluepay rename and update of code
+|    
+*   NEWCOMMIT:70ff224b75154a8d25ade307d096e17b42012616$$^1412007336$$^Mon Sep 29 17:15:36 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Merge pull request #1876 from skithund/patch-1
+|\  
+| | Update opencart.sql
+| * NEWCOMMIT:571c90dcd4199351f9f353e4873f310166448bd7$$^1411849118$$^Sat Sep 27 23:18:38 2014 +0300$$^Toni Viemerö$$^toni.viemero@iki.fi$$^Update opencart.sql
+| | 
+| | Correct finnish zone names
+* | NEWCOMMIT:1232a2b83b987bff34520c9aac50c8cb5fb526a6$$^1411857174$$^Sat Sep 27 23:32:54 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Fixed alternate db prefix during install issue.
+|/  
+|  
+* NEWCOMMIT:21d5c00c99b7ffc41db368ad90c506fe7fb61470$$^1411659316$$^Thu Sep 25 16:35:16 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Changed image size for category list (FE)
+| 
+| Updated version to 2.0.0.0b3
+|  
+* NEWCOMMIT:32dfec8446c815308116850f31dd3bd7315c1c1a$$^1411656748$$^Thu Sep 25 15:52:28 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Removed uninstall model for modules.
+| 
+| Updated entire install SQL with new layouts.
+|  
+* NEWCOMMIT:3e06f8fe677f7bdb8e058123db4c01f42e9165ec$$^1411647742$$^Thu Sep 25 13:22:22 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Fix permissions on admin account.
+|  
+* NEWCOMMIT:a55b5271e75fe50b4ddca42d054854edf3cbb530$$^1411581449$$^Thu Sep 25 01:57:29 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^more module changes done
+|  
+* NEWCOMMIT:f735ca39349bf6865cd7c46fb881f10661a526e4$$^1411554369$$^Wed Sep 24 18:26:09 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^modules update
+|  
+* NEWCOMMIT:46c25830f58607cf2579d850e38e7528d510b6c1$$^1411287479$$^Sun Sep 21 16:17:59 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^image placement added back
+|    
+*   NEWCOMMIT:c7366020ce5abbb0e665853d67b96942c79b8649$$^1411106282$$^Fri Sep 19 13:58:02 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^Merge branch 'master' of https://github.com/opencart/opencart
+|\  
+| |   
+| * NEWCOMMIT:0b4431e096aa175fcc27e79795b821ac1f649622$$^1411081682$$^Fri Sep 19 00:08:02 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Updated install permissions for sql user groups.
+| |   
+* | NEWCOMMIT:36b8882e54d85dfd8fcab15e76341b9f98484026$$^1411106252$$^Fri Sep 19 13:57:32 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^module update
+|/  
+|  
+* NEWCOMMIT:debe9f029ee4263d9a11f3797831b87c09b96425$$^1411061280$$^Fri Sep 19 01:28:00 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^update tot he module system
+|  
+* NEWCOMMIT:095dd84db92b0a7a558bf33267bfacf3f97ab0de$$^1410976443$$^Thu Sep 18 01:54:03 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^still updating the modules section
+|  
+* NEWCOMMIT:1ccf1e65712a951e33f60259c0cab04851ca33c8$$^1410954794$$^Wed Sep 17 19:53:14 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^updating the modules so we can haver the modules positions appear on the layouts page.
+|  
+* NEWCOMMIT:74944e4c35e9f2aa6bf1d95d354d9e3b5f1e27f8$$^1410888915$$^Wed Sep 17 01:35:15 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^added back panels to all the pages in the admin
+| 
+| seems a lot of admin templates out their require them. also makes the admin look more full.
+| 
+| finished adding stats to the the left column.
+|  
+* NEWCOMMIT:681e3edb57903d5f0261901bb53e6d869589ceaa$$^1409861731$$^Thu Sep 4 21:15:31 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Gave product options a unique sort order in install/opencart.sql
+|  
+* NEWCOMMIT:a37c5ae8336720f647c468bb8c9ebe4ea5fe4460$$^1409229338$$^Thu Aug 28 20:35:38 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^removed changes to the front controller, also added more work on the events system
+|  
+* NEWCOMMIT:56341227fa121166cc127516192465a1ba9142ac$$^1409153990$$^Wed Aug 27 23:39:50 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^more removal of autoload and changes for to the event system
+|  
+* NEWCOMMIT:df8db1e7e07bf6612998b817a1da73d4b2174073$$^1409145084$$^Wed Aug 27 21:11:24 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^removed the auto load as it makes the code look unintelligible.
+|  
+* NEWCOMMIT:7787044970855e15d01d4fd1e5269c2b306d5f97$$^1408758781$$^Sat Aug 23 02:53:01 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Fixed install SQL, missing comma on recurring table creation.
+|  
+* NEWCOMMIT:af68c903a7ea8cdb119118c728ad18b7d1745d6a$$^1408721207$$^Fri Aug 22 23:26:47 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^recurring update
+|  
+* NEWCOMMIT:786bd75348813c491bb57c3c9ee650ef14e3e8a2$$^1408387722$$^Mon Aug 18 19:48:42 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Removed extra quotes around user group permission in install/opencart.sql
+|  
+* NEWCOMMIT:c872c44072a60af8853820a597acd8cfc8b1ba66$$^1408373437$$^Mon Aug 18 15:50:37 2014 +0100$$^James Allsup$$^james@allsup.eu$$^SQL permissions fix.
+|  
+* NEWCOMMIT:9111645949e1f9a7d056a2828cfbfd290d399965$$^1408232563$$^Sun Aug 17 07:42:43 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^replaced the use of the word created with the word date_added
+|  
+* NEWCOMMIT:b3cee240eb3846806599256ffb0de19e50aec88c$$^1408029510$$^Thu Aug 14 23:18:30 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^renamed profiles to recurring
+|  
+* NEWCOMMIT:1ae5de207d26eee688fbf3e2d67cc05515ade3a9$$^1407783457$$^Mon Aug 11 20:57:37 2014 +0200$$^shadyyx$$^krajcar.peter@gmail.com$$^Fixed opencart.sql for CREATE TABLE oc_settings
+| 
+| opencart.sql file contained incorrect SQL syntax for creating DB table oc_settings. Though the DROP TABLE was added the part CREATE TABLE IF NOT EXIST was not unified with the rest of CREATE TABLE statements. Therefore I removed IF NOT EXIST part.
+* NEWCOMMIT:a9b7aae9dc44e7205b9c1ec8bc735e1c63323be9$$^1407712184$$^Mon Aug 11 00:09:44 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Added missing drop table in install/opencart.sql
+|  
+* NEWCOMMIT:784d12102d21dac01f368925f37d0d8a735cedc3$$^1407418090$$^Thu Aug 7 14:28:10 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Fixed table name.
+|  
+* NEWCOMMIT:4e6726a5402f4701913c28b8a148171570447b09$$^1407417846$$^Thu Aug 7 14:24:06 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Added updated mail config to install/opencart.sql
+|  
+* NEWCOMMIT:ae5fb284e55e692c770cf4ea0c79320ee9023b1a$$^1407145614$$^Mon Aug 4 12:46:54 2014 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Fixed Zone Name Turkish Character
+|  
+* NEWCOMMIT:d40d10af072255e5a74cff77157b8d121a60a650$$^1407021136$$^Sun Aug 3 02:12:16 2014 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^unnecessary data
+|  
+* NEWCOMMIT:8a7a06a317e866dde8597e0311a7d2fef55f1918$$^1406990617$$^Sat Aug 2 17:43:37 2014 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Duplicate oc_event table in opencart.sql
+|  
+* NEWCOMMIT:26ef59915016f2bf17bb8285d5e6ada50d01a28f$$^1406937377$$^Sat Aug 2 00:56:17 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Updated dates on coupons. Disabled all coupons to ensure new stores are not vulnerable to default coupon codes if the merchant has not disabled / removed them.
+|  
+* NEWCOMMIT:09183cd6c27f6b4c8cd87ec4e0d4e5b2e20de273$$^1406936984$$^Sat Aug 2 00:49:44 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Added missing permissions for admin group.
+|  
+* NEWCOMMIT:318330a392ec6b680ac4d7fa10d6cf12cd2843f4$$^1406936401$$^Sat Aug 2 00:40:01 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Added isset to order status array validation.
+| 
+| Added order status values to install SQL.
+|  
+* NEWCOMMIT:8c1a381a2b356914ed6e8840db417844dfaca2d7$$^1406934126$$^Sat Aug 2 00:02:06 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Changed install SQL for UK VAT rate to 20%
+|  
+* NEWCOMMIT:357a4628fba0daaca4b32718486fc19a7de9b207$$^1406478051$$^Mon Jul 28 00:20:51 2014 +0800$$^Daniel kerr$$^webmaster@opnecart.com$$^more api work done
+|  
+* NEWCOMMIT:3cc28a91061735ee823ff67d43940bdd42af7079$$^1406065318$$^Wed Jul 23 05:41:58 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the checkout to have multiple order process statuses for redeeming coupons, vouchers, rewards
+| added security to some of the payment gateways to block a vunriblity of people being able to have orders processed without paying.
+| added safe field to allow users to allow customers to override the fraud detection
+|    
+*   NEWCOMMIT:894bc797bba2130c5c974760cf6ac375f12851f2$$^1405800094$$^Sat Jul 19 21:01:34 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Merge branch 'master' of https://github.com/opencart/opencart
+|\  
+| |     
+| *   NEWCOMMIT:e8b29460bde1e32853007c75b4ece530c09261e6$$^1405537674$$^Wed Jul 16 20:07:54 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Merge pull request #1606 from tjomamokrenko/master
+| |\  
+| | | Some fixes in default config values
+| | * NEWCOMMIT:909646a428703317ac9a32a910b6b98fe9640598$$^1404249289$$^Wed Jul 2 00:14:49 2014 +0300$$^Artiom$$^tjomamokrenko@gmail.com$$^Added default value for config_image_location
+| | |    
+| | * NEWCOMMIT:ad6c52c1d9f8b2854ca96366e33affdfb92b2fa6$$^1404248651$$^Wed Jul 2 00:04:11 2014 +0300$$^Artiom$$^tjomamokrenko@gmail.com$$^Revert "Added default value for config_image_location"
+| | | 
+| | | This reverts commit 6b2bf6d2155ad199600b94c6db7870cc95a26688.
+| | |    
+| | * NEWCOMMIT:c77dd00cbdd8210e443f85f9fcc40b00ef7e2240$$^1404244270$$^Tue Jul 1 22:51:10 2014 +0300$$^Artiom$$^tjomamokrenko@gmail.com$$^Fixed incorrect default path to logo.png and cart.png
+| | |    
+| | * NEWCOMMIT:6b2bf6d2155ad199600b94c6db7870cc95a26688$$^1404240250$$^Tue Jul 1 21:44:10 2014 +0300$$^Artiom$$^tjomamokrenko@gmail.com$$^Added default value for config_image_location
+| | | 
+| | | There was no default value for config_image_location.
+| | | image_location_width and image_location_height are required fields in
+| | | store settings (store_form.tpl)
+| | |    
+| * | NEWCOMMIT:c8452cfcca77582354801895e362212d51e17fec$$^1405518870$$^Wed Jul 16 14:54:30 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Fixed missing % in checkout layout in install sql.
+| | |    
+| * | NEWCOMMIT:96b6ded2cc3374697085d161051a9ba0fb416e31$$^1405436294$$^Tue Jul 15 15:58:14 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Initial commit for Events feature.
+| | |    
+* | | NEWCOMMIT:cafee91fe235bc10978ff8fdb5a4d66c4a225e08$$^1405800055$$^Sat Jul 19 21:00:55 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Added missing install SQL for Events.
+|/ /  
+| |   Closes: #1643
+| |   
+* | NEWCOMMIT:a4b354214cf68d394956308b7700ae07edbd3a99$$^1404727441$$^Mon Jul 7 18:04:01 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/1610
+| |   
+* | NEWCOMMIT:c7268b560b7146f291f77af6b58e10620e945237$$^1404315628$$^Wed Jul 2 23:40:28 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more api work done
+|/  
+|  
+* NEWCOMMIT:ebdeba6eb2be3993f9c38b5576097c9e22e6871f$$^1403895091$$^Sat Jun 28 02:51:31 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more api work done
+|    
+*   NEWCOMMIT:6336d065bde9632ae07f5ce5ca01b430fa16db86$$^1403323132$$^Sat Jun 21 11:58:52 2014 +0800$$^Daniel Kerr$$^info@welfordmedia.co.uk$$^Merge pull request #1581 from psramkumar/master
+|\  
+| | Typo error in date_modified field in api table
+| * NEWCOMMIT:4941aa15702ba16e6be60ec20cfe5706fd244f92$$^1403279827$$^Fri Jun 20 23:57:07 2014 +0800$$^RamkumarPillai$$^ps.ramkumar@gmail.com$$^Typo error in date_modified field in api table
+* |   NEWCOMMIT:1467a8361e403c8217d1adcc8202303d85bf2d51$$^1403078370$$^Wed Jun 18 08:59:30 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Merge pull request #1449 from hellaslubo/patch-order-custom-columns
+|\ \  
+| | | Update install SQL script
+| * | NEWCOMMIT:bf17a161f5fdad77e7afd607cd40e625a9446480$$^1400246535$$^Fri May 16 23:22:15 2014 +1000$$^hellaslubo$$^hellaslubo@users.noreply.github.com$$^Update install SQL script
+| | | 
+| | | Add extra custom field columns for oc_order table.
+* | | NEWCOMMIT:0c79b508ef69a862db44096a8699077a3438f2cd$$^1403077915$$^Wed Jun 18 08:51:55 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Updated SQL file to alphabetical for recurring payment tables.
+| |/  
+|/|   Closes #1566
+| |   
+* | NEWCOMMIT:752c797041751d4573049b0a005316fa71d0bb18$$^1401085474$$^Mon May 26 14:24:34 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/issues/1461
+| |   
+* | NEWCOMMIT:cd57b008c823df9dfaa6502a47622e5513966e99$$^1400773550$$^Thu May 22 18:45:50 2014 +0300$$^Dvir Julius$$^Dvir-Julius@users.noreply.github.com$$^fixes installation crashes on step 3
+| | 
+| | Deleted extra 'u'
+* | NEWCOMMIT:9881ad3b64f0ce6f73cc36a934834709e31fc2e0$$^1400428557$$^Sun May 18 23:55:57 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more api work done
+| |   
+* | NEWCOMMIT:e99577db59038cdb4722c712f95cdcb22c07f20f$$^1400392535$$^Sun May 18 13:55:35 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added a api user page
+|/  
+|  
+* NEWCOMMIT:b16b2f13b00060b1147714cfe0829d26a3318ada$$^1399044672$$^Fri May 2 16:31:12 2014 +0100$$^M$$^martynas@welfordmedia.co.uk$$^Deleted SQL file in the tests folder.
+|  
+* NEWCOMMIT:30a8371690d89f03c921871ce520a719427d4a4b$$^1398188490$$^Tue Apr 22 18:41:30 2014 +0100$$^James Allsup$$^james@allsup.eu$$^Updated SQL mode in install SQL file and MySQLi adapter to accommodate servers that have strict mode enabled by default. Ref: #1347
+| 
+| Removed Amazon payments xls file from system folder as it can be downloaded online and has no place in the code framework.
+|  
+* NEWCOMMIT:cdf20be73d813c227a3b12d13e9d867e46b9e5eb$$^1397469917$$^Mon Apr 14 13:05:17 2014 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Removed unused strings in category controller and opencart.sql
+|  
+* NEWCOMMIT:37ecea6f9b3d3c815cef213b3442eeab5afd3466$$^1397308090$$^Sat Apr 12 16:08:10 2014 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Moved Function Tool/Captcha
+|  
+* NEWCOMMIT:69becfeffe051fd3019aa076bf7df454a3acadf7$$^1396979583$$^Tue Apr 8 20:53:03 2014 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Was removed from the same file mime types.
+| 
+| Example:
+| application/postscript
+| application/postscript
+| application/postscript
+|  
+* NEWCOMMIT:f08f21e6f15d396efa99777e6e011549fe247403$$^1396286000$$^Mon Mar 31 18:13:20 2014 +0100$$^James Allsup$$^jamesa@welfordmedia.co.uk$$^Fixed missing comma's in install SQL.
+| 
+| Fixes #1289,#1284
+|  
+* NEWCOMMIT:45124e031accd7228b163791f969af9134ec475a$$^1395939935$$^Fri Mar 28 01:05:35 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added admin upload page for managing customer uploads.
+|  
+* NEWCOMMIT:a68495f51ef68f55f213e1cca7c932c583a8fa15$$^1395936079$$^Fri Mar 28 00:01:19 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more custom field work done
+|  
+* NEWCOMMIT:a0810215c058b34d415d877c6be6a9ae746c2c28$$^1395856584$$^Thu Mar 27 01:56:24 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^customer field work done and recurring payments
+|  
+* NEWCOMMIT:ef90032e36f7dff8488c168da5cb02d3811d1b2e$$^1395554056$$^Sun Mar 23 13:54:16 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^custom fields
+|  
+* NEWCOMMIT:d323301b27e69ae9813d5ed982fb9c8a34a90ca1$$^1394691755$$^Thu Mar 13 14:22:35 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^working on custom field again
+|  
+* NEWCOMMIT:6fed9f34b12afaf35c663c4ea7a18e61ee55a467$$^1393605677$$^Fri Feb 28 16:41:17 2014 +0000$$^James Allsup$$^james@allsup.eu$$^Added reference column for recurring payment transaction.
+|  
+* NEWCOMMIT:0effeb4dc2d3fe3fbde803f07930fe92f61ca6e8$$^1393343465$$^Tue Feb 25 16:51:05 2014 +0100$$^Marko Vida$$^anony253@live.com$$^Update opencart.sql
+* NEWCOMMIT:eb66084c6af0140ebdd9befa9963a02c71bba1d4$$^1393343344$$^Tue Feb 25 16:49:04 2014 +0100$$^Marko Vida$$^anony253@live.com$$^Update to opencart.sql
+| 
+| Adding six countries: Republic of Kosovo (17 February 2008 separation from Serbia), Isle of Man (self-governing British Crown Dependency, has its own ISO 3166 codes), Ascension and Tristan da Cunha (The St Helena, Ascension and Tristan da Cunha Constitution Order 1 September 2009 ended the "dependency status" of Ascension and Tristan da Cunha, also they have its own ISO 3166 codes), Guernsey and Jersey (British Crown dependency, but has its own parlaments and ISO 3166 codes).
+* NEWCOMMIT:e06e4c0f8fa85bf0ee6f822ccd200b6bf51479b9$$^1393343128$$^Tue Feb 25 16:45:28 2014 +0100$$^Marko Vida$$^anony253@live.com$$^Update to opencart.sql
+| 
+| Adding six countries: Republic of Kosovo (17 February 2008 separation from Serbia), Isle of Man (self-governing British Crown Dependency, has its own ISO 3166 codes), Ascension and Tristan da Cunha (The St Helena, Ascension and Tristan da Cunha Constitution Order 1 September 2009 ended the "dependency status" of Ascension and Tristan da Cunha, also they have its own ISO 3166 codes), Guernsey and Jersey (British Crown dependency, but has its own parlaments and ISO 3166 codes).
+* NEWCOMMIT:9dc1611ec37704c1a9cbb98cfbc7617b0f48da81$$^1393245353$$^Mon Feb 24 13:35:53 2014 +0100$$^Marko Vida$$^anony253@live.com$$^Update to opencart.sql
+| 
+| Correcting Croatian state names
+| Lines 4525 to 4545
+* NEWCOMMIT:090b45fb999322c4a287b7dde1ba0b1124f4b256$$^1392375756$$^Fri Feb 14 11:02:36 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the date fields in the sql. some dates do not require default added.
+|  
+* NEWCOMMIT:37ad12286d66e447de416677b7801c347490ec59$$^1392137697$$^Tue Feb 11 16:54:57 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^fix for product_to_store not working in install sql
+|  
+* NEWCOMMIT:66ede7f878bb66b1940dcba9e547b50ea044683d$$^1392128153$$^Tue Feb 11 14:15:53 2014 +0000$$^Daniel Kerr$$^webmaster@opencart.com$$^https://github.com/opencart/opencart/pull/1151
+|  
+* NEWCOMMIT:501116ace7ba9b906827bfca451fc7daf2b1e1ec$$^1392070862$$^Mon Feb 10 14:21:02 2014 -0800$$^chimeraha$$^chimeraha@users.noreply.github.com$$^opencar.sql - fixed wrong charset - line 1377
+| 
+| on line  1377
+| CHARSET=utf8_general_ci should be CHARSET=utf8 COLLATE=utf8_general_ci
+| 
+| CHARSET=utf8_general_ci was causing errors and would not install correctly.
+* NEWCOMMIT:91b6b83c82c80de00267fba7c0ef1daf4f082c3e$$^1392020006$$^Mon Feb 10 09:13:26 2014 +0100$$^CZechBoY$$^thejabko@gmail.com$$^changed product_id index to category_id
+| 
+| product_id was unnecessary
+* NEWCOMMIT:d4b3309087c9c74c6695b7093a313ed5c1cc0f05$$^1391597726$$^Wed Feb 5 18:55:26 2014 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^sql update including the custom field location table
+|  
+* NEWCOMMIT:ebc064af1e83e1357ef25b217487ba56286406e3$$^1389776983$$^Wed Jan 15 09:09:43 2014 +0000$$^M$$^matthew@screamingjungle.com$$^Update opencart.sql
+| 
+| Permissions unserialize error (system/library/user.php): char count incorrect in install db creation.
+| 
+| s:17:"payment/pp_payflow" -> s:18:"payment/pp_payflow"
+* NEWCOMMIT:5a4b22a262a5c395e46fcf8e3d8d14a1cb3c9ae1$$^1387839533$$^Mon Dec 23 22:58:53 2013 +0000$$^James Allsup$$^admin@ecommercehq.co.uk$$^Updated admin icons to bigger format and correct icon image.
+| 
+| Fixed controller name in payflow gateway on ajax call.
+| 
+| Fixed standard permission for new controller name in sql file.
+|    
+*   NEWCOMMIT:8855cb2f10f4ed566976f19c6235c032d7503ce6$$^1387033787$$^Sat Dec 14 15:09:47 2013 +0000$$^James Allsup$$^admin@ecommercehq.co.uk$$^Merge branch 'master' into development-feature-profiles
+|\  
+| | Conflicts:
+| | 	upload/admin/controller/extension/module.php
+| | 	upload/admin/controller/extension/payment.php
+| |   
+| * NEWCOMMIT:68859c675c1a3c39fb1d3ff2ab020626ba9b7184$$^1386892564$$^Fri Dec 13 01:56:04 2013 +0200$$^Guntis Endzelis$$^guntis.e@gmail.com$$^chaged the Latvian zone ids to start from 4036 to 4221
+| |     
+* |   NEWCOMMIT:7317f4b3af0566c1dc4d0aebc8b1377feea58bba$$^1386752404$$^Wed Dec 11 09:00:04 2013 +0000$$^James Allsup$$^james@allsup.eu$$^Merge branch 'master' into development-feature-profiles
+|\ \  
+| |/  Conflicts:
+| |   	upload/admin/controller/payment/pp_express.php
+| |   
+| * NEWCOMMIT:946e3f5376a4d17b6f86831810319213e99a87e9$$^1386456876$$^Sun Dec 8 00:54:36 2013 +0200$$^Guntis Endzelis$$^guntis.e@gmail.com$$^Removed old zones from Latvia (country_id = 117),
+| | Added New zones.
+| | 
+| | They are changed already since March 30, 2010 according to [http://likumi.lv/doc.php?id=207512](http://likumi.lv/doc.php?id=207512)
+| | 
+| | Note that the zone codes are not postal codes. They are 'official' zone codes used for accounting.
+| | 
+| | The only problem is - i don't know how to make an update script, as the old zones and new ones cannot be mapped - there are more new zones than old ones.
+| |   
+* | NEWCOMMIT:c5778fab9ead923e834869eea4911f7899d8c0e9$$^1386628406$$^Mon Dec 9 22:33:26 2013 +0000$$^James Allsup$$^admin@ecommercehq.co.uk$$^Resolved conflict with controller naming, same as new admin section that allows the user to change thier profile.
+| | 
+| | Updated the install SQL to include new controllers.
+| |   
+* | NEWCOMMIT:73de883b9b75b825ef8f2d8fdf6b21d057e429eb$$^1386616523$$^Mon Dec 9 19:15:23 2013 +0000$$^James Allsup$$^admin@ecommercehq.co.uk$$^Added profile system SQL for install.
+|/  
+|  
+* NEWCOMMIT:5dc7907dafce23a839751a434116562e90d5ff0c$$^1386303285$$^Fri Dec 6 12:14:45 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix for
+| 
+| https://github.com/opencart/opencart/issues/1055
+|  
+* NEWCOMMIT:e05225f06e386e0056a03d3aa056402e135e14fe$$^1386245583$$^Thu Dec 5 20:13:03 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^reworked the store location forms a bit
+|  
+* NEWCOMMIT:ada84ca4f4d1361258360d1821df9456fba785ae$$^1385989108$$^Mon Dec 2 20:58:28 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^just removed more order total text code.
+|  
+* NEWCOMMIT:777418bc9d506d665a3ed7e2a5960dfbdef98d50$$^1385831863$$^Sun Dec 1 01:17:43 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the installer (not finished)
+| 
+| altered the system and removed the order_download table. instead setting the system to allow downloads linked to products ordered.
+|  
+* NEWCOMMIT:91fefe4778e58338d0eb00ec66f44c8f38571b03$$^1385706641$$^Fri Nov 29 14:30:41 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fixed issue with layout
+|  
+* NEWCOMMIT:ca772f27c8370ac827a50f4f74f2b85ee6e41747$$^1385473949$$^Tue Nov 26 21:52:29 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more custom field done
+|  
+* NEWCOMMIT:c19d9bcdb0b6500197088b1955f805481634edd8$$^1385443851$$^Tue Nov 26 13:30:51 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more custom field work done
+|  
+* NEWCOMMIT:d52ac09024ed83d93bcf91b7ca09fe4bc10e7f19$$^1384940861$$^Wed Nov 20 17:47:41 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more work done on adding flexislider back and also activities
+|  
+* NEWCOMMIT:16030b6881fd835f0c8a444c488edb0cfd33ddf5$$^1384866366$$^Tue Nov 19 21:06:06 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the system to automatically approve affiliates also sends an email tot he store owner if set.
+|  
+* NEWCOMMIT:5099a7fa5620108170de53654a41dd7b21f6c595$$^1384863688$$^Tue Nov 19 20:21:28 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the settings page config keys
+| 
+| also started to alter the system so reward points and affiliate commission can be automatically added.
+|  
+* NEWCOMMIT:a6a62ba99aff8cae18a2291ccd0a0db5034b9ab7$$^1384839288$$^Tue Nov 19 13:34:48 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more activity log work done
+|  
+* NEWCOMMIT:bce5c0e6fe0bd3d3eff6378fbe9162c71dda433e$$^1384755504$$^Mon Nov 18 14:18:24 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added
+| 
+| https://github.com/opencart/opencart/pull/918
+|  
+* NEWCOMMIT:7997de4d537cf4f3e2f0f37d333f7627d56012c7$$^1384347130$$^Wed Nov 13 20:52:10 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added customer activity and affiliate activity log
+|  
+* NEWCOMMIT:de3c4cd3537547fe44fb81e70c30a9c1a53cf839$$^1383576794$$^Mon Nov 4 22:53:14 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^modification page tweak to allow linking to developer pages.
+| 
+| more front end work.
+|  
+* NEWCOMMIT:16be317ca3ada66e88720b905ed5b69c394ad824$$^1382538738$$^Wed Oct 23 22:32:18 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more work done on the file manager. i think close to finishing.
+|  
+* NEWCOMMIT:bd86084c0e2188b4872460ee7f9cfc65b5ad2c72$$^1382383235$$^Tue Oct 22 03:20:35 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^started to alter the file manger to use a different type of system as using a current file manager has to many problems.
+| 
+| trying a more simple approach.
+|  
+* NEWCOMMIT:80a8e75c39ff49844a44be34f6f7ff9ed3b39465$$^1382208427$$^Sun Oct 20 02:47:07 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the modification system
+| also changed all references to .box to .panel
+|  
+* NEWCOMMIT:cb02b2ecb56c5d136414e8725fabd77c80aaf97b$$^1381517691$$^Sat Oct 12 02:54:51 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more custom field work done
+|  
+* NEWCOMMIT:f10e2744df37f8e26a6c75cad5aaef1591b21ad0$$^1381107516$$^Mon Oct 7 08:58:36 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^custom field work done
+|  
+* NEWCOMMIT:5cd7c3a2f507955912ee670370aae0d82c027fc0$$^1379665905$$^Fri Sep 20 16:31:45 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added separate meta title, meta description, meta keywords to product, category and information pages
+|  
+* NEWCOMMIT:05111cc5c473d7390f2961da8e714b08594e3ee9$$^1379588431$$^Thu Sep 19 19:00:31 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^store location finished
+|  
+* NEWCOMMIT:4f56322982a5aff52f28e9f5756b3adf4172cffa$$^1377540369$$^Tue Aug 27 02:06:09 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the admin to use confirm before deleting.
+| 
+| started converting the frontend to use bootstrap 3
+|  
+* NEWCOMMIT:8e830e8413f8a215fe05d0b93d5671ae1f2a7802$$^1374047007$$^Wed Jul 17 15:43:27 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^viewed fixed
+|  
+* NEWCOMMIT:933aac552c098811488c3b5097b9b1be0805186a$$^1373256301$$^Mon Jul 8 12:05:01 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added customer activity report
+|  
+* NEWCOMMIT:d547f9f27377e655c7fe5ebf9af72d57233cb06d$$^1372940024$$^Thu Jul 4 20:13:44 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^changed the word views back to viewed for db compatibility
+|  
+* NEWCOMMIT:b674d2ce2e4084d210aec75d31e351014dc5e31e$$^1372919443$$^Thu Jul 4 14:30:43 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the marketing tracking system.
+|  
+* NEWCOMMIT:a12f6d17eeb77454f536330138310127e438b59d$$^1372573259$$^Sun Jun 30 03:20:59 2013 -0300$$^valdeir2000$$^valdeir_webdesign@hotmail.com$$^Correction permission to administrator
+|  
+* NEWCOMMIT:f9673c677749b64f1ee088e2ef63ef5f902d713f$$^1372137954$$^Tue Jun 25 13:25:54 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^moved the contact form to the marketing folder and done some more work on the dashboard.
+|    
+*   NEWCOMMIT:619dff598fd172f1e5023ae46a6efd02d368e348$$^1371561766$$^Tue Jun 18 06:22:46 2013 -0700$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge pull request #718 from hkulekci/install-sql
+|\  
+| | administrator user group permission error is fixed.
+| * NEWCOMMIT:5ce1786fc4fadecdfb83f5b240613fae481f56dd$$^1371543249$$^Tue Jun 18 11:14:09 2013 +0300$$^Haydar Kulekci$$^haydar.kulekci@reformo.net$$^administrator user group permission error is fixed.
+| | 
+| | Changing is :
+| | 
+| | From
+| |  `s:14:"marketing/affiliate";`
+| | to
+| |  `s:19:"marketing/affiliate";`
+| | 
+| | Fatal error: Uncaught exception 'ErrorException' with message 'unserialize(): Error at offset 2739 of 7722 bytes' in ….
+| |     
+* |   NEWCOMMIT:ac10ec30a255f50a563aef1faaa8a73963b8cc28$$^1371543094$$^Tue Jun 18 01:11:34 2013 -0700$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge pull request #716 from robinflyhigh/master
+|\ \  
+| |/  Changed the directory image/data to image/catalog SQL Update
+|/|   
+| * NEWCOMMIT:e0d5910ff2594e187329057618301c6d8b35ff58$$^1371539740$$^Tue Jun 18 12:45:40 2013 +0530$$^Robin Singh$$^robin.flyhigh@gmail.com$$^Changed data/demo to catalog demo as per commit 6092447a22ac17dbb307339f0aa33a1b42ea36b0
+| | <changed the directory image/data to image/catalog>
+| |   
+* | NEWCOMMIT:248c0a3e80495600fa25b2155a2e6a1f420f8d95$$^1371472419$$^Mon Jun 17 20:33:39 2013 +0800$$^opencart$$^webmaster@opencart.com$$^updated the path for loading the affiliate model
+|/  
+|  
+* NEWCOMMIT:73bf105b6cabaf640c8300d945bccffd8a283f19$$^1371395916$$^Sun Jun 16 23:18:36 2013 +0800$$^opencart$$^webmaster@opencart.com$$^added an ad tracking system so store owners can gage which ad placements generate sales.
+|  
+* NEWCOMMIT:6092447a22ac17dbb307339f0aa33a1b42ea36b0$$^1371272304$$^Sat Jun 15 12:58:24 2013 +0800$$^opencart$$^webmaster@opencart.com$$^changed the directory image/data to image/catalog
+|  
+* NEWCOMMIT:6e07a8d4184f0248bd4ab833d85c938c86f22426$$^1368076870$$^Thu May 9 13:21:10 2013 +0800$$^opencart$$^webmaster@opencart.com$$^Merge branch 'master' of https://github.com/opencart/opencart
+| 
+| Conflicts:
+| 	upload/admin/controller/localisation/length_class.php
+| 	upload/admin/controller/localisation/weight_class.php
+|  
+* NEWCOMMIT:a6daeac4e978ace0f1e0686d1beb4bfea9a874fc$$^1363950938$$^Fri Mar 22 22:15:38 2013 +1100$$^Andrew$$^andrew@andrewscott.net.au$$^Added sort ordering to banner images.
+|  
+* NEWCOMMIT:2d2659c0c0bce99fcd1648cc21a28d6372160ce6$$^1363449659$$^Sun Mar 17 00:00:59 2013 +0800$$^opencart$$^webmaster@opencart.com$$^more of the modification system done
+|  
+* NEWCOMMIT:2eea76c64d869fbaa70a01f8f7a0b0890ab39d5d$$^1363327463$$^Fri Mar 15 13:04:23 2013 +0700$$^Vadim A. Misbakh-Soloviov$$^mva@mva.name$$^Add more security to config_encryption
+| 
+| Fix config_encryption to add unique key for each installation
+* NEWCOMMIT:ec6fec82fefdd76048ef9475c6f965f0f694665b$$^1362968361$$^Mon Mar 11 09:19:21 2013 +0700$$^Mohamad Fahmi$$^mohamadf4hmi@gmail.com$$^Category and Product is Ready for seo url enabled
+| 
+| hi, this is Category and Product is Ready for seo url enabled
+| thanks,
+* NEWCOMMIT:c8795c430fb632d88b2fd749ba673eb91abfc4ba$$^1362248254$$^Sun Mar 3 02:17:34 2013 +0800$$^opencart$$^webmaster@opencart.com$$^more modifcation work done
+|  
+* NEWCOMMIT:dff0959fbe1c1eeef2a36a23a595fdc1b37ec0d6$$^1362113277$$^Fri Mar 1 12:47:57 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix for url install issue
+| 
+| also updated the modification system
+|  
+* NEWCOMMIT:c79fd89874bc4145781a6d7c054ec703ede2a4c9$$^1361984122$$^Thu Feb 28 00:55:22 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^a massive update to nearly all files to change the breadcrumb system to start using html5 css3 style breadcrumbs.
+|  
+* NEWCOMMIT:258a0d473bfe0627f03882e8d331361bdea40e68$$^1361624230$$^Sat Feb 23 20:57:10 2013 +0800$$^Hafidz Nasruddin$$^hafidz@gmail.com$$^Update upload/install/opencart.sql
+| 
+| Add Putrajaya, Malaysia
+| Renamed Wilayah Persekutuan, Malaysia to Kuala Lumpur, Malaysia
+* NEWCOMMIT:7723c2c717c994653152323d621b24d4e6afbdca$$^1361320292$$^Wed Feb 20 02:31:32 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^update Top Administrator permissions on sql
+|  
+* NEWCOMMIT:7eab65cfdf6d8c9a7b61d9b5eb62a222eccadb4b$$^1361297656$$^Tue Feb 19 20:14:16 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Fixed missing comma on opencart sql
+|  
+* NEWCOMMIT:3830fade2e193dc790937beb3eebefd3b2768b6d$$^1361295174$$^Tue Feb 19 19:32:54 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^update Top Administrator permissions on sql
+|  
+* NEWCOMMIT:afb7fdf1d53ce1e7c0af2c22e1d22e8544c2b582$$^1361273464$$^Tue Feb 19 19:31:04 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more store location done
+|  
+* NEWCOMMIT:2c4130443cef982db35e316c4eec4885d8f1cfc3$$^1361270644$$^Tue Feb 19 18:44:04 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^store location code updated
+|  
+* NEWCOMMIT:9103a1ac7534efc72c63aae798638ffc31d078df$$^1361250368$$^Tue Feb 19 13:06:08 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^store location work done.
+| capcha class removed. more logic to have it created manually rather than a dedicated library class.
+|  
+* NEWCOMMIT:d338641dd404d8dd12fb444e0d3941598f4a0484$$^1361016236$$^Sat Feb 16 14:03:56 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Added If the customer is logged automatic review name fill
+|  
+* NEWCOMMIT:f5823eb52323d3ce2049302f974eb33d29c6eb7a$$^1360877393$$^Thu Feb 14 23:29:53 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Added config_review_mail in opencart.sql
+|  
+* NEWCOMMIT:f606616805d72a434b602f501b4ee71d33d87d4d$$^1360502814$$^Sun Feb 10 15:26:54 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Fixed default image file size
+|  
+* NEWCOMMIT:3bb56251786b2d9ca256239496e3eb6c5dc5047e$$^1360502650$$^Sun Feb 10 15:24:10 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Added Image file size setting
+|  
+* NEWCOMMIT:628129d4655744054d16453986a0ad34a0f35731$$^1360320633$$^Fri Feb 8 18:50:33 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix for tax address spelt wrong
+|  
+* NEWCOMMIT:3c5f2118a0043efa1575f10911072ae11e8c9402$$^1359990053$$^Mon Feb 4 17:00:53 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^update Top Administrator permissions on sql
+|  
+* NEWCOMMIT:f311e41db9679987e9dcc5233bba187b1e291140$$^1359987944$$^Mon Feb 4 22:25:44 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the layout system to use /% when trying to match a url
+| 
+| also more work on custom fields
+|  
+* NEWCOMMIT:aec74a05165aba673318f1c093aefc8d659ae3f3$$^1359953298$$^Mon Feb 4 12:48:18 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^DB: Length of the 'company' field is too small. fix
+|  
+* NEWCOMMIT:f808fdc16974e17a0ede6d3c22f91fae13a4df4b$$^1359906971$$^Sun Feb 3 23:56:11 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more address changes done
+|  
+* NEWCOMMIT:0d973ddbfc7294036a31498e1009340ce68bb083$$^1359545918$$^Wed Jan 30 13:38:38 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Fixed error_desc_limit -> error_limit
+|  
+* NEWCOMMIT:4b2921184db84536f3f23631720b42744207738d$$^1359542842$$^Wed Jan 30 18:47:22 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^renamed product option field from option value to just value.
+| 
+| extension and template developers need to make changes accordingly.
+|  
+* NEWCOMMIT:c543343ec44c9c7c95ba71557e51090a116db3d1$$^1359462435$$^Tue Jan 29 14:27:15 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^catalog_desc_limit renamed -> list_description_limit
+|  
+* NEWCOMMIT:35367e71a744a1551b084ac7f2c897b37b5fef4a$$^1359392592$$^Mon Jan 28 19:03:12 2013 +0200$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Character Limit (Catalog)
+| In the list view, short description character limit (categories, special etc)
+|  
+* NEWCOMMIT:0a0992586d9b2282b648ef7a9e62340cfc610205$$^1359378239$$^Mon Jan 28 13:03:59 2013 +0000$$^Simon Powers$$^info@uksitebuilder.net$$^Remove 2 Countries that are now zones - Fix UK VAT Zones
+|  
+* NEWCOMMIT:2bd3c4bb65e983a687081674d8ef2ad0d0998b07$$^1359283394$$^Sun Jan 27 18:43:14 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more work done on custom fields
+|    
+*   NEWCOMMIT:6067ad02ba7937e60394571c85df9917876cb209$$^1359168600$$^Fri Jan 25 18:50:00 2013 -0800$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge pull request #380 from hkulekci/opencart
+|\  
+| | update Top Administrator permissions on sql
+| * NEWCOMMIT:77c48849e79b9760d8d5f8369599b38c1216f084$$^1359143993$$^Fri Jan 25 21:59:53 2013 +0200$$^Haydar Kulekci$$^haydar.kulekci@reformo.net$$^update Top Administrator permissions on sql
+| |   
+* | NEWCOMMIT:7f397ed23bd85f1cd202c2fc01d44f139997ee43$$^1359142072$$^Fri Jan 25 19:27:52 2013 +0000$$^Simon Powers$$^info@uksitebuilder.net$$^Update upload/install/opencart.sql
+| | 
+| | Added Jersey & Guernsey to upload/install/opencart.sql
+* | NEWCOMMIT:dce2a35a3ba3a9d821940793cf840fa320a58558$$^1359141776$$^Fri Jan 25 19:22:56 2013 +0000$$^Simon Powers$$^info@uksitebuilder.net$$^Revert "Add Jersey & Guernsey to opencart.sql"
+| | 
+| | This reverts commit b2ba4a15ae2f51304583c26178d06bb801a6ac84.
+| |   
+* | NEWCOMMIT:b2ba4a15ae2f51304583c26178d06bb801a6ac84$$^1359140232$$^Fri Jan 25 18:57:12 2013 +0000$$^Simon Powers$$^info@uksitebuilder.net$$^Add Jersey & Guernsey to opencart.sql
+|/  
+* NEWCOMMIT:a9763f4eafe9f57db50a02b84dc5a925bbd63c16$$^1359021839$$^Thu Jan 24 18:03:59 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more custom field work done
+|    
+| * NEWCOMMIT:70298dd3c21430935659745436fe1f8709483718$$^1398186640$$^Tue Apr 22 18:10:40 2014 +0100$$^James Allsup$$^admin@ecommercehq.co.uk$$^Updated SQL mode in install SQL file and MySQLi adapter to accommodate servers that have strict mode enabled by default. Ref: #1347
+| | 
+| | Removed Amazon payments xls file from system folder as it can be downloaded online and has no place in the code framework.
+| |   
+| * NEWCOMMIT:04ad96a9cdb32d17d264e217b5a2200e243cd457$$^1389261672$$^Thu Jan 9 10:01:12 2014 +0000$$^James Allsup$$^james@allsup.eu$$^Update to install SQL for top administrator permissions. Version change not required as this only affects new installs.
+| |   
+| * NEWCOMMIT:3f5db747dba935d9f570117dd00cdfba1bcccfbd$$^1389084401$$^Tue Jan 7 08:46:41 2014 +0000$$^James Allsup$$^james@allsup.eu$$^Added minor final patches to 1.5.6.1 branch.
+| | 
+| | Changed array to assoc for MySQLi driver
+| | 
+| | Renamed comment in upgrade script SQL file
+| | 
+| | Added slashes function in JS html code function to allow for comma
+| |   
+| * NEWCOMMIT:5f74b5cda4ed58c7b5559e12a943c34a2c37d9f3$$^1374610733$$^Tue Jul 23 21:18:53 2013 +0100$$^James Allsup$$^admin@ecommercehq.co.uk$$^Fixed user permissions for top admin at install.
+| |   
+| * NEWCOMMIT:330947898cf57a66bc3e5d893ae6d38d0460f43b$$^1374585320$$^Tue Jul 23 14:15:20 2013 +0100$$^Martynas P$$^martynas@welfordmedia.co.uk$$^Added PayPal Express Checkout, PayPal PayFlow Iframe, PayPal Payments Pro Iframe, Amazon Payments.
+| |   
+| * NEWCOMMIT:8b8b894b48adeebfeeb4a0de4872176e513b4ce6$$^1359259688$$^Sun Jan 27 12:08:08 2013 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^Update upload/install/opencart.sql
+| | 
+| | removed wget from robots list as some servers have security blocking saving of settings
+| * NEWCOMMIT:0ee8d402fb06a7cdca57c90a58a7e0440823ba39$$^1358884033$$^Tue Jan 22 21:47:13 2013 +0200$$^Ekrem KAYA$$^eka7a$$^Default invoice prefix has been changed
+|/  
+|   INV-2012-00 -> INV-2013-00
+|  
+* NEWCOMMIT:e77ae55b88f06c65092b693100b5cb0c9a72fbbd$$^1358607874$$^Sat Jan 19 23:04:34 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^klarna fix and filter category change
+|  
+* NEWCOMMIT:7bea06c9370625f1ee1a4f68922850e6c8ddaff2$$^1358500805$$^Fri Jan 18 17:20:05 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^more klarna work done
+|  
+* NEWCOMMIT:1898be7b7311838e56d49c1f10b618b7247ef44e$$^1358168652$$^Mon Jan 14 21:04:12 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^reverted the prices back to 4 decimal places
+|  
+* NEWCOMMIT:f228c080709cfddde65678b38b16eebb04b60604$$^1357779035$$^Thu Jan 10 08:50:35 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^just updated all prices from decimal(15,4) to decimal(15,8).
+| 
+| really not sure if this is going to cause errors though.
+|  
+* NEWCOMMIT:08929d316b9bea164c708ac706a6cfdc34fd4191$$^1357283233$$^Fri Jan 4 15:07:13 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^more customer field work done
+|  
+* NEWCOMMIT:d8ea5cbc98ffe38e2d3c0207f30b6c95b6980888$$^1357264153$$^Fri Jan 4 03:49:13 2013 +0200$$^Haydar Kulekci$$^haydar.kulekci@reformo.net$$^added resize_type to default installed modules on sql
+|  
+* NEWCOMMIT:9d7834996f118f69d0cd07911ccf800dae18bab8$$^1357232003$$^Fri Jan 4 00:53:23 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^klarna sql fix
+|  
+* NEWCOMMIT:dafc51677dc4bef18b1090d6a9937e9574a80bf6$$^1357221079$$^Thu Jan 3 21:51:19 2013 +0800$$^Daniel$$^webmaster@opencart.com$$^klarna sql update
+|  
+* NEWCOMMIT:fb7fdd71ec7edbf6499369f83e350a67dcb2c446$$^1356595320$$^Thu Dec 27 10:02:00 2012 +0200$$^Haydar Kulekci$$^haydar.kulekci@reformo.net$$^"Notice: unserialize(): Error at offset 2742 of 7368 bytes in " notice fixed
+| sale/customer_ban_ip permissions length is changed from 23 to 20
+|  
+* NEWCOMMIT:6f661d0fb33d989b80c88b1eceb95ed960ed6052$$^1356581856$$^Thu Dec 27 12:17:36 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^more upgrade script done. nearly complete.
+|  
+* NEWCOMMIT:b399417c78ecd7476042bbc22141bbf787914662$$^1356516717$$^Wed Dec 26 18:11:57 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^renamed the blacklist table to ban_ip
+|  
+* NEWCOMMIT:972deababf39f97336c4573a52658b8b73ebf11e$$^1356265761$$^Sun Dec 23 20:29:21 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^added a filed in the admin settings page to let the user decided which mimie types can be uploaded.
+| 
+| also done more work on the upgrade script. nearly finished.
+|  
+* NEWCOMMIT:23e686f6fa7fabfac675290503dc4a87b8c3abbc$$^1355825240$$^Tue Dec 18 18:07:20 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more work done on the upgrade script.
+| 
+| also had to change so of the install sql
+|  
+* NEWCOMMIT:faaf283784f06934a3b241283be55532f91e253d$$^1355804575$$^Tue Dec 18 12:22:55 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated the sql to use ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+|  
+* NEWCOMMIT:f7a0864fca1342b3fab8d1746ea3f2f0271727cf$$^1355764690$$^Tue Dec 18 01:18:10 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^completed more the update script.
+| 
+| also added a little extra security to the options up loader.
+| 
+| updated the sql install fle to remove some unneeded extras.
+|  
+* NEWCOMMIT:c2a7f67bb4af069083f4cf009492c3a62c7ae1be$$^1355589626$$^Sun Dec 16 00:40:26 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^db table for the custom fields setup
+|  
+* NEWCOMMIT:d52bd7968febf1f00c1aaabc4a5d2b6cc91e852a$$^1355544856$$^Sat Dec 15 12:14:16 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^added an customer history system
+|  
+* NEWCOMMIT:a4e0d0222acbb743d7f697cd6470803b1ffec4cc$$^1355496034$$^Fri Dec 14 22:40:34 2012 +0800$$^Daniel$$^webmaster@opencart.com$$^fix for On fresh install creates db table oc_coupon_category instead of DBPREFIX_coupon_category
+|  
+* NEWCOMMIT:f5366a4b1a9a9c6e751224d533077649ebdab341$$^1355439526$$^Thu Dec 13 22:58:46 2012 +0000$$^John Sheppard$$^john@addevelopments.com$$^Added some of the newer countries and fixes
+| 
+| Netherlands Antilles (AN) has been split in to new countries but has
+| been left in for compatibility with some shippers. Probably needs
+| removing in the future.
+| 
+| Canary Islands (IC) has been added despite not being a official code
+| only reserved. The 3 letter code ICA is not official or reserved. Canary
+| Islands (IC) is used by shippers and although part of Spain is not part
+| EU VAT region so can not be under ES.
+| 
+| Isle of Mann (IM), although a country, has been added under the United
+| Kingdom as it shares the EU VAT prefix GB and VAT numbers with the
+| United kingdom. It also shares postcodes and shippers treat as part of
+| GB. Probably needs adding as a county in the future and translating IM
+| to GB in the shipping modules and VAT validation.
+|  
+* NEWCOMMIT:6210dcabf25b790acb8837f2c6105557c3ab781a$$^1355383912$$^Thu Dec 13 15:31:52 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more of the opencart upgrade script done
+|  
+* NEWCOMMIT:f1b6b6b792d84a86cebcba258065779affcb84fb$$^1355066290$$^Sun Dec 9 23:18:10 2012 +0800$$^opencart$$^webmater@opencart.com$$^filter sql update
+|  
+* NEWCOMMIT:cca0286fc1aa292e5aac02dfb3559efce739bb14$$^1354983617$$^Sun Dec 9 00:20:17 2012 +0800$$^opencart$$^webmaster@opencart.com$$^more code added to the product filter feature. nearly finished.
+|  
+* NEWCOMMIT:d69cdc2e1a2ba7d4f438cb8c13a73c9648207674$$^1354714802$$^Wed Dec 5 15:40:02 2012 +0200$$^Haydar Kulekci$$^haydar.kulekci@reformo.net$$^added to Top Administrator Group catalog/filter permission
+|  
+* NEWCOMMIT:61971b11f995cc8fab7289051f59f061db6441ec$$^1354589890$$^Tue Dec 4 10:58:10 2012 +0800$$^opencart$$^webmaster@opencart.com$$^fixed Double setting_id (128) in opencart.sql
+|  
+* NEWCOMMIT:ec85682429742378879a82a72986449e855801ab$$^1354547184$$^Mon Dec 3 23:06:24 2012 +0800$$^opencart$$^webmaster@opencart.com$$^near finished the updated category system
+|  
+* NEWCOMMIT:8bdeee7ee30d1dfcf731aebfe05880ca9c103bcb$$^1354441892$$^Sun Dec 2 17:51:32 2012 +0800$$^opencart$$^webmater@opencart.com$$^more category optimization done
+|  
+* NEWCOMMIT:d715d79089c523c7681a7d187ee308795139f900$$^1354439544$$^Sun Dec 2 17:12:24 2012 +0800$$^opencart$$^webmater@opencart.com$$^updated the category system to use Hierarchical Data Closure Table Pattern
+|  
+* NEWCOMMIT:07a605a8185e8daddaadf462a79d6442dd73e331$$^1354253034$$^Fri Nov 30 13:23:54 2012 +0800$$^opencart$$^webmater@opencart.com$$^a fix for http://www.slideshare.net/DefconRussia/reutov-yunusov-nagibin-random-numbers-take-ii
+|  
+* NEWCOMMIT:6eff6d0f087d9b6a49a71bdd000bbdbf5a58848e$$^1353402218$$^Tue Nov 20 03:03:38 2012 -0600$$^rph$$^opencarthelp@gmail.com$$^Missing layout_route entry for sitemap
+* NEWCOMMIT:bb3fa99ab7e55ae9b9cb688d7bd1fde5a3497acf$$^1350003218$$^Fri Oct 12 13:53:38 2012 +1300$$^Bob Brown$$^bob@turboweb.co.nz$$^Correct spelling of Wairarapa (ref http://en.wikipedia.org/wiki/Wairarapa)
+|  
+* NEWCOMMIT:b22c8633f77d8b3c6f5232d5791971a7d4b12050$$^1348848887$$^Sat Sep 29 00:14:47 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix for SQL - product_id AUTO_INCREMENT in oc_product_description
+|  
+* NEWCOMMIT:99c76b5e9cfb5440f41ea84aa42eea35dbafbfca$$^1348502526$$^Tue Sep 25 00:02:06 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^just committing unfinished work
+|  
+* NEWCOMMIT:6ed2f355cc324f08d89ce5219c6ebd1e04981901$$^1348137450$$^Thu Sep 20 18:37:30 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more of the nest model for categories done
+|  
+* NEWCOMMIT:8520adc6053ef5893595c21575d155c50d5621e7$$^1347205032$$^Sun Sep 9 23:37:12 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^more work done on the filter system.
+| 
+| added the sql entries
+| added the language translations when adding a new language
+|  
+* NEWCOMMIT:e5207211adc6628c06c3aada8b9fe765720410ae$$^1346873075$$^Wed Sep 5 22:24:35 2012 +0300$$^rokdazone$$^jocke@ljungh.se$$^Update upload/install/opencart.sql
+| 
+| Correct Swedish address format
+* NEWCOMMIT:c2afb9355007e83150cc96e2479051a235eefdb6$$^1346557985$$^Sat Sep 1 20:53:05 2012 -0700$$^opencart$$^webmaster@opencart.com$$^add a db entry for known web crawlers in the settings
+|  
+* NEWCOMMIT:61bea34713aa6b6eeab15e07257fb2a41e939282$$^1346556353$$^Sat Sep 1 20:25:53 2012 -0700$$^opencart$$^webmaster@opencart.com$$^updated the shared sessions to not work with web crawlers
+|  
+* NEWCOMMIT:ccddcedcf19d209a952b82832d567b8af9778397$$^1346487959$$^Sat Sep 1 01:25:59 2012 -0700$$^opencart$$^webmaster@opencart.com$$^added the ability to use shared ssl.
+|  
+* NEWCOMMIT:8f77a677e2326ed834128d15cc9eab1058d7b2e4$$^1346394698$$^Fri Aug 31 09:31:38 2012 +0300$$^devtsit$$^development@ts-it-service.de$$^Update upload/install/opencart.sql
+* NEWCOMMIT:d42d2757e18a7510b01d60c12e56fac52777abfa$$^1346344444$$^Thu Aug 30 17:34:04 2012 +0100$$^John Sheppard$$^john@addevelopments.com$$^More country and zone updates
+|  
+* NEWCOMMIT:d779ae4d39aeebef30bbcabded8ec4a36d6bb36a$$^1346314380$$^Thu Aug 30 01:13:00 2012 -0700$$^opencart$$^webmaster@opencart.com$$^updating the system so images are on the same server when using multi store. also updating the system so shared ssl can be used. should be helpful to people who don't want to buy a new ssl cert for each domain
+|  
+* NEWCOMMIT:0d2e01c3692092e7ca774c9cb714dc690445592b$$^1346047283$$^Mon Aug 27 09:01:23 2012 +0300$$^devtsit$$^development@ts-it-service.de$$^"Reset your password" at admin not working
+* NEWCOMMIT:42d374bab2b7471d0f834f66f19071a2683ba94d$$^1345740435$$^Thu Aug 23 17:47:15 2012 +0100$$^John Sheppard$$^john@addevelopments.com$$^Added Montenegro and Serbia and some fixes
+|  
+* NEWCOMMIT:03152975b981401d4d5bb167eaafbdec52fed9ae$$^1345720851$$^Thu Aug 23 08:20:51 2012 -0300$$^juliao$$^juliao.gf@gmail.com$$^Update upload/install/opencart.sql
+| 
+| Added accent in some states from Brazil, now the names are ok.
+* NEWCOMMIT:fef34e1cbf735403938785cf1d9e22fffc6a793c$$^1345488827$$^Mon Aug 20 19:53:47 2012 +0100$$^John Sheppard$$^john@addevelopments.com$$^Add Jersey and Guernsey and some fixes
+|  
+* NEWCOMMIT:4ed7e9aedaa2f1c370508a016ab23e7600eea0a3$$^1344933477$$^Tue Aug 14 16:37:57 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^some of the upgrade script done
+|  
+* NEWCOMMIT:7a26a8ed055c8ce08f0aafe3303e06aacd0f45e1$$^1344874065$$^Tue Aug 14 00:07:45 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^password length update for user
+|  
+* NEWCOMMIT:0a4b374a4ca9d4c0ede02026eeeb846532fe197e$$^1344869717$$^Mon Aug 13 22:55:17 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^fix a issue with merged sql code
+|    
+*   NEWCOMMIT:4f99d4b08364c89492d343d8e65df9fb6eeb0e2b$$^1344866445$$^Mon Aug 13 22:00:45 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^Merge branch 'master' of https://github.com/opencart/opencart
+|\  
+| |   
+| * NEWCOMMIT:5f1ccd79a3a3190ec040320383975506cabf94f7$$^1344864251$$^Mon Aug 13 17:54:11 2012 +0430$$^aa100$$^kokoko.opg@gmail.com$$^Update upload/install/opencart.sql
+| | 
+| | new state in iran
+| * NEWCOMMIT:23a5cac2144ac5af4fe7291f92188940a6f7949d$$^1344723662$$^Sun Aug 12 01:21:02 2012 +0300$$^Andreas Tangemann$$^a.tangemann@web.de$$^Update upload/install/opencart.sql
+| | 
+| | Postcode for Germany is required
+* | NEWCOMMIT:e5cf1a2c26d349558a9a7a9db67ba842b96fde51$$^1344700758$$^Sat Aug 11 23:59:18 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^sql update
+|/  
+|  
+* NEWCOMMIT:406f87f39e6ebce29a1f75f27ca0cb1cb8fbe751$$^1344597033$$^Fri Aug 10 19:10:33 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^starting to add salt
+|  
+* NEWCOMMIT:966f68a0865fefcfb01ab918a40fff5cfe7f26e0$$^1344106890$$^Sat Aug 4 22:01:30 2012 +0300$$^Ekrem KAYA$$^webmaster@e-piksel.com$$^Update upload/install/opencart.sql
+| 
+| Top Administrator You do not have permission to access for Klarna, fedex, auspost and customer online
+* NEWCOMMIT:7a49315fd06053ea25ffab0f7435fcd61af3f0c8$$^1343218320$$^Wed Jul 25 15:12:00 2012 +0300$$^prof-web-coding$$^prof.web.coding@gmail.com$$^Update upload/install/opencart.sql
+| 
+| Missing ip length changes
+* NEWCOMMIT:daa2ed156d59594d62d15f84874243df3e640ba1$$^1343135708$$^Tue Jul 24 21:15:08 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^ip filed uip to account for ipv6
+|  
+* NEWCOMMIT:1c614d50c1a02b9763d9dbbfca60b381161f9bb8$$^1343054421$$^Mon Jul 23 22:40:21 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^added additional product code fields
+|  
+* NEWCOMMIT:e4b92328e7af7dbd67b1c43b800f4923be5a174b$$^1343052759$$^Mon Jul 23 22:12:39 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^mismatched limits in the database fix
+|  
+* NEWCOMMIT:dff7c2ec0a22e3d9028d067baadc00e98c768b51$$^1343018521$$^Mon Jul 23 12:42:01 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^latest code
+|  
+* NEWCOMMIT:98a533e867301d078545428bfffc0111f5175d0c$$^1340381450$$^Sat Jun 23 00:10:50 2012 +0800$$^Daniel Kerr$$^webmaster@opencart.com$$^updated to the latest version
+| 
+| updated to the latest version
+|  
+* NEWCOMMIT:dd3db6828540d6cdb37f05c16a5319a324707184$$^1311480397$$^Sun Jul 24 04:06:37 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:e7fa8a87716e40f0d386c79b0aa433ca2c3dd0f1$$^1311348729$$^Fri Jul 22 15:32:09 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^updated sql file to remove redundant data
+|  
+* NEWCOMMIT:3e5785233295f0415cb7c9c75aabb51c0973fb1e$$^1311073062$$^Tue Jul 19 10:57:42 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^removed redundant data
+|  
+* NEWCOMMIT:f34617f0e4af001ce6f63d35681301087361306c$$^1311011574$$^Mon Jul 18 17:52:54 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:933fb447a3cdf4c796f4a160bd1386db25841d7b$$^1310835774$$^Sat Jul 16 17:02:54 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:aba59ff1438a11aea83f5776cc3d36fc1b84c122$$^1309789238$$^Mon Jul 4 14:20:38 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^removed redundant data from the zone to geo zone table
+|  
+* NEWCOMMIT:ca7b67b6b3ec7eff4a8aebf76de4dce13a8b7460$$^1309620135$$^Sat Jul 2 15:22:15 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:7e9d1c556ea668cf6d4e570f61639893bc8dd094$$^1309618648$$^Sat Jul 2 14:57:28 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^removing some redundant data.
+|  
+* NEWCOMMIT:379623bc8521563d22aab3da945608e964ed2126$$^1309618531$$^Sat Jul 2 14:55:31 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:b2b4780442b7ba808e018011b576e58503180fd0$$^1309618117$$^Sat Jul 2 14:48:37 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Poor Data Type Choice in Database fix
+|  
+* NEWCOMMIT:3ebfdc4aaa08d48ef44b99dd8b4566b9aedac8ed$$^1307278299$$^Sun Jun 5 12:51:39 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:1f7cf57c4c5e13be799d997a645f0b304796a915$$^1306778226$$^Mon May 30 17:57:06 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:dacedfbc22b09c3c27b725cafd9d068aa2a2d563$$^1306384114$$^Thu May 26 04:28:34 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^updated the sql file. shoudl get rid of a problem when copying products.
+|  
+* NEWCOMMIT:5d183e5a36db7fcf19263e42201bbda7964a6166$$^1306252813$$^Tue May 24 16:00:13 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:01e264c33923f745117f9690b0a1f7d2ec7454e4$$^1306242787$$^Tue May 24 13:13:07 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:f021f29b93b0421974e0a6b70d489b96edaa438b$$^1306242594$$^Tue May 24 13:09:54 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:2d6d87b70a817e9f2084c52350724ca2f46834cd$$^1306160795$$^Mon May 23 14:26:35 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:8690d9175de49149733d46d88de16e53a38927b1$$^1305264403$$^Fri May 13 05:26:43 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:bb50223e3729d00aa9e71a351307b818a2922f9c$$^1305005407$$^Tue May 10 05:30:07 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:4a01d1e4b40c9ffb0c1e9b172d936414071c3a85$$^1304787950$$^Sat May 7 17:05:50 2011 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^- Added Max Qty to products
+|  
+* NEWCOMMIT:52068790652f7dd15ab49c24f5952237a90b570d$$^1304094671$$^Fri Apr 29 16:31:11 2011 +0000$$^blueyon@gmail.com$$^blueyon@gmail.com@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:28fcacd6a10f71846862db739856a66a6e7bc8d2$$^1304007481$$^Thu Apr 28 16:18:01 2011 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Issues 212, 226 and some style improvements for category
+| 
+|  
+* NEWCOMMIT:60827089ecea70dc599f830e0f4f87cabc0113d3$$^1303916686$$^Wed Apr 27 15:04:46 2011 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^First 1.5.0 version pushed to trunk. 
+| Old 1.4.x files that are not included with 1.5.0 cleaned up
+| Also includes fixes for sql statements using option and return without backticks
+|  
+* NEWCOMMIT:0cdfa5c24a4ac203b05128c8f97debf6c00671bc$$^1303880377$$^Wed Apr 27 04:59:37 2011 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^merged branch into trunk to reset the branch point before checking 1.5.0 into trunk
+|  
+* NEWCOMMIT:aed4ab661b5613dbd02951855c0a1db1d5874ccf$$^1290311335$$^Sun Nov 21 03:48:55 2010 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Additional fixes after 1.4.9.2
+| Some enhancements for currency library
+|  
+* NEWCOMMIT:166fb1dc283307d1cfd5cecd68cc9e5ff4f2ee82$$^1288139094$$^Wed Oct 27 00:24:54 2010 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^- Additional bug fixes for v1.4.9.2 patch
+| --- default customer address fix
+| --- usps had references to "ups" fix
+| --- Added Cumbria (code CMA) to zone table
+| --- search href urlencoding error
+| --- csrf rand fix
+|  
+* NEWCOMMIT:f743052e65686c637989c36027d5341a1c703598$$^1282938855$$^Fri Aug 27 19:54:15 2010 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.4.9 Final
+|  
+* NEWCOMMIT:8bf06abcb84fefb16d391f6940b4dfa8813b06df$$^1275494700$$^Wed Jun 2 16:05:00 2010 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.8 sql changes
+|  
+* NEWCOMMIT:aae85aa74a6f37fe74f989191b163cf4a388d914$$^1275492351$$^Wed Jun 2 15:25:51 2010 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Checking in 99% of 1.4.8. Only thing not here is new paypal and Admin order edit/entry. Daniel needs to add token stuff to admin
+|  
+* NEWCOMMIT:57219832a93c0904b93243d1263b03d9d5db2f36$$^1270963400$$^Sun Apr 11 05:23:20 2010 +0000$$^qphoria$$^qphoria@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.7
+|  
+* NEWCOMMIT:7a10a5c5e49658c3ff2981994f7df7d1facefebd$$^1269876626$$^Mon Mar 29 15:30:26 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.6
+|  
+* NEWCOMMIT:1c413c39d3825c744950e790b5e9e7f62be22028$$^1269721303$$^Sat Mar 27 20:21:43 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.5
+|  
+* NEWCOMMIT:4881fb5c2949ef978af2daa06664683dc7dd4b13$$^1268676441$$^Mon Mar 15 18:07:21 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.4
+|  
+* NEWCOMMIT:919fdfd8969ab396582f4eab30d385054265a4f7$$^1268415531$$^Fri Mar 12 17:38:51 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.3
+|  
+* NEWCOMMIT:85236d4f506618dec29b3b7801b68d7cc3dfb609$$^1268142021$$^Tue Mar 9 13:40:21 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:feff16c762473a9cac0fb586c049e4166a8f9a18$$^1268139768$$^Tue Mar 9 13:02:48 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^1.4.0
+|  
+* NEWCOMMIT:0ec1852238a4ddc2e94892c22b399dae198acb18$$^1268134890$$^Tue Mar 9 11:41:30 2010 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:8f19ea75e1abf5baef169e534ba64394439fd39b$$^1257387545$$^Thu Nov 5 02:19:05 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:710037f26c624d7396afe626752a0ab94fb2e1f5$$^1257376170$$^Wed Nov 4 23:09:30 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.3.2
+|  
+* NEWCOMMIT:d4e8a5bacdad055077df57d96d2c6fca4841b5bb$$^1257375862$$^Wed Nov 4 23:04:22 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.3.1
+|  
+* NEWCOMMIT:cacd13641a8b59950ddd077602f29ffdaa191859$$^1248223570$$^Wed Jul 22 00:46:10 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.3.0
+|  
+* NEWCOMMIT:9368273b19a7af631e6a6a9e4d67fcbdd49af299$$^1245377084$$^Fri Jun 19 02:04:44 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.2.9
+|  
+* NEWCOMMIT:77dd5f5aa66fb13f1be3ba832325a31a1e067f74$$^1241730214$$^Thu May 7 21:03:34 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.2.8
+|  
+* NEWCOMMIT:3e666864ae7e0d85be8db05223d8d5475937ec29$$^1241435169$$^Mon May 4 11:06:09 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:c683546d88d5cf0891ebbb365baff963b248f8ba$$^1241391208$$^Sun May 3 22:53:28 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:744f34b3deaecdade164866a8a07da639ade86c8$$^1239235332$$^Thu Apr 9 00:02:12 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.2.6
+|  
+* NEWCOMMIT:626a5ea8492eb158b6dadb3931c6cba5cfe39c61$$^1238121825$$^Fri Mar 27 02:43:45 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.2.5
+|  
+* NEWCOMMIT:1aaf38fd7d05fe1cf09f5c1554f92812776ee816$$^1237857462$$^Tue Mar 24 01:17:42 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^v1.2.4
+|  
+* NEWCOMMIT:42e973e1cfb94243add1f21a56f61e03ab1f4712$$^1237574023$$^Fri Mar 20 18:33:43 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^sql fix
+|  
+* NEWCOMMIT:d84c80e88ec675d2c49437851594f4dfdff2324c$$^1237572808$$^Fri Mar 20 18:13:28 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:87024de80c3096c10994cffdf5094db47ea4de04$$^1237572660$$^Fri Mar 20 18:11:00 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:798073617285de6ea91399597027baa1aecbd5a3$$^1237481892$$^Thu Mar 19 16:58:12 2009 +0000$$^vitaliytv$$^vitaliytv@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Fix error in opencart.sql
+| row #3487 is two different region: Kharkiv, Kherson
+| add row #3842 - Kherson
+|  
+* NEWCOMMIT:b08ad937a511a91278db53a81e5d580e1ec03c4e$$^1237471882$$^Thu Mar 19 14:11:22 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^sql fix
+|  
+* NEWCOMMIT:5ffe1e074fdb07b8b06d64af79e6951b0ff4d2da$$^1237392520$$^Wed Mar 18 16:08:40 2009 +0000$$^vitaliytv$$^vitaliytv@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Small fix in opencart.sql (Ukraine geo zones)
+| row #3491 Kievskaya oblast'
+|  
+* NEWCOMMIT:a237c8a64ad0ea7bd37db65cbbbf790f44bf4ba7$$^1237391769$$^Wed Mar 18 15:56:09 2009 +0000$$^vitaliytv$$^vitaliytv@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^Fix error in opencart.sql
+| row #3487 is two different region: Kharkiv, Kherson
+| add row #3842 - Kherson
+|  
+* NEWCOMMIT:b4f7cfd9208c1ca417f8e61f4019e66673c2cfa1$$^1237253648$$^Tue Mar 17 01:34:08 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:9010b41469cb279fd9e8cc308e11c7b05f9ef856$$^1237248663$$^Tue Mar 17 00:11:03 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:1c42a35df2717cadb2abed761fcd90e37d02b6d6$$^1237218277$$^Mon Mar 16 15:44:37 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:a14537c600adb0b344745c7c69090fd4ec6d0acc$$^1237210053$$^Mon Mar 16 13:27:33 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:47a1bda27fa6836c77c6e3b389bdf30eb5c449b5$$^1237208478$$^Mon Mar 16 13:01:18 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:6523c9579595d1a8a48ca592e0bbd51bebf0e85c$$^1237165325$$^Mon Mar 16 01:02:05 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:b6a5b937d58768e4ca6e0d239f70b93ce9a55e58$$^1237164239$$^Mon Mar 16 00:43:59 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^
+|  
+* NEWCOMMIT:b9542883d77a6188462814cbdf6ba0b250b40d1b$$^1234373148$$^Wed Feb 11 17:25:48 2009 +0000$$^blueyon$$^blueyon@a472ed72-f7c0-11dd-9d1a-b59b2e1864b6$$^

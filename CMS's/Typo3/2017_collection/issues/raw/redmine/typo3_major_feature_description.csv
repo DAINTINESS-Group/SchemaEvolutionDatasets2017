@@ -1,0 +1,63 @@
+#;Project;Tracker;Parent task;Status;Priority;Subject;Author;Assigned To;Updated;Category;Target version;Start date;Due date;Estimated time;% Done;Created;Story points;Velocity based estimate;Position;Remaining (hours);Tags;Description
+31714;TCA Reference;Major Feature;"";Closed;Must have;Update manual for TYPO3 4.6;Francois Suter;Francois Suter;2011-11-21 20:58;"";4.6.0;2011-11-09;"";"";100;2011-11-09 17:57;"";"";354600;"";"";""
+39834;ReST tools;Major Feature;"";Resolved;Should have;"Create Sphinx extension for ""field-list-table"" directive";Martin Bless;Martin Bless;2012-08-20 22:35;"";"TYPO3 TER & typo3.org integ.";2012-08-15;"";"";100;2012-08-15 16:05;"";"";753200;"";"";"Task: Find a solution for the ""table problem""
+=============================================
+
+Writing tables when documenting is generally not easy. ReST has markup constructs named ""simple table""; ""grid table"" and ""csv-table"". None of them really fit our needs as we have big; largely nested tables in our OpenOffice manuals. Often one table cell contains as much text as it makes a complete document elsewhere.
+
+As a possible solution I implemented and proposed an extension to the Docutils (basic ReST tools). Sphinx builds on this and works on top of this. Due to lack of manpower this ""field-list-table"" directive didn't make it into the Docutils core for now and therefore is mostly not available.
+
+Now that we have made a lot of progress with the migration process to ReST in the TYPO3 community we see that rendering will be either done on a TYPO3 server or; if locally as well; always by using Sphinx. That is a good thing; as Sphinx offers an API to hook in Sphinx Extensions.
+
+The current implementation of the ""field-list-table"" directive is entangled with the classes of the Docutils code. But I should be able to change that.
+
+This means:
+I'll try to rewrite the ""field-list-table"" directive as Sphinx extension and make that available in our Python package ""t3sphinx"" which does what the folder name says: ""ExtendingSphinxForTypo3""."
+39835;ReST tools;Major Feature;"";Resolved;Must have;"Improve the ""typo3sphinx"" theme";Martin Bless;Martin Bless;2012-12-07 10:35;"";"TYPO3 TER & typo3.org integ.";2012-08-15;"";"";100;2012-08-15 16:20;"";"";753250;"";"";"Up to now we've been using the ""typo3sphinx"" theme which I hacked together last year. It already looks like TYPO3(.org) in many ways - but not completely. And there are a lot of usability problems with the current HTML output from that theme. See http://preview.docs.typo3.org/TYPO3/ for examples.
+
+So the tasks are:
+- improve the ""typo3sphinx"" theme
+- find a rendering that can be integrated into typo3.org
+
+"
+42162;Core APIs;Major Feature;"";Closed;Must have;New bootstrapping process;Francois Suter;Francois Suter;2013-05-16 23:14;"";6.0;2012-10-19;"";"";100;2012-10-19 09:05;"";"";862850;"";"";"TYPO3's bootstrapping process was radically refactored in version 6.0. Many chapters of Core APIs are affected; in particular the one about global values (Documentation/ApiOverview/GlobalValues/Index.rst)."
+42668;ReST tools;Major Feature;"";Resolved;Should have;NEW: Add t3sphinx.ext.targets Sphinx extension to list :ref:`TARGETS`;Martin Bless;Martin Bless;2012-11-04 14:35;"";"";2012-11-04;"";"";100;2012-11-04 14:06;"";"";887700;"";"";"In our documents we define so called ""labels"" that afterwards serve as symbolic name for link targets in intersphinx linking.
+
+It would be very helpful for editors to see an overview of the labels that are defined in a documentation project.
+
+Here we introduce a new directive which does exactly that. It inserts a list of ref targets into the document. The directive doesn't know any options or parameters:
+
+    .. ref-targets-list::
+
+[Proudly presenting:] This is achieved by the Sphinx extension 't3sphinx.ext.targets'. It is included automatically due to GlobalSettings.py. To achieve that at home you have to reinstall 't3sphinx':
+
+    $ git clone git://git.typo3.org/Documentation/RestTools.git
+    $ cd ..../ExtendingSphinxForTYPO3
+    $ python setup.py install
+
+Note:
+I hope I've understood the inner working of Sphinx well enough and everything works as expected. If not - let me know in this bug tracker!
+
+"
+45059;FAL Documentation;Major Feature;"";New;Must have;Missing FAL documentation for extension devs;Patrick Crausaz;"";2013-11-10 15:06;"";"";2013-02-01;"";"";0;2013-02-01 07:57;"";"";1005200;"";"";"Documentation for developper says:
+
+""This chapter explains the principles on how to use FAL in your extension and also inside the TYPO3 Core. Additionally; it provides some useful examples for common use-cases.""
+(http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/Developers/UsingFal/Index.html)
+
+However; the chapter is empty. Not to be expected that ext devs could make their extensions FAL compatible without documentation."
+45060;FAL Documentation;Major Feature;"";Closed;Must have;Missing FAL documentation;Patrick Crausaz;"";2016-08-06 13:44;"";"";2013-02-01;"";"";0;2013-02-01 08:03;"";"";1005250;"";"";"Official documentation has a lot of ""ToDo"" instead of documentation:
+
+foobar: http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/stable/Developers/Architecture/DatabaseStructure/
+FIXME: http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/Developers/Api/Storage/Index.html (by General API & Folder API)
+...: http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/Developers/Api/Storage/Index.html
+TODO: Write: http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/Administrators/Introduction/Index.html (by User Permission & Indexing)
+
+Fal was released with v6 and now ext devs should make their extensions compatible. But there is no documentation availlable.
+"
+46368;Core APIs;Major Feature;"";Closed;Must have;Use namespaces;Francois Suter;Francois Suter;2013-05-16 23:13;"";6.0;2013-03-16;"";"";100;2013-03-16 18:58;"";"";1069600;"";"";Use the new namespaced class names for all classes mentioned in the manual.
+59861;Templating Tutorial;Major Feature;"";Closed;Should have;doc_tut_templating extension can't be installed on 6.2.x;XIA IT Support;"";2014-06-25 08:31;"";"";2014-06-25;"";"";0;2014-06-25 08:18;"";"";1736400;"";"";"The maximum version for the doc_tut_templating extension is set to 6.1.99; which means it can't be installed on 6.2.x."
+12618;Core APIs;Major Feature;"";Closed;Should have;Move TCA reference to doc_core_tca;Francois Suter;Francois Suter;2012-03-23 14:24;"";4.3.1;2011-01-28;"";"";100;2011-01-28 15:38;"";"";2858900;"";"";Move the reference to $TCA to its own manual.
+25953;TCA Reference;Major Feature;"";Closed;Should have;"Review all code examples in ""ctrl"" section";Francois Suter;Francois Suter;2011-10-30 19:49;"";4.5.0;2011-04-13;"";"";100;2011-04-13 20:22;"";"";2894150;"";"";"All code examples from the manual should come either from the Core or from the ""examples"" extension.
+
+Examples already from the Core should be reviewed to ensure that they are up to date."
+12603;TCA Reference;Major Feature;"";Closed;Should have;Import content from Core API;Francois Suter;Francois Suter;2011-10-30 19:49;"";4.5.0;2011-01-28;"";"";100;2011-01-28 11:03;"";"";2894250;"";"";""

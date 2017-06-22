@@ -1,0 +1,1093 @@
+sha$~date$~humanDate$~author$~authormail$~commitText$~branches
+dca0d260fdd9b8dd6fded57baebfd600519ffbfb$~1065192910$~Fri Oct 3 14:55:10 2003 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Initial revision   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@20 709f56b5-9817-0410-a4d7-c38de5d9e867
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-6,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+5c9ce08c465a09a2e2746d7c43ae61575f47934f$~1067188064$~Sun Oct 26 17:07:44 2003 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Added $Id$ keywords, cleaned up comment tags /  
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@48 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+63109f0d866d2a23ddf0d110841788dc0e3383fa$~1071846006$~Fri Dec 19 15:00:06 2003 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag /  'Root_AuthServices'.
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/Root_AuthServices@84 709f56b5-9817-0410-a4d7-c38de5d9e867
+  
+"$~
+50c19cf117bf3021917fe4fb726938dd78a7a649$~1079968597$~Mon Mar 22 15:16:37 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"*** empty log message ***   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@138 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+709c42e983951df98377401296fde2ab4de8f03a$~1080033253$~Tue Mar 23 09:14:13 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"   * Added a checkbox for be-users to disable IP locking. This is useful if you have backend users complaining about being thrown off sessions.
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@144 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+172aeaedb5f8fdeb7b1d268362d93b8cfec2e672$~1082715510$~Fri Apr 23 10:18:30 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"   * Added to user authentication that the HTTP_USER_AGENT is hashed and a part of the session lookup (in other words, if the HTTP_USER_AGENT stays constant the session stays as well). Also added possibility of configuring that the IP adresse used to lock down sessions is only part 1,2,3 or 4 (all) used. Mainly this is easily configurable for frontend users (which has had the security level set to 2 now instead of disabled totally!). For backend users I didn't make configuration options in TYPO3_CONF_VARS - just wanted to know if people needed it there first (not to bloat options....)
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@218 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+aaaa5dc1d5052e9fbe2d0e125c6b2d303826cb62$~1083016726$~Mon Apr 26 21:58:46 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag /  'TYPO3_3-6-0RC2'.
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-6-0RC2@245 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~
+337cb845d1bf2a8c15fb3989b7b7198e895b7b96$~1083016726$~Mon Apr 26 21:58:46 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create branch 'TYPO3_3-6-0'.   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_3-6-0@244 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~  remotes/origin/TYPO3_3-6,
+8505c64c541d35df759bcb90c44d8e2980f136a1$~1083243605$~Thu Apr 29 13:00:05 2004 +0000$~Robert Lemke$~robert.lemke@typo3.org$~"* Resolved bug #0000031:   * Moved table definition for cache_imagesizes from sysext/cms/ext_tables.sql to stddb/tables.sql
+  * Removed Clear All Cache for cache_imagesizes in t3lib_tcemain::clear_cacheCmd
+  * Added new section Clean up database in the install tool. This is used for clearing the cached image sizes
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_3-6-0@261 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~  remotes/origin/TYPO3_3-6,
+2b7bdef9e70a78203d0edef9a2a5ad3b8985ef64$~1083328733$~Fri Apr 30 12:38:53 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"   * Merged TYPO3_3-6-0 branch changes by robert into HEAD. See 3.6.0 branch change log if you want.
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@265 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+5b7456dc16350b663331bb2d5ba13dc0669de9c7$~1083348537$~Fri Apr 30 18:08:57 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag /  'TYPO3_3-6-0FINAL'.
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-6-0FINAL@275 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~
+94c56bffccf11ded59e0b105198f9c3afe8f3f96$~1084267607$~Tue May 11 09:26:47 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag 'TYPO3_3-6-1'. /  
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-6-1@285 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~
+2f253bcab3deee5ad59144c3abb3638281e11ff8$~1086679320$~Tue Jun 8 07:22:00 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"More CSH content added   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@346 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+c135372822f803273eafebb6ffea63e77d167759$~1089660334$~Mon Jul 12 19:25:34 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag 'TYPO3_3-6-2'.  /  
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-6-2@412 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~
+7ce1e3f0431720f1a419da2d8bb05ae608296294$~1091914059$~Sat Aug 7 21:27:39 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Various; 3 new access control modes; CSH changes; moving sys_language to core (see changelog for details).   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@427 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+c646378f704b1254a8e01ec59bbd45f4212dc786$~1093298597$~Mon Aug 23 22:03:17 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Implemented versioning API, phase 1 (tcemain). See changelog   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@439 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-7,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+89d35bbc97825ceb1a794372f30166e11043f0cc$~1095625030$~Sun Sep 19 20:17:10 2004 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"See ChangeLog    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_3-7@485 709f56b5-9817-0410-a4d7-c38de5d9e867
+        
+"$~  remotes/origin/TYPO3_3-7,
+18305fbeef0affecf4fd3a867c48d9425092119d$~1095636361$~Sun Sep 19 23:26:01 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag  /  'TYPO3_3-7-0RC2'.
+/   
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-7-0RC2@492 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~
+1a6cb95f9c502518a0ad449538f6e92cb80a036f$~1095984700$~Fri Sep 24 00:11:40 2004 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag 'TYPO3_3-7-0'.  /  
+/   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-7-0@494 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~
+cd4a54f595c99bad3870d5b04f2f52bf0559cd09$~1100515748$~Mon Nov 15 10:49:08 2004 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"  /  * Merged all changes from TYPO3_3-7 branch
+/   * Changed to version 3.8.0-dev
+    
+    
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@498 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+dd48fe38042631b1b3f4ed814dedb49e02eb979e$~1106395395$~Sat Jan 22 12:03:15 2005 +0000$~Ingmar Schlecht$~ingmar.schlecht@typo3.org$~"* Fixed bug #0000668: Removed spurious comma (,) from pages table definition in t3lib/stddb/tables.sql    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@539 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+94c9df7edcf6c9221f95e908e7dd19417655a34b$~1112800758$~Wed Apr 6 15:19:18 2005 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Removed unsigned attributes from .sql files in the core, plus added features to the install tool. Please check changelog for more info.    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@607 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+9feaf62e535e5d7170ad849566eafe4a272a02ff$~1113773932$~Sun Apr 17 21:38:52 2005 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"* Changed the size of ses_ip_lock fields to 39 (needed for storing IPv6 addresses)    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@645 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+e4bc51ebcde87494dd7ff3e53ad792e5904bc729$~1114595876$~Wed Apr 27 09:57:56 2005 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"See changelog    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@670 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_3-8,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+a50559d751f8eea5f082af627693093f995fc2df$~1116689287$~Sat May 21 15:28:07 2005 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag 'TYPO3_3-7-1'.   /  
+     git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_3-7-1@747 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~
+5a8b7e67614b9e2a37ad6e69a2e4aac4b132f3c9$~1128427400$~Tue Oct 4 12:03:20 2005 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Added initial support for workspaces in core.   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@809 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+87aebac90cd2609ed0520b75b490853fb0d1432b$~1130319523$~Wed Oct 26 09:38:43 2005 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"   * Implemented additional, simple API for logging to sys_log plus extended the sys-log with workspace awareness.
+  * Implemented more workspace related features. In particular scripts like t3lib_tcemain and t3lib_userauthgroup have been heavily modified!
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@828 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+f532fa6564a8a0e0d538ac90bae469a3a2f91cec$~1130527082$~Fri Oct 28 19:18:02 2005 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Best of today...   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@831 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+f2e3b554abe86306a5736a3fe31acb121ca37cac$~1131824300$~Sat Nov 12 19:38:20 2005 +0000$~Sebastian Kurfürst$~sebastian.kurfuerst@typo3.org$~"2005-11-12  Sebastian Kurfuerst  <sebastian@garbage-group.de>   
+  	* New feature 1573: switch back to admin user after user switch
+  (SU-mode)
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@859 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+1ca71b59eec60b1e5c912819e5cb498f5b451ab8$~1134829582$~Sat Dec 17 14:26:22 2005 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"   * Added reference index table and class. See mail sent to Dev-list
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@915 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-0,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+27b6e9bd7a6c166999bdbb26e59a8ced0af1fe5a$~1137201029$~Sat Jan 14 01:10:29 2006 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"* Fixed bug #2102: PHP-Warning in the shortcut frame  /  * Remove <label> tags around hidden fields in FORM elements
+/   * Removed depencency of typo3conf/database.sql: The file contents are now calculated automatically.
+    
+    
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-0@1005 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-0,
+6d50c45b6807af0f0871a245d26e5e1d5b7fbc31$~1137718186$~Fri Jan 20 00:49:46 2006 +0000$~Andreas Otto$~andreas.otto@dkd.de$~"This commit was manufactured by cvs2svn to create tag  /  'TYPO3_4-0-0beta2'.
+/   
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/tags/TYPO3_4-0-0beta2@1064 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~
+57cd402cbedf2770970529543901b717b37f59c2$~1138359273$~Fri Jan 27 10:54:33 2006 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"See changelog!    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-0@1090 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-0,
+db7c5ca226a15af7860c1e45f73543d2bcb599bf$~1139939030$~Tue Feb 14 17:43:50 2006 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Versioning Swapping without changing IDs + ADMCMD_prev completed.    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-0@1160 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-0,
+0c34dac08605ba275d4ebe4fac7c642b8125f729$~1144661235$~Mon Apr 10 09:27:15 2006 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"	* Merging all changes from TYPO3_4-0 branch back into HEAD   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1421 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+df7c06be81843a9eac7c154c145d217a97bdf296$~1151493946$~Wed Jun 28 11:25:46 2006 +0000$~Karsten Dambekalns$~karsten.dambekalns@typo3.org$~"Changed be_users.lang to VARCHAR instead of CHAR, as MySQL changes it anyway.    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-0@1542 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-0,
+82e37403de0db177e214374f7c37f271a1134180$~1151493952$~Wed Jun 28 11:25:52 2006 +0000$~Karsten Dambekalns$~karsten.dambekalns@typo3.org$~"Changed be_users.lang to VARCHAR instead of CHAR, as MySQL changes it anyway.   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1543 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+9c09d48bd08332b790f57f10059b790e2264046a$~1157065736$~Thu Aug 31 23:08:56 2006 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"            * Fixed bug: Creation of sys_refindex table was not possible if [SYS][multiplyDBfieldSize] was set.
+           * Indexed Search: Fixed bug #3994: OpenOffice.org files cannot be indexed by class.external_parser.php
+           * Indexed Search: Fixed bug #4093: PHP warning if indexed_search search word contains a front slash
+   
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-0@1708 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-0,
+562ef3a911d91b7351b6fcaa27da2e4811c13d9d$~1157065759$~Thu Aug 31 23:09:19 2006 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"           * Fixed bug: Creation of sys_refindex table was not possible if [SYS][multiplyDBfieldSize] was set.
+          * Indexed Search: Fixed bug #3994: OpenOffice.org files cannot be indexed by class.external_parser.php
+          * Indexed Search: Fixed bug #4093: PHP warning if indexed_search search word contains a front slash
+          * Get rid of blob fields in TYPO3 databases (replaced with text fields)
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1709 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+2c19ea33163dd37dad881ee0b977e567b0b72625$~1161772027$~Wed Oct 25 10:27:07 2006 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1770 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+4d8d0a87ec7c5ad913e4a54124cfe0e79c31aa25$~1163711918$~Thu Nov 16 21:18:38 2006 +0000$~Martin Kutschker$~martin.t.kutschker@blackbox.net$~"Add an index prefix to Mysql key definitions when (var)chars are changed to text when multiplyDBfieldSize is set and reverted change to key of sys_refindex on 2006-09-01    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-0@1793 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-0,
+ada990f52d81fa9a8203ff2926966d9652ca5994$~1163712797$~Thu Nov 16 21:33:17 2006 +0000$~Martin Kutschker$~martin.t.kutschker@blackbox.net$~"Add an index prefix to Mysql key definitions when (var)chars are changed to text when multiplyDBfieldSize is set and reverted change to key of sys_refindex on 2006-09-01   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1794 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+f0b58ca4b3025bfb2a07290e1e299fc5cb09cd46$~1165163203$~Sun Dec 3 16:26:43 2006 +0000$~Ingmar Schlecht$~ingmar.schlecht@typo3.org$~"Increase length for titles of be_users, be_groups, and fe_groups   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1843 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+5f07c11454228d3926b191f5c1e67457cfbb98e6$~1165924672$~Tue Dec 12 11:57:52 2006 +0000$~Karsten Dambekalns$~karsten.dambekalns@typo3.org$~"The EM now stores the list of extensions from TER in the database, see http://bugs.typo3.org/view.php?id=2615   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1869 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+01f8a59e0b31ee55287dbca92b93cdb909d2d261$~1166181255$~Fri Dec 15 11:14:15 2006 +0000$~Karsten Dambekalns$~karsten.dambekalns@typo3.org$~"Fixed bug #4648 (Install tool always displays ALTER TABLE cache_extensions) by removing a space character.   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1883 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+20c97c7c8ab6efcda95481e9164fc4452ffcec98$~1167900371$~Thu Jan 4 08:46:11 2007 +0000$~Dmitry Dulepov$~dmitry.dulepov@gmail.com$~"(forgotten file) Fixed: publishing many records may cause PHP timeout and leave workspace in half-published state   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1897 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+2dd1eae8f77b03fb6df77d84e21ad1774b65d7d0$~1170058443$~Mon Jan 29 08:14:03 2007 +0000$~Dmitry Dulepov$~dmitry.dulepov@gmail.com$~"!!! Changed MySQL engine type for several database tables to InnoDB   Added several new indexes
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1954 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+65f5bbeebb5f8ac0297e393d24a99bd21f3d1567$~1170074875$~Mon Jan 29 12:47:55 2007 +0000$~Martin Kutschker$~martin.t.kutschker@blackbox.net$~"correct key recordident of sys_history   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1955 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+9d5367145c0a6d3b87410ec7f24a56cec726f10c$~1170173126$~Tue Jan 30 16:05:26 2007 +0000$~Dmitry Dulepov$~dmitry.dulepov@gmail.com$~"Fixed never disappearing proposal to update database structure in Install>Database>COMPARE   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1957 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+027d4975d36828e9d7e55d89f693960eb81b0bb9$~1170608262$~Sun Feb 4 16:57:42 2007 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Extended db_mountpoint and file_mountpoint fields into to 255 bytes size   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@1972 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+8de55eb4cbe782b591809709ee498298f3f6dd51$~1171995584$~Tue Feb 20 18:19:44 2007 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Fixed bug #4202: be_groups - fields restricted by a low maxitems value   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@2055 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+f31756965179c48d51f3f17d3cd499dab674590a$~1172003810$~Tue Feb 20 20:36:50 2007 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"   Fixed bug in EM: Insecure extensions were still displayed (patch by Karsten Dambekalns)
+  Fixed a typo in class.em_xmlhandler.php
+  
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@2056 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+ec3c3d5c70ec5c91985d981b4eb710007ec436d1$~1173138875$~Mon Mar 5 23:54:35 2007 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Fixed bug #5125: Typo in SQL definition of sys_history   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@2173 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-1,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+ba66fa01ce6376ef2ff5f7bb989dcffb05ce4c14$~1173729537$~Mon Mar 12 19:58:57 2007 +0000$~Martin Kutschker$~martin.t.kutschker@blackbox.net$~"Replace all TINYTEXT columns with VARCHAR(255) and change index parent of fe_user to (pid,username) and drop the index pid   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@2186 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+2b8f6b8a75d564d7a811f4814447955493c3036f$~1175541184$~Mon Apr 2 19:13:04 2007 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Fixed bug #5088: Cache is not saved properly because of charset conflict in the database. Changing the field type of cache_hash.content from mediumtext to mediumblob. To make this work, you need to compare your database in the Install Tool.  /  
+/   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-1@2236 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~  remotes/origin/TYPO3_4-1,
+54112fd4ba17cae0383e72ddc65cb37c18cce571$~1175541203$~Mon Apr 2 19:13:23 2007 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Fixed bug #5088: Cache is not saved properly because of charset conflict in the database. Changing the field type of cache_hash.content from mediumtext to mediumblob. To make this work, you need to compare your database in the Install Tool.   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@2237 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+f1c84f6ae6ce1c866411eacfa32292a22e0b194f$~1188402758$~Wed Aug 29 15:52:38 2007 +0000$~Kasper Skårhøj$~kasper@typo3.org$~"Moving support for Element versions in workspaces.   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@2470 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+cee8d937c8392ea150f5ee8d27466738a7a3e562$~1205684531$~Sun Mar 16 16:22:11 2008 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Code cleanup: replaced CVS with SVN   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@3437 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+a0bbc6fdf9d6541df871ec32ebe95f392712c7c2$~1210750133$~Wed May 14 07:28:53 2008 +0000$~Dmitry Dulepov$~dmitry.dulepov@gmail.com$~"Fixed bug #4693: tables definition not compliant with MySQL 5.0 strict mode   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@3647 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-2,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+a430f1ee77aca16e1bd3dcaa234d7c6830653b0e$~1212685878$~Thu Jun 5 17:11:18 2008 +0000$~Ingmar Schlecht$~ingmar.schlecht@typo3.org$~"Fixed bug #6998: Installation misses key-definition of table pages    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@3765 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/hackontest_2008,  remotes/origin/master,
+22972d745cd29cb468628a99cb927d772aee21cd$~1212686059$~Thu Jun 5 17:14:19 2008 +0000$~Ingmar Schlecht$~ingmar.schlecht@typo3.org$~"Fixed bug #6998: Installation misses key-definition of table pages  /  
+/   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-2@3766 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~  remotes/origin/TYPO3_4-2,
+b6f87e7ec14c664ab756a1f4f574279decd46795$~1222291148$~Wed Sep 24 21:19:08 2008 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"added initial work on the transition of cache_hash to use t3lib_cache  _/  
+/    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/hackontest_2008@4206 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/hackontest_2008,
+143b50a6ba877ab549560589a4e70bb9c0dbb0df$~1222294510$~Wed Sep 24 22:15:10 2008 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"removed now obsolete fields from table cache_hash     
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/hackontest_2008@4210 709f56b5-9817-0410-a4d7-c38de5d9e867
+        
+"$~  remotes/origin/hackontest_2008,
+33b9c6f2abfa0c10b35d670b946707a615abc76e$~1222294718$~Wed Sep 24 22:18:38 2008 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Added indexes for the cache tables (cache_hash, cache_pages, cache_pagesection)     
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/hackontest_2008@4211 709f56b5-9817-0410-a4d7-c38de5d9e867
+        
+"$~  remotes/origin/hackontest_2008,
+f68f105b963db868a972e68c5c0d79976b484a1c$~1222303819$~Thu Sep 25 00:50:19 2008 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Renamed the data column in cache tables to content to prevent conflicts with reserved names     
+    git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/hackontest_2008@4228 709f56b5-9817-0410-a4d7-c38de5d9e867
+        
+"$~  remotes/origin/hackontest_2008,
+03af4620c847f43cae53c822979a54472e6e71b4$~1224535185$~Mon Oct 20 20:39:45 2008 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Added feature 9505: Make the caches in TYPO3 use the new caching framework    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@4336 709f56b5-9817-0410-a4d7-c38de5d9e867
+        
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+2b421c342d58c2a03863eb6d66a1c7fc00e85fb9$~1225217024$~Tue Oct 28 18:03:44 2008 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Added feature #7571: FeUsers in table sys_lockedrecords    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@4364 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+e9647c4f6591be7162677705ab29d37c54f2cddc$~1225452226$~Fri Oct 31 11:23:46 2008 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Fixed bug #8399: field tablename in sys_refindex too short    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@4395 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+c29b1921a2824611dbfe9ace5e5938fbab8cbebd$~1226165554$~Sat Nov 8 17:32:34 2008 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Follow-up to bug #8399: Table index was too long after changing the field size    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@4434 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+50623164ab984e0d77e4bc0da3eae0d06f5ace92$~1229794351$~Sat Dec 20 17:32:31 2008 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Added feature #5203: Add file operation permissions for back-end user groups (thanks to Christian Kuhn)    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@4579 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+6a8973388d468367ad19981b393f30a9e50d4956$~1236526766$~Sun Mar 8 15:39:26 2009 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"!!! Fixed issue #10614: update the caching framework to the latest version as in FLOW3    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5149 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+bdd392303c4b2d17bb8eb7e91481a25bed452773$~1236717367$~Tue Mar 10 20:36:07 2009 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Cleanup: Fixed SVN properties    
+   
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5175 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+db045dc3857eae0d416d4b912c0390f2974cefa8$~1246895196$~Mon Jul 6 15:46:36 2009 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Revert old change from 2006-09-01: Remove key length for sys_refindex table (was needed by [SYS][multiplyDBfieldSize] which is considered deprecated nowadays) (thanks to Xavier Perseguers)   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5694 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+50ec9529d89db189a8abbcdc2572b2f3faa0380a$~1248976930$~Thu Jul 30 18:02:10 2009 +0000$~Rupert Germann$~rupi@gmx.li$~"!!! fixed bug #11593: Field t3ver_label is to small for uids >= 100000 (thanks to Fabrizio Branca)   Attention: DB update required
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5737 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+75b99d1c445c795b6fd466e885027721564039fc$~1249997742$~Tue Aug 11 13:35:42 2009 +0000$~Francois Suter$~francois.suter@typo3.org$~"Code cleanup #11686: Incomplete SQL comments in t3lib/stddb/tables.sql   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5774 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+226b5e8565a6e492cbc12e8c46c8bba43144be46$~1250067312$~Wed Aug 12 08:55:12 2009 +0000$~Michael Stucki$~michael.stucki@typo3.org$~"Fixed bug #11513: cache_hash table could not be filled because information field (ident) was too short (thanks to Ingo Schmitt)    
+   git-svn-id: https://svn.typo3.org/TYPO3v4/Core/branches/TYPO3_4-2@5778 709f56b5-9817-0410-a4d7-c38de5d9e867
+      
+"$~  remotes/origin/TYPO3_4-2,
+966fcca56f0a3188b236314af965ef08e5e220db$~1250239991$~Fri Aug 14 08:53:11 2009 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Added feature #11438: Add a registry to t3lib   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5783 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+f791f831407f544295e0c5799c9c1817b3a1fbb2$~1251906898$~Wed Sep 2 15:54:58 2009 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Follow-up to #11438: Add a registry to t3lib - Limited the key field size to 128 chars to fit the UNIQUE key   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5883 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+e98cc3654dc8b41476a2f23143acc78f6b5d13d0$~1253278046$~Fri Sep 18 12:47:26 2009 +0000$~Rupert Germann$~rupi@gmx.li$~"Fixed bug #11505: TYPO3 4.3 is slower than 4.2 -> re-implement native db caching and make the use of the caching framework configurable. !!! DB update required   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@5978 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+ff4af926720d0767557328fda542cbadf3aa2bfe$~1253393966$~Sat Sep 19 20:59:26 2009 +0000$~Rupert Germann$~rupi@gmx.li$~"Follow-up to bug #11505: added a forgotten comma to table definition of cache_hash   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@6000 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+08967c34b2cd82d1bdc0ae0db36b3f17cfa827ce$~1253538661$~Mon Sep 21 13:11:01 2009 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Fixed bug #11903: Use separate tables for tags in the caching framework   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@6025 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+1fdeaa287d6927dabc5461a4638444fa0d7b48a4$~1255953049$~Mon Oct 19 11:50:49 2009 +0000$~Rupert Germann$~rupi@gmx.li$~"Fixed bug #11694: Table sys_refindex / KEY lookup_string not UTF-8 compatible  (thanks to Morton Jonuschat)   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@6166 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+b9e68a4248e58ddf7f2c04a1483b306de585506a$~1259148454$~Wed Nov 25 11:27:34 2009 +0000$~Steffen Kamper$~info@sk-typo3.de$~"Fixed bug #12613: Wrong character encoding in cache tables breaks frontend rendering   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@6525 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-3,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+5305735a54d38aaa5dea00e707c39bd8ba0846c5$~1266778467$~Sun Feb 21 18:54:27 2010 +0000$~Steffen Kamper$~info@sk-typo3.de$~"Fixed bug #13444: Filemounts are unsorted   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@6949 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+cfbd523d0aed02bed3bcbeac4c8be4b709ff4d1a$~1271763028$~Tue Apr 20 11:30:28 2010 +0000$~Christian Kuhn$~lolli@schwarzbu.ch$~"Fixed bug #14152: Table sys_log, field details is too small   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@7401 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-4,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+4f417ab2851d5a50c531881f6dd2cd978dc3393a$~1281440335$~Tue Aug 10 11:38:55 2010 +0000$~Christian Kuhn$~lolli@schwarzbu.ch$~"Added feature #15141: [Caching framework] Add compress data options to DbBackend   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@8551 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+0a3af3d2b8b34d01453cd4dfb86b9ec1e10eefc9$~1285331382$~Fri Sep 24 12:29:42 2010 +0000$~Steffen Gebert$~steffen.gebert@typo3.org$~"Fixed bug #15485: username in sys_lockedrecords to short (Thanks to Peter Russ)   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@8873 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+31ed28fd33273fbe3ce2de1232262b95c5b64831$~1285667687$~Tue Sep 28 09:54:47 2010 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Added feature #15812: Add backend maintenance for login news   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@8916 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+7626bf3a9d9b95001339ed62333abfad1e7345ed$~1287146991$~Fri Oct 15 12:49:51 2010 +0000$~Oliver Hader$~oliver.hader@typo3.org$~"Added feature #15988: Refactor TCA definitions of table pages   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@9072 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+f049f27251b7bf9fde71729fae59f5f589a13672$~1289605813$~Fri Nov 12 23:50:13 2010 +0000$~Steffen Kamper$~info@sk-typo3.de$~"Added feature #16315: New extension manager part 1: splitting classes: core files   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@9359 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+0b9f1cde9cfb4d4dbb3b04ff5261bea90d7aac52$~1289666211$~Sat Nov 13 16:36:51 2010 +0000$~Benni Mack$~benni.mack@typo3.org$~"Added feature #13170: Workspace Owners should be manageable with groups as well (Thanks to Tolleiv Nietsch)   
+  
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@9366 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+761635bbe6e8470d00e175d69cf809ee9a0a5ea3$~1289908073$~Tue Nov 16 11:47:53 2010 +0000$~Steffen Kamper$~info@sk-typo3.de$~"Added feature #16396: Implement a Grid View + wizard to enable the backend layout to be adapted to the frontend look and feel (Thanks to Joey Hasenau, Martin Ficzel and Thomas Hempel)   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@9393 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+4c7d549544a3db3b33ce4d9a9aab6198b73ae6e2$~1293357521$~Sun Dec 26 09:58:41 2010 +0000$~Tolleiv Nietsch$~info@tolleiv.de$~"Fixed bug #16774: t3ver_stage should be int(11) instead of tinyint(4)   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@9895 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+2877fc9ffea7b8825791a33dc2d76866d0d3764c$~1295001061$~Fri Jan 14 10:31:01 2011 +0000$~Patrick Broens$~patrick@netcreators.com$~"Fixed issue #16698: sys_history: optimize indexes (Thanks to Juergen Deisenroth and Christian Kuhn)   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@10068 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+5bd0af74e8b3417c0d38c7628e5eee66a5d9fa58$~1295541314$~Thu Jan 20 16:35:14 2011 +0000$~Tolleiv Nietsch$~info@tolleiv.de$~"Fixed bug #17106: sys_workspace table should be defined at one place only   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@10164 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+c2ee9b1fd03c626121da6ded8903193eca57645f$~1295564633$~Thu Jan 20 23:03:53 2011 +0000$~Christian Kuhn$~lolli@schwarzbu.ch$~"Fixed bug #17149: Remove sys_refindex_* tables and unused code   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@10175 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+c3a1a47752c56bc62868c04bbc8beb88b882b65a$~1295608759$~Fri Jan 21 11:19:19 2011 +0000$~Ingo Renner$~ingo.renner@typo3.org$~"Fixed issue #16458: Rename table be_layouts to backend_layout   
+  git-svn-id: https://svn.typo3.org/TYPO3v4/Core/trunk@10200 709f56b5-9817-0410-a4d7-c38de5d9e867
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-5,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+59900b6682cc043d7541b3e26380cb3dd843d14b$~1301043546$~Fri Mar 25 09:59:06 2011 +0100$~Xavier Perseguers$~typo3@perseguers.ch$~"[TASK] Remove SVN auto properties $Id$ /  
+   Remove SVN $Id$ auto-properties from TYPO3 source code
+   
+   Change-Id: I26054ac32d77b212450b740178c8ce18be12e086
+   Resolves: #M18016
+   Reviewed-on: http://review.typo3.org/1272
+   Reviewed-by: Xavier Perseguers <typo3@perseguers.ch>
+   Tested-by: Xavier Perseguers <typo3@perseguers.ch>
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/TYPO3_Sandbox,  remotes/origin/master,
+34603eb56e7da27364927247bb981556176b5fa1$~1308430834$~Sat Jun 18 23:00:34 2011 +0200$~Christian Kuhn$~lolli@schwarzbu.ch$~"[TASK] Caching framework db backend: Use own namespace   
+  The layout of needed database tables for cache tables is
+  handled by the caching framework backend internally:
+  - Extensions using db backend must not define tables in ext_tables.sql anymore
+  - Updates to table layouts can be handled by the backend itself
+  - Defining data and tags table in cacheConfigurations is obsolete
+  - Cache tables start with 'cachingframework_' and are ignored in install tool
+  - Table handling is fully backwards compatible
+  
+  Change-Id: Ic522c6ad99752b2f8161c2330e5a764d2f74e58d
+  Depends: #27506
+  Resolves: #27536
+  Related: #25119
+  Reviewed-on: http://review.typo3.org/2800
+  Reviewed-by: Stefan Neufeind
+  Reviewed-by: Björn Pedersen
+  Reviewed-by: Susanne Moog
+  Tested-by: Susanne Moog
+  Tested-by: Björn Pedersen
+  Reviewed-by: Christian Kuhn
+  Tested-by: Christian Kuhn
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+279fee3fc25d7e268d3d8b5362cb5a726ec15e30$~1308866418$~Fri Jun 24 00:00:18 2011 +0200$~Christian Kuhn$~lolli@schwarzbu.ch$~"[FEATURE] Enable caching framework by default   
+  The caching framework matured and is ready for default use. The patch
+  defines TYPO3_UseCachingFramework to true, removes old core cache tables
+  and cleans up current cache usage in the core.
+  
+  Change-Id: Ib49d8e43f535e9984e8a22ee3a8454392980035b
+  Resolves: #25106
+  Reviewed-on: http://review.typo3.org/2902
+  Reviewed-by: Susanne Moog
+  Tested-by: Susanne Moog
+  Reviewed-by: Philipp Gampe
+  Tested-by: Philipp Gampe
+  Reviewed-by: Christian Kuhn
+  Tested-by: Christian Kuhn
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+6c6aad9cd2cb3d79fa2b8b2a539ef7fd324eb337$~1310683841$~Fri Jul 15 00:50:41 2011 +0200$~Oliver Hader$~olly@typo3.org$~"[FEATURE] Session tables: add key for ses_timestamp and simplify timeout-check   
+  * add a key for ses_timestamp (in SQL) to speedup searches
+    for sessions within timeout-limit
+  * simplify the overly-complex timeout-check
+  
+  Change-Id: I171a63a0a7ec8cdd17c59d34411b41483d672b0f
+  Resolves: #20877
+  Reviewed-on: http://review.typo3.org/3341
+  Reviewed-by: Susanne Moog
+  Tested-by: Susanne Moog
+  Reviewed-by: Christian Kuhn
+  Tested-by: Christian Kuhn
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+d3042d3896522905b12c5979fc14af9c4e70f8e7$~1310900687$~Sun Jul 17 13:04:47 2011 +0200$~Benjamin Mack$~benni@typo3.org$~"[TASK][DB] Move workspace preview into versioning/workspace   
+  As the whole handling of the ADMCMD_preview is related to
+  version / workspaces, the according code should go in
+  these extensions, thus it is removed in the core.
+  
+  Change-Id: Iee2f4ea42aa28825d991df92eff53c7143d93e83
+  Resolves: #27931
+  Releases: 4.6
+  Reviewed-on: http://review.typo3.org/3080
+  Reviewed-by: Stefan Neufeind
+  Reviewed-by: Benjamin Mack
+  Tested-by: Benjamin Mack
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+89958d5b6d3af3b6869bf88b48d8da87a215288d$~1310925635$~Sun Jul 17 20:00:35 2011 +0200$~Helmut Hummel$~helmut.hummel@typo3.org$~"[FEATURE] Enable saltedpasswords by default   
+  Implement auto-activation of saltedpasswords and rsaauth extension.
+  
+  
+  Resolves: #28273
+  Releases: 4.6
+  
+  Change-Id: If96cbbffec59f436748e331783bc6fc94fb2b87d
+  Reviewed-on: http://review.typo3.org/3389
+  Reviewed-by: Jigal van Hemert
+  Tested-by: Jigal van Hemert
+  Reviewed-by: Kay Strobach
+  Tested-by: Kay Strobach
+  Reviewed-by: Helmut Hummel
+  Tested-by: Helmut Hummel
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+b710bae660fd1fc95f9c7392d05ae9de065905cb$~1312055981$~Sat Jul 30 21:59:41 2011 +0200$~Jo Hasenau$~info@cybercraft.de$~"[BUGFIX] Saving Page Tree states issues in large environments   
+  Change the way expanded nodes are saved for be_users back to a simple
+  key/boolean pair and adjust the size of the uc field to fit the needs of
+  larger page trees.
+  
+  Change-Id: Ic926080b0dc0e6e24226ab00554091a5f0ffae66
+  Resolves: #24884
+  Releases: 4.6
+  Reviewed-on: http://review.typo3.org/3912
+  Reviewed-by: Jo Hasenau
+  Tested-by: Jo Hasenau
+  Reviewed-by: Philipp Gampe
+  Tested-by: Philipp Gampe
+  Tested-by: Christian Kuhn
+  Reviewed-by: Steffen Gebert
+  Tested-by: Steffen Gebert
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+ba2b413dd0dce4974f43bace043a37e538e3eafd$~1313328727$~Sun Aug 14 15:32:07 2011 +0200$~Dmitry Dulepov$~dmitry@typo3.org$~"[BUGFIX] Optimize index of some database tables   
+  Some database indexes in TYPO3 tables are not optimal:
+  they include the sorting field in the wrong position.
+  MySQL will not use such index for sorting (sorting
+  field must always be in the end of index).
+  
+  Change-Id: I9d900013ac5cabb7bdd7130ff2502674ee2c9b2a
+  Resolves: #21381
+  Reviewed-on: http://review.typo3.org/4317
+  Reviewed-by: Christian Kuhn
+  Tested-by: Christian Kuhn
+  Reviewed-by: Mario Rimann
+  Reviewed-by: Xavier Perseguers
+  Tested-by: Xavier Perseguers
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+8ce0aefdd5ee575ff8bb9990534a3b1a674c70fb$~1316175106$~Fri Sep 16 15:11:46 2011 +0300$~Dmitry Dulepov$~dmitry@typo3.org$~"[TASK] Index for pages table is still not optimal   
+  The fix for #21381 causes using filesort in the List view for
+  pages table. This happens due to the hidden field in the
+  index. This field should be removed from the index because it is
+  not needed for the List module and it is not useful in FE due to
+  more expensive fe_group field.
+  
+  Change-Id: Ia5fc87f7b1fa89e515c292248365d1d684872be0
+  Resolves: #29896
+  Related: #21381
+  Releases: 4.6
+  Reviewed-on: http://review.typo3.org/4997
+  Reviewed-by: Björn Pedersen
+  Reviewed-by: Frederic Gaus
+  Reviewed-by: Markus Klein
+  Tested-by: Markus Klein
+  Reviewed-by: Steffen Gebert
+  Tested-by: Steffen Gebert
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-6,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+0a7851b3388f3f80f39f2fba02e68fbce3fe6959$~1322548223$~Tue Nov 29 07:30:23 2011 +0100$~Steffen Ritter$~info@rs-websystems.de$~"[FEATURE] TCA-record-collection based on collection interfaces   
+  Use the possibility to create collections of tca-records with
+  TYPO3 core functionality in a table sys_collection.
+  To deal with these record-collections in TCA a collection class
+  using the new collection interfaces is to be introduced.
+  
+  This relies on #32148
+  
+  Change-Id: I371a6ba354855651048445075464c032ddd4647b
+  Resolves: #32147
+  Releases: 4.7
+  Reviewed-on: http://review.typo3.org/6968
+  Reviewed-by: Dominik Mathern
+  Tested-by: Dominik Mathern
+  Reviewed-by: Steffen Ritter
+  Tested-by: Steffen Ritter
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+561406c6ac0ab20b4b1d094cdc2f926bec1ac1b5$~1327929355$~Mon Jan 30 15:15:55 2012 +0200$~Dmitry Dulepov$~dmitry@typo3.org$~"[BUGFIX] TYPO3 Backend is too slow if sys_log table is large   
+  A query is executed during the login process, which can take
+  minutes during the BE login if the sys_log table is too large.
+  The query does not use any indexes, operates on the whole table
+  and uses filesort. Implementing a proper index solves the
+  performance issue.
+  
+  Change-Id: I8f80ed9490d94fb7a318fec687a9ba1ab6e187fe
+  Fixes: #33532
+  Releases: 4.7
+  Reviewed-on: http://review.typo3.org/8771
+  Reviewed-by: Oliver Klee
+  Reviewed-by: Stefan Galinski
+  Tested-by: Stefan Galinski
+  Reviewed-by: Tolleiv Nietsch
+  Tested-by: Tolleiv Nietsch
+  Reviewed-by: Philipp Gampe
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+8711c30f15f3cd1e9f6d98360593b657ff1e5cfd$~1328715277$~Wed Feb 8 16:34:37 2012 +0100$~Steffen Ritter$~info@rs-websystems.de$~"[FEATURE] Extend collection handling by repository   
+  The table sys_collection allows to group several objects and
+  persist them in one collection object. The data access shall
+  happen by a repository, which is integrated with this change
+  set.
+  
+  Change-Id: Ib3401f2e3bd4c267f92aef59dbc36756b54cce0a
+  Resolves: #33755
+  Releases: 4.7
+  Reviewed-on: http://review.typo3.org/8913
+  Reviewed-by: Georg Ringer
+  Reviewed-by: Stefan Neufeind
+  Reviewed-by: Oliver Hader
+  Tested-by: Oliver Hader
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_4-7,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+c2af9a391e52b7e93d6b174d3829bec5dfb83325$~1330377229$~Mon Feb 27 22:13:49 2012 +0100$~Fabrizio Branca$~mail@fabrizio-branca.de$~"[FEATURE] Add cache_tags to pages table  /  
+    By adding a cache_tag field that contains a comma-separated list of tags
+    that will be attached to the stored content many fine-grained caching
+    scenarios are possible.
+    
+    (Also see #34352 that allows to clear pages by tag)
+    
+    Change-Id: I46ee3a49d0c779f72a84d55882eefa583de6bfe5
+    Resolves: #34363
+    Releases: 4.7
+    Reviewed-on: http://review.typo3.org/9267
+    Reviewed-by: Jutta Dobner
+    Reviewed-by: Tolleiv Nietsch
+    Tested-by: Tolleiv Nietsch
+    Reviewed-by: Jigal van Hemert
+    Tested-by: Jigal van Hemert
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+364d9fa2a3165306d573f2f6b62eb0b7fba10afc$~1331622562$~Tue Mar 13 08:09:22 2012 +0100$~Christian Kuhn$~lolli@schwarzbu.ch$~"[TASK] Migrate ext:belog to extbase    
+   Change-Id: I1d61119394d00417a9a033f25146fc0d5096d853
+   Resolves: #34772
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/9729
+   Tested-by: Philipp Gampe
+   Reviewed-by: Christian Kuhn
+   Tested-by: Christian Kuhn
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+d92797cf419cccffc9de9c5644211a367aefcf25$~1334244367$~Thu Apr 12 17:26:07 2012 +0200$~cybercraft$~info@cybercraft.de$~"[BUGFIX] Saving Page Tree states issues in large environments    
+   Change the way expanded nodes are saved for be_users back to a simple
+   key/boolean pair and adjust the size of the uc field to fit the needs of
+   larger page trees.
+   
+   Change-Id: Ic926080b0dc0e6e24226ab00554091a5f0ffae66
+   Resolves: #24884
+   Releases: 4.5
+   Reviewed-on: http://review.typo3.org/10348
+   Reviewed-by: Markus Klein
+   Tested-by: Markus Klein
+   Reviewed-by: Stefan Galinski
+   Tested-by: Stefan Galinski
+      
+"$~  remotes/origin/TYPO3_4-5,
+d0c8f2903eb639bc24154cfd716ff4760cb5a9aa$~1334938737$~Fri Apr 20 18:18:57 2012 +0200$~TYPO3 FAL Team$~typo3v4@typo3.org$~"[FEATURE] Integrate File Abstraction Layer Handling    
+   The File Abstraction Layer Handling is based on the API and adds
+   the required TCA tables and configurations, upgrade wizards and
+   language labels.
+   
+   Change-Id: I4c46ef1d8141562d44a8f53019be503c1c01e357
+   Resolves: #33750
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/10654
+   Reviewed-by: Steffen Ritter
+   Reviewed-by: Tolleiv Nietsch
+   Tested-by: Tolleiv Nietsch
+   Reviewed-by: Oliver Hader
+   Tested-by: Oliver Hader
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+cebcc3c268ed0b955e6e438d43d2a89b80f5ef55$~1341344497$~Tue Jul 3 21:41:37 2012 +0200$~Oliver Hader$~oliver@typo3.org$~"[BUGFIX] Remove t3ver_swapmode code blocks    
+   The different ways of versioning (element, page, branch) have
+   been defined to element versioning some TYPO3 version ago. With
+   TYPO3 4.7, those settings, especially the handling of the field
+   t3ver_swapmode has been removed from t3lib_TCEmain.
+   
+   Since the default value of t3ver_swapmode is not -1 anymore,
+   but 0 instead, this will lead to inconsistent side-effects.
+   
+   The solution is to remove all occurrences.
+   
+   Change-Id: I13053d38ce6f2c9c65335e3f648c303198d96d9c
+   Fixes: #38608
+   Releases: 6.0, 4.7
+   Reviewed-on: http://review.typo3.org/12551
+   Reviewed-by: Steffen Ritter
+   Tested-by: Steffen Ritter
+   Reviewed-by: Oliver Hader
+   Tested-by: Oliver Hader
+      
+"$~  remotes/origin/TYPO3_4-7,
+918ec93bf6e9229152422062bdfd15abc7c29d35$~1341344497$~Tue Jul 3 21:41:37 2012 +0200$~Oliver Hader$~oliver@typo3.org$~"[BUGFIX] Remove t3ver_swapmode code blocks    
+   The different ways of versioning (element, page, branch) have
+   been defined to element versioning some TYPO3 version ago. With
+   TYPO3 4.7, those settings, especially the handling of the field
+   t3ver_swapmode has been removed from t3lib_TCEmain.
+   
+   Since the default value of t3ver_swapmode is not -1 anymore,
+   but 0 instead, this will lead to inconsistent side-effects.
+   
+   The solution is to remove all occurrences.
+   
+   Change-Id: Ie729287cac07d6e5d3d88a23d1291f4d701b8ea4
+   Fixes: #38608
+   Releases: 6.0, 4.7
+   Reviewed-on: http://review.typo3.org/12553
+   Reviewed-by: Georg Ringer
+   Tested-by: Georg Ringer
+   Reviewed-by: Oliver Hader
+   Tested-by: Oliver Hader
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+b5ba81a8fd9d33e8dfd0346f97db7e2f1997b0f4$~1341578094$~Fri Jul 6 14:34:54 2012 +0200$~Fabien Udriot$~fabien.udriot@ecodev.ch$~"[FEATURE] Add categorization into the Core    
+   A common use case in every advanced website is to be able to
+   categorize records. Besides that, there is the need to share
+   categories across records. So far, each extension has to bring
+   its own category implementation which is not an ideal situation.
+   
+   To fill the gap, we would like to introduce a new category record
+   type along with an API where extension developers could register
+   their own tables to be categorized. The relations will be stored
+   within mm tables as a less time consuming approach.
+   
+   This patch provides:
+   
+   * SQL definition for sys_category and sys_category_mm with
+     their TCA
+   * a registration mechanism where third party extension can have
+     their SQL fields + TCA generated on the fly. This is done by
+     using the Extension Manager method:
+   
+   t3lib_extMgm::makeCategorizable(
+     $extensionKey, $tableName,
+     $fieldName = 'categories', $options = array()
+   );
+   
+   Change-Id: I461252b6d5f6c6c4a4eb2c1942a66250cbb95aa9
+   Resolves: #38711
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/12672
+   Reviewed-by: Fabien Udriot
+   Tested-by: Fabien Udriot
+   Reviewed-by: Marcus Schwemer
+   Tested-by: Marcus Schwemer
+   Reviewed-by: Dominik Mathern
+   Tested-by: Dominik Mathern
+   Reviewed-by: Steffen Ritter
+   Tested-by: Steffen Ritter
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+9fd1bab973fd0f48f6ad852a50e1981d737cf82b$~1343552856$~Sun Jul 29 11:07:36 2012 +0200$~Steffen Ritter$~info@rs-websystems.de$~"[!!!][BUGFIX] *_user table password field is to short    
+   When using the hash-algorithm blowfish in saltedpasswords
+   the hash is 60 chars long - therefore the field length has
+   been set to 60 characters in SQL, too.
+   Actually when converting old MD5 passwords to salted
+   copies, an additional identifer char (M or C) is added to
+   the hash which results in a 61 character hash.
+   
+   The result is that login is not possible anymore after
+   converting the passwords like suggested by the reports
+   module - the database field has to be increased.
+   
+   To be safe and because varchar only takes as much space
+   as really needed increase the field length to 100 chars.
+   
+   Change-Id: I70646fe7939d41f1a7056376a85c506d10148480
+   Fixes: #39356
+   Releases: 4.5, 4.6, 4.7, 6.0
+   Reviewed-on: http://review.typo3.org/13324
+   Reviewed-by: Oliver Klee
+   Reviewed-by: Helmut Hummel
+   Tested-by: Helmut Hummel
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+363a2a53855973fdba6f8ef5c5d9541c7c2a0b94$~1343552856$~Sun Jul 29 11:07:36 2012 +0200$~Steffen Ritter$~info@rs-websystems.de$~"[!!!][BUGFIX] *_user table password field is to short    
+   When using the hash-algorithm blowfish in saltedpasswords
+   the hash is 60 chars long - therefore the field length has
+   been set to 60 characters in SQL, too.
+   Actually when converting old MD5 passwords to salted
+   copies, an additional identifer char (M or C) is added to
+   the hash which results in a 61 character hash.
+   
+   The result is that login is not possible anymore after
+   converting the passwords like suggested by the reports
+   module - the database field has to be increased.
+   
+   To be safe and because varchar only takes as much space
+   as really needed increase the field length to 100 chars.
+   
+   Note for Updating: You do not need to run DB compare
+   after updating. Everything will work fine without, as
+   well as after the DB compare. The BulkUpdater, which
+   needs this change because additionally checks this
+   and requests a DB compare.
+   
+   Change-Id: I70646fe7939d41f1a7056376a85c506d10148480
+   Fixes: #39356
+   Releases: 4.5, 4.6, 4.7, 6.0
+   Reviewed-on: http://review.typo3.org/13331
+   Reviewed-by: Wouter Wolters
+   Reviewed-by: Oliver Klee
+   Reviewed-by: Mario Rimann
+   Reviewed-by: Stefan Neufeind
+   Reviewed-by: Marcus Schwemer
+   Reviewed-by: Helmut Hummel
+   Tested-by: Helmut Hummel
+   Reviewed-by: Mattias Nilsson
+   Tested-by: Mattias Nilsson
+   Reviewed-by: Oliver Hader
+   Tested-by: Oliver Hader
+      
+"$~  remotes/origin/TYPO3_4-7,
+b02859be3dad7d56a90ac529c5fde84e0c8b26cf$~1344501960$~Thu Aug 9 10:46:00 2012 +0200$~Bart Dubelaar$~bartdubelaar@gmail.com$~"[BUGFIX] Increase log_data field size to prevent corrupted data    
+   Stage change data is corrupted when comments longer than ~250 characters
+   are entered. The comment itself is lost aswell as the stage id.
+   This is fixed by choosing a more suitable (larger) field type for
+   sys_log.log_data.
+   
+   Issue also exists in 4.7, 4.6, 4.5 but fix is probably not
+   backportable due to the change in the table definition.
+   
+   Change-Id: I104bb2dbed75ebca6c063334ada543ef544f7b10
+   Fixes: #38403
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/13531
+   Reviewed-by: Georg Ringer
+   Tested-by: Georg Ringer
+   Reviewed-by: Steffen Müller
+   Reviewed-by: Christian Kuhn
+   Tested-by: Christian Kuhn
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+a01c7eb28b6d8e5dc1b60b3268d3587edfc25ff6$~1344736496$~Sun Aug 12 03:54:56 2012 +0200$~Steffen Müller$~typo3@t3node.com$~"[FEATURE][DB][CONF]: Add a central logging API    
+   Change-Id: I58ec40a9ede4458374a33317e861a3064e518e2b
+   Resolves: #39712
+   Depends: #39738 (Documentation)
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/13604
+   Reviewed-by: Ingo Renner
+   Tested-by: Ingo Renner
+   Reviewed-by: Wouter Wolters
+   Tested-by: Wouter Wolters
+   Reviewed-by: Jigal van Hemert
+   Tested-by: Jigal van Hemert
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+2a41bf5a5ab1bd6567dbab3e9400d156d8ebc694$~1344889416$~Mon Aug 13 22:23:36 2012 +0200$~Marcus Schwemer$~ms@schwemer.de$~"[FEATURE][DB] Change tinyint to int in standard tables    
+   At the moment it's not possible to use higher IDs as 255 for e.g.
+   section_frame or layout. Higher integer ranges for ids are useful to
+   structure your work on bigger installations.
+   
+   Change-Id: I389dd2c2d32f4d80fa74d1065fb148c75accd782
+   Resolves: #39773
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/13636
+   Reviewed-by: Christian Kuhn
+   Tested-by: Christian Kuhn
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+d4f101a0bbf55e4c7fd1fe40d4eb0723068d100a$~1346516439$~Sat Sep 1 18:20:39 2012 +0200$~Andreas Wolf$~andreas.wolf@typo3.org$~"[BUGFIX] Changing file title changes file name    
+   The TCA configuration of sys_file allows direct editing of the file
+   name. As t3lib_TCEmain does not recognize this change as a
+   filesystem-related change on saving, the file is not renamed on disk.
+   Instead, the index record is changed, so the file is not recognized
+   anymore, leading to a reindexing. Because of this, all references to the
+   old record seem to break.
+   
+   This commit makes the name field read-only and adds the title field
+   (which is not present in the TCA at all currently).
+   
+   Change-Id: Ice110fa7ea0cc335f8b9fa8a57ecc9fe7527de76
+   Resolves: #39884
+   Resolves: #36795
+   Resolves: #39859
+   Releases: 6.0
+   Reviewed-on: http://review.typo3.org/14260
+   Reviewed-by: Mario Rimann
+   Tested-by: Mario Rimann
+   Reviewed-by: Steffen Ritter
+   Tested-by: Steffen Ritter
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+ac8ea1edc4af3fb1f1279e27aa8a950bd9a1a3cc$~1346766240$~Tue Sep 4 15:44:00 2012 +0200$~Helmut Hummel$~helmut.hummel@typo3.org$~"[BUGFIX] Enable translation of file references    
+   Currently the file references are missing a localisation
+   possibility.
+   
+   This change only adds the respective fields and TCA configuration.
+   Other needed changes to get the right languages for
+   frontend rendering will follow.
+   
+   Also add some minor cleanups on the go.
+   
+   Fixes: #40608
+   Releases: 6.0
+   
+   Change-Id: Ia4454c1652eb3718a138a162319e9c95db6dd012
+   Reviewed-on: http://review.typo3.org/14335
+   Reviewed-by: Helmut Hummel
+   Tested-by: Helmut Hummel
+   Reviewed-by: Steffen Ritter
+   Tested-by: Steffen Ritter
+   Reviewed-by: Oliver Hader
+   Tested-by: Oliver Hader
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+66c204f0bf3e83d302e6a5f9e367ebda267a015e$~1350660012$~Fri Oct 19 17:20:12 2012 +0200$~Andreas Wolf$~andreas.wolf@typo3.org$~"[TASK] Refactor FAL file processing    
+   File processing is a central part of TYPO3's file usage, as e.g. all
+   images in content elements have to be resized when they don't fit the
+   requirements. However, the current implementation of file processing
+   with FAL has several drawbacks and shortcomings, not to mention quite a
+   few bugs.
+   
+   This patch brings a completely reworked infrastructure behind the
+   File Processing Service, while keeping the external API unchanged.
+   
+   The processing to be done is described in tasks, which are part of a
+   ProcessedFile's properties. The processing itself is now moved to
+   processors, which could execute the tasks using different utilities,
+   e.g. ImageMagick or some cloud image processing service. Currently,
+   there is only a local image processor implementation, which relies on
+   ImageMagick/GraphicsMagick (i.e. uses the same configuration as the old
+   processing).
+   
+   The processed file class now also supports safe handling of unchanged
+   files, i.e. files that should have been processed, but didn't need
+   processing.
+   
+   Fixes: #43059
+   Fixes: #39904
+   Fixes: #40033
+   Fixes: #40669
+   Releases: 6.0
+   
+   Change-Id: I186a46f9923dacd98be655d72be2bd89b43866c2
+   Reviewed-on: http://review.typo3.org/14310
+   Reviewed-by: Helmut Hummel
+   Tested-by: Helmut Hummel
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+5c45a483818258581a496c37d75e71c959003f43$~1353430346$~Tue Nov 20 17:52:26 2012 +0100$~Nicole Cordes$~nicole@cordes.co$~"[BUGFIX] Missing separator in tables.sql    
+   For the table sys_category_record_mm after the first KEY command there is
+   a missing comma which leads to dbal crash.
+   
+   Change-Id: Ib5d88df46c166a9e7fffd5106e5158679cd947d8
+   Fixes: #43167
+   Release: 6.0
+   Reviewed-on: http://review.typo3.org/16628
+   Reviewed-by: Anja Leichsenring
+   Reviewed-by: Philipp Gampe
+   Reviewed-by: Wouter Wolters
+   Reviewed-by: Helmut Hummel
+   Tested-by: Helmut Hummel
+      
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-0,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+40fb18ca11d128403d85473b03d273f89626da57$~1360772890$~Wed Feb 13 17:28:10 2013 +0100$~Christian Kuhn$~lolli@schwarzbu.ch$~"Revert [TASK] Move t3lib/stddb/tables.sql to ext:core/ext_tables.sql     
+    This reverts commit 21e6d9f8d37b9c2877b428539b82587c50df44bc
+    
+    Change-Id: I86705f4fd33a1f7c7c4c9d120cf132a61f5b6c42
+    Related: #45187
+    Related: #45107
+    Reviewed-on: https://review.typo3.org/18249
+    Reviewed-by: Christian Kuhn
+    Tested-by: Christian Kuhn
+        
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/TYPO3_6-1,  remotes/origin/TYPO3_6-2,  remotes/origin/TYPO3_7-0,  remotes/origin/TYPO3_7-3,  remotes/origin/TYPO3_7-6,  remotes/origin/TYPO3_8-0,  remotes/origin/TYPO3_8-1,  remotes/origin/TYPO3_8-2,  remotes/origin/TYPO3_8-3,  remotes/origin/TYPO3_8-4,  remotes/origin/master,
+c0a5c69b38468552b8b09f87e5d2e88507247254$~1368823371$~Fri May 17 22:42:51 2013 +0200$~Philipp Gampe$~philipp.gampe@typo3.org$~"[BUGFIX] be_users.userMods is too small to hold all modules    
+   It is impossible to assign all modules to a single user, because the
+   DB field is too small.  Saving such a record will result in a DB error
+   and a truncated modules list.
+   
+   Solution: Change to field from varchar(255) to text to support a larger
+   number of modules.
+   
+   This change requires a DB compare to become active. The fix is simply
+   not present otherwise, but also don't affect existing installations in
+   any way.
+   
+   Resolves: #16762
+   Releases: 6.2, 6.1, 6.0, 4.7, 4.5
+   Change-Id: I67b2ed6b650f9eaf5bdcc9ef81ce93cbbdc54b7f
+   Reviewed-on: https://review.typo3.org/20889
+   Reviewed-by: Philipp Gampe
+   Tested-by: Philipp Gampe
+        
+"$~  remotes/origin/TYPO3_6-0,
+77aecc51184b4dac76c7dd9e8107d1e4b7f365ec$~1368823371$~Fri May 17 22:42:51 2013 +0200$~Philipp Gampe$~philipp.gampe@typo3.org$~"[BUGFIX] be_users.userMods is too small to hold all modules   
+  It is impossible to assign all modules to a single user, because the
+  DB field is too small.  Saving such a record will result in a DB error
+  and a truncated modules list.
+  
+  Solution: Change to field from varchar(255) to text to support a larger
+  number of modules.
+  
+  This change requires a DB compare to become active. The fix is simply
+  not present otherwise, but also don't affect existing installations in
+  any way.
+  
+  Resolves: #16762
+  Releases: 6.2, 6.1, 6.0, 4.7, 4.5
+  Change-Id: I67b2ed6b650f9eaf5bdcc9ef81ce93cbbdc54b7f
+  Reviewed-on: https://review.typo3.org/20890
+  Reviewed-by: Philipp Gampe
+  Tested-by: Philipp Gampe
+      
+"$~  remotes/origin/TYPO3_4-7,
+426abe92db51be4758479abf7a502e001867388b$~1368823371$~Fri May 17 22:42:51 2013 +0200$~Philipp Gampe$~philipp.gampe@typo3.org$~"[BUGFIX] be_users.userMods is too small to hold all modules  
+ It is impossible to assign all modules to a single user, because the
+ DB field is too small.  Saving such a record will result in a DB error
+ and a truncated modules list.
+ 
+ Solution: Change to field from varchar(255) to text to support a larger
+ number of modules.
+ 
+ This change requires a DB compare to become active. The fix is simply
+ not present otherwise, but also don't affect existing installations in
+ any way.
+ 
+ Resolves: #16762
+ Releases: 6.2, 6.1, 6.0, 4.7, 4.5
+ Change-Id: I67b2ed6b650f9eaf5bdcc9ef81ce93cbbdc54b7f
+ Reviewed-on: https://review.typo3.org/20891
+ Reviewed-by: Philipp Gampe
+ Tested-by: Philipp Gampe
+    
+"$~  remotes/origin/TYPO3_4-5,
+5db38d3814c3c504817fd0bdeb612c84099f9168$~1378907612$~Wed Sep 11 15:53:32 2013 +0200$~Ernesto Baschny$~ernst@cron-it.de$~"[TASK] Remove sys_file.deleted flag and it's usage    
+   This also fixes the 'Uncaught TYPO3 Exception #1317178604
+   No file found for given UID.' that appears when some sys_file
+   entries have a deleted flag set by mistake.
+   
+   Resolves: #51562
+   Releases: 6.2, 6.1, 6.0
+   Change-Id: Id23636d2732f3562b8a155025656b26041c9a4e2
+   Reviewed-on: https://review.typo3.org/23748
+   Reviewed-by: Stefan Neufeind
+   Tested-by: Stefan Neufeind
+      
+"$~  remotes/origin/TYPO3_6-0,
+580a57692f1808aeeb8e2c2d98ebc23b7964b1d7$~1379453813$~Tue Sep 17 23:36:53 2013 +0200$~Nicole Cordes$~typo3@cordes.co$~"[BUGFIX] Increase length of identifier field in sys_file    
+   Sometimes the identifier is longer than 200 chars. This patch increases
+   the maximum length to 512 characters.
+   
+   Resolves: #48912
+   Releases: 6.2, 6.1, 6.0
+   Change-Id: I67edc1facf972d2ffef09a3204edc556464afda5
+   Reviewed-on: https://review.typo3.org/23938
+   Reviewed-by: Christian Kuhn
+   Tested-by: Christian Kuhn
+      
+"$~  remotes/origin/TYPO3_6-0,

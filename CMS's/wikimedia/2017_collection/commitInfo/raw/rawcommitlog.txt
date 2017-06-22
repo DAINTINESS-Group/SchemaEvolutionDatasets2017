@@ -1,0 +1,2311 @@
+* NEWCOMMIT:73224f4f8b8a26b9a9a04e338bb1c3c2f163a820$$^1484201276$$^Thu Jan 12 17:07:56 2017 +1100$$^This, that and the other$$^at.light@live.com.au$$^User group memberships that expire
+| 
+| This patch adds an ug_expiry column to the user_groups table, a timestamp
+| giving a date when the user group expires. A new UserGroupMembership class,
+| based on the Block class, manages entries in this table.
+| 
+| When the expiry date passes, the row in user_groups is ignored, and will
+| eventually be purged from the DB when UserGroupMembership::insert is next
+| called. Old, expired user group memberships are not kept; instead, the log
+| entries are available to find the history of these memberships, similar
+| to the way it has always worked for blocks and protections.
+| 
+| Anyone getting user group info through the User object will get correct
+| information. However, code that reads the user_groups table directly will
+| now need to skip over rows with ug_expiry < wfTimestampNow(). See
+| UsersPager for an example of how to do this.
+| 
+| NULL is used to represent infinite (no) expiry, rather than a string
+| 'infinity' or similar (except in the API). This allows existing user group
+| assignments and log entries, which are all infinite in duration, to be
+| treated the same as new, infinite-length memberships, without special
+| casing everything.
+| 
+| The whole thing is behind the temporary feature flag
+| $wgDisableUserGroupExpiry, in accordance with the WMF schema change policy.
+| 
+| The opportunity has been taken to refactor some static user-group-related
+| functions out of User into UserGroupMembership, and also to add a primary
+| key (ug_user, ug_group) to the user_groups table.
+| 
+| There are a few breaking changes:
+| - UserRightsProxy-like objects are now required to have a
+|   getGroupMemberships() function.
+| - $user->mGroups (on a User object) is no longer present.
+| - Some protected functions in UsersPager are altered or removed.
+| - The UsersPagerDoBatchLookups hook (unused in any Wikimedia Git-hosted
+|   extension) has a change of parameter.
+| 
+| Bug: T12493
+| Depends-On: Ia9616e1e35184fed9058d2d39afbe1038f56d7fa
+| Depends-On: I86eb1d5619347ce54a5f33a591417742ebe5d6f8
+| Change-Id: I93c955dc7a970f78e32aa503c01c67da30971d1a
+|  
+* NEWCOMMIT:c585ec5ed688a4359448a12529cd6b6d1b82aad0$$^1479498868$$^Fri Nov 18 14:54:28 2016 -0500$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Add externallinks.el_index_60 column and indexes
+| 
+| This will allow for replacing the limit-and-offset queries with queries
+| that page in a sensible manner.
+| 
+| Bug: T59176
+| Change-Id: If5c137f68496772f3fff3a735b7b0c388426e518
+|  
+* NEWCOMMIT:202f695f671bb1b6c25ebec219da348e9935692e$$^1476336866$$^Thu Oct 13 07:34:26 2016 +0200$$^Fomafix$$^fomafix@googlemail.com$$^Update weblinks in comments from HTTP to HTTPS
+| 
+| Use HTTPS instead of HTTP where the HTTP link is a redirect to the HTTPS link.
+| 
+| Also update some defect links.
+| 
+| Change-Id: Ic3a5eac910d098ed5c2a21e9f47c9b6ee06b2643
+|  
+* NEWCOMMIT:d0a0e9b417884bd0d9232e77e1ef81c670c82f3e$$^1471050393$$^Sat Aug 13 11:06:33 2016 +1000$$^This, that and the other$$^at.light@live.com.au$$^Add primary key to change_tag and tag_summary tables
+| 
+| Based heavily on 43e386ca16411096bbbd7f14f9f4e15c5e268fe7.
+| 
+| Bug: T123225
+| Change-Id: I33480f4016812259700979f1145099744bb451d4
+|  
+* NEWCOMMIT:af58998190d5a3ac3079f015796bf167466b7781$$^1460408503$$^Mon Apr 11 14:01:43 2016 -0700$$^Aaron Schulz$$^aschulz@wikimedia.org$$^Remove redundant UNIQUE from rev_page_id
+| 
+| The PRIMARY KEY is rev_id, so this is a waste and
+| makes the index slower to maintain (e.g. no change
+| buffering).
+| 
+| Bug: T142725
+| Change-Id: I63f817656ff5e62aa27caf607d70353cc99eb349
+|    
+*   NEWCOMMIT:52f5f388a40e08a76b6c4efc52fedd1c65cc166d$$^1470880729$$^Thu Aug 11 01:58:49 2016 +0000$$^jenkins-bot$$^jenkins-bot@gerrit.wikimedia.org$$^Merge "Add rc_name_type_patrolled_timestamp index"
+|\  
+| * NEWCOMMIT:adf9875c745db0aa8c072b115150a5cfe32c7f9f$$^1468512064$$^Thu Jul 14 12:01:04 2016 -0400$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Add rc_name_type_patrolled_timestamp index
+| | 
+| | Bug: T140108
+| | Change-Id: I382a5f0daef703a3d16fe008a5e1d1402f2c7b33
+| |   
+* | NEWCOMMIT:47e2ef34b0c3dbecfc80b84acad9d2bb0baac1e2$$^1468423837$$^Wed Jul 13 11:30:37 2016 -0400$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Only store currently-existing categories in the categories table
+|/  
+|   A "currently-existing category" is defined as a category that either
+|   contains any pages or has a description page. Thus:
+|   * Category::initialize() now schedules an update to insert a row if the
+|     title exits but the row is missing.
+|   * Category::refreshCounts() now removes the row if the title doesn't
+|     exist and the category is empty.
+|   * WikiPage::onArticleCreate() loads the Category object, to trigger
+|     bullet #1.
+|   * WikiPage::updateCategoryCounts() refreshes the counts if it results in
+|     the row showing 0 pages, to trigger bullet #2.
+|   * LinksDeletionUpdate refreshes the counts if the row shows 0 pages, to
+|     trigger bullet #2.
+|   
+|   A maintenance script is provided to update the category table for this
+|   new definition.
+|   
+|   Bug: T28411
+|   Bug: T50824
+|   Change-Id: I0f0adf124c181ae5d3c7c95b3b5fb275a725794c
+|  
+* NEWCOMMIT:eec016ece6d2b30addcdf3d3efcc2ba59b10e858$$^1456091954$$^Sun Feb 21 16:59:14 2016 -0500$$^Brian Wolff$$^bawolff+wn@gmail.com$$^Add new index to make updateCollation.php painless
+| 
+| We want to update categories in order, to minimize disruption
+| to users. Previous indexes required a filesort to do this, which
+| exploded things on large wikis. See bug for details
+| 
+| Bug: T58041
+| Change-Id: Iee6cd997ff87a313a46fda19d8ab063d0fed8ce8
+|  
+* NEWCOMMIT:43e386ca16411096bbbd7f14f9f4e15c5e268fe7$$^1455750980$$^Wed Feb 17 23:16:20 2016 +0000$$^addshore$$^addshorewiki@gmail.com$$^Add id field to watchlist db table
+| 
+| Bug: T125990
+| Change-Id: I3ce3a736d51bc06fe40fd773f079e694039b4f3e
+|  
+* NEWCOMMIT:2257fe42288cca06376e5caf45aa32da9d0216cf$$^1454359443$$^Mon Feb 1 15:44:03 2016 -0500$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Revert "Remove SessionManager, temporarily"
+| 
+| This reverts commit 823db5d63dd5200d04c63da50ba6bf16f928e70b.
+| 
+| Change-Id: Ibb3e023e4eb6715295586dea87d0725c344a8271
+|  
+* NEWCOMMIT:5083e810ebd5303bef41c2b00cafe655f9ee13eb$$^1454347709$$^Mon Feb 1 12:28:29 2016 -0500$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Remove SessionManager, temporarily
+| 
+| The plan here is to take it out of 1.27.0-wmf.12 and put it back in
+| 1.27.0-wmf.13.
+| 
+| Since BotPasswords depends on SessionManager, that's getting temporarily
+| removed too.
+| 
+| This reverts the following commits:
+| * 6acd424e0dbc322e8b9a141bd2625453c1b9b6f1 SessionManager: Notify AuthPlugin before calling hooks
+| * 4d1ad32d8acbd443346253d2f6a95024c833295c Close a loophole in CookieSessionProvider
+| * fcdd643a46d87b677f6cdcc3ba9440e1472d8df7 SessionManager: Don't save non-persisted sessions to backend storage
+| * 058aec4c76129b7ee8541692a8a48f8046e15bb6 MessageCache: Don't get a ParserOptions for $wgUser before the end of Setup.php
+| * b5c0c03bb708f8dad6e404969df8addc123984db SessionManager: Save user name to metadata even if the user doesn't exist locally
+| * 13f2f09a193215aa7a061d10a1955e172d06fa0a SECURITY: Fix User::setToken() call on User::newSystemUser
+| * 305bc75b27903237a9683ec1f329bcbec0ecd266 SessionManager: Don't generate user tokens when checking the tokens
+| * 7c4bd85d2152fd9fa975ea0fb5ffb1a0b804f99b RequestContext::exportSession() should only export persisted session IDs
+| * 296ccfd4a9a6ad3ae412db7e2408c923aaa61f64 SessionManager: Save 'persisted' flag in session metadata
+| * 94ba53f67731b0553a6178841d9506e384f74496 Move CSRF token handling into MediaWiki\Session\Session
+| * 46a565d6b00174e631d2022b47677e1a78e73897 Avoid false "added in both Session and $_SESSION" when value is null
+| * c00d0b5d94c946b8883dd7062bf7160a199aa5c2 Log backtrace for "User::loadFromSession called before the end of Setup.php"
+| * 4eeff5b559e2ae7b8fa1f45572968ba28573a421 Use $wgSecureCookie to decide whether to actually mark secure cookies as 'secure'
+| * 7491b52f700e220814a8190781fd794b4dd88a20 Call session_cache_limiter() before starting a session
+| * 2c34aeea72471f9a598e67bdbf34bc5f9fb3f0c5 SessionManager: Abstract forceHTTPS cookie setting
+| * 9aa53627a53aabec0273cecf45a86e77927ef406 Ignore auth cookies with value 'deleted'
+| * 43f904b51a746d7f71ea2ab9951c5c98d269765b SessionManager: Kill getPersistedSessionId()
+| * 50c52563528ba3d765c3762211f98d6f3c0e39fd SessionManager: Add SessionBackend::setProviderMetadata()
+| * f640d403154bc0a2b4f6d399582797a9e3bc6fcb SessionManager: Notify AuthPlugin when auto-creating accounts
+| * 70b05d1ac1e859bac2185b246e9b93ec9051e4d8 Add checks of $wgEnableBotPasswords in more places
+| * bfed32eb78b6c720b16bc7ed60153fd2fe257a9e Do not raise a PHP warning when session write fails
+| * 722a7331ad8d98228511f8da38adc7a3c64dd617 Only check LoggedOut timestamp on the user loaded from session
+| * 4f5057b84b36eccd16627a6b29831dfdb4483b02 SessionManager: Change behavior of getSessionById()
+| * 66e82e614e157e39b03d813e71ddf23f53cf640b Fix typo in [[MediaWiki:Botpasswords-editexisting/en]]
+| * f9fd9516d922d36291037baca7205a2b0ac9f15f Add "bot passwords"
+| * d7716f1df0b692902571bf415a0984071e3e9a60 Add missing argument for wfDebugLog
+| * a73c5b7395a07d490f7052fd3b2491ebd656b190 Add SessionManager
+| 
+| Change-Id: I2389a8133e25ab929e9f27f41fa9a05df8147a50
+|  
+* NEWCOMMIT:f9fd9516d922d36291037baca7205a2b0ac9f15f$$^1449763764$$^Thu Dec 10 11:09:24 2015 -0500$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Add "bot passwords"
+| 
+| Bot passwords are something like OAuth-lite, or Google's application
+| passwords: the bot can use API action=login to log in with the special
+| username and password, and will then be allowed to use the API with a
+| restricted set of rights.
+| 
+| This is intended to provide an easy migration path for legacy bots and
+| for bots on wikis without OAuth, since AuthManager is going to greatly
+| complicate non-interactive authentication. If OAuth is available, an
+| owner-only consumer would be a better choice.
+| 
+| Bug: T121113
+| Change-Id: Iaa4015e00edbfbfaedcc8b2d27a2d3fd25009159
+| Depends-On: I7e15331efb162275c4116bcae61f19d6b884cbe3
+|  
+* NEWCOMMIT:baf1721491357b9339e0e29f431dcbafe4de0964$$^1449696599$$^Wed Dec 9 21:29:59 2015 +0000$$^Timo Tijhof$$^krinklemail@gmail.com$$^resourceloader: Remove obsolete msg_resource database table
+| 
+| No longer used as of 5d5b269e0e63641f3.
+| 
+| Change-Id: Ieb8448185cf39aa396e902e025e673f0886ac3c3
+|  
+* NEWCOMMIT:cbf5bacae5f1a81854cd41bee34bee1ac3a76f49$$^1446853424$$^Fri Nov 6 23:43:44 2015 +0000$$^Timo Tijhof$$^krinklemail@gmail.com$$^resourceloader: Remove obsolete msg_resource_links table
+| 
+| No longer used as of Ia9131f570.
+| 
+| Change-Id: If009e2620e59002e127d21b90a96bdd29e5d2a9d
+|  
+* NEWCOMMIT:afcfc3290c32deb55d95bb69bd1e9dd164cb4f12$$^1446002680$$^Wed Oct 28 03:24:40 2015 +0000$$^Timo Tijhof$$^krinklemail@gmail.com$$^resourceloader: Consistently refer to the framework as ResourceLoader
+| 
+| Change-Id: Ia59e4eac9662723e80d62f7cfcb9e4292e3ee4de
+|  
+* NEWCOMMIT:3d0b4fea3dfb94610be0f0e9d8ff1cb24f106707$$^1441383462$$^Fri Sep 4 12:17:42 2015 -0400$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^User: Mostly remove password handling
+| 
+| AuthManager is coming, which will make it easier to add alternative
+| methods of authentication. But in order to do that, we need to finally
+| get around to ripping the password-related bits out of the User class.
+| 
+| The password expiration handling isn't used anywhere in core or
+| extensions in Gerrit beyond testing for expired passwords on login and
+| resetting the expiry date on password change. Those bits have been
+| inlined and the functions removed; AuthManager will allow each
+| "authentication provider" to handle its own password expiration.
+| 
+| The methods for fetching passwords, including the fact that mPassword
+| and other fields are public, has also been removed. This is already
+| broken in combination with basically any extension that messes with
+| authentication, and the major use outside of that was in creating
+| system users like MassMessage's "MediaWiki message delivery" user.
+| 
+| Password setting methods are silently deprecated, since most of the
+| replacements won't be available until AuthManager. But uses in unit
+| testing can be replaced with TestUser::setPasswordForUser() immediately.
+| 
+| User::randomPassword() and User::getPasswordFactory() don't really
+| belong in User either. For the former a new PasswordFactory method has
+| been created, while the latter should just be replaced by the two lines
+| to create a PasswordFactory via its constructor.
+| 
+| Bug: T47716
+| Change-Id: I2c736ad72d946fa9b859e6cd335fa58aececc0d5
+|  
+* NEWCOMMIT:280d29215a89ecc68cf860a25f28f7091707a107$$^1443572157$$^Tue Sep 29 17:15:57 2015 -0700$$^Timo Tijhof$$^krinklemail@gmail.com$$^resourceloader: Vary module_deps on language (in addition to skin)
+| 
+| Re-use the md_skin database field for now as to not need a
+| schema change, beause this table is going away soon (T113916).
+| 
+| Bug: T113868
+| Change-Id: I7c7546ec58fd9be0447604989b908dd2084b0fe3
+|  
+* NEWCOMMIT:cb956c9fab4730962a99ffbbc1a18353353c7d19$$^1441145479$$^Tue Sep 1 18:11:19 2015 -0400$$^Matthew Flaschen$$^mflaschen@wikimedia.org$$^Link DB docs from tables.sql
+| 
+| Change-Id: I720ae3345963414103112fd4b4d2128c569999c2
+|    
+*   NEWCOMMIT:53a43bb6516ceeecf7b6712169e6b2f8c4ce0fb9$$^1428689059$$^Fri Apr 10 18:04:19 2015 +0000$$^jenkins-bot$$^jenkins-bot@gerrit.wikimedia.org$$^Merge "Reorder backlinks indexes"
+|\  
+| * NEWCOMMIT:7843a9e533260ef42fdfab4f889f0c79da4dc41a$$^1424067418$$^Mon Feb 16 16:16:58 2015 +1000$$^Sean Pringle$$^springle@wikimedia.org$$^Reorder backlinks indexes
+| | 
+| | Bug: T89630
+| | Change-Id: I2b04268545b9a88c584f6461f67a38fe3944c17a
+| |   
+* | NEWCOMMIT:5d9b67e09ed150f342b17383e53cc0d4be1ba754$$^1424392291$$^Thu Feb 19 20:31:31 2015 -0400$$^Brian Wolff$$^bawolff+wn@gmail.com$$^Allow edit summaries to be up to 767 bytes long
+| | 
+| | This is just the db part. The changes to UI validation code will
+| | come in a dependent patch later.
+| | 
+| | This changes the max size of various *_comment, *_description
+| | and *_reason fields to be 767 bytes. This size is chosen to
+| | be consistent with the largest we can get away with while
+| | still having covering indexes.
+| | 
+| | It also unifies the various data types of these fields to
+| | varbinary. (Note, this was previously done and reverted in
+| | r80547, but I don't think the reason for revert applies to
+| | the edit summary fields)
+| | 
+| | MyISAM has a much smaller max index size, and this wouldn't
+| | work with that storage engine. However, none of these fields
+| | are used in default indexes (only in WMF indexes), so this
+| | should not be an issue for anyone using MyISAM. Postgress
+| | and sqlite already supported the larger edit summary size.
+| | 
+| | Note: This patch increases min mysql version to 5.0.3.
+| | 
+| | Bug: T6715
+| | Change-Id: I8558e80a18e4591f07f2c3e80f792ea4435c4e71
+| |   
+* | NEWCOMMIT:a086557ab80890472ad0512be8331c5a994dd24b$$^1424024978$$^Sun Feb 15 19:29:38 2015 +0100$$^umherirrender$$^umherirrender_de.wp@web.de$$^[schema] Make column user_newtalk.user_id an unsigned int
+|/  
+|   The primary key of the user table is an unsigned int, the column
+|   user_newtalk.user_id refer the id and should have the same typ to store
+|   the same values as the user table does.
+|   
+|   No pre-deployment activity necessary; no need to sync deployment
+|   and merge; can be done at any time (now or later)
+|   
+|   Bug: T77005
+|   Change-Id: I641dc1fad0a5bb14815f55e0357243a562fd672b
+|  
+* NEWCOMMIT:5f8edb2c0a24b88b84f66b851b63a01b36b1a12c$$^1406753780$$^Wed Jul 30 13:56:20 2014 -0700$$^Chad Horohoe$$^chadh@wikimedia.org$$^Drop ss_total_views and page_counter fields from MediaWiki
+| 
+| Follows up removal of code using hitcounters in 90d90dad6
+| 
+| RFC: https://www.mediawiki.org/wiki/Requests_for_comment/Removing_hit_counters_from_MediaWiki_core
+| Change-Id: Ieeb558f9523c11965cbc1941cad4f316c00c85c5
+|  
+* NEWCOMMIT:02ef5c96c8756d1c9db149e33220fc3a4fee25f4$$^1418629354$$^Mon Dec 15 02:42:34 2014 -0500$$^Kevin Israel$$^pleasestand@live.com$$^tables.sql: Improve description of old_flags
+| 
+| * Changed the name of the 'utf8' flag to 'utf-8', as that is what
+|   Revision stores. (This was already corrected in the mediawiki.org
+|   manual page by RichF.) Noted that 'utf8' was, however, mistakenly
+|   used in an old version of recompressTracked.php.
+| * Added 'external' to the list of flags. This was already added
+|   to the manual page (by GreenReaper) yet not here. Copied the
+|   description from there and added a couple of clarifications.
+| 
+| Change-Id: If15b49a28d7d4b0397481d21e30d877298fc7955
+|  
+* NEWCOMMIT:9665a657b005f3a5b882efff3dd5faeba73297d2$$^1401016989$$^Sun May 25 13:23:09 2014 +0200$$^rillke$$^rainerrillke@hotmail.com$$^Add "chemical" major MIME type to the image tables
+| 
+| The American Chemical Society suggested a new major MIME type for files
+| containing chemical data in 1998: http://dx.doi.org/10.1021/ci9803233
+| This suggestion got widely adopted and is now a de-facto-standard despite
+| not registered with IANA.
+| 
+| Applying this patch will allow us to continue with extension MolHandler
+| and PDBHandler.
+| http://fab.wmflabs.org/T352
+| 
+| - Fixes bug 66412 by creating a logic that will prevent running unneeded
+|   updates.
+| 
+| Bug: 66412
+| Change-Id: Ic45dc1bce796a0406ed8a84e6274df1c4bda4967
+|  
+* NEWCOMMIT:2ed4b3245004cfa5de5e4b1ea3fcb9cab6c57c51$$^1407163063$$^Mon Aug 4 07:37:43 2014 -0700$$^withoutaname$$^drevitchi@gmail.com$$^Change "ENGINE=HEAP" to "ENGINE=MEMORY"
+| 
+| "Memory" is the preferred term, see
+| https://dev.mysql.com/doc/refman/5.0/en/memory-storage-engine.html
+| 
+| Change-Id: I1fd05d027903af6023002dd357998ce5f2606708
+|  
+* NEWCOMMIT:b8c038f6784ef08205f7cf6d7cc11462140e3fa2$$^1394146895$$^Thu Mar 6 15:01:35 2014 -0800$$^Aaron Schulz$$^aschulz@wikimedia.org$$^Redo WhatLinksHere query and add a *_from_namespace field to link tables
+| 
+| * Also tweaked the query so MySQL avoids doing a page_name
+|   index scan when it should start with the link table index
+| * Added population script (triggered by update.php)
+| * Also removed uniqueness from some indexes where it is redundant
+| * Renamed two confusing variables
+| 
+| Bug: 60618
+| Change-Id: Icca99b6ae0ef76cb77695faf82c615516191da36
+|  
+* NEWCOMMIT:50144cd02aada09c275637008adebfca41a1363b$$^1401028730$$^Sun May 25 20:08:50 2014 +0530$$^Kunal Grover$$^kunalgrover05@gmail.com$$^First version of Page Language selector
+| 
+| Special page PageLanguage to set the page language of a page.
+| To enable the feature, set $wgPageLanguageUseDB to true
+| and assign the 'pagelang' user right to a user group.
+| 
+| Bug: 35489
+| Change-Id: I0f82b146fbe948f917c1c5d29f7469644d797e80
+* NEWCOMMIT:e121205cb36ed91fe2292d5b43992f36cdffab0e$$^1403549917$$^Mon Jun 23 20:58:37 2014 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^Correct comment about getPropsFromPath/sha1Base36 in sql files
+| 
+| The function of class File are deprecated, so change comment to FSFile.
+| 
+| Change-Id: I2350b2d6d6b09d4d2f6d64ab04891e0911595cb0
+|  
+* NEWCOMMIT:c396f11ab311876c2907b233eaa75ffcb757cf0e$$^1401823204$$^Tue Jun 3 15:20:04 2014 -0400$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Add wl_user_notificationtimestamp index
+| 
+| Bug: 65246
+| Change-Id: If3e9e855c8a21874ca69c4976af207833dcc53f2
+|  
+* NEWCOMMIT:2b441eba406f2c4988da80d264738d45930bf041$$^1397501062$$^Mon Apr 14 20:44:22 2014 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^Drop rc_cur_time from recentchanges
+| 
+| Field was removed in 1.23 from sql statements, but kept to allow easier
+| rollback on version update from 1.22 -> 1.23, when something gets wrong
+| with the new version.
+| 
+| Bug: 40667
+| Follow-Up: I4a9c2fa813d1f25dfb755e564f7677a212934d7b
+| Change-Id: I48989aceec31019f0b6c98aaeafaf60e975244df
+|  
+* NEWCOMMIT:b1d6e78f7444211cc93793103c3673e1a2637a69$$^1396263628$$^Mon Mar 31 13:00:28 2014 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^Introducing pp_sortkey.
+| 
+| This adds the pp_sortkey column to the page_props table.
+| 
+| pp_sortkeys allows for top-k queries for pages, e.g.
+| the 100 pages with the most language links, etc. It is also
+| possible to query for exact values.
+| 
+| For now, pp_sortkey will contain pp_value's numeric value if
+| the value was set to a float, int or boolean.
+| 
+| Associated tasks:
+| * create a maintenance script for populating pp_sortkey. Tricky,
+| because when reading from the database, all values are strings.
+| * create an API module for querying pages by property value.
+| 
+| bug: 58032
+| Change-Id: I217c42656fb877ff35a36eb446a22bdaf119faac
+|  
+* NEWCOMMIT:01c8c421f8bc20b358e8612227151e845e0109f3$$^1381342168$$^Wed Oct 9 11:09:28 2013 -0700$$^csteipp$$^csteipp@wikimedia.org$$^Password Expiration
+| 
+| Add functionality to expire users' passwords:
+|  * Adds column to the user table to keep a password expiration
+|  * Adds $wgPasswordExpirationDays, which will force users to reset
+|    their passwords after a set number of days. By default, this set
+|    to false, so passwords never expire.
+|  * Adds a default grace period of 7 days, where if the user's password
+|    is expired, they can still login, but are encouraged to reset their
+|    password.
+|  * Adds hook 'LoginPasswordResetMessage' to update reset message, in
+|    case an extension wants to vary the message on a particular reset
+|    event.
+|  * Adds hook 'ResetPasswordExpiration' to allow extensions to change
+|    the expiration date when the user resets their password. E.g., if
+|    an extension wants to vary the expiration based on the user's group.
+| 
+| If the user is in the grace period, they get a password reset form
+| added to the login successful page. If an extension prevents showing
+| the login successful page (like CentralAuth), it should be updated to
+| show a password change form during the grace period. After the grace
+| period, the user will not be able to login without changing their
+| password.
+| 
+| Also prevents a successful reset if the user is "changing" their
+| password to their existing password.
+| 
+| No passwords will expire by default. Sites will have to call
+| User->expirePassword() from their own maintenance script to trigger a
+| password reset for a user.
+| 
+| Bug: 54997
+| Change-Id: I92a9fc63b409b182b1d7b48781d73fc7216f8061
+|  
+* NEWCOMMIT:b57e4570913cbe385fe515f3a0adb8a3c7de55cf$$^1386896091$$^Thu Dec 12 16:54:51 2013 -0800$$^Aaron Schulz$$^aschulz@wikimedia.org$$^Added a page_links_updated column for job de-duplication
+| 
+| Change-Id: I74b6f507ef7371db92e0c3f058d38c0ca5dea9ef
+|  
+* NEWCOMMIT:65a304c44451d0a62d01b809f3ef24c921286702$$^1386623466$$^Mon Dec 9 16:11:06 2013 -0500$$^Jackmcbarn$$^jackmcbarn@gmail.com$$^Add index on logging.log_user_text
+| 
+| Fixing bug #54404 requires querying against logging.log_user_text, which
+| is currently unindexed. Add an index, to prevent performance from being
+| adversely affected by the fix.
+| 
+| Bug: 54432
+| Change-Id: I6b2af65c75bbee57377cb1ec2e75ea41a5091f80
+|    
+*   NEWCOMMIT:f8acd5fa6f9c9aee11728767803102e8154583ab$$^1384896300$$^Tue Nov 19 21:25:00 2013 +0000$$^jenkins-bot$$^jenkins-bot@gerrit.wikimedia.org$$^Merge "move page_restrictions.pr_id to top in tables.sql"
+|\  
+| * NEWCOMMIT:8175727af5477a3bff0630659f8419084e627827$$^1384800473$$^Mon Nov 18 19:47:53 2013 +0100$$^umherirrender$$^umherirrender_de.wp@web.de$$^move page_restrictions.pr_id to top in tables.sql
+| | 
+| | Having the primary key at the top of the column definition looks nicer
+| | and helps by finding him.
+| | Oracle and Postgres already have this moved up.
+| | 
+| | Change-Id: Id8afbff35e165919f55dfcf1fd1dfaf1805d6aab
+| |   
+* | NEWCOMMIT:a500e6d62af555f0bcb208d599bf155a5fc4d60d$$^1384799689$$^Mon Nov 18 19:34:49 2013 +0100$$^umherirrender$$^umherirrender_de.wp@web.de$$^Fix indentation of comment in tables.sql
+|/  
+|   Change-Id: Id879b4438f8f004549c090567ff76b64c5072824
+|  
+* NEWCOMMIT:974562aee92a78be82cf8e1416ef44648bb7dbb7$$^1384017654$$^Sat Nov 9 18:20:54 2013 +0100$$^umherirrender$$^umherirrender_de.wp@web.de$$^Remove recentchanges.rc_cur_time from sql statements
+| 
+| Field is unused since many versions, so remove the use in sql
+| statements, to allow dropping in a later version.
+| 
+| The field must not be reference from INSERT because it has a default
+| value, which is used, when no value is specified in the statement.
+| 
+| Keeping the field allows easier rollback on version update, when
+| something gets wrong with the new version.
+| 
+| Existing Comment in tables.sql was added with r101293, was already
+| disused in r11088
+| 
+| Bug: 40667
+| Change-Id: I4a9c2fa813d1f25dfb755e564f7677a212934d7b
+*   NEWCOMMIT:248154da7e0d46af97304395185b4b118a6e6aa3$$^1382982835$$^Mon Oct 28 17:53:55 2013 +0000$$^jenkins-bot$$^jenkins-bot@gerrit.wikimedia.org$$^Merge "Revert "Revert "Add new recentchanges field rc_source to replace rc_type"""
+|\  
+| * NEWCOMMIT:6bbd4bca6c1341395988fdfdcf4788ce187edfa9$$^1382731842$$^Fri Oct 25 13:10:42 2013 -0700$$^Erik Bernhardson$$^ebernhardson@wikimedia.org$$^Revert "Revert "Add new recentchanges field rc_source to replace rc_type""
+| | 
+| | This reverts commit 113f49bb21487f813548fa4e75ecb568c433ecbf after the
+| | schema change has been completed.
+| | 
+| | Change-Id: I5412466444526986e1209d0982dd62cd5b387ad1
+| |   
+* | NEWCOMMIT:dfc3e3df90a3293ef3c12935235305f7af0803ff$$^1379327500$$^Mon Sep 16 12:31:40 2013 +0200$$^Bartosz Dziewoński$$^matma.rex@gmail.com$$^Correctly update wl_notificationtimestamp when viewing old revisions
+|/  
+|   == Prelude ==
+|   wl_notificationtimestamp controls sending the user e-mail
+|   notifications about changes to pages, as well as showing the "updated
+|   since last visit" markers on history pages, recent changes and
+|   watchlist.
+|   
+|   == The bug ==
+|   Previously, on every view of a page, the notification timestamp was
+|   cleared, regardless of whether the user as actually viewing the latest
+|   revision. When viewing a diff, however, the timestamp was cleared only
+|   if one of the revisions being compared was the latest one of its page.
+|   
+|   The same behavior applied to talk page message indicators (which are
+|   actually stored sepately to cater to anonymous users).
+|   
+|   This was inconsistent and surprising when one was attempting to, say,
+|   go through the 50 new posts to a discussion page in a peacemeal
+|   fashion.
+|   
+|   == The fix ==
+|   If the revision being viewed is the latest (or can't be determined),
+|   the timestamp is cleared as previously, as this is necessary to
+|   reenable e-mail notifications for given user and page.
+|   
+|   If the revision isn't the latest, the timestamp is updated to
+|   revision's timestamp plus one second. This uses up to two simple
+|   (selectField) indexed queries per page view, only fired when we
+|   do not already know we're looking at the latest version.
+|   
+|   Talk page indicator is updated to point at the next revision after the
+|   one being viewed, or cleared if viewing the latest revision. The
+|   UserClearNewTalkNotification hook gained $oldid as the second argument
+|   (a backwards-compatible change). In Skin, we no longer ignore the
+|   indicator being present if we're viewing the talk page, as it might
+|   still be valid.
+|   
+|   == The bonus ==
+|   Comments and formatting was updated in a few places, including
+|   tables.sql and Wiki.php.
+|   
+|   The following functions gained a second, optional $oldid parameter
+|   (holy indirection, Batman!):
+|   * WikiPage#doViewUpdates()
+|   * User#clearNotification()
+|   * WatchedItem#resetNotificationTimestamp()
+|   
+|   DifferenceEngine gained a public method mapDiffPrevNext() used
+|   to parse the ids from URL parameters like oldid=12345&diff=prev,
+|   factored out of loadRevisionIds(). A bug where the NewDifferenceEngine
+|   hook would not be called in some cases, dating back to its
+|   introduction in r45518, was fixed in the process.
+|   
+|   Bug: 41759
+|   Change-Id: I4144ba1987b8d7a7e8b24f4f067eedac2ae44459
+|    
+| * NEWCOMMIT:48765e917cafaafb9995f48721d91a5ef01f1920$$^1334082479$$^Tue Apr 10 18:27:59 2012 +0000$$^Reedy$$^reedy@formey.wikimedia.org$$^Commit of various live hacks
+| | 
+| | Disable of MessageBlobStore clear
+| | 
+| | Reset $wgAutopromote (should be moved to a config change!!)
+| | 
+| | Disable setting of wgStyleSheetPath
+| | 
+| | Throttle page_touched
+| | 
+| | Add apc htcp packet numbers to SquidUpdate
+| | 
+| | Disable set names binary/utf8
+| | 
+| | Commment out searchindex table indexes
+| | 
+| | Was c532e81d583d3d0439fe76eea4d105d675461b56
+| | 
+| | Original revision Change-Id I42c4f859e55eb198f6c6841e582b3552aad7b31f
+| | https://gerrit.wikimedia.org/r/#/c/7606
+| | 
+| | Change-Id: I5ec8dd53188e9e4128f99ceaff38ebf9dcf570bb
+| |     
+| | * NEWCOMMIT:bf4fb5ee9ea251512e736be36d9d6bca271c58d4$$^1350946286$$^Mon Oct 22 23:51:26 2012 +0100$$^Reedy$$^reedy@wikimedia.org$$^Back out config table and related code
+| | | 
+| | | Change-Id: I4fa180d45984a4ec2b2c7b1149015c6dad14c5f0
+| | |    
+* | | NEWCOMMIT:9b2b027ba7bc922bb9150cad19c49feb0c892f9f$$^1351391030$$^Sat Oct 27 22:23:50 2012 -0400$$^tisane$$^nathanlarson3141@gmail.com$$^Add archive, externallinks PK
+| | | 
+| | | * New fields: ar_id, el_id. el_id is presently not used for
+| | |   anything, but will help with online schema changes.
+| | | 
+| | | Bug: 15441
+| | | Bug: 39675
+| | | Change-Id: Ib6b0fc3736d173fa4ba7b786ecfc710b2f4711bb
+| | |      
+* | |   NEWCOMMIT:3316e073a8a032976bfcad6dfe9637a564f3b3c4$$^1381970264$$^Thu Oct 17 00:37:44 2013 +0000$$^jenkins-bot$$^jenkins-bot@gerrit.wikimedia.org$$^Merge "Revert "Add new recentchanges field rc_source to replace rc_type""
+|\ \ \  
+| * | | NEWCOMMIT:113f49bb21487f813548fa4e75ecb568c433ecbf$$^1381969960$$^Thu Oct 17 00:32:40 2013 +0000$$^Reedy$$^reedy@wikimedia.org$$^Revert "Add new recentchanges field rc_source to replace rc_type"
+| | | | 
+| | | | No feature flag, and also not deployed on WMF wikis. Asking for schema changes by the time we branch tomorrow is just unfair
+| | | | 
+| | | | This reverts commit e478c230f6d3f1b7638d4443682eff0df7650def.
+| | | | 
+| | | | Change-Id: I125c30e76fa04679cc04ae7b8728ae3a61f35194
+| | | |       
+* | | |   NEWCOMMIT:7c47d3f66a63e3699a2125890785976b10f5481e$$^1381966417$$^Wed Oct 16 23:33:37 2013 +0000$$^jenkins-bot$$^jenkins-bot@gerrit.wikimedia.org$$^Merge "Add new recentchanges field rc_source to replace rc_type"
+|\ \ \ \  
+| |/ / /  
+| * | | NEWCOMMIT:e478c230f6d3f1b7638d4443682eff0df7650def$$^1379975881$$^Mon Sep 23 15:38:01 2013 -0700$$^Erik Bernhardson$$^ebernhardson@wikimedia.org$$^Add new recentchanges field rc_source to replace rc_type
+| | | | 
+| | | | The existing field to differentiate between kinds of recentchanges rows is
+| | | | the rc_type field. We want to allow extensions to insert their own custom
+| | | | data into recentchanges, but we have learned via the NS_* series of constants
+| | | | that requiring extensions to "register" a specific number is very error prone.
+| | | | 
+| | | | The solution, which this commit implements the first phase of, is to utilize
+| | | | a new 16 byte string field rc_source.  Within that field change types will be
+| | | | prefixed strings such as 'mw.edit' and 'mw.new'.
+| | | | 
+| | | | This commit adds the new field and begins populating it with data.  At some
+| | | | point in the future the rc_type field will be dropped.  While WMF wiki's will
+| | | | simply wait out the 30 day recentchanges history, other wiki's have the option
+| | | | of letting update.php populate rc_source, or manually applying the db change and
+| | | | utilizing the PopulateRecentChangeSource maintenance script.
+| | | | 
+| | | | Change-Id: Iaddd6c446373a68d31586ed54346db7d04e13b2c
+| | | |     
+* | | | NEWCOMMIT:2f02c77b4ef1d6a7d6a8e8862ead5592863d7988$$^1380173882$$^Thu Sep 26 01:38:02 2013 -0400$$^Kevin Israel$$^pleasestand@live.com$$^Use utf8 charset for searchindex MySQL table
+|/ / /  
+| | |   This prevents the DB error "1283 Column 'si_title' cannot be part of
+| | |   FULLTEXT index", which happens when the "binary" charset is used.
+| | |   
+| | |   Note that 2ab7c9ec3b fixed the problem for creation of new DBs, though
+| | |   not for reuse of existing DBs. It is still necessary to specify the
+| | |   character set for the table itself.
+| | |   
+| | |   Bug: 47191
+| | |   Change-Id: Ib4f30fd2730839af1323295898e6dce47b27068d
+| | |    
+* | | NEWCOMMIT:24bfde2710fca254e444a065c7f6d83fa83ca17a$$^1377356785$$^Sat Aug 24 17:06:25 2013 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^Fix spacing and break some lines
+| | | 
+| | | Change-Id: Ia57685d8858e02e399ad5c75ce64d12609d340ac
+| | |    
+* | | NEWCOMMIT:5b52750e7b832a3ae320c49a834a3658d26d81e2$$^1371079278$$^Thu Jun 13 09:21:18 2013 +1000$$^Tim Starling$$^tstarling@wikimedia.org$$^Fixme comment for bug 49504
+| | | 
+| | | Change-Id: Ie229e84b299c357cfe9a2db0a5ba07713aac7597
+| | |    
+* | | NEWCOMMIT:a8fdb5daf85ea28f9cd4eb0596357c5e820c9e16$$^1368802766$$^Fri May 17 16:59:26 2013 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^Add RC_EXTERNAL to comment in tables.sql
+| | | 
+| | | Change-Id: If3156984e9ff447fec6644681d96c1095b709a99
+| | |    
+* | | NEWCOMMIT:59f6fd0199d95c45d1fa8851cdd1e23c9a10eb28$$^1368186666$$^Fri May 10 13:51:06 2013 +0200$$^Siebrand Mazeland$$^s.mazeland@xs4all.nl$$^Change EXIF to Exif
+| | | 
+| | | Per https://en.wikipedia.org/wiki/Exchangeable_image_file_format. Spotted
+| | | by Shirayuki and documented on
+| | | https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Sesp-property-exif-data/en
+| | | 
+| | | Change-Id: I92ba67ec60ccfe7a173d950593357b86792b8ed3
+| | |    
+* | | NEWCOMMIT:d560eb0b3eccde3ec6ae30dcf91bec3eb694d8d6$$^1367259553$$^Mon Apr 29 19:19:13 2013 +0100$$^Reedy$$^reedy@wikimedia.org$$^Revert "Commit of various live hacks"
+| | | 
+| | | This reverts commit c6af934ae65b8c7dbd878a376f9e46dc28bff941.
+| | | 
+| | | Change-Id: I3e863bb632531d7cd4ec0614325a7c4a7ba9aa3d
+| | |    
+* | | NEWCOMMIT:c6af934ae65b8c7dbd878a376f9e46dc28bff941$$^1334082479$$^Tue Apr 10 18:27:59 2012 +0000$$^Reedy$$^reedy@formey.wikimedia.org$$^Commit of various live hacks
+| | | 
+| | | Disable of MessageBlobStore clear
+| | | 
+| | | Reset $wgAutopromote (should be moved to a config change!!)
+| | | 
+| | | Disable setting of wgStyleSheetPath
+| | | 
+| | | Throttle page_touched
+| | | 
+| | | Add apc htcp packet numbers to SquidUpdate
+| | | 
+| | | Disable set names binary/utf8
+| | | 
+| | | Commment out searchindex table indexes
+| | | 
+| | | Was c532e81d583d3d0439fe76eea4d105d675461b56
+| | | 
+| | | Original revision Change-Id I42c4f859e55eb198f6c6841e582b3552aad7b31f
+| | | https://gerrit.wikimedia.org/r/#/c/7606
+| | | 
+| | | Change-Id: I5ec8dd53188e9e4128f99ceaff38ebf9dcf570bb
+| | |    
+* | | NEWCOMMIT:36cade5fe861a5ba61c314b9412b4e6e7dac38cd$$^1363808908$$^Wed Mar 20 15:48:28 2013 -0400$$^Chad Horohoe$$^chadh@wikimedia.org$$^Remove ExternalUser authentication code
+| | | 
+| | | This was an experimental authentication system intoduced a couple
+| | | of years ago with a pretty narrow use-case. It's been pretty much
+| | | ignored since introduction, and makes login more complicated than
+| | | it needs to be.
+| | | 
+| | | I didn't drop the external_user table on the off-chance someone
+| | | out there actually has data in it, but they should use AuthPlugin
+| | | for their external authentication needs.
+| | | 
+| | | Change-Id: I794338dbb75961ee033d41fa44bb7aa22e54f447
+| | |    
+* | | NEWCOMMIT:c013ec02b9219941b29030ae6ff9f7052df646ef$$^1357863723$$^Thu Jan 10 19:22:03 2013 -0500$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^(bug 36400) API: Fix sorting for iwlinks, langlinks
+| | | 
+| | | The iwlinks and langlinks modules continue parameters imply ordering by
+| | | page then prefix then title. But in certain modes, the actual queries
+| | | use a different ordering, which may result in skipped or repeated
+| | | results.
+| | | 
+| | | This changeset fixes that. To do so, it needs to re-add an index
+| | | iwl_prefix_from_title which was mistakenly removed in 2010 (r69721). And
+| | | while it's doing that, it cleans up errors in the sqlite and postgresql
+| | | handling of the iwlinks indexes too.
+| | | 
+| | | Also, per Asher, make the iwl_prefix_from_title and
+| | | iwl_prefix_title_from indexes non-UNIQUE.
+| | | 
+| | | Change-Id: I607e8bf9183a2d8152a6127a81c83a0b5bba0c61
+| | |    
+* | | NEWCOMMIT:9c40037b0077b772ddd5691824de4a26fe8fc29a$$^1353611562$$^Thu Nov 22 19:12:42 2012 +0000$$^Jan Gerber$$^jgerber@wikimedia.org$$^add index to image table to query by type
+|/ /  
+| |   this speeds up Special:MIMESearch and allows
+| |   queries for all files of one type.
+| |   
+| |   Change-Id: I85715b0553a771ab88d9763ba921923551988bd0
+| |     
+| | * NEWCOMMIT:d793048a2d8f17560ab1c7e0d04c03e572e40d17$$^1353611562$$^Thu Nov 22 19:12:42 2012 +0000$$^Jan Gerber$$^jgerber@wikimedia.org$$^add index to image table to query by type
+| |/  
+|/|   this speeds up Special:MIMESearch and allows
+| |   queries for all files of one type.
+| |   
+| |   Change-Id: I85715b0553a771ab88d9763ba921923551988bd0
+| |   
+* | NEWCOMMIT:a43f751cf6b6849edddc0a6504553330aef8912e$$^1363047972$$^Tue Mar 12 11:26:12 2013 +1100$$^Tim Starling$$^tstarling@wikimedia.org$$^Reduce disruption during updateCollation.php
+| | 
+| | Have updateCollation.php order by cl_to, so that each category is
+| | updated all at once. This minimises the time during which a category
+| | will appear to be incorrectly sorted, while the maintenance script is in
+| | progress.
+| | 
+| | Mark the cl_collation index as needing deletion, it was always pretty
+| | pointless. You can't do much better than a full table scan when you're
+| | changing the collation value on a wiki.
+| | 
+| | Increase the batch size since the lack of a cl_to,cl_from index means
+| | that it will have to filesort each category. A larger batch size means
+| | less sorts. As noted by Liangent on bug 45970, you can't order by
+| | cl_sortkey since that will change during execution.
+| | 
+| | Also fix an inappropriate use of $wgMiserMode and remove a no-op from
+| | the SET clause of the UPDATE.
+| | 
+| | Very lightly tested.
+| | 
+| | Change-Id: I19bc8d6701f5f78040aa9c521427ac98ef488d89
+| |   
+* | NEWCOMMIT:bf4c2fb7d6407e37189d6d473b566c4fa021dd4a$$^1363048374$$^Tue Mar 12 11:32:54 2013 +1100$$^Tim Starling$$^tstarling@wikimedia.org$$^Rewrite user_touched comment, since apparently it is not clear enough
+| | 
+| | Change-Id: Ib993e5a6dc56963e9afbbdc2ada77762e1594f0b
+| |   
+* | NEWCOMMIT:586e8fb7ec09321df726229964e8784444013fa9$$^1362422302$$^Mon Mar 4 18:38:22 2013 +0000$$^Reedy$$^reedy@wikimedia.org$$^Revert "Commit of various live hacks"
+| | 
+| | This reverts commit 3d6851f66257d5df117688b51b7f3037c8ab6aaf.
+| | 
+| | Change-Id: I26c418d631047783ba945e6b6a7f707d876b3146
+| |   
+* | NEWCOMMIT:3d6851f66257d5df117688b51b7f3037c8ab6aaf$$^1334082479$$^Tue Apr 10 18:27:59 2012 +0000$$^Reedy$$^reedy@formey.wikimedia.org$$^Commit of various live hacks
+| | 
+| | Disable of MessageBlobStore clear
+| | 
+| | Reset $wgAutopromote (should be moved to a config change!!)
+| | 
+| | Disable setting of wgStyleSheetPath
+| | 
+| | Throttle page_touched
+| | 
+| | Add apc htcp packet numbers to SquidUpdate
+| | 
+| | Disable set names binary/utf8
+| | 
+| | Commment out searchindex table indexes
+| | 
+| | Was c532e81d583d3d0439fe76eea4d105d675461b56
+| | 
+| | Original revision Change-Id I42c4f859e55eb198f6c6841e582b3552aad7b31f
+| | https://gerrit.wikimedia.org/r/#/c/7606
+| | 
+| | Change-Id: I5ec8dd53188e9e4128f99ceaff38ebf9dcf570bb
+| |   
+* | NEWCOMMIT:bc4c2ef32d70162b46506bdcbf5320fff8265353$$^1358354765$$^Wed Jan 16 11:46:05 2013 -0500$$^Brad Jorsch$$^bjorsch@wikimedia.org$$^Add pp_propname_page index to page_props
+| | 
+| | This adds an index to page_props to support looking up pages using a
+| | particular property.
+| | 
+| | Change-Id: Iea778eb783e1d4a46fb0549dfd84915477cac5df
+| |   
+* | NEWCOMMIT:0c5301a0d1dfc82088c67873553506411e2943e6$$^1357158022$$^Wed Jan 2 20:20:22 2013 +0000$$^Reedy$$^reedy@wikimedia.org$$^Bug 11057 - Increase size of ug_group in user_groups table
+| | 
+| | Change-Id: I79fd5c6e1566de3145ac39420da4fce77099745a
+| |   
+* | NEWCOMMIT:551d81df41a687d2b2e49a81106efe07fc38d405$$^1355190948$$^Mon Dec 10 20:55:48 2012 -0500$$^Chad Horohoe$$^chadh@wikimedia.org$$^Revert "Commit of various live hacks"
+| | 
+| | This reverts commit acddbc862afceead7cd3cce1dc1cc55c265e0ca1.
+| | 
+| | Change-Id: Iabf5f917938c347ca6ddc7a373c731f44f23363b
+| |   
+* | NEWCOMMIT:acddbc862afceead7cd3cce1dc1cc55c265e0ca1$$^1334082479$$^Tue Apr 10 18:27:59 2012 +0000$$^Reedy$$^reedy@formey.wikimedia.org$$^Commit of various live hacks
+| | 
+| | Disable of MessageBlobStore clear
+| | 
+| | Reset $wgAutopromote (should be moved to a config change!!)
+| | 
+| | Disable setting of wgStyleSheetPath
+| | 
+| | Disable squid updates in HTMLCacaheUpdate invalidateTitles
+| | 
+| | Throttle page_touched
+| | 
+| | Add apc htcp packet numbers to SquidUpdate
+| | 
+| | Disable set names binary/utf8
+| | 
+| | Commment out searchindex table indexes
+| | 
+| | Was c532e81d583d3d0439fe76eea4d105d675461b56
+| | 
+| | Original revision Change-Id I42c4f859e55eb198f6c6841e582b3552aad7b31f
+| | https://gerrit.wikimedia.org/r/#/c/7606
+| | 
+| | Change-Id: I5ec8dd53188e9e4128f99ceaff38ebf9dcf570bb
+| |   
+* | NEWCOMMIT:a26fde06c0a3eaa164960e9dc2dbc6882f2477dd$$^1354454788$$^Sun Dec 2 14:26:28 2012 +0100$$^Alexandre Emsenhuber$$^ialex.wiki@gmail.com$$^(bug 42619) Adjust comment for log_params database field
+| | 
+| | Change-Id: Ib78fd5ad7bef78b07460200d5d8b143e5a9a8802
+| |   
+* | NEWCOMMIT:e5d41cca909a8ec1b19c6c080388c885854be3f7$$^1353535130$$^Wed Nov 21 13:58:50 2012 -0800$$^Aaron Schulz$$^aschulz@wikimedia.org$$^[Upload] [Schema] Added us_props column to avoid expensive GETs.
+| | 
+| | * We already compute the props when stashing, so including that in a column
+| |   lets us reuse it later when the stashed file is to be published.
+| | 
+| | Change-Id: I3d6adb6528f1e992d8986058806e745c4e1c0300
+| |   
+* | NEWCOMMIT:cd000590ee694af73edb05b5e37b60b5e2b77fd5$$^1351038594$$^Tue Oct 23 17:29:54 2012 -0700$$^Aaron Schulz$$^aschulz@wikimedia.org$$^[JobQueue] Added support for retrying jobs when runners die.
+| | 
+| | * This adds a new 'claimTTL' setting which recycles jobs into the queue
+| |   if they have been claimed for longer than that duration (in seconds).
+| | * This also purges jobs for such cases when job retries are not enabled.
+| | * This adds a new job_attempts column and adds an index to improve the
+| |   query and semantics for FIFO ordered queues.
+| | 
+| | Change-Id: Idb6217a694d86a4d6fc881768deed424628f015d
+| |   
+* | NEWCOMMIT:cc183225599962543f8005b9eb95198e286c137c$$^1350946286$$^Mon Oct 22 23:51:26 2012 +0100$$^Reedy$$^reedy@wikimedia.org$$^Back out config table and related code
+| | 
+| | Change-Id: I4fa180d45984a4ec2b2c7b1149015c6dad14c5f0
+| |   
+* | NEWCOMMIT:59da375cd9c93ab0f8ee3a9fbe2e02f8e8630ed5$$^1351098894$$^Wed Oct 24 10:14:54 2012 -0700$$^Aaron Schulz$$^aschulz@wikimedia.org$$^[JobQueue] Added support for approximate FIFO job queues.
+| | 
+| | Change-Id: Icd8c084174e26a2a69f370e7bf6f858eba76e520
+| |   
+* | NEWCOMMIT:b567f3602e8bac048c9dce0f359ef0131d947c28$$^1346198491$$^Tue Aug 28 17:01:31 2012 -0700$$^ASchulz$$^aschulz@wikimedia.org$$^[JobQueue] Job queue refactoring and generalizing.
+| | 
+| | * Added support for different queue types and methods for storing queues.
+| | * Treat each job type as being on its own queue, at least logically.
+| | * Added $wgJobTypeConf to configure queue types for each job type.
+| | * Improved the job DB table so that duplicate job checks actually work
+| |   and are faster. Also improved the method for popping rows of the table.
+| | * Disabled duplicate job removal for everything except refreshLinks.
+| |   The DELETE statements just add DB overhead and are not useful for cheap
+| |   jobs, especially ones with start/end params (which are unlikely to have
+| |   exact duplicates).
+| | 
+| | Change-Id: I49824c7fa855fea4ddcac5c9901ece8c2c0101d0
+| |   
+* | NEWCOMMIT:c456c230388e449c92c008e6897580e4bb2c6a5c$$^1349862022$$^Wed Oct 10 11:40:22 2012 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^Fix declaration of content_model and content_format fields.
+| | 
+| | The data type of content model and content format was varbinary originally,
+| | then it got changed to int, then back again to varbinary. The latter change
+| | was done in the updater, but was missing in tables.sql.
+| | 
+| | Change-Id: I44a92d18ca22126d9678073b272eb6345627a951
+| |   
+* | NEWCOMMIT:fb2c1c645bdc2f74477e4a4dd9c7b08c5afe4744$$^1350241105$$^Sun Oct 14 20:58:25 2012 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^Add separate fa_sha1 field to filearchive table
+| | 
+| | This allows sha1 searches with the api in miser mode for deleted files
+| | 
+| | Added script to populate the rows
+| | Adding new field to selects and handle it in all places, where needed
+| | 
+| | Using a 10 byte index for the new field per
+| | http://lists.wikimedia.org/pipermail/wikitech-l/2012-September/063429.html
+| | 
+| | Change-Id: Ie54a513fe361202e63df44be44a0fdd91926c974
+* | NEWCOMMIT:7389d7c69035c968553fbd2eaf1cf47038c4577c$$^1347470559$$^Wed Sep 12 19:22:39 2012 +0200$$^jeroendedauw$$^jeroendedauw@gmail.com$$^Added sites functionality, a much more generic and flexible version of the existing interwiki code
+| | 
+| | This code is meant to replace the current interwiki code, but does not do so just yet. It is however used by the Wikibase extension. This allows us to try out some more things and have the code stabilize more before we migrate over existing interwiki functionality.
+| | 
+| | Change-Id: I23c47c2c3909a1500350fb560a5f2ec654e2c37e
+| |     
+* |   NEWCOMMIT:c546fae8ed67279d21daf0652349975fa034f7d1$$^1349697534$$^Mon Oct 8 13:58:54 2012 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^merge latest master into Wikidata branch
+|\ \  
+| | | Change-Id: Id4e0f40c03679c13d8934a6add99b5cd86d0437d
+| | |      
+| * |   NEWCOMMIT:11f49919c0cc898cc4bc97f9614b99dfa4d8b514$$^1349222056$$^Tue Oct 2 23:54:16 2012 +0000$$^Aaron Schulz$$^aschulz@wikimedia.org$$^Merge "Truncate SHA-1 indexes"
+| |\ \  
+| | * | NEWCOMMIT:0d044e6071614dfdf016d55014b6912a54fb5dd3$$^1348632338$$^Wed Sep 26 14:05:38 2012 +1000$$^Tim Starling$$^tstarling@wikimedia.org$$^Truncate SHA-1 indexes
+| | |/  
+| | |   Per Asher Feldman's suggestion on wikitech-l, truncate DB indexes which
+| | |   hold SHA-1 values, so that the space usage is reduced at the expense of
+| | |   a very small overhead when selecting values that have colliding
+| | |   truncated hashes.
+| | |   
+| | |   Change-Id: I059de4f7bba9a949cf0a93a57df32226c41d8ce0
+| | |    
+| * | NEWCOMMIT:e6a6b33567cfa6d23904cff720912693fc412ceb$$^1348914331$$^Sat Sep 29 12:25:31 2012 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^(bug 34960) drop unused fields rc_moved_to_ns/rc_moved_to_title
+| | | 
+| | | Change-Id: I68e8c0bb23f185c0f996a8905f6d437db3080aa1
+| * | NEWCOMMIT:bd602d20833f435fd1b9fbe7154ea10971eb5a7f$$^1348355107$$^Sun Sep 23 01:05:07 2012 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^Drop unused database field ss_admins
+| |/  
+| |   no longer updated since 1.5
+| |   
+| |   Change-Id: Iebdce084d178b5003105b2d2b7dcc499c274ff56
+* |   NEWCOMMIT:12166f46b4d63d3fd3cab68cf4c7090a1646dd09$$^1347356582$$^Tue Sep 11 11:43:02 2012 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^merged master (2012-09-11)
+|\ \  
+| |/  Change-Id: I8e953eaa22f9d331b0af5e780fbeff6d702b23e3
+| |   
+* | NEWCOMMIT:e134e3fecbfaba5587edb8ada43fafbb81ae6186$$^1338745567$$^Sun Jun 3 19:46:07 2012 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^comments and fixes from review session with tim.
+| |     
+* |   NEWCOMMIT:01f36b721f6fb60000b625fd681993d50ebd0e40$$^1337030658$$^Mon May 14 23:24:18 2012 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^merged latest master
+|\ \  
+| | |    
+* | | NEWCOMMIT:cbc2014b2d0532202fb7858dc640b957715cd403$$^1336946549$$^Mon May 14 00:02:29 2012 +0200$$^daniel$$^daniel.kinzler@wikimedia.de$$^Use integers for content_model and content_format.
+| | | 
+| | | Representing content_model and content_format as integers in the
+| | | database was suggested by Asher mainly to save space.
+| | | 
+| | | This change entails some refactoring and renaming, but no big
+| | | change in logic.
+| | |      
+* | |   NEWCOMMIT:10e91851b2568267e5ccb7bbd0ab24ec4f2a195a$$^1334147069$$^Wed Apr 11 14:24:29 2012 +0200$$^Jens Ohlig$$^jens.ohlig@wikimedia.de$$^Merge branch 'master' into Wikidata
+|\ \ \  
+| | | | Conflicts:
+| | | | 	.gitreview
+| | | | 	includes/Article.php
+| | | | 	includes/AutoLoader.php
+| | | | 	includes/EditPage.php
+| | | | 	includes/LinksUpdate.php
+| | | | 	includes/WikiPage.php
+| | | | 	includes/installer/Ibm_db2Updater.php
+| | | | 	includes/installer/MysqlUpdater.php
+| | | | 	includes/installer/OracleUpdater.php
+| | | | 	includes/installer/SqliteUpdater.php
+| | | | 	maintenance/refreshLinks.php
+| | | |     
+* | | | NEWCOMMIT:49d903ef22d1269c9fb6ff54d56eae59fa1730bb$$^1331055324$$^Tue Mar 6 17:35:24 2012 +0000$$^Daniel Kinzler$$^daniel.kinzler@wikimedia.de$$^installer/updater
+| | | |       
+| | | | * NEWCOMMIT:65d35fbcea62274031980d9e4bf473ddc3b0e22a$$^1334082479$$^Tue Apr 10 18:27:59 2012 +0000$$^Reedy$$^reedy@formey.wikimedia.org$$^Commit of various live hacks
+| | | |/  
+| | |/|   Disable of MessageBlobStore clear
+| | | |   
+| | | |   Reset $wgAutopromote (should be moved to a config change!!)
+| | | |   
+| | | |   Disable setting of wgStyleSheetPath
+| | | |   
+| | | |   Disable squid updates in HTMLCacaheUpdate invalidateTitles
+| | | |   
+| | | |   Throttle page_touched
+| | | |   
+| | | |   Add apc htcp packet numbers to SquidUpdate
+| | | |   
+| | | |   Disable set names binary/utf8
+| | | |   
+| | | |   Commment out searchindex table indexes
+| | | |   
+| | | |   Was c532e81d583d3d0439fe76eea4d105d675461b56
+| | | |   
+| | | |   Change-Id: I42c4f859e55eb198f6c6841e582b3552aad7b31f
+| | | |       
+| | | | * NEWCOMMIT:277ca9b5d3584819d83e925ad3fb271f3c7202fd$$^1328750179$$^Thu Feb 9 01:16:19 2012 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Revert r88270, r97711 and r110825 out of 1.19
+| | | | |      
+| | | * | NEWCOMMIT:0cbc85494d47cdeb2219dccf7cc3c7321333422f$$^1344022398$$^Fri Aug 3 21:33:18 2012 +0200$$^umherirrender$$^umherirrender_de.wp@web.de$$^(bug 32552) Drop unused database field cat_hidden
+| | |/ /  
+| | | |   For the hiddencat feature the page prop table is used
+| | | |   
+| | | |   Change-Id: If01d3394617ab8aec1a9b50c20bfe923df08732c
+| | * | NEWCOMMIT:7694faf68f975ea9c4888d575b33dabb84e90083$$^1332902672$$^Tue Mar 27 22:44:32 2012 -0400$$^Marc A. Pelletier$$^marc@uberbox.org$$^(bug 5445) remove autoblocks when user is unblocked
+| | | | 
+| | | | Previously, whenever we blocked a user, its IP address would be
+| | | | autoblocked whenever he tries to edit a page. Thus when later unblocking
+| | | | the username, he would be automatically blocked again if we forgot to
+| | | | clean up is IP.
+| | | | 
+| | | | This patch introduces a the ipb_parent_block_id column in ipblocks table
+| | | | to track which block triggered the autoblock command. Thus, when deleting
+| | | | the original block we can easily remove all subsequentautoblocks.
+| | | | 
+| | | | Schema updaters for MySQL, SQLite and postgres have been added to the
+| | | | patch but not for the other database types such as ibm_db2, mssql and
+| | | | Oracle.
+| | | | 
+| | | | Change-Id: I4aa820ae9bbd962a12d0b48b6c638a1b6ff4efc9
+| | | |     
+| | * | NEWCOMMIT:c9047274d551357010fd628ff45f95bc9a9dd03f$$^1335819476$$^Mon Apr 30 20:57:56 2012 +0000$$^Catrope$$^roan.kattouw@gmail.com$$^Revert "Commit of various live hacks"
+| | | | 
+| | | | Was meant for 1.20wmf2
+| | | | 
+| | | | This reverts commit 062773733d6c97a5b05098712ffc64fc7fc491f7
+| | * | NEWCOMMIT:062773733d6c97a5b05098712ffc64fc7fc491f7$$^1334082479$$^Tue Apr 10 18:27:59 2012 +0000$$^Reedy$$^reedy@formey.wikimedia.org$$^Commit of various live hacks
+| |/ /  
+| | |   Disable of MessageBlobStore clear
+| | |   
+| | |   Reset $wgAutopromote (should be moved to a config change!!)
+| | |   
+| | |   Disable setting of wgStyleSheetPath
+| | |   
+| | |   Disable squid updates in HTMLCacaheUpdate invalidateTitles
+| | |   
+| | |   Throttle page_touched
+| | |   
+| | |   Add apc htcp packet numbers to SquidUpdate
+| | |   
+| | |   Disable set names binary/utf8
+| | |   
+| | |   Commment out searchindex table indexes
+| | |   
+| | |   Was c532e81d583d3d0439fe76eea4d105d675461b56
+| | |   
+| | |   Change-Id: I42c4f859e55eb198f6c6841e582b3552aad7b31f
+| | |    
+| * | NEWCOMMIT:0f5248f661efdf59c8d41c3d19f33d3e66ad06f9$$^1333758139$$^Fri Apr 6 20:22:19 2012 -0400$$^Greg Sabino Mullane$$^greg@endpoint.com$$^Postgres uses TIMESTAMPTZ not DATETIME.
+| | | 
+| | | Change-Id: I2cabf801b4e7f0e382fe96f889d95c38fc1e88e3
+| | |    
+| * | NEWCOMMIT:fcae5866a01b581afdb74ba829e55168d12ee3c8$$^1332623649$$^Sat Mar 24 17:14:09 2012 -0400$$^Greg Sabino Mullane$$^greg@turnstep.com$$^Fix whitespace; change tabs to spaces.
+| | | 
+| | | Change-Id: I0c95653b47295e4bd84dec1ae74a850ca6598d9a
+| | |    
+| * | NEWCOMMIT:921c862c972b5b1b3875d822bcfa50808e98ac47$$^1330992558$$^Tue Mar 6 00:09:18 2012 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Followup r113109, forward port the rest of r25267 for Bug 10788 - Filter page histories by user, or contributions by title
+| | |    
+| * | NEWCOMMIT:ac552e1990939209741238e3423807e20ad4dfc5$$^1329427973$$^Thu Feb 16 21:32:53 2012 +0000$$^Platonides$$^platonides@users.mediawiki.org$$^Fix r111590 typo.
+| | |    
+| * | NEWCOMMIT:fb35b6301390e6ac0b5375589c91723ca54ac88b$$^1329345729$$^Wed Feb 15 22:42:09 2012 +0000$$^Platonides$$^platonides@users.mediawiki.org$$^Improve table comments.
+| |/  
+| |   
+| * NEWCOMMIT:790925d3ac0ae048498c98f6c0cc52eb0f00f2a3$$^1328544472$$^Mon Feb 6 16:07:52 2012 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Not much point making user_groups.ug_group 32 chars if we leave user_former_groups.ufg_group at 16
+|/  
+|   Also fix modify field to use correct table/column
+|  
+* NEWCOMMIT:44b06f908ec6e013e5dc3c20418269199ab7e246$$^1326272756$$^Wed Jan 11 09:05:56 2012 +0000$$^Antoine Musso$$^hashar@users.mediawiki.org$$^reverts Concurrency works
+| 
+| trunk is frozen pending stabilisation so we can release MediaWiki 1.19.
+| Those changes introduces API changes and new SQL tables, so that sounds like
+| new feature we do not have time to review right now.
+| 
+| Please reapply changes in branches/concurrency and have code review handled
+| there. Once the branch has been reviewed, please hold. Once trunk is stable
+| enough and 1.19 got branched, you are welcome to merge the branch in trunk.
+| 
+| Note: we can have a Jenkins jobs setup to run the branch tests if you need.
+| 
+| Reverts:
+| r108595 r108591 r108585 r108584 108572 r108564 108560 r108559
+| 
+|  
+* NEWCOMMIT:b3c84ce26193306d4397febfd13eb9e0db3ea734$$^1326236583$$^Tue Jan 10 23:03:03 2012 +0000$$^Ian Baker$$^raindrift@users.mediawiki.org$$^MERGE branches/concurrency 108301:108557 into trunk
+|  
+* NEWCOMMIT:0bab706cdf6e2aba2ff8ffa308b2e94846b37c22$$^1325603675$$^Tue Jan 3 15:14:35 2012 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Fix non reverted job_insert_timestamp
+| 
+| Fixup timestamp addition per Roan
+| 
+| Ping r107886
+|  
+* NEWCOMMIT:faca3cb2e78153f684f1af7b88747e1bc828f743$$^1325603285$$^Tue Jan 3 15:08:05 2012 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^* (bug 27724) Add timestamp to job queue.
+| 
+| Designed for administration purposes, not to be exposed to front end users
+| 
+| Useful for administration purposes (like WMF with job runners), we can look at the "highest" jobs, and find out whether enwiki is just busy, or the jobs have been there a while (signalling that the job runners potentially have issues)
+|  
+* NEWCOMMIT:66c64af6aad95e5660115797b390df2a942faf7e$$^1324559929$$^Thu Dec 22 13:18:49 2011 +0000$$^Jan Gerber$$^j@users.mediawiki.org$$^- add comment to document us_chunk_inx in sql file
+| - fix chunk upload to work with recent filerepo changes
+| Follow up r104687
+|  
+* NEWCOMMIT:0095c08ed205bec215f4e320a91fc181383a23b4$$^1322665000$$^Wed Nov 30 14:56:40 2011 +0000$$^Jan Gerber$$^j@users.mediawiki.org$$^Use database to track uploaded chunks and concatenate at the end.
+| with i18n documentation dont break phpunit
+| 
+| follow up r93720
+| 
+|  
+* NEWCOMMIT:e83bb9099791144867dea5798d43f1e455f275f9$$^1322661275$$^Wed Nov 30 13:54:35 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Revert r104659 and its followup r104665: break the unit tests with a fatal error. This cripples our CI system, we can't detect new failures this way.
+|  
+* NEWCOMMIT:d70c169b9076ac117714c3961f3db47477689e9f$$^1322643316$$^Wed Nov 30 08:55:16 2011 +0000$$^Jan Gerber$$^j@users.mediawiki.org$$^Use database to track uploaded chunks and concatenate at the end.
+| follow up r93720
+| 
+|  
+* NEWCOMMIT:7914b2ee68fe2e02ce88ae10404bf835de2cb0c4$$^1322068443$$^Wed Nov 23 17:14:03 2011 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^(bug 29475) Remove "trackback" feature entirely from core. This has been disabled-by-default since its inception and nobody uses it.
+| 
+| If someone really really wants this, they can write an extension.
+| 
+| Language files need rebuilding, but I took care of En and messages.inc.
+|  
+* NEWCOMMIT:c6b3c2f05b45c2ebdc7ff72743eb53afdaadbaa1$$^1321719988$$^Sat Nov 19 16:26:28 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^* (bug 32470) Increase the length of ug_group
+| 
+| 
+| Postgres doesn't need extending...
+|  
+* NEWCOMMIT:f0ee7f9b4a1d091a57ef236c6550b4ab7549731f$$^1321029458$$^Fri Nov 11 16:37:38 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Followup r102785, fix wrong index order in tables.sql. The patches are fine
+|  
+* NEWCOMMIT:12dabfbc1091f6eb95196dad9795429a07bbb668$$^1321021724$$^Fri Nov 11 14:28:44 2011 +0000$$^Jure Kajzer$$^freakolowsky@users.mediawiki.org$$^* applyed the patch from bug 26393 (please comment on the bug page)
+| 
+| 
+|  
+* NEWCOMMIT:94a7e74df5e0226d8f9fa3fc53dc0a35b09e8053$$^1320959003$$^Thu Nov 10 21:03:23 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Added some revision table comments
+|  
+* NEWCOMMIT:b370eb57aa575cc95827fc79d166cf318d355ed9$$^1319934990$$^Sun Oct 30 00:36:30 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^rc_cur_time is obsolete; added comment
+|  
+* NEWCOMMIT:c62a8fad5e57a9f7f8c6f78193e7d91c9ed45430$$^1319882035$$^Sat Oct 29 09:53:55 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Updated rc_type documentation
+|  
+* NEWCOMMIT:c326cab51655700edce42633d7d775e0d8508ef6$$^1319741050$$^Thu Oct 27 18:44:10 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Reinstated r94289 et all - rev_sha1/ar_sha1 field for bug 21860
+|  
+* NEWCOMMIT:937fc3bcfd0f3d1112e528b13c4829816e820045$$^1317334080$$^Thu Sep 29 22:08:00 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Back out r95396 and friends
+|  
+* NEWCOMMIT:eda06e8593c12b4359a46cf3b428c1a1a88e40c4$$^1317233328$$^Wed Sep 28 18:08:48 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^* (bug 31204) Remove old user.user_options
+| 
+| Added run of ConvertUserOptions maintenance script into update.php before dropping the column
+| 
+| Removed usages of user_options in code
+| 
+| Marked User::decodeOptions() deprecated as of 1.19.
+| 
+| Made ConvertUserOptions drop out early if the user_options field doesn't exist
+| 
+| Made ConvertUserOptions update user_options to '' after migration of user options to mOptions
+|  
+* NEWCOMMIT:44020e254c9fa3b60b8f0874df84490ba99bb464$$^1314190983$$^Wed Aug 24 13:03:03 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Merge the iwtransclusion branch back into trunk
+| 
+| Hexmode fixed broken unit tests in revisions after last time
+|  
+* NEWCOMMIT:5ce010f85cac972b42a8409d89fe4e206698612d$$^1313432678$$^Mon Aug 15 18:24:38 2011 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert r94289, r94290, r94294, r94333, r94345, r94362, r94370 -- core schema change with no discussion
+| 
+|  
+* NEWCOMMIT:606872436bd27a669a6dfc23901923a87d0b6fa4$$^1313099574$$^Thu Aug 11 21:52:54 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^* Added rev_sha1 and ar_sha1 columns to revision/archive tables (useful for bug 25312)
+| * Created a script to populate these fields (doesn't handle archive rows without ar_rev_id set though)
+|  
+* NEWCOMMIT:6026ca43ea4ce8b2d998bea635716a8defa9321d$$^1313066970$$^Thu Aug 11 12:49:30 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Followup r93211, add log_timestamp to end of the index
+|  
+* NEWCOMMIT:183d2dab37e2f259da9c8b68fbac614e89eeda48$$^1312041414$$^Sat Jul 30 15:56:54 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Back out r93533, r93531, r93530
+| 
+| Breaks unit tests as below, not going to be able to fix them before I disappear for the evening, so might aswell leave trunk clean
+| 
+| ArticleTablesTest testbug14404
+| 
+| Error:
+| ArticleTablesTest::testbug14404
+| Undefined offset: 0
+| 
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/includes/ArticleTablesTest.php:31
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiTestCase.php:60
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiPHPUnitCommand.php:20
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/phpunit.php:60
+| 
+| ParserTests testParserTest #552 - testParserTest with data set #551
+| 
+| Failure:
+| ParserTests::testParserTest with data set #551 ('RAW magic word', '{{RAW:QUERTY}}', '<p><a href="/index.php?title=Template:QUERTY&amp;action=edit&amp;redlink=1" class="new" title="Template:QUERTY (page does not exist)">Template:QUERTY</a>
+| </p>', '', '')
+| RAW magic word
+| Failed asserting that two strings are equal.
+| --- Expected
+| +++ Actual
+| @@ @@
+| -<p><a href="/index.php?title=Template:QUERTY&amp;action=edit&amp;redlink=1" class="new" title="Template:QUERTY (page does not exist)">Template:QUERTY</a>
+| +<p><a href="/index.php?title=Template:RAW:QUERTY&amp;action=edit&amp;redlink=1" class="new" title="Template:RAW:QUERTY (page does not exist)">Template:RAW:QUERTY</a>
+|  </p>
+| 
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/includes/parser/NewParserTest.php:545
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiTestCase.php:60
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/MediaWikiPHPUnitCommand.php:20
+| /home/ci/cruisecontrol-bin-2.8.3/projects/mw/source/tests/phpunit/phpunit.php:60
+|  
+* NEWCOMMIT:dc9d39887eff97a01903ad0ed5e8e9612333ca13$$^1312039801$$^Sat Jul 30 15:30:01 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Merge iwtransclusion branch into trunk
+|  
+* NEWCOMMIT:53b0d17a112c59876eb203f876d1622cfdbf7e11$$^1311699794$$^Tue Jul 26 17:03:14 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^* (bug 22744) Add/Update indexes for queries done by the API
+| 
+| Add index to logging table accross log_type and log_action
+|  
+* NEWCOMMIT:c0659401d42e2a8e38ff4f86385a6823d9f481fd$$^1311408911$$^Sat Jul 23 08:15:11 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Follow-up r86482, r86485: removed user_name portion of user_email index per CR
+|    
+| * NEWCOMMIT:e7a65f26adbc232e2cbf8b9484c206f9e65df8c5$$^1313314063$$^Sun Aug 14 09:27:43 2011 +0000$$^Antoine Musso$$^hashar@users.mediawiki.org$$^MFT to REL1_18:
+| | r92713: missing release note
+| | r92765: simplify skin template
+| | Password reset page fixes: r92894 r92907 r92884 r92887 r92886 r92765
+| | (just like r92935)
+| | r92898: remove weird unused hook
+| | r92932: fix user_email database index
+| | r93233: SpecialBlock double escaping bug
+| | r93234: accessor for User->mBlock
+| | r93149, r93151: addWiki now updates .dat & .cdb filesr93516, r93517: bug 27427 and tests
+| | r93858: Reverted r91942,r91943,r91949,r92156 per CR
+| | r93891: expand URLs in email notifications
+| | r93935: Revision::newFromRow() as alias to 'new Revision()'
+| | r94155: (bug 30074) fix up moving user JS subpages
+| | r94346: (bug 30236) parsing of relative URLs
+| | r94372: WikiMap now use simpler wfParseUrl()
+| | 
+| |   
+| * NEWCOMMIT:85fd42d928d7998db49aa4fbad705227a694e7da$$^1311284219$$^Thu Jul 21 21:36:59 2011 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^Back r88270 and friends out of REL1_18 (conf overhaul)
+|/  
+|  
+* NEWCOMMIT:c2e2c8270e46157f0514f0bf5d75718885716225$$^1310584131$$^Wed Jul 13 19:08:51 2011 +0000$$^Ian Baker$$^raindrift@users.mediawiki.org$$^Added us_status column for future expansion re Bryan's suggestion
+| Implemented changes suggested in code review on r92009:
+|  constructor bug handling passed repo/stash
+|  up-to-date timestamp generation
+|  fetching db handle from repo
+|  iterating over select results according to convention
+|  changed uploadstash.us_media_type to enum to mirror image.img_media_type
+|  removed (most) new references to $wgUser, instead using ApiBase::createContext to find the user
+| 
+|  
+* NEWCOMMIT:3d780db426093f40d46389fc60ea70be388d2734$$^1310517484$$^Wed Jul 13 00:38:04 2011 +0000$$^Ian Baker$$^raindrift@users.mediawiki.org$$^Added index for abandoned uploads maintenance script
+|  
+* NEWCOMMIT:5763a028d93fe9195978c1591df6baaf91329031$$^1310516462$$^Wed Jul 13 00:21:02 2011 +0000$$^Ian Baker$$^raindrift@users.mediawiki.org$$^changing smallint to int for image sizes, re bug 26179 comment 13
+|  
+* NEWCOMMIT:9d4fd0c5674bdd01f8f34c5f00e848632ab77747$$^1310505103$$^Tue Jul 12 21:11:43 2011 +0000$$^Ian Baker$$^raindrift@users.mediawiki.org$$^Refactored UploadStash and related classes to use the database for file metadata storage instead of the session, see bug 26179
+| 
+| Tweaked the UploadWizard to work properly with the new backend code, updated tests
+| 
+|  
+* NEWCOMMIT:a4d029210aa2f5338519f7cc18a783cff4728049$$^1308975080$$^Sat Jun 25 04:11:20 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Follow-up r90749:
+| * Removed useless ufg_group index from user_former_groups
+| * Index name consistency
+|  
+* NEWCOMMIT:cb6b72cef7f349c97ff031ba2873bacd05e7e91a$$^1308970350$$^Sat Jun 25 02:52:30 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Added one-time promote support via Autopromote::autopromoteOnceHook function. This is still a bit rough on the edges. This uses a hook since extension may want to control when it's called for performance reasons. Patch by lampak. (for bug 24948)
+|  
+* NEWCOMMIT:bb30a17b710b9797ed82051f7c6075c61645456d$$^1305633413$$^Tue May 17 11:56:53 2011 +0000$$^Mark A. Hershberger$$^mah@users.mediawiki.org$$^Follow up r88270 — remove commas from table creation that break a
+| sqlite install.
+|  
+* NEWCOMMIT:7131283a7bcf26786ffe05fb4fbc1d3c3dd3ea11$$^1305579895$$^Mon May 16 21:04:55 2011 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^Initial commit of configuration management backend proposal. Feedback desired before I go much further.
+| * Common use case is Conf::get( 'myVar' );
+| * Support for default install (new `config` table) added, should be trivial to add backends for CDB, Memcache, etc...
+| * 
+|  
+* NEWCOMMIT:32fde7f35b6dde889f22eb1e4f10392acd0efde6$$^1304456924$$^Tue May 3 21:08:44 2011 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^(bug 19408) user_properties.up_property: 32 bytes is not enough.
+| Increased it to 255 bytes to be like page titles
+| Some minor tweaks to modifyField() in the installer to make it more useful and added insertUpdateRow()
+|  
+* NEWCOMMIT:5f0afcf1a2fb4ddbd15773c336f97c42aab60812$$^1303508236$$^Fri Apr 22 21:37:16 2011 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Breaking the 'math' table setup out to Math extension. Should be the last main step in extension-ification of the math options!
+| 
+| The 'math' table will no longer be created on a default install unless you've explicitly enabled the Math plugin at install time; the usual update.php procedure will add it in.
+| 
+| Postgres, Oracle, MSSQL, and DB2 variants are included -- broken out from the core files -- but have not been tested.
+| 
+| I know there has been some code duplication in parser test infrastructure but could only find one instance of the parser test temporary table setup to remove the 'math' table from (the extension adds it back via the hook). If the phpunit-based runner breaks, please track it down and fix it there too.
+| 
+|  
+* NEWCOMMIT:495ec45a8a08d4ce9defc51da690f80f3369185d$$^1303326171$$^Wed Apr 20 19:02:51 2011 +0000$$^Happy-melon$$^happy-melon@users.mediawiki.org$$^Follow-up r86485: SQL error in patch, and also add the index to tables.sql.
+|  
+* NEWCOMMIT:3f52bd8007cf4b8e6f17cfa5ee74c86477eded93$$^1300638659$$^Sun Mar 20 16:30:59 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Revert r83812 (schema change for cl_type enum), no longer needed after r84392. Also reverts r83821 (followup to r83812, add /*_*/ )
+|  
+* NEWCOMMIT:3e725a90b835bb96bd6674b5002a247756ca6eb5$$^1300234390$$^Wed Mar 16 00:13:10 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Revert r83993
+|  
+* NEWCOMMIT:274d317a0ca2777a5c5fae2007c53811397540f5$$^1300157580$$^Tue Mar 15 02:53:00 2011 +0000$$^Marcin Cieślak$$^saper@users.mediawiki.org$$^r83812, r83814: Don't use cl_type at all when paging categorylinks
+| 
+| * Remove cl_type from paging in categorylinks - it's not
+|   really needed there. Although cl_type is in WHERE but not
+|   in ORDER BY clause the worst thing that can happen
+|   is to have a filesort going again through <500 entries
+|   selected by index. Or will FORCE INDEX work anyway?
+| 
+| * Revert schema change, as we don't need cl_type there
+|   anyway (or even if we wanted to compare, it should
+|   work as expected by using INT values against ENUM).
+| 
+|  
+* NEWCOMMIT:4bfddfe4bffa4b23ef290a50b9830936eb475632$$^1300012506$$^Sun Mar 13 10:35:06 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Schema change: change cl_type from ENUM('page', 'subcat', 'file') to varchar(6). This is needed because MySQL sorts 'page' < 'subcat' < 'file' when using ORDER BY cl_type but uses 'file' < 'page' < 'subcat' for the purposes of WHERE clauses, making paging impossible. Changing the ENUM() order to be alphabetical would fix the order discrepancy, but leave range scans like WHERE cl_type > 'page' unindexed. Varchars do behave correctly. Changing to an int was not an option because existing data would have to be migrated.
+| 
+| This commit does not include a patch for SQLite, because ALTER TABLE MODIFY is apparently not supported by SQLite as far as I could tell by Googling. Leaving resolution of this issue for SQLite to the SQLite experts; maybe SQLite's enum implementation is saner than MySQL and it doesn't even need this schema change, I don't know.
+|  
+* NEWCOMMIT:a9bba5464972fb8ea5a923cb1b5c7bde86e02d4f$$^1299133723$$^Thu Mar 3 06:28:43 2011 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Fixed patch from r33520
+|  
+* NEWCOMMIT:051e1e76249de4b51cebdc795fe37976141279dd$$^1295567807$$^Thu Jan 20 23:56:47 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Self-revert r80547 per CR, breaks stuff and is undesirable
+|  
+* NEWCOMMIT:8b70c17d246051dca4ae10eaa2195ebeab66ea68$$^1295399481$$^Wed Jan 19 01:11:21 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^War on varchar. Changed all occurrences of varchar(N) and varchar(N) binary to varbinary(N). varchars cause problems ("Invalid mix of collations" errors) on MySQL databases with certain configs, most notably the default MySQL config
+|      
+| *   NEWCOMMIT:e5e61e5d9a06b9c8527da16cc6a22184e2aa6683$$^1295579800$$^Fri Jan 21 03:16:40 2011 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^1.17: MFT category collation changes: r80432, r80443, r80590, r80614, r80615, r80616
+| |\  
+| |/  
+|/|   
+| |   
+* | NEWCOMMIT:eaeea84b44dc58c6c9e2353462fd38759eecc613$$^1295272942$$^Mon Jan 17 14:02:22 2011 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Introduced a non-dummy collation for $wgCategoryCollation, namely UCA with default tables. 
+| | * Added a maintenance script which generates a list of first letters. Unified Han are omitted for performance, and because they shouldn't be used as headings anyway. A future collation specific to Chinese would provide the KangXi radicals as "first letters".
+| | * Provided a precomputed list of first letters. Used Unicode 6.0.0 data and ICU 4.2. 
+| | * Moved collation functionality from Language to a Collation class hierarchy with factory function. Removed the recently-added methods from Language and updated all callers.
+| | * Changed Title::getCategorySortkey() to separate its parts with a line break instead of a null character. All collations supported by the intl extension ignore the null character, i.e. "ab" == "a\0b". It would have required a lot of hacking to make it work.
+| | * Fixed the uppercase collation to handle non-ASCII characters, redundantly with r80436. I don't think it's necessary to change the collation name as was done there, so I reverted that in the course of my conflict merge. A --force option to updateCollation.php might be nice though.
+| | 
+| |   
+* | NEWCOMMIT:b64d76e84ada4dfa4f81bec1c4cb1b3bfd8cb2d7$$^1294351798$$^Thu Jan 6 22:09:58 2011 +0000$$^Brian Wolff$$^bawolff@users.mediawiki.org$$^follow-up r79706 (the cl_timestamp updating on null edit bug) add comment to
+|/  sql file about the length of the cl_sortkey_prefix field, per comment on CR
+|   by Nikerabbit.
+|  
+* NEWCOMMIT:dcb603bc61ef8f61f35b93c136cebf15ea29c7c1$$^1294342037$$^Thu Jan 6 19:27:17 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Followup r79702, r66793, r66822
+| 
+| Add patch to kill bad original ar_page_revid index (did exist as 2 definitions under the same name). Add patch to add index ar_revid per FIXME, though, hopefully only a temporary index
+| 
+| Updated tables.sql with new index
+|  
+* NEWCOMMIT:2da0059cc524378f2517a9ec8c34efab33de9112$$^1294280153$$^Thu Jan 6 02:15:53 2011 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Per fixme on r66822, change index to CREATE INDEX /*i*/ar_page_revid ON /*_*/archive (ar_rev_id);
+|  
+* NEWCOMMIT:7846165d81f3ace1a504716cd2d28bd97aef7daa$$^1293470265$$^Mon Dec 27 17:17:45 2010 +0000$$^Platonides$$^platonides@users.mediawiki.org$$^(Bug 26434) - Generated password from "Create account by email" does not work.
+| Another consequence of the $ts === 0 from r71751.
+| Fixed in a more verbose way. Behavior documented in tables.sql
+| 
+|  
+* NEWCOMMIT:617a5b1e15eb52f2fe0b0f7493e6e66eee26c6dd$$^1291432814$$^Sat Dec 4 03:20:14 2010 +0000$$^Mark A. Hershberger$$^mah@users.mediawiki.org$$^Whitespace fixup under tha maint directory.
+|  
+* NEWCOMMIT:7dd7c71cb596bd625683cba5587476f157a3cf15$$^1288995358$$^Fri Nov 5 22:15:58 2010 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Per bug 25503 comment #11, use varbinary instead of varchar for ResourceLoader-related tables to avoid errors about indexes being too long. Only really needed for msg_resource_links, changed the rest for consistency. No updater needed: anyone who's already gotten this set up without these errors doesn't need this change.
+|  
+* NEWCOMMIT:d798fd5ed1389b43d3df19d97ebc681c75cedee9$$^1287092822$$^Thu Oct 14 21:47:02 2010 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^cl_sortkey should be 230 bytes long, not 255
+| 
+| Bug 25503, reported by Dmitriy.  When switching it to binary, I figured
+| that since it would always be one byte per character now, there would be
+| room to make it the full 255 bytes.  In fact, if cl_to is utf8, the
+| (cl_to, cl_type, cl_sortkey, cl_from) index will be 255*3 + 1 + 255 + 4
+| = 1025 bytes, longer than the max of 1000.  Shortening cl_sortkey to 230
+| bytes fixes this (fix tested by Dmitriy).
+| 
+| I didn't add an updater because if you're already running the current
+| schema without problems, you don't need this change.
+|  
+* NEWCOMMIT:a93336d222c61d24ceb21b45f7aff95d4be1327c$$^1286631259$$^Sat Oct 9 13:34:19 2010 +0000$$^Alexandre Emsenhuber$$^ialex@users.mediawiki.org$$^Fixed comment; wfEncryptPassword() is deprecated
+|  
+* NEWCOMMIT:32377424b9492bca276d6f8036ed297bef726ed3$$^1283572809$$^Sat Sep 4 04:00:09 2010 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Merging resourceloader branch into trunk. Full documentation is at http://www.mediawiki.org/wiki/ResourceLoader and a general overview has been posted on wikitech-li <http://lists.wikimedia.org/pipermail/wikitech-l/2010-September/049253.html>. One important change is that all JS is now loaded at the bottom, so any scripts assuming things from wikibits or whatever are present will fail.
+| 
+|  
+* NEWCOMMIT:dcd5d260d40547e111c9d678d7d146182d80dd1a$$^1283547128$$^Fri Sep 3 20:52:08 2010 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Further categorylinks schema changes
+| 
+| Per review by Tim, I made two changes:
+| 
+| 1) Fix cl_sortkey to be varbinary(255).
+| 
+| 2) Expand cl_collation to varbinary(32), and change $wgCollationVersion
+| to $wgCategoryCollation, to account for the variety of collations we
+| might have.  tinyint is too small.  I could have gone with int, but
+| that's annoyingly inscrutable in practice, as we all know from namespace
+| fields.
+| 
+| To make the upgrade easier for non-trunk users, I updated the old patch
+| file to incorporate the new changes, using the updatelog table so that
+| people upgrading from 1.16 won't have to do two alters on categorylinks.
+| I didn't test the upgrade-from-1.16 code path yet, so if anyone tests
+| that and it seems not to break, commenting to that effect would be
+| appreciated.
+| 
+| Also removed wfDeprecated() from archive().  Do *not* add this to
+| functions that are still actively used in core.  If you think this
+| function is so terrible that it really mustn't be used, remove callers
+| yourself, don't pester every single developer with messages in the hope
+| that someone else will do it for you.
+|  
+* NEWCOMMIT:9fe8bbc9d6b036fc130f4dc5cb04978d50bd156a$$^1281286269$$^Sun Aug 8 16:51:09 2010 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Update tables.sql for category sorting changes
+| 
+| Pointed out by X! on Code Review for r69961.  There are a couple of
+| FIXMEs here, I'm waiting for review to evaluate how to fix them.
+|  
+* NEWCOMMIT:61de1b9006bd2b7fde19aa131e52e0280d0f40dd$$^1279788778$$^Thu Jul 22 08:52:58 2010 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Rename the iwl_prefix_from_title index (again) to iwl_prefix_title_from and change the field order accordingly. Fixed r66892 which inserted iwl_from into the index (which was a good thing) but put it in the wrong place. I went out of my way to make sure the index isn't dropped and recreated needlessly, but since I don't know how to do the drop-index-if-exists thing in the Postgres updater, I left that out. The Postgres updater will now create the new index without dropping any old incarnations if present. I did create the patch files with the DROP INDEX statements to make it easier to add this behavior. Also tweak ApiQueryIWBacklinks to use this index properly.
+|  
+* NEWCOMMIT:b5fa13fde7a02add75a6b3841c9a459d8404fffc$$^1279540530$$^Mon Jul 19 11:55:30 2010 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Add iw_api and iw_wikiid fields to the interwiki table, plus rudimentary support in Interwiki.php and Title.php . Code written by peter17 in the iwtransclusion branch. This revision is a partial merge of r68170, r68448, r69480, r69540 and r69541
+|  
+* NEWCOMMIT:3bdfc7cba14ee6a7262b4cfbec444692f49499a8$$^1278597522$$^Thu Jul 8 13:58:42 2010 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^Add optional ul_value blob to updatelog so it can store more useful things
+|  
+* NEWCOMMIT:9958d84dca7e7e304ec966e7fe1097936a8b58cd$$^1274819840$$^Tue May 25 20:37:20 2010 +0000$$^Sam Reed$$^reedy@users.mediawiki.org$$^Followup to r65105 after discussion with Roan
+| 
+| Make the non-unique index index all fields
+| 
+| Patches updated, patch created to update index. Table.sql also updated
+|  
+* NEWCOMMIT:0d67db502dee9ecec4c3940b0013f857db1a4260$$^1274704290$$^Mon May 24 12:31:30 2010 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Fix index creation
+|  
+* NEWCOMMIT:ee5afce7e7ecf26cd9d243c81891b3e9f7d3e92e$$^1274704209$$^Mon May 24 12:30:09 2010 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Remove wayward comma
+|  
+* NEWCOMMIT:8812fd2f9a674790cba4e33d3afb088b7e6c46ef$$^1274624360$$^Sun May 23 14:19:20 2010 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Ugly temporary fix for bug 21279:
+| * When a revision cannot be found in the revision table, look for it in the archive table.
+| * If both deleted and undeleted revisions are covered by the same log entry, show two links (see bug 23663)
+|  
+* NEWCOMMIT:8eac509ab5ebb7276dffffa0092f8722146c5003$$^1271382005$$^Fri Apr 16 01:40:05 2010 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 14473) Add iwlinks table to track inline interwiki link usage
+| 
+| Like langlinks, this stores the interwiki prefix (as iwl_prefix) and full page title (as iwl_title), attached to the page doing the liking (as iwl_from -> page_id).
+| Unlike langlinks, there can be multiple entries stored per interwiki prefix.
+| 
+| Updater to add the table confirmed on MySQL, untested on SQLite but should work.
+| Someone may still need to add and test a PostgreSQL updater.
+| 
+| Refactored makeWhereFrom2d() out of LinkBatch to Database so it could be re-used for the similar mapping for the interwiki links, which need a string prefix rather than an int namespace key.
+| Also cleaned it up internally to reuse existing code for building where clauses from arrays. (Tim & Domas -- if the previous more verbose code was there to reduce function call and array processing overhead on very large link lists, feel free to unroll it again if the difference is measurable. Just swap the var names around from the old LinkBatch code and escape the base key value if it's not an integer, it'll be functionally equivalent.)
+| 
+|  
+* NEWCOMMIT:143fdd07b102224cdf355cbfd8eab514c1ea2bc9$$^1269036750$$^Fri Mar 19 22:12:30 2010 +0000$$^Bryan Tong Minh$$^btongminh@users.mediawiki.org$$^Comment fix: Special:Imagelist -> Special:ListFiles
+| For those poor people who can't remember all special pages MediaWiki has
+|  
+* NEWCOMMIT:f68c74f17bd0074fff95412623f824001b31ce90$$^1266924280$$^Tue Feb 23 11:24:40 2010 +0000$$^Jure Kajzer$$^freakolowsky@users.mediawiki.org$$^Changed all *_mime_minor field lengths to 100; current 32 does not support some OpenDocument mimes
+| * changed tables.sql for mysql and oracle
+| * added patch script for mysql and included it in updaters.inc
+| 
+|  
+* NEWCOMMIT:ff2d149795a4df0304e26aa2578826376f0b5455$$^1260423585$$^Thu Dec 10 05:39:45 2009 +0000$$^OverlordQ$$^overlordq@users.mediawiki.org$$^Followup to r59869, add to MySQL section, and copy patch to SQLite directory
+|  
+* NEWCOMMIT:b520bfb771c29daa421abc5be646e9dfbf7f678b$$^1260300737$$^Tue Dec 8 19:32:17 2009 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Rename some extauth functions and fields
+| 
+| Per Code Review at
+| <http://www.mediawiki.org/wiki/Special:Code/MediaWiki/53497#c4633>.  One
+| of the changes was a database field, and updaters might have to be
+| written for pgsql and DB2.
+|  
+* NEWCOMMIT:bdb4f7436082c25fa1fbfdace6fae8adb09e66f2$$^1256093199$$^Wed Oct 21 02:46:39 2009 +0000$$^OverlordQ$$^overlordq@users.mediawiki.org$$^Add missing columns to PG schemas
+| Add exceptions to schema comparison script
+| Alter SQL comments to appease said script
+| 
+|  
+* NEWCOMMIT:40119c8e37b699bfb0a4f142dfc870ec21600c15$$^1255166091$$^Sat Oct 10 09:14:51 2009 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^adding partial job_param to job_cmd index
+|  
+* NEWCOMMIT:1d1ecfa10f201ba5b4ff6fdb2611579c8144cccc$$^1248040920$$^Sun Jul 19 22:02:00 2009 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Add experimental new auth framework, ExternalAuth
+| 
+| This should not affect any existing behavior.  (Except that it reorders
+| some error conditions in attemptAutoCreate(), but probably no one cares
+| about that.)  It adds a new database table, but it will be unused unless
+| you enable external authentication.
+| 
+| An outline of the rationale for this system, and the design planning, is
+| at <http://www.mediawiki.org/wiki/ExternalAuth>.  Essentially,
+| AuthPlugin puts too much of a burden on plugin authors, requiring them
+| to write a lot of policy logic instead of just handling the actual
+| interface to the external user database.  This system uses a standard
+| framework to decide policy questions, and auth plugins only need to
+| provide some low-level, clearly-specified data.
+| 
+| There are lots of features still missing, marked in the code, but basic
+| functionality is present.  The commit includes initial support for one
+| type of external authentication, the forum software vBulletin (which I
+| happen to know well, and want to integrate with my MediaWiki).
+| 
+| I'm encouraging the inclusion of ExternalAuth plugins in core because in
+| this framework, the amount of code required to add an additional backend
+| is quite small -- well under 100 lines in this case.  I'd hope to see a
+| lot more of these, and it seems unreasonable to make an armada of tiny
+| extensions instead of letting them live happily in their own directory
+| out of everyone's way.
+|  
+* NEWCOMMIT:813c474eac6d8e8191c17cb013ed232d30d7a321$$^1247853028$$^Fri Jul 17 17:50:28 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Followup to r53408: change lengths of log_action and log_type too. Thanks to OverlordQ for spotting this.
+|  
+* NEWCOMMIT:a7b32ae5ae59e2f7e5734559c3945b33b400396c$$^1247852753$$^Fri Jul 17 17:45:53 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^(bug 19570) Add log_user_text and log_page to tables.sql; fixes r51997
+|  
+* NEWCOMMIT:6964e122dd6a5baf08712549c0b76618534a0b7b$$^1246409745$$^Wed Jul 1 00:55:45 2009 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^(bug 19428) PG and MySQL followups to r52503. Patch by OverlordQ
+|  
+* NEWCOMMIT:1011b2c410347b568b151caf30b2ad8496087d97$$^1246304692$$^Mon Jun 29 19:44:52 2009 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Document tag_summary and change_tags tables
+|  
+* NEWCOMMIT:23cfebd3d25fcdb0717daad5982fc9f36aa5a1b5$$^1246173103$$^Sun Jun 28 07:11:43 2009 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Introduced a new system for localisation caching. The system is based around fast fetches of individual messages, minimising memory overhead and startup time in the typical case. It handles both core messages (formerly in Language.php) and extension messages (formerly in MessageCache.php). Profiling indicates a significant win for average throughput.
+| * The serialized message cache, which would have been redundant, has been removed. Similar performance characteristics can be achieved with $wgLocalisationCacheConf['manualRecache'] = true;
+| * Added a maintenance script rebuildLocalisationCache.php for offline rebuilding of the localisation cache.
+| * Extension i18n files can now contain any of the variables which can be set in Messages*.php. It is possible, and recommended, to use this feature instead of the hooks for special page aliases and magic words. 
+| * $wgExtensionAliasesFiles, LanguageGetMagic and LanguageGetSpecialPageAliases are retained for backwards compatibility. $wgMessageCache->addMessages() and related functions have been removed. wfLoadExtensionMessages() is a no-op and can continue to be called for b/c. 
+| * Introduced $wgCacheDirectory as a default location for the various local caches that have accumulated. Suggested $IP/cache as a good place for it in the default LocalSettings.php and created this directory with a deny-all .htaccess.
+| * Patched Exception.php to avoid using the message cache when an exception is thrown from within LocalisationCache, since this tends to fail horribly.
+| * Removed Language::getLocalisationArray(), Language::loadLocalisation(), Language::load()
+| * Fixed FileDependency::__sleep()
+| * In Cdb.php, fixed newlines in debug messages
+| 
+| In MessageCache::get(): 
+| * Replaced calls to $wgContLang capitalisation functions with plain PHP functions, reducing the typical case from 99us to 93us. Message cache keys are already documented as being restricted to ASCII.
+| * Implemented a more efficient way to filter out bogus language codes, reducing the "foo/en" case from 430us to 101us
+| * Optimised wfRunHooks() in the typical do-nothing case, from ~30us to ~3us. This reduced MessageCache::get() typical case time from 93us to 38us.
+| * Removed hook MessageNotInMwNs to save an extra 3us per cache hit. Reimplemented the only user (LocalisationUpdate) using the new hook LocalisationCacheRecache.
+|  
+* NEWCOMMIT:86d3122e48d2d6c8c71977d125e29ab4c4c89838$$^1244445090$$^Mon Jun 8 07:11:30 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^SCHEMA CHANGE: adding rd_interwiki patch from bug 14418. Actual use of this schema change will follow later
+|  
+* NEWCOMMIT:7aadbb783bb197bb0fe3e59aa346a6c53d8db304$$^1244120242$$^Thu Jun 4 12:57:22 2009 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Tweaked r49468 - sqllite fix
+|  
+* NEWCOMMIT:21993cbb8176ccd76fe169e85c9e868f9a3a81fc$$^1242766529$$^Tue May 19 20:55:29 2009 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Clean up whitespace, add log_search to Postgres schema.
+|  
+* NEWCOMMIT:d0a3dc38a1c346e1ff25400caf17da5912b000c3$$^1242341037$$^Thu May 14 22:43:57 2009 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Cleanup for r50567:
+| * Include DB table options on log_search table creation
+| * Adjust tabs->spaces in table def... sounds silly, but the tabs sometimes confuse things when cut-and-pasting into mysql command line. :)
+|  
+* NEWCOMMIT:a69fb4827409786203ee6f4befc5aa4009d13ef8$$^1242252212$$^Wed May 13 22:03:32 2009 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^[schema change] Use new log_search table to replace ugly code from r48839. Maintenance script added to populate the table with revisiondelete log items.
+|  
+* NEWCOMMIT:42a073e040fd350a35be5200d5724558a09c8f1d$$^1240852501$$^Mon Apr 27 17:15:01 2009 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* Update patch-user_properties.sql to match definition in tables.sql
+| * Add some doc comments on user_properties table def and move it up near the user tales
+|  
+* NEWCOMMIT:e1d3ead5d87e55e2c4f8925b84f5183ca11d93d7$$^1240658603$$^Sat Apr 25 11:23:23 2009 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Fix MW installation for table-prefixes
+|  
+* NEWCOMMIT:155ddf6de4a2aa68dcdd8ca7d0f9db21ced4b228$$^1240536677$$^Fri Apr 24 01:31:17 2009 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Branch merge of preferences work branch. Includes fixes for several bugs. WARNING: Breaks some extensions which have not been adapted to use it properly (basically anything not used on Wikimedia).
+|  
+* NEWCOMMIT:d48ee9ffdae4a1031210be33809ffde51e64403c$$^1237548039$$^Fri Mar 20 11:20:39 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Fix typo in tables.sql, pointed out by Jidanni
+|  
+* NEWCOMMIT:7d3e76c415859151e7d955bffa69ae4574c0acb7$$^1237511741$$^Fri Mar 20 01:15:41 2009 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert r48212 "Add user_hidden field to complement ipb_deleted and gu_hidden"
+| Unauthorized schema change, also appears to be unused.
+|  
+* NEWCOMMIT:cef903e8335cfc1716c0764497e026da65b065ac$$^1236699795$$^Tue Mar 10 15:43:15 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^(bug 17907) Remove trailing comma from tables.sql
+|  
+* NEWCOMMIT:8697400ebbef01e604d0e7b47c208b7065c1d54c$$^1236592627$$^Mon Mar 9 09:57:07 2009 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Add user_hidden field to complement ipb_deleted and gu_hidden
+|  
+* NEWCOMMIT:43e92922f7dc6ba1284c32f14024261ddbe9a65e$$^1235753372$$^Fri Feb 27 16:49:32 2009 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Whitespace consistency.
+|  
+* NEWCOMMIT:80482c6ecbadc0c440a97814c6fa183893a24d05$$^1234591842$$^Sat Feb 14 06:10:42 2009 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Fix r45764, which made a whole bunch of random indices UNIQUE for no apparent reason.
+|  
+* NEWCOMMIT:5e56ed277de142aeb29afb5ab3df5602e3e9c9d0$$^1234340324$$^Wed Feb 11 08:18:44 2009 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Fixed broken comment (fails on my version of MySQL)
+|  
+* NEWCOMMIT:06fde38fe96ac27473f738fdcdffe3c74fd43004$$^1233955063$$^Fri Feb 6 21:17:43 2009 +0000$$^Alexandre Emsenhuber$$^ialex@users.mediawiki.org$$^Fix for r46460: use "CREATE INDEX ... ON ..." rather than inside "CREATE TABLE" so that SQLite doesn't throw an error when creating new tables
+|  
+* NEWCOMMIT:bd45e49bc00dd494213252b18429c7d37dd60216$$^1233243660$$^Thu Jan 29 15:41:00 2009 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^stray comma, did anyone test this?
+|  
+* NEWCOMMIT:dc4c367bfa3f5e44b15779cd2d61e8d97477994f$$^1233171380$$^Wed Jan 28 19:36:20 2009 +0000$$^Alexandre Emsenhuber$$^ialex@users.mediawiki.org$$^Fix syntax error :)
+|  
+* NEWCOMMIT:9a3c1fcede0b3c8af6bf7ad56016ced03969b35d$$^1233169698$$^Wed Jan 28 19:08:18 2009 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Branch merge of change-tagging branch with trunk
+| -- Introduce tagging of individual changes (revisions, logs, and on recentchanges). The tags are customisable, and currently settable by the Abuse Filter and by the TorBlock extension. The tags can be styled on the various pages on which they appear.
+| -- Introduces a schema change, three new tables (valid_tag, change_tag, and tag_summary).
+|  
+* NEWCOMMIT:640a6d311e91ccdc9bde1388f6e9840f332006c7$$^1232379202$$^Mon Jan 19 15:33:22 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Recommit r45821: (bug 16645) Making the pl_namespace, tl_namespace and il_to indices UNIQUE, just like their differently-ordered counterparts. This helps MySQL optimize stuff (see bug)
+|  
+* NEWCOMMIT:41c91237230cb13f8e028409e89041a868ef3860$$^1232374379$$^Mon Jan 19 14:12:59 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Partial redo of r45819:
+| * rename non-PRIMARY indices that were implicitly named before r45764 back to their implicit names
+| * add the renamed un_user_id and un_user_ip to the indexName() rewrite
+| * use consistent casing for PRIMARY KEY
+|  
+* NEWCOMMIT:a7c7a3fd3305dc118416bebff2d4d209e26cfd88$$^1232373368$$^Mon Jan 19 13:56:08 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Revert r45821, r45830, r45831 and r45835 all in order to revert r45819, per discussions on CR. Will redo part of r45819 momentarily.
+|  
+* NEWCOMMIT:47378300fb761753f85fe3d031f8d261be77931c$$^1232147704$$^Fri Jan 16 23:15:04 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^(bug 16645) Making the pl_namespace, tl_namespace and il_to indices UNIQUE, just like their differently-ordered counterparts. This helps MySQL optimize stuff (see bug)
+|  
+* NEWCOMMIT:312316088e689f2764614f0ceba265567c9e52d2$$^1232146964$$^Fri Jan 16 23:02:44 2009 +0000$$^Roan Kattouw$$^catrope@users.mediawiki.org$$^Attempt at cleaning up r45764, r45769 (renamed indices for SQLite compat):
+| * removing the indexName() hack and with it the /*i*/ stuff from tables.sql
+| * undoing renames of formerly implicitly named indices
+| * three indices have to be called different in SQLite because of naming conflicts, adding a patch to updaters.inc that does that
+|  
+* NEWCOMMIT:f058162bc556b35f60e575f8c9a81f8e09028534$$^1232029228$$^Thu Jan 15 14:20:28 2009 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Preserve usertext_timestamp index name for MySQL, prefix it for SQLite. Issues remain on the experimental non-installable DBMSes.
+| * Clean up some E_STRICT issues
+| 
+|  
+* NEWCOMMIT:4124558d7b40df818337f1d7eeae10c9ee9688e2$$^1232002618$$^Thu Jan 15 06:56:58 2009 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^For backport to 1.14.
+| 
+| * Made the upgrader work with SQLite
+| * Implemented missing schema info functionality in DatabaseSqlite
+| * Merged the SQLite and MySQL schemas into the one file with the help of some replaceVars() hacks.
+| * Moved all primary key definitions to the field definition, moved all indexes to CREATE INDEX statements, for best SQLite compatibility.
+| * Made all autoincrement fields primary keys, as required by SQLite.
+| * Removed meaningless buzzword from the category table comment
+| * tables.sql: s/'0'/0/
+| * In SQLite the index names have DB scope. Renamed archive.usertext_timestamp, user_newtalk.user_id, user_newtalk.user_ip
+| * SQLite does not support UPDATE with LIMIT by default. Removed all instances I could find.
+| * Made query errors work in the installer.
+| * Fixed DatabaseSqlite::lastErrno(), made SQLITE_SCHEMA errors automatically reissue the query as suggested on sqlite-users. Otherwise upgrade breaks.
+| * Removed miscellaneous status information from getServerVersion(), that's not the place to put it
+| 
+|  
+* NEWCOMMIT:2190984466b0fd136f0fca0ed2df1ac5cc0dc02a$$^1230749776$$^Wed Dec 31 18:56:16 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert r45231, r45235 "* (bug 674) Allow users to be blocked from editing a specific article"
+| Unexpected schema changes in the middle of code review and run-up to 1.14 freeze
+| 
+|  
+* NEWCOMMIT:48a9d078ba45164d2656ff7e36dd50b7eabb6398$$^1230747050$$^Wed Dec 31 18:10:50 2008 +0000$$^Victor Vasiliev$$^vasilievvv@users.mediawiki.org$$^* Fix up schema per Brion's notes
+|  
+* NEWCOMMIT:1f67478d1fb7742d32793667bceffa5b592935b2$$^1230744347$$^Wed Dec 31 17:25:47 2008 +0000$$^Victor Vasiliev$$^vasilievvv@users.mediawiki.org$$^* (bug 674) Allow users to be blocked from editing a specific article
+| ** Also supports blocking user from editing whole namespace
+| ** Fixed most issues which were found before
+|  
+* NEWCOMMIT:34fb6297cdd897542647d4281bd4ec969367ee53$$^1228151670$$^Mon Dec 1 17:14:30 2008 +0000$$^Ilmari Karonen$$^vyznev@users.mediawiki.org$$^Step 2 in NS_IMAGE -> NS_FILE transition (bug 44) (WARNING: huge commit).
+| 
+| This is a global search and replace of NS_IMAGE and NS_IMAGE_TALK with NS_FILE and NS_FILE_TALK respectively in all core files, excluding those already updated in step 1 (r44004).
+|  
+* NEWCOMMIT:5127e1962688def484acf6fb9007d73d21f0ce0d$$^1222733224$$^Tue Sep 30 00:07:04 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert r41352-41355, r41362-41363: unauthorized schema change breaks parser tests
+| 
+|  
+* NEWCOMMIT:bec69031088f697e72bd49bc1ec6e6977920bf7a$$^1222618098$$^Sun Sep 28 16:08:18 2008 +0000$$^Victor Vasiliev$$^vasilievvv@users.mediawiki.org$$^* (bug 674) Allow users to be blocked from editing a specific article
+| ** Also supports blocking user from editing whole namespace
+| * Replace ugly ipboptions parsing code in Title.php with a simple message
+| 
+| Requires schema change (I showed it to Tim Starling).
+|  
+* NEWCOMMIT:5315b1fdab435e9864fdce49d3888e2fcf183c02$$^1222456618$$^Fri Sep 26 19:16:58 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^keyname should be the PRIMARY
+|  
+* NEWCOMMIT:08e561abb9cd7be8fac479993c997c6ea1c82c87$$^1222343126$$^Thu Sep 25 11:45:26 2008 +0000$$^Matt Johnston$$^mattj@users.mediawiki.org$$^(bug 8440) Allow preventing blocked users from editing their talk pages
+| * Adds database field to ipblocks table, ipb_allow_usertalk, storing whether or not the user can edit their own talk page. Defaults to 0 to coincide with the default value of $wgBlockAllowsUTEdit.
+| * Recommended to update all current blocks to have a allow_usertalk value of whatever the current setting is
+| * Retasks $wgBlockAllowsUTEdit to be the default value of the field in the blocking screen - unless a sysop changes the checkbox, will use whatever that variable is set to.
+|  
+* NEWCOMMIT:c97af49669619b8e34df3481787b514f68343382$$^1221766736$$^Thu Sep 18 19:38:56 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Back out r41001 for the moment ("Add log_user_text. Useful for log dumps, which are needed by rev_deleted")
+| If applied in one piece, it should probably fill in log_user_text... but that would be very slow in production environments.
+| If it has to be able to work with an online update in production, it should probably allow for a NULL log_user_text value rather than '', which is eery
+|  
+* NEWCOMMIT:6712f9d26a8578dd7e6718adfcb3a81879bfdff9$$^1221762414$$^Thu Sep 18 18:26:54 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Add log_user_text. Useful for log dumps, which are needed by rev_deleted
+|  
+* NEWCOMMIT:332c4965068fb1379657807dd8eec9ffb03ac42e$$^1220210977$$^Sun Aug 31 19:29:37 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^* Maintain active user count for Special:Statistics (bug 13585)
+| * Add a global to add update functions to updateSpecialPages.php
+|  
+* NEWCOMMIT:ab2b5910de59f99d60994ea9fc6f017093aee35e$$^1220011905$$^Fri Aug 29 12:11:45 2008 +0000$$^Rotem Liss$$^rotem@users.mediawiki.org$$^Fixing comment.
+|  
+* NEWCOMMIT:c868ce1386dfb788c72e981832b88f5b8b81bbd6$$^1217472296$$^Thu Jul 31 02:44:56 2008 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^I honestly have no clue how this got committed; wasn't even using subversion. I really need some sleep it seems.
+|  
+* NEWCOMMIT:0a257c43f7d0149a7df4fde45dc9199c8b0b93da$$^1217471329$$^Thu Jul 31 02:28:49 2008 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^
+|    
+| * NEWCOMMIT:a91d9876ceb5b85354636affcdf77c833cfd3d52$$^1144716332$$^Tue Apr 11 00:45:32 2006 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^Merge back ENGINE->TYPE reswap
+| |     
+| | * NEWCOMMIT:77a9595eb3f41b3e187dc6129d1bceecab6b2ca7$$^1233903323$$^Fri Feb 6 06:55:23 2009 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Another fix for broken comment parsing in some MySQL version.
+| | | 
+| | |      
+| | | * NEWCOMMIT:29dda0384d080cd555f5543384e6ae289844c830$$^1233903109$$^Fri Feb 6 06:51:49 2009 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Fixed broken comment, breaks upgradeTest.py.
+| | | |     
+| | | * NEWCOMMIT:51dc7df2a1a35d49a3bbbb3f49809b2b8723b22c$$^1183395209$$^Mon Jul 2 16:53:29 2007 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Backported schema changes from r23239 and r23247.
+| | | |     
+* | | | NEWCOMMIT:a7af6c3b7282b180f677ee41b690dd335b1ff7e1$$^1215727871$$^Thu Jul 10 22:11:11 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Hold back $wgTrackLinkChanges for a little bit; reverting r37322, 37430, 37432, 37435.
+| | | | Even disabled, it's started interfering with regular tasks like running the parser tests.
+| | | |     
+* | | | NEWCOMMIT:19b85e4191285422b7547bdaf8ca5d79c4cc4621$$^1215727204$$^Thu Jul 10 22:00:04 2008 +0000$$^Daniel Friesen$$^dantman@users.mediawiki.org$$^Change all uses of TYPE= in MySQL to ENGINE=
+| | | | 
+| | | | According to the MySQL manual, TYPE= has been depreciated since MySQL 4.0, starting in 5.1 database warnings are issued when TYPE= is used instead of ENGINE=, and in MySQL 5.2 TYPE= will be removed.
+| | | | 
+| | | | Using ENGINE= inside of sql should serve the best compatibility since we require at least MySQL 4.0
+| | | |     
+* | | | NEWCOMMIT:1aa9413397c26e1ef1bb8b818cef08d8f07dd995$$^1215631968$$^Wed Jul 9 19:32:48 2008 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^That (1) qualifier on tinyint - I do not think it means what you think it means.
+| | | |     
+* | | | NEWCOMMIT:662ef4c311ba88db063e2b8ffe6d73de51435eed$$^1215630427$$^Wed Jul 9 19:07:07 2008 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^No tabs, please. Other minor whitespace fixes.
+| | | |     
+* | | | NEWCOMMIT:fe2e53ca935874159491974f6e4c0d6fca41805b$$^1215529327$$^Tue Jul 8 15:02:07 2008 +0000$$^Bryan Tong Minh$$^btongminh@users.mediawiki.org$$^(bug 13588) Experimentally track link changes if $wgTrackLinkChanges is set to true. Requires schema change.
+| | | |     
+* | | | NEWCOMMIT:c5f843d842406d210eb4abd0422e9dd308b6826c$$^1215447840$$^Mon Jul 7 16:24:00 2008 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^Update description of img_sha1 index.
+| | | |     
+* | | | NEWCOMMIT:d840f82c1087cd7354022ef239168b0ab0b64cd8$$^1214512900$$^Thu Jun 26 20:41:40 2008 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^Undo previous commit. Schema changes are a no-no without permission first :-)
+| | | |     
+* | | | NEWCOMMIT:a5f27b2960a7430429c64b18b58a82adc3c0f858$$^1214512706$$^Thu Jun 26 20:38:26 2008 +0000$$^Chad Horohoe$$^demon@users.mediawiki.org$$^(bug 13438) Make Special:MIMESearch less expensive. Needs some benchmarking to see if it's enough saving to remove it from the "is expensive special page" list.
+| | | |     
+* | | | NEWCOMMIT:bb81c98d442a9759cca8fa2c848a7b1f169fd666$$^1210566908$$^Mon May 12 04:35:08 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^* Add user_text index to filearchives (for renames at least)
+| | | | * Remove useless, incomplete, deleted_user index
+| | | |     
+* | | | NEWCOMMIT:ba07070395fe95b232217ecac58a61de1a3ac528$$^1210403055$$^Sat May 10 07:04:15 2008 +0000$$^Aran Dunkley$$^nad@users.mediawiki.org$$^Could someone please check this - I may be wrong but it looks like the table-prefix is needed here
+| | | |     
+* | | | NEWCOMMIT:3c60497de2c511154fbf121331a09ab3a768780d$$^1208467048$$^Thu Apr 17 21:17:28 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Add user_last_timestamp field for diff from last view links. Discussed timestamp use for this w/ brion.
+| | | |     
+* | | | NEWCOMMIT:2368dd5bf11c34b819fbd74fd46ca2fa04671dd5$$^1208459496$$^Thu Apr 17 19:11:36 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 13768) pt_title field encoding fixed
+| | | | pt_title field in page_protections was added without a binary marker when used on non-binary schema.
+| | | | This means you get false matches for ASCII case-insensitive bits, and probably for horribly wrong UTF-8 mish-mashes as well.
+| | | | 
+| | | | Adds an updated to fix the field's encoding to binary, matching all our other title keys,
+| | | | so you can join and get correct matches.
+| | | | 
+| | | | Revert r33473, which seems to assume that pt_title is supposed to be case-insensitive.
+| | | | (Even if it was, it woudln't work correctly as written.)
+| | | | 
+| | | |     
+* | | | NEWCOMMIT:d1de841c89b9762563c24357548c9fb42f1ff7fc$$^1208458340$$^Thu Apr 17 18:52:20 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert r33478 for now; I don't much like the field name user_timestamp, it's very unclear. Timestamp may not be ideal to build a diff link with, either.
+| | | |     
+* | | | NEWCOMMIT:f7553f4df961c86c5d01b3d240673e6159d4b0cd$$^1208444094$$^Thu Apr 17 14:54:54 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Fix description
+| | | |     
+* | | | NEWCOMMIT:aa75892b60a1132a6e282edbb58ae90b7761886b$$^1208443327$$^Thu Apr 17 14:42:07 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^Add user_timestamp for diff since last view for new messages.
+| | | |     
+* | | | NEWCOMMIT:072a4dba7fd8d878f8c94be3c604dd92c54c242a$$^1207954621$$^Fri Apr 11 22:57:01 2008 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Add ar_parent_id
+| | | |     
+* | | | NEWCOMMIT:673c706d75d7fa324fab1c530b59a6fd76d71b66$$^1207754394$$^Wed Apr 9 15:19:54 2008 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Moved log_id to the top of the table definition for logging
+| | | |     
+* | | | NEWCOMMIT:72a8faa09289c7ff0f57ebc9a6961b7627e7b13f$$^1206022217$$^Thu Mar 20 14:10:17 2008 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Change misleading comment
+| | | |     
+* | | | NEWCOMMIT:091bc4a760579c3e3d23a0641c7b51bd8391bd76$$^1205931311$$^Wed Mar 19 12:55:11 2008 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^No need for (1), keep tinyint consistent with the other booleans.
+| | | |     
+* | | | NEWCOMMIT:80a5874828c2ea32c8b5cee19dac23685924bc13$$^1205799448$$^Tue Mar 18 00:17:28 2008 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^This is a schema change.  It's only a table creation, but the table must be created on Wikimedia servers before this revision goes live.  The maintenance script populateCategory.php should be run when convenient.  If it's not run, there's only one substantial case where display will be harmed: the page of a category with more than 200 net pages added since the patch goes live will give an erroneously low count.  In other cases category pages will just be better-worded, and it will recognize the count in the table is bogus.
+| | | | * Adds Category and CategoryList classes to represent categories themselves.
+| | | | * Adds a category table, giving each category a name, ID, and counts of all members, subcats only, and files.
+| | | | * Adds a maintenance script to populate the category table efficiently.  This script is careful to wait for slaves and should be safe to run on a live database.  The maintenance script's includes file is called by update.php.
+| | | | * Until the category table is populated, the patch handles weird category table rows gracefully.  It detects whether they're obviously impossible, and if so, it outputs appropriate messages.
+| | | |     
+* | | | NEWCOMMIT:b7bf2dd85055ceed9bf6ea19dd6760f0811b6dc7$$^1205798766$$^Tue Mar 18 00:06:06 2008 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Add updatelog table to reliably permit updates that don't change the schema.  A fairly trivial patch.  It isn't used at all currently (it will be in a minute!), and presumably won't ever be used outside of update.php, so it can be ignored for Wikimedia despite being a schema change.
+| | | |     
+* | | | NEWCOMMIT:007f76a737ca5876da32eb8bf492ea19cb5778a8$$^1203785903$$^Sat Feb 23 16:58:23 2008 +0000$$^Victor Vasiliev$$^vasilievvv@users.mediawiki.org$$^SQL syntax error... Shame on me :(
+| | | | (Should be merged to REL1_13 branch)
+| | | |     
+* | | | NEWCOMMIT:b1dac80ab7984c6955c61dc27a5c9a925a44ade6$$^1203621643$$^Thu Feb 21 19:20:43 2008 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Add wgDBTableOptions
+| | | |     
+* | | | NEWCOMMIT:269a91037b7e47e92197fed5c3a16ecc2567f4e3$$^1203497592$$^Wed Feb 20 08:53:12 2008 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Added __HIDDENCAT__ feature, to hide categories from the box at the bottom of the member pages depending on special text on the category page. 
+| | | | * Added page_props backend, generic parser-driven page properties which, when changed, invalidate the cache of backlinked pages on any links table. Could be used to add overlays to images depending on their deletion status, or to add icons to articles based on category membership. 
+| | | | * Refactored double-underscore handling in the parser. 
+| | | | * Moved CoreParserFunctions registration to CoreParserFunctions. 
+| | | |     
+* | | | NEWCOMMIT:1bf9ad3bf0c934fe38ac28d8a0bc51ce0619ab10$$^1203336983$$^Mon Feb 18 12:16:23 2008 +0000$$^Victor Vasiliev$$^vasilievvv@users.mediawiki.org$$^* (bug 12999) introduce ipb_by_text colomn
+| | | | N.B.: this is schema change (obviously)
+| | | |     
+* | | | NEWCOMMIT:7c1170dcbf2d946f2cd6a5f56a9adb5161e9dad2$$^1199132813$$^Mon Dec 31 20:26:53 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert for now r28986, 28987, 28992 - image redirects.
+| | | | Would prefer to properly review how this works and how it interacts with current and future image behavior, rather than being surprised by it in the middle of ten other things being reviewed.
+| | | |     
+* | | | NEWCOMMIT:625dcb58e3cadfc63a1685baac9b753fa6d73075$$^1198920742$$^Sat Dec 29 09:32:22 2007 +0000$$^Victor Vasiliev$$^vasilievvv@users.mediawiki.org$$^* Support images-redirects
+| | | | Note: this revision requires schema change
+| | | |     
+* | | | NEWCOMMIT:a882348d84acadc5966a89cfe06a1f3eaa7c2c1d$$^1197840477$$^Sun Dec 16 21:27:57 2007 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^(bug 12314) r28417 kind of left out tables.sql . . . changed pt_by to pt_user and removed pt_user index from tables.sql.  This fixes MySQL, PostgreSQL still needs to be fixed.
+| | | |     
+* | | | NEWCOMMIT:9fa6709264c0ed0c920c7f13dd2eded70f5f1fd7$$^1197569803$$^Thu Dec 13 18:16:43 2007 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Fix wgDBprefix name, remove backslashes, remove zerofill column stuff, fix spacing.
+| | | |     
+* | | | NEWCOMMIT:3f65433da78582804a672fd503ae3bf562dee38e$$^1197382166$$^Tue Dec 11 14:09:26 2007 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Remove annoying `s from the definition of the protected_titles table.
+| | | |     
+* | | | NEWCOMMIT:34d22f6edc19de43263a3f4ce9502cab7d270585$$^1197366716$$^Tue Dec 11 09:51:56 2007 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^* (bug 2919) Allow the protection of non-existent pages using the regular protection interface.
+| | | | * WARNING: This revision requires a schema change, which is included in maintenance/archives/patch-protected_titles.sql, and can be applied in the normal manner (update.php).
+| | | |     
+* | | | NEWCOMMIT:81d8f988c76fd2669486a83842bb0dfb594178cb$$^1189171828$$^Fri Sep 7 13:30:28 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert 25602 and 25604 schema changes for now.
+| | | | Please don't commit schema changes to trunk until you've cleared them with me and Tim -- remember trunk is meant to be ready-to-run live at all times.
+| | | | They force operational work before we can update the software again, and it's a big pain in the ass to deal with them unexpectedly.
+| | | |     
+* | | | NEWCOMMIT:bdd24eab43ed8606eac2c86607327cb5667840c6$$^1189129932$$^Fri Sep 7 01:52:12 2007 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^Reinstate 25267 now that 1.11 is branched, and add the relatively long-requested rev_bot (with no index) while I'm at it.  By the way, the current index-updating format in updaters.inc makes baby Jesus cry.
+| | | |       
+| | | | * NEWCOMMIT:fb142b00bc666e27014c2b3ecd535a710d9268d2$$^1204523606$$^Mon Mar 3 05:53:26 2008 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^tag 1.9.6
+| | | |     
+* | | | NEWCOMMIT:74e1bf30a51bf4e8c1d335d2e40fb4bcc513bad7$$^1188980058$$^Wed Sep 5 08:14:18 2007 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^destroy rc_patrolling index, no removers added, I hope not that many people did run update with that revision :)
+| | | |     
+* | | | NEWCOMMIT:f9a14959a5f0bef794c482c8a7fffc83b4e5c19b$$^1188401447$$^Wed Aug 29 15:30:47 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert schema change in r25267 -- no more schema changes right before release please.
+| | | |     
+* | | | NEWCOMMIT:0bdf8e9376c4475d24567d4d1f22014fd446a9dc$$^1188354793$$^Wed Aug 29 02:33:13 2007 +0000$$^Aryeh Gregor$$^simetrical@users.mediawiki.org$$^* Add an index to (rev_page,rev_user,rev_timestamp) for use in "All edits by a user to this page".  Also potentially useful for "edits to a page grouped by user".  (Would "edits by a user grouped by page" be more useful instead?)  See bug 10788.  Code to implement that feature will follow at some point when the index has actually been applied to Wikimedia servers, probably shortly after I get annoyed at its nonexistence again when looking for an old edit of mine.
+| | | | * Bowlderism
+| | | |     
+* | | | NEWCOMMIT:fad169147abd5410710e3a0dd55258841f81b4e2$$^1188258273$$^Mon Aug 27 23:44:33 2007 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Downgrade from semicolon to comma
+| | | |     
+* | | | NEWCOMMIT:79eb0fe88d35aac3dce2b6fbefc652b123414066$$^1188256612$$^Mon Aug 27 23:16:52 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*err...make this consistent with rc_deleted patch file
+| | | |     
+* | | | NEWCOMMIT:5a9878f32d491ecd561045595e8d4f9bfeefc257$$^1186843427$$^Sat Aug 11 14:43:47 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Fixups for page id field in the archive table:
+| | | | * Make the field nullable for consistency with ar_rev_id and ar_text_id and between MySQL and PostgreSQL and generally so you can cleanly tell between bogus fields and ones that predate use of the field
+| | | | * Remove duplicate incorrect adding of the field for postgres
+| | | | * Rename to ar_page_id for consistency with ar_rev_id and ar_text_id
+| | | | * Rename the patch file for naming consistency
+| | | | 
+| | | | Note that there's no documentation of this schema change in the release notes either, which bugs me a bit.
+| | | | 
+| | | |     
+* | | | NEWCOMMIT:fe2c0f1ba082bd3d30696551b1fdc49e4aea5ed4$$^1186671482$$^Thu Aug 9 14:58:02 2007 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Add rc_patrolling index to Postgres schema
+| | | |     
+* | | | NEWCOMMIT:323f437f31b7874dd9107b64de8ac3ff9fe56a7b$$^1186424460$$^Mon Aug 6 18:21:00 2007 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^Fix syntax error
+| | | |     
+* | | | NEWCOMMIT:4280f45ccc40de220c7b16812f6a755c736f6099$$^1186370980$$^Mon Aug 6 03:29:40 2007 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^* (bug 10793) Show patrol links on all eligible diff pages
+| | | | * Introduce RecentChange::newFromConds() to support the above, and a new index
+| | | | * Refactored some bits
+| | | |     
+* | | | NEWCOMMIT:4394f481e39c303c6d5ec16c1d0c84b9af9a540e$$^1185892835$$^Tue Jul 31 14:40:35 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Backing out 24448, 24455, 24456 for the moment.
+| | | | Try not to slip in schema changes while everyone else is drinking pls :D
+| | | |     
+* | | | NEWCOMMIT:417eb35207d35eb4010a29011d70a19f794728fd$$^1185790303$$^Mon Jul 30 10:11:43 2007 +0000$$^River Tarnell$$^river@users.mediawiki.org$$^need name_key index in tables.sql too
+| | | |     
+* | | | NEWCOMMIT:f77ea104b5df9f691bfcbe754a87426121948e13$$^1185760597$$^Mon Jul 30 01:56:37 2007 +0000$$^River Tarnell$$^river@users.mediawiki.org$$^- new field: page_key, stores page_title in uppercase.
+| | | |   schema change, maintenance script included
+| | | |     
+* | | | NEWCOMMIT:2902493223888a9bfbdf6a56f539c8921aa608ed$$^1185230272$$^Mon Jul 23 22:37:52 2007 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added ar_page
+| | | |     
+* | | | NEWCOMMIT:8401db30bb22a87f28d247c07bc21de51f708ea0$$^1185117358$$^Sun Jul 22 15:15:58 2007 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^Commas at the end of enumerations only works in PHP...
+| | | |     
+* | | | NEWCOMMIT:ca76169bbef2f9c430a664c710a07c77672357e1$$^1185115512$$^Sun Jul 22 14:45:12 2007 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Introduced FileRepoStatus -- result class for file repo operations. 
+| | | | * Ported file delete/restore to the filerepo framework. Some user-visible changes in error reporting. 
+| | | | * $wgSaveDeletedFiles has been removed, the feature is now enabled unconditionally. Added a "deleted" directory for the default location, protected by a .htaccess file and the practical obscurity of content hashes.
+| | | | * Fixed bug 2735: "Preview" shown in title bar for action=submit on special pages
+| | | | * Removed "restore" links from the deletion log embedded in Special:Undelete
+| | | | * Added img_sha1/oi_sha1 fields, preserved through upload, delete and restore
+| | | | * Referenced the new oi_metadata etc. fields to preserve metadata across upload and delete/restore.
+| | | |     
+* | | | NEWCOMMIT:315f04e9bba3d2564fd559b5db9c2df851d26ab2$$^1184011522$$^Mon Jul 9 20:05:22 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Include usertext_timestamp index here
+| | | |     
+* | | | NEWCOMMIT:42031d5565102ae3eb69fea22eb71fe5c1ce1e78$$^1184009958$$^Mon Jul 9 19:39:18 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Index image and oldimage tables by user/timestamp (this should help slow renameuser queries on commons at the least)
+| | | |     
+* | | | NEWCOMMIT:a462e2df58a894011e2d55ae866322499284af3e$$^1182626880$$^Sat Jun 23 19:28:00 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Remove extra pr_page index, it is redundant and just increases overhead
+| | | |     
+* | | | NEWCOMMIT:73782b7e1d4e0e8656cfcca91999ed2d9bae98a5$$^1182543102$$^Fri Jun 22 20:11:42 2007 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Converted a couple of missed fields. Reverted expansion of log_type/log_action, that one really needs a patch file to avoid having future developers breaking old installations.
+| | | |     
+* | | | NEWCOMMIT:f38344aba87edbdb5dba23d6433bf3c7cbbb0b51$$^1182537084$$^Fri Jun 22 18:31:24 2007 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Fixed complete breakage for MySQL instances with a maximum key length of 1000 bytes. Tested with MyISAM 5 with UTF-8 default character set.
+| | | | * Replaced char/varchar with binary/varbinary in cases where the data is pure ASCII. This is more efficient for various reasons in MySQL 4.1+, and equivalent to char() binary in 4.0. Sometimes varbinary is needed where char was used before, to avoid zero-padding on the right. As a side-effect, this means the MySQL 5 binary schema is no longer broken.
+| | | | * Removed width specifiers from integer columns. These do virtually nothing, the MySQL command line client ignores them and they have no impact on storage. The only thing they do is cause arguments between developers over whether the most appropriate width of a 32-bit integer is 8, 9 or 10 columns.
+| | | | * No updater provided for the moment, but everyone should migrate to the MySQL 5 binary schema eventually since it should now work correctly and efficiently.
+| | | |     
+* | | | NEWCOMMIT:ca7ea84a7489d5385726292f5301907ef07a4ae6$$^1182525595$$^Fri Jun 22 15:19:55 2007 +0000$$^Yuri Astrakhan$$^yurik@users.mediawiki.org$$^Forgot to update table sql per bug 10280
+| | | |     
+* | | | NEWCOMMIT:d8466fb01083168ff6921c57b61980ea6e5a8a00$$^1181981285$$^Sat Jun 16 08:08:05 2007 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^varchars exist for a reason (or rather, static length doesn't add too much performance in paged datastores) - still needs updater and sync to all other table definition files
+| | | |     
+* | | | NEWCOMMIT:7d3eb4accdd826045b6c94a38d2435c99dbbc10a$$^1181237468$$^Thu Jun 7 17:31:08 2007 +0000$$^Daniel Cannon$$^amidaniel@users.mediawiki.org$$^(bug 7997) Added ability to Special:Blockip to block users from using Special:Emailuser.
+| | | |     
+* | | | NEWCOMMIT:af572f50e3864bbd86e08560b13fe2ad65d9ca5c$$^1180625175$$^Thu May 31 15:26:15 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Restore oldimage schema changes removed temporarily in r21957 (with some index modifications)
+| | | |     
+* | | | NEWCOMMIT:476b0f5a6033794527a7f807c44e6c445c701217$$^1178557013$$^Mon May 7 16:56:53 2007 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Triple dash to double for SQL comment.
+| | | |     
+* | | | NEWCOMMIT:9834345068ff41584eaab24486303e6613aa9044$$^1178555052$$^Mon May 7 16:24:12 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert schema changes in r21954, 21955, 21956 for the moment
+| | | |     
+* | | | NEWCOMMIT:90c1ecdce1103c447109370c0a0235b5edd09224$$^1178549073$$^Mon May 7 14:44:33 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Add new oldimage columns for mime/mediatype info and oi_deleted field. Make rebuild image populate these while updating oldimage.
+| |_|/  
+|/| |   
+| | |    
+* | | NEWCOMMIT:0a93752af67fe6d31ba279c11e376ce5c145a4c3$$^1177250646$$^Sun Apr 22 14:04:06 2007 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Removed mysql5 SQL files, obviously we're collectively incapable of keeping them up to date. They were littered with errors. The only deliberate difference appears to be the table character set, which can be adjusted programatically using a variable. 
+| | | * Added table option variable to the SQL patch files, so now upgrading a non-standard schema won't leave your database horribly corrupted.
+| | | * Added sql.php, for sourcing SQL files with MediaWiki variable substitution.
+| | | * Disable MySQL's strict mode at session start for MySQL 4.1+, to avoid the various problems that occur when it is on.
+| | |    
+* | | NEWCOMMIT:f3d56c7ba5bd6a580eda660a03d99f9f54f39cb1$$^1174158658$$^Sat Mar 17 19:10:58 2007 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Typo and whitespace and case
+| | |    
+* | | NEWCOMMIT:782bc0479452bfe67fd3e0abff724a01f0b5f045$$^1173910504$$^Wed Mar 14 22:15:04 2007 +0000$$^Erik Moeller$$^erik@users.mediawiki.org$$^missing ar_len
+| | |    
+* | | NEWCOMMIT:0100d4309c61aa5d668741fcff432770f444b454$$^1173909659$$^Wed Mar 14 22:00:59 2007 +0000$$^Erik Moeller$$^erik@users.mediawiki.org$$^add forgotten _deleted columns (were only in mysql5 file)
+| | |    
+* | | NEWCOMMIT:bcd458ca2585fbe7ceb5476f293e50ecd6bd5421$$^1173799559$$^Tue Mar 13 15:25:59 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^MySQL seems kind of anal about comments; at least the version on my Ubuntu box whines about the missing space on these comments
+| | |    
+* | | NEWCOMMIT:4063392a82f37a69d62a6bdab8d01a53a0b784f0$$^1173473411$$^Fri Mar 9 20:50:11 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Since we're making other changes, let's bring in that rev_parent_id field from branches/roman
+| | |    
+* | | NEWCOMMIT:dd078ce1301271954f4a289401e9177de51c3d84$$^1173324031$$^Thu Mar 8 03:20:31 2007 +0000$$^River Tarnell$$^river@users.mediawiki.org$$^tables.sql needs rev_len
+| | |    
+* | | NEWCOMMIT:6364231cb974524fae34e69e031602c9e847a646$$^1172438372$$^Sun Feb 25 21:19:32 2007 +0000$$^Aaron Schulz$$^aaron@users.mediawiki.org$$^*Create unique index pr_pagetype for PostgreSQL to fix protection breakage (bug 9097)/ add key name for clearity for MySQL
+| | |    
+* | | NEWCOMMIT:a063c8f0f1f03d14c176b2d79218e91c41239930$$^1171050091$$^Fri Feb 9 19:41:31 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert r19843 for now; unreviewed schema changes
+| | |    
+* | | NEWCOMMIT:fcbea0c876e5f628586988b4ae625678ce8f4c41$$^1171020133$$^Fri Feb 9 11:22:13 2007 +0000$$^Roman Nosov$$^roman@users.mediawiki.org$$^Revision table tree patch (No objections have been raised so i'm committing it to trunk)
+| | |    
+* | | NEWCOMMIT:fd601e44bfdea5ed68450ff327801f7a2f685b9e$$^1170666816$$^Mon Feb 5 09:13:36 2007 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^In case tables are created as MyISAM, use row hints for MySQL <5.0 to avoid 4GB limit
+| | |    
+* | | NEWCOMMIT:8b9f01ed98136790ecce8482a3a7fdf03029b085$$^1170320301$$^Thu Feb 1 08:58:21 2007 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^* Schema changes - add id fields to page_restrictions and logging tables for future functionality (log entry deletion, rewrite of Special:Protectedpages)
+| | | [RELEASE-NOTES update to come from another computer, something funky's going on with another line in RELEASE-NOTES]
+| | |    
+* | | NEWCOMMIT:d530e2ef66db1de775319f1941e43042affe9df6$$^1169454896$$^Mon Jan 22 08:34:56 2007 +0000$$^Rotem Liss$$^rotem@users.mediawiki.org$$^The support for time-limited protection isn't 'future' anymore.
+| | |    
+* | | NEWCOMMIT:fc82093faf08d59737fa134c39c2ea9e2ac86495$$^1168531045$$^Thu Jan 11 15:57:25 2007 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Minor spacing.
+| | |    
+* | | NEWCOMMIT:b3a8d488a81cd1e535765f5d800be011188b18e7$$^1168471958$$^Wed Jan 10 23:32:38 2007 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Merge from branches/werdna/restrictions-separation (forked at r18959): * Branch page_restrictions column out into its own table, also creating a 'cascading protection' feature, which automagically disallows edits to pages transcluded into a page protected with this new option. Various other code tidiness fixes and refactoring in the log messages of branches/werdna/restrictions-separation. REQUIRES DATABASE SCHEMA UPGRADE
+| | |      
+| | | * NEWCOMMIT:6cf14c8e1c38f710be9516fd2948a2e307d01096$$^1189460284$$^Mon Sep 10 21:38:04 2007 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^tag 1.8.5
+| | |      
+| | | * NEWCOMMIT:265fb59cfdf493e90c4931e46f6df40baeea5c9c$$^1152411032$$^Sun Jul 9 02:10:32 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Backport fix for an ENGINE=InnoDB accidentally left in, breaks on some versions of MySQL 4.0.x
+| | | |     
+* | | | NEWCOMMIT:4af89fb739cdedadf9ecc6daff0278a6f884d565$$^1166737381$$^Thu Dec 21 21:43:01 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^corrections to last tweaks
+| | | |     
+* | | | NEWCOMMIT:241fadbc29c95795cf7c7bb37ddd55539a1cc412$$^1166737243$$^Thu Dec 21 21:40:43 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 7669) Drop defaults on BLOB/TEXT columns for better compatibility
+| | | |   with MySQL's strict mode, often enabled by the Windows installer.
+| | | |   The defaults are ignored anyway when strict mode is off...
+| | | | * (bug 7685) Use explicit values for ar_text and ar_flags when deleting,
+| | | |   for better compatibility with MySQL's strict mode
+| | | | 
+| | | |     
+* | | | NEWCOMMIT:29718d4e4d62bd985a7cf0cded075cab857e5132$$^1166128200$$^Thu Dec 14 20:30:00 2006 +0000$$^Leon Weber$$^leon@users.mediawiki.org$$^Whoops, I also forgot that one...
+| | | |     
+* | | | NEWCOMMIT:288a7eb7f18ebc1f98f6ad65ede01c9ea39d9e9b$$^1166102572$$^Thu Dec 14 13:22:52 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Going ahead and adding this field while other DB updates are pending.
+| | | | Interfaces to use it can be added shortly.
+| | | | 
+| | | | * Add user_editcount field to provide data for heuristics on account use.
+| | | |   Incremented on edit, with lazy initialization from past revision data.
+| | | |   Can batch-initialize with maintenance/initEditCount.php (not yet friendly
+| | | |   to replication environments, this will do all accounts in one query).
+| | | | * Allow raw SQL subsections in Database::update() SET portion as well as
+| | | |   for WHERE portion. Handy for increments and such.
+| | | | 
+| | | |     
+* | | | NEWCOMMIT:753133808085f12c4dc346473e2d4223b8bfebb2$$^1165664195$$^Sat Dec 9 11:36:35 2006 +0000$$^Leon Weber$$^leon@users.mediawiki.org$$^* DB schema change: added two columns (rc_old_len and rc_new_len) to the recentchanges table to store
+| | | |   the text lengths before and after the edit
+| | | | * (bug 1085) Made Special:Recentchanges show the character difference between the changed revisions
+| | | |     
+* | | | NEWCOMMIT:07de0fc7be0dcf849d6f99bfc23c0e244b163036$$^1164688295$$^Tue Nov 28 04:31:35 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert special:deletedcontribs for now; it's not ready to go live without the
+| | | | index change so would hold up other work for a few days, and the code's kind
+| | | | of ugly and should get refactored.
+| | | | Would love to see this on a branch for the moment.
+| | | |     
+* | | | NEWCOMMIT:c1c00f2bd6e2f5de088755642203bea5e67a6ef2$$^1164684132$$^Tue Nov 28 03:22:12 2006 +0000$$^Ilmari Karonen$$^vyznev@users.mediawiki.org$$^New special page Special:Deletedcontribs for browsing deleted edits made by a user.
+| | | | 
+| | | | NOTENOTENOTE: This is a one-night hack; feel free to tweak it mercilessly.  It has
+| | | | a lot of common code with Special:Contributions that should be factored out.  There
+| | | | is no link to this new page anywhere in the UI yet; I'd like people to test and
+| | | | review this a bit before officially announcing it.  The page is currently only
+| | | | available to users with deletedhistory privileges; a possible additional feature
+| | | | might be to allow all users to list (but not view) their _own_ deleted edits.
+| | | |     
+* | | | NEWCOMMIT:f8299618ea6133cc10edbebfa8a8f3ece83a704e$$^1164205313$$^Wed Nov 22 14:21:53 2006 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^revert until proper cleanup
+| | | |     
+* | | | NEWCOMMIT:1e214a16c2d92c12383da8a17acd27f3cfcaa895$$^1164204360$$^Wed Nov 22 14:06:00 2006 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^remove 'subkey' (255) for a field which is 40-chars long, fixes stuff...
+| | | |     
+* | | | NEWCOMMIT:4e6fbd33bc3cec6d7237aa269ff1e1b6623d4825$$^1163281098$$^Sat Nov 11 21:38:18 2006 +0000$$^Yuri Astrakhan$$^yurik@users.mediawiki.org$$^bugfix 6440: updated indexes to improve backlinking queries. May be very slow on large wikis.
+| | | |     
+* | | | NEWCOMMIT:8671e7cda835dbb832bcfb86b0e994e5ce0df88f$$^1162979646$$^Wed Nov 8 09:54:06 2006 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^* (bug 5149) When autoblocks are enabled, retroactively apply an autoblock to the most recently used IP of a user when they are blocked.
+| | | | * Add an index on (rc_user_text,rc_timestamp) on the recentchanges table. This will make CheckUser.php and the new retroactive autoblock functionality faster.
+| | | | 
+| | | |     
+* | | | NEWCOMMIT:05f4492f0686230f82ccf0c2d8d5f3c326157326$$^1162418238$$^Wed Nov 1 21:57:18 2006 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Restore patch that was temporarily reverted in order to rectify an issue where the patch was applied without enacting required database changes
+| | | |     
+* | | | NEWCOMMIT:5941189de0c2a55ba8964eaefbfc5f95fecdbaf8$$^1162416963$$^Wed Nov 1 21:36:03 2006 +0000$$^Andrew Garrett$$^werdna@users.mediawiki.org$$^Revert patch that was scapped into production without database changes
+| | | |     
+* | | | NEWCOMMIT:329b012d2b4de65f81d39335c66653983c444f14$$^1162365211$$^Wed Nov 1 07:13:31 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added block option "enable autoblocks". Patch by Werdna from bug 1294.
+| | | |     
+* | | | NEWCOMMIT:14d1076a781b6c617aa4eb8f60894a75e9cf2028$$^1161785878$$^Wed Oct 25 14:17:58 2006 +0000$$^Yuri Astrakhan$$^yurik@users.mediawiki.org$$^Added querycachetwo table creation & patch. The table will be used to cache items with two links.
+| | | |     
+* | | | NEWCOMMIT:907d977ac22bc921cd746075422672aab6ee6a75$$^1161761219$$^Wed Oct 25 07:26:59 2006 +0000$$^Yuri Astrakhan$$^yurik@users.mediawiki.org$$^* Added 'redirect' table - contains unique targets of redirects
+| | | |     
+* | | | NEWCOMMIT:e9de4983bfbf4ad8cd13444633731e32997fa169$$^1161596130$$^Mon Oct 23 09:35:30 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added a per-user limit on password reminder emails. Presumably if you just had a password reminder sent to you, you don't need another one a short time later. Along with a proper per-IP throttle setting, this should fix the majority of the abuse problem on Wikipedia.
+| | | |     
+* | | | NEWCOMMIT:a38c8add84241ed1453bbb99e1c5d8b4c8c29cb8$$^1158354155$$^Fri Sep 15 21:02:35 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^reverting SerbianVariants check-in, not ready to go live yet on Wikimedia
+| | | |     
+* | | | NEWCOMMIT:16577746564269b5587fe3d8955622aa0b46c192$$^1158350901$$^Fri Sep 15 20:08:21 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Merge from SerbianVariants branch, trunk 16500 vs SerbianVariants 16523
+| | | |     
+* | | | NEWCOMMIT:f332001ac5a8547d305bc183bd004d54995981a7$$^1153586608$$^Sat Jul 22 16:43:28 2006 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Standardize whitespace and caps a bit.
+| | | |     
+* | | | NEWCOMMIT:4838f19f971c6afb68fa005a9ae247ce7b7807e6$$^1153581147$$^Sat Jul 22 15:12:27 2006 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Explicitly make user_newtalk InnoDB.
+| | | |     
+* | | | NEWCOMMIT:fa2b003c19f9c79c2665f5d70685de05b59d9aa8$$^1152600987$$^Tue Jul 11 06:56:27 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Use bool not boolean for 4.0.x compatibility
+| | | |     
+* | | | NEWCOMMIT:861e40c6223720d5160b3821214a6bd92c987a7f$$^1152520728$$^Mon Jul 10 08:38:48 2006 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^* (bug 6448) Allow filtering of Special:Newpages according to username
+| | | | 
+| | | | Comes with a free index upgrade.
+| | | |     
+* | | | NEWCOMMIT:1d9922db6442dec82e4be07c45c2e8a3a2035602$$^1152513003$$^Mon Jul 10 06:30:03 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Allow blocks on anonymous users only. 
+| | | | * Allow or disallow account creation from blocked IP addressess on a per-block basis.
+| | | | * Prevent duplicate blocks. 
+| | | | * Fixed the problem of expiry and unblocking erroneously affecting multiple blocks. 
+| | | | * Fixed confusing lack of error message when a blocked user attempts to create an account. 
+| | | | * Fixed inefficiency of Special:Ipblocklist in the presence of large numbers of blocks; added indexes and implemented an indexed pager.
+| | | |     
+* | | | NEWCOMMIT:a148c92429b60ade8bbbc490a72ff169a6420519$$^1152411076$$^Sun Jul 9 02:11:16 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Fix the other incidence of ENGINE= that was forgotten about
+| |_|/  
+|/| |   
+| | |    
+* | | NEWCOMMIT:12e3712a2288a26ee4beea5d24db3a8f6dda46aa$$^1151601720$$^Thu Jun 29 17:22:00 2006 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Add newline to end.
+| | |    
+* | | NEWCOMMIT:908c51e1273588b97afe6a218952cfde20a4fe7d$$^1151424707$$^Tue Jun 27 16:11:47 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Revert to r15092; massive breakage, unable to connect to MySQL at all
+| | |    
+* | | NEWCOMMIT:ef89ec541c7a3b249695ce8d9427f663455f6c6d$$^1151422655$$^Tue Jun 27 15:37:35 2006 +0000$$^Greg Sabino Mullane$$^greg@users.mediawiki.org$$^Add concept of a distinct port separate from a server.
+| | | Add some functions to DatabasePostgres.php.
+| | |    
+* | | NEWCOMMIT:dc1bb0233604e62df0169f3f2b400345d4146c3d$$^1150929640$$^Wed Jun 21 22:40:40 2006 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^Remove unused "validation" table definitions from the schema files
+| | |    
+* | | NEWCOMMIT:8a42f0b1a877a29e71167333bff1dab338942682$$^1150420605$$^Fri Jun 16 01:16:45 2006 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^(bug 2099) Deleted files can now be archived and undeleted, if you set up an appropriate non-web-accessible directory.
+| | | Set $wgSaveDeletedFiles on and an appropriate directory path in $wgFileStore['deleted']['directory']
+| | | 
+| | |    
+* | | NEWCOMMIT:43363f3e709cf72b77d5edf56e6fe371003409c9$$^1145249292$$^Mon Apr 17 04:48:12 2006 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^Fix issues noted by Brion; proper handing of a missing record, and correct the schema alterations (type is only 32 chars, so don't waste 255 on it). Also, skip the whole read chunk if we're never going to output the data.
+| | |    
+* | | NEWCOMMIT:2cda98321d7f03d4d17a545aef9e2e6599ada42f$$^1145248239$$^Mon Apr 17 04:30:39 2006 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^(bug 4327) Report age of cached data sets in query pages
+| | | [Schema change]
+| | |    
+* | | NEWCOMMIT:fb97cc3078ab3c3ef1c3ee77d773f693f929d943$$^1144767364$$^Tue Apr 11 14:56:04 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^langlinks table
+| | |    
+* | | NEWCOMMIT:88932b07585aebddba7fbe57914961342408ff26$$^1144530673$$^Sat Apr 8 21:11:13 2006 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^put TYPE back in, now as it's back in 5.1 ;-)
+|/ /  
+| |   
+* | NEWCOMMIT:98af136ad5608781df61a6c911056045b958df20$$^1143522573$$^Tue Mar 28 05:09:33 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added ss_images to site_stats, to replace the slow count(*) query in Parser.php.
+| |   
+* | NEWCOMMIT:0b25a247a1ddb9d3c698957ea768889ed4463e09$$^1142174103$$^Sun Mar 12 14:35:03 2006 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^replace TYPE= with ENGINE=, (supported since 4.0, TYPE deprecated since 4.1)
+| |   
+* | NEWCOMMIT:eeb84cce20e993a33599c3af988a40703b35e92c$$^1140746191$$^Fri Feb 24 01:56:31 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added job table, for deferred processing of jobs. The immediate application is to complete the link table refresh operation when templates are changed.
+| |   
+* | NEWCOMMIT:a55c55a10a0a986ff063c2ff2d0de8014c30e894$$^1139639012$$^Sat Feb 11 06:23:32 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^explicit TYPE=InnoDB
+| |   
+* | NEWCOMMIT:8da9fca6c03fa8b2ca8bc83f8704e1219aa3904d$$^1138679048$$^Tue Jan 31 03:44:08 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Fixes and improvements to interwiki transclusion:
+| | * allow interwiki {{subst:...}} using action=raw fetches
+| | * Allowed non-MSIE browsers to access action=raw via the article alias. This is necessary to allow action=raw transclusion, since the only known URL is the article path, not the script path.
+| | * Specify a user agent in wfGetHttp() fetches, when using curl.
+| | * Added transcache table to tables.sql, it was in the updater but not there for some reason.
+| | * Fixed transcache expiry, added option
+| | * Allow interwiki transclusion outside the template namespace using leading colon syntax. Syntax is counterintuitive at times, e.g. to subst the wikipedia main page you would use {{subst::Wikipedia:Main_Page}} not {{subst:Wikipedia::Main_Page}}.
+| |   
+* | NEWCOMMIT:eb53cc08560721208e195c0f073809e7b3eee485$$^1138282154$$^Thu Jan 26 13:29:14 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Added externallinks table, to track links to arbitrary URLs
+| | * Convert unnecessary URL escape codes in external links to their equivalent
+| |   character before doing anything with them. This prevents certain kinds of
+| |   spam filter evasion. (Parser.php only)
+| |   
+* | NEWCOMMIT:81217f55a08341a1b3fc401d836b53b8d97e9d27$$^1135935191$$^Fri Dec 30 09:33:11 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Added templatelinks table. The table currently represents a literal list of templates included from each article. That is, the table contains pages which were actually loaded during parsing, not the markup which went into resolving their names.
+| | * Ended the role of $wgLinkCache in link updates. Instead, links (and related entities) are registered in the ParserOutput object during a parse. The LinksUpdate constructor now takes a ParserOutput object as a parameter. $wgLinkCache is still used, but only as a cache of article IDs.
+| | * Because the link list is now saved and restored in the parser cache, meta tag keywords now work on parser cache hits. Some refactoring took place in this area.
+| | * Rendering of the HTML for category links has moved from Parser to OutputPage.
+| | * Did some general pottering around in Article.php, such as allowing an Article object to be created with a specified revision ID, thereby optionally removing the dependence on $wgRequest. Not used at the current time.
+| | * A few documentation tweaks.
+| |   
+* | NEWCOMMIT:31ac630d7637dc2ce481ba0150a43d0fca5f51bd$$^1135232556$$^Thu Dec 22 06:22:36 2005 +0000$$^Erik Moeller$$^erik@users.mediawiki.org$$^minor doc
+| |   
+* | NEWCOMMIT:a35fcb0bed5f8600b4330039b6772fa4c7a49cd0$$^1135230066$$^Thu Dec 22 05:41:06 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 1735) Revamped protection interface
+| | * (bug 675) Add page protection level for unregistered/new accounts
+| | * User::isNewbie now uses the registration date and $wgAutoconfirmAge
+| | * Log views show message when no matches
+| |   
+* | NEWCOMMIT:95718c76180074671a78b0b971eb9e7fed3d1e5c$$^1133479422$$^Thu Dec 1 23:23:42 2005 +0000$$^Tom Gilder$$^tomgilder@users.mediawiki.org$$^fix SQL comma error
+| |   
+* | NEWCOMMIT:55671d7040e820552344dab96caf40c25085259a$$^1133433467$$^Thu Dec 1 10:37:47 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Faster IP blocks. Requires schema change.
+| |   
+* | NEWCOMMIT:b898d890d9b48ccb5b1af6e7afd24d52d0e28362$$^1131827133$$^Sat Nov 12 20:25:33 2005 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^add timestamp key on logging table, in order to avoid stupid filesorting
+| |   
+* | NEWCOMMIT:fced95bfc14f4808b49589f1d92851453a1da981$$^1129271263$$^Fri Oct 14 06:27:43 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* Improved numerous comments
+| | * Dropped the MIME indexes
+| | * Formatting
+| | * Removed unused groups table definition
+| |   
+* | NEWCOMMIT:4c5243e83a5d3c3a939feb7763af76e4235bd158$$^1129264679$$^Fri Oct 14 04:37:59 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* Added documentation to text.old_id
+| |   
+* | NEWCOMMIT:e8608b246526587dea09319918d1dbbf869d081f$$^1126629230$$^Tue Sep 13 16:33:50 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* Changed the schema, put an index on img_major_mime and img_minor_mime
+| |   
+* | NEWCOMMIT:59db0ac6d13b75f3dd348d856325968d41db99aa$$^1124268228$$^Wed Aug 17 08:43:48 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Use null in wl_notificationtimestamp! The database provides this for a reason.
+| | Can now add items to one's watchlist on MySQL again.
+| |   
+* | NEWCOMMIT:b1f790da0d917c9eb4a2ffa086bc822583997c40$$^1123940266$$^Sat Aug 13 13:37:46 2005 +0000$$^Mr. E23$$^e23@users.mediawiki.org$$^Fixed unquoted negative numerals, which breaks on some mysql versions
+| |   
+| * NEWCOMMIT:b8b9cbbd3d89ae1a659bbaf201a9ad47811505eb$$^1139638930$$^Sat Feb 11 06:22:10 2006 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^explicit TYPE=InnoDB for two tables where it was missing.
+| |   
+| * NEWCOMMIT:b017c003932710710ea464eb5f2aea065761aa0b$$^1138405906$$^Fri Jan 27 23:51:46 2006 +0000$$^Rob Church$$^robchurch@users.mediawiki.org$$^Added missing table defs. for transcache (were in updaters, but not install schema)
+|/  
+|  
+* NEWCOMMIT:7b810c22efaa1d46d70b43a45ef5ed01d2e49778$$^1122100226$$^Sat Jul 23 06:30:26 2005 +0000$$^River Tarnell$$^kateturner@users.mediawiki.org$$^let sysop delete trackbacks
+|  
+* NEWCOMMIT:bc36d810e796739c2bc5e8fec70a5c5bf530b21e$$^1122097645$$^Sat Jul 23 05:47:25 2005 +0000$$^River Tarnell$$^kateturner@users.mediawiki.org$$^(bug 796) trackback support
+|  
+* NEWCOMMIT:b6c967e39db2f470ca4eab5c7279664932cf0b0c$$^1120748213$$^Thu Jul 7 14:56:53 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* Removing backticks in the validate table definition
+|  
+* NEWCOMMIT:aa9bccd696f9aa48196b7c70a803565179fefdb2$$^1120532909$$^Tue Jul 5 03:08:29 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Somebody forgot to update the interwiki table definition...
+|  
+* NEWCOMMIT:1f3284da900157b85a5fdba1dd3362d489cd8b68$$^1119707238$$^Sat Jun 25 13:47:18 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^recovering previous behaviour when enotif is switched off
+|  
+* NEWCOMMIT:ccb91b5a6116a0ea650b0aa3ae037f27728dc760$$^1119690049$$^Sat Jun 25 09:00:49 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Create new old_text and ar_text fields as mediumblob instead of mediumtext.
+| These fields may contain compressed binary data.
+|  
+* NEWCOMMIT:5235a6ee42605709ddfd2cd8cfc24ac001f63c72$$^1119300071$$^Mon Jun 20 20:41:11 2005 +0000$$^Magnus Manske$$^magnusmanske@users.mediawiki.org$$^validation table fix
+|  
+* NEWCOMMIT:eabc6fe9ff86d9bec56a5f858baff0b241546164$$^1119143181$$^Sun Jun 19 01:06:21 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^fixed references to cur table in comments
+|  
+* NEWCOMMIT:904042c07ca9d1bd246b8ded0d6904cef3ae153a$$^1119140509$$^Sun Jun 19 00:21:49 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^ported site_stats change from 1.4
+|  
+* NEWCOMMIT:2aa6775224f830fff40bf3a55d6e0a303ce7f8e3$$^1118584358$$^Sun Jun 12 13:52:38 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 650) Use a shorter cl_sortkey field to avoid breaking on MySQL 4.1
+|   when the default charset is set to utf8
+|  
+* NEWCOMMIT:a6d47f47ffb57840625997063ce01a93d204cdc2$$^1118310550$$^Thu Jun 9 09:49:10 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Rework the user_groups system, again, into something that seems to actually
+| more or less work for now.
+| 
+| * user_groups ur_group is now a short string key ('sysop' etc)
+| * groups table is gone
+| * user_rights table is gone
+| * Permissions for groups are for now set in $wgGroupPermissions.
+| An in-database management system could be re-added in the future
+| if it's really needed, but for now it's mostly just been screwing
+| things up.
+| * Group.php and Special:Groups are deprecated; will probably die.
+| * User group memberships are set explicitly through addGroup and
+| removeGroup methods instead of being re-saved on every change to
+| the user record.
+| 
+| Group keys are migrated from user_rights at upgrade time for older wikis.
+| The fields in prior 1.5alpha tables were too screwed up and will need to
+| manually have sysops re-assigned.
+| 
+| The Makesysop extension will need some minor tweaks.
+|  
+* NEWCOMMIT:b76be11a85418b32235eaec3fd42e3a0d9af83dc$$^1117970392$$^Sun Jun 5 11:19:52 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 2223) Add unique index on user_name field to prevent duplicate accounts
+|  
+* NEWCOMMIT:cb45389b9c4d5ec23b9d2e9848d94a46b6bbeca2$$^1117524091$$^Tue May 31 07:21:31 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* Remove linkscc table code, no longer used.
+|  
+* NEWCOMMIT:e1292a9ee29699c30a736e03b740c115085552b1$$^1117445641$$^Mon May 30 09:34:01 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Don't create links & brokenlinks on new installations; skip links table
+| update if pagelinks already exists.
+|  
+* NEWCOMMIT:e0ce5a322e41cf39f110fd4fa3c2c5c849964252$$^1117103016$$^Thu May 26 10:23:36 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* links and brokenlinks tables merged to pagelinks; this will reduce pain
+|   dealing with moves and deletes of widely-linked pages.
+| 
+| The updaters should be fixed up to understand future versions without the
+| tables there without breaking upgrades.
+|  
+* NEWCOMMIT:27105c21295dbc16532875feb3582a0555576e73$$^1116661577$$^Sat May 21 07:46:17 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* (bug 898) Mime type autodetection.
+|  
+* NEWCOMMIT:63190801a84c5c0cf20c7547f7f15f7ab42c72ec$$^1116137928$$^Sun May 15 06:18:48 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Renamed group table to groups, and renamed the fields from group_xxx to gr_xxx. Added static group support to Special:Listusers.
+|  
+* NEWCOMMIT:c03eed626f43f05f0f26fbddc095c9612dbe42b2$$^1115105420$$^Tue May 3 07:30:20 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* Grammar in comments and a mention of isCountable() in includes/Article.php
+|   in the comment for ss_good_articles.
+|  
+* NEWCOMMIT:480419b3a9524ad13ccd4b100952869720cd8c01$$^1115028902$$^Mon May 2 10:15:02 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 719) Increase namespace fields from tinyint to regular int
+| This keeps custom namespaces from bumping the 8-bit ceiling so quickly.
+|  
+* NEWCOMMIT:fa8603c521f98bce49daeebdb7c4a4ca0f494a44$$^1115023217$$^Mon May 2 08:40:17 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Use InnoDB by default for table creations if available.
+|  
+* NEWCOMMIT:12c16ff6767186dc837f22e45a467431525b0ff8$$^1115022216$$^Mon May 2 08:23:36 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Don't create unused blobs table.
+|  
+* NEWCOMMIT:5fdbef206f35adeb11ee0b97894f8fdb5c451a0e$$^1115021258$$^Mon May 2 08:07:38 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Move schema documentation to inline comments in tables.sql,
+| where it's less likely to be left years out of date.
+|  
+* NEWCOMMIT:c1ac86e5600e3334d8c0de30ad41cbd3db9f23dc$$^1114934845$$^Sun May 1 08:07:25 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 2018) Fix deletion for new schema, make work on MySQL 3 again
+| 
+| The archive table now has an ar_text_id field which points at the
+| text record containing the deleted revision's text. Older archive
+| records containing self-contained text are still supported and
+| will be restored by adding a new revision.
+| 
+| For now, revision and page records are still removed on deletion,
+| but text records are left intact. This will keep block compression
+| and immutable alternate storage backends working relatively cleanly.
+| A rev_deleted flag field is reserved in revision for further future
+| changes but that won't happen in the 1.5 timeframe.
+| 
+| There is no longer a delete-on-join which was present in earlier
+| 1.5 revisions, so deletion should work on MySQL 3.x again.
+|  
+* NEWCOMMIT:77c833c4e69c01656e35ac940aa1d71b2a3690ba$$^1114545475$$^Tue Apr 26 19:57:55 2005 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^Add user_email_* columns to tables.sql, so that the installer works for fresh installations
+|  
+* NEWCOMMIT:ee117b601d89296485c76eebd4f9e9bfc4bb234f$$^1114121408$$^Thu Apr 21 22:10:08 2005 +0000$$^Ævar Arnfjörð Bjarmason$$^avar@users.mediawiki.org$$^* Adding img_metadata to image
+|  
+* NEWCOMMIT:efba9e34764023c3fc0b7ce76b9b61d22a96ace6$$^1113157770$$^Sun Apr 10 18:29:30 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Moved image metadata to the database. Changed Image object to have lightweight constructors, similar to the User object.
+|  
+* NEWCOMMIT:22c813ad9784bceca4220a558910fd5de00dbd4b$$^1112269205$$^Thu Mar 31 11:40:05 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* Add wfElement() for handy generation of properly-escaped XML/HTML elements with attributes.
+| * Begin infrastructure for deleted-revision tag; add rev_deleted field, some
+| display support for it in history and contribs. Not yet used for deletions.
+| Run update.php or source maintenance/archives/patch-rev_deleted.sql
+|  
+* NEWCOMMIT:0b86f637f22416a54a6bd1e48a282826d7bc11cd$$^1112006832$$^Mon Mar 28 10:47:12 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Decouple revision.rev_id from text.old_id
+| * This will allow the backend text storage to use different id numbers
+| * Revisions noting metadata changes can be added to history without duplicating text
+|   (implemented for page move)
+| 
+| This changes the revision table schema and requires running update.php
+| or maintenance/archives/patch-rev_text_id.sql on existing test wikis.
+| PostgreSQL table defs are still not in sync, so not updated.
+|  
+* NEWCOMMIT:08607314e3995003703bb1f4499dd90df9fbd617$$^1111239756$$^Sat Mar 19 13:42:36 2005 +0000$$^Magnus Manske$$^magnusmanske@users.mediawiki.org$$^correct validate-table code
+|  
+* NEWCOMMIT:9e6e2933341741254cdc64324cd67b91168564e1$$^1110628262$$^Sat Mar 12 11:51:02 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Add page_len field with byte length of current revision text, since
+| revision text is now stored separately and may be compressed.
+| This field is indexed which speeds up Special:Shortpages & Longpages.
+| 
+| Removed no longer used wfArticleIsStub().
+|  
+* NEWCOMMIT:1c0dcc995d27eff708ee27c6c645b2e9a43a6ce2$$^1110614806$$^Sat Mar 12 08:06:46 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* Make undeletion (more or less) work with new schema
+| * Add ar_rev_id field to archive to preserve revision IDs across deletion+undeletion
+|  
+* NEWCOMMIT:0aa2629efc67b65d661df536f2c0f2fed59f3d64$$^1109000038$$^Mon Feb 21 15:33:58 2005 +0000$$^Domas Mituzas$$^midom@users.mediawiki.org$$^remove inverse_timestamp wherever it is found and disable wfInvertTimestamp()
+| dear mysql3, try to remember how beautiful filesorts are, you're so good at it.
+|  
+* NEWCOMMIT:3a29c76b2ba1a0496c1bd7b0f766891bcfd3a8f6$$^1108724158$$^Fri Feb 18 10:55:58 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^logging table encoding fix -- hopefully it actually works, as I haven't seen feedback from 4.1 testers
+|  
+* NEWCOMMIT:44eab3b9f07325b5a79ad104054a03f37f2b5aa8$$^1105710439$$^Fri Jan 14 13:47:19 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^elaborate fix for bug 1156: Block log: missing expiry time. Changed schema for logging table
+|  
+* NEWCOMMIT:64ac6b8e775dd8582ea9cc5f24235488f076c5b3$$^1103443250$$^Sun Dec 19 08:00:50 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Merge SCHEMA_WORK into HEAD. Lots of changes, some things are probably broken:
+| * Page moves/overwrites are a little iffy
+| * Compression might not be working right
+| * Profit!
+|  
+* NEWCOMMIT:798270581d38271fa87b2744fa157f77f2d2db80$$^1103341631$$^Sat Dec 18 03:47:11 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^(bug 454) Merge e-notif 2.00
+| From http://bugzilla.wikipedia.org/attachment.cgi?id=171&action=view
+| and extra files from http://www.tgries.de/mw/cvs15+enea200-minus-cvs.tgz
+| 
+| Undid a couple minor bits like the broken changing of minoreditletter.
+| Have not yet made general corrections/reworkings. Since this changes
+| the user and watchlist tables, you must run the updaters (installer or
+| update.php) on an existing database.
+|  
+* NEWCOMMIT:f00cd5574602dcbfc40a7a79a2661a367c54fb0f$$^1101906913$$^Wed Dec 1 13:15:13 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Add basic support for table prefixes to the installer. (Probably will fail on upgrades yet.) .sql files should still be usable 'raw' on a wiki with no prefix.
+|    
+| * NEWCOMMIT:7fe7981167649cc46d340412153badc7e909e254$$^1119652148$$^Fri Jun 24 22:29:08 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added missing index, fixed ss_row_id default
+| |   
+| * NEWCOMMIT:4d7f387e118c3057894a49ac2d29e0727b914654$$^1114394826$$^Mon Apr 25 02:07:06 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Moving expensive statistics queries to the site_stats table, with appropriate update code everywhere. Code is schema-agnostic, upgrading the schema will not be required until 1.5.
+| |   
+| * NEWCOMMIT:a664f7a8ed2633a941895186c06492c120b4a1b4$$^1110503972$$^Fri Mar 11 01:19:32 2005 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^* (bug 1057) Fix logging table encoding (error on MySQL 4.1)
+| | (Backport from HEAD)
+| |   
+| * NEWCOMMIT:cd550de769a0e219d1a5ed98c063601402366868$$^1105710365$$^Fri Jan 14 13:46:05 2005 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^elaborate fix for bug 1156: Block log: missing expiry time. Changed schema for logging table
+| |   
+| * NEWCOMMIT:f4921ce15b9c33c13a9ed0d369ce529cac9ba182$$^1101963506$$^Thu Dec 2 04:58:26 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Don't add the groups or user_groups tables, we don't use them in 1.4
+| |   
+| * NEWCOMMIT:7ca761590f02d8d1c4eb983bfe2cb095c463e135$$^1101910798$$^Wed Dec 1 14:19:58 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Merge table prefix installer fixes from HEAD
+|/  
+|  
+* NEWCOMMIT:7c08615a60ad907309d9e58635c203d239e5a970$$^1098656452$$^Sun Oct 24 22:20:52 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Install fixes for group table
+|  
+* NEWCOMMIT:fbb38feb6276fe78faac55ea6a6cb7bc7e1f3dd7$$^1098652794$$^Sun Oct 24 21:19:54 2004 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^forgotten rename
+|  
+* NEWCOMMIT:421829d4e7b9a1620d990de7a44b34e5133023e4$$^1098611473$$^Sun Oct 24 09:51:13 2004 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^Renaming columns:
+| ug_gid => ug_group
+| ug_uid => ug_user
+| ur_uid => ur_user
+| as proposed by Mr Vibber.
+|  
+* NEWCOMMIT:bbfc760c1f790ca9110190eccf18bd34d1814889$$^1098609713$$^Sun Oct 24 09:21:53 2004 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^Rename fields of user_rights and user_groups table to tablename_columnname schema
+|  
+* NEWCOMMIT:dbbf0e913a0f3939a3e649993efd610c98d14bfb$$^1096755960$$^Sat Oct 2 22:26:00 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Add the experimental user_groups, group tables so that installation works
+|  
+* NEWCOMMIT:332a0cf2684024869536a2af1ef83990efcb7b3c$$^1096228184$$^Sun Sep 26 19:49:44 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Back out kturner's old table restructure for now.
+| This will require downtiime on upgrade, so we're not going to do it until we have a better idea of the cost and can make all necessary changes at once to minimize it.
+|  
+* NEWCOMMIT:705c7680fc4acff0740da7a49d075081bd3c8b77$$^1096209792$$^Sun Sep 26 14:43:12 2004 +0000$$^River Tarnell$$^kateturner@users.mediawiki.org$$^remove old_namespace and old_title from old table.
+|  
+* NEWCOMMIT:72e66de074fe8be9250320012ce4d9abd5850471$$^1096197454$$^Sun Sep 26 11:17:34 2004 +0000$$^River Tarnell$$^kateturner@users.mediawiki.org$$^user_token
+|  
+* NEWCOMMIT:aeaada603307a299998fbcae5787e3be3cda21bc$$^1094899587$$^Sat Sep 11 10:46:27 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Remove indexes.sql; index definitions are now in the table creation in
+| tables.sql where they belong. Changed some UNIQUE to PRIMARY KEY, removed
+| unneeded cur_namespace index, added UNIQUE index on cur_namespace,
+| cur_title combination to enforce correctness a bit on new wikis.
+|  
+* NEWCOMMIT:fae0d1392935202675dc909e37087f392083269e$$^1093380067$$^Tue Aug 24 20:41:07 2004 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^Split user table into two parts: user and user_rights, for single login. BUG#57
+|  
+* NEWCOMMIT:41e752879cd906767c8473bb124345e8beb190e6$$^1093335106$$^Tue Aug 24 08:11:46 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Special:Log and the logging table -- unified logging scariness!
+| 
+| Replaces the ugly, often breaking, manually archived log pages with
+| a nice clean table which can be sorted, trimmed, viewed in pieces, etc.
+| You can see all logged actions by some user, or affecting some page,
+| and can combine the views of all all logs in one.
+| 
+| There are probably still some broken things in here, but I want this
+| committed before the patch gets any bigger.
+| 
+| recentchanges table is altered to make rc_namespace signed so Special:
+| links can be listed in it.
+|  
+* NEWCOMMIT:075396a961140c3ae7baf27238f6a7a0d79757cc$$^1092029891$$^Mon Aug 9 05:38:11 2004 +0000$$^Arne Heizmann$$^timwi@users.mediawiki.org$$^New feature: Recent Changes Patrol. All edits and new pages are now highlighted on
+| Special:Recentchanges and Special:Newpages until someone "marks" them as
+| "patrolled" using a special link. For new pages, this link appears at the bottom
+| of the article if the link in Recent Changes or New Pages is followed. For all
+| other edits, this link appears only in the diff and only if the diff link is
+| followed from Recent Changes. (Might need to add this functionality to Watchlist
+| too; haven't done that yet.)
+|  
+* NEWCOMMIT:cee22eda75335fbc92ae9de93deb4ef7dca6e7c3$$^1091851395$$^Sat Aug 7 04:03:15 2004 +0000$$^Arne Heizmann$$^timwi@users.mediawiki.org$$^primary key.
+|  
+* NEWCOMMIT:c9dcdbc00710863c0258518ac8520d913deea62a$$^1091851160$$^Sat Aug 7 03:59:20 2004 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Added primary key for the recentchanges table. Patch already committed. Not in config/index.php yet.
+|  
+* NEWCOMMIT:383c33b3bb8ae2b5812a68a47a1ff819ab9e8af0$$^1090257671$$^Mon Jul 19 17:21:11 2004 +0000$$^Magnus Manske$$^magnusmanske@users.mediawiki.org$$^Article validation, now with comments
+|  
+* NEWCOMMIT:1a788d69db2b2804c71d1d911669d31347e3a747$$^1090183528$$^Sun Jul 18 20:45:28 2004 +0000$$^Magnus Manske$$^magnusmanske@users.mediawiki.org$$^Article validation code (a start)
+|  
+* NEWCOMMIT:ac549401d4ddaf655ec47cd1e66092fdc83ab30b$$^1090140523$$^Sun Jul 18 08:48:43 2004 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Support for table name prefixes throughout the code. No support yet for converting static SQL, which also means no installation. But it has been tested by creating the tables in the ordinary way and then renaming them
+| * DB_WRITE now called DB_MASTER, DB_READ now called DB_SLAVE
+| * Converted to use SQL wrapper functions instead of direct SQL in various places
+| * Experimental method for preserving the chronological order of events when slave servers are used. Untested.
+| * Fixes to the new post-parse existence test feature
+| * Some.. other stuff
+|  
+* NEWCOMMIT:f7f19d5ec49f228e625af966c0b34638e315eb35$$^1087849379$$^Mon Jun 21 20:22:59 2004 +0000$$^Arne Heizmann$$^timwi@users.mediawiki.org$$^SQL syntax error
+|  
+* NEWCOMMIT:2ba5e0e71834eb363242f73d0d0977ed6537fa9a$$^1087312730$$^Tue Jun 15 15:18:50 2004 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Moved content from liveCmdLine.inc into commandLine.inc, obsoleting the former.
+| * Put some option handling code in commandLine.inc which is untested and unused (for the moment).
+| * Converted all existing command line scripts to use the standard header and argument array.
+| * Did a quick test of compressOld.php, rebuildall.php and rebuildMessages.php to check for breakage.
+| * rebuildall.php was broken due to the unmaintained rebuildlinks.php, so I converted it to use refreshLinks instead. Required splitting into refreshLinks.inc and refreshLinks.php
+|  
+* NEWCOMMIT:e3d0c474a83c3548aa6763561826f71c12a55fe6$$^1087209624$$^Mon Jun 14 10:40:24 2004 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Storing IP in RC. Off by default. Tested:
+| * Installation
+| * Edit when switched off
+| * Edit when switched on
+|    
+| * NEWCOMMIT:1aaed5fd7c7f4d7ea7abbfc7915bab5954d60a30$$^1088294732$$^Sun Jun 27 00:05:32 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Merge 'real' beta4 from HEAD
+| |   
+| * NEWCOMMIT:5e8b510fe2506c474a6992e9652c8728b9937ae0$$^1087461799$$^Thu Jun 17 08:43:19 2004 +0000$$^Jens Frank$$^jeluf@users.mediawiki.org$$^Merge with HEAD
+|/  
+|  
+* NEWCOMMIT:7b32da47119c558147426662dffd42410eb7779d$$^1085004284$$^Wed May 19 22:04:44 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Ensure searchindex table is created as MyISAM
+|  
+* NEWCOMMIT:ac9621badb8b5d068d3c0fac9b01c3bd67794ac1$$^1084580979$$^Sat May 15 00:29:39 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Add categorylinks table to separately list category relationships. Actual
+| _page_ links to category pages like [[:category:Some cat]] will stay in
+| links/brokenlinks and not be listed in the category page list anymore.
+| 
+| A link can optionally specify a sort key like this: [[category:cat|Sort me]].
+| The page will then be sorted in category lists according to the given text
+| instead of the page name; thus categories may be sorted arbitrarily, by
+| last name or whatever.
+| 
+| There is also a timestamp field included on gwicke's request; this is not
+| used yet. Also it will currently be updated at every edit of the page,
+| this can be changed by implementing differential updating for the cat links.
+| 
+| TODO:
+| * Make sure that automatic sort keys are updated on page rename.
+| * Make sure cateory pages get cache-invalidated and purged
+| * Use proper text sorting instead of raw binary sort
+| * Allow specification of the display style on category pages: comma list
+|   or bullet list or number list; by sortkey or by timestamp; etc
+|  
+* NEWCOMMIT:0c2fba0ac401938729a14c3bda5e793a96295139$$^1084079575$$^Sun May 9 05:12:55 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Add an objectcache table for limited caching when memcached isn't
+| available. Currently using for the message cache to avoid reading
+| every message separately. This now is only slightly slower than
+| memcached in my tests when $wgUseDatabaseMessages is enabled, so
+| it's a bit of a speedup for common hosts.
+|  
+* NEWCOMMIT:ee940c906d8170f5326d9364fe0dbf3a2d6f4ae5$$^1084066234$$^Sun May 9 01:30:34 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Replace ugly abuse of log pages to store cached results of query pages
+| with a table that stores up to 1000 rows for each 'expensive' special
+| page. This can be paged through, reducing the annoyingness of 50 result
+| limits on the old system.
+| 
+| Rebuilding the cache can be forced by adding "recache=1" URL parameter,
+| but this will need to be refined with some sort of controls to prevent
+| abuse.
+| 
+| Added the user realname update to the installer's updater list, also.
+|  
+* NEWCOMMIT:c1d1561b2f4efcadc693e786ca3d87924191afeb$$^1082255315$$^Sun Apr 18 02:28:35 2004 +0000$$^Evan Prodromou$$^evanprodromou@users.mediawiki.org$$^Added a user_real_name column to the user table, and added a patch SQL file
+| to add this field.
+| 
+| User.php stores and fetches the field, and has accessors for it.
+| 
+| User login allows setting the field on account creation.
+| 
+| The Preferences page allows changing the real name.
+| 
+| The labels are available for the real name, and the explanation of the email
+| field on login has been expanded to include an explanation of the real name
+| field, too.
+| 
+| Update script checks for the field, and adds it if it's missing.
+|  
+* NEWCOMMIT:3dd3f51cd9d9ce6c2ecbfad29175632058abfae3$$^1080114745$$^Wed Mar 24 07:52:25 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Remove dangerous DROP statements from table creation. If accidentally
+| overwriting an existing database this destroys all data without warning...
+| better to let it fail with an error message and let the rare cases where
+| this is intended be dealt with manually by dropping them yourself.
+|  
+* NEWCOMMIT:59c6e92429c1c42c6e06d60e85766901810b338e$$^1078995973$$^Thu Mar 11 09:06:13 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Some changes to the link tables. They now all use a key on cur_id for the *_from column instead of strings, and have a unique index to force prevent any duplicate entries. There's not yet a clean step in the update script, so just clear out your links tables (patch-linktables.sql) and rebuild them with refreshLinks.php.
+| 
+| This saves trouble in a number of places where we can now do joins with the link tables to get other info (such as cur_is_redirect!) as well as the name, and fewer bits need to be juggled on page renaming, as outgoing links no longer have to be changed (cur_id remains the same when a page is renamed).
+| 
+| rebuildLinks.inc and some of the tools in the 'maintenance page' still need to be updated to work with the new setup. (Special:Maintenance needs a *lot* of cleanup in general. It's kind of a catch-all of vaguely defined features which suck performance like a hydroelectric dam.)
+| 
+| Also I've slipped in some extra debug code. And, I think 'indexes.sql' is a big waste of time and should all be moved into tables.sql. Building indexes separately doesn't help on InnoDB and won't do anything on MyISAM either if you're just going to replace the table after it's built with an imported one from a dump which creates it with indexes.
+|  
+* NEWCOMMIT:cda4adc30d4799d55cc4863e468dca3924f3108b$$^1078962234$$^Wed Mar 10 23:43:54 2004 +0000$$^Mr. E23$$^e23@users.mediawiki.org$$^Made linkscc title column case sensitive
+|    
+| * NEWCOMMIT:c71f94ce7aa4ff42ba8c01a6996341471c998992$$^1085456271$$^Tue May 25 03:37:51 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Ensure that searchindex table is created myisam
+| |   
+| * NEWCOMMIT:7e3ecea0f5d22684062d0db742c748689f2779cd$$^1080113437$$^Wed Mar 24 07:30:37 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Remove the 'DROP TABLE' commands from table initialization. It's rather
+| | dangerous if accidentally run over an existing database, better to fail
+| | out and let the rare cases of deliberate replacement do the clearing
+| | manually.
+| |   
+| * NEWCOMMIT:b6e294159155122e8f069daa3257258c36ac1fca$$^1079145529$$^Sat Mar 13 02:38:49 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Little fixups to the link tables. Create new ones with unique indexes, and fixup linkscc's lcc_title column to be binary
+|/  
+|  
+* NEWCOMMIT:aa81f5bf90f7908960517c3dac2a92a5b71b15ff$$^1077352290$$^Sat Feb 21 08:31:30 2004 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Extra comma breaks install
+|  
+* NEWCOMMIT:e2f98922df92eedf50aa5f93f2f4327d436a1c71$$^1076762245$$^Sat Feb 14 12:37:25 2004 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Two blocking features: IP range blocks, and expiry times configurable block-by-block.
+| Possible issue: uses strtotime(), which is very handy but in English
+|  
+* NEWCOMMIT:3c969496827a4ea71d87e4f535a664b15d68b84f$$^1074318579$$^Sat Jan 17 05:49:39 2004 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^* Recent Changes improvements: object oriented back end, move page annotation and (untested) message queue feed.
+| * Misc. bugs fixed in DatabaseFunctions.php and Skin.php.
+| * install-utils, install and update utilise Database objects instead of handling their own connections
+| * schema change for RC improvement -- added rc_type, rc_moved_to_title and rc_moved_to_ns
+|  
+* NEWCOMMIT:6a41de71d7fc3f4a1db1b56e23ac83bb68cac4fd$$^1071351152$$^Sat Dec 13 21:32:32 2003 +0000$$^Mr. E23$$^e23@users.mediawiki.org$$^Article.php:
+| * Made updating of page view stats faster my buffering them in a
+|   HEAP table until many pages can be updated at once.
+| 
+| tables.sql:
+| * hitcounter table
+| 
+| patch-hitcounter.sql:
+| * hitcounter table
+| 
+| update.php:
+| * Creating hitcounter table when necessary
+|  
+* NEWCOMMIT:f45ca8f9aaa692d7df36c33963338a006f065abb$$^1068305548$$^Sat Nov 8 15:32:28 2003 +0000$$^Mr. E23$$^e23@users.mediawiki.org$$^Further link-cache related stuff.
+|  
+* NEWCOMMIT:a2bc5d8338c0a546307cb3f8fc2e99b86ecf60cd$$^1064149810$$^Sun Sep 21 13:10:10 2003 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^MediaWiki namespace
+|  
+* NEWCOMMIT:ff0f56bc8cd1aebbcc32e6dd33bb2eb421e55ebb$$^1062942985$$^Sun Sep 7 13:56:25 2003 +0000$$^Tim Starling$$^tstarling@users.mediawiki.org$$^Autoblocker privacy protection
+|  
+* NEWCOMMIT:3002e1d8a66c13e9b5504de2d5817c9ae7039e9b$$^1061464838$$^Thu Aug 21 11:20:38 2003 +0000$$^Brion Vibber$$^brion@users.mediawiki.org$$^Move interwiki management from big ugly array into the database, with
+| memcached backing. Second 'wikipedia-interwiki.sql' has Wikipedia's
+| local interlanguage URLs.
+|  
+* NEWCOMMIT:a33f0544fe4fa17b9f04f4e8f3a1fe94bc5530d0$$^1052261929$$^Tue May 6 22:58:49 2003 +0000$$^Lee Daniel Crocker$$^lcrocker@users.mediawiki.org$$^Removing "random" table.
+|  
+* NEWCOMMIT:f3a4fd56c020aa717dfd6eb69bdfe6a10ea35393$$^1051916137$$^Fri May 2 22:55:37 2003 +0000$$^Lee Daniel Crocker$$^lcrocker@users.mediawiki.org$$^Completed several maintenance scripts for index rebuilding.
+|  
+* NEWCOMMIT:d82c14fb4fbac288b42ca5918b0a72f33ecb1e69$$^1050361840$$^Mon Apr 14 23:10:40 2003 +0000$$^Lee Daniel Crocker$$^lcrocker@users.mediawiki.org$$^Initial revision
