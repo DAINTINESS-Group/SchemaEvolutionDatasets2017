@@ -1,0 +1,217 @@
+#;Project;Commit ID;Issue Type;Parent Issue;Status;Priority;Subject;Author;Assignee;Category;Target Version;Start Date;Created;Updated;Closed;Due Date;Estimated;% Done;Create Prev Commit; Created Next Commit;Updated Prev Commit;Updated Next Commit;Closed Prev Commit;Closed NExt Commit;Description
+2389;BioSQL;null;Bug;;New;Normal;load_seqdatabase.pl crashes on varchar(n);Erikjan empty;Hilmar Lapp;Core schema;1.0.0;Fri Apr 10 00:00:00 EEST 2009;Fri Apr 10 04:10:00 EEST 2009;Sat Sep 03 00:11:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'(bioperl-live bioperl-db biosql/schema fresh from CVS)Using load_seqdatabase.pl to load uniprot_sprot.dat into
+postgres (8.2.5) biosql gave me:
+ERROR:  value too long for type character varying(40)
+(all fresh from cvs)
+Changing 'VARCHAR(N)' to 'TEXT' fixed those errors.
+Generally VARCHAR[(N)] (=character varying) are probably
+better replaced with 'TEXT' as VARCHAR(N) is implemented
+as TEXT with a check on length.
+Attached is a patch for the table definitions in
+biosqldb-pg.sql I haven't changed the other scripts as I
+don't know if you will agree with this improvement.
+(The other table-creating scripts are probably also better
+off with a change from VARCHAR (=character varying) to the
+text datatype.)'
+"
+2470;BioSQL;null;Bug;;Closed;Urgent;load_ncbi_taxonomy.pl shouldn't assume the NCBI taxon id equals the table key;Peter Cock;BioSQL developers;Software;1.0.0;Sun May 03 00:00:00 EEST 2009;Sun May 03 00:05:00 EEST 2009;Fri Feb 08 10:35:00 EET 2008;Sun May 03 00:05:00 EEST 2009;null;0.00;100;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;97744bfa3e3e9fd0d3007b9b4e81f935cc1253f3;1a7b5f92cd34360036ff3942519cb013c5f2da0e;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;"'I'm filing this bug as suggested on the BioSQL mailing list on this thread:http://lists.open-bio.org/pipermail/biosql-l/2008-March/001196.html
+Hilmar Lapp wrote:
+>>> If I remember correctly the script makes (and hence
+>>> expects) the primary key and the NCBI taxonomy ID to
+>>> be identical.
+My reply:
+>> Really? Perhaps I have misunderstood you.  That would 
+>> cause problems if we want to record a new sequence entry
+>> with species information but no NCBI taxonomy ID (e.g.
+>> an in house sequencing project).  The Biopython code
+>> doesn't seem to assume the taxon table ID bears any
+>> resemblance to the the NCBI taxonomy ID.  When creating
+>> new taxon table entries; we let the database will assign
+>> the taxon table id (primary key).
+And his response:  
+> Right; that's what I said Bioperl-db does too; and is
+> the reason I had to regularly run that SQL script that
+> would migrate the primary keys.
+>  
+> Doing that isn't a big deal but I guess this could also
+> be fixed in load_ncbi_taxonomy.pl so that it doesn't need
+> to rely on this assumption. Would someone mind filing the
+> bug report?'
+"
+2471;BioSQL;null;Bug;;Closed;Urgent;load_ncbi_taxonomy.pl gives no feedback when downloading taxons;Peter Cock;BioSQL developers;Software;1.0.0;Mon Aug 03 00:00:00 EEST 2009;Mon Aug 03 05:52:00 EEST 2009;Tue Jan 08 15:28:00 EET 2008;Mon Aug 03 05:52:00 EEST 2009;null;0.00;100;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;97744bfa3e3e9fd0d3007b9b4e81f935cc1253f3;1a7b5f92cd34360036ff3942519cb013c5f2da0e;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;"'When running load_ncbi_taxonomy.pl with the download option./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true
+There is about 10MB to fetch; so it can take a little while (and doesn't give any feedback while this happens).  You should then see this output at the command prompt:
+Loading NCBI taxon database in taxdata:
+        ... retrieving all taxon nodes in the database
+        ... reading in taxon nodes from nodes.dmp
+        ... insert / update / delete taxon nodes
+        ... (committing nodes)
+        ... rebuilding nested set left/right values
+        ... reading in taxon names from names.dmp
+        ... deleting old taxon names
+        ... inserting new taxon names
+        ... cleaning up
+Done.
+I would like the script to print a line to the screen that it is downloading the taxon data as on a slow internet connection it can look like it has stalled.'
+"
+2486;BioSQL;null;Bug;;New;Normal;provide SQL dumps of biosql releases with real data;Martin Mokrejs;BioSQL developers;Software;HEAD;Tue Nov 04 00:00:00 EET 2008;Tue Nov 04 00:25:00 EET 2008;Sat Sep 03 00:11:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'Hi  I believe you do test your scripts/*.pl on real data; like NCBI taxonomy database. Would you please provide SQL dumps from postgres and mysql databases at least of the relevant tables? Even better if also from Oracle. This would allow for easier import of the data and also; provide a good reference dataset. Please provide also the original data which have been imported. That can aid in testing changes to the scripts/*.pl files. For mysql I would prefer 'mysqldump biosqldb --extended-insert' format.'
+"
+2487;BioSQL;null;Bug;;Resolved;Normal;Why are there 3 indexes of taxon_name called taxon_id (have the same name)?;Martin Mokrejs;Hilmar Lapp;Core schema;HEAD;Tue Nov 04 00:00:00 EET 2008;Tue Nov 04 19:52:00 EET 2008;Sun Mar 06 13:36:00 EET 2016;Sun Mar 06 13:36:00 EET 2016;null;0.00;100;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;f6697005c35976bb8744e9579390910f73e2945b;null;f6697005c35976bb8744e9579390910f73e2945b;null;"'Hi Hilmar  would you please explain?
+mysql> show index from taxon_name;
++------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+
+| Table      | Non_unique | Key_name       | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment |
++------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+
+| taxon_name |          0 | taxon_id       |            1 | taxon_id    | A         |           0 |     NULL | NULL   |      | BTREE      |         | 
+| taxon_name |          0 | taxon_id       |            2 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         | 
+| taxon_name |          0 | taxon_id       |            3 | name_class  | A         |           0 |     NULL | NULL   |      | BTREE      |         | 
+| taxon_name |          1 | taxnametaxonid |            1 | taxon_id    | A         |           0 |     NULL | NULL   |      | BTREE      |         | 
+| taxon_name |          1 | taxnamename    |            1 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         | 
++------------+------------+----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+
+5 rows in set (0.00 sec)
+mysql> drop index taxon_id on taxon_name;
+ERROR 1025 (HY000): Error on rename of './biosqldb/#sql-2c6d_19' to './biosqldb/taxon_name' (errno: 150)
+mysql>
+# perror 150
+MySQL error code 150: Foreign key constraint is incorrectly formed'
+"
+2493;BioSQL;null;Bug;;New;Normal;New script to recalculate left/right values in the taxon table;Peter Cock;BioSQL developers;Software;HEAD;Wed Nov 04 00:00:00 EET 2009;Wed Nov 04 11:38:00 EET 2009;Sat Sep 03 00:11:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'This was raised on the mailing list:http://lists.open-bio.org/pipermail/biosql-l/2008-April/001248.html
+In addition to loading the NCBI taxonomy; the load_ncbi_taxonomy.pl
+script also (re)calculates the left/right values.
+Is would be useful to have a separate BioSQL script which ONLY calculates or recalculates the left/right values.
+Possible use-cases include people using a non-NCBI taxonomy.
+For anyone wondering what the left/right values are Hilmar wrote:
+>
+> they hold the nested set values. Nested sets are enumeration  
+> algorithm described in Joe Celko's SQL for Smarties books; and Aaron  
+> Mackey gives a good introduction here:
+>
+> http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html
+>
+> (This is in the schema DDL file; though obviously should be  
+> documented better. Good candidate for an FAQ; I suppose.)
+Quoted from http://lists.open-bio.org/pipermail/biosql-l/2008-April/001234.html
+P.S. I would suggest that the left/right calculations from load_ncbi_taxonomy.pl be moved into the new script; and then have load_ncbi_taxonomy.pl call the new script to avoid code duplication.'
+"
+2568;BioSQL;null;Bug;;Resolved;Normal;Use ENGINE=INNODB instead of TYPE=INNODB for MySQL;Peter Cock;Hilmar Lapp;Core schema;HEAD;Mon Jun 08 00:00:00 EEST 2009;Mon Jun 08 05:41:00 EEST 2009;Tue Oct 09 10:19:00 EEST 2012;Tue Oct 09 10:19:00 EEST 2012;null;0.00;100;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;f6697005c35976bb8744e9579390910f73e2945b;null;f6697005c35976bb8744e9579390910f73e2945b;null;"'As raised on the mailing listhttp://lists.open-bio.org/pipermail/biosql-l/2008-May/001254.html
+Creating a new empty BioSQL with MySQL 5.0 triggers a warning:
+Warning: 'TYPE=storage_engine' is deprecated; use
+'ENGINE=storage_engine' instead
+My guess is the commands ''CREATE TABLE ... TYPE=INNODB'' should be updated to
+''CREATE TABLE ... ENGINE=INNODB'' in biosqldb-mysql.sql to get rid of
+the warning.
+According to the following documents MySQL 4.1 and 5.0 will accept
+either TYPE or ENGINE but it looks like MySQL 6.0 insists on using
+ENGINE.
+http://dev.mysql.com/doc/refman/4.1/en/create-table.html
+http://dev.mysql.com/doc/refman/5.0/en/create-table.html
+http://dev.mysql.com/doc/refman/6.0/en/create-table.html
+This change may break BioSQL used with MySQL 3.0 or older.'
+"
+2664;BioSQL;null;Bug;;New;Normal;Root nodes in the taxon table should not self reference;Peter Cock;BioSQL developers;Software;HEAD;Sat Apr 11 00:00:00 EEST 2009;Sat Apr 11 09:54:00 EEST 2009;Sat Sep 03 00:11:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'The BioSQL script load_ncbi_taxonomy.pl currently (BioSQL v1.0.1) will create a root node where the parent_taxon_id is self referencing (not just NULL).This is bad for at least two reasons;
+1. Anyone extracting a lineage with recursion or a loop from the parent_taxon_id references risks an infinite recursion/loop.
+2. Anyone wanting to get a list of child nodes will find the root node included in its own children.
+See:
+http://lists.open-bio.org/pipermail/biosql-l/2008-October/001364.html
+http://lists.open-bio.org/pipermail/biosql-l/2008-November/001393.html'
+"
+2765;BioSQL;null;Bug;;New;Normal;Add explicit compound primary keys to tables like taxon_name;Peter Cock;Hilmar Lapp;Core schema;1.0.1;Wed Jun 02 00:00:00 EEST 2010;Wed Jun 02 10:29:00 EEST 2010;Sat Sep 03 00:11:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'This issue was discussed on the mailing list and Hilmar said he planned to deal with this in BioSQL v1.0.2 (which I have defined and set as the milestone for this bug).Some tables do not have an explicit primary key; but instead just have a uniqueness restraint.  Making these into explicit compound primary keys would be helpful for some ORM software (e.g. the python package SQLAlchemy).
+This affects tables taxon_name bioentry_path term_relationship
+bioentry_qualifier_value seqfeature_path (but I *think* that is all).
+e.g. In the MySQL schema taxon_name has a unique restraint but does NOT have a primary key:
+CREATE TABLE taxon_name (
+      taxon_id         INT(10) UNSIGNED NOT NULL
+      name             VARCHAR(255) BINARY NOT NULL
+      name_class       VARCHAR(32) BINARY NOT NULL
+      UNIQUE (taxon_id;name;name_class)
+) TYPE=INNODB;
+This would become:
+CREATE TABLE taxon_name (
+      taxon_id         INT(10) UNSIGNED NOT NULL
+      name             VARCHAR(255) BINARY NOT NULL
+      name_class       VARCHAR(32) BINARY NOT NULL
+      PRIMARY KEY (taxon_id name name_class)
+) TYPE=INNODB'
+"
+2839;BioSQL;null;Bug;;Resolved;Normal;Remove RULES in BioSQL PostgreSQL schema;Peter Cock;Hilmar Lapp;Core schema;HEAD;Tue Oct 05 00:00:00 EEST 2010;Tue Oct 05 06:46:00 EEST 2010;Sun Mar 06 13:35:00 EET 2016;Sun Mar 06 13:35:00 EET 2016;null;0.00;100;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;f6697005c35976bb8744e9579390910f73e2945b;null;f6697005c35976bb8744e9579390910f73e2945b;null;"'This issue was originally reported as Biopython Bug 2833 a data corruption when (re)importing a record which matched/clashed an existing entry in the database.On MysQL (and presumably Oracle etc); this triggered an error (good); but on PostgreSQL the database was silently corrupted.  This was traced so some RULES in the BioSQL PostgreSQL schema added for bioperl-db as explained here (and in the PostgreSQL schema)
+http://lists.open-bio.org/pipermail/biopython-dev/2009-May/006088.html
+Hilmar wrote:
+>  Indeed I'd almost forgotten. The rules are there mostly as a remnant from
+> earlier versions of PostgreSQL to support transactional loading the way
+> bioperl-db (the object-relational mapping for BioPerl) is optimized. You
+> probably don't need them anywhere else.
+>  
+>         -hilmar
+>  
+>  <gory-details>
+>  Bioperl-db is optimized such that entities that very likely don't exist yet
+> in the database are attempted for insert right away. If the insert fails due
+> to a unique key violation the record is looked up (and then expected to be
+> found). In Oracle and MySQL you can do this and the transaction remains
+> healthy i.e. you can commit the transaction later and all statements
+> except those that failed will be committed. In PostgreSQL any failed
+> statement dooms the entire transaction and the only way out is a rollback.
+> In this case if you want the loading of one sequence record as one
+> transaction failing to insert a single feature record will doom the entire
+> sequence load and you would need to start over with the sequence. To fix
+> this I wrote the rules which in essence do do the lookups for PostgreSQL
+> that the bioperl-db code would otherwise avoid and on insert do nothing if
+> the record is found which results in zero rows affected when you would
+> expect one (which is what bioperl-db cues off of and then triggers a
+> lookup).
+>  The right way to do this meanwhile is to use nested transactions which
+> PostgreSQL supports since v8.0.x but I haven't gotten around to implement
+> support for that in Bioperl-db.
+>  </gory-details>
+As discussed on the BioSQL (and Biopython) mailing lists this bug is to first add a big warning about this issue to the INSTALL notes for PostgreSQL (i.e. recommend removing the RULES section if not using bioperl-db):
+http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL
+Secondly once bioperl-db has been updated to use nested transactions (which will require PostgreSQL v8.0.x or later) then we can remove the rules themselves:
+http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/biosqldb-pg.sql'
+"
+2870;BioSQL;null;Bug;;Closed;Urgent;Add BioSQL schema for SQLite;Peter Cock;Hilmar Lapp;Core schema;HEAD;Thu May 07 00:00:00 EEST 2009;Thu May 07 06:20:00 EEST 2009;Sun Jun 10 09:07:00 EEST 2012;Thu May 07 06:20:00 EEST 2009;null;0.00;100;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;"'Myself and Brad Chapman at Biopython are keen to have BioSQL support SQLite. This database is particularly interesting for Python 2.5+ where support for SQLite is included with Python. This has also been requested in the past e.g.http://lists.open-bio.org/pipermail/biosql-l/2008-December/001444.html
+We raised this issue with Hilmar Lapp at BOSC/ISMB 2009 and he was positive.
+Brad Chapman has already implemented a draft BioSQL SQLite schema and extended Biopython to use it on Bug 2866 (the schema is part of the patch; we could extract it as a separate file). One potential issue is SQLite does not support FOREIGN KEY constraints.'
+"
+2871;BioSQL;null;Bug;;New;Normal;BioPerl / BioSQL - InterPro Optional IDs not parsed;johnraekwon empty;Hilmar Lapp;Core schema;1.0.1;Thu May 07 00:00:00 EEST 2009;Thu May 07 13:32:00 EEST 2009;Sat Sep 03 00:11:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'This bug was first posted on the BioSQL-lThe problem is that the InterPro IDs (aka optional ID) are not entered into the biosql database when using the script load_seqdatabase.pl
+This information should probably rightfully go into the database field: dbxref_qualifier_value.  In fact this table is not utilized at all.
+The reply to my original post on BioSQL-l is shown here:
+The problem here is that Bioperl-db (the persistence mapper between BioSQL and BioPerl) loses the optional_id property of Bio::Annotation::DBLink objects.
+Moreover the dbxref table in BioSQL doesn't actually provide for the opportunity to store two identifiers (or accessions) for one db_xref so storing this bit of information is actually not as straightforward as one might wish b/c it would need to go into the dbxref_qualifier_value table and I would not be surprised if the other Bio* projects with a mapping to BioSQL don't store or retrieve this either (though it'd be good to hear if anyone does).
+Here are a couple of ideas for how this issue might be addressed.
+- Write a Bio::Seq::BaseSeqProcessor-derived object that for every incoming sequence massages all Interpro links to either substitute the primary_id with the optional_id or to add a second DBLink annotation with the optional_id of the original one as its primary_id. (pros: relatively easy entirely under your control cons: you either lose the primary_id now or have two dbxref annotations for each of the original ones.)
+- Add a column to the dbxref table; and code to Bioperl-db; that store; de/serialize the extra ID. (pros: not losing or duplicating any data; cons: change is significant in terms of schema stability requires new release depends on implementation in Bioperl-db necessitates update of all other Bio* language bindings)
+- De/serialize the optional_id as an entry in the dbxref_qualifier_value table. (pros: technically it's the Right Way as that's what the table was intended for cons: implementing in Bioperl-db is more involved as we now need to transform an object property to a child object and back)
+So I'd say this is a bug in Bioperl-db in that the dbxref_qualifier_value table isn't utilized here. Would you mind filing it? In the meantime if you just need something that works you could try the first of the above ideas.
+	-hilmar
+On Jul 3 2009 at 7:17 PM John LaCava wrote:
+Hi all
+Tried this on the BioPerl-l but seemed to make sense to try here as well.
+I am trying to use the BioPerl-db script:
+''load_seqdatabase.pl'' to parse a SwissProt ''.dat'' file (Yeast.dat this is the yeast proteome with annotations etc.).
+The particular entry I am interested is the InterPro optional ID; which is the domain name.
+I have put a short stub up which displays the 4 pieces of info I want to parse into my data base.
+That can be found here:
+http://github.com/johnraekwon/BioPerl---BioSQL---InterPro-Optional-IDs/tree/master
+You can see that near the bottom we get the optional ID:
+$protein_ids->{interpro_domain} = $dblink->{optional_id}
+I do not think the bioperl script load_seqdatabase.pl retrieves this information.  At least I cannot find it in the db built from parsing a test .dat file.
+I would like some help figuring out:
+1) WHY doesn't it retrieve this information; since it seems to be parsing ''all'' annotations...
+2) HOW might I edit the script to include this particular annotation of interest in the info it passes to my db (biosql)
+I am a bit out of my depth on this and so any help is appreciated.
+Cheers;
+John
+_______________________________________________
+BioSQL-l mailing list
+BioSQL-l@lists.open-bio.org
+http://lists.open-bio.org/mailman/listinfo/biosql-l
+-- 
+===========================================================
+: Hilmar Lapp  -:-  Durham; NC  -:-  hlapp at gmx dot net :
+==========================================================='
+"
+2902;BioSQL;null;Bug;;New;Normal;Adding prefix index to seq_feature_qualifiers_value.value;Kyle Ellrott;Hilmar Lapp;Core schema;1.0.1;Mon Jun 08 00:00:00 EEST 2009;Mon Jun 08 16:35:00 EEST 2009;Sat Sep 03 00:10:00 EEST 2011;null;null;0.00;0;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;b898c99425ffd5864e4b20920fbc2ed53e4b5ce2;f6697005c35976bb8744e9579390910f73e2945b;null;null;"'Performance of sequence feature searching can be improved with the addition of an index for the 'value' column of the 'seqfeature_qualifier_value table'Because the 'value' field is TEXT, it cannot be fully indexed, but a prefix index (for example, for the first 5 letters) can still substantially increase the performance of many searches.
+For example; the search
+SELECT * from seqfeature_qualifier_value where value='NP_808915.1'',
+When queried against a table with ~28,000,000 records, it takes about a minute before the index, and less then a second afterwords.
+This can be implemented by adding the command:
+CREATE INDEX seqfeaturequal_value ON seqfeature_qualifier_value(value(5));'
+"

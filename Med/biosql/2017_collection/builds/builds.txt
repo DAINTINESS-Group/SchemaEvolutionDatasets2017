@@ -1,0 +1,1 @@
+RepositoryID;EventType;FinishedAt;Number;State;Result;Branch;Duration;CommitID;Message;StartedAt

@@ -1,0 +1,159 @@
+sha$~date$~humanDate$~author$~authormail$~commitText$~branches
+87abe52e2387f67b6d14706b9293a1db599b70e9$~1012181431$~Mon Jan 28 01:30:31 2002 +0000$~cjm$~cjm@open-bio.org$~"*** empty log message *** "$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-generated,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+ffbde4db90f67c90b00c1ffde2eb634cc0ce632f$~1014631726$~Mon Feb 25 10:08:46 2002 +0000$~cjm$~cjm@open-bio.org$~"*** empty log message *** /  
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+3584d7b0537ffb1806dd5602b30d452339ed89d2$~1014707807$~Tue Feb 26 07:16:47 2002 +0000$~cjm$~cjm@open-bio.org$~"*** empty log message ***     
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+a5811031e55664132b794b292b1149e626268c06$~1014889243$~Thu Feb 28 09:40:43 2002 +0000$~cjm$~cjm@open-bio.org$~"changes ontologizing db     
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+f575cd5907f64b27fb8179b1922f4b765988e6fa$~1014901725$~Thu Feb 28 13:08:45 2002 +0000$~cjm$~cjm@open-bio.org$~"more indexes     
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+e3ebdbdbc9cd104aea19b836c96ba01ddf97fc95$~1014975574$~Fri Mar 1 09:39:34 2002 +0000$~cjm$~cjm@open-bio.org$~"*** empty log message ***     
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+01031e7579630bfe73ef9681b94cef910776068a$~1019860813$~Fri Apr 26 22:40:13 2002 +0000$~cjm$~cjm@open-bio.org$~"hilmar's suggestions / fixes     
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+ab3db3a59d978b4278737716a6246f23380e185c$~1020121353$~Mon Apr 29 23:02:33 2002 +0000$~lapp$~lapp@open-bio.org$~"Fixed and commented out the bioentryentry index on bioentry_taxa.     
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,  remotes/origin/post-capetown,
+428e4f5dc25012d9bde939c286ac70a4ab82256a$~1024241394$~Sun Jun 16 15:29:54 2002 +0000$~cjm$~cjm@open-bio.org$~"added seqfeature_dbxref table  /  
+/   
+    
+"$~  remotes/origin/post-capetown,
+b938fcc2f79122cc32f48e8f00aa211473be9c5f$~1031164716$~Wed Sep 4 18:38:36 2002 +0000$~lapp$~lapp@open-bio.org$~"Added Binomial to table taxa. Made Binomial, Common_name, and NCBI_Taxa_Id  unique keys. Added Authority to table Biodatabase. Made Name a unique key.
+ Made Term_Name in table Ontology_Term NOT NULL and a unique key.
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+931601a2c213420101e7cbea456f525a01877e5c$~1031709232$~Wed Sep 11 01:53:52 2002 +0000$~lapp$~lapp@open-bio.org$~"Added description and identifier to bioentry.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+77cb7484e2a4febb63a6433b30400886b27e9f79$~1031722998$~Wed Sep 11 05:43:18 2002 +0000$~nobody$~nobody@localhost$~"This commit was manufactured by cvs2svn to create branch    'bioperl-release-1-1-0'.
+    
+"$~  remotes/origin/bioperl-release-1-1-0,
+1aca27a88cdc373d6c5a1986702b5d8475d3882f$~1031738288$~Wed Sep 11 09:58:08 2002 +0000$~lapp$~lapp@open-bio.org$~"Cleaned up superfluous indexes.     
+"$~  remotes/origin/bioperl-release-1-1-0,
+4e4f575ab15cb37770ff229d5dd66c98148ce436$~1031816332$~Thu Sep 12 07:38:52 2002 +0000$~lapp$~lapp@open-bio.org$~"Cleaned up superfluous indexes. Added UK (bioentry_id,seqfeature_key_id,   rank) to SeqFeature. Fixed Ontology_DBXRef primary key.
+    
+"$~  remotes/origin/bioperl-release-1-1-0,
+5383c96a0f74f5bfc154aae004b22383508e2116$~1031817528$~Thu Sep 12 07:58:48 2002 +0000$~lapp$~lapp@open-bio.org$~"Migrated to InnoDB. Added foreign key constraints with CASCADE DELETE.  Restructured such that FKs are set via ALTER TABLE. Collapsed Bioentry_taxon
+ into a FK from bioentry. Renamed some columns to achieve better consistency.
+ Added README stating that we need at least 3.23.50 in order for this to work.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+8e49b2a1288ad275ff684e073e8f152e65a43c6f$~1032765746$~Mon Sep 23 07:22:26 2002 +0000$~lapp$~lapp@open-bio.org$~"Added sqlserver.ddl and oracle.ddl as submitted by Robin Emig.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+1addf972434366e357894fe0aec237e3b8093ba0$~1033520952$~Wed Oct 2 01:09:12 2002 +0000$~lapp$~lapp@open-bio.org$~"Moved seqfeature_source terms into ontology_term.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+8053c73eb0578378a080c177219d1309a183dde3$~1034036778$~Tue Oct 8 00:26:18 2002 +0000$~lapp$~lapp@open-bio.org$~"Added column variant to table taxon. Changed UKs to (binomial,variant)  and ncbi_taxon_id.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+4358a723ec561023a0e559a9f5049a69f61d52b1$~1034619576$~Mon Oct 14 18:19:36 2002 +0000$~lapp$~lapp@open-bio.org$~"Generated Postgres version of the current schema.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+459c6ad9639cdb603169866188f6e78bac6d20a6$~1034907910$~Fri Oct 18 02:25:10 2002 +0000$~lapp$~lapp@open-bio.org$~"Moved division to biosequence.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+a620d738a9f2ae92028db3e43edac074c5c5172a$~1035067463$~Sat Oct 19 22:44:23 2002 +0000$~lapp$~lapp@open-bio.org$~"Fixed UKs unsupported by MySQL < 3.23.50.     
+"$~  remotes/origin/bioperl-release-1-1-0,
+26c8d6e0c767f4a9da3e78e0a4944bcf64d93d63$~1035366075$~Wed Oct 23 09:41:15 2002 +0000$~lapp$~lapp@open-bio.org$~"Removed Remote_Seqfeature_Location and instead added to Seqfeature_Location  a FK to DBXref.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+2185e5812616caf0e3fbb6c1421c98f9ce31ad31$~1037042231$~Mon Nov 11 19:17:11 2002 +0000$~lapp$~lapp@open-bio.org$~"Added bioentry-bioentry association table.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+eea0aa46c257876c4652692fd8040a62c0f66f06$~1038213294$~Mon Nov 25 08:34:54 2002 +0000$~lapp$~lapp@open-bio.org$~"Added reference_docid column in reference. Re-generated Pg versions of  schema.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+bf3301f242ca117be3a09b4bbbe6a4dbd5348257$~1039709880$~Thu Dec 12 16:18:00 2002 +0000$~jason$~jason@open-bio.org$~"typo had left extra comma     
+"$~  remotes/origin/bioperl-release-1-1-0,
+86d3c8117e3d4fe60130a7937128d2d8f35a30ce$~1045468374$~Mon Feb 17 07:52:54 2003 +0000$~lapp$~lapp@open-bio.org$~"Added and updated documentation.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+0e9d3bf27cff2115e693d77a936e7417c7a87493$~1045475435$~Mon Feb 17 09:50:35 2003 +0000$~lapp$~lapp@open-bio.org$~"Renamed medline to identifier and prefixed crc.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+41ee99328ad59dd8d7c763c92a7ca8f0cef7ebf0$~1045475436$~Mon Feb 17 09:50:36 2003 +0000$~nobody$~nobody@localhost$~"This commit was manufactured by cvs2svn to create tag    'before-singapore-change'.
+    
+"$~
+574223bcf950a802b8c01e3f99eeb4906ef8c7a5$~1045603387$~Tue Feb 18 21:23:07 2003 +0000$~lapp$~lapp@open-bio.org$~"Changes decided on at BioHackathon 2003: refactored taxon to match NCBI  database, dbxref for references, remove table prefixes, transitive closure
+ table for ontologies. Moved full ontology DDL here.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+ed5262a4655f066ff7180e09550e6d67c40b9bfa$~1045605692$~Tue Feb 18 22:01:32 2003 +0000$~amackey$~amackey@open-bio.org$~"notes for Hilmar; state of flux   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+8c01d69c5e603f638ee778897b989c3eb08918a9$~1045618809$~Wed Feb 19 01:40:09 2003 +0000$~lapp$~lapp@open-bio.org$~"Additional small changes after review with Aaron. This is release candidate 1.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+3e77c1b5b07b5a4c1509d5edaa00abe7b0d04a3b$~1045626347$~Wed Feb 19 03:45:47 2003 +0000$~lapp$~lapp@open-bio.org$~"Release candidate 2. Added transitive closure tables for bioentry_relationship  and seqfeature_relationship. Converted PostgreSQL version.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+2f449bde1c8574b631bbc66798c9ca01a162ab33$~1045691561$~Wed Feb 19 21:52:41 2003 +0000$~amackey$~amackey@open-bio.org$~"removed pI and MW from biosequence column; added optional ALTER TABLE statements to add them back in; avoiding the long slippery slope ...   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+63bf34cd7ddf32655b07393498e75ad2b52f4440$~1045699202$~Thu Feb 20 00:00:02 2003 +0000$~lapp$~lapp@open-bio.org$~"Release candidate 3. Added seqfeature_dbxref.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+d9c77ce54f257990f51ee21e68cc6cefef3c2e95$~1047465289$~Wed Mar 12 10:34:49 2003 +0000$~amackey$~amackey@open-bio.org$~"ontology_term becomes simply term; seqfeature_location becomes simply location; dbxref version loses NOT NULL constraint   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+7dd1f86bd78a25538dab9d20c837589c7be63af4$~1047466335$~Wed Mar 12 10:52:15 2003 +0000$~amackey$~amackey@open-bio.org$~"more ontology_term to term cleanup and consistency with rest of schema   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+56d024bbb4ba05d65ab589c4e91b8a5bf92459db$~1047886539$~Mon Mar 17 07:35:39 2003 +0000$~lapp$~lapp@open-bio.org$~"Added table term_synonym. Added NOT NULL DEFAULT 0 to rank columns that  participate in an alternative key index.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+8acc4bc994d3c2186d7c5cf613045b3b41608de4$~1047967554$~Tue Mar 18 06:05:54 2003 +0000$~lapp$~lapp@open-bio.org$~"Made ranks that participate in UK constraints NOT NULL. Added term_synonym  table. Updated PostgreSQL version of the schema. Added rules to the Postgres
+ version that are needed to support bioperl-db.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+b97584dc06fd2baf03788a241771a5e452549f65$~1048021292$~Tue Mar 18 21:01:32 2003 +0000$~amackey$~amackey@open-bio.org$~"make taxon parent/child fk constraint deferrable so that loading can be accomplished without referential integrity violations; should probably consider doing this with other relationship data as well   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+bd20403669b663de1e758a79e8320003206c403f$~1049270935$~Wed Apr 2 08:08:55 2003 +0000$~lapp$~lapp@open-bio.org$~"Included distance into the UK constraint on term_path. Added PK to term_path.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+0714fb4503d3308e8f8ef16ebc5897faa0bf764a$~1049813903$~Tue Apr 8 14:58:23 2003 +0000$~lapp$~lapp@open-bio.org$~"Removed DEFERRABLE from taxon to taxon FK constraint. MySQL doesn't support  it.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+f3742a2f78329b155e2993bbd1f8b6c4875deed1$~1054073713$~Tue May 27 22:15:13 2003 +0000$~lapp$~lapp@open-bio.org$~"Cleanup: removed the previously separate ontology DDL modules, updated  the README.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+fd257f6f3c0cca3335739e24f5db263f7a381a28$~1054456376$~Sun Jun 1 08:32:56 2003 +0000$~lapp$~lapp@open-bio.org$~"Added documentation, more options, Oracle support, and a significant  speed-up under Pg to load_ncbi_taxonomy. Added supporting functions to
+ the Pg biosql DDL. Changed the self-referential FK constraint on taxon
+ to not cascade (this turned out to be killer once you bulk-delete).
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+f7a6d9ff599956192754ae91784dc2149c571455$~1054501384$~Sun Jun 1 21:03:04 2003 +0000$~lapp$~lapp@open-bio.org$~"Fixed the UK violation problem in load_ncbi_taxonomy when updating the nested  set left/right values. Removed the self-referential foreign key constraint
+ on taxon (NCBI doesn't comply with it :
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+3da8aec24d3874a11cf8250382091333d89af336$~1054782914$~Thu Jun 5 03:15:14 2003 +0000$~lapp$~lapp@open-bio.org$~"Updated ERD. Much nicer now. Also, touched up the DDLs and fixed one missing  NOT NULL and one FK constraint.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+472950be4ca4f4dc51160b96e5e82aaf319d6b0b$~1096853196$~Mon Oct 4 01:26:36 2004 +0000$~lapp$~lapp@open-bio.org$~"Caught up both schemas with some additions and recommendations submitted over  the last year.
+ 1) Added term_relationship_term table, along with FK constraints, and in Pg
+ also rules.
+ 2) Added BINARY to all VARCHAR columns in Mysql that also participate in a
+ unique key constraint.
+ 3) Added CONFIG tags through documentation at various places where you have
+ different options on how you want to do things.
+ 4) Made inclusion of Is_Obsolete and Biodatabase_Id the default in the
+ unique key constraints on Term (name,is_obsolete,ontology) and
+ Bioentry.Identifier, respectively.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+ea4527fb978f0f398883d77e27d9bb47b22c2be8$~1099532981$~Thu Nov 4 01:49:41 2004 +0000$~lapp$~lapp@open-bio.org$~"reference.authors is nullable.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+97744bfa3e3e9fd0d3007b9b4e81f935cc1253f3$~1113801698$~Mon Apr 18 05:21:38 2005 +0000$~lapp$~lapp@open-bio.org$~"Added comments w.r.t. term.synonym.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+1a7b5f92cd34360036ff3942519cb013c5f2da0e$~1203569193$~Thu Feb 21 04:46:33 2008 +0000$~lapp$~lapp@open-bio.org$~"Made author and changes statements consistent between versions of the schema.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+841d6910d924a779c5f50f798e82d1b991f0c57c$~1203613747$~Thu Feb 21 17:09:07 2008 +0000$~lapp$~lapp@open-bio.org$~"Changing the license to LGPL v3.0.   
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/biosql-release-1-0,  remotes/origin/master,
+0797880f660ee43918909fc3ea5b54cde18cac3a$~1203732725$~Sat Feb 23 02:12:05 2008 +0000$~lapp$~lapp@open-bio.org$~"Apparently mysql needs a space after the double-dash comment prefix  (violating the SQL standard even for this). Ridiculous.
+    
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/master,
+d572631d118751bb046793fbd4843dede834322d$~1203733325$~Sat Feb 23 02:22:05 2008 +0000$~lapp$~lapp@open-bio.org$~"Fixed the remaining instances of double-dashes not being followed by a  space. Sigh.
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/master,
+fa1b61d27eaed5a63263a9b115745cf578d01042$~1203741327$~Sat Feb 23 04:35:27 2008 +0000$~lapp$~lapp@open-bio.org$~"Branching off the v1,0 release of the schema. /  
+  
+"$~  remotes/origin/biosql-release-1-0,
+2847b412a7c5988e43139569834819650889757d$~1217564276$~Fri Aug 1 04:17:56 2008 +0000$~lapp$~lapp@open-bio.org$~"Widened bioentry.accession and dbxref.accession to 128 chars. Added migration  scripts for v1.0.1 (which this will constitute).
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/master,
+aa62c1e4c33adad1edfd9df387bacd9134a7ee25$~1217679725$~Sat Aug 2 12:22:05 2008 +0000$~lapp$~lapp@open-bio.org$~"Merging changes for v1.0.1 from the main trunk to the 1.0 branch.  /  
+    
+"$~  remotes/origin/biosql-release-1-0,
+b898c99425ffd5864e4b20920fbc2ed53e4b5ce2$~1217680013$~Sat Aug 2 12:26:53 2008 +0000$~lapp$~lapp@open-bio.org$~"Tagging release v1.0.1.       
+"$~
+f6697005c35976bb8744e9579390910f73e2945b$~1347272320$~Mon Sep 10 11:18:40 2012 +0100$~peterjc$~p.j.a.cock@googlemail.com$~"MySQLdb is dropping TYPE=INNODB, use ENGINE=INNODB  
+ Closes https://redmine.open-bio.org/issues/2568
+  
+"$~* master,  remotes/origin/HEAD -> origin/master,  remotes/origin/master,
