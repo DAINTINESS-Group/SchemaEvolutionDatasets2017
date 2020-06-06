@@ -1,0 +1,35 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+banlist	16	0	-	15	3	3	3	1	0	0	0	0		20	0	20
+banner	16	0	-	15	14	14	14	1	0	0	0	0		20	0	20
+cache	16	0	-	15	3	3	3	1	0	0	0	0		20	0	20
+chatbox	16	0	-	15	6	6	6	1	1	1	0.06	0.06	1	20	1	21
+comments	16	0	-	15	9	11	10.25	1.22	3	2	0.19	0.12	1.5	20	1	21
+content	16	0	-	15	13	13	13	1	0	0	0	0		20	0	20
+core	16	0	-	15	2	2	2	1	0	0	0	0		20	0	20
+download	16	0	-	15	14	15	14.44	1.07	1	1	0.06	0.06	1	20	1	21
+download_category	16	0	-	15	6	6	6	1	0	0	0	0		20	0	20
+flood	16	0	-	15	2	2	2	1	0	0	0	0		20	0	20
+forum	16	0	-	15	11	11	11	1	0	0	0	0		20	0	20
+forum_t	16	0	-	15	11	11	11	1	0	0	0	0		20	0	20
+headlines	16	0	-	15	7	7	7	1	0	0	0	0		20	0	20
+link_category	16	0	-	15	4	4	4	1	0	0	0	0		20	0	20
+links	16	0	-	15	10	10	10	1	0	0	0	0		20	0	20
+menus	16	0	-	15	5	6	5.06	1.2	1	1	0.06	0.06	1	20	1	21
+news	16	0	-	15	12	12	12	1	0	0	0	0		20	0	20
+news_category	16	0	-	15	3	3	3	1	0	0	0	0		20	0	20
+online	16	0	-	15	5	6	5.94	1.2	1	1	0.06	0.06	1	20	1	21
+parser	13	3	-	15	3	3	3	1	0	0	0	0		20	0	20
+plugin	16	0	-	15	5	5	5	1	0	0	0	0		20	0	20
+poll	16	0	-	15	27	28	27.19	1.04	1	1	0.06	0.06	1	20	1	21
+rate	16	0	-	15	6	6	6	1	0	0	0	0		20	0	20
+rbinary	16	0	-	15	4	4	4	1	0	0	0	0		20	0	20
+session	16	0	-	15	5	5	5	1	0	0	0	0		20	0	20
+stat_counter	16	0	-	15	5	5	5	1	0	0	0	0		20	0	20
+stat_info	16	0	-	15	3	3	3	1	0	0	0	0		20	0	20
+stat_last	16	0	-	15	2	2	2	1	0	0	0	0		20	0	20
+submitnews	16	0	-	15	8	10	9.44	1.25	2	2	0.12	0.12	1	20	1	21
+tmp	16	0	-	15	3	3	3	1	0	0	0	0		20	0	20
+upload	16	0	-	15	13	14	13.75	1.08	1	1	0.06	0.06	1	20	1	21
+user	16	0	-	15	34	35	34.56	1.03	1	1	0.06	0.06	1	20	1	21
+userclass_classes	16	0	-	15	3	4	3.38	1.33	1	1	0.06	0.06	1	20	1	21
+wmessage	16	0	-	15	3	3	3	1	0	0	0	0		20	0	20

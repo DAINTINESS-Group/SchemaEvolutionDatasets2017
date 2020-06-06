@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml">
+<key id="x" for="node">
+<default>0</default>
+</key>
+<key id="y" for="node">
+<default>0</default>
+</key>
+<graph edgedefault="directed">
+<node id="hosts_templates">
+<data key="x">-423.1507897481697</data>
+<data key="y">-153.24937966194216</data>
+</node>
+<node id="functions">
+<data key="x">-213.55523593504654</data>
+<data key="y">90.07329468750584</data>
+</node>
+<node id="history_str">
+<data key="x">-232.1401323649012</data>
+<data key="y">-126.68457200607685</data>
+</node>
+<node id="sysmaps">
+<data key="x">106.15444077581265</data>
+<data key="y">153.37990553712666</data>
+</node>
+<node id="sysmaps_hosts">
+<data key="x">111.86609069558813</data>
+<data key="y">54.96308073803823</data>
+</node>
+<node id="platforms">
+<data key="x">128.6195060683931</data>
+<data key="y">-7.100950973760405</data>
+</node>
+<node id="trigger_depends">
+<data key="x">686.0246620856391</data>
+<data key="y">1358.7409369235982</data>
+</node>
+<node id="triggers_template">
+<data key="x">213.7845207268009</data>
+<data key="y">98.07486920910799</data>
+</node>
+<node id="media_type">
+<data key="x">-42.9775476629801</data>
+<data key="y">237.59780970588247</data>
+</node>
+<node id="stats">
+<data key="x">-504.25554739932966</data>
+<data key="y">-154.1441148930473</data>
+</node>
+<node id="history_log">
+<data key="x">-205.19665012404016</data>
+<data key="y">-10.813560596378238</data>
+</node>
+<node id="sysmaps_elements">
+<data key="x">225.0281453959932</data>
+<data key="y">175.00218781711828</data>
+</node>
+<node id="trends">
+<data key="x">39.474302394120286</data>
+<data key="y">-171.09900512698488</data>
+</node>
+<node id="screens_items">
+<data key="x">-419.9612319952288</data>
+<data key="y">126.27053796042622</data>
+</node>
+<node id="sessions">
+<data key="x">-194.0463937431415</data>
+<data key="y">344.7604527519122</data>
+</node>
+<node id="auditlog">
+<data key="x">-502.5233965851673</data>
+<data key="y">-67.6942717884449</data>
+</node>
+<node id="hosts">
+<data key="x">13.111162704960407</data>
+<data key="y">11.482866869058057</data>
+</node>
+<node id="escalation_log">
+<data key="x">-421.90794518847883</data>
+<data key="y">-191.2757561832882</data>
+</node>
+<node id="items_applications">
+<data key="x">31.664386710425333</data>
+<data key="y">-86.81894615479473</data>
+</node>
+<node id="profiles">
+<data key="x">-421.0244547179266</data>
+<data key="y">-74.04113433639645</data>
+</node>
+<node id="history_uint">
+<data key="x">-219.436390179814</data>
+<data key="y">-68.28085816857566</data>
+</node>
+<node id="history">
+<data key="x">-37.7444156950188</data>
+<data key="y">-141.86027058677024</data>
+</node>
+<node id="triggers">
+<data key="x">-207.0903269390376</data>
+<data key="y">153.0731159321823</data>
+</node>
+<node id="users">
+<data key="x">-200.3786198243664</data>
+<data key="y">261.01393970631625</data>
+</node>
+<node id="alerts">
+<data key="x">-131.63101511200819</data>
+<data key="y">104.08577081028432</data>
+</node>
+<node id="conditions">
+<data key="x">-103.76774111832538</data>
+<data key="y">224.83979849330603</data>
+</node>
+<node id="actions">
+<data key="x">-143.35972323554984</data>
+<data key="y">175.5941963605717</data>
+</node>
+<node id="items">
+<data key="x">-107.14972297931513</data>
+<data key="y">-71.38044933761995</data>
+</node>
+<node id="escalations">
+<data key="x">-234.01234604523904</data>
+<data key="y">-206.46428317388086</data>
+</node>
+<node id="media">
+<data key="x">-104.76498737011116</data>
+<data key="y">278.3581731270772</data>
+</node>
+<node id="housekeeper">
+<data key="x">-420.015641391552</data>
+<data key="y">164.29360481366115</data>
+</node>
+<node id="screens_graphs">
+<data key="x">-503.8279176289161</data>
+<data key="y">-112.81533245831446</data>
+</node>
+<node id="service_alarms">
+<data key="x">-422.563463666251</data>
+<data key="y">11.424125798857403</data>
+</node>
+<node id="graphs">
+<data key="x">-11.26292651446795</data>
+<data key="y">172.85164335540037</data>
+</node>
+<node id="servers">
+<data key="x">-23.167326377324798</data>
+<data key="y">-45.895881885822746</data>
+</node>
+<node id="screens">
+<data key="x">520.8612125115188</data>
+<data key="y">1475.3423841725703</data>
+</node>
+<node id="audit">
+<data key="x">-500.1444648276805</data>
+<data key="y">-34.50257963925202</data>
+</node>
+<node id="rights">
+<data key="x">-495.6939722997679</data>
+<data key="y">126.17067664806177</data>
+</node>
+<node id="acknowledges">
+<data key="x">-269.9505664876499</data>
+<data key="y">247.78434381887257</data>
+</node>
+<node id="users_groups">
+<data key="x">-83.58220250011925</data>
+<data key="y">351.6574610075994</data>
+</node>
+<node id="hosts_groups">
+<data key="x">-503.1220787463843</data>
+<data key="y">-192.59486762965446</data>
+</node>
+<node id="usrgrp">
+<data key="x">27.942300543203146</data>
+<data key="y">333.3415666134124</data>
+</node>
+<node id="alarms">
+<data key="x">-267.72685318451465</data>
+<data key="y">153.08002236261666</data>
+</node>
+<node id="groups">
+<data key="x">-268.37522049607696</data>
+<data key="y">314.61119689536986</data>
+</node>
+<node id="services_links">
+<data key="x">-495.18984785020007</data>
+<data key="y">164.15860657660835</data>
+</node>
+<node id="help_items">
+<data key="x">-499.36346829399554</data>
+<data key="y">49.008873981733814</data>
+</node>
+<node id="services">
+<data key="x">-499.90168133133466</data>
+<data key="y">11.307222639171925</data>
+</node>
+<node id="sysmaps_links">
+<data key="x">163.67611495846506</data>
+<data key="y">226.57831101055592</data>
+</node>
+<node id="escalation_rules">
+<data key="x">-141.08104415397935</data>
+<data key="y">-206.08281047714058</data>
+</node>
+<node id="valuemaps">
+<data key="x">-423.0908076700233</data>
+<data key="y">-110.84847324670022</data>
+</node>
+<node id="graphs_items">
+<data key="x">-51.58274017874169</data>
+<data key="y">62.67165101366015</data>
+</node>
+<node id="help">
+<data key="x">-421.69073090731683</data>
+<data key="y">47.498143576052485</data>
+</node>
+<node id="mappings">
+<data key="x">-423.12296366220653</data>
+<data key="y">86.49856335429854</data>
+</node>
+<node id="items_template">
+<data key="x">208.73698620433606</data>
+<data key="y">13.81908859270959</data>
+</node>
+<node id="history_text">
+<data key="x">-421.5338761907615</data>
+<data key="y">-30.75552888504626</data>
+</node>
+<node id="config">
+<data key="x">909.4224293678493</data>
+<data key="y">1506.1528802987748</data>
+</node>
+<node id="autoreg">
+<data key="x">-499.00532726428673</data>
+<data key="y">83.53747410931493</data>
+</node>
+<node id="applications">
+<data key="x">55.81424867943076</data>
+<data key="y">-32.116113777709984</data>
+</node>
+<edge source="users" target="groups"/>
+<edge source="escalation_rules" target="escalations"/>
+<edge source="history_str" target="items"/>
+<edge source="sysmaps_links" target="sysmaps"/>
+<edge source="hosts" target="servers"/>
+<edge source="hosts" target="platforms"/>
+<edge source="conditions" target="actions"/>
+<edge source="trends" target="items"/>
+<edge source="items_applications" target="items"/>
+<edge source="alerts" target="actions"/>
+<edge source="media" target="media_type"/>
+<edge source="acknowledges" target="users"/>
+<edge source="sysmaps_elements" target="sysmaps"/>
+<edge source="items_applications" target="applications"/>
+<edge source="users_groups" target="usrgrp"/>
+<edge source="items" target="servers"/>
+<edge source="media" target="users"/>
+<edge source="alerts" target="triggers"/>
+<edge source="graphs_items" target="items"/>
+<edge source="history_uint" target="items"/>
+<edge source="items_template" target="platforms"/>
+<edge source="alarms" target="triggers"/>
+<edge source="functions" target="items"/>
+<edge source="items" target="hosts"/>
+<edge source="users_groups" target="users"/>
+<edge source="sysmaps_hosts" target="hosts"/>
+<edge source="history" target="items"/>
+<edge source="graphs_items" target="graphs"/>
+<edge source="functions" target="triggers"/>
+<edge source="sysmaps_hosts" target="sysmaps"/>
+<edge source="acknowledges" target="alarms"/>
+<edge source="alerts" target="media_type"/>
+<edge source="history_log" target="items"/>
+<edge source="actions" target="triggers"/>
+<edge source="actions" target="users"/>
+<edge source="sessions" target="users"/>
+<edge source="triggers_template" target="items_template"/>
+<edge source="applications" target="hosts"/>
+</graph>
+</graphml>

@@ -4,10 +4,10 @@
         <update type="KeyChange">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>alertid</name>
@@ -18,10 +18,10 @@
         <update type="TypeChange">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>password_required</name>
@@ -41,10 +41,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>platformid</name>
@@ -55,10 +55,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>items_template</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>platformid</name>
@@ -69,10 +69,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>platforms</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>platform</name>
@@ -88,29 +88,29 @@
     </transition>
     <transition oldVersion="rev_1.010.sql" newVersion="rev_1.011.sql"/>
     <transition oldVersion="rev_1.011.sql" newVersion="rev_1.012.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>type</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.012.sql" newVersion="rev_1.013.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>snmp_community</name>
@@ -122,16 +122,16 @@
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.013.sql" newVersion="rev_1.014.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>sysmaps</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>height</name>
@@ -153,16 +153,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.014.sql" newVersion="rev_1.015.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>graphid</name>
@@ -184,14 +184,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>gitemid</name>
@@ -208,14 +208,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>sysmaps_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>linkid</name>
@@ -237,16 +237,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.015.sql" newVersion="rev_1.016.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>sysmaps_hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>hostid</name>
@@ -278,33 +278,33 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.016.sql" newVersion="rev_1.017.sql"/>
     <transition oldVersion="rev_1.017.sql" newVersion="rev_1.018.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>color</name>
                 <type>VARCHAR(32)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.018.sql" newVersion="rev_1.019.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>help</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>description</name>
@@ -321,17 +321,17 @@
                 <type>VARCHAR(128)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.019.sql" newVersion="rev_1.020.sql"/>
     <transition oldVersion="rev_1.020.sql" newVersion="rev_1.021.sql">
         <update type="TypeChange">
             <table>
                 <name>users</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>passwd</name>
@@ -344,10 +344,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>help</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>description</name>
@@ -367,13 +367,13 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.022.sql" newVersion="rev_1.023.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>ip</name>
@@ -385,32 +385,32 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.023.sql" newVersion="rev_1.024.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps_hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>icon</name>
                 <type>VARCHAR(32)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.024.sql" newVersion="rev_1.025.sql">
         <update type="TypeChange">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>message</name>
@@ -421,10 +421,10 @@
         <update type="TypeChange">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>message</name>
@@ -435,13 +435,13 @@
     </transition>
     <transition oldVersion="rev_1.025.sql" newVersion="rev_1.026.sql"/>
     <transition oldVersion="rev_1.026.sql" newVersion="rev_1.027.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>trigger_depends</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>triggerid_down</name>
@@ -453,30 +453,30 @@
                 <type>INT4</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>dep_level</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.027.sql" newVersion="rev_1.028.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>lastcheck</name>
@@ -486,13 +486,13 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.028.sql" newVersion="rev_1.029.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>alarm_history</name>
@@ -504,32 +504,32 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.029.sql" newVersion="rev_1.030.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>disabled_until</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.030.sql" newVersion="rev_1.031.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>services</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>name</name>
@@ -551,14 +551,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>services_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>servicedownid</name>
@@ -575,31 +575,31 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>url</name>
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.031.sql" newVersion="rev_1.032.sql"/>
     <transition oldVersion="rev_1.032.sql" newVersion="rev_1.033.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>history_str</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -616,44 +616,44 @@
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value_type</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.033.sql" newVersion="rev_1.034.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>disable_until</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>disabled_until</name>
@@ -663,29 +663,29 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.034.sql" newVersion="rev_1.035.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items_template</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value_type</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.035.sql" newVersion="rev_1.036.sql">
         <update type="TypeChange">
             <table>
                 <name>functions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>lastvalue</name>
@@ -696,10 +696,10 @@
         <update type="TypeChange">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>lastvalue</name>
@@ -717,10 +717,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>password_required</name>
@@ -730,29 +730,29 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.037.sql" newVersion="rev_1.038.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>services_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>linkid</name>
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.038.sql" newVersion="rev_1.039.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>rights</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>id</name>
@@ -779,46 +779,46 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.039.sql" newVersion="rev_1.040.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>trapper_hosts</name>
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.040.sql" newVersion="rev_1.041.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>alarms</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>retries</name>
@@ -830,14 +830,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="DeleteTable">
             <table>
                 <name>groups</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>groupid</name>
@@ -850,27 +850,27 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>services</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>algorithm</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>sessions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>lastaccess</name>
@@ -887,14 +887,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>istrue</name>
@@ -902,13 +902,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>status</name>
@@ -920,14 +920,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>users</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>groupid</name>
@@ -941,10 +941,10 @@
         <update type="TypeChange">
             <table>
                 <name>functions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>parameter</name>
@@ -952,13 +952,13 @@
                 <isKey>false</isKey>
             </attribute>
         </update>
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>service_alarms</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -980,32 +980,32 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.043.sql" newVersion="rev_1.044.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>network_errors</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.044.sql" newVersion="rev_1.045.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>groups</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>groupid</name>
@@ -1017,14 +1017,14 @@
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>hosts_groups</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>groupid</name>
@@ -1036,18 +1036,18 @@
                 <type>INT4</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.045.sql" newVersion="rev_1.046.sql"/>
     <transition oldVersion="rev_1.046.sql" newVersion="rev_1.047.sql"/>
     <transition oldVersion="rev_1.047.sql" newVersion="rev_1.048.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>profiles</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>idx</name>
@@ -1069,32 +1069,32 @@
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.048.sql" newVersion="rev_1.049.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>snmp_port</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.049.sql" newVersion="rev_1.050.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>services</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>goodsla</name>
@@ -1106,16 +1106,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.050.sql" newVersion="rev_1.051.sql">
         <update type="TypeChange">
             <table>
                 <name>services</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>goodsla</name>
@@ -1126,13 +1126,13 @@
     </transition>
     <transition oldVersion="rev_1.051.sql" newVersion="rev_1.052.sql"/>
     <transition oldVersion="rev_1.052.sql" newVersion="rev_1.053.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>screens</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>cols</name>
@@ -1154,14 +1154,14 @@
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>graphid</name>
@@ -1198,46 +1198,46 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>services</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>sortorder</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.053.sql" newVersion="rev_1.054.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>drawtype</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.054.sql" newVersion="rev_1.055.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>scope</name>
@@ -1249,30 +1249,30 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.055.sql" newVersion="rev_1.056.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>mediatypeid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>type</name>
@@ -1283,10 +1283,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>smtp_email</name>
@@ -1304,27 +1304,27 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>media</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>mediatypeid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>media</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>type</name>
@@ -1332,13 +1332,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>media_type</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>description</name>
@@ -1375,32 +1375,32 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.056.sql" newVersion="rev_1.057.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>media</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>severity</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.057.sql" newVersion="rev_1.058.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>stats</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>day</name>
@@ -1432,48 +1432,48 @@
                 <type>INT4</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.058.sql" newVersion="rev_1.059.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>units</name>
                 <type>VARCHAR(10)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.059.sql" newVersion="rev_1.060.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>multiplier</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.060.sql" newVersion="rev_1.061.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>stats</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value</name>
@@ -1481,13 +1481,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>stats</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value_avg</name>
@@ -1504,30 +1504,30 @@
                 <type>FLOAT8</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>triggerid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.061.sql" newVersion="rev_1.062.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>screens_graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>height</name>
@@ -1564,33 +1564,33 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.062.sql" newVersion="rev_1.063.sql"/>
     <transition oldVersion="rev_1.063.sql" newVersion="rev_1.064.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>sortorder</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.064.sql" newVersion="rev_1.065.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>screens_graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>height</name>
@@ -1631,10 +1631,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>graphid</name>
@@ -1642,13 +1642,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>resource</name>
@@ -1660,16 +1660,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.065.sql" newVersion="rev_1.066.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>users_groups</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>userid</name>
@@ -1681,14 +1681,14 @@
                 <type>INT4</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>usrgrp</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>name</name>
@@ -1700,16 +1700,16 @@
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.066.sql" newVersion="rev_1.067.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>delta</name>
@@ -1721,33 +1721,33 @@
                 <type>FLOAT8</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.067.sql" newVersion="rev_1.068.sql"/>
     <transition oldVersion="rev_1.068.sql" newVersion="rev_1.069.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>recipient</name>
                 <type>INT1</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.069.sql" newVersion="rev_1.070.sql">
         <update type="TypeChange">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>recipient</name>
@@ -1758,10 +1758,10 @@
         <update type="TypeChange">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>delta</name>
@@ -1771,13 +1771,13 @@
         </update>
     </transition>
     <transition oldVersion="rev_1.070.sql" newVersion="rev_1.071.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>trends</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -1804,32 +1804,32 @@
                 <type>FLOAT8</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.071.sql" newVersion="rev_1.072.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>trends</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>num</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.072.sql" newVersion="rev_1.073.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>color_off</name>
@@ -1851,17 +1851,17 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.073.sql" newVersion="rev_1.074.sql"/>
     <transition oldVersion="rev_1.074.sql" newVersion="rev_1.075.sql">
         <update type="KeyChange">
             <table>
                 <name>history</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -1877,10 +1877,10 @@
         <update type="KeyChange">
             <table>
                 <name>history_str</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -1897,45 +1897,45 @@
     <transition oldVersion="rev_1.075.sql" newVersion="rev_1.076.sql"/>
     <transition oldVersion="rev_1.076.sql" newVersion="rev_1.077.sql"/>
     <transition oldVersion="rev_1.077.sql" newVersion="rev_1.078.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>users</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>url</name>
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.078.sql" newVersion="rev_1.079.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>trends</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.079.sql" newVersion="rev_1.080.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>yaxismax</name>
@@ -1952,16 +1952,16 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.080.sql" newVersion="rev_1.081.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>formula</name>
@@ -1988,30 +1988,30 @@
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.081.sql" newVersion="rev_1.082.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>background</name>
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps_hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>icon_on</name>
@@ -2023,16 +2023,16 @@
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.082.sql" newVersion="rev_1.083.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>audit</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>action</name>
@@ -2064,16 +2064,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.083.sql" newVersion="rev_1.084.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>lastdelete</name>
@@ -2083,57 +2083,57 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.084.sql" newVersion="rev_1.085.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>error</name>
                 <type>VARCHAR(128)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>error</name>
                 <type>VARCHAR(128)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>error</name>
                 <type>VARCHAR(128)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.085.sql" newVersion="rev_1.086.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>escalations</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>escalationid</name>
@@ -2145,16 +2145,16 @@
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.086.sql" newVersion="rev_1.087.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>hosts_templates</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actions</name>
@@ -2191,16 +2191,16 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.087.sql" newVersion="rev_1.088.sql">
         <update type="KeyChange">
             <table>
                 <name>hosts_templates</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>hostid</name>
@@ -2213,63 +2213,63 @@
                 <isKey>false</isKey>
             </attribute>
         </update>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts_templates</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>hosttemplateid</name>
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.088.sql" newVersion="rev_1.089.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>available</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.089.sql" newVersion="rev_1.090.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>label_type</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.090.sql" newVersion="rev_1.091.sql"/>
     <transition oldVersion="rev_1.091.sql" newVersion="rev_1.092.sql"/>
     <transition oldVersion="rev_1.092.sql" newVersion="rev_1.093.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>history_log</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -2286,92 +2286,92 @@
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.093.sql" newVersion="rev_1.094.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>history_log</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>id</name>
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.094.sql" newVersion="rev_1.095.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>lastlogsize</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>media</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>period</name>
                 <type>VARCHAR(100)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>colspan</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.095.sql" newVersion="rev_1.096.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>rowspan</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.096.sql" newVersion="rev_1.097.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>escalation_rules</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actiontype</name>
@@ -2393,46 +2393,46 @@
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.097.sql" newVersion="rev_1.098.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>escalation_rules</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>period</name>
                 <type>VARCHAR(100)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>escalations</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>dflt</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.098.sql" newVersion="rev_1.099.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>escalation_rules</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>delay</name>
@@ -2444,14 +2444,14 @@
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>escalation_rules</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>ruleid</name>
@@ -2461,13 +2461,13 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.099.sql" newVersion="rev_1.100.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>users</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>autologout</name>
@@ -2479,16 +2479,16 @@
                 <type>VARCHAR(5)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.100.sql" newVersion="rev_1.101.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>history_log</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>severity</name>
@@ -2505,16 +2505,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.101.sql" newVersion="rev_1.102.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>escalation_log</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actiontype</name>
@@ -2561,48 +2561,48 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.102.sql" newVersion="rev_1.103.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>logtimefmt</name>
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.103.sql" newVersion="rev_1.104.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>error</name>
                 <type>VARCHAR(128)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.104.sql" newVersion="rev_1.105.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>autoreg</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>hostid</name>
@@ -2624,32 +2624,32 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.105.sql" newVersion="rev_1.106.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>triggerid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.106.sql" newVersion="rev_1.107.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>delay</name>
@@ -2671,16 +2671,16 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.107.sql" newVersion="rev_1.108.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>maxrepeats</name>
@@ -2692,60 +2692,60 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.108.sql" newVersion="rev_1.109.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>users</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>refresh</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.109.sql" newVersion="rev_1.110.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>serverid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>serverid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>servers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>ip</name>
@@ -2762,17 +2762,17 @@
                 <type>SERIALHOSTVARCHAR(64)</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.110.sql" newVersion="rev_1.111.sql"/>
     <transition oldVersion="rev_1.111.sql" newVersion="rev_1.112.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>history_uint</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -2789,32 +2789,32 @@
                 <type>DOUBLE</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.112.sql" newVersion="rev_1.113.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>yaxisside</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.113.sql" newVersion="rev_1.114.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>yaxisside</name>
@@ -2822,29 +2822,29 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>yaxisside</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.114.sql" newVersion="rev_1.115.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>serverid</name>
@@ -2855,10 +2855,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>serverid</name>
@@ -2869,10 +2869,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>servers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>ip</name>
@@ -2892,45 +2892,45 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.115.sql" newVersion="rev_1.116.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>refresh_unsupported</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.116.sql" newVersion="rev_1.117.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>elements</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.117.sql" newVersion="rev_1.118.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actiontype</name>
@@ -2962,14 +2962,14 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>scope</name>
@@ -2984,27 +2984,27 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.118.sql" newVersion="rev_1.119.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>filter_trigger_severity</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>severity</name>
@@ -3017,10 +3017,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>filter_groupid</name>
@@ -3053,10 +3053,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>good</name>
@@ -3066,13 +3066,13 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.121.sql" newVersion="rev_1.122.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>conditions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actionid</name>
@@ -3099,16 +3099,16 @@
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.122.sql" newVersion="rev_1.123.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>hosts_templates</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actions</name>
@@ -3123,43 +3123,43 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.123.sql" newVersion="rev_1.124.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>label_location</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.124.sql" newVersion="rev_1.125.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>errors_from</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>network_errors</name>
@@ -3169,75 +3169,75 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.125.sql" newVersion="rev_1.126.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>templateid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>templateid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.126.sql" newVersion="rev_1.127.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>triggers</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>templateid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.127.sql" newVersion="rev_1.128.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>templateid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.128.sql" newVersion="rev_1.129.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>mappings</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>mappingid</name>
@@ -3259,14 +3259,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>valuemaps</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>name</name>
@@ -3278,33 +3278,33 @@
                 <type>SERIAL</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.129.sql" newVersion="rev_1.130.sql"/>
     <transition oldVersion="rev_1.130.sql" newVersion="rev_1.131.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>valuemapid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.131.sql" newVersion="rev_1.132.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>housekeeper</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>field</name>
@@ -3321,48 +3321,48 @@
                 <type>VARCHAR(64)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.132.sql" newVersion="rev_1.133.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>housekeeper</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.133.sql" newVersion="rev_1.134.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>status</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.134.sql" newVersion="rev_1.135.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>acknowledges</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>acknowledgeid</name>
@@ -3389,28 +3389,28 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>alarms</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>acknowledged</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>halign</name>
@@ -3427,14 +3427,14 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>sysmaps_elements</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>elementid</name>
@@ -3491,14 +3491,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="DeleteTable">
             <table>
                 <name>sysmaps_hosts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>hostid</name>
@@ -3546,13 +3546,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>selementid1</name>
@@ -3564,14 +3564,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>sysmaps_links</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>shostid1</name>
@@ -3589,10 +3589,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>sysmaps_elements</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>iselementid</name>
@@ -3600,60 +3600,60 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>sysmaps_elements</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>selementid</name>
                 <type>SERIAL</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.136.sql" newVersion="rev_1.137.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>scripts</name>
                 <type>TEXT</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>url</name>
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.137.sql" newVersion="rev_1.138.sql"/>
     <transition oldVersion="rev_1.138.sql" newVersion="rev_1.139.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>escalation_log</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actiontype</name>
@@ -3704,10 +3704,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>escalation_rules</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>actiontype</name>
@@ -3743,10 +3743,10 @@
         <deletion type="DeleteTable">
             <table>
                 <name>escalations</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>dflt</name>
@@ -3766,59 +3766,59 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.139.sql" newVersion="rev_1.140.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>alerts</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>userid</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.140.sql" newVersion="rev_1.141.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>period</name>
                 <type>VARCHAR(100)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="UpdateTable">
+        </insertion>
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>show_work_period</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.141.sql" newVersion="rev_1.142.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>period</name>
@@ -3826,46 +3826,46 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>config</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>work_period</name>
                 <type>VARCHAR(100)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.142.sql" newVersion="rev_1.143.sql"/>
     <transition oldVersion="rev_1.143.sql" newVersion="rev_1.144.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>show_triggers</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.144.sql" newVersion="rev_1.145.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>applications</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>applicationid</name>
@@ -3887,14 +3887,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
-        <insersion type="NewTable">
+        </insertion>
+        <insertion type="NewTable">
             <table>
                 <name>items_applications</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>applicationid</name>
@@ -3906,14 +3906,14 @@
                 <type>INT4</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <update type="TypeChange">
             <table>
                 <name>profiles</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>value</name>
@@ -3921,29 +3921,29 @@
                 <isKey>false</isKey>
             </attribute>
         </update>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>profiles</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>valuetype</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.145.sql" newVersion="rev_1.146.sql">
         <deletion type="DeleteTable">
             <table>
                 <name>audit</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>action</name>
@@ -3976,13 +3976,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>auditlog</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>action</name>
@@ -4014,14 +4014,14 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="DeleteTable">
             <table>
                 <name>stats</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>day</name>
@@ -4069,10 +4069,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>auditlog</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>resource</name>
@@ -4080,29 +4080,29 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>auditlog</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>resourcetype</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.147.sql" newVersion="rev_1.148.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>resource</name>
@@ -4110,29 +4110,29 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>screens_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>resourcetype</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.148.sql" newVersion="rev_1.149.sql">
         <update type="TypeChange">
             <table>
                 <name>functions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>function</name>
@@ -4142,13 +4142,13 @@
         </update>
     </transition>
     <transition oldVersion="rev_1.149.sql" newVersion="rev_1.150.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>help_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>description</name>
@@ -4165,16 +4165,16 @@
                 <type>VARCHAR(64)</type>
                 <isKey>true</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.150.sql" newVersion="rev_1.151.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>alarms</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>istrue</name>
@@ -4185,10 +4185,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>screens</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>cols</name>
@@ -4201,13 +4201,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>screens</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>hsize</name>
@@ -4219,32 +4219,32 @@
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.151.sql" newVersion="rev_1.152.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>media_type</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>gsm_modem</name>
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.152.sql" newVersion="rev_1.153.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>actions</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>delay</name>
@@ -4259,13 +4259,13 @@
         </deletion>
     </transition>
     <transition oldVersion="rev_1.153.sql" newVersion="rev_1.154.sql">
-        <insersion type="NewTable">
+        <insertion type="NewTable">
             <table>
                 <name>history_text</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>clock</name>
@@ -4282,16 +4282,16 @@
                 <type>TEXT</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.154.sql" newVersion="rev_1.155.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>calc_fnc</name>
@@ -4308,16 +4308,16 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.155.sql" newVersion="rev_1.156.0.sql">
         <deletion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>history_len</name>
@@ -4330,13 +4330,13 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs_items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>periods_cnt</name>
@@ -4348,46 +4348,46 @@
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.156.0.sql" newVersion="rev_1.156.06.1.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>store_equal</name>
                 <type>INT4</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.156.06.1.sql" newVersion="rev_1.156.08.1.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>graphtype</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>store_equal</name>
@@ -4400,10 +4400,10 @@
         <deletion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>graphtype</name>
@@ -4411,43 +4411,43 @@
                 <isKey>false</isKey>
             </attribute>
         </deletion>
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>params</name>
                 <type>VARCHAR(255)</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
     </transition>
     <transition oldVersion="rev_1.156.10.1.sql" newVersion="rev_1.157.sql">
-        <insersion type="UpdateTable">
+        <insertion type="UpdateTable">
             <table>
                 <name>graphs</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>graphtype</name>
                 <type>INT2</type>
                 <isKey>false</isKey>
             </attribute>
-        </insersion>
+        </insertion>
         <deletion type="UpdateTable">
             <table>
                 <name>items</name>
-                <pKey>
+                <primaryKey>
                     <mode>0</mode>
-                </pKey>
-                <fKey/>
+                </primaryKey>
+                <foreignKey/>
             </table>
             <attribute>
                 <name>params</name>

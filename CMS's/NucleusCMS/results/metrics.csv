@@ -1,0 +1,5 @@
+trID;time;oldVer;newVer;#oldT;#newT;#oldA;#newA;tIns;tDel;aIns;aDel;aTypeAlt;keyAlt;aTabIns;aTabDel
+1;rev_1678;rev_1651.sql;rev_1678.sql;20;20;110;110;0;0;1;1;0;0;0;0
+2;rev_1714;rev_1678.sql;rev_1714.sql;20;20;110;110;0;0;0;0;0;23;0;0
+3;rev_1889;rev_1714.sql;rev_1889.sql;20;20;110;112;0;0;2;0;0;0;0;0
+4;rev_1902;rev_1889.sql;rev_1902.sql;20;20;112;112;0;0;0;0;0;0;0;0

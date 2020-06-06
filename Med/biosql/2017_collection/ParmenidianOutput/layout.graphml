@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml">
+<key id="x" for="node">
+<default>0</default>
+</key>
+<key id="y" for="node">
+<default>0</default>
+</key>
+<graph edgedefault="directed">
+<node id="biosequence">
+<data key="x">1225.4468370747231</data>
+<data key="y">1006.3753520163908</data>
+</node>
+<node id="bioentry_taxa">
+<data key="x">1357.3159102398558</data>
+<data key="y">913.29156331431</data>
+</node>
+<node id="biodatabase">
+<data key="x">1358.2058960092818</data>
+<data key="y">968.1780327401193</data>
+</node>
+<node id="term_relationship">
+<data key="x">865.9581215816875</data>
+<data key="y">470.2981321368675</data>
+</node>
+<node id="cache_corba_support">
+<data key="x">152.83866967109276</data>
+<data key="y">1101.0600675777443</data>
+</node>
+<node id="bioentry_dbxref">
+<data key="x">919.3423372252655</data>
+<data key="y">1055.5184061846985</data>
+</node>
+<node id="dbxref_qualifier_value">
+<data key="x">512.5394111971386</data>
+<data key="y">799.2626002999375</data>
+</node>
+<node id="reference">
+<data key="x">939.275143216064</data>
+<data key="y">1001.6021113894449</data>
+</node>
+<node id="bioentry_dblink">
+<data key="x">1128.0690699939753</data>
+<data key="y">1059.675398572275</data>
+</node>
+<node id="location_qualifier_value">
+<data key="x">346.1707032403791</data>
+<data key="y">576.9096904549148</data>
+</node>
+<node id="bioentry_path">
+<data key="x">1373.7322634688448</data>
+<data key="y">749.6582038982841</data>
+</node>
+<node id="seqfeature_qualifier_value">
+<data key="x">1312.8581848842002</data>
+<data key="y">412.62672965324043</data>
+</node>
+<node id="seqfeature_path">
+<data key="x">1259.2794056863245</data>
+<data key="y">328.4310115708606</data>
+</node>
+<node id="term_path">
+<data key="x">935.7879592915117</data>
+<data key="y">420.61655012661276</data>
+</node>
+<node id="ontology_dbxref">
+<data key="x">573.259817726384</data>
+<data key="y">847.9200016957157</data>
+</node>
+<node id="dbxref">
+<data key="x">479.0245479088735</data>
+<data key="y">1165.0593329425521</data>
+</node>
+<node id="taxon_name">
+<data key="x">1045.4131814579669</data>
+<data key="y">1025.3882801295895</data>
+</node>
+<node id="taxon">
+<data key="x">1118.068847565271</data>
+<data key="y">992.8241226744894</data>
+</node>
+<node id="term">
+<data key="x">873.2938633024689</data>
+<data key="y">260.8967216502085</data>
+</node>
+<node id="seqfeature_location">
+<data key="x">395.3956776882825</data>
+<data key="y">732.7003078604757</data>
+</node>
+<node id="seqfeature_key">
+<data key="x">152.3310543978522</data>
+<data key="y">1039.9757566601097</data>
+</node>
+<node id="ontology">
+<data key="x">925.6039752811466</data>
+<data key="y">498.2881061279834</data>
+</node>
+<node id="taxa">
+<data key="x">1429.3745029607803</data>
+<data key="y">942.0150265098418</data>
+</node>
+<node id="bioentry_date">
+<data key="x">1415.5506405928622</data>
+<data key="y">797.53024575559</data>
+</node>
+<node id="term_synonym">
+<data key="x">1071.4429826671235</data>
+<data key="y">273.19188577415787</data>
+</node>
+<node id="bioentry">
+<data key="x">1274.7850426829364</data>
+<data key="y">889.9201782884264</data>
+</node>
+<node id="seqfeature_relationship">
+<data key="x">1267.3868472421354</data>
+<data key="y">617.4014915940556</data>
+</node>
+<node id="bioentry_reference">
+<data key="x">1013.1963301679871</data>
+<data key="y">964.6310620794569</data>
+</node>
+<node id="seqfeature_qualifier">
+<data key="x">1453.4875940905997</data>
+<data key="y">395.137563369673</data>
+</node>
+<node id="term_relationship_term">
+<data key="x">883.093925348292</data>
+<data key="y">400.53062827660074</data>
+</node>
+<node id="seqfeature_dbxref">
+<data key="x">1506.809054216148</data>
+<data key="y">1139.587193655438</data>
+</node>
+<node id="term_dbxref">
+<data key="x">156.98682651385445</data>
+<data key="y">541.920979031469</data>
+</node>
+<node id="bioentry_relationship">
+<data key="x">1193.5046097535778</data>
+<data key="y">791.5385891182877</data>
+</node>
+<node id="bioentry_description">
+<data key="x">1428.0412308780733</data>
+<data key="y">857.0439696665219</data>
+</node>
+<node id="ontology_term">
+<data key="x">960.9587518109863</data>
+<data key="y">764.0358338044549</data>
+</node>
+<node id="bioentry_direct_links">
+<data key="x">1232.4168361271563</data>
+<data key="y">1113.0035964680478</data>
+</node>
+<node id="ontology_relationship">
+<data key="x">814.591176789216</data>
+<data key="y">520.5910236732449</data>
+</node>
+<node id="bioentry_keywords">
+<data key="x">1325.7044231520354</data>
+<data key="y">1020.2014718557177</data>
+</node>
+<node id="seqfeature">
+<data key="x">1392.7038400105096</data>
+<data key="y">511.6902178213534</data>
+</node>
+<node id="seqfeature_source">
+<data key="x">1502.689445472112</data>
+<data key="y">555.3944427644356</data>
+</node>
+<node id="comment">
+<data key="x">1328.4948417169485</data>
+<data key="y">1093.2787905282435</data>
+</node>
+<node id="location">
+<data key="x">479.0450147456945</data>
+<data key="y">559.3516512263427</data>
+</node>
+<node id="bioentry_qualifier_value">
+<data key="x">1147.5790471828534</data>
+<data key="y">854.6167539378929</data>
+</node>
+<node id="remote_seqfeature_name">
+<data key="x">362.50580437351175</data>
+<data key="y">822.958157824806</data>
+</node>
+<node id="ontology_path">
+<data key="x">750.2245647500608</data>
+<data key="y">480.46361133290634</data>
+</node>
+<edge source="bioentry_dblink" target="dbxref"/>
+<edge source="bioentry" target="taxon"/>
+<edge source="bioentry_direct_links" target="dbxref"/>
+<edge source="seqfeature" target="term"/>
+<edge source="bioentry" target="biodatabase"/>
+<edge source="ontology_relationship" target="term"/>
+<edge source="bioentry_dblink" target="bioentry"/>
+<edge source="location_qualifier_value" target="seqfeature_location"/>
+<edge source="ontology_relationship" target="ontology"/>
+<edge source="seqfeature_dbxref" target="seqfeature"/>
+<edge source="ontology_dbxref" target="dbxref"/>
+<edge source="seqfeature_relationship" target="seqfeature"/>
+<edge source="seqfeature_qualifier_value" target="term"/>
+<edge source="seqfeature_dbxref" target="dbxref"/>
+<edge source="seqfeature" target="seqfeature_source"/>
+<edge source="bioentry_date" target="bioentry"/>
+<edge source="seqfeature_qualifier" target="seqfeature_qualifier"/>
+<edge source="term_relationship" target="term"/>
+<edge source="seqfeature_qualifier_value" target="ontology_term"/>
+<edge source="seqfeature_location" target="seqfeature"/>
+<edge source="bioentry_reference" target="reference"/>
+<edge source="bioentry_keywords" target="bioentry"/>
+<edge source="seqfeature_relationship" target="ontology_term"/>
+<edge source="seqfeature_qualifier_value" target="seqfeature"/>
+<edge source="term_dbxref" target="dbxref"/>
+<edge source="seqfeature" target="bioentry"/>
+<edge source="dbxref_qualifier_value" target="dbxref"/>
+<edge source="location" target="seqfeature"/>
+<edge source="biosequence" target="bioentry"/>
+<edge source="bioentry_path" target="bioentry"/>
+<edge source="ontology_term" target="ontology"/>
+<edge source="ontology_path" target="term"/>
+<edge source="bioentry_direct_links" target="bioentry"/>
+<edge source="location_qualifier_value" target="ontology_term"/>
+<edge source="bioentry_reference" target="bioentry"/>
+<edge source="comment" target="bioentry"/>
+<edge source="bioentry_qualifier_value" target="term"/>
+<edge source="taxon_name" target="taxon"/>
+<edge source="term_relationship" target="ontology"/>
+<edge source="term_dbxref" target="term"/>
+<edge source="bioentry_path" target="term"/>
+<edge source="bioentry_path" target="ontology_term"/>
+<edge source="seqfeature_location" target="ontology_term"/>
+<edge source="location_qualifier_value" target="location"/>
+<edge source="term_synonym" target="term"/>
+<edge source="bioentry_relationship" target="ontology_term"/>
+<edge source="bioentry_relationship" target="term"/>
+<edge source="bioentry_dbxref" target="dbxref"/>
+<edge source="bioentry_relationship" target="bioentry"/>
+<edge source="location" target="term"/>
+<edge source="seqfeature" target="ontology_term"/>
+<edge source="term_path" target="term"/>
+<edge source="ontology_relationship" target="ontology_term"/>
+<edge source="term" target="ontology"/>
+<edge source="bioentry_description" target="bioentry"/>
+<edge source="ontology_dbxref" target="ontology_term"/>
+<edge source="location_qualifier_value" target="term"/>
+<edge source="taxon" target="taxon"/>
+<edge source="seqfeature_relationship" target="term"/>
+<edge source="ontology_term" target="ontology_term"/>
+<edge source="seqfeature_path" target="seqfeature"/>
+<edge source="seqfeature_path" target="ontology_term"/>
+<edge source="bioentry_dbxref" target="bioentry"/>
+<edge source="bioentry_taxa" target="taxa"/>
+<edge source="dbxref_qualifier_value" target="ontology_term"/>
+<edge source="reference" target="dbxref"/>
+<edge source="seqfeature_path" target="term"/>
+<edge source="dbxref_qualifier_value" target="term"/>
+<edge source="bioentry_taxa" target="bioentry"/>
+<edge source="location" target="dbxref"/>
+<edge source="seqfeature_location" target="dbxref"/>
+<edge source="seqfeature_qualifier_value" target="seqfeature_qualifier"/>
+<edge source="term_path" target="ontology"/>
+<edge source="term_relationship_term" target="term_relationship"/>
+<edge source="term_relationship_term" target="term"/>
+<edge source="bioentry_qualifier_value" target="ontology_term"/>
+<edge source="remote_seqfeature_name" target="seqfeature_location"/>
+<edge source="bioentry_qualifier_value" target="bioentry"/>
+<edge source="ontology_path" target="ontology_term"/>
+</graph>
+</graphml>

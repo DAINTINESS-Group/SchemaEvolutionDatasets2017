@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1063432205.sql" newVersion="1063918093.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>msg_hdr_ip</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>msg_raw_ip</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1063918093.sql" newVersion="1064961833.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pic_hdr_ip</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pic_raw_ip</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1064961833.sql" newVersion="1065051572.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_banned</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ban_id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>expiry</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>ip_addr</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1065051572.sql" newVersion="1066282448.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>thumb</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_exif</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>exifData</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>filename</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1066282448.sql" newVersion="1075630671.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_filetypes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>CHAR(15)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>extension</name>
+                <type>CHAR(7)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>mime</name>
+                <type>CHAR(30)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1075630671.sql" newVersion="1078065017.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_ecards</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>date</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>eid</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>link</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>recipient_email</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>recipient_name</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sender_email</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sender_ip</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sender_name</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1078065017.sql" newVersion="1078125890.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>keyword</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1078125890.sql" newVersion="1079907675.sql"/>
+    <transition oldVersion="1079907675.sql" newVersion="1080709066.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_temp_data</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>encoded_string</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timestamp</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>unique_ID</name>
+                <type>CHAR(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_usergroups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>custom_user_upload</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>num_URI_upload</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>num_file_upload</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>upload_form_config</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1080709066.sql" newVersion="1086369394.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_group_list</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_lang</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1086369394.sql" newVersion="1086848415.sql">
+        <update type="KeyChange">
+            <table>
+                <name>CPG_filetypes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>extension</name>
+                <type>CHAR(7)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1086848415.sql" newVersion="1087193328.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_favpics</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1087193328.sql" newVersion="1087400215.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>lasthit_ip</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1087400215.sql" newVersion="1087474114.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_favpics</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_favpics</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_favpics</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1087474114.sql" newVersion="1087629270.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_dict</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>keyId</name>
+                <type>BIGINT(20)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>keyword</name>
+                <type>VARCHAR(60)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1087629270.sql" newVersion="1087640779.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_interests</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_location</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_occupation</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_website</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_profile1</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_profile2</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_profile3</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_profile4</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_profile5</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_profile6</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1087640779.sql" newVersion="1087938735.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_profile6</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1087938735.sql" newVersion="1088594299.sql"/>
+    <transition oldVersion="1088594299.sql" newVersion="1089090208.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alb_password</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1089090208.sql" newVersion="1089786814.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_plugins</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(64)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>path</name>
+                <type>VARCHAR(128)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>plugin_id</name>
+                <type>INT(10)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>priority</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1089786814.sql" newVersion="1091797667.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alb_password_hint</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1091797667.sql" newVersion="1092004679.sql"/>
+    <transition oldVersion="1092004679.sql" newVersion="1092005267.sql"/>
+    <transition oldVersion="1092005267.sql" newVersion="1092083664.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_banned</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>brute_force</name>
+                <type>TINYINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1092083664.sql" newVersion="1092371107.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>position</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1092371107.sql" newVersion="1094702316.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_bridge</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(40)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1094702316.sql" newVersion="1096977771.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_hit_stats</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>browser</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>ip</name>
+                <type>VARCHAR(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>os</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pid</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>referer</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sdate</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>search_phrase</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_vote_stats</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>browser</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>ip</name>
+                <type>VARCHAR(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>os</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pid</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>rating</name>
+                <type>SMALLINT(6)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>referer</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sdate</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1096977771.sql" newVersion="1097150148.sql"/>
+    <transition oldVersion="1097150148.sql" newVersion="1097253895.sql"/>
+    <transition oldVersion="1097253895.sql" newVersion="1099322400.sql"/>
+    <transition oldVersion="1099322400.sql" newVersion="1100284292.sql"/>
+    <transition oldVersion="1100284292.sql" newVersion="1102847057.sql"/>
+    <transition oldVersion="1102847057.sql" newVersion="1104391042.sql"/>
+    <transition oldVersion="1104391042.sql" newVersion="1106708446.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_filetypes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>player</name>
+                <type>VARCHAR(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>galleryicon</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_password</name>
+                <type>VARCHAR(40)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1106708446.sql" newVersion="1107386981.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>remember</name>
+                <type>INT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>session_id</name>
+                <type>VARCHAR(40)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>time</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1107386981.sql" newVersion="1111481648.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mtime</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1111481648.sql" newVersion="1116259822.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>last_addition</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>stat_uptodate</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1116259822.sql" newVersion="1116260877.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pic_count</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alb_count</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pic_count</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>stat_uptodate</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>subcat_count</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1116260877.sql" newVersion="1123428868.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>randpos</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1123428868.sql" newVersion="1130202984.sql"/>
+    <transition oldVersion="1130202984.sql" newVersion="1131625059.sql"/>
+    <transition oldVersion="1131625059.sql" newVersion="1132945996.sql"/>
+    <transition oldVersion="1132945996.sql" newVersion="1133162697.sql"/>
+    <transition oldVersion="1133162697.sql" newVersion="1140788221.sql"/>
+    <transition oldVersion="1140788221.sql" newVersion="1145276246.sql"/>
+    <transition oldVersion="1145276246.sql" newVersion="1148921348.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>approval</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1148921348.sql" newVersion="1150088994.sql"/>
+    <transition oldVersion="1150088994.sql" newVersion="1155752591.sql"/>
+    <transition oldVersion="1155752591.sql" newVersion="1155883947.sql"/>
+    <transition oldVersion="1155883947.sql" newVersion="1160968074.sql"/>
+    <transition oldVersion="1160968074.sql" newVersion="1160971763.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>moderator_group</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1160971763.sql" newVersion="1161386007.sql"/>
+    <transition oldVersion="1161386007.sql" newVersion="1163829844.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alb_hits</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1163829844.sql" newVersion="1167210379.sql"/>
+    <transition oldVersion="1167210379.sql" newVersion="1169138893.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_vote_stats</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>uid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1169138893.sql" newVersion="1170924235.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_temp_messages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>message</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>message_id</name>
+                <type>VARCHAR(40)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>time</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1170924235.sql" newVersion="1170958245.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_temp_messages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>message_id</name>
+                <type>VARCHAR(80)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1170958245.sql" newVersion="1174225765.sql"/>
+    <transition oldVersion="1174225765.sql" newVersion="1180916141.sql"/>
+    <transition oldVersion="1180916141.sql" newVersion="1184840085.sql"/>
+    <transition oldVersion="1184840085.sql" newVersion="1185547485.sql"/>
+    <transition oldVersion="1185547485.sql" newVersion="1187593995.sql"/>
+    <transition oldVersion="1187593995.sql" newVersion="1190287880.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_filetypes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mime</name>
+                <type>CHAR(70)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1190287880.sql" newVersion="1190288499.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_filetypes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mime</name>
+                <type>VARCHAR(70)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1190288499.sql" newVersion="1197617749.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>owner</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_categorymap</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>COMMENT</name>
+                <type>'ID OF THE GROUP'</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>cid</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>group_id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1197617749.sql" newVersion="1198272779.sql"/>
+    <transition oldVersion="1198272779.sql" newVersion="1201347720.sql"/>
+    <transition oldVersion="1201347720.sql" newVersion="1202687578.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_categorymap</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>COMMENT</name>
+                <type>'ID OF THE GROUP'</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1202687578.sql" newVersion="1213560917.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>depth</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>lft</name>
+                <type>MEDIUMINT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>rgt</name>
+                <type>MEDIUMINT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1213560917.sql" newVersion="1217574918.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_hit_stats</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>uid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1217574918.sql" newVersion="1222968796.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>CPG_languages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>available</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>complete</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>custom_name</name>
+                <type>VARCHAR(70)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>enabled</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>english_name</name>
+                <type>VARCHAR(70)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>flag</name>
+                <type>VARCHAR(15)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>lang_id</name>
+                <type>VARCHAR(40)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>native_name</name>
+                <type>VARCHAR(70)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1222968796.sql" newVersion="1224325992.sql"/>
+    <transition oldVersion="1224325992.sql" newVersion="1224832417.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_language</name>
+                <type>VARCHAR(40)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1224832417.sql" newVersion="1225479992.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_filetypes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mime</name>
+                <type>CHAR(254)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1225479992.sql" newVersion="1226420617.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_banned</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>email</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1226420617.sql" newVersion="1227527290.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>spam</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1227527290.sql" newVersion="1228984226.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_usergroups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>access_level</name>
+                <type>TINYINT(4)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+        <update type="KeyChange">
+            <table>
+                <name>CPG_usergroups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>group_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1228984226.sql" newVersion="1229031171.sql"/>
+    <transition oldVersion="1229031171.sql" newVersion="1229034071.sql">
+        <update type="KeyChange">
+            <table>
+                <name>CPG_usergroups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>access_level</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>group_id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1229034071.sql" newVersion="1229423025.sql"/>
+    <transition oldVersion="1229423025.sql" newVersion="1229807770.sql"/>
+    <transition oldVersion="1229807770.sql" newVersion="1229809003.sql"/>
+    <transition oldVersion="1229809003.sql" newVersion="1231231359.sql"/>
+    <transition oldVersion="1231231359.sql" newVersion="1231323827.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_languages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>abbr</name>
+                <type>VARCHAR(15)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1231323827.sql" newVersion="1232055061.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_exif</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>filename</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_exif</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1232055061.sql" newVersion="1232402633.sql"/>
+    <transition oldVersion="1232402633.sql" newVersion="1238025011.sql">
+        <update type="TypeChange">
+            <table>
+                <name>CPG_sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>session_id</name>
+                <type>CHAR(32)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1238025011.sql" newVersion="1238091553.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>CPG_temp_data</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>encoded_string</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timestamp</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>unique_ID</name>
+                <type>CHAR(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1238091553.sql" newVersion="1238256886.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_usergroups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>custom_user_upload</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>num_URI_upload</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>num_file_upload</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>upload_form_config</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1238256886.sql" newVersion="1238848254.sql"/>
+    <transition oldVersion="1238848254.sql" newVersion="1244131380.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>owner_name</name>
+                <type>VARCHAR(40)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1244131380.sql" newVersion="1248416776.sql"/>
+    <transition oldVersion="1248416776.sql" newVersion="1249328692.sql"/>
+    <transition oldVersion="1249328692.sql" newVersion="1260521376.sql"/>
+    <transition oldVersion="1260521376.sql" newVersion="1262428709.sql"/>
+    <transition oldVersion="1262428709.sql" newVersion="1264866763.sql"/>
+    <transition oldVersion="1264866763.sql" newVersion="1269329931.sql"/>
+    <transition oldVersion="1269329931.sql" newVersion="1274877055.sql"/>
+    <transition oldVersion="1274877055.sql" newVersion="1275250484.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_pictures</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>guest_token</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1275250484.sql" newVersion="1275567273.sql"/>
+    <transition oldVersion="1275567273.sql" newVersion="1275893861.sql"/>
+    <transition oldVersion="1275893861.sql" newVersion="1281088776.sql"/>
+    <transition oldVersion="1281088776.sql" newVersion="1281437612.sql"/>
+    <transition oldVersion="1281437612.sql" newVersion="1284639946.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>CPG_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_email_valid</name>
+                <type>ENUM('YES','')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1284639946.sql" newVersion="1289419460.sql"/>
+    <transition oldVersion="1289419460.sql" newVersion="1291099064.sql"/>
+    <transition oldVersion="1291099064.sql" newVersion="1291134332.sql"/>
+    <transition oldVersion="1291134332.sql" newVersion="1293997462.sql"/>
+    <transition oldVersion="1293997462.sql" newVersion="1294062193.sql"/>
+    <transition oldVersion="1294062193.sql" newVersion="1312196284.sql"/>
+    <transition oldVersion="1312196284.sql" newVersion="1312274230.sql"/>
+    <transition oldVersion="1312274230.sql" newVersion="1314880987.sql"/>
+    <transition oldVersion="1314880987.sql" newVersion="1314889720.sql"/>
+    <transition oldVersion="1314889720.sql" newVersion="1326198018.sql"/>
+    <transition oldVersion="1326198018.sql" newVersion="1326210484.sql"/>
+    <transition oldVersion="1326210484.sql" newVersion="1333031555.sql"/>
+    <transition oldVersion="1333031555.sql" newVersion="1333036371.sql"/>
+</transitions>

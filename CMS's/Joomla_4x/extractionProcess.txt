@@ -1,0 +1,37 @@
+2019-04-04
+Donloaded branch 4.0 from github.com/joomla, specifically
+  https://github.com/joomla/joomla-cms/tree/4.0-dev
+Then, tracked the history of the installation/sql/mysql/joomla.sql file
+
+Problems not handled
+fatal: Path 'installation/sql/mysql/joomla.sql' exists on disk, but not in '4b94a407de9bf651c966f90820b63f594d4022b7'.
+
+
+Problems handled
+----------------------------
+1. Removed 1243464270.sql from the history of the schema as it was empty (possibly related to the above fatal error?)
+
+2. Replaced non parsable tables, by replacing "." with "_"
+1226477780.sql:CREATE TABLE  `moffats_joomla_trunk_16`.`jos_tasks` (
+1226477780.sql:CREATE TABLE  `moffats_joomla_trunk_16`.`jos_tasksets` (
+1226883633.sql:CREATE TABLE  `#__joomla_trunk_16`.`jos_tasks` (
+1226883633.sql:CREATE TABLE  `#__joomla_trunk_16`.`jos_tasksets` (
+
+3. Fixed the missing opening and ending ` from table #__migration_backlinks
+sed -i 's/CREATE TABLE #__migration_backlinks/CREATE TABLE `#__migration_backlinks`/g' *
+
+1189663846.sql
+1189688654.sql
+1193361511.sql
+1194889075.sql
+1195880367.sql
+1197216188.sql
+1197290706.sql
+1197660761.sql
+1198319196.sql
+1199576081.sql
+1205923026.sql
+1224181036.sql
+1224636823.sql
+
+

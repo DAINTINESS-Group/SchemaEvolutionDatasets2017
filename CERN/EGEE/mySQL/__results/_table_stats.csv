@@ -1,0 +1,13 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+t_schema_vers;17;0;16;0;3;3;3.0
+t_vo_acl;4;14;33;2;2;-1;1.25
+t_transfer;13;7;29;3;11;-1;8.230769
+t_channel_acl;10;7;16;0;2;2;2.0
+t_channel;23;0;29;15;6;-1;6.7391305
+t_job_log;2;0;1;0;6;6;6.0
+t_channel_vo_share;10;7;16;0;3;3;3.0
+t_logical;2;0;1;0;4;4;4.0
+t_file;23;0;27;20;9;-1;8.73913
+t_agent;1;16;16;0;8;8;8.0
+t_job;25;0;31;17;6;-1;8.12
+t_trace;12;7;29;2;5;-1;4.0

@@ -1,0 +1,217 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+galaxia_activities	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+galaxia_activity_roles	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+galaxia_instance_activities	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+galaxia_instance_comments	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+galaxia_instances	152	0	-	151	10	10	10	1	0	0	0	0		20	0	20
+galaxia_processes	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+galaxia_roles	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+galaxia_transitions	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+galaxia_user_roles	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+galaxia_workitems	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+messu_archive	152	0	-	151	15	15	15	1	0	0	0	0		20	0	20
+messu_messages	152	0	-	151	15	15	15	1	0	0	0	0		20	0	20
+messu_sent	152	0	-	151	15	15	15	1	0	0	0	0		20	0	20
+sessions	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_actionlog	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_actionlog_conf	152	0	-	151	3	4	3.88	1.33	1	1	0.01	0.01	1	20	1	21
+tiki_actionlog_params	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_article_types	152	0	-	151	20	20	20	1	0	0	0	0		20	0	20
+tiki_articles	152	0	-	151	32	32	32	1	0	0	0	0		20	0	20
+tiki_banners	152	0	-	151	29	29	29	1	0	0	0	0		20	0	20
+tiki_banning	152	0	-	151	13	13	13	1	0	0	0	0		20	0	20
+tiki_banning_sections	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_blog_activity	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_blog_posts	152	0	-	151	10	10	10	1	2	2	0.01	0.01	1	20	1	21
+tiki_blog_posts_images	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_blogs	152	0	-	151	18	18	18	1	0	0	0	0		20	0	20
+tiki_calendar_categories	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_calendar_items	152	0	-	151	16	16	16	1	0	0	0	0		20	0	20
+tiki_calendar_locations	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_calendar_options	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_calendar_roles	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_calendars	152	0	-	151	13	13	13	1	0	0	0	0		20	0	20
+tiki_categories	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_categorized_objects	152	0	-	151	1	1	1	1	0	0	0	0		20	0	20
+tiki_category_objects	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_category_sites	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_chart_items	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_charts	152	0	-	151	18	18	18	1	0	0	0	0		20	0	20
+tiki_charts_rankings	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+tiki_charts_votes	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_chat_channels	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+tiki_chat_messages	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_chat_users	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_comments	152	0	-	151	20	21	20.28	1.05	2	2	0.01	0.01	1	20	1	21
+tiki_content	152	0	-	151	2	3	2.33	1.5	1	1	0.01	0.01	1	20	1	21
+tiki_content_templates	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_content_templates_sections	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_contributions	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_contributions_assigned	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_cookies	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_copyrights	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_directory_categories	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_directory_search	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_directory_sites	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_download	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_drawings	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_dsn	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_dynamic_variables	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_eph	1	0	0	0	10	10	10	1	0	0	0	0		10	0	10
+tiki_events	152	0	-	151	6	6	6	1	1	1	0.01	0.01	1	20	1	21
+tiki_extwiki	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_faq_questions	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_faqs	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_featured_links	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_file_galleries	152	0	-	151	27	35	30.58	1.3	10	5	0.07	0.03	2	20	1	21
+tiki_file_handlers	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_files	152	0	-	151	24	24	24	1	2	1	0.01	0.01	2	20	1	21
+tiki_forum_attachments	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_forum_reads	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_forums	152	0	-	151	54	57	56.14	1.06	4	3	0.03	0.02	1.33	20	1	21
+tiki_forums_queue	152	0	-	151	13	14	13.55	1.08	1	1	0.01	0.01	1	20	1	21
+tiki_forums_reported	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_freetagged_objects	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_freetags	152	0	-	151	3	4	3.22	1.33	1	1	0.01	0.01	1	20	1	21
+tiki_friends	152	0	-	151	2	2	2	1	2	1	0.01	0.01	2	20	1	21
+tiki_friendship_requests	152	0	-	151	3	3	3	1	2	1	0.01	0.01	2	20	1	21
+tiki_galleries	152	0	-	151	29	29	29	1	0	0	0	0		20	0	20
+tiki_galleries_scales	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_games	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_group_inclusion	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_history	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_hotwords	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_html_pages	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_html_pages_dynamic_zones	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_images	152	0	-	151	10	10	10	1	0	0	0	0		20	0	20
+tiki_images_data	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_integrator_reps	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_integrator_rules	152	0	-	151	10	10	10	1	0	0	0	0		20	0	20
+tiki_language	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_languages	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_link_cache	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_links	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_live_support_events	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_live_support_message_comments	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_live_support_messages	152	0	-	151	12	12	12	1	0	0	0	0		20	0	20
+tiki_live_support_modules	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_live_support_operators	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_live_support_requests	152	0	-	151	14	14	14	1	0	0	0	0		20	0	20
+tiki_logs	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_mail_events	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_mailin_accounts	152	0	-	151	17	17	17	1	0	0	0	0		20	0	20
+tiki_menu_languages	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_menu_options	152	0	-	151	9	10	9.77	1.11	1	1	0.01	0.01	1	20	1	21
+tiki_menus	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_minical_events	152	0	-	151	10	10	10	1	0	0	0	0		20	0	20
+tiki_minical_topics	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_modules	152	0	-	151	9	10	9.67	1.11	2	3	0.01	0.02	0.67	20	1	21
+tiki_mypage	91	61	-	151	4	18	15.26	4.5	14	6	0.15	0.07	2.33	20	2	22
+tiki_mypage_types	82	70	-	151	5	13	12.67	2.6	9	4	0.11	0.05	2.25	20	2	22
+tiki_mypage_types_components	82	70	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_mypagewin	91	61	-	151	11	15	14.45	1.36	7	4	0.08	0.04	1.75	20	1	21
+tiki_newsletter_groups	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_newsletter_included	69	83	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_newsletter_subscriptions	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_newsletters	152	0	-	151	13	14	13.75	1.08	1	1	0.01	0.01	1	20	1	21
+tiki_newsreader_marks	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_newsreader_servers	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_object_ratings	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_objects	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+tiki_page_drafts	152	0	-	151	6	6	6	1	2	1	0.01	0.01	2	20	1	21
+tiki_page_footnotes	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_pages	152	0	-	151	23	24	23.06	1.04	2	2	0.01	0.01	1	20	1	21
+tiki_pages_changes	22	130	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_pages_translation_bits	38	114	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_pageviews	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_poll_objects	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_poll_options	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_polls	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_preferences	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_private_messages	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_programmed_content	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_quicktags	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_quiz_question_options	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_quiz_questions	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_quiz_results	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_quiz_stats	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_quiz_stats_sum	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_quizzes	152	0	-	151	37	37	37	1	0	0	0	0		20	0	20
+tiki_received_articles	152	0	-	151	23	23	23	1	0	0	0	0		20	0	20
+tiki_received_pages	152	0	-	151	8	15	10.38	1.88	7	2	0.05	0.01	3.5	20	1	21
+tiki_referer_stats	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_registration_fields	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_related_categories	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_rss_feeds	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_rss_modules	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_score	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_search_stats	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_searchindex	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_searchsyllable	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_searchwords	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_secdb	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_semaphores	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_sent_newsletters	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_sent_newsletters_errors	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_sessions	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_sheet_layout	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_sheet_values	152	0	-	151	11	11	11	1	1	1	0.01	0.01	1	20	1	21
+tiki_sheets	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_shoutbox	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_shoutbox_words	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_stats	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_structure_versions	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_structures	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_submissions	152	0	-	151	33	33	33	1	0	0	0	0		20	0	20
+tiki_suggested_faq_questions	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_survey_question_options	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_survey_questions	152	0	-	151	9	9	9	1	0	0	0	0		20	0	20
+tiki_surveys	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_tags	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_theme_control_categs	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_theme_control_objects	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_theme_control_sections	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_topics	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+tiki_tracker_fields	152	0	-	151	14	15	14.34	1.07	1	1	0.01	0.01	1	20	1	21
+tiki_tracker_item_attachments	152	0	-	151	13	13	13	1	3	2	0.02	0.01	1.5	20	1	21
+tiki_tracker_item_comments	152	0	-	151	6	6	6	1	1	1	0.01	0.01	1	20	1	21
+tiki_tracker_item_fields	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_tracker_items	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_tracker_options	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_trackers	152	0	-	151	14	14	14	1	0	0	0	0		20	0	20
+tiki_translated_objects	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_untranslated	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_user_answers	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_user_answers_uploads	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_user_assigned_modules	152	0	-	151	5	6	5.61	1.2	2	2	0.01	0.01	1	20	1	21
+tiki_user_bookmarks_folders	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_user_bookmarks_urls	152	0	-	151	7	7	7	1	0	0	0	0		20	0	20
+tiki_user_mail_accounts	152	0	-	151	12	12	12	1	0	0	0	0		20	0	20
+tiki_user_menus	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_user_modules	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_user_notes	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+tiki_user_postings	152	0	-	151	5	5	5	1	0	0	0	0		20	0	20
+tiki_user_preferences	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_user_quizzes	152	0	-	151	8	8	8	1	0	0	0	0		20	0	20
+tiki_user_taken_quizzes	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_user_tasks	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_user_tasks_history	152	0	-	151	15	15	15	1	0	0	0	0		20	0	20
+tiki_user_votings	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_user_watches	152	0	-	151	8	8	8	1	2	1	0.01	0.01	2	20	1	21
+tiki_userfiles	152	0	-	151	11	11	11	1	0	0	0	0		20	0	20
+tiki_userpoints	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+tiki_users	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_users_score	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+tiki_webmail_contacts	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_webmail_contacts_ext	143	9	-	151	4	4	4	1	3	2	0.02	0.01	1.5	20	1	21
+tiki_webmail_contacts_fields	142	10	-	151	2	5	4.98	2.5	4	2	0.03	0.01	2	20	1	21
+tiki_webmail_contacts_groups	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+tiki_webmail_messages	152	0	-	151	6	6	6	1	0	0	0	0		20	0	20
+tiki_wiki_attachments	152	0	-	151	11	11	11	1	2	1	0.01	0.01	2	20	1	21
+tiki_zones	152	0	-	151	1	1	1	1	0	0	0	0		20	0	20
+users_grouppermissions	152	0	-	151	3	3	3	1	0	0	0	0		20	0	20
+users_groups	152	0	-	151	9	12	10.06	1.33	5	3	0.03	0.02	1.67	20	1	21
+users_objectpermissions	152	0	-	151	4	4	4	1	0	0	0	0		20	0	20
+users_permissions	152	0	-	151	4	5	4.89	1.25	1	1	0.01	0.01	1	20	1	21
+users_usergroups	152	0	-	151	2	2	2	1	0	0	0	0		20	0	20
+users_users	152	0	-	151	20	25	22.86	1.25	16	9	0.11	0.06	1.78	20	2	22

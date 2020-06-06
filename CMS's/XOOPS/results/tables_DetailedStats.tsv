@@ -1,0 +1,33 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+avatar	8	0	-	7	8	8	8	1	0	0	0	0		20	0	20
+avatar_user_link	8	0	-	7	2	2	2	1	0	0	0	0		20	0	20
+banner	8	0	-	7	10	10	10	1	0	0	0	0		20	0	20
+bannerclient	8	0	-	7	7	7	7	1	0	0	0	0		20	0	20
+bannerfinish	8	0	-	7	6	6	6	1	0	0	0	0		20	0	20
+block_module_link	8	0	-	7	2	2	2	1	0	0	0	0		20	0	20
+cache_model	3	5	-	7	3	3	3	1	6	1	2	0.33	6	20	2	22
+config	8	0	-	7	10	10	10	1	2	1	0.25	0.12	2	20	1	21
+configcategory	8	0	-	7	3	3	3	1	1	1	0.12	0.12	1	20	1	21
+configoption	8	0	-	7	4	4	4	1	0	0	0	0		20	0	20
+group_permission	8	0	-	7	5	5	5	1	0	0	0	0		20	0	20
+groups	8	0	-	7	4	4	4	1	0	0	0	0		20	0	20
+groups_users_link	8	0	-	7	3	3	3	1	0	0	0	0		20	0	20
+image	8	0	-	7	8	8	8	1	0	0	0	0		20	0	20
+imagebody	8	0	-	7	2	2	2	1	0	0	0	0		20	0	20
+imagecategory	8	0	-	7	9	9	9	1	0	0	0	0		20	0	20
+imgset	8	0	-	7	3	3	3	1	0	0	0	0		20	0	20
+imgset_tplset_link	8	0	-	7	2	2	2	1	0	0	0	0		20	0	20
+imgsetimg	8	0	-	7	4	4	4	1	0	0	0	0		20	0	20
+modules	8	0	-	7	13	13	13	1	0	0	0	0		20	0	20
+newblocks	8	0	-	7	20	20	20	1	0	0	0	0		20	0	20
+online	8	0	-	7	5	5	5	1	0	0	0	0		20	0	20
+priv_msgs	8	0	-	7	8	8	8	1	0	0	0	0		20	0	20
+ranks	8	0	-	7	6	6	6	1	0	0	0	0		20	0	20
+session	8	0	-	7	4	4	4	1	0	0	0	0		20	0	20
+smiles	8	0	-	7	5	5	5	1	0	0	0	0		20	0	20
+tplfile	8	0	-	7	9	9	9	1	0	0	0	0		20	0	20
+tplset	8	0	-	7	5	5	5	1	0	0	0	0		20	0	20
+tplsource	8	0	-	7	2	2	2	1	0	0	0	0		20	0	20
+users	8	0	-	7	31	31	31	1	0	0	0	0		20	0	20
+xoopscomments	8	0	-	7	20	20	20	1	0	0	0	0		20	0	20
+xoopsnotifications	8	0	-	7	7	7	7	1	0	0	0	0		20	0	20

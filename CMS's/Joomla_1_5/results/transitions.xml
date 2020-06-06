@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="rev_006297.sql" newVersion="rev_006316.sql"/>
+    <transition oldVersion="rev_006316.sql" newVersion="rev_006396.sql"/>
+    <transition oldVersion="rev_006396.sql" newVersion="rev_006452.sql"/>
+    <transition oldVersion="rev_006452.sql" newVersion="rev_006659.sql"/>
+    <transition oldVersion="rev_006659.sql" newVersion="rev_006691.sql"/>
+    <transition oldVersion="rev_006691.sql" newVersion="rev_006692.sql"/>
+    <transition oldVersion="rev_006692.sql" newVersion="rev_006694.sql"/>
+    <transition oldVersion="rev_006694.sql" newVersion="rev_006700.sql"/>
+    <transition oldVersion="rev_006700.sql" newVersion="rev_006701.sql"/>
+    <transition oldVersion="rev_006701.sql" newVersion="rev_006716.sql"/>
+    <transition oldVersion="rev_006716.sql" newVersion="rev_006722.sql"/>
+    <transition oldVersion="rev_006722.sql" newVersion="rev_006985.sql"/>
+    <transition oldVersion="rev_006985.sql" newVersion="rev_007033.sql"/>
+    <transition oldVersion="rev_007033.sql" newVersion="rev_007104.sql"/>
+    <transition oldVersion="rev_007104.sql" newVersion="rev_007106.sql"/>
+    <transition oldVersion="rev_007106.sql" newVersion="rev_007122.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__banner</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__contact_details</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__content</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__menu</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__newsfeeds</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__polls</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__weblinks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_007122.sql" newVersion="rev_007127.sql"/>
+    <transition oldVersion="rev_007127.sql" newVersion="rev_007239.sql"/>
+    <transition oldVersion="rev_007239.sql" newVersion="rev_007240.sql"/>
+    <transition oldVersion="rev_007240.sql" newVersion="rev_007300.sql"/>
+    <transition oldVersion="rev_007300.sql" newVersion="rev_007332.sql"/>
+    <transition oldVersion="rev_007332.sql" newVersion="rev_007427.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>#__template_positions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>description</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>position</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="rev_007427.sql" newVersion="rev_007618.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>#__core_acl_aro_sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>#__core_acl_aro_sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>section_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="rev_007618.sql" newVersion="rev_007803.sql"/>
+    <transition oldVersion="rev_007803.sql" newVersion="rev_008237.sql">
+        <update type="TypeChange">
+            <table>
+                <name>#__session</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>LONGTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_008237.sql" newVersion="rev_008260.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>#__core_acl_aro_map</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>acl_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>section_value</name>
+                <type>VARCHAR(230)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008260.sql" newVersion="rev_008460.sql"/>
+    <transition oldVersion="rev_008460.sql" newVersion="rev_008540.sql"/>
+    <transition oldVersion="rev_008540.sql" newVersion="rev_008585.sql"/>
+    <transition oldVersion="rev_008585.sql" newVersion="rev_008588.sql"/>
+    <transition oldVersion="rev_008588.sql" newVersion="rev_008776.sql"/>
+    <transition oldVersion="rev_008776.sql" newVersion="rev_008856.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>#__migration_backlinks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>itemid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>newurl</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>sefurl</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>url</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008856.sql" newVersion="rev_008859.sql"/>
+    <transition oldVersion="rev_008859.sql" newVersion="rev_009280.sql"/>
+    <transition oldVersion="rev_009280.sql" newVersion="rev_009340.sql"/>
+    <transition oldVersion="rev_009340.sql" newVersion="rev_009426.sql"/>
+    <transition oldVersion="rev_009426.sql" newVersion="rev_009540.sql"/>
+    <transition oldVersion="rev_009540.sql" newVersion="rev_009569.sql"/>
+    <transition oldVersion="rev_009569.sql" newVersion="rev_009638.sql"/>
+    <transition oldVersion="rev_009638.sql" newVersion="rev_009728.sql"/>
+    <transition oldVersion="rev_009728.sql" newVersion="rev_009898.sql"/>
+    <transition oldVersion="rev_009898.sql" newVersion="rev_009904.sql"/>
+    <transition oldVersion="rev_009904.sql" newVersion="rev_010124.sql"/>
+    <transition oldVersion="rev_010124.sql" newVersion="rev_010131.sql"/>
+    <transition oldVersion="rev_010131.sql" newVersion="rev_010255.sql"/>
+</transitions>

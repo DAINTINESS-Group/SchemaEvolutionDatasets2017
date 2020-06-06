@@ -1,0 +1,38 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+#__banner	46	0	-	45	23	24	23.65	1.04	1	1	0.02	0.02	1	20	1	21
+#__bannerclient	46	0	-	45	8	8	8	1	0	0	0	0		20	0	20
+#__bannertrack	46	0	-	45	3	3	3	1	0	0	0	0		20	0	20
+#__categories	46	0	-	45	16	17	16.65	1.06	1	1	0.02	0.02	1	20	1	21
+#__components	46	0	-	45	13	13	13	1	0	0	0	0		20	0	20
+#__contact_details	46	0	-	45	25	26	25.65	1.04	1	1	0.02	0.02	1	20	1	21
+#__content	46	0	-	45	29	30	29.65	1.03	1	1	0.02	0.02	1	20	1	21
+#__content_frontpage	46	0	-	45	2	2	2	1	0	0	0	0		20	0	20
+#__content_rating	46	0	-	45	4	4	4	1	0	0	0	0		20	0	20
+#__core_acl_aro	46	0	-	45	6	6	6	1	0	0	0	0		20	0	20
+#__core_acl_aro_groups	46	0	-	45	6	6	6	1	0	0	0	0		20	0	20
+#__core_acl_aro_map	20	26	-	45	3	3	3	1	0	0	0	0		20	0	20
+#__core_acl_aro_sections	46	0	-	45	5	5	5	1	2	1	0.04	0.02	2	20	1	21
+#__core_acl_groups_aro_map	46	0	-	45	3	3	3	1	0	0	0	0		20	0	20
+#__core_log_items	46	0	-	45	4	4	4	1	0	0	0	0		20	0	20
+#__core_log_searches	46	0	-	45	2	2	2	1	0	0	0	0		20	0	20
+#__groups	46	0	-	45	2	2	2	1	0	0	0	0		20	0	20
+#__menu	46	0	-	45	20	21	20.65	1.05	1	1	0.02	0.02	1	20	1	21
+#__menu_types	46	0	-	45	4	4	4	1	0	0	0	0		20	0	20
+#__messages	46	0	-	45	9	9	9	1	0	0	0	0		20	0	20
+#__messages_cfg	46	0	-	45	3	3	3	1	0	0	0	0		20	0	20
+#__migration_backlinks	14	32	-	45	5	5	5	1	0	0	0	0		20	0	20
+#__modules	46	0	-	45	16	16	16	1	0	0	0	0		20	0	20
+#__modules_menu	46	0	-	45	2	2	2	1	0	0	0	0		20	0	20
+#__newsfeeds	46	0	-	45	12	13	12.65	1.08	1	1	0.02	0.02	1	20	1	21
+#__plugins	46	0	-	45	12	12	12	1	0	0	0	0		20	0	20
+#__poll_data	46	0	-	45	4	4	4	1	0	0	0	0		20	0	20
+#__poll_date	46	0	-	45	4	4	4	1	0	0	0	0		20	0	20
+#__poll_menu	46	0	-	45	2	2	2	1	0	0	0	0		20	0	20
+#__polls	46	0	-	45	8	9	8.65	1.12	1	1	0.02	0.02	1	20	1	21
+#__sections	46	0	-	45	14	15	14.65	1.07	1	1	0.02	0.02	1	20	1	21
+#__session	46	0	-	45	9	9	9	1	1	1	0.02	0.02	1	20	1	21
+#__stats_agents	46	0	-	45	3	3	3	1	0	0	0	0		20	0	20
+#__template_positions	22	0	21	21	3	3	3	1	0	0	0	0		10	0	10
+#__templates_menu	46	0	-	45	3	3	3	1	0	0	0	0		20	0	20
+#__users	46	0	-	45	13	13	13	1	0	0	0	0		20	0	20
+#__weblinks	46	0	-	45	15	16	15.65	1.07	1	1	0.02	0.02	1	20	1	21

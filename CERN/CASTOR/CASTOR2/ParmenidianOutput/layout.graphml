@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml">
+<key id="x" for="node">
+<default>0</default>
+</key>
+<key id="y" for="node">
+<default>0</default>
+</key>
+<graph edgedefault="directed">
+<node id="Files2Delete">
+<data key="x">-63.67088782879955</data>
+<data key="y">1579.3457352639398</data>
+</node>
+<node id="TapeAccessSpecification">
+<data key="x">-487.96528594327515</data>
+<data key="y">1493.9111969901091</data>
+</node>
+<node id="TapeDriveCompability">
+<data key="x">453.87115832727636</data>
+<data key="y">1584.7613232486829</data>
+</node>
+<node id="GcPolicy">
+<data key="x">1414.0599054456034</data>
+<data key="y">840.2801032638174</data>
+</node>
+<node id="GCFile">
+<data key="x">1434.6275872668366</data>
+<data key="y">1319.7082094637249</data>
+</node>
+<node id="Id2Type">
+<data key="x">-431.727427647794</data>
+<data key="y">1351.1018390806667</data>
+</node>
+<node id="StageUpdateNextRequest">
+<data key="x">833.9586700892514</data>
+<data key="y">1572.0970896904032</data>
+</node>
+<node id="GetUpdateFailed">
+<data key="x">1586.824122401737</data>
+<data key="y">1379.7197043902916</data>
+</node>
+<node id="WhiteList">
+<data key="x">1573.4067801261763</data>
+<data key="y">638.0074317747531</data>
+</node>
+<node id="StagePrepareToGetRequest">
+<data key="x">1590.4489975668384</data>
+<data key="y">1027.0248362560953</data>
+</node>
+<node id="TapePool">
+<data key="x">795.9542181167958</data>
+<data key="y">877.1040380850909</data>
+</node>
+<node id="CleanupJobLog">
+<data key="x">-180.01093732945913</data>
+<data key="y">909.482819284693</data>
+</node>
+<node id="RepackRequest">
+<data key="x">1431.5914628376622</data>
+<data key="y">1448.442234745185</data>
+</node>
+<node id="StageGetNextRequest">
+<data key="x">-186.78011715261198</data>
+<data key="y">1128.7358725257363</data>
+</node>
+<node id="TapeDriveDedication">
+<data key="x">-470.12573115612236</data>
+<data key="y">1586.0427208867552</data>
+</node>
+<node id="PutFailed">
+<data key="x">304.7523373903259</data>
+<data key="y">1584.213579695585</data>
+</node>
+<node id="FileSystem">
+<data key="x">829.5062260461798</data>
+<data key="y">1058.3541555061986</data>
+</node>
+<node id="CastorConfig">
+<data key="x">599.9038332738697</data>
+<data key="y">1576.531150716241</data>
+</node>
+<node id="SetFileGCWeight">
+<data key="x">-420.1786794346793</data>
+<data key="y">1201.8992667676873</data>
+</node>
+<node id="Stream">
+<data key="x">964.9719991534375</data>
+<data key="y">699.8031626653406</data>
+</node>
+<node id="VersionQuery">
+<data key="x">-193.9275314586116</data>
+<data key="y">723.6763632580451</data>
+</node>
+<node id="Client">
+<data key="x">-345.64838406881097</data>
+<data key="y">1581.9801410590705</data>
+</node>
+<node id="Disk2DiskCopyStartRequest">
+<data key="x">-4.273910011038538</data>
+<data key="y">1507.486217654121</data>
+</node>
+<node id="SubRequest">
+<data key="x">133.99293637313144</data>
+<data key="y">1506.6422369503334</data>
+</node>
+<node id="StagePutDoneRequest">
+<data key="x">716.6601588782555</data>
+<data key="y">1535.9905181413367</data>
+</node>
+<node id="StageRequestQueryRequest">
+<data key="x">-260.75812893282995</data>
+<data key="y">1204.4381749190989</data>
+</node>
+<node id="Stream2TapeCopy">
+<data key="x">1044.1339406407528</data>
+<data key="y">877.6603438260067</data>
+</node>
+<node id="LockTable">
+<data key="x">1416.866674000296</data>
+<data key="y">1537.779865605192</data>
+</node>
+<node id="TapeDrive">
+<data key="x">346.5236943978207</data>
+<data key="y">1216.2771099799625</data>
+</node>
+<node id="DiskPoolQuery">
+<data key="x">-505.0483713137028</data>
+<data key="y">531.9778770784922</data>
+</node>
+<node id="StagePrepareToPutRequest">
+<data key="x">-290.9790701178497</data>
+<data key="y">1018.4339132656862</data>
+</node>
+<node id="RepackSubRequest">
+<data key="x">692.2399246778527</data>
+<data key="y">1463.8560814562352</data>
+</node>
+<node id="ChangePrivilege">
+<data key="x">1592.4339135663304</data>
+<data key="y">1451.9922929344805</data>
+</node>
+<node id="GetUpdateStartRequest">
+<data key="x">-187.0043097907369</data>
+<data key="y">1516.6193572532056</data>
+</node>
+<node id="DiskCopy">
+<data key="x">285.9771055300257</data>
+<data key="y">1091.789698589061</data>
+</node>
+<node id="NbTapeCopiesInFS">
+<data key="x">1593.35439181241</data>
+<data key="y">1241.1630185536435</data>
+</node>
+<node id="StageDiskCopyReplicaRequest">
+<data key="x">866.8308652349847</data>
+<data key="y">1459.4809645004495</data>
+</node>
+<node id="TapeRequestState">
+<data key="x">-345.81569358829086</data>
+<data key="y">889.1017603426119</data>
+</node>
+<node id="GCLocalFile">
+<data key="x">1402.488652412524</data>
+<data key="y">1021.1586018304063</data>
+</node>
+<node id="StagePrepareToUpdateRequest">
+<data key="x">1589.9973966550197</data>
+<data key="y">826.7554455657012</data>
+</node>
+<node id="NsFilesDeleted">
+<data key="x">-245.00002748052486</data>
+<data key="y">1351.9830647038539</data>
+</node>
+<node id="PutStartRequest">
+<data key="x">-199.70428265076328</data>
+<data key="y">1584.3170283722238</data>
+</node>
+<node id="StagePutRequest">
+<data key="x">1604.603696389464</data>
+<data key="y">1178.9237137865352</data>
+</node>
+<node id="Disk2DiskCopyDoneRequest">
+<data key="x">-474.7321125690794</data>
+<data key="y">818.7393393563395</data>
+</node>
+<node id="TapeCopy">
+<data key="x">1218.181445145026</data>
+<data key="y">878.518952042732</data>
+</node>
+<node id="StageFileQueryRequest">
+<data key="x">283.8640594602359</data>
+<data key="y">1491.5919328104733</data>
+</node>
+<node id="StageRepackRequest">
+<data key="x">1433.3398963834914</data>
+<data key="y">1175.9298826403442</data>
+</node>
+<node id="DiskServer">
+<data key="x">1101.3357406526925</data>
+<data key="y">1057.433099903239</data>
+</node>
+<node id="FilesDeletionFailed">
+<data key="x">-339.06584495859806</data>
+<data key="y">1494.1716909600855</data>
+</node>
+<node id="StageGetRequest">
+<data key="x">1589.4703614022492</data>
+<data key="y">938.2768159997381</data>
+</node>
+<node id="RequestType">
+<data key="x">1428.1826812529198</data>
+<data key="y">923.0436403430847</data>
+</node>
+<node id="TapeRequest">
+<data key="x">-436.00876729028005</data>
+<data key="y">614.6681154301248</data>
+</node>
+<node id="QueryParameter">
+<data key="x">1433.6552140599597</data>
+<data key="y">1246.7759503025472</data>
+</node>
+<node id="RepackSegment">
+<data key="x">-357.35358184601773</data>
+<data key="y">538.5929406430892</data>
+</node>
+<node id="Type2Obj">
+<data key="x">-512.8143292834479</data>
+<data key="y">1109.3853476121662</data>
+</node>
+<node id="Accounting">
+<data key="x">-425.6954573736232</data>
+<data key="y">1016.0777697705976</data>
+</node>
+<node id="StgFilesDeleted">
+<data key="x">1577.5713164703334</data>
+<data key="y">552.2901365018183</data>
+</node>
+<node id="StageFindRequestRequest">
+<data key="x">1598.8927563324542</data>
+<data key="y">1098.5134040477315</data>
+</node>
+<node id="BlackList">
+<data key="x">1264.7647882016854</data>
+<data key="y">1561.512466986538</data>
+</node>
+<node id="CastorVersion">
+<data key="x">974.7509722365178</data>
+<data key="y">1507.649230909984</data>
+</node>
+<node id="FileSystemsToCheck">
+<data key="x">1072.2969130586598</data>
+<data key="y">1567.6279836499143</data>
+</node>
+<node id="ClientIdentification">
+<data key="x">1590.9032081058672</data>
+<data key="y">1307.360940351043</data>
+</node>
+<node id="Segment">
+<data key="x">1563.4124074741867</data>
+<data key="y">1520.3646766791494</data>
+</node>
+<node id="SvcClass2TapePool">
+<data key="x">623.046834860397</data>
+<data key="y">714.0376661176595</data>
+</node>
+<node id="TapeDriveCompatibility">
+<data key="x">754.5716186625132</data>
+<data key="y">1208.4233479381212</data>
+</node>
+<node id="FileClass">
+<data key="x">608.0567728506567</data>
+<data key="y">1067.3122595408108</data>
+</node>
+<node id="BWUser">
+<data key="x">1443.9155662743146</data>
+<data key="y">749.8979477584171</data>
+</node>
+<node id="ErrorHistory">
+<data key="x">-348.51490928735245</data>
+<data key="y">1352.8258362998351</data>
+</node>
+<node id="DiskPool2SvcClass">
+<data key="x">124.7039194361596</data>
+<data key="y">816.4344601438909</data>
+</node>
+<node id="DeviceGroupName">
+<data key="x">-269.4186019473401</data>
+<data key="y">613.330311163787</data>
+</node>
+<node id="PriorityMap">
+<data key="x">965.5121247056627</data>
+<data key="y">1573.2117946848832</data>
+</node>
+<node id="StageUpdateRequest">
+<data key="x">1405.8892987361014</data>
+<data key="y">1101.9157358471166</data>
+</node>
+<node id="StageReleaseFilesRequest">
+<data key="x">1580.9729855771034</data>
+<data key="y">715.942653014218</data>
+</node>
+<node id="TapeServer">
+<data key="x">-294.6726932616193</data>
+<data key="y">737.7293298823943</data>
+</node>
+<node id="Tape">
+<data key="x">67.63769278611267</data>
+<data key="y">1580.7153975061183</data>
+</node>
+<node id="FilesDeleted">
+<data key="x">-188.39088142460537</data>
+<data key="y">1246.5369720164795</data>
+</node>
+<node id="SvcClass">
+<data key="x">376.17569467131693</data>
+<data key="y">814.3412209448843</data>
+</node>
+<node id="CastorFile">
+<data key="x">462.95504765652686</data>
+<data key="y">1091.6093897329763</data>
+</node>
+<node id="BaseAddress">
+<data key="x">1438.218605035916</data>
+<data key="y">672.3917804551589</data>
+</node>
+<node id="StageRmRequest">
+<data key="x">-535.0119128651484</data>
+<data key="y">1349.8412723959168</data>
+</node>
+<node id="TapeDrive2TapeDriveComp">
+<data key="x">564.8220453183665</data>
+<data key="y">1184.6945504387545</data>
+</node>
+<node id="newRequests">
+<data key="x">-442.08027145789447</data>
+<data key="y">728.7712154968907</data>
+</node>
+<node id="GetUpdateDone">
+<data key="x">464.6618645997728</data>
+<data key="y">1490.5553039556225</data>
+</node>
+<node id="FirstByteWritten">
+<data key="x">1439.8958108410657</data>
+<data key="y">572.5834554370253</data>
+</node>
+<node id="StageAbortRequest">
+<data key="x">-183.7899270168641</data>
+<data key="y">571.8137437886592</data>
+</node>
+<node id="FileSystemGC">
+<data key="x">1250.9026443960984</data>
+<data key="y">1453.4825447709072</data>
+</node>
+<node id="MoverCloseRequest">
+<data key="x">1059.6143712034132</data>
+<data key="y">1447.8638292808678</data>
+</node>
+<node id="StagePutNextRequest">
+<data key="x">-415.5422620879233</data>
+<data key="y">1117.7512220003516</data>
+</node>
+<node id="ListPrivileges">
+<data key="x">-531.5803284961896</data>
+<data key="y">1207.3686388720794</data>
+</node>
+<node id="DiskPool">
+<data key="x">124.99984588805137</data>
+<data key="y">1005.0422397417638</data>
+</node>
+<node id="PutDoneStart">
+<data key="x">585.2350837403445</data>
+<data key="y">1495.1979470550723</data>
+</node>
+<edge source="FileSystem" target="DiskServer"/>
+<edge source="SvcClass2TapePool" target="TapePool"/>
+<edge source="Stream2TapeCopy" target="TapeCopy"/>
+<edge source="Stream" target="TapePool"/>
+<edge source="CastorFile" target="FileClass"/>
+<edge source="TapeDrive2TapeDriveComp" target="TapeDrive"/>
+<edge source="DiskCopy" target="CastorFile"/>
+<edge source="DiskPool2SvcClass" target="DiskPool"/>
+<edge source="SvcClass2TapePool" target="SvcClass"/>
+<edge source="DiskPool2SvcClass" target="SvcClass"/>
+<edge source="Stream2TapeCopy" target="Stream"/>
+<edge source="CastorFile" target="SvcClass"/>
+<edge source="TapeDrive2TapeDriveComp" target="TapeDriveCompatibility"/>
+</graph>
+</graphml>

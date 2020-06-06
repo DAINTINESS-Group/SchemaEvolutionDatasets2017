@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="rev_007547.sql" newVersion="rev_007548.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>tiki_eph</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>LONGBLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>ephId</name>
+                <type>INT(12)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>filename</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>filesize</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>filetype</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>hits</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>isFile</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>publish</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>textdata</name>
+                <type>LONGBLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>title</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="rev_007548.sql" newVersion="rev_007621.sql"/>
+    <transition oldVersion="rev_007621.sql" newVersion="rev_007622.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_blog_posts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_page_drafts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pageName</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_sheet_values</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_tracker_item_attachments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_tracker_item_comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_007622.sql" newVersion="rev_007636.sql"/>
+    <transition oldVersion="rev_007636.sql" newVersion="rev_007651.sql"/>
+    <transition oldVersion="rev_007651.sql" newVersion="rev_007673.sql">
+        <update type="KeyChange">
+            <table>
+                <name>tiki_events</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>order</name>
+                <type>INT(2)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_007673.sql" newVersion="rev_007681.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_file_galleries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>show_author</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show_creator</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_007681.sql" newVersion="rev_007684.sql"/>
+    <transition oldVersion="rev_007684.sql" newVersion="rev_007750.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_webmail_contacts_ext</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>contactId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>hidden</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_007750.sql" newVersion="rev_007758.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_webmail_contacts_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>fieldname</name>
+                <type>VARCHAR(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_007758.sql" newVersion="rev_007831.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_webmail_contacts_ext</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>fieldId</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>tiki_webmail_contacts_ext</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_webmail_contacts_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>fieldId</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>order</name>
+                <type>INT(2)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_007831.sql" newVersion="rev_007889.sql"/>
+    <transition oldVersion="rev_007889.sql" newVersion="rev_007942.sql"/>
+    <transition oldVersion="rev_007942.sql" newVersion="rev_007953.sql"/>
+    <transition oldVersion="rev_007953.sql" newVersion="rev_007995.sql"/>
+    <transition oldVersion="rev_007995.sql" newVersion="rev_008100.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_permissions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>admin</name>
+                <type>VARCHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008100.sql" newVersion="rev_008105.sql"/>
+    <transition oldVersion="rev_008105.sql" newVersion="rev_008164.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_actionlog_conf</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008164.sql" newVersion="rev_008238.sql"/>
+    <transition oldVersion="rev_008238.sql" newVersion="rev_008293.sql"/>
+    <transition oldVersion="rev_008293.sql" newVersion="rev_008342.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_forums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_008342.sql" newVersion="rev_008344.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>title</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_008344.sql" newVersion="rev_008366.sql"/>
+    <transition oldVersion="rev_008366.sql" newVersion="rev_008383.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>email_due</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008383.sql" newVersion="rev_008397.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>unsuccessful_logins</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008397.sql" newVersion="rev_008402.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>email_confirm</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pass_confirm</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>email_due</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pass_due</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="rev_008402.sql" newVersion="rev_008422.sql"/>
+    <transition oldVersion="rev_008422.sql" newVersion="rev_008452.sql"/>
+    <transition oldVersion="rev_008452.sql" newVersion="rev_008490.sql">
+        <update type="KeyChange">
+            <table>
+                <name>tiki_modules</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ord</name>
+                <type>INT(4)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>position</name>
+                <type>CHAR(1)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_008490.sql" newVersion="rev_008493.sql"/>
+    <transition oldVersion="rev_008493.sql" newVersion="rev_008496.sql"/>
+    <transition oldVersion="rev_008496.sql" newVersion="rev_008497.sql"/>
+    <transition oldVersion="rev_008497.sql" newVersion="rev_008514.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_file_galleries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>subgal_conf</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008514.sql" newVersion="rev_008531.sql"/>
+    <transition oldVersion="rev_008531.sql" newVersion="rev_008558.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_menu_options</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userlevel</name>
+                <type>INT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008558.sql" newVersion="rev_008624.sql"/>
+    <transition oldVersion="rev_008624.sql" newVersion="rev_008638.sql"/>
+    <transition oldVersion="rev_008638.sql" newVersion="rev_008740.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_newsletters</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>author</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008740.sql" newVersion="rev_008758.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cache</name>
+                <type>LONGTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_008758.sql" newVersion="rev_008762.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>email_confirm</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>hash</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pass_confirm</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="rev_008762.sql" newVersion="rev_008769.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>email_confirm</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>hash</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pass_confirm</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008769.sql" newVersion="rev_008780.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_forums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>commentsPerPage</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>threadStyle</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008780.sql" newVersion="rev_008789.sql"/>
+    <transition oldVersion="rev_008789.sql" newVersion="rev_008797.sql"/>
+    <transition oldVersion="rev_008797.sql" newVersion="rev_008811.sql"/>
+    <transition oldVersion="rev_008811.sql" newVersion="rev_008814.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_forums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>is_flat</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008814.sql" newVersion="rev_008820.sql"/>
+    <transition oldVersion="rev_008820.sql" newVersion="rev_008822.sql"/>
+    <transition oldVersion="rev_008822.sql" newVersion="rev_008853.sql"/>
+    <transition oldVersion="rev_008853.sql" newVersion="rev_008873.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_modules</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>moduleId</name>
+                <type>INT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008873.sql" newVersion="rev_008904.sql"/>
+    <transition oldVersion="rev_008904.sql" newVersion="rev_008914.sql"/>
+    <transition oldVersion="rev_008914.sql" newVersion="rev_008924.sql"/>
+    <transition oldVersion="rev_008924.sql" newVersion="rev_008944.sql"/>
+    <transition oldVersion="rev_008944.sql" newVersion="rev_008962.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>valid</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_008962.sql" newVersion="rev_008976.sql"/>
+    <transition oldVersion="rev_008976.sql" newVersion="rev_008997.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_webmail_contacts_ext</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_webmail_contacts_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>fieldname</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_008997.sql" newVersion="rev_009011.sql"/>
+    <transition oldVersion="rev_009011.sql" newVersion="rev_009017.sql"/>
+    <transition oldVersion="rev_009017.sql" newVersion="rev_009019.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_user_assigned_modules</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>moduleId</name>
+                <type>INT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009019.sql" newVersion="rev_009031.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>height</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id_users</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>width</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_mypagewin</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>contenttype</name>
+                <type>ENUM('IFRAME','WIKI')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>height</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id_mypage</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>inbody</name>
+                <type>ENUM('N','Y')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>left</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modal</name>
+                <type>ENUM('N','Y')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>title</name>
+                <type>VARCHAR(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>top</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>width</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009031.sql" newVersion="rev_009044.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>description</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009044.sql" newVersion="rev_009081.sql"/>
+    <transition oldVersion="rev_009081.sql" newVersion="rev_009093.sql"/>
+    <transition oldVersion="rev_009093.sql" newVersion="rev_009116.sql"/>
+    <transition oldVersion="rev_009116.sql" newVersion="rev_009123.sql"/>
+    <transition oldVersion="rev_009123.sql" newVersion="rev_009124.sql"/>
+    <transition oldVersion="rev_009124.sql" newVersion="rev_009134.sql"/>
+    <transition oldVersion="rev_009134.sql" newVersion="rev_009176.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_forums_queue</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>in_reply_to</name>
+                <type>VARCHAR(128)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009176.sql" newVersion="rev_009192.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_mypage_types</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>description</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>permissions</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>section</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_mypage_types_components</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>compname</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id_mypage_types</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>maxcount</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>mincount</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009192.sql" newVersion="rev_009211.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>bgcolor</name>
+                <type>VARCHAR(16)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009211.sql" newVersion="rev_009230.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage_types</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>def_bgcolor</name>
+                <type>VARCHAR(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>def_height</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>def_width</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>fix_bgcolor</name>
+                <type>ENUM('NO','YES')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>fix_dimensions</name>
+                <type>ENUM('NO','YES')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypagewin</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>config</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_mypagewin</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_009230.sql" newVersion="rev_009275.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_mypagewin</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>contenttype</name>
+                <type>VARCHAR(31)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_009275.sql" newVersion="rev_009281.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modified</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>viewed</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage_types</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modified</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypagewin</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modified</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>viewed</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009281.sql" newVersion="rev_009330.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_mypage_types</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_009330.sql" newVersion="rev_009335.sql"/>
+    <transition oldVersion="rev_009335.sql" newVersion="rev_009384.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_mypagewin</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>title</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_009384.sql" newVersion="rev_009385.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>openid_url</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009385.sql" newVersion="rev_009399.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage_types</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>templateuser</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009399.sql" newVersion="rev_009421.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>winbgcolor</name>
+                <type>VARCHAR(16)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>wintextcolor</name>
+                <type>VARCHAR(16)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>wintitlecolor</name>
+                <type>VARCHAR(16)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009421.sql" newVersion="rev_009440.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>bgimage</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>bgtype</name>
+                <type>ENUM('COLOR','IMAGEURL')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>winbgimage</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>winbgtype</name>
+                <type>ENUM('COLOR','IMAGEURL')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009440.sql" newVersion="rev_009501.sql"/>
+    <transition oldVersion="rev_009501.sql" newVersion="rev_009512.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_newsletter_included</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>includedId</name>
+                <type>INT(12)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>nlId</name>
+                <type>INT(12)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009512.sql" newVersion="rev_009556.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_received_pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>page_alias</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>parentName</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pos</name>
+                <type>INT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>structureName</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_009556.sql" newVersion="rev_009581.sql"/>
+    <transition oldVersion="rev_009581.sql" newVersion="rev_009591.sql"/>
+    <transition oldVersion="rev_009591.sql" newVersion="rev_009600.sql"/>
+    <transition oldVersion="rev_009600.sql" newVersion="rev_009614.sql"/>
+    <transition oldVersion="rev_009614.sql" newVersion="rev_009616.sql"/>
+    <transition oldVersion="rev_009616.sql" newVersion="rev_009738.sql"/>
+    <transition oldVersion="rev_009738.sql" newVersion="rev_009865.sql"/>
+    <transition oldVersion="rev_009865.sql" newVersion="rev_009866.sql"/>
+    <transition oldVersion="rev_009866.sql" newVersion="rev_009867.sql"/>
+    <transition oldVersion="rev_009867.sql" newVersion="rev_009882.sql"/>
+    <transition oldVersion="rev_009882.sql" newVersion="rev_009923.sql"/>
+    <transition oldVersion="rev_009923.sql" newVersion="rev_009953.sql"/>
+    <transition oldVersion="rev_009953.sql" newVersion="rev_010305.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userChoice</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_010305.sql" newVersion="rev_010323.sql"/>
+    <transition oldVersion="rev_010323.sql" newVersion="rev_010387.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>groupDefCat</name>
+                <type>INT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>groupThemechar</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_010387.sql" newVersion="rev_010388.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>groupTheme</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>users_groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>groupThemechar</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="rev_010388.sql" newVersion="rev_010408.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_tracker_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>itemChoices</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_010408.sql" newVersion="rev_010558.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_content</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>contentLabel</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_010558.sql" newVersion="rev_010671.sql"/>
+    <transition oldVersion="rev_010671.sql" newVersion="rev_010675.sql">
+        <update type="KeyChange">
+            <table>
+                <name>tiki_modules</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_010675.sql" newVersion="rev_010692.sql"/>
+    <transition oldVersion="rev_010692.sql" newVersion="rev_010729.sql"/>
+    <transition oldVersion="rev_010729.sql" newVersion="rev_010755.sql"/>
+    <transition oldVersion="rev_010755.sql" newVersion="rev_010902.sql">
+        <update type="KeyChange">
+            <table>
+                <name>tiki_user_assigned_modules</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ord</name>
+                <type>INT(4)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_010902.sql" newVersion="rev_010979.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>archived</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_010979.sql" newVersion="rev_010998.sql"/>
+    <transition oldVersion="rev_010998.sql" newVersion="rev_011021.sql"/>
+    <transition oldVersion="rev_011021.sql" newVersion="rev_011050.sql"/>
+    <transition oldVersion="rev_011050.sql" newVersion="rev_011121.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_file_galleries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>show_last_user</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_011121.sql" newVersion="rev_011144.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_pages_translation_bits</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>flags</name>
+                <type>SET('CRITICAL')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>original_translation_bit</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>page_id</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>source_translation_bit</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>translation_bit_id</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>version</name>
+                <type>INT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_011144.sql" newVersion="rev_011171.sql"/>
+    <transition oldVersion="rev_011171.sql" newVersion="rev_011323.sql"/>
+    <transition oldVersion="rev_011323.sql" newVersion="rev_011411.sql"/>
+    <transition oldVersion="rev_011411.sql" newVersion="rev_011412.sql"/>
+    <transition oldVersion="rev_011412.sql" newVersion="rev_011459.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_freetags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>lang</name>
+                <type>VARCHAR(16)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_011459.sql" newVersion="rev_011479.sql"/>
+    <transition oldVersion="rev_011479.sql" newVersion="rev_011520.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_file_galleries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>show_comment</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show_files</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show_hits</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>tiki_file_galleries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>show_dl</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>tiki_files</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>downloads</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_files</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hits</name>
+                <type>INT(14)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>tiki_tracker_item_attachments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>downloads</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_tracker_item_attachments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hits</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>tiki_wiki_attachments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>downloads</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_wiki_attachments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hits</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_011520.sql" newVersion="rev_011565.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_friends</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>friend</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>tiki_friendship_requests</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userFrom</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>userTo</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_mypage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id_types</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_received_pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>parent</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>position</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hash</name>
+                <type>VARCHAR(34)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_011565.sql" newVersion="rev_011723.sql"/>
+    <transition oldVersion="rev_011723.sql" newVersion="rev_011733.sql"/>
+    <transition oldVersion="rev_011733.sql" newVersion="rev_011750.sql"/>
+    <transition oldVersion="rev_011750.sql" newVersion="rev_011756.sql"/>
+    <transition oldVersion="rev_011756.sql" newVersion="rev_011757.sql"/>
+    <transition oldVersion="rev_011757.sql" newVersion="rev_011771.sql"/>
+    <transition oldVersion="rev_011771.sql" newVersion="rev_011814.sql"/>
+    <transition oldVersion="rev_011814.sql" newVersion="rev_011838.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tiki_pages_changes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>page_id</name>
+                <type>INT(14)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>segments_added</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>segments_removed</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>segments_total</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>version</name>
+                <type>INT(10)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_011838.sql" newVersion="rev_011994.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tiki_user_watches</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hash</name>
+                <type>VARCHAR(32)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_user_watches</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>watchId</name>
+                <type>INT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_011994.sql" newVersion="rev_011995.sql"/>
+    <transition oldVersion="rev_011995.sql" newVersion="rev_011996.sql"/>
+    <transition oldVersion="rev_011996.sql" newVersion="rev_012028.sql"/>
+    <transition oldVersion="rev_012028.sql" newVersion="rev_012032.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_file_galleries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>show_explorer</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show_path</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_012032.sql" newVersion="rev_012161.sql"/>
+    <transition oldVersion="rev_012161.sql" newVersion="rev_012162.sql"/>
+    <transition oldVersion="rev_012162.sql" newVersion="rev_012238.sql"/>
+    <transition oldVersion="rev_012238.sql" newVersion="rev_012251.sql"/>
+    <transition oldVersion="rev_012251.sql" newVersion="rev_012317.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>waiting</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_012317.sql" newVersion="rev_012324.sql"/>
+    <transition oldVersion="rev_012324.sql" newVersion="rev_012503.sql"/>
+    <transition oldVersion="rev_012503.sql" newVersion="rev_012564.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tiki_pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>wysiwyg</name>
+                <type>CHAR(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_012564.sql" newVersion="rev_012592.sql"/>
+    <transition oldVersion="rev_012592.sql" newVersion="rev_012643.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tiki_blog_posts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>title</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_012643.sql" newVersion="rev_012743.sql"/>
+    <transition oldVersion="rev_012743.sql" newVersion="rev_012750.sql"/>
+    <transition oldVersion="rev_012750.sql" newVersion="rev_012804.sql"/>
+    <transition oldVersion="rev_012804.sql" newVersion="rev_012859.sql"/>
+    <transition oldVersion="rev_012859.sql" newVersion="rev_012907.sql"/>
+    <transition oldVersion="rev_012907.sql" newVersion="rev_012932.sql"/>
+</transitions>

@@ -1,0 +1,15 @@
+`schema_version`
+`t_agent`
+`t_bad_file`
+`t_bad_transfer`
+`t_blacklist`
+`t_callback`
+`t_file`
+`t_nr_callbacks`
+`t_nr_files_in_queue`
+`t_nr_files_in_transfer`
+`t_nr_requests_to_poll`
+`t_nr_requests_to_submit`
+`t_subscription`
+`t_subscription_files_in_transfer`
+`t_transfer_request`

@@ -1,0 +1,48 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+archive	17	0	-	16	12	17	14.53	1.42	9	4	0.53	0.24	2.25	20	2	22
+attachments	12	0	11	11	15	15	15	1	0	0	0	0		10	0	10
+banips	9	8	-	16	3	3	3	1	0	0	0	0		20	0	20
+bans	9	8	-	16	6	6	6	1	0	0	0	0		20	0	20
+banusers	9	8	-	16	3	3	3	1	0	0	0	0		20	0	20
+brokenlinks	17	0	-	16	2	2	2	1	0	0	0	0		20	0	20
+comments	17	0	-	16	12	12	12	1	0	0	0	0		20	0	20
+config	17	0	-	16	3	3	3	1	0	0	0	0		20	0	20
+group_grants	17	0	-	16	7	7	7	1	0	0	0	0		20	0	20
+groups	17	0	-	16	6	6	6	1	0	0	0	0		20	0	20
+links	17	0	-	16	2	2	2	1	0	0	0	0		20	0	20
+linkscc	15	0	14	14	2	2	2	1	0	0	0	0		10	0	10
+logging	8	0	7	7	8	8	8	1	0	0	0	0		10	0	10
+objectcache	15	0	14	14	3	3	3	1	0	0	0	0		10	0	10
+old	17	0	-	16	12	13	13	1.08	11	4	0.65	0.24	2.75	20	2	22
+page_viewcount	2	15	-	16	2	2	2	1	0	0	0	0		20	0	20
+pages	17	0	-	16	20	25	22.35	1.25	9	4	0.53	0.24	2.25	20	2	22
+pagesub	3	14	-	16	3	3	3	1	0	0	0	0		20	0	20
+query_log	4	13	-	16	10	10	10	1	0	0	0	0		20	0	20
+query_result_log	4	13	-	16	8	8	8	1	0	0	0	0		20	0	20
+query_result_popularity	4	13	-	16	4	4	4	1	0	0	0	0		20	0	20
+query_term_map	4	13	-	16	2	2	2	1	0	0	0	0		20	0	20
+query_terms	4	13	-	16	2	2	2	1	0	0	0	0		20	0	20
+querycache	15	0	14	14	4	4	4	1	0	0	0	0		10	0	10
+ratings	4	13	-	16	8	8	8	1	0	0	0	0		20	0	20
+ratingscomputed	4	13	-	16	7	7	7	1	0	0	0	0		20	0	20
+recentchanges	17	0	-	16	19	19	19.24	1	2	2	0.12	0.12	1	20	1	21
+requestlog	15	2	-	16	14	14	14	1	0	0	0	0		20	0	20
+requeststats	15	2	-	16	10	10	10	1	0	0	0	0		20	0	20
+resourcecontents	7	10	-	16	7	7	7	1	0	0	0	0		20	0	20
+resourcefilemap	7	10	-	16	2	2	2	1	0	0	0	0		20	0	20
+resourcerevs	7	10	-	16	18	19	18.86	1.06	1	1	0.14	0.14	1	20	1	21
+resources	7	10	-	16	24	25	24.86	1.04	1	1	0.14	0.14	1	20	1	21
+restrictions	17	0	-	16	5	5	5	1	1	1	0.06	0.06	1	20	1	21
+roles	17	0	-	16	6	5	5.29	0.83	1	1	0.06	0.06	1	20	1	21
+service_config	17	0	-	16	4	4	4	1	0	0	0	0		20	0	20
+service_prefs	17	0	-	16	4	4	4	1	0	0	0	0		20	0	20
+services	17	0	-	16	9	9	9	1	0	0	0	0		20	0	20
+site_stats	10	0	9	9	7	7	7	1	0	0	0	0		10	0	10
+tag_map	17	0	-	16	3	3	3	1	1	1	0.06	0.06	1	20	1	21
+tags	17	0	-	16	3	3	3	1	1	1	0.06	0.06	1	20	1	21
+transactions	9	8	-	16	11	11	11	1	0	0	0	0		20	0	20
+user_grants	17	0	-	16	7	7	7	1	0	0	0	0		20	0	20
+user_groups	17	0	-	16	3	3	3	1	0	0	0	0		20	0	20
+user_registrations	10	0	9	9	9	9	9	1	0	0	0	0		10	0	10
+users	17	0	-	16	14	17	14.94	1.21	5	2	0.29	0.12	2.5	20	1	21
+watchlist	17	0	-	16	3	3	3	1	0	0	0	0		20	0	20

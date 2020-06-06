@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="rev_1.01.sql" newVersion="rev_1.02.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>online</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>online_pagecount</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.02.sql" newVersion="rev_1.03.sql"/>
+    <transition oldVersion="rev_1.03.sql" newVersion="rev_1.04.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>parser</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>parser_id</name>
+                <type>INT(10)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>parser_pluginname</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>parser_regexp</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.04.sql" newVersion="rev_1.05.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>submitnews</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>submitnews_category</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>upload</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>upload_category</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.05.sql" newVersion="rev_1.06.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>submitnews</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>submitnews_file</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.06.sql" newVersion="rev_1.07.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>comment_pid</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>comment_subject</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.07.sql" newVersion="rev_1.08.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>user</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_customtitle</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.08.sql" newVersion="rev_1.09.sql">
+        <update type="TypeChange">
+            <table>
+                <name>chatbox</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cb_nick</name>
+                <type>VARCHAR(30)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_1.09.sql" newVersion="rev_1.10.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>download</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>download_comment</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.10.sql" newVersion="rev_1.11.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>userclass_classes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userclass_editclass</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.11.sql" newVersion="rev_1.12.sql">
+        <update type="TypeChange">
+            <table>
+                <name>comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>comment_type</name>
+                <type>VARCHAR(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="rev_1.12.sql" newVersion="rev_1.13.sql"/>
+    <transition oldVersion="rev_1.13.sql" newVersion="rev_1.14.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>poll</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>poll_comment</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="rev_1.14.sql" newVersion="rev_1.15.sql"/>
+    <transition oldVersion="rev_1.15.sql" newVersion="rev_1.16.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>menus</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>menu_pages</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

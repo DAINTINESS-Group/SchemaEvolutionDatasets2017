@@ -1,0 +1,17 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;rev_000008.sql;rev_000696.sql;-;-;-;-;-;-;-
+2;rev_000696.sql;rev_000833.sql;-;-;-;-;-;-;-
+3;rev_000833.sql;rev_001017.sql;-;-;-;-;-;-;-
+4;rev_001017.sql;rev_001228.sql;config;Update:TypeChange;conf_desc;VARCHAR(255);false;0;-
+4;rev_001017.sql;rev_001228.sql;config;Update:TypeChange;conf_title;VARCHAR(255);false;0;-
+4;rev_001017.sql;rev_001228.sql;configcategory;Update:TypeChange;confcat_name;VARCHAR(255);false;0;-
+5;rev_001228.sql;rev_001388.sql;cache_model;Insertion:NewTable;data;TEXT;false;0;-
+5;rev_001228.sql;rev_001388.sql;cache_model;Insertion:NewTable;expires;INT(10);false;0;-
+5;rev_001228.sql;rev_001388.sql;cache_model;Insertion:NewTable;key;VARCHAR(64);false;0;-
+6;rev_001388.sql;rev_001436.sql;cache_model;Insertion:UpdateTable;cache_data;TEXT;false;0;-
+6;rev_001388.sql;rev_001436.sql;cache_model;Insertion:UpdateTable;cache_expires;INT(10);false;0;-
+6;rev_001388.sql;rev_001436.sql;cache_model;Insertion:UpdateTable;cache_key;VARCHAR(64);false;0;-
+6;rev_001388.sql;rev_001436.sql;cache_model;Deletion:UpdateTable;data;TEXT;false;0;-
+6;rev_001388.sql;rev_001436.sql;cache_model;Deletion:UpdateTable;expires;INT(10);false;0;-
+6;rev_001388.sql;rev_001436.sql;cache_model;Deletion:UpdateTable;key;VARCHAR(64);false;0;-
+7;rev_001436.sql;rev_001503.sql;-;-;-;-;-;-;-

@@ -1,0 +1,23 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+CastorVersion	57	2	-	58	1	2	1.61	2	6	2	0.11	0.04	3	20	2	22
+CopySubRequest	42	17	-	58	8	14	13.14	1.75	6	2	0.14	0.05	3	20	2	22
+FilePin	11	0	10	10	2	3	2.36	1.5	4	4	0.36	0.36	1	10	1	11
+Id2Type	57	2	-	58	2	2	2	1	1	1	0.02	0.02	1	20	1	21
+ObjStatus	2	57	-	58	4	4	4	1	0	0	0	0		20	0	20
+Pin	48	11	-	58	6	7	6.98	1.17	1	1	0.02	0.02	1	20	1	21
+Request	3	0	2	2	6	6	6	1	1	2	0.33	0.67	0.5	10	1	11
+RequestStatus	4	0	3	3	4	4	4	1	1	2	0.25	0.5	0.5	10	1	11
+RequestStatusHistory	8	4	11	11	4	4	4	1	0	0	0	0		10	0	10
+SrmUser	58	1	-	58	4	5	4.66	1.25	2	2	0.03	0.03	1	20	1	21
+StageRequest	59	0	-	58	7	20	15.2	2.86	35	17	0.59	0.29	2.06	20	2	22
+StorageArea	53	6	-	58	9	9	9.11	1	11	3	0.21	0.06	3.67	20	2	22
+StorageRequest	6	0	5	5	13	15	13.83	1.15	11	4	1.83	0.67	2.75	10	2	12
+SubRequest	48	11	-	58	6	12	11.33	2	13	9	0.27	0.19	1.44	20	2	22
+Type2Obj	18	41	-	58	3	3	3	1	0	0	0	0		20	0	20
+User	1	0	0	0	4	4	4	1	0	0	0	0		10	0	10
+UserFile	59	0	-	58	7	6	5.24	0.86	15	11	0.25	0.19	1.36	20	2	22
+UserFile2StageRequest	11	0	10	10	2	2	2	1	0	0	0	0		10	0	10
+UserFile2StorageArea	5	6	10	10	2	2	2	1	0	0	0	0		10	0	10
+UserFile2StorageReques	6	0	5	5	2	2	2	1	0	0	0	0		10	0	10
+UserPermission	20	0	19	19	4	4	4	1	3	3	0.15	0.15	1	10	1	11
+UserPin	11	0	10	10	3	3	3	1	1	2	0.09	0.18	0.5	10	1	11

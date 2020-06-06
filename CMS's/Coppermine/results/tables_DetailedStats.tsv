@@ -1,0 +1,24 @@
+Table	Duration	Birth	Death	LastKnownVersion	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+CPG_albums	118	0	-	117	13	16	15.12	1.23	9	8	0.08	0.07	1.12	20	1	21
+CPG_banned	115	3	-	117	4	7	5.57	1.75	3	2	0.03	0.02	1.5	20	1	21
+CPG_bridge	92	26	-	117	2	2	2	1	0	0	0	0		20	0	20
+CPG_categories	118	0	-	117	10	10	9.5	1	8	3	0.07	0.03	2.67	20	1	21
+CPG_categorymap	53	65	-	117	3	2	2.06	0.67	1	1	0.02	0.02	1	20	1	21
+CPG_comments	118	0	-	117	7	11	9.95	1.57	4	3	0.03	0.03	1.33	20	1	21
+CPG_config	118	0	-	117	2	2	2	1	0	0	0	0		20	0	20
+CPG_dict	103	15	-	117	2	2	2	1	0	0	0	0		20	0	20
+CPG_ecards	112	6	-	117	8	8	8	1	0	0	0	0		20	0	20
+CPG_exif	114	4	-	117	2	2	2	1	2	1	0.02	0.01	2	20	1	21
+CPG_favpics	104	14	-	117	2	2	2	1	0	0	0	0		20	0	20
+CPG_filetypes	113	5	-	117	3	4	3.74	1.33	5	5	0.04	0.04	1	20	1	21
+CPG_hit_stats	91	27	-	117	8	9	8.53	1.12	1	1	0.01	0.01	1	20	1	21
+CPG_languages	47	71	-	117	8	9	8.72	1.12	1	1	0.02	0.02	1	20	1	21
+CPG_pictures	118	0	-	117	25	29	28.62	1.16	9	8	0.08	0.07	1.12	20	1	21
+CPG_plugins	98	20	-	117	4	4	4	1	0	0	0	0		20	0	20
+CPG_sessions	83	35	-	117	4	4	4	1	1	1	0.01	0.01	1	20	1	21
+CPG_temp_data	79	9	87	87	3	3	3	1	0	0	0	0		10	0	10
+CPG_temp_messages	62	56	-	117	4	4	4	1	1	1	0.02	0.02	1	20	1	21
+CPG_usergroups	118	0	-	117	11	12	14.06	1.09	10	4	0.08	0.03	2.5	20	1	21
+CPG_users	118	0	-	117	14	18	16.25	1.29	18	8	0.15	0.07	2.25	20	2	22
+CPG_vote_stats	91	27	-	117	8	9	8.69	1.12	1	1	0.01	0.01	1	20	1	21
+CPG_votes	118	0	-	117	3	3	3	1	0	0	0	0		20	0	20
