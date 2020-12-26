@@ -9,185 +9,185 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml">
 <default>0</default>
 </key>
 <graph edgedefault="directed">
-<node id="biosequence">
-<data key="x">1225.4468370747231</data>
-<data key="y">1006.3753520163908</data>
-</node>
 <node id="bioentry_taxa">
-<data key="x">1357.3159102398558</data>
-<data key="y">913.29156331431</data>
+<data key="x">101.36030423729278</data>
+<data key="y">732.7883144470995</data>
+</node>
+<node id="biosequence">
+<data key="x">27.982065249041426</data>
+<data key="y">665.0126927061131</data>
 </node>
 <node id="biodatabase">
-<data key="x">1358.2058960092818</data>
-<data key="y">968.1780327401193</data>
+<data key="x">28.186432606135895</data>
+<data key="y">777.120550240959</data>
 </node>
 <node id="term_relationship">
-<data key="x">865.9581215816875</data>
-<data key="y">470.2981321368675</data>
+<data key="x">966.8151697313926</data>
+<data key="y">538.6600582965204</data>
 </node>
 <node id="cache_corba_support">
-<data key="x">152.83866967109276</data>
-<data key="y">1101.0600675777443</data>
+<data key="x">-27.708205324897335</data>
+<data key="y">1048.4065839783905</data>
 </node>
 <node id="bioentry_dbxref">
-<data key="x">919.3423372252655</data>
-<data key="y">1055.5184061846985</data>
+<data key="x">58.21769440443262</data>
+<data key="y">552.3437425295785</data>
 </node>
 <node id="dbxref_qualifier_value">
-<data key="x">512.5394111971386</data>
-<data key="y">799.2626002999375</data>
+<data key="x">672.7163213607607</data>
+<data key="y">723.255928604648</data>
 </node>
 <node id="reference">
-<data key="x">939.275143216064</data>
-<data key="y">1001.6021113894449</data>
-</node>
-<node id="bioentry_dblink">
-<data key="x">1128.0690699939753</data>
-<data key="y">1059.675398572275</data>
+<data key="x">134.938870608841</data>
+<data key="y">508.93621563131</data>
 </node>
 <node id="location_qualifier_value">
-<data key="x">346.1707032403791</data>
-<data key="y">576.9096904549148</data>
+<data key="x">26.00901748980789</data>
+<data key="y">355.0543352561374</data>
+</node>
+<node id="bioentry_dblink">
+<data key="x">171.54233733272167</data>
+<data key="y">599.7018068628893</data>
 </node>
 <node id="bioentry_path">
-<data key="x">1373.7322634688448</data>
-<data key="y">749.6582038982841</data>
+<data key="x">306.1152647936565</data>
+<data key="y">701.0534848731816</data>
 </node>
 <node id="seqfeature_qualifier_value">
-<data key="x">1312.8581848842002</data>
-<data key="y">412.62672965324043</data>
+<data key="x">818.7759916249947</data>
+<data key="y">847.1020797699791</data>
 </node>
 <node id="seqfeature_path">
-<data key="x">1259.2794056863245</data>
-<data key="y">328.4310115708606</data>
+<data key="x">702.7353075329299</data>
+<data key="y">844.2631980308932</data>
 </node>
 <node id="term_path">
-<data key="x">935.7879592915117</data>
-<data key="y">420.61655012661276</data>
-</node>
-<node id="ontology_dbxref">
-<data key="x">573.259817726384</data>
-<data key="y">847.9200016957157</data>
+<data key="x">949.2068410547434</data>
+<data key="y">382.5977232258592</data>
 </node>
 <node id="dbxref">
-<data key="x">479.0245479088735</data>
-<data key="y">1165.0593329425521</data>
+<data key="x">264.1996729419466</data>
+<data key="y">515.6824212094151</data>
+</node>
+<node id="ontology_dbxref">
+<data key="x">399.4181884151983</data>
+<data key="y">633.476046200594</data>
 </node>
 <node id="taxon_name">
-<data key="x">1045.4131814579669</data>
-<data key="y">1025.3882801295895</data>
+<data key="x">194.08297570093862</data>
+<data key="y">871.0565819885953</data>
 </node>
 <node id="taxon">
-<data key="x">1118.068847565271</data>
-<data key="y">992.8241226744894</data>
+<data key="x">197.18700028611875</data>
+<data key="y">805.5245970909451</data>
 </node>
 <node id="term">
-<data key="x">873.2938633024689</data>
-<data key="y">260.8967216502085</data>
+<data key="x">732.7705380830167</data>
+<data key="y">370.58837570542244</data>
 </node>
 <node id="seqfeature_location">
-<data key="x">395.3956776882825</data>
-<data key="y">732.7003078604757</data>
+<data key="x">-146.56238263476007</data>
+<data key="y">802.427999273777</data>
 </node>
 <node id="seqfeature_key">
-<data key="x">152.3310543978522</data>
-<data key="y">1039.9757566601097</data>
+<data key="x">123.2594322160441</data>
+<data key="y">1049.1518071796831</data>
 </node>
 <node id="ontology">
-<data key="x">925.6039752811466</data>
-<data key="y">498.2881061279834</data>
+<data key="x">1179.577547362814</data>
+<data key="y">525.3238039959725</data>
 </node>
 <node id="taxa">
-<data key="x">1429.3745029607803</data>
-<data key="y">942.0150265098418</data>
+<data key="x">24.03221623818564</data>
+<data key="y">723.1517907321628</data>
 </node>
 <node id="bioentry_date">
-<data key="x">1415.5506405928622</data>
-<data key="y">797.53024575559</data>
+<data key="x">270.6070073116503</data>
+<data key="y">888.0853501206886</data>
 </node>
 <node id="term_synonym">
-<data key="x">1071.4429826671235</data>
-<data key="y">273.19188577415787</data>
+<data key="x">814.5361334539355</data>
+<data key="y">525.3733425477757</data>
 </node>
 <node id="bioentry">
-<data key="x">1274.7850426829364</data>
-<data key="y">889.9201782884264</data>
-</node>
-<node id="seqfeature_relationship">
-<data key="x">1267.3868472421354</data>
-<data key="y">617.4014915940556</data>
+<data key="x">238.84794553698703</data>
+<data key="y">714.1875219779284</data>
 </node>
 <node id="bioentry_reference">
-<data key="x">1013.1963301679871</data>
-<data key="y">964.6310620794569</data>
+<data key="x">-5.649903529615301</data>
+<data key="y">526.0874666838179</data>
+</node>
+<node id="seqfeature_relationship">
+<data key="x">597.2880931878104</data>
+<data key="y">832.4007552177918</data>
 </node>
 <node id="seqfeature_qualifier">
-<data key="x">1453.4875940905997</data>
-<data key="y">395.137563369673</data>
+<data key="x">852.5347381432598</data>
+<data key="y">670.2430923185386</data>
 </node>
 <node id="term_relationship_term">
-<data key="x">883.093925348292</data>
-<data key="y">400.53062827660074</data>
+<data key="x">941.8756221629314</data>
+<data key="y">466.3537576504946</data>
 </node>
 <node id="seqfeature_dbxref">
-<data key="x">1506.809054216148</data>
-<data key="y">1139.587193655438</data>
+<data key="x">335.0433319492471</data>
+<data key="y">630.8799151975127</data>
 </node>
 <node id="term_dbxref">
-<data key="x">156.98682651385445</data>
-<data key="y">541.920979031469</data>
+<data key="x">491.57392043978473</data>
+<data key="y">405.1891618750577</data>
 </node>
 <node id="bioentry_relationship">
-<data key="x">1193.5046097535778</data>
-<data key="y">791.5385891182877</data>
+<data key="x">571.5942983847418</data>
+<data key="y">766.2966517590074</data>
 </node>
 <node id="bioentry_description">
-<data key="x">1428.0412308780733</data>
-<data key="y">857.0439696665219</data>
+<data key="x">54.838992030297504</data>
+<data key="y">832.1753239783059</data>
 </node>
 <node id="ontology_term">
-<data key="x">960.9587518109863</data>
-<data key="y">764.0358338044549</data>
+<data key="x">638.4988423456509</data>
+<data key="y">1112.7624666854613</data>
 </node>
 <node id="bioentry_direct_links">
-<data key="x">1232.4168361271563</data>
-<data key="y">1113.0035964680478</data>
+<data key="x">128.04521586288098</data>
+<data key="y">581.5843024413176</data>
 </node>
 <node id="ontology_relationship">
-<data key="x">814.591176789216</data>
-<data key="y">520.5910236732449</data>
+<data key="x">1009.7999145078704</data>
+<data key="y">649.7230226145064</data>
 </node>
 <node id="bioentry_keywords">
-<data key="x">1325.7044231520354</data>
-<data key="y">1020.2014718557177</data>
+<data key="x">125.471874516767</data>
+<data key="y">844.1400652271468</data>
 </node>
 <node id="seqfeature">
-<data key="x">1392.7038400105096</data>
-<data key="y">511.6902178213534</data>
+<data key="x">381.46398642540896</data>
+<data key="y">914.5714454825998</data>
 </node>
 <node id="seqfeature_source">
-<data key="x">1502.689445472112</data>
-<data key="y">555.3944427644356</data>
+<data key="x">354.06910655388606</data>
+<data key="y">981.2317051892965</data>
 </node>
 <node id="comment">
-<data key="x">1328.4948417169485</data>
-<data key="y">1093.2787905282435</data>
+<data key="x">97.86633300454304</data>
+<data key="y">795.2027345960062</data>
 </node>
 <node id="location">
-<data key="x">479.0450147456945</data>
-<data key="y">559.3516512263427</data>
-</node>
-<node id="bioentry_qualifier_value">
-<data key="x">1147.5790471828534</data>
-<data key="y">854.6167539378929</data>
+<data key="x">479.27896952584854</data>
+<data key="y">497.169038701879</data>
 </node>
 <node id="remote_seqfeature_name">
-<data key="x">362.50580437351175</data>
-<data key="y">822.958157824806</data>
+<data key="x">-143.25276297377184</data>
+<data key="y">672.0069510265084</data>
+</node>
+<node id="bioentry_qualifier_value">
+<data key="x">490.1399824920718</data>
+<data key="y">691.3220121761036</data>
 </node>
 <node id="ontology_path">
-<data key="x">750.2245647500608</data>
-<data key="y">480.46361133290634</data>
+<data key="x">782.7736109203696</data>
+<data key="y">817.996496365833</data>
 </node>
 <edge source="bioentry_dblink" target="dbxref"/>
 <edge source="bioentry" target="taxon"/>
