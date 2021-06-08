@@ -1,8 +1,8 @@
 # Schema Evolution Datasets 
 Collections of schema histories for the study of schema evolution.
 
-##Generic
-For more explanations and findings, please refer to my web page for [Schema Evolution] ( http://www.cs.uoi.gr/~pvassil/projects/schemaBiographies/index.html )
+## Generic
+For more explanations and findings on our research on Schema Evolution, please refer to my web page for [Schema Evolution] ( http://www.cs.uoi.gr/~pvassil/projects/schemaBiographies/index.html )
 
 
 ## Schema Evolution Datasets 2020
