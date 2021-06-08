@@ -10,7 +10,7 @@ The folders contain:
 - The results, including Excel files, and summary statistics for all the studied projects
 
 ## How to cite
-Panos Vassiliadis. Profiles of Schema Evolution in Free Open Source Software Projects. 37th IEEE International Conf. on Data Engineering (ICDE 2021), 19-22 April 2021, Chania, Greece.
+Panos Vassiliadis. Profiles of Schema Evolution in Free Open Source Software Projects.37th IEEE International Conference on Data Engineering (ICDE 2021), 19-22 April 2021, Chania, Crete, Greece.
 
 ## Tools
 
