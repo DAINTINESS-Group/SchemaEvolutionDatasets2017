@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- energine-cmf__energine -------------------------
+energine-cmf__energine:	Electrolysis	holds? 	true
+energine-cmf__energine:	Electrolysis	Geometry? 	true
+energine-cmf__energine:	Electrolysis	FisherExecuted? 	false
+energine-cmf__energine:	Electrolysis	p-Value? 	false
+------------------------------------------------

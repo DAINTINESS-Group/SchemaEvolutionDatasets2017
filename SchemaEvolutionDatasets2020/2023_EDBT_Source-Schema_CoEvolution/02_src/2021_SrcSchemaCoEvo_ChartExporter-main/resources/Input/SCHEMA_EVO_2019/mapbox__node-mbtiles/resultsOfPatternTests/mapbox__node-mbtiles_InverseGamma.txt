@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mapbox__node-mbtiles -------------------------
+mapbox__node-mbtiles:	InverseGamma	holds? 	true
+mapbox__node-mbtiles:	InverseGamma	Geometry? 	true
+mapbox__node-mbtiles:	InverseGamma	FisherExecuted? 	false
+mapbox__node-mbtiles:	InverseGamma	p-Value? 	false
+------------------------------------------------

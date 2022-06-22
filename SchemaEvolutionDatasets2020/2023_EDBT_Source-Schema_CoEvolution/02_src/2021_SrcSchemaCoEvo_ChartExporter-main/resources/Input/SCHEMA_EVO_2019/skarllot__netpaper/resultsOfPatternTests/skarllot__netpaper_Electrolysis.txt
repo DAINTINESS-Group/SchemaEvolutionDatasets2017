@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- skarllot__netpaper -------------------------
+skarllot__netpaper:	Electrolysis	holds? 	true
+skarllot__netpaper:	Electrolysis	Geometry? 	true
+skarllot__netpaper:	Electrolysis	FisherExecuted? 	false
+skarllot__netpaper:	Electrolysis	p-Value? 	false
+------------------------------------------------

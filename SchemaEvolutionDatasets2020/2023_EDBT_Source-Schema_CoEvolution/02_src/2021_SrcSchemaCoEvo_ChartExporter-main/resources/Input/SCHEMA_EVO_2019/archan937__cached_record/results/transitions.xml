@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1382134557.sql" newVersion="1382186127.sql"/>
+    <transition oldVersion="1382186127.sql" newVersion="1384907448.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>articles</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>foo_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>articles_tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>article_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tag_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>comments</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>article_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>content</name>
+                <type>TEXTCOLLATEUTF8_UNICODE_CI</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>created_at</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>poster_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>updated_at</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created_at</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>updated_at</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1384907448.sql" newVersion="1385424735.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>articles_tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1385424735.sql" newVersion="1385517021.sql"/>
+</transitions>

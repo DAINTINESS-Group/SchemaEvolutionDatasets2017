@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- rill-event-sourcing__rill -------------------------
+rill-event-sourcing__rill:	Gamma	holds? 	false
+rill-event-sourcing__rill:	Gamma	Geometry? 	false
+rill-event-sourcing__rill:	Gamma	FisherExecuted? 	false
+rill-event-sourcing__rill:	Gamma	p-Value? 	false
+rill-event-sourcing__rill:	Gamma	Surv.Wide 	0
+rill-event-sourcing__rill:	Gamma	Surv.NotWide 	2
+rill-event-sourcing__rill:	Gamma	Dead.Wide 	0
+rill-event-sourcing__rill:	Gamma	Dead.NotWide 	0
+rill-event-sourcing__rill:	Gamma	Wide 	0
+------------------------------------------------

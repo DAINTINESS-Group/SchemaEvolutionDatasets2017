@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1395862334.sql" newVersion="1395998467.sql"/>
+    <transition oldVersion="1395998467.sql" newVersion="1396478078.sql"/>
+    <transition oldVersion="1396478078.sql" newVersion="1396478743.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>transactions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>deviceFingerprint</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>transactions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>deviceId</name>
+                <type>INTEGERREFERENCESDEVICES</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>rate</name>
+                <type>DECIMAL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1396478743.sql" newVersion="1396479243.sql"/>
+    <transition oldVersion="1396479243.sql" newVersion="1396556664.sql"/>
+    <transition oldVersion="1396556664.sql" newVersion="1396567305.sql"/>
+    <transition oldVersion="1396567305.sql" newVersion="1396758465.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>devices</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>unpair</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1396758465.sql" newVersion="1397658735.sql"/>
+    <transition oldVersion="1397658735.sql" newVersion="1397659795.sql"/>
+    <transition oldVersion="1397659795.sql" newVersion="1398076875.sql"/>
+    <transition oldVersion="1398076875.sql" newVersion="1398076877.sql"/>
+    <transition oldVersion="1398076877.sql" newVersion="1398261430.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>transactions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>currencyCode</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>deviceFingerprint</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>toAddress</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>txHash</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>transactions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>currency_code</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>device_fingerprint</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>to_address</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tx_hash</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1398261430.sql" newVersion="1407252300.sql"/>
+    <transition oldVersion="1407252300.sql" newVersion="1410125267.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>bills</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>currency_code</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>denomination</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>device_fingerprint</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>device_time</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>satoshis</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>to_address</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>transaction_id</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>device_events</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>device_fingerprint</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>device_time</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>event_type</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>note</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1410125267.sql" newVersion="1461079911.sql"/>
+</transitions>

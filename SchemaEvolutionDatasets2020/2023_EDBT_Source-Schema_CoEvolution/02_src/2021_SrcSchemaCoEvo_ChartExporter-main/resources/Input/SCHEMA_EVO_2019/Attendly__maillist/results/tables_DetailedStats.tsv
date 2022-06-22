@@ -1,0 +1,8 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+account	9	0	-	8	2015-12-08 00:46:08	2016-03-23 05:05:36	0	1	106	5	7	5.89	1.4	2	2	0.22	0.22	1	20	1	21
+campaign	9	0	-	8	2015-12-08 00:46:08	2016-03-23 05:05:36	0	1	106	8	9	8.78	1.12	2	1	0.22	0.11	2	20	1	21
+list	9	0	-	8	2015-12-08 00:46:08	2016-03-23 05:05:36	0	1	106	4	5	4.78	1.25	1	1	0.11	0.11	1	20	1	21
+list_subscriber	9	0	-	8	2015-12-08 00:46:08	2016-03-23 05:05:36	0	1	106	3	3	3.33	1	2	2	0.22	0.22	1	20	1	21
+message	9	0	-	8	2015-12-08 00:46:08	2016-03-23 05:05:36	0	1	106	3	4	3.78	1.33	2	2	0.22	0.22	1	20	1	21
+subscriber	9	0	-	8	2015-12-08 00:46:08	2016-03-23 05:05:36	0	1	106	6	7	6.78	1.17	2	2	0.22	0.22	1	20	1	21
+variable	8	1	-	8	2015-12-09 03:06:15	2016-03-23 05:05:36	1	1	105	2	2	2	1	0	0	0	0		20	0	20

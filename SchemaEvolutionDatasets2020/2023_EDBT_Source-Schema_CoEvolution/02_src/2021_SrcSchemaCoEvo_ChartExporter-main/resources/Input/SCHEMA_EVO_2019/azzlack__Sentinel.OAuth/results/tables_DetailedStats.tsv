@@ -1,0 +1,4 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+AccessTokens	3	0	-	2	2015-10-20 12:38:33	2015-10-21 12:12:25	0	1	0	3	3	3	1	0	0	0	0		20	0	20
+AuthorizationCodes	3	0	-	2	2015-10-20 12:38:33	2015-10-21 12:12:25	0	1	0	3	3	3	1	0	0	0	0		20	0	20
+RefreshTokens	3	0	-	2	2015-10-20 12:38:33	2015-10-21 12:12:25	0	1	0	3	3	3	1	0	0	0	0		20	0	20

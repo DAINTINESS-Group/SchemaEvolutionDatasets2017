@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- shiftcurrency__shift -------------------------
+shiftcurrency__shift:	Electrolysis	holds? 	true
+shiftcurrency__shift:	Electrolysis	Geometry? 	true
+shiftcurrency__shift:	Electrolysis	FisherExecuted? 	false
+shiftcurrency__shift:	Electrolysis	p-Value? 	false
+------------------------------------------------

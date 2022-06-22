@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jaybennett89__thorium-go -------------------------
+jaybennett89__thorium-go:	Gamma	holds? 	false
+jaybennett89__thorium-go:	Gamma	Geometry? 	false
+jaybennett89__thorium-go:	Gamma	FisherExecuted? 	false
+jaybennett89__thorium-go:	Gamma	p-Value? 	false
+jaybennett89__thorium-go:	Gamma	Surv.Wide 	0
+jaybennett89__thorium-go:	Gamma	Surv.NotWide 	7
+jaybennett89__thorium-go:	Gamma	Dead.Wide 	0
+jaybennett89__thorium-go:	Gamma	Dead.NotWide 	2
+jaybennett89__thorium-go:	Gamma	Wide 	0
+------------------------------------------------

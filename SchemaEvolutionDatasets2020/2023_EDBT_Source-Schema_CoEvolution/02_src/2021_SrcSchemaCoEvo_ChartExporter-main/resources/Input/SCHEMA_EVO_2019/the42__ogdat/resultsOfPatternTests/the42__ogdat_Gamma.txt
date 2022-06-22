@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- the42__ogdat -------------------------
+the42__ogdat:	Gamma	holds? 	false
+the42__ogdat:	Gamma	Geometry? 	false
+the42__ogdat:	Gamma	FisherExecuted? 	false
+the42__ogdat:	Gamma	p-Value? 	false
+the42__ogdat:	Gamma	Surv.Wide 	0
+the42__ogdat:	Gamma	Surv.NotWide 	3
+the42__ogdat:	Gamma	Dead.Wide 	0
+the42__ogdat:	Gamma	Dead.NotWide 	0
+the42__ogdat:	Gamma	Wide 	0
+------------------------------------------------

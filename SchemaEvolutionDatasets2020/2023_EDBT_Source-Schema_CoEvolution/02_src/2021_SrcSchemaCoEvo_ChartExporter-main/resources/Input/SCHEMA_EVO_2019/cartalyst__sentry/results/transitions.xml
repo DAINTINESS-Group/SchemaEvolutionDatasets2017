@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1359432419.sql" newVersion="1359587327.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>persist_hash</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1359587327.sql" newVersion="1359930631.sql">
+        <update type="TypeChange">
+            <table>
+                <name>throttle</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1359930631.sql" newVersion="1360053528.sql"/>
+    <transition oldVersion="1360053528.sql" newVersion="1362440125.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>activation_code</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>persist_code</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>reset_password_code</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>activation_hash</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>persist_hash</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>reset_password_hash</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1362440125.sql" newVersion="1363326461.sql">
+        <update type="TypeChange">
+            <table>
+                <name>groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="NewTable">
+            <table>
+                <name>migrations</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>batch</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>migration</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>throttle</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>users_groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>group_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1363326461.sql" newVersion="1363326718.sql"/>
+    <transition oldVersion="1363326718.sql" newVersion="1363911924.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>throttle</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ip_address</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1363911924.sql" newVersion="1366014223.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>activated_at</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>last_login</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1366014223.sql" newVersion="1367538313.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>throttle</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>banned_at</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1367538313.sql" newVersion="1372927331.sql"/>
+    <transition oldVersion="1372927331.sql" newVersion="1375810534.sql"/>
+    <transition oldVersion="1375810534.sql" newVersion="1375871617.sql"/>
+</transitions>

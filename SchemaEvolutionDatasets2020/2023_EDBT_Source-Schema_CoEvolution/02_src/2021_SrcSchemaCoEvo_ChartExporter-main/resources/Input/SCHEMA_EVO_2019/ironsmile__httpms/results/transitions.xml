@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1389833233.sql" newVersion="1389890653.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tracks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>number</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1389890653.sql" newVersion="1390824627.sql"/>
+    <transition oldVersion="1390824627.sql" newVersion="1482682426.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>artist_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>albums</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>fs_path</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

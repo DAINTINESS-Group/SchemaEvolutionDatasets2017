@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1489984793.sql" newVersion="1519259327.sql"/>
+    <transition oldVersion="1519259327.sql" newVersion="1519318420.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>versions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ip</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_agent</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- SeldonIO__seldon-server -------------------------
+SeldonIO__seldon-server:	InverseGamma	holds? 	true
+SeldonIO__seldon-server:	InverseGamma	Geometry? 	true
+SeldonIO__seldon-server:	InverseGamma	FisherExecuted? 	false
+SeldonIO__seldon-server:	InverseGamma	p-Value? 	false
+------------------------------------------------

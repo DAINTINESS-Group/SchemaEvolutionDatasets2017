@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- gem__oq-engine -------------------------
+gem__oq-engine:	Gamma	holds? 	false
+gem__oq-engine:	Gamma	Geometry? 	false
+gem__oq-engine:	Gamma	FisherExecuted? 	true
+gem__oq-engine:	Gamma	p-Value? 	false
+gem__oq-engine:	Gamma	Surv.Wide 	1
+gem__oq-engine:	Gamma	Surv.NotWide 	3
+gem__oq-engine:	Gamma	Dead.Wide 	5
+gem__oq-engine:	Gamma	Dead.NotWide 	40
+gem__oq-engine:	Gamma	Wide 	6
+------------------------------------------------

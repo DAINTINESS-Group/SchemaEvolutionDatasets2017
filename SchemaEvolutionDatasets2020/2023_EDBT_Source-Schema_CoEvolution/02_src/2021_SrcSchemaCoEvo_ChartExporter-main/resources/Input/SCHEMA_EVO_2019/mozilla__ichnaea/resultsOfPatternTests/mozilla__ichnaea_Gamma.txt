@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mozilla__ichnaea -------------------------
+mozilla__ichnaea:	Gamma	holds? 	true
+mozilla__ichnaea:	Gamma	Geometry? 	true
+mozilla__ichnaea:	Gamma	FisherExecuted? 	false
+mozilla__ichnaea:	Gamma	p-Value? 	false
+mozilla__ichnaea:	Gamma	Surv.Wide 	40
+mozilla__ichnaea:	Gamma	Surv.NotWide 	8
+mozilla__ichnaea:	Gamma	Dead.Wide 	0
+mozilla__ichnaea:	Gamma	Dead.NotWide 	0
+mozilla__ichnaea:	Gamma	Wide 	40
+------------------------------------------------

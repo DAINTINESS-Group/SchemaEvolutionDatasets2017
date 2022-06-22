@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- damnpoet__yiicart -------------------------
+damnpoet__yiicart:	Gamma	holds? 	true
+damnpoet__yiicart:	Gamma	Geometry? 	true
+damnpoet__yiicart:	Gamma	FisherExecuted? 	false
+damnpoet__yiicart:	Gamma	p-Value? 	false
+damnpoet__yiicart:	Gamma	Surv.Wide 	12
+damnpoet__yiicart:	Gamma	Surv.NotWide 	97
+damnpoet__yiicart:	Gamma	Dead.Wide 	0
+damnpoet__yiicart:	Gamma	Dead.NotWide 	0
+damnpoet__yiicart:	Gamma	Wide 	12
+------------------------------------------------

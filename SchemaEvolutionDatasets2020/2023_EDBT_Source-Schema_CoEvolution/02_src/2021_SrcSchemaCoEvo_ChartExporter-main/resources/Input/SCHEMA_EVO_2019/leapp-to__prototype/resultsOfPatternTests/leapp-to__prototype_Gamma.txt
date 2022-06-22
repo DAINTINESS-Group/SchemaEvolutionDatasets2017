@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- leapp-to__prototype -------------------------
+leapp-to__prototype:	Gamma	holds? 	false
+leapp-to__prototype:	Gamma	Geometry? 	false
+leapp-to__prototype:	Gamma	FisherExecuted? 	false
+leapp-to__prototype:	Gamma	p-Value? 	false
+leapp-to__prototype:	Gamma	Surv.Wide 	0
+leapp-to__prototype:	Gamma	Surv.NotWide 	6
+leapp-to__prototype:	Gamma	Dead.Wide 	0
+leapp-to__prototype:	Gamma	Dead.NotWide 	0
+leapp-to__prototype:	Gamma	Wide 	0
+------------------------------------------------

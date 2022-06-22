@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- quickapps__cms -------------------------
+quickapps__cms:	Electrolysis	holds? 	true
+quickapps__cms:	Electrolysis	Geometry? 	true
+quickapps__cms:	Electrolysis	FisherExecuted? 	false
+quickapps__cms:	Electrolysis	p-Value? 	false
+------------------------------------------------

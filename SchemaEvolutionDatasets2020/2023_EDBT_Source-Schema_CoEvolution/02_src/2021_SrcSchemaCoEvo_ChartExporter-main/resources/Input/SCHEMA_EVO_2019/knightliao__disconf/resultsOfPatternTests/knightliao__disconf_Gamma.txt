@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- knightliao__disconf -------------------------
+knightliao__disconf:	Gamma	holds? 	false
+knightliao__disconf:	Gamma	Geometry? 	false
+knightliao__disconf:	Gamma	FisherExecuted? 	false
+knightliao__disconf:	Gamma	p-Value? 	false
+knightliao__disconf:	Gamma	Surv.Wide 	0
+knightliao__disconf:	Gamma	Surv.NotWide 	6
+knightliao__disconf:	Gamma	Dead.Wide 	0
+knightliao__disconf:	Gamma	Dead.NotWide 	0
+knightliao__disconf:	Gamma	Wide 	0
+------------------------------------------------

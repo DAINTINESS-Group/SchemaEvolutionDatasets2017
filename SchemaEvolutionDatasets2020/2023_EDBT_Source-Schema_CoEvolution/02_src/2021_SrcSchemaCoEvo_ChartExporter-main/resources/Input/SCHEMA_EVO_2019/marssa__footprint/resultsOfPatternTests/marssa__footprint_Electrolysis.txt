@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- marssa__footprint -------------------------
+marssa__footprint:	Electrolysis	holds? 	true
+marssa__footprint:	Electrolysis	Geometry? 	true
+marssa__footprint:	Electrolysis	FisherExecuted? 	false
+marssa__footprint:	Electrolysis	p-Value? 	false
+------------------------------------------------

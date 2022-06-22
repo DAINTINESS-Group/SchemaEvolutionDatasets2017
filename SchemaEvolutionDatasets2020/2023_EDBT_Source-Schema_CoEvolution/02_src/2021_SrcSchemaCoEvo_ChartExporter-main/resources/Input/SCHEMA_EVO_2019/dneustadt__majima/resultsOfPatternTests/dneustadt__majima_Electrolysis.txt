@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dneustadt__majima -------------------------
+dneustadt__majima:	Electrolysis	holds? 	true
+dneustadt__majima:	Electrolysis	Geometry? 	true
+dneustadt__majima:	Electrolysis	FisherExecuted? 	false
+dneustadt__majima:	Electrolysis	p-Value? 	false
+------------------------------------------------

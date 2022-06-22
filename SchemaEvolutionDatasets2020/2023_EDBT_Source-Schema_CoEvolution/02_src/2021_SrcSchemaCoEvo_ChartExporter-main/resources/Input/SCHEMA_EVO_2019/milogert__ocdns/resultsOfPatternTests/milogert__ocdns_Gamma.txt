@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- milogert__ocdns -------------------------
+milogert__ocdns:	Gamma	holds? 	false
+milogert__ocdns:	Gamma	Geometry? 	false
+milogert__ocdns:	Gamma	FisherExecuted? 	false
+milogert__ocdns:	Gamma	p-Value? 	false
+milogert__ocdns:	Gamma	Surv.Wide 	0
+milogert__ocdns:	Gamma	Surv.NotWide 	5
+milogert__ocdns:	Gamma	Dead.Wide 	0
+milogert__ocdns:	Gamma	Dead.NotWide 	2
+milogert__ocdns:	Gamma	Wide 	0
+------------------------------------------------

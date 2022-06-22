@@ -1,0 +1,4 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1436568708.sql;1486525482.sql;categories;Update:TypeChange;COLLATE;UTF8MB4_BIN;false;0;-
+1;1436568708.sql;1486525482.sql;categories;Update:TypeChange;alias;VARCHAR(400);false;0;-
+1;1436568708.sql;1486525482.sql;categories;Update:TypeChange;path;VARCHAR(400);false;0;-

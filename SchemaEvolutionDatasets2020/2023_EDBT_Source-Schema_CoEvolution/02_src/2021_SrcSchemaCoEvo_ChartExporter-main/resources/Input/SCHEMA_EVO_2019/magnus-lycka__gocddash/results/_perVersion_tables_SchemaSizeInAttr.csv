@@ -1,0 +1,12 @@
+;0;1;2;
+agent;2;2;2;
+email_notifications;4;4;4;
+failure_information;3;3;3;
+instance_claim;5;5;5;
+job;9;9;9;
+junit_failure;4;4;4;
+pipeline;0;3;3;
+pipeline_instance;4;10;10;
+pipeline_sync_rule;0;5;5;
+stage;7;8;8;
+texttest_failure;5;5;5;

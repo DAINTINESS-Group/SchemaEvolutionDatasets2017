@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- neos__flow-development-collection -------------------------
+neos__flow-development-collection:	Electrolysis	holds? 	true
+neos__flow-development-collection:	Electrolysis	Geometry? 	true
+neos__flow-development-collection:	Electrolysis	FisherExecuted? 	false
+neos__flow-development-collection:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1455740158.sql;1477345112.sql;permissions_test.standard_acl;Deletion:DeleteTable;standard_acl_id;SERIAL;true;0;-
+1;1455740158.sql;1477345112.sql;permissions_test.standard_acl;Deletion:DeleteTable;value;TEXT;false;0;-
+2;1477345112.sql;1477346505.sql;permissions_test.standard_acl;Insertion:NewTable;standard_acl_id;SERIAL;true;0;-
+2;1477345112.sql;1477346505.sql;permissions_test.standard_acl;Insertion:NewTable;value;TEXT;false;0;-

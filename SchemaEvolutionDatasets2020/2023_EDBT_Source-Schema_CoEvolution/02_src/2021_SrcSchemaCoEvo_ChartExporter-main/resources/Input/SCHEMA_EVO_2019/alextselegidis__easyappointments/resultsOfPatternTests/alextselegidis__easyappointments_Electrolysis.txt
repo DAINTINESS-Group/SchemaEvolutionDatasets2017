@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- alextselegidis__easyappointments -------------------------
+alextselegidis__easyappointments:	Electrolysis	holds? 	true
+alextselegidis__easyappointments:	Electrolysis	Geometry? 	true
+alextselegidis__easyappointments:	Electrolysis	FisherExecuted? 	false
+alextselegidis__easyappointments:	Electrolysis	p-Value? 	false
+------------------------------------------------

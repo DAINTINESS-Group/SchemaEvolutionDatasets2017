@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- enova__landable -------------------------
+enova__landable:	InverseGamma	holds? 	true
+enova__landable:	InverseGamma	Geometry? 	true
+enova__landable:	InverseGamma	FisherExecuted? 	true
+enova__landable:	InverseGamma	p-Value? 	false
+------------------------------------------------

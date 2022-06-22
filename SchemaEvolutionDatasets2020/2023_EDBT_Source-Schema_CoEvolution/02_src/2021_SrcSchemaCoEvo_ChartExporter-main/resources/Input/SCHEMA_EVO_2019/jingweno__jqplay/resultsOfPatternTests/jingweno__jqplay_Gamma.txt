@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jingweno__jqplay -------------------------
+jingweno__jqplay:	Gamma	holds? 	false
+jingweno__jqplay:	Gamma	Geometry? 	false
+jingweno__jqplay:	Gamma	FisherExecuted? 	false
+jingweno__jqplay:	Gamma	p-Value? 	false
+jingweno__jqplay:	Gamma	Surv.Wide 	0
+jingweno__jqplay:	Gamma	Surv.NotWide 	1
+jingweno__jqplay:	Gamma	Dead.Wide 	0
+jingweno__jqplay:	Gamma	Dead.NotWide 	0
+jingweno__jqplay:	Gamma	Wide 	0
+------------------------------------------------

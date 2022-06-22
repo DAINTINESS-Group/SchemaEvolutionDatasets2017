@@ -1,0 +1,16 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+categories;4;0;-;0;4;4;4.0
+contact;4;0;-;0;6;6;6.0
+email_confirmations;4;0;-;0;6;6;6.0
+failed_logins;4;0;-;0;4;4;4.0
+file_store;3;1;-;0;9;9;9.0
+password_changes;4;0;-;0;5;5;5.0
+permissions;4;0;-;0;4;4;4.0
+posts;4;0;-;3;10;10;10.0
+posts_all;1;0;0;0;10;10;10.0
+posts_views;4;0;-;0;3;3;3.0
+profiles;4;0;-;0;3;3;3.0
+remember_tokens;4;0;-;0;5;5;5.0
+reset_passwords;4;0;-;0;6;6;6.0
+success_logins;4;0;-;0;4;4;4.0
+users;4;0;-;0;10;10;10.0

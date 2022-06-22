@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- simplepie__simplepie -------------------------
+simplepie__simplepie:	InverseGamma	holds? 	true
+simplepie__simplepie:	InverseGamma	Geometry? 	true
+simplepie__simplepie:	InverseGamma	FisherExecuted? 	false
+simplepie__simplepie:	InverseGamma	p-Value? 	false
+------------------------------------------------

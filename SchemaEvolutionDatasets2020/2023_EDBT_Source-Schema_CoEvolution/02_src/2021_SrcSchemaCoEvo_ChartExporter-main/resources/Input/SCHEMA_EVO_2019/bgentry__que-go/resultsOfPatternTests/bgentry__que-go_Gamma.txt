@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- bgentry__que-go -------------------------
+bgentry__que-go:	Gamma	holds? 	false
+bgentry__que-go:	Gamma	Geometry? 	false
+bgentry__que-go:	Gamma	FisherExecuted? 	false
+bgentry__que-go:	Gamma	p-Value? 	false
+bgentry__que-go:	Gamma	Surv.Wide 	0
+bgentry__que-go:	Gamma	Surv.NotWide 	1
+bgentry__que-go:	Gamma	Dead.Wide 	0
+bgentry__que-go:	Gamma	Dead.NotWide 	0
+bgentry__que-go:	Gamma	Wide 	0
+------------------------------------------------

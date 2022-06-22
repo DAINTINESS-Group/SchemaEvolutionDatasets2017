@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- quickapps__cms -------------------------
+quickapps__cms:	Gamma	holds? 	true
+quickapps__cms:	Gamma	Geometry? 	true
+quickapps__cms:	Gamma	FisherExecuted? 	true
+quickapps__cms:	Gamma	p-Value? 	false
+quickapps__cms:	Gamma	Surv.Wide 	7
+quickapps__cms:	Gamma	Surv.NotWide 	19
+quickapps__cms:	Gamma	Dead.Wide 	1
+quickapps__cms:	Gamma	Dead.NotWide 	5
+quickapps__cms:	Gamma	Wide 	8
+------------------------------------------------

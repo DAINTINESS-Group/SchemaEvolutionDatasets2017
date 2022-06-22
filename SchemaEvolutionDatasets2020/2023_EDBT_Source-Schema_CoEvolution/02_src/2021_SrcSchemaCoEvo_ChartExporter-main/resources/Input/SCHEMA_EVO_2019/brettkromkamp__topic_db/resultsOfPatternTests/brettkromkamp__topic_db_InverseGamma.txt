@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- brettkromkamp__topic_db -------------------------
+brettkromkamp__topic_db:	InverseGamma	holds? 	true
+brettkromkamp__topic_db:	InverseGamma	Geometry? 	true
+brettkromkamp__topic_db:	InverseGamma	FisherExecuted? 	false
+brettkromkamp__topic_db:	InverseGamma	p-Value? 	false
+------------------------------------------------

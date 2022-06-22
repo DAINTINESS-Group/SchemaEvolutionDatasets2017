@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- wanlitao__HangfireExtension -------------------------
+wanlitao__HangfireExtension:	Gamma	holds? 	false
+wanlitao__HangfireExtension:	Gamma	Geometry? 	false
+wanlitao__HangfireExtension:	Gamma	FisherExecuted? 	false
+wanlitao__HangfireExtension:	Gamma	p-Value? 	false
+wanlitao__HangfireExtension:	Gamma	Surv.Wide 	0
+wanlitao__HangfireExtension:	Gamma	Surv.NotWide 	11
+wanlitao__HangfireExtension:	Gamma	Dead.Wide 	0
+wanlitao__HangfireExtension:	Gamma	Dead.NotWide 	0
+wanlitao__HangfireExtension:	Gamma	Wide 	0
+------------------------------------------------

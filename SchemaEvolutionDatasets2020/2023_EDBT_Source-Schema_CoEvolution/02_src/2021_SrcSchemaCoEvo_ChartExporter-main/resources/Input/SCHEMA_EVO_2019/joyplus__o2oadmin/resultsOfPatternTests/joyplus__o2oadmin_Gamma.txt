@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- joyplus__o2oadmin -------------------------
+joyplus__o2oadmin:	Gamma	holds? 	true
+joyplus__o2oadmin:	Gamma	Geometry? 	true
+joyplus__o2oadmin:	Gamma	FisherExecuted? 	false
+joyplus__o2oadmin:	Gamma	p-Value? 	false
+joyplus__o2oadmin:	Gamma	Surv.Wide 	3
+joyplus__o2oadmin:	Gamma	Surv.NotWide 	10
+joyplus__o2oadmin:	Gamma	Dead.Wide 	0
+joyplus__o2oadmin:	Gamma	Dead.NotWide 	0
+joyplus__o2oadmin:	Gamma	Wide 	3
+------------------------------------------------

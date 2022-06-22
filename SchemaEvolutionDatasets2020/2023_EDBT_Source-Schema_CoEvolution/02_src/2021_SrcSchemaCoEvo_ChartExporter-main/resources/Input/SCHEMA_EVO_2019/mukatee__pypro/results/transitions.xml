@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1423341385.sql" newVersion="1423772194.sql"/>
+    <transition oldVersion="1423772194.sql" newVersion="1424372139.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>cpu_proc</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>percent</name>
+                <type>DECIMAL(5,2)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>cpu_proc</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>rec_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>cpu_sys</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>rec_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>event_log</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>description</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>event_log</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>proc_id</name>
+                <type>INT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <update type="TypeChange">
+            <table>
+                <name>io_sys</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>rec_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>mem_proc</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>rec_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>mem_sys</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>rec_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>mem_sys</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>swap_used</name>
+                <type>BIGINT(15)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>proc_info</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>rec_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>session_info</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>start_time</name>
+                <type>BIGINT(12)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1424372139.sql" newVersion="1427399956.sql"/>
+</transitions>

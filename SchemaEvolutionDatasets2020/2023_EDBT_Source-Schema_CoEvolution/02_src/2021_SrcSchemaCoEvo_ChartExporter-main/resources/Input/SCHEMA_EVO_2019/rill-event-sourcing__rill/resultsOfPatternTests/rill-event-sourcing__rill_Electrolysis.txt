@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rill-event-sourcing__rill -------------------------
+rill-event-sourcing__rill:	Electrolysis	holds? 	true
+rill-event-sourcing__rill:	Electrolysis	Geometry? 	true
+rill-event-sourcing__rill:	Electrolysis	FisherExecuted? 	false
+rill-event-sourcing__rill:	Electrolysis	p-Value? 	false
+------------------------------------------------

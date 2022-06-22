@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- senecajs__seneca-postgres-store -------------------------
+senecajs__seneca-postgres-store:	Gamma	holds? 	false
+senecajs__seneca-postgres-store:	Gamma	Geometry? 	false
+senecajs__seneca-postgres-store:	Gamma	FisherExecuted? 	false
+senecajs__seneca-postgres-store:	Gamma	p-Value? 	false
+senecajs__seneca-postgres-store:	Gamma	Surv.Wide 	0
+senecajs__seneca-postgres-store:	Gamma	Surv.NotWide 	3
+senecajs__seneca-postgres-store:	Gamma	Dead.Wide 	0
+senecajs__seneca-postgres-store:	Gamma	Dead.NotWide 	0
+senecajs__seneca-postgres-store:	Gamma	Wide 	0
+------------------------------------------------

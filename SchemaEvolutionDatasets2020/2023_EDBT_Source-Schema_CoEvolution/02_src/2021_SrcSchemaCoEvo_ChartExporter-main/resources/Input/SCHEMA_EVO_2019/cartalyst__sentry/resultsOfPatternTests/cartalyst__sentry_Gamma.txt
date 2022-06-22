@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- cartalyst__sentry -------------------------
+cartalyst__sentry:	Gamma	holds? 	true
+cartalyst__sentry:	Gamma	Geometry? 	true
+cartalyst__sentry:	Gamma	FisherExecuted? 	false
+cartalyst__sentry:	Gamma	p-Value? 	false
+cartalyst__sentry:	Gamma	Surv.Wide 	1
+cartalyst__sentry:	Gamma	Surv.NotWide 	4
+cartalyst__sentry:	Gamma	Dead.Wide 	0
+cartalyst__sentry:	Gamma	Dead.NotWide 	0
+cartalyst__sentry:	Gamma	Wide 	1
+------------------------------------------------

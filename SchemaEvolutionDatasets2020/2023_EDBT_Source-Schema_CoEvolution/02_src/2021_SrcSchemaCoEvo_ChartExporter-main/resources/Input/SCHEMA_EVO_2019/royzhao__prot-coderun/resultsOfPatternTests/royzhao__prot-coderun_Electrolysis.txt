@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- royzhao__prot-coderun -------------------------
+royzhao__prot-coderun:	Electrolysis	holds? 	false
+royzhao__prot-coderun:	Electrolysis	Geometry? 	false
+royzhao__prot-coderun:	Electrolysis	FisherExecuted? 	false
+royzhao__prot-coderun:	Electrolysis	p-Value? 	false
+------------------------------------------------

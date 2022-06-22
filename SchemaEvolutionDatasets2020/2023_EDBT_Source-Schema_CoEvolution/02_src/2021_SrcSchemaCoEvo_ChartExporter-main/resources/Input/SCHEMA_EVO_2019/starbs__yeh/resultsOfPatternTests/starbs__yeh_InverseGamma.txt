@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- starbs__yeh -------------------------
+starbs__yeh:	InverseGamma	holds? 	true
+starbs__yeh:	InverseGamma	Geometry? 	true
+starbs__yeh:	InverseGamma	FisherExecuted? 	false
+starbs__yeh:	InverseGamma	p-Value? 	false
+------------------------------------------------

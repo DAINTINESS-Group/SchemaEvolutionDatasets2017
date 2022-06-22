@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- neos__flow-development-collection -------------------------
+neos__flow-development-collection:	InverseGamma	holds? 	true
+neos__flow-development-collection:	InverseGamma	Geometry? 	true
+neos__flow-development-collection:	InverseGamma	FisherExecuted? 	false
+neos__flow-development-collection:	InverseGamma	p-Value? 	false
+------------------------------------------------

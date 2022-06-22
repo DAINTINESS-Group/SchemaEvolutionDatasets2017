@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- RiotingNerds__sails-hook-audittrail -------------------------
+RiotingNerds__sails-hook-audittrail:	Gamma	holds? 	false
+RiotingNerds__sails-hook-audittrail:	Gamma	Geometry? 	false
+RiotingNerds__sails-hook-audittrail:	Gamma	FisherExecuted? 	false
+RiotingNerds__sails-hook-audittrail:	Gamma	p-Value? 	false
+RiotingNerds__sails-hook-audittrail:	Gamma	Surv.Wide 	0
+RiotingNerds__sails-hook-audittrail:	Gamma	Surv.NotWide 	1
+RiotingNerds__sails-hook-audittrail:	Gamma	Dead.Wide 	0
+RiotingNerds__sails-hook-audittrail:	Gamma	Dead.NotWide 	0
+RiotingNerds__sails-hook-audittrail:	Gamma	Wide 	0
+------------------------------------------------

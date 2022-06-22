@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- alextselegidis__easyappointments -------------------------
+alextselegidis__easyappointments:	InverseGamma	holds? 	true
+alextselegidis__easyappointments:	InverseGamma	Geometry? 	true
+alextselegidis__easyappointments:	InverseGamma	FisherExecuted? 	false
+alextselegidis__easyappointments:	InverseGamma	p-Value? 	false
+------------------------------------------------

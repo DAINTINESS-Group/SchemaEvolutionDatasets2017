@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- colbygk__ARS -------------------------
+colbygk__ARS:	InverseGamma	holds? 	true
+colbygk__ARS:	InverseGamma	Geometry? 	true
+colbygk__ARS:	InverseGamma	FisherExecuted? 	false
+colbygk__ARS:	InverseGamma	p-Value? 	false
+------------------------------------------------

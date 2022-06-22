@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- eldersantos__winston-postgre -------------------------
+eldersantos__winston-postgre:	Gamma	holds? 	false
+eldersantos__winston-postgre:	Gamma	Geometry? 	false
+eldersantos__winston-postgre:	Gamma	FisherExecuted? 	false
+eldersantos__winston-postgre:	Gamma	p-Value? 	false
+eldersantos__winston-postgre:	Gamma	Surv.Wide 	0
+eldersantos__winston-postgre:	Gamma	Surv.NotWide 	1
+eldersantos__winston-postgre:	Gamma	Dead.Wide 	0
+eldersantos__winston-postgre:	Gamma	Dead.NotWide 	0
+eldersantos__winston-postgre:	Gamma	Wide 	0
+------------------------------------------------

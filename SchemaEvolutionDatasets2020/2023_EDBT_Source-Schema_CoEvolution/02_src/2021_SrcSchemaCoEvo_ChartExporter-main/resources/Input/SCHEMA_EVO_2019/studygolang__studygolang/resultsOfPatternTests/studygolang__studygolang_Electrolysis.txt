@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- studygolang__studygolang -------------------------
+studygolang__studygolang:	Electrolysis	holds? 	false
+studygolang__studygolang:	Electrolysis	Geometry? 	false
+studygolang__studygolang:	Electrolysis	FisherExecuted? 	false
+studygolang__studygolang:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,17 @@
+Date	Author	NumAffectedFiles	Contains .sql
+2013-08	Johan	2	0
+2014-07	Mati	18	1
+2014-08	Steven,Ercan,Mati,Johan	40	0
+2014-09	Mati,Ercan,Steven	37	1
+2014-10	Mati,Ercan,HermanPeeren	4	0
+2014-11	Ercan,Steven,Mati,Arunas,Dave	196	7
+2014-12	Mati	36	2
+2015-01	Johan,Arunas,Mati,Ercan	78	4
+2015-02	Ercan,Johan,Mati	15	2
+2015-04	Johan,Cameron,Ercan	4	0
+2015-06	Steven	1	0
+2015-07	Steven	1	2
+2015-08	Steven	0	2
+2015-11	Tom,Johan	5	0
+2016-02	Johan,Tom	3	0
+2018-02	Ercan	1	0

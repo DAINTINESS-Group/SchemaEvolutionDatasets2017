@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- chill117__express-mysql-session -------------------------
+chill117__express-mysql-session:	InverseGamma	holds? 	true
+chill117__express-mysql-session:	InverseGamma	Geometry? 	true
+chill117__express-mysql-session:	InverseGamma	FisherExecuted? 	false
+chill117__express-mysql-session:	InverseGamma	p-Value? 	false
+------------------------------------------------

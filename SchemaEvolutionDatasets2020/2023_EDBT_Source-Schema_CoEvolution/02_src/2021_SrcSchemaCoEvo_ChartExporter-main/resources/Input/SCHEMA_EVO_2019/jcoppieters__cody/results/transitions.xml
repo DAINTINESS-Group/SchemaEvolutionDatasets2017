@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1410196139.sql" newVersion="1410428734.sql"/>
+    <transition oldVersion="1410428734.sql" newVersion="1410443680.sql"/>
+    <transition oldVersion="1410443680.sql" newVersion="1410444007.sql"/>
+    <transition oldVersion="1410444007.sql" newVersion="1411377273.sql"/>
+    <transition oldVersion="1411377273.sql" newVersion="1413998142.sql"/>
+    <transition oldVersion="1413998142.sql" newVersion="1415231770.sql"/>
+    <transition oldVersion="1415231770.sql" newVersion="1422381495.sql">
+        <update type="TypeChange">
+            <table>
+                <name>atoms</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>note</name>
+                <type>VARCHAR(4096)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1422381495.sql" newVersion="1422456561.sql">
+        <update type="TypeChange">
+            <table>
+                <name>atoms</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>extention</name>
+                <type>VARCHAR(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1422456561.sql" newVersion="1427643027.sql"/>
+    <transition oldVersion="1427643027.sql" newVersion="1428680680.sql"/>
+    <transition oldVersion="1428680680.sql" newVersion="1429212551.sql"/>
+    <transition oldVersion="1429212551.sql" newVersion="1462967217.sql"/>
+</transitions>

@@ -1,0 +1,14 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1365951202.sql;1408884981.sql;user_custom_fields;Insertion:NewTable;attribute;VARCHAR(50);false;0;-
+1;1365951202.sql;1408884981.sql;user_custom_fields;Insertion:NewTable;user_id;INT(11);false;0;-
+1;1365951202.sql;1408884981.sql;user_custom_fields;Insertion:NewTable;value;VARCHAR(255);true;0;-
+2;1408884981.sql;1408886313.sql;user_custom_fields;Update:KeyChange;attribute;VARCHAR(50);true;0;-
+2;1408884981.sql;1408886313.sql;user_custom_fields;Update:KeyChange;user_id;INT(11);true;0;-
+2;1408884981.sql;1408886313.sql;user_custom_fields;Update:KeyChange;value;VARCHAR(255);false;0;-
+3;1408886313.sql;1408887068.sql;-;-;-;-;-;-;-
+4;1408887068.sql;1408888929.sql;-;-;-;-;-;-;-
+5;1408888929.sql;1413861447.sql;users;Insertion:UpdateTable;confirmationToken;VARCHAR(100);false;0;-
+5;1408888929.sql;1413861447.sql;users;Insertion:UpdateTable;isEnabled;TINYINT(1);false;0;-
+5;1408888929.sql;1413861447.sql;users;Insertion:UpdateTable;timePasswordResetRequested;INT(11);false;0;-
+5;1408888929.sql;1413861447.sql;users;Insertion:UpdateTable;username;VARCHAR(100);false;0;-
+5;1408888929.sql;1413861447.sql;users;Update:TypeChange;time_created;INT(11);false;0;-

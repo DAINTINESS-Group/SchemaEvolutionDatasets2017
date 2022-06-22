@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- twitter__zipkin -------------------------
+twitter__zipkin:	Gamma	holds? 	true
+twitter__zipkin:	Gamma	Geometry? 	true
+twitter__zipkin:	Gamma	FisherExecuted? 	false
+twitter__zipkin:	Gamma	p-Value? 	false
+twitter__zipkin:	Gamma	Surv.Wide 	1
+twitter__zipkin:	Gamma	Surv.NotWide 	2
+twitter__zipkin:	Gamma	Dead.Wide 	0
+twitter__zipkin:	Gamma	Dead.NotWide 	0
+twitter__zipkin:	Gamma	Wide 	1
+------------------------------------------------

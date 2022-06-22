@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- GoBelieveIO__im_service -------------------------
+GoBelieveIO__im_service:	Gamma	holds? 	false
+GoBelieveIO__im_service:	Gamma	Geometry? 	false
+GoBelieveIO__im_service:	Gamma	FisherExecuted? 	false
+GoBelieveIO__im_service:	Gamma	p-Value? 	false
+GoBelieveIO__im_service:	Gamma	Surv.Wide 	0
+GoBelieveIO__im_service:	Gamma	Surv.NotWide 	2
+GoBelieveIO__im_service:	Gamma	Dead.Wide 	6
+GoBelieveIO__im_service:	Gamma	Dead.NotWide 	8
+GoBelieveIO__im_service:	Gamma	Wide 	6
+------------------------------------------------

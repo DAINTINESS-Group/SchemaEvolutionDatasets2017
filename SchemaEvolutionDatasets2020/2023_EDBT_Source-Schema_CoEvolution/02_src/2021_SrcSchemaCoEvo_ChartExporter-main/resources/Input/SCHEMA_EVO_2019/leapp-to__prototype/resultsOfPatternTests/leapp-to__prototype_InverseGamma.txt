@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- leapp-to__prototype -------------------------
+leapp-to__prototype:	InverseGamma	holds? 	true
+leapp-to__prototype:	InverseGamma	Geometry? 	true
+leapp-to__prototype:	InverseGamma	FisherExecuted? 	false
+leapp-to__prototype:	InverseGamma	p-Value? 	false
+------------------------------------------------

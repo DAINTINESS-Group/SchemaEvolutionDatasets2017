@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ranaroussi__qtpylib -------------------------
+ranaroussi__qtpylib:	Electrolysis	holds? 	true
+ranaroussi__qtpylib:	Electrolysis	Geometry? 	true
+ranaroussi__qtpylib:	Electrolysis	FisherExecuted? 	false
+ranaroussi__qtpylib:	Electrolysis	p-Value? 	false
+------------------------------------------------

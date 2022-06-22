@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1483336613.sql" newVersion="1483342397.sql">
+        <update type="TypeChange">
+            <table>
+                <name>snippets</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>j</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>snippets</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>o</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

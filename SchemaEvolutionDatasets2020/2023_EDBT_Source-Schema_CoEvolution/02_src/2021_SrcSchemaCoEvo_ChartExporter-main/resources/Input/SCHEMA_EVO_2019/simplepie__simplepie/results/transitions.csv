@@ -1,0 +1,3 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1199915562.sql;1372115182.sql;items;Update:TypeChange;data;MEDIUMBLOBCHARACTERSETUTF8;false;0;-
+2;1372115182.sql;1458075421.sql;items;Update:TypeChange;data;MEDIUMBLOB;false;0;-

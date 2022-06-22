@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- goproj__note -------------------------
+goproj__note:	InverseGamma	holds? 	true
+goproj__note:	InverseGamma	Geometry? 	true
+goproj__note:	InverseGamma	FisherExecuted? 	false
+goproj__note:	InverseGamma	p-Value? 	false
+------------------------------------------------

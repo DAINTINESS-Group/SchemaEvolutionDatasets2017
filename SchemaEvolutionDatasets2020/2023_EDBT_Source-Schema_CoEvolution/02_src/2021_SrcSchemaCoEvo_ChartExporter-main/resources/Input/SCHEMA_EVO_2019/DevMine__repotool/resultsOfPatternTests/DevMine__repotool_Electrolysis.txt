@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- DevMine__repotool -------------------------
+DevMine__repotool:	Electrolysis	holds? 	true
+DevMine__repotool:	Electrolysis	Geometry? 	true
+DevMine__repotool:	Electrolysis	FisherExecuted? 	false
+DevMine__repotool:	Electrolysis	p-Value? 	false
+------------------------------------------------

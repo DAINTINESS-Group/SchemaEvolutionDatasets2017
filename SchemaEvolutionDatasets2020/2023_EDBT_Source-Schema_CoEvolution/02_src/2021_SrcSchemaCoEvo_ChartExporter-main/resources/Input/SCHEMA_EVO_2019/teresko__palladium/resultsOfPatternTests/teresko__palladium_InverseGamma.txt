@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- teresko__palladium -------------------------
+teresko__palladium:	InverseGamma	holds? 	true
+teresko__palladium:	InverseGamma	Geometry? 	true
+teresko__palladium:	InverseGamma	FisherExecuted? 	false
+teresko__palladium:	InverseGamma	p-Value? 	false
+------------------------------------------------

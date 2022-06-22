@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- damnpoet__yiicart -------------------------
+damnpoet__yiicart:	Gamma	holds? 	true
+damnpoet__yiicart:	Gamma	Geometry? 	true
+damnpoet__yiicart:	Gamma	FisherExecuted? 	false
+damnpoet__yiicart:	Gamma	p-Value? 	true
+------------------------------------------------

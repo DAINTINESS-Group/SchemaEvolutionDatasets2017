@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- byteball__byteballcore -------------------------
+byteball__byteballcore:	Gamma	holds? 	true
+byteball__byteballcore:	Gamma	Geometry? 	true
+byteball__byteballcore:	Gamma	FisherExecuted? 	false
+byteball__byteballcore:	Gamma	p-Value? 	false
+byteball__byteballcore:	Gamma	Surv.Wide 	4
+byteball__byteballcore:	Gamma	Surv.NotWide 	64
+byteball__byteballcore:	Gamma	Dead.Wide 	0
+byteball__byteballcore:	Gamma	Dead.NotWide 	0
+byteball__byteballcore:	Gamma	Wide 	4
+------------------------------------------------

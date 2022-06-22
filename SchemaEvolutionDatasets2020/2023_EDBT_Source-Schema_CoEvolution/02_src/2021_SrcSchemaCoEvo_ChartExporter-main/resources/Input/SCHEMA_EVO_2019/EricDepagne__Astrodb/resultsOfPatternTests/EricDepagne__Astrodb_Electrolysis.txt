@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- EricDepagne__Astrodb -------------------------
+EricDepagne__Astrodb:	Electrolysis	holds? 	true
+EricDepagne__Astrodb:	Electrolysis	Geometry? 	true
+EricDepagne__Astrodb:	Electrolysis	FisherExecuted? 	false
+EricDepagne__Astrodb:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- hurad__hurad -------------------------
+hurad__hurad:	InverseGamma	holds? 	true
+hurad__hurad:	InverseGamma	Geometry? 	true
+hurad__hurad:	InverseGamma	FisherExecuted? 	false
+hurad__hurad:	InverseGamma	p-Value? 	false
+------------------------------------------------

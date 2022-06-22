@@ -10,7 +10,15 @@ The folders contain:
 - The results, including Excel files, and summary statistics for all the studied projects
 
 ## How to cite
-Panos Vassiliadis. Profiles of Schema Evolution in Free Open Source Software Projects.37th IEEE International Conference on Data Engineering (ICDE 2021), 19-22 April 2021, Chania, Crete, Greece.
+For the data set of schema histories (also: the experimental method and results on taxa of schema evolution):
+
+> Panos Vassiliadis. Profiles of Schema Evolution in Free Open Source Software Projects. 37th IEEE International Conference on Data Engineering (ICDE), 19-22 April 2021, Chania, Crete, Greece.
+
+Specifically for the co-evolution of source and schema:
+
+> Panos Vassiliadis, Fation Shehaj, George Kalampokis, Apostolos V. Zarras.  Joint Source and Schema Evolution: Insights from a Study of 195 FOSS Projects. 26th International Conference on Extending Database Technology (EDBT), 28th March - 31st March, 2023, Ioannina, Greece.
+
+ 
 
 ## Tools
 

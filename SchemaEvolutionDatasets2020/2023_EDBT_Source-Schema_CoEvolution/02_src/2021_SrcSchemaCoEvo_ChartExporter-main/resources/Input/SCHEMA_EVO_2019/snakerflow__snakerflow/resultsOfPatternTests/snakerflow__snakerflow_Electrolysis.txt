@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- snakerflow__snakerflow -------------------------
+snakerflow__snakerflow:	Electrolysis	holds? 	true
+snakerflow__snakerflow:	Electrolysis	Geometry? 	true
+snakerflow__snakerflow:	Electrolysis	FisherExecuted? 	false
+snakerflow__snakerflow:	Electrolysis	p-Value? 	false
+------------------------------------------------

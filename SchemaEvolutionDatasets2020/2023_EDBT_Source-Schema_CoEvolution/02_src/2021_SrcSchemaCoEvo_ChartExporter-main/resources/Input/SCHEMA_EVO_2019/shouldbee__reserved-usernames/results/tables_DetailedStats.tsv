@@ -1,0 +1,2 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+reserved_usernames	10	0	-	9	2014-07-30 15:52:12	2019-02-17 21:08:23	0	5	1663	1	1	1	1	0	0	0	0		20	0	20

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ichthus-soft__bible-api -------------------------
+ichthus-soft__bible-api:	InverseGamma	holds? 	true
+ichthus-soft__bible-api:	InverseGamma	Geometry? 	true
+ichthus-soft__bible-api:	InverseGamma	FisherExecuted? 	false
+ichthus-soft__bible-api:	InverseGamma	p-Value? 	false
+------------------------------------------------

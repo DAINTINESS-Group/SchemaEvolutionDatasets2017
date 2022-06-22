@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- lisong__code-push-server -------------------------
+lisong__code-push-server:	Gamma	holds? 	true
+lisong__code-push-server:	Gamma	Geometry? 	true
+lisong__code-push-server:	Gamma	FisherExecuted? 	false
+lisong__code-push-server:	Gamma	p-Value? 	false
+lisong__code-push-server:	Gamma	Surv.Wide 	1
+lisong__code-push-server:	Gamma	Surv.NotWide 	12
+lisong__code-push-server:	Gamma	Dead.Wide 	0
+lisong__code-push-server:	Gamma	Dead.NotWide 	0
+lisong__code-push-server:	Gamma	Wide 	1
+------------------------------------------------

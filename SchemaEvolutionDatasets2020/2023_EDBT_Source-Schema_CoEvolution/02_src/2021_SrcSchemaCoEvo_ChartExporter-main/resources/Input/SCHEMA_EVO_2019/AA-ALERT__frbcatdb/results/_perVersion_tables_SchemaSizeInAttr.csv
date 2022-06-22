@@ -1,0 +1,17 @@
+;0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;
+authors;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;
+frbs;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;
+frbs_have_publications;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;
+frbs_notes;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;
+observations;8;8;8;8;8;8;9;9;9;9;9;9;9;9;9;9;
+observations_have_publications;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;
+observations_notes;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;
+publications;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;
+radio_images;4;4;4;4;4;4;4;4;4;4;4;4;4;4;4;4;
+radio_images_have_radio_measured_params;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;
+radio_measured_params;33;34;34;34;34;33;32;32;33;37;36;39;38;38;38;38;
+radio_measured_params_have_publications;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;
+radio_measured_params_notes;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;
+radio_observations_params;21;23;23;23;23;22;24;24;24;24;24;24;25;24;24;24;
+radio_observations_params_have_publications;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;2;
+radio_observations_params_notes;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;5;

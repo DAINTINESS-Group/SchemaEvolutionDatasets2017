@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- curt-labs__GoSurvey -------------------------
+curt-labs__GoSurvey:	Electrolysis	holds? 	true
+curt-labs__GoSurvey:	Electrolysis	Geometry? 	true
+curt-labs__GoSurvey:	Electrolysis	FisherExecuted? 	false
+curt-labs__GoSurvey:	Electrolysis	p-Value? 	false
+------------------------------------------------

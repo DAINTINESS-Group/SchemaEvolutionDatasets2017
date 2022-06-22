@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- h2oai__steam -------------------------
+h2oai__steam:	Gamma	holds? 	true
+h2oai__steam:	Gamma	Geometry? 	true
+h2oai__steam:	Gamma	FisherExecuted? 	false
+h2oai__steam:	Gamma	p-Value? 	false
+h2oai__steam:	Gamma	Surv.Wide 	1
+h2oai__steam:	Gamma	Surv.NotWide 	23
+h2oai__steam:	Gamma	Dead.Wide 	0
+h2oai__steam:	Gamma	Dead.NotWide 	0
+h2oai__steam:	Gamma	Wide 	1
+------------------------------------------------

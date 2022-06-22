@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- curt-labs__GoSurvey -------------------------
+curt-labs__GoSurvey:	InverseGamma	holds? 	true
+curt-labs__GoSurvey:	InverseGamma	Geometry? 	true
+curt-labs__GoSurvey:	InverseGamma	FisherExecuted? 	false
+curt-labs__GoSurvey:	InverseGamma	p-Value? 	false
+------------------------------------------------

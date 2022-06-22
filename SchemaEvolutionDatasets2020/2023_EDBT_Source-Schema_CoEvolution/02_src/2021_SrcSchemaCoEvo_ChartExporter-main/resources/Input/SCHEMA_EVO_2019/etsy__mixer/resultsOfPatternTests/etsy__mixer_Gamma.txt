@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- etsy__mixer -------------------------
+etsy__mixer:	Gamma	holds? 	false
+etsy__mixer:	Gamma	Geometry? 	false
+etsy__mixer:	Gamma	FisherExecuted? 	false
+etsy__mixer:	Gamma	p-Value? 	false
+etsy__mixer:	Gamma	Surv.Wide 	0
+etsy__mixer:	Gamma	Surv.NotWide 	7
+etsy__mixer:	Gamma	Dead.Wide 	0
+etsy__mixer:	Gamma	Dead.NotWide 	0
+etsy__mixer:	Gamma	Wide 	0
+------------------------------------------------

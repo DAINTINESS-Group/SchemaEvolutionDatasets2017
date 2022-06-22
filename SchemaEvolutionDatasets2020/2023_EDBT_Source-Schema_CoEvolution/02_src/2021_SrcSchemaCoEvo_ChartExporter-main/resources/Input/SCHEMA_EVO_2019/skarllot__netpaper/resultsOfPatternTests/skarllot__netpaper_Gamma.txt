@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- skarllot__netpaper -------------------------
+skarllot__netpaper:	Gamma	holds? 	false
+skarllot__netpaper:	Gamma	Geometry? 	false
+skarllot__netpaper:	Gamma	FisherExecuted? 	false
+skarllot__netpaper:	Gamma	p-Value? 	false
+skarllot__netpaper:	Gamma	Surv.Wide 	0
+skarllot__netpaper:	Gamma	Surv.NotWide 	18
+skarllot__netpaper:	Gamma	Dead.Wide 	0
+skarllot__netpaper:	Gamma	Dead.NotWide 	0
+skarllot__netpaper:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- neocogent__sqlchain -------------------------
+neocogent__sqlchain:	Electrolysis	holds? 	true
+neocogent__sqlchain:	Electrolysis	Geometry? 	true
+neocogent__sqlchain:	Electrolysis	FisherExecuted? 	false
+neocogent__sqlchain:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- pods-framework__pods -------------------------
+pods-framework__pods:	InverseGamma	holds? 	true
+pods-framework__pods:	InverseGamma	Geometry? 	true
+pods-framework__pods:	InverseGamma	FisherExecuted? 	false
+pods-framework__pods:	InverseGamma	p-Value? 	false
+------------------------------------------------

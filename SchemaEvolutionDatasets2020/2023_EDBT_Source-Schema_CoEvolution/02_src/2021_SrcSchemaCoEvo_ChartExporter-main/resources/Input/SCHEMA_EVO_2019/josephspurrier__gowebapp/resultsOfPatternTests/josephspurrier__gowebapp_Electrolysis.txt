@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- josephspurrier__gowebapp -------------------------
+josephspurrier__gowebapp:	Electrolysis	holds? 	true
+josephspurrier__gowebapp:	Electrolysis	Geometry? 	true
+josephspurrier__gowebapp:	Electrolysis	FisherExecuted? 	false
+josephspurrier__gowebapp:	Electrolysis	p-Value? 	false
+------------------------------------------------

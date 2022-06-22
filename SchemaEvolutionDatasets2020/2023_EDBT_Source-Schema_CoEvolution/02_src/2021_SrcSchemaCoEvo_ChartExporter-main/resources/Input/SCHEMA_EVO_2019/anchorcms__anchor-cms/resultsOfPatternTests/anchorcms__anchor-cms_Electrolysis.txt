@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- anchorcms__anchor-cms -------------------------
+anchorcms__anchor-cms:	Electrolysis	holds? 	true
+anchorcms__anchor-cms:	Electrolysis	Geometry? 	true
+anchorcms__anchor-cms:	Electrolysis	FisherExecuted? 	false
+anchorcms__anchor-cms:	Electrolysis	p-Value? 	false
+------------------------------------------------

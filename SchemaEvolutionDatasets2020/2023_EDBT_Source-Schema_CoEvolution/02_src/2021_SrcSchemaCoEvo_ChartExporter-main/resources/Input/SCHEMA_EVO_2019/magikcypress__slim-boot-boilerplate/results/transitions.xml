@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1380475846.sql" newVersion="1380500346.sql"/>
+    <transition oldVersion="1380500346.sql" newVersion="1391288404.sql"/>
+    <transition oldVersion="1391288404.sql" newVersion="1391345814.sql"/>
+</transitions>

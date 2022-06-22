@@ -1,0 +1,77 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.10deb1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 29, 2016 at 10:21 PM
+-- Server version: 5.5.44-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.11
+
+
+--
+-- Database: `Bassa`
+--
+--CREATE DATABASE IF NOT EXISTS `Bassa` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+--USE `Bassa`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `download`
+--
+
+CREATE TABLE IF NOT EXISTS `download` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `link` text NOT NULL,
+  `user_name` varchar(256) NOT NULL,
+  `added_time` bigint(20) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT '0',
+  `rating` tinyint(4) NOT NULL DEFAULT '0',
+  `gid` varchar(256) DEFAULT NULL,
+  `completed_time` bigint(20) NOT NULL DEFAULT '0',
+  `path` text,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`),
+  KEY `user_name` (`user_name`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+--
+-- Dumping data for table `download`
+--
+--
+-- Table structure for table `rate`
+--
+
+CREATE TABLE IF NOT EXISTS `rate` (
+  `user_name` varchar(256) NOT NULL,
+  `id` bigint(20) NOT NULL,
+  `rate` tinyint(1) NOT NULL,
+  PRIMARY KEY (`user_name`,`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rate`
+--
+
+INSERT INTO `rate` (`user_name`, `id`, `rate`) VALUES
+('rand', 8, 1),
+('tom', 8, 5);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `user_name` varchar(256) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `auth` tinyint(11) NOT NULL,
+  `email` varchar(256) NOT NULL,
+  `blocked` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_name`),
+  UNIQUE KEY `user_name` (`user_name`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+

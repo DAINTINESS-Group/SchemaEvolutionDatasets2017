@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- RubyMoney__money-rails -------------------------
+RubyMoney__money-rails:	Electrolysis	holds? 	true
+RubyMoney__money-rails:	Electrolysis	Geometry? 	true
+RubyMoney__money-rails:	Electrolysis	FisherExecuted? 	false
+RubyMoney__money-rails:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- n2n__page -------------------------
+n2n__page:	InverseGamma	holds? 	true
+n2n__page:	InverseGamma	Geometry? 	true
+n2n__page:	InverseGamma	FisherExecuted? 	false
+n2n__page:	InverseGamma	p-Value? 	false
+------------------------------------------------

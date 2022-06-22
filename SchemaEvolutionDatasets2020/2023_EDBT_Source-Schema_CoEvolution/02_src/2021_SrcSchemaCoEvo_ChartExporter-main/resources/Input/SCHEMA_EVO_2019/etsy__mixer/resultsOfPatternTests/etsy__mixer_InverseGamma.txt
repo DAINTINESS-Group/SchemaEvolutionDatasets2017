@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- etsy__mixer -------------------------
+etsy__mixer:	InverseGamma	holds? 	true
+etsy__mixer:	InverseGamma	Geometry? 	true
+etsy__mixer:	InverseGamma	FisherExecuted? 	false
+etsy__mixer:	InverseGamma	p-Value? 	false
+------------------------------------------------

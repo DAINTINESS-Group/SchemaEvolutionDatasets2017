@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- gousiosg__github-mirror -------------------------
+gousiosg__github-mirror:	InverseGamma	holds? 	true
+gousiosg__github-mirror:	InverseGamma	Geometry? 	true
+gousiosg__github-mirror:	InverseGamma	FisherExecuted? 	false
+gousiosg__github-mirror:	InverseGamma	p-Value? 	false
+------------------------------------------------

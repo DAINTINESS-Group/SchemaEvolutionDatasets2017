@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1394758788.sql" newVersion="1394760377.sql"/>
+    <transition oldVersion="1394760377.sql" newVersion="1394760949.sql"/>
+    <transition oldVersion="1394760949.sql" newVersion="1394761166.sql"/>
+    <transition oldVersion="1394761166.sql" newVersion="1394825954.sql"/>
+    <transition oldVersion="1394825954.sql" newVersion="1395711002.sql"/>
+    <transition oldVersion="1395711002.sql" newVersion="1396101655.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>band_concert</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>date</name>
+                <type>DATE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>time</name>
+                <type>TIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="NewTable">
+            <table>
+                <name>band_concert_record</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>band_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>concert_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>date</name>
+                <type>DATE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>time</name>
+                <type>TIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>ticket_record</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>concert_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>price</name>
+                <type>DOUBLE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>retailer_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timestamp</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>ticket_records</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>concert_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>price</name>
+                <type>DOUBLE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>retailer_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timestamp</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1396101655.sql" newVersion="1397408213.sql">
+        <update type="TypeChange">
+            <table>
+                <name>concert</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>end</name>
+                <type>DATE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>start</name>
+                <type>DATE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

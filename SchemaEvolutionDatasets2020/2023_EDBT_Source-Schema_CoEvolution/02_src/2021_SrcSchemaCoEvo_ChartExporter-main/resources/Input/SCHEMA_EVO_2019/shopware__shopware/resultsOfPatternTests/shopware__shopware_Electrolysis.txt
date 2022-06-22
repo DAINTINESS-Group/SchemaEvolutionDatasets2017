@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- shopware__shopware -------------------------
+shopware__shopware:	Electrolysis	holds? 	true
+shopware__shopware:	Electrolysis	Geometry? 	true
+shopware__shopware:	Electrolysis	FisherExecuted? 	false
+shopware__shopware:	Electrolysis	p-Value? 	false
+------------------------------------------------

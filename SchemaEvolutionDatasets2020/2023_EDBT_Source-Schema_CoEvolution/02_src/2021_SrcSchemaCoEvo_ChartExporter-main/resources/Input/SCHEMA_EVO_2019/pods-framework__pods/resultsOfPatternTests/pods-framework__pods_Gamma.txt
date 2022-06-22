@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- pods-framework__pods -------------------------
+pods-framework__pods:	Gamma	holds? 	false
+pods-framework__pods:	Gamma	Geometry? 	false
+pods-framework__pods:	Gamma	FisherExecuted? 	false
+pods-framework__pods:	Gamma	p-Value? 	false
+pods-framework__pods:	Gamma	Surv.Wide 	0
+pods-framework__pods:	Gamma	Surv.NotWide 	1
+pods-framework__pods:	Gamma	Dead.Wide 	0
+pods-framework__pods:	Gamma	Dead.NotWide 	26
+pods-framework__pods:	Gamma	Wide 	0
+------------------------------------------------

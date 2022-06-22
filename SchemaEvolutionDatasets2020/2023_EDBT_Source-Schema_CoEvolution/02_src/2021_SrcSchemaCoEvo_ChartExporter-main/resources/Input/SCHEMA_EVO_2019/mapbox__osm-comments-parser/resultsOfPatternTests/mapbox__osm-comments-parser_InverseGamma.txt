@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mapbox__osm-comments-parser -------------------------
+mapbox__osm-comments-parser:	InverseGamma	holds? 	true
+mapbox__osm-comments-parser:	InverseGamma	Geometry? 	true
+mapbox__osm-comments-parser:	InverseGamma	FisherExecuted? 	true
+mapbox__osm-comments-parser:	InverseGamma	p-Value? 	false
+------------------------------------------------

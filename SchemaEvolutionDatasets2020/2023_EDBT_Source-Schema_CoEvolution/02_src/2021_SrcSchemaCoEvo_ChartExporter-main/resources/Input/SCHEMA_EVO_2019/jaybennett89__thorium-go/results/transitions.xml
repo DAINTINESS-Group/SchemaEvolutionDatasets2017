@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1451212037.sql" newVersion="1451889533.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>games</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>maximum_players</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>minimum_level</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>player_count</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1451889533.sql" newVersion="1451898620.sql"/>
+    <transition oldVersion="1451898620.sql" newVersion="1452410646.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>game_servers</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>game_id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>machine_id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>port</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="NewTable">
+            <table>
+                <name>hosts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>game_id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>machine_id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>port</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>loading_hosts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>game_id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>kickoff_time</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>machine_id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1452410646.sql" newVersion="1452582143.sql"/>
+    <transition oldVersion="1452582143.sql" newVersion="1453716771.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>pending_players</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>game_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INTEGER</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1453716771.sql" newVersion="1453969598.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>pending_players</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>game_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INTEGER</type>
+                <isKey>true</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

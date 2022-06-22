@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- seatgeek__djjob -------------------------
+seatgeek__djjob:	Electrolysis	holds? 	true
+seatgeek__djjob:	Electrolysis	Geometry? 	true
+seatgeek__djjob:	Electrolysis	FisherExecuted? 	false
+seatgeek__djjob:	Electrolysis	p-Value? 	false
+------------------------------------------------

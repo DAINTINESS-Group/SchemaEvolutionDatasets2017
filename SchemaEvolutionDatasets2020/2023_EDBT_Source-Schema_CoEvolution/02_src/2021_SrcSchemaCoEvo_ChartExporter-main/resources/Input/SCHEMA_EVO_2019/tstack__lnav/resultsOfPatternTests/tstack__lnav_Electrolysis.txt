@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tstack__lnav -------------------------
+tstack__lnav:	Electrolysis	holds? 	true
+tstack__lnav:	Electrolysis	Geometry? 	true
+tstack__lnav:	Electrolysis	FisherExecuted? 	false
+tstack__lnav:	Electrolysis	p-Value? 	false
+------------------------------------------------

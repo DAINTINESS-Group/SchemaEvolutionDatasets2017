@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1448320470.sql" newVersion="1449014289.sql"/>
+    <transition oldVersion="1449014289.sql" newVersion="1449076014.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>bulletins</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>height</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>endorsements</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>bid</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>tag</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>value</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1449076014.sql" newVersion="1449159118.sql"/>
+    <transition oldVersion="1449159118.sql" newVersion="1450110580.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>endorsements</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>block</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1450110580.sql" newVersion="1450367937.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>blacklist</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>reason</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>txid</name>
+                <type>TEXT</type>
+                <isKey>true</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1450367937.sql" newVersion="1450376301.sql"/>
+    <transition oldVersion="1450376301.sql" newVersion="1452975264.sql">
+        <update type="TypeChange">
+            <table>
+                <name>bulletins</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>height</name>
+                <type>REAL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>latitude</name>
+                <type>REAL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>longitude</name>
+                <type>REAL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1452975264.sql" newVersion="1452984251.sql">
+        <update type="KeyChange">
+            <table>
+                <name>tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>txid</name>
+                <type>TEXT</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>TEXT</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

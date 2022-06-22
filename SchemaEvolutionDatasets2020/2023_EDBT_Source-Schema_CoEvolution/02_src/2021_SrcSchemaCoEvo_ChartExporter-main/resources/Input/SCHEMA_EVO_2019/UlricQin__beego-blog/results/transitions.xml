@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1397561001.sql" newVersion="1397613054.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>bb_option</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INTEGERAUTO_INCREMENT</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

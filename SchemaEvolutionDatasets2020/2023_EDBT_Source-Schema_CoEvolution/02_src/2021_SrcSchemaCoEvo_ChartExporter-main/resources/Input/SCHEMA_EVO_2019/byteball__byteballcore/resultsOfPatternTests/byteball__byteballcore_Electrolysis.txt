@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- byteball__byteballcore -------------------------
+byteball__byteballcore:	Electrolysis	holds? 	true
+byteball__byteballcore:	Electrolysis	Geometry? 	true
+byteball__byteballcore:	Electrolysis	FisherExecuted? 	false
+byteball__byteballcore:	Electrolysis	p-Value? 	false
+------------------------------------------------

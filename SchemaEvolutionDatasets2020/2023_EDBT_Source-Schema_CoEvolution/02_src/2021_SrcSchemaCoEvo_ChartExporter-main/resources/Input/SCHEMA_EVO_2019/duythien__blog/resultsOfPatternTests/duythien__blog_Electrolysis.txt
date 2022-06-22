@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- duythien__blog -------------------------
+duythien__blog:	Electrolysis	holds? 	true
+duythien__blog:	Electrolysis	Geometry? 	true
+duythien__blog:	Electrolysis	FisherExecuted? 	false
+duythien__blog:	Electrolysis	p-Value? 	false
+------------------------------------------------

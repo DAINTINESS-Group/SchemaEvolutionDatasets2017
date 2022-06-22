@@ -1,0 +1,12 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+AggregatedCounter;2;0;-;0;4;4;4.0
+Counter;2;0;-;0;4;4;4.0
+Hash;2;0;-;0;5;5;5.0
+Job;2;0;-;0;8;8;8.0
+JobParameter;2;0;-;0;5;5;5.0
+JobQueue;2;0;-;1;5;5;5.0
+List;2;0;-;0;4;4;4.0
+Schema;2;0;-;0;1;1;1.0
+Server;2;0;-;1;4;4;4.0
+Set;2;0;-;0;5;5;5.0
+State;2;0;-;0;7;7;7.0

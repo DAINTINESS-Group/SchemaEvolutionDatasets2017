@@ -1,0 +1,9 @@
+trID	epochTime	oldVer	newVer	humanTime	distFromV0InDays	runningYearFromV0	runningMonthFromV0	#numOldTables	#numNewTables	#numOldAttrs	#numNewAttrs	tablesIns	tablesDel	attrsInsWithTableIns	attrsbDelWithTableDel	attrsInjected	attrsEjected	attrsWithTypeUpd	attrsInPKUpd	tableDelta	attrDelta	attrBirthsSum	attrDeathsSum	attrUpdsSum	Expansion	Maintenance	TotalAttrActivity	isReed	isTurf	isActive
+0	1428195491		1428195491.sql	2015-04-05 00:58:11	0	0	0	0	2	0	9	2	0	9	0	0	0	0	0	0	0	9	0	0	9	0	9	0	1	1
+1	1428196111	1428195491.sql	1428196111.sql	2015-04-05 01:08:31	0	1	1	2	2	9	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+2	1428196437	1428196111.sql	1428196437.sql	2015-04-05 01:13:57	0	1	1	2	2	9	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+3	1428196590	1428196437.sql	1428196590.sql	2015-04-05 01:16:30	0	1	1	2	2	9	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+4	1428196664	1428196590.sql	1428196664.sql	2015-04-05 01:17:44	0	1	1	2	2	9	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5	1428196904	1428196664.sql	1428196904.sql	2015-04-05 01:21:44	0	1	1	2	2	9	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+6	1428299414	1428196904.sql	1428299414.sql	2015-04-06 05:50:14	1	1	1	2	2	9	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7	1428468500	1428299414.sql	1428468500.sql	2015-04-08 04:48:20	3	1	1	2	2	9	10	0	0	0	0	1	0	0	0	0	1	1	0	0	1	0	1	0	1	1

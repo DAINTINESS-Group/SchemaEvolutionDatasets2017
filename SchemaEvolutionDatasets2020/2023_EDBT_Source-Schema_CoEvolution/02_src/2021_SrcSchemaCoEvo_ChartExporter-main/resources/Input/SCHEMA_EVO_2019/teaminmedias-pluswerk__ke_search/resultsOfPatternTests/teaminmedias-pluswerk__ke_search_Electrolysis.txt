@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- teaminmedias-pluswerk__ke_search -------------------------
+teaminmedias-pluswerk__ke_search:	Electrolysis	holds? 	true
+teaminmedias-pluswerk__ke_search:	Electrolysis	Geometry? 	true
+teaminmedias-pluswerk__ke_search:	Electrolysis	FisherExecuted? 	false
+teaminmedias-pluswerk__ke_search:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,4 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1452953146.sql;1478179587.sql;-;-;-;-;-;-;-
+2;1478179587.sql;1519757776.sql;list;Update:TypeChange;id;VARCHAR(10);true;0;-
+3;1519757776.sql;1523804610.sql;list;Update:TypeChange;id;VARCHAR(64);true;0;-

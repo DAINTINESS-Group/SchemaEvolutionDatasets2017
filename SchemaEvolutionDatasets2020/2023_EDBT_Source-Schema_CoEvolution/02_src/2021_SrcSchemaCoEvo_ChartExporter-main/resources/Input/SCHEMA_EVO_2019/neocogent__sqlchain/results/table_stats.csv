@@ -1,0 +1,10 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+address;8;0;-;1;2;2;2.0
+bech32;1;7;-;0;2;2;2.0
+blkdat;1;7;-;0;5;5;5.0
+blocks;8;0;-;4;3;5;3.25
+info;2;6;-;2;3;3;3.0
+mempool;7;1;-;1;2;2;2.0
+orphans;3;5;-;0;5;5;5.0
+outputs;8;0;-;5;4;4;4.0
+trxs;8;0;-;7;4;7;5.125

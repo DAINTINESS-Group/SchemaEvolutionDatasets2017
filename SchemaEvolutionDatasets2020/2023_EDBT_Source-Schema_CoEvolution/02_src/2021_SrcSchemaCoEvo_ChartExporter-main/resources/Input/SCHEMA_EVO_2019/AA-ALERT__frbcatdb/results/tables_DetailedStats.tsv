@@ -1,0 +1,17 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+authors	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	9	9	9	1	8	2	0.5	0.12	4	20	2	22
+frbs	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	5	5	5	1	7	2	0.44	0.12	3.5	20	2	22
+frbs_have_publications	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	2	2	2	1	4	2	0.25	0.12	2	20	1	21
+frbs_notes	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	5	5	5	1	5	2	0.31	0.12	2.5	20	1	21
+observations	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	8	9	8.62	1.12	12	4	0.75	0.25	3	20	2	22
+observations_have_publications	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	2	2	2	1	4	2	0.25	0.12	2	20	1	21
+observations_notes	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	5	5	5	1	5	2	0.31	0.12	2.5	20	1	21
+publications	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	5	5	5	1	3	2	0.19	0.12	1.5	20	1	21
+radio_images	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	4	4	4	1	4	2	0.25	0.12	2	20	1	21
+radio_images_have_radio_measured_params	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	2	2	2	1	4	2	0.25	0.12	2	20	1	21
+radio_measured_params	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	33	38	35.19	1.15	62	8	3.88	0.5	7.75	20	2	22
+radio_measured_params_have_publications	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	2	2	2	1	4	2	0.25	0.12	2	20	1	21
+radio_measured_params_notes	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	5	5	5	1	5	2	0.31	0.12	2.5	20	1	21
+radio_observations_params	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	21	24	23.5	1.14	38	7	2.38	0.44	5.43	20	2	22
+radio_observations_params_have_publications	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	2	2	2	1	4	2	0.25	0.12	2	20	1	21
+radio_observations_params_notes	16	0	-	15	2016-10-28 10:47:56	2017-09-25 14:17:34	0	1	332	5	5	5	1	5	2	0.31	0.12	2.5	20	1	21

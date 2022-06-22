@@ -1,0 +1,9 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+featuring	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	3	3	3	1	0	0	0	0		20	0	20
+follower	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	2	2	2	1	0	0	0	0		20	0	20
+hashTag	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	2	2	2	1	0	0	0	0		20	0	20
+mention	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	2	2	2	1	0	0	0	0		20	0	20
+movie	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	4	4	4	1	0	0	0	0		20	0	20
+taginTweet	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	2	2	2	1	0	0	0	0		20	0	20
+tuser	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	4	4	4	1	0	0	0	0		20	0	20
+tweet	2	0	-	1	2013-11-17 22:28:53	2013-11-18 00:53:14	0	1	0	5	5	5	1	0	0	0	0		20	0	20

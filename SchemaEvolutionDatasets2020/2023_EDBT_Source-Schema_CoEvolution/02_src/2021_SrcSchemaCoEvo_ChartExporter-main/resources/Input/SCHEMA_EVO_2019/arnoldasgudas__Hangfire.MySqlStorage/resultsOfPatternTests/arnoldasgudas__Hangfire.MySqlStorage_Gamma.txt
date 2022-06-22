@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- arnoldasgudas__Hangfire.MySqlStorage -------------------------
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	holds? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	Geometry? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	FisherExecuted? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	p-Value? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	Surv.Wide 	0
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	Surv.NotWide 	12
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	Dead.Wide 	0
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	Dead.NotWide 	12
+arnoldasgudas__Hangfire.MySqlStorage:	Gamma	Wide 	0
+------------------------------------------------

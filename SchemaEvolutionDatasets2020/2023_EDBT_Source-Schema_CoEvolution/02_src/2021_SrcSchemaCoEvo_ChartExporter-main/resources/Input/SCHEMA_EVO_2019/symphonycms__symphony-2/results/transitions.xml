@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1320497799.sql" newVersion="1323164960.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tbl_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>publish_label</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1323164960.sql" newVersion="1323439049.sql"/>
+    <transition oldVersion="1323439049.sql" newVersion="1331427859.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>tbl_fields_selectbox_link</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>allow_multiple_selection</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>field_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>limit</name>
+                <type>INT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>related_field_id</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show_association</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>tbl_sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>session_data</name>
+                <type>TEXTCOLLATEUTF8_UNICODE_CI</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1331427859.sql" newVersion="1343341883.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tbl_fields_author</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>allow_author_change</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_fields_author</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>author_types</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1343341883.sql" newVersion="1343741080.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_entries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>modification_date</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modification_date_gmt</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1343741080.sql" newVersion="1343755566.sql"/>
+    <transition oldVersion="1343755566.sql" newVersion="1343756419.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tbl_sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>entry_order</name>
+                <type>VARCHAR(7)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>entry_order_direction</name>
+                <type>ENUM('ASC','DESC')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1343756419.sql" newVersion="1349355153.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tbl_authors</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>password</name>
+                <type>VARCHAR(150)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1349355153.sql" newVersion="1364160005.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tbl_authors</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_type</name>
+                <type>ENUM('AUTHOR','MANAGER','DEVELOPER')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1364160005.sql" newVersion="1372332508.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>tbl_fields_selectbox_link</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>allow_multiple_selection</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>field_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>limit</name>
+                <type>INT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>related_field_id</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>show_association</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1372332508.sql" newVersion="1394713937.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tbl_forgotpass</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>token</name>
+                <type>VARCHAR(16)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1394713937.sql" newVersion="1395085338.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tbl_fields_date</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pre_populate</name>
+                <type>VARCHAR(80)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1395085338.sql" newVersion="1396262973.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>filter</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1396262973.sql" newVersion="1402390326.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_sections_association</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>editor</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>interface</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1402390326.sql" newVersion="1405215495.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tbl_fields_select</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>show_association</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1405215495.sql" newVersion="1415365159.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_fields_date</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>calendar</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>time</name>
+                <type>ENUM('YES','NO')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1415365159.sql" newVersion="1416995735.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_cache</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>namespace</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1416995735.sql" newVersion="1417333219.sql"/>
+    <transition oldVersion="1417333219.sql" newVersion="1418639561.sql"/>
+    <transition oldVersion="1418639561.sql" newVersion="1461613363.sql"/>
+    <transition oldVersion="1461613363.sql" newVersion="1492789027.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>author_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>creation_date</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>creation_date_gmt</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modification_date</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modification_date_gmt</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1492789027.sql" newVersion="1497892961.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_entries</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>modification_author_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tbl_sections</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>modification_author_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1497892961.sql" newVersion="1497989157.sql"/>
+</transitions>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1429826576.sql" newVersion="1429894831.sql">
+        <update type="TypeChange">
+            <table>
+                <name>hipbot</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>accessTokenExpires</name>
+                <type>TIMESTAMPTZ</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

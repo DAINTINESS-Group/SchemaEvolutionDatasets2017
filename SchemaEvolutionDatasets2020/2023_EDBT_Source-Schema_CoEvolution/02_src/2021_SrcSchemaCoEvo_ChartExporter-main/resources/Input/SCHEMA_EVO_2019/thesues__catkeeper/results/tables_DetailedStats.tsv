@@ -1,0 +1,5 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+macipmappingcache	1	2	-	2	2014-07-16 11:18:37	2014-07-16 11:18:37	1	1	0	2	2	2	1	0	0	0	0		20	0	20
+physicalmachine	3	0	-	2	2014-06-17 11:21:48	2014-07-16 11:18:37	0	1	28	4	4	4	1	0	0	0	0		20	0	20
+virtualmachine	3	0	-	2	2014-06-17 11:21:48	2014-07-16 11:18:37	0	1	28	4	5	4.67	1.25	1	1	0.33	0.33	1	20	1	21
+vmmacmapping	1	2	-	2	2014-07-16 11:18:37	2014-07-16 11:18:37	1	1	0	2	2	2	1	0	0	0	0		20	0	20

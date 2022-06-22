@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1468267137.sql" newVersion="1490092485.sql">
+        <update type="TypeChange">
+            <table>
+                <name>cache</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>MEDIUMTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1490092485.sql" newVersion="1490971266.sql">
+        <update type="TypeChange">
+            <table>
+                <name>cache</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1490971266.sql" newVersion="1491070503.sql">
+        <update type="TypeChange">
+            <table>
+                <name>cache</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>MEDIUMTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

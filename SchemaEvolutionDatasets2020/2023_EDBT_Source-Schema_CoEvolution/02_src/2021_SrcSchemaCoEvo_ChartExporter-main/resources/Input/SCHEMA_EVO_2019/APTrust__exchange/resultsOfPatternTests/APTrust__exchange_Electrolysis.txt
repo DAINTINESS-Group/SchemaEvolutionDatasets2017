@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- APTrust__exchange -------------------------
+APTrust__exchange:	Electrolysis	holds? 	true
+APTrust__exchange:	Electrolysis	Geometry? 	true
+APTrust__exchange:	Electrolysis	FisherExecuted? 	false
+APTrust__exchange:	Electrolysis	p-Value? 	false
+------------------------------------------------

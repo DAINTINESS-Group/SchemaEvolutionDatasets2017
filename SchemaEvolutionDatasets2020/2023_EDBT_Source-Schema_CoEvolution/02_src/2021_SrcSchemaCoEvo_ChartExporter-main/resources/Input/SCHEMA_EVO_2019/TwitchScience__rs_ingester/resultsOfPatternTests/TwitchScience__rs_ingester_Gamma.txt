@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- TwitchScience__rs_ingester -------------------------
+TwitchScience__rs_ingester:	Gamma	holds? 	false
+TwitchScience__rs_ingester:	Gamma	Geometry? 	false
+TwitchScience__rs_ingester:	Gamma	FisherExecuted? 	false
+TwitchScience__rs_ingester:	Gamma	p-Value? 	false
+TwitchScience__rs_ingester:	Gamma	Surv.Wide 	0
+TwitchScience__rs_ingester:	Gamma	Surv.NotWide 	4
+TwitchScience__rs_ingester:	Gamma	Dead.Wide 	0
+TwitchScience__rs_ingester:	Gamma	Dead.NotWide 	2
+TwitchScience__rs_ingester:	Gamma	Wide 	0
+------------------------------------------------

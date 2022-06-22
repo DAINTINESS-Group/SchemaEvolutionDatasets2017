@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- SeldonIO__seldon-server -------------------------
+SeldonIO__seldon-server:	Gamma	holds? 	false
+SeldonIO__seldon-server:	Gamma	Geometry? 	false
+SeldonIO__seldon-server:	Gamma	FisherExecuted? 	false
+SeldonIO__seldon-server:	Gamma	p-Value? 	false
+SeldonIO__seldon-server:	Gamma	Surv.Wide 	0
+SeldonIO__seldon-server:	Gamma	Surv.NotWide 	70
+SeldonIO__seldon-server:	Gamma	Dead.Wide 	0
+SeldonIO__seldon-server:	Gamma	Dead.NotWide 	0
+SeldonIO__seldon-server:	Gamma	Wide 	0
+------------------------------------------------

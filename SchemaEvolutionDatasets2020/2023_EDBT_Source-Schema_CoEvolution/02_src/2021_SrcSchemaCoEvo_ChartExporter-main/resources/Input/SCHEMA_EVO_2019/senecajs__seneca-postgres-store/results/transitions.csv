@@ -1,0 +1,7 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1449760570.sql;1450340942.sql;foo;Update:KeyChange;id;CHARACTERVARYING;true;0;-
+1;1449760570.sql;1450340942.sql;moon_bar;Update:KeyChange;id;CHARACTERVARYING;true;0;-
+1;1449760570.sql;1450340942.sql;product;Update:KeyChange;id;CHARACTERVARYING;true;0;-
+2;1450340942.sql;1457787487.sql;-;-;-;-;-;-;-
+3;1457787487.sql;1460045483.sql;foo;Insertion:UpdateTable;bar_foo;CHARACTERVARYING;false;0;-
+3;1457787487.sql;1460045483.sql;foo;Insertion:UpdateTable;fooBar;CHARACTERVARYING;false;0;-

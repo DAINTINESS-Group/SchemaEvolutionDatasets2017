@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mattinsler__work-it -------------------------
+mattinsler__work-it:	Gamma	holds? 	false
+mattinsler__work-it:	Gamma	Geometry? 	false
+mattinsler__work-it:	Gamma	FisherExecuted? 	false
+mattinsler__work-it:	Gamma	p-Value? 	false
+mattinsler__work-it:	Gamma	Surv.Wide 	0
+mattinsler__work-it:	Gamma	Surv.NotWide 	4
+mattinsler__work-it:	Gamma	Dead.Wide 	0
+mattinsler__work-it:	Gamma	Dead.NotWide 	0
+mattinsler__work-it:	Gamma	Wide 	0
+------------------------------------------------

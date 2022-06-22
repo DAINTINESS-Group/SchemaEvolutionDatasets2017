@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mapbox__node-mbtiles -------------------------
+mapbox__node-mbtiles:	Gamma	holds? 	false
+mapbox__node-mbtiles:	Gamma	Geometry? 	false
+mapbox__node-mbtiles:	Gamma	FisherExecuted? 	false
+mapbox__node-mbtiles:	Gamma	p-Value? 	false
+mapbox__node-mbtiles:	Gamma	Surv.Wide 	0
+mapbox__node-mbtiles:	Gamma	Surv.NotWide 	7
+mapbox__node-mbtiles:	Gamma	Dead.Wide 	0
+mapbox__node-mbtiles:	Gamma	Dead.NotWide 	0
+mapbox__node-mbtiles:	Gamma	Wide 	0
+------------------------------------------------

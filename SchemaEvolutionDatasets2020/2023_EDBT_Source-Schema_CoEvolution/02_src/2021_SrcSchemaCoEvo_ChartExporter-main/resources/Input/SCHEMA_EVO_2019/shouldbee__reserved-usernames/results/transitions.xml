@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1406735532.sql" newVersion="1406735720.sql"/>
+    <transition oldVersion="1406735720.sql" newVersion="1406737602.sql"/>
+    <transition oldVersion="1406737602.sql" newVersion="1406738592.sql"/>
+    <transition oldVersion="1406738592.sql" newVersion="1408007391.sql"/>
+    <transition oldVersion="1408007391.sql" newVersion="1491275368.sql"/>
+    <transition oldVersion="1491275368.sql" newVersion="1495556081.sql"/>
+    <transition oldVersion="1495556081.sql" newVersion="1495556125.sql"/>
+    <transition oldVersion="1495556125.sql" newVersion="1495628799.sql"/>
+    <transition oldVersion="1495628799.sql" newVersion="1550437703.sql"/>
+</transitions>

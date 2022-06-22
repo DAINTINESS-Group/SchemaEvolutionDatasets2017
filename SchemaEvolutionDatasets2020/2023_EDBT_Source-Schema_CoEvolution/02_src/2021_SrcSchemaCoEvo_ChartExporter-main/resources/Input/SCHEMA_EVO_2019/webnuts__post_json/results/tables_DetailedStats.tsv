@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+post_json_collections	2	0	1	1	2013-10-11 05:23:58	2013-10-16 17:22:27	0	1	5	12	12	12	1	0	0	0	0		10	0	10
+post_json_documents	3	0	-	2	2013-10-11 05:23:58	2013-10-18 14:02:19	0	1	7	4	4	4	1	2	1	0.67	0.33	2	20	1	21
+post_json_dynamic_indexes	3	0	-	2	2013-10-11 05:23:58	2013-10-18 14:02:19	0	1	7	5	5	5	1	2	1	0.67	0.33	2	20	1	21
+post_json_model_settings	2	1	-	2	2013-10-16 17:22:27	2013-10-18 14:02:19	1	1	1	12	12	12	1	0	0	0	0		20	0	20
+schema_migrations	3	0	-	2	2013-10-11 05:23:58	2013-10-18 14:02:19	0	1	7	1	1	1	1	0	0	0	0		20	0	20

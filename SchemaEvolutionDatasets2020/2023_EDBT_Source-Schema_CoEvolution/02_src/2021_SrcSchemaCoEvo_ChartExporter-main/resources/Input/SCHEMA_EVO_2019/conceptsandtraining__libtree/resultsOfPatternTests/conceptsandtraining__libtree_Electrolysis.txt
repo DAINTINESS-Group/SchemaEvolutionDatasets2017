@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- conceptsandtraining__libtree -------------------------
+conceptsandtraining__libtree:	Electrolysis	holds? 	true
+conceptsandtraining__libtree:	Electrolysis	Geometry? 	true
+conceptsandtraining__libtree:	Electrolysis	FisherExecuted? 	false
+conceptsandtraining__libtree:	Electrolysis	p-Value? 	false
+------------------------------------------------

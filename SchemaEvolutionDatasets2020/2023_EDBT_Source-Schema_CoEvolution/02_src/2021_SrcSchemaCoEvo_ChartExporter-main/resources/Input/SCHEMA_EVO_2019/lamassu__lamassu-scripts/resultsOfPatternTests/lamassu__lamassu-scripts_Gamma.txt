@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- lamassu__lamassu-scripts -------------------------
+lamassu__lamassu-scripts:	Gamma	holds? 	true
+lamassu__lamassu-scripts:	Gamma	Geometry? 	true
+lamassu__lamassu-scripts:	Gamma	FisherExecuted? 	false
+lamassu__lamassu-scripts:	Gamma	p-Value? 	false
+lamassu__lamassu-scripts:	Gamma	Surv.Wide 	1
+lamassu__lamassu-scripts:	Gamma	Surv.NotWide 	6
+lamassu__lamassu-scripts:	Gamma	Dead.Wide 	0
+lamassu__lamassu-scripts:	Gamma	Dead.NotWide 	0
+lamassu__lamassu-scripts:	Gamma	Wide 	1
+------------------------------------------------

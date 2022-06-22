@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1440422932.sql" newVersion="1446128000.sql"/>
+    <transition oldVersion="1446128000.sql" newVersion="1467290702.sql">
+        <update type="TypeChange">
+            <table>
+                <name>ancestors</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ancestor</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>node</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>nodes</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>UUID</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>parent</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

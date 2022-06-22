@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- CityGrid__twonicorn -------------------------
+CityGrid__twonicorn:	Gamma	holds? 	true
+CityGrid__twonicorn:	Gamma	Geometry? 	true
+CityGrid__twonicorn:	Gamma	FisherExecuted? 	false
+CityGrid__twonicorn:	Gamma	p-Value? 	false
+CityGrid__twonicorn:	Gamma	Surv.Wide 	1
+CityGrid__twonicorn:	Gamma	Surv.NotWide 	22
+CityGrid__twonicorn:	Gamma	Dead.Wide 	0
+CityGrid__twonicorn:	Gamma	Dead.NotWide 	0
+CityGrid__twonicorn:	Gamma	Wide 	1
+------------------------------------------------

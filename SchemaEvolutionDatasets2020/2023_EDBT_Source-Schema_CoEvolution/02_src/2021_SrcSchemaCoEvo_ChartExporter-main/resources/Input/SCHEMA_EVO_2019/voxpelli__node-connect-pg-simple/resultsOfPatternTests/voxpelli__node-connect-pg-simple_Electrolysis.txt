@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- voxpelli__node-connect-pg-simple -------------------------
+voxpelli__node-connect-pg-simple:	Electrolysis	holds? 	true
+voxpelli__node-connect-pg-simple:	Electrolysis	Geometry? 	true
+voxpelli__node-connect-pg-simple:	Electrolysis	FisherExecuted? 	false
+voxpelli__node-connect-pg-simple:	Electrolysis	p-Value? 	false
+------------------------------------------------

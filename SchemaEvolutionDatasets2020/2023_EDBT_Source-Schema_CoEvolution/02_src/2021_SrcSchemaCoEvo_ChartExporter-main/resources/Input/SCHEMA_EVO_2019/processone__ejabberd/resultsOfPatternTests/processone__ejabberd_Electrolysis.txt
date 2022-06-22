@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- processone__ejabberd -------------------------
+processone__ejabberd:	Electrolysis	holds? 	false
+processone__ejabberd:	Electrolysis	Geometry? 	false
+processone__ejabberd:	Electrolysis	FisherExecuted? 	false
+processone__ejabberd:	Electrolysis	p-Value? 	false
+------------------------------------------------

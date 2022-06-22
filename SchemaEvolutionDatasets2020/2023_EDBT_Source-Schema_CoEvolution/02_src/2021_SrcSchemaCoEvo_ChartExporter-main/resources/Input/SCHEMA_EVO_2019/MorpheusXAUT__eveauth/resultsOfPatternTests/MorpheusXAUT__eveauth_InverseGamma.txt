@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- MorpheusXAUT__eveauth -------------------------
+MorpheusXAUT__eveauth:	InverseGamma	holds? 	false
+MorpheusXAUT__eveauth:	InverseGamma	Geometry? 	false
+MorpheusXAUT__eveauth:	InverseGamma	FisherExecuted? 	true
+MorpheusXAUT__eveauth:	InverseGamma	p-Value? 	false
+------------------------------------------------

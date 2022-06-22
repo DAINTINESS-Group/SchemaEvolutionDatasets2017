@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mukatee__pypro -------------------------
+mukatee__pypro:	Gamma	holds? 	true
+mukatee__pypro:	Gamma	Geometry? 	true
+mukatee__pypro:	Gamma	FisherExecuted? 	false
+mukatee__pypro:	Gamma	p-Value? 	false
+mukatee__pypro:	Gamma	Surv.Wide 	1
+mukatee__pypro:	Gamma	Surv.NotWide 	8
+mukatee__pypro:	Gamma	Dead.Wide 	0
+mukatee__pypro:	Gamma	Dead.NotWide 	0
+mukatee__pypro:	Gamma	Wide 	1
+------------------------------------------------

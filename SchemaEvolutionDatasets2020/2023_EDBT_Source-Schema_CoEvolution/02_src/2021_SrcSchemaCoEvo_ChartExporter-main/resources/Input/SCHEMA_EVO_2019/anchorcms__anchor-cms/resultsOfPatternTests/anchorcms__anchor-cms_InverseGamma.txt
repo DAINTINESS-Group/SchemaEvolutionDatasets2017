@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- anchorcms__anchor-cms -------------------------
+anchorcms__anchor-cms:	InverseGamma	holds? 	true
+anchorcms__anchor-cms:	InverseGamma	Geometry? 	true
+anchorcms__anchor-cms:	InverseGamma	FisherExecuted? 	true
+anchorcms__anchor-cms:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla__mig -------------------------
+mozilla__mig:	InverseGamma	holds? 	true
+mozilla__mig:	InverseGamma	Geometry? 	true
+mozilla__mig:	InverseGamma	FisherExecuted? 	false
+mozilla__mig:	InverseGamma	p-Value? 	false
+------------------------------------------------

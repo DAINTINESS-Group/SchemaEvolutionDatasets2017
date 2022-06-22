@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla__tls-observatory -------------------------
+mozilla__tls-observatory:	InverseGamma	holds? 	true
+mozilla__tls-observatory:	InverseGamma	Geometry? 	true
+mozilla__tls-observatory:	InverseGamma	FisherExecuted? 	false
+mozilla__tls-observatory:	InverseGamma	p-Value? 	false
+------------------------------------------------

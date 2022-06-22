@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dotkernel__frontend -------------------------
+dotkernel__frontend:	InverseGamma	holds? 	true
+dotkernel__frontend:	InverseGamma	Geometry? 	true
+dotkernel__frontend:	InverseGamma	FisherExecuted? 	false
+dotkernel__frontend:	InverseGamma	p-Value? 	false
+------------------------------------------------

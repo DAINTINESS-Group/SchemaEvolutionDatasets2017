@@ -1,0 +1,4 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+zipkin_annotations;5;0;-;0;12;12;12.0
+zipkin_dependencies;5;0;-;0;5;5;5.0
+zipkin_spans;5;0;-;1;9;10;9.4

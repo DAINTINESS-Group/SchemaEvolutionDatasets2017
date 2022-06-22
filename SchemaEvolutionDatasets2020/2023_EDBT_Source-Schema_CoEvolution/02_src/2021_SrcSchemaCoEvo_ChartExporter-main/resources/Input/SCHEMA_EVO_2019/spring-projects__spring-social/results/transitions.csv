@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1334262448.sql;1393864757.sql;-;-;-;-;-;-;-
+2;1393864757.sql;1430168752.sql;UserConnection;Update:TypeChange;accessToken;VARCHAR(512);false;0;-
+2;1393864757.sql;1430168752.sql;UserConnection;Update:TypeChange;refreshToken;VARCHAR(512);false;0;-
+2;1393864757.sql;1430168752.sql;UserConnection;Update:TypeChange;secret;VARCHAR(512);false;0;-

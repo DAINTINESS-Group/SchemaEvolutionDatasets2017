@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1438292162.sql" newVersion="1440539692.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>env</name>
+                <type>JSON</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>loaderkey</name>
+                <type>CHARACTERVARYING(64)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>loadername</name>
+                <type>CHARACTERVARYING(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tags</name>
+                <type>JSON</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>manifests</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>CHARACTERVARYING(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>status</name>
+                <type>CHARACTERVARYING(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>target</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timestamp</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>manifestsig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>investigatorid</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>manifestid</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pgpsignature</name>
+                <type>CHARACTERVARYING(4096)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1440539692.sql" newVersion="1447681495.sql"/>
+    <transition oldVersion="1447681495.sql" newVersion="1454526174.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>env</name>
+                <type>JSON</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>loaderkey</name>
+                <type>CHARACTERVARYING(64)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>loadername</name>
+                <type>CHARACTERVARYING(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tags</name>
+                <type>JSON</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>manifests</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>CHARACTERVARYING(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>status</name>
+                <type>CHARACTERVARYING(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>target</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timestamp</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>manifestsig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>investigatorid</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>manifestid</name>
+                <type>NUMERIC</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pgpsignature</name>
+                <type>CHARACTERVARYING(4096)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1454526174.sql" newVersion="1454530105.sql"/>
+    <transition oldVersion="1454530105.sql" newVersion="1454531961.sql"/>
+    <transition oldVersion="1454531961.sql" newVersion="1455299264.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>isadmin</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1455299264.sql" newVersion="1455566042.sql"/>
+    <transition oldVersion="1455566042.sql" newVersion="1455644300.sql"/>
+    <transition oldVersion="1455644300.sql" newVersion="1460147630.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>agents</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>refreshtime</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1460147630.sql" newVersion="1460652272.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>lastused</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1460652272.sql" newVersion="1460735677.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>enabled</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1460735677.sql" newVersion="1461186980.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>lastseen</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>lastused</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1461186980.sql" newVersion="1461607140.sql"/>
+    <transition oldVersion="1461607140.sql" newVersion="1461609980.sql"/>
+    <transition oldVersion="1461609980.sql" newVersion="1464292775.sql"/>
+    <transition oldVersion="1464292775.sql" newVersion="1464293791.sql"/>
+    <transition oldVersion="1464293791.sql" newVersion="1467922412.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>keyprefix</name>
+                <type>CHARACTERVARYING(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>loaderkey</name>
+                <type>CHARACTERVARYING(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1467922412.sql" newVersion="1468332101.sql">
+        <update type="TypeChange">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>loaderkey</name>
+                <type>BYTEA</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>salt</name>
+                <type>BYTEA</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1468332101.sql" newVersion="1468333660.sql"/>
+    <transition oldVersion="1468333660.sql" newVersion="1470933563.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>expectenv</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1470933563.sql" newVersion="1471223551.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>isadmin</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>permissions</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1471223551.sql" newVersion="1471291200.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>isadmin</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>permissions</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1471291200.sql" newVersion="1471299067.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>isadmin</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>permissions</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1471299067.sql" newVersion="1486060274.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>loaders</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>queueloc</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1486060274.sql" newVersion="1486504206.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>agents</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>loadername</name>
+                <type>CHARACTERVARYING(2048)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1486504206.sql" newVersion="1491859104.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>investigators</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>apikey</name>
+                <type>BYTEA</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>apisalt</name>
+                <type>BYTEA</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1491859104.sql" newVersion="1540846577.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>agent_action_relation</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>action_id</name>
+                <type>NUMERIC</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>agent_id</name>
+                <type>NUMERIC</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>retrieved</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1540846577.sql" newVersion="1541782321.sql"/>
+    <transition oldVersion="1541782321.sql" newVersion="1542139189.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>agent_action_relation</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>action_id</name>
+                <type>NUMERIC</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>agent_id</name>
+                <type>NUMERIC</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>retrieved</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1542139189.sql" newVersion="1542740187.sql"/>
+</transitions>

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- spaceboats__busbus -------------------------
+spaceboats__busbus:	Gamma	holds? 	true
+spaceboats__busbus:	Gamma	Geometry? 	true
+spaceboats__busbus:	Gamma	FisherExecuted? 	false
+spaceboats__busbus:	Gamma	p-Value? 	true
+spaceboats__busbus:	Gamma	Surv.Wide 	4
+spaceboats__busbus:	Gamma	Surv.NotWide 	6
+spaceboats__busbus:	Gamma	Dead.Wide 	0
+spaceboats__busbus:	Gamma	Dead.NotWide 	5
+spaceboats__busbus:	Gamma	Wide 	4
+------------------------------------------------

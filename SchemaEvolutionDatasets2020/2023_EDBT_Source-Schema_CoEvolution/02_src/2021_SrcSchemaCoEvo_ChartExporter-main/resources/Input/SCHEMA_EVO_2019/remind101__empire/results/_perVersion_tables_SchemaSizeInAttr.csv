@@ -1,0 +1,12 @@
+;0;1;
+apps;7;8;
+certificates;6;6;
+configs;4;4;
+domains;4;4;
+ecs_environment;2;2;
+ports;4;4;
+releases;8;8;
+scheduler_migration;2;2;
+schema_migrations;1;1;
+slugs;3;3;
+stacks;2;2;

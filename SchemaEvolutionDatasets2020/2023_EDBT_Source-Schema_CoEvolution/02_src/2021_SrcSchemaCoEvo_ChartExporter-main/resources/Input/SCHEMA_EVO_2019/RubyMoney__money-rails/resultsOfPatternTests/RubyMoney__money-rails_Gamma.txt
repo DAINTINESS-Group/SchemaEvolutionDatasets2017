@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- RubyMoney__money-rails -------------------------
+RubyMoney__money-rails:	Gamma	holds? 	false
+RubyMoney__money-rails:	Gamma	Geometry? 	false
+RubyMoney__money-rails:	Gamma	FisherExecuted? 	false
+RubyMoney__money-rails:	Gamma	p-Value? 	false
+RubyMoney__money-rails:	Gamma	Surv.Wide 	0
+RubyMoney__money-rails:	Gamma	Surv.NotWide 	5
+RubyMoney__money-rails:	Gamma	Dead.Wide 	0
+RubyMoney__money-rails:	Gamma	Dead.NotWide 	0
+RubyMoney__money-rails:	Gamma	Wide 	0
+------------------------------------------------

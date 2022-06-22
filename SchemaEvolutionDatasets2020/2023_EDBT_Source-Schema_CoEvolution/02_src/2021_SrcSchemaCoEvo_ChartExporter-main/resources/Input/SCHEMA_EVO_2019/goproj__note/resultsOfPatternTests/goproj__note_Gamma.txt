@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- goproj__note -------------------------
+goproj__note:	Gamma	holds? 	false
+goproj__note:	Gamma	Geometry? 	false
+goproj__note:	Gamma	FisherExecuted? 	false
+goproj__note:	Gamma	p-Value? 	false
+goproj__note:	Gamma	Surv.Wide 	0
+goproj__note:	Gamma	Surv.NotWide 	2
+goproj__note:	Gamma	Dead.Wide 	0
+goproj__note:	Gamma	Dead.NotWide 	0
+goproj__note:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- scorelab__Bassa -------------------------
+scorelab__Bassa:	InverseGamma	holds? 	true
+scorelab__Bassa:	InverseGamma	Geometry? 	true
+scorelab__Bassa:	InverseGamma	FisherExecuted? 	false
+scorelab__Bassa:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+contest	1	2	-	2	2015-08-03 17:47:54	2015-08-03 17:47:54	1	1	0	5	5	5	1	0	0	0	0		20	0	20
+contestlogs	1	2	-	2	2015-08-03 17:47:54	2015-08-03 17:47:54	1	1	0	5	5	5	1	0	0	0	0		20	0	20
+problem	3	0	-	2	2015-07-16 21:20:29	2015-08-03 17:47:54	0	1	17	14	14	14	1	0	0	0	0		20	0	20
+problemlogs	3	0	-	2	2015-07-16 21:20:29	2015-08-03 17:47:54	0	1	17	6	6	6	1	0	0	0	0		20	0	20
+testcases	3	0	-	2	2015-07-16 21:20:29	2015-08-03 17:47:54	0	1	17	6	6	6	1	0	0	0	0		20	0	20
+user	3	0	-	2	2015-07-16 21:20:29	2015-08-03 17:47:54	0	1	17	9	9	9	1	1	1	0.33	0.33	1	20	1	21

@@ -1,0 +1,16 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+attribute;6;0;5;1;8;8;8.0
+basename;6;0;5;1;5;5;5.0
+member;6;0;5;0;4;4;4.0
+occurrence;6;0;5;0;8;8;8.0
+story;4;0;3;0;5;5;5.0
+topic;6;0;5;0;4;4;4.0
+topicdb.attribute;10;6;-;3;8;8;8.0
+topicdb.basename;10;6;-;3;5;5;5.0
+topicdb.member;10;6;-;3;4;4;4.0
+topicdb.occurrence;10;6;-;3;8;8;8.0
+topicdb.topic;10;6;-;1;4;4;4.0
+topicdb.topicmap;10;6;-;12;5;8;5.4
+topicdb.topicref;10;6;-;3;3;3;3.0
+topicmap;2;4;5;0;5;5;5.0
+topicref;6;0;5;0;3;3;3.0

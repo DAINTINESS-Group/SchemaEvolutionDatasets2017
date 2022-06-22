@@ -1,0 +1,10 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+alerts;13;0;-;0;27;27;27.0
+blackouts;13;0;-;0;12;12;12.0
+customers;13;0;-;0;3;3;3.0
+groups;5;8;-;0;7;7;7.0
+heartbeats;13;0;-;0;8;8;8.0
+keys;13;0;-;0;8;8;8.0
+metrics;13;0;-;0;8;8;8.0
+perms;13;0;-;0;3;3;3.0
+users;13;0;-;3;10;13;12.769231

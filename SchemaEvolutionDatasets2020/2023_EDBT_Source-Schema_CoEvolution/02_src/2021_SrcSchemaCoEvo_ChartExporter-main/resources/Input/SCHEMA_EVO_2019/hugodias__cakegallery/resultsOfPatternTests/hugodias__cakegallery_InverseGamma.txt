@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- hugodias__cakegallery -------------------------
+hugodias__cakegallery:	InverseGamma	holds? 	true
+hugodias__cakegallery:	InverseGamma	Geometry? 	true
+hugodias__cakegallery:	InverseGamma	FisherExecuted? 	false
+hugodias__cakegallery:	InverseGamma	p-Value? 	false
+------------------------------------------------

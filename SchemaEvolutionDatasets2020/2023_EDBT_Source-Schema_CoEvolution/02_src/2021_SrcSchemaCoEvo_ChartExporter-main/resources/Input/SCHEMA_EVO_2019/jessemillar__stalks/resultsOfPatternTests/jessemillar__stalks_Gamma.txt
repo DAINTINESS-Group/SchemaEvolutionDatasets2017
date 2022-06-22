@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jessemillar__stalks -------------------------
+jessemillar__stalks:	Gamma	holds? 	false
+jessemillar__stalks:	Gamma	Geometry? 	false
+jessemillar__stalks:	Gamma	FisherExecuted? 	false
+jessemillar__stalks:	Gamma	p-Value? 	false
+jessemillar__stalks:	Gamma	Surv.Wide 	0
+jessemillar__stalks:	Gamma	Surv.NotWide 	4
+jessemillar__stalks:	Gamma	Dead.Wide 	0
+jessemillar__stalks:	Gamma	Dead.NotWide 	0
+jessemillar__stalks:	Gamma	Wide 	0
+------------------------------------------------

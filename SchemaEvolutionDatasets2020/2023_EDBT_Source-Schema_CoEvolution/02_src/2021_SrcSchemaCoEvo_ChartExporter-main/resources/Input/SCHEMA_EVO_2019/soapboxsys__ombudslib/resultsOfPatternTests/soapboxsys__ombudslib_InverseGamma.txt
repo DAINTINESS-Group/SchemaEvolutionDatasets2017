@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- soapboxsys__ombudslib -------------------------
+soapboxsys__ombudslib:	InverseGamma	holds? 	true
+soapboxsys__ombudslib:	InverseGamma	Geometry? 	true
+soapboxsys__ombudslib:	InverseGamma	FisherExecuted? 	false
+soapboxsys__ombudslib:	InverseGamma	p-Value? 	false
+------------------------------------------------

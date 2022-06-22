@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- SalesforceEng__cucumber-metrics -------------------------
+SalesforceEng__cucumber-metrics:	InverseGamma	holds? 	true
+SalesforceEng__cucumber-metrics:	InverseGamma	Geometry? 	true
+SalesforceEng__cucumber-metrics:	InverseGamma	FisherExecuted? 	false
+SalesforceEng__cucumber-metrics:	InverseGamma	p-Value? 	false
+------------------------------------------------

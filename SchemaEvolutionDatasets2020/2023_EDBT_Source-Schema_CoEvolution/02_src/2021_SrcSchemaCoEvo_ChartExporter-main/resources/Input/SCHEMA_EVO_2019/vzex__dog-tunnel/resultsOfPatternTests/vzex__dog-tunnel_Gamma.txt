@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- vzex__dog-tunnel -------------------------
+vzex__dog-tunnel:	Gamma	holds? 	true
+vzex__dog-tunnel:	Gamma	Geometry? 	true
+vzex__dog-tunnel:	Gamma	FisherExecuted? 	false
+vzex__dog-tunnel:	Gamma	p-Value? 	false
+vzex__dog-tunnel:	Gamma	Surv.Wide 	1
+vzex__dog-tunnel:	Gamma	Surv.NotWide 	0
+vzex__dog-tunnel:	Gamma	Dead.Wide 	0
+vzex__dog-tunnel:	Gamma	Dead.NotWide 	0
+vzex__dog-tunnel:	Gamma	Wide 	1
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- torrentpier__torrentpier -------------------------
+torrentpier__torrentpier:	Electrolysis	holds? 	false
+torrentpier__torrentpier:	Electrolysis	Geometry? 	false
+torrentpier__torrentpier:	Electrolysis	FisherExecuted? 	false
+torrentpier__torrentpier:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- RichMercer__ContentMetadata -------------------------
+RichMercer__ContentMetadata:	Electrolysis	holds? 	true
+RichMercer__ContentMetadata:	Electrolysis	Geometry? 	true
+RichMercer__ContentMetadata:	Electrolysis	FisherExecuted? 	false
+RichMercer__ContentMetadata:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- nooku__joomla-todo -------------------------
+nooku__joomla-todo:	Electrolysis	holds? 	false
+nooku__joomla-todo:	Electrolysis	Geometry? 	false
+nooku__joomla-todo:	Electrolysis	FisherExecuted? 	false
+nooku__joomla-todo:	Electrolysis	p-Value? 	false
+------------------------------------------------

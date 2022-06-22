@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- joomlatools__joomla-platform-content -------------------------
+joomlatools__joomla-platform-content:	InverseGamma	holds? 	true
+joomlatools__joomla-platform-content:	InverseGamma	Geometry? 	true
+joomlatools__joomla-platform-content:	InverseGamma	FisherExecuted? 	false
+joomlatools__joomla-platform-content:	InverseGamma	p-Value? 	false
+------------------------------------------------

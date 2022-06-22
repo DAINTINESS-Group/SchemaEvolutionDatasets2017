@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ZachBergh__spark-mysql-protocol -------------------------
+ZachBergh__spark-mysql-protocol:	InverseGamma	holds? 	true
+ZachBergh__spark-mysql-protocol:	InverseGamma	Geometry? 	true
+ZachBergh__spark-mysql-protocol:	InverseGamma	FisherExecuted? 	false
+ZachBergh__spark-mysql-protocol:	InverseGamma	p-Value? 	false
+------------------------------------------------

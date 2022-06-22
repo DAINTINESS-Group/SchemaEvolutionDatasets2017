@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- leighmacdonald__php_rbac -------------------------
+leighmacdonald__php_rbac:	Gamma	holds? 	false
+leighmacdonald__php_rbac:	Gamma	Geometry? 	false
+leighmacdonald__php_rbac:	Gamma	FisherExecuted? 	false
+leighmacdonald__php_rbac:	Gamma	p-Value? 	false
+leighmacdonald__php_rbac:	Gamma	Surv.Wide 	0
+leighmacdonald__php_rbac:	Gamma	Surv.NotWide 	4
+leighmacdonald__php_rbac:	Gamma	Dead.Wide 	0
+leighmacdonald__php_rbac:	Gamma	Dead.NotWide 	0
+leighmacdonald__php_rbac:	Gamma	Wide 	0
+------------------------------------------------

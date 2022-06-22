@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- guardian__alerta -------------------------
+guardian__alerta:	Electrolysis	holds? 	true
+guardian__alerta:	Electrolysis	Geometry? 	true
+guardian__alerta:	Electrolysis	FisherExecuted? 	false
+guardian__alerta:	Electrolysis	p-Value? 	false
+------------------------------------------------

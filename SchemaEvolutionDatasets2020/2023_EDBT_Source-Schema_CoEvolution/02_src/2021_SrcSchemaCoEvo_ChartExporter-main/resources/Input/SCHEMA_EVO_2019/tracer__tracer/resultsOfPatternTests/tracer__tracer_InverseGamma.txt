@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tracer__tracer -------------------------
+tracer__tracer:	InverseGamma	holds? 	true
+tracer__tracer:	InverseGamma	Geometry? 	true
+tracer__tracer:	InverseGamma	FisherExecuted? 	false
+tracer__tracer:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla__tls-observatory -------------------------
+mozilla__tls-observatory:	Electrolysis	holds? 	true
+mozilla__tls-observatory:	Electrolysis	Geometry? 	true
+mozilla__tls-observatory:	Electrolysis	FisherExecuted? 	false
+mozilla__tls-observatory:	Electrolysis	p-Value? 	false
+------------------------------------------------

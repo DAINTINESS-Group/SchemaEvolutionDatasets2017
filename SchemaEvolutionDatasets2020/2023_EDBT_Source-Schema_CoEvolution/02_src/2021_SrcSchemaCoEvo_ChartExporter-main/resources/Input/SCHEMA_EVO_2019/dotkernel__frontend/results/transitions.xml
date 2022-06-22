@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1491574533.sql" newVersion="1493764532.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>user_message</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>email</name>
+                <type>VARCHAR(150)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>message</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>subject</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1493764532.sql" newVersion="1493764935.sql"/>
+    <transition oldVersion="1493764935.sql" newVersion="1506442698.sql"/>
+</transitions>

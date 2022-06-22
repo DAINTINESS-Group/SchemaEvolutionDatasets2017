@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- kronusme__dota2-api -------------------------
+kronusme__dota2-api:	InverseGamma	holds? 	true
+kronusme__dota2-api:	InverseGamma	Geometry? 	true
+kronusme__dota2-api:	InverseGamma	FisherExecuted? 	false
+kronusme__dota2-api:	InverseGamma	p-Value? 	false
+------------------------------------------------

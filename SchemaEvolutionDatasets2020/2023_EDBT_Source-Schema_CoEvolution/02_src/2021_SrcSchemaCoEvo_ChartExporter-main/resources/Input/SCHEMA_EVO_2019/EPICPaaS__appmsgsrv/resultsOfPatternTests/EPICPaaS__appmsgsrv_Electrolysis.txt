@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- EPICPaaS__appmsgsrv -------------------------
+EPICPaaS__appmsgsrv:	Electrolysis	holds? 	false
+EPICPaaS__appmsgsrv:	Electrolysis	Geometry? 	false
+EPICPaaS__appmsgsrv:	Electrolysis	FisherExecuted? 	false
+EPICPaaS__appmsgsrv:	Electrolysis	p-Value? 	false
+------------------------------------------------

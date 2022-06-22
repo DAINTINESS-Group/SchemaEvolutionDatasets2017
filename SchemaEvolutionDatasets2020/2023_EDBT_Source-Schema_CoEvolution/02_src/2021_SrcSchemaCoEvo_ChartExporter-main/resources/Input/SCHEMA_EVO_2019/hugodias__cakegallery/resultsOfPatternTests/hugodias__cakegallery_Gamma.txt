@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- hugodias__cakegallery -------------------------
+hugodias__cakegallery:	Gamma	holds? 	false
+hugodias__cakegallery:	Gamma	Geometry? 	false
+hugodias__cakegallery:	Gamma	FisherExecuted? 	false
+hugodias__cakegallery:	Gamma	p-Value? 	false
+hugodias__cakegallery:	Gamma	Surv.Wide 	0
+hugodias__cakegallery:	Gamma	Surv.NotWide 	2
+hugodias__cakegallery:	Gamma	Dead.Wide 	0
+hugodias__cakegallery:	Gamma	Dead.NotWide 	0
+hugodias__cakegallery:	Gamma	Wide 	0
+------------------------------------------------

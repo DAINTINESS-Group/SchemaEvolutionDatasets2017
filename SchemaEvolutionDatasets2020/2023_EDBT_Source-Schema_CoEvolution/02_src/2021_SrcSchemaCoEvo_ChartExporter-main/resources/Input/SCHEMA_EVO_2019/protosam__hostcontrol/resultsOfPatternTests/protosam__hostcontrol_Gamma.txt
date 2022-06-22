@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- protosam__hostcontrol -------------------------
+protosam__hostcontrol:	Gamma	holds? 	true
+protosam__hostcontrol:	Gamma	Geometry? 	true
+protosam__hostcontrol:	Gamma	FisherExecuted? 	false
+protosam__hostcontrol:	Gamma	p-Value? 	false
+protosam__hostcontrol:	Gamma	Surv.Wide 	1
+protosam__hostcontrol:	Gamma	Surv.NotWide 	11
+protosam__hostcontrol:	Gamma	Dead.Wide 	0
+protosam__hostcontrol:	Gamma	Dead.NotWide 	0
+protosam__hostcontrol:	Gamma	Wide 	1
+------------------------------------------------

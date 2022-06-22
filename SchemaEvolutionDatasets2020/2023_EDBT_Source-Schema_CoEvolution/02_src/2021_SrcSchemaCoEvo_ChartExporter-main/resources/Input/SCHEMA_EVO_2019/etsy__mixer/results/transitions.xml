@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1442436596.sql" newVersion="1482275466.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>description</name>
+                <type>VARCHAR(1000)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

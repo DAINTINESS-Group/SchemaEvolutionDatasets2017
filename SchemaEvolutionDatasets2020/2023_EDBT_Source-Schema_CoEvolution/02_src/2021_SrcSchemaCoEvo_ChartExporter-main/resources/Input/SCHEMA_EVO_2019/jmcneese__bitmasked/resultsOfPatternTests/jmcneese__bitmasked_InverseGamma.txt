@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jmcneese__bitmasked -------------------------
+jmcneese__bitmasked:	InverseGamma	holds? 	true
+jmcneese__bitmasked:	InverseGamma	Geometry? 	true
+jmcneese__bitmasked:	InverseGamma	FisherExecuted? 	false
+jmcneese__bitmasked:	InverseGamma	p-Value? 	false
+------------------------------------------------

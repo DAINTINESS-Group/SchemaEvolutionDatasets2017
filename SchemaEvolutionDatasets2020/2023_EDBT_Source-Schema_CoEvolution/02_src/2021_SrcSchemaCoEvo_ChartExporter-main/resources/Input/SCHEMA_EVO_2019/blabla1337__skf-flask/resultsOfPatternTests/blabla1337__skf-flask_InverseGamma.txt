@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- blabla1337__skf-flask -------------------------
+blabla1337__skf-flask:	InverseGamma	holds? 	false
+blabla1337__skf-flask:	InverseGamma	Geometry? 	false
+blabla1337__skf-flask:	InverseGamma	FisherExecuted? 	false
+blabla1337__skf-flask:	InverseGamma	p-Value? 	false
+------------------------------------------------

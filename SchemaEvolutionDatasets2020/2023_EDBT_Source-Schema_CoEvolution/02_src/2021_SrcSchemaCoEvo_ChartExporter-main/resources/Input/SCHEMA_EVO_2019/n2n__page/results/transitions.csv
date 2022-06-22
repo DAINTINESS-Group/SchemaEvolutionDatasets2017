@@ -1,0 +1,11 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1471564601.sql;1488295348.sql;page_link;Insertion:NewTable;id;INT(10);false;0;-
+1;1471564601.sql;1488295348.sql;page_link;Insertion:NewTable;label;VARCHAR(255);false;0;-
+1;1471564601.sql;1488295348.sql;page_link;Insertion:NewTable;linked_page_id;INT(10);false;0;-
+1;1471564601.sql;1488295348.sql;page_link;Insertion:NewTable;type;VARCHAR(255);false;0;-
+1;1471564601.sql;1488295348.sql;page_link;Insertion:NewTable;url;VARCHAR(255);false;0;-
+2;1488295348.sql;1492598869.sql;-;-;-;-;-;-;-
+3;1492598869.sql;1516135645.sql;-;-;-;-;-;-;-
+4;1516135645.sql;1516141532.sql;-;-;-;-;-;-;-
+5;1516141532.sql;1519647737.sql;-;-;-;-;-;-;-
+6;1519647737.sql;1529313416.sql;-;-;-;-;-;-;-

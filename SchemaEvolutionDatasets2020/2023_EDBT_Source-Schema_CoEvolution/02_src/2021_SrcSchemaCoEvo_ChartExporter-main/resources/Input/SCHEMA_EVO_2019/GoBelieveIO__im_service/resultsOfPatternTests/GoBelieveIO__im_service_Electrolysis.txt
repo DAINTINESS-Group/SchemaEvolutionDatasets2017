@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- GoBelieveIO__im_service -------------------------
+GoBelieveIO__im_service:	Electrolysis	holds? 	true
+GoBelieveIO__im_service:	Electrolysis	Geometry? 	true
+GoBelieveIO__im_service:	Electrolysis	FisherExecuted? 	false
+GoBelieveIO__im_service:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mbilbille__jpnforphp -------------------------
+mbilbille__jpnforphp:	Gamma	holds? 	false
+mbilbille__jpnforphp:	Gamma	Geometry? 	false
+mbilbille__jpnforphp:	Gamma	FisherExecuted? 	false
+mbilbille__jpnforphp:	Gamma	p-Value? 	false
+mbilbille__jpnforphp:	Gamma	Surv.Wide 	0
+mbilbille__jpnforphp:	Gamma	Surv.NotWide 	1
+mbilbille__jpnforphp:	Gamma	Dead.Wide 	0
+mbilbille__jpnforphp:	Gamma	Dead.NotWide 	0
+mbilbille__jpnforphp:	Gamma	Wide 	0
+------------------------------------------------

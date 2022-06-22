@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- azzlack__Sentinel.OAuth -------------------------
+azzlack__Sentinel.OAuth:	InverseGamma	holds? 	true
+azzlack__Sentinel.OAuth:	InverseGamma	Geometry? 	true
+azzlack__Sentinel.OAuth:	InverseGamma	FisherExecuted? 	false
+azzlack__Sentinel.OAuth:	InverseGamma	p-Value? 	false
+------------------------------------------------

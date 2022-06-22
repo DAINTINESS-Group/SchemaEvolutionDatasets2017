@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- shiftcurrency__shift -------------------------
+shiftcurrency__shift:	Gamma	holds? 	true
+shiftcurrency__shift:	Gamma	Geometry? 	true
+shiftcurrency__shift:	Gamma	FisherExecuted? 	false
+shiftcurrency__shift:	Gamma	p-Value? 	false
+shiftcurrency__shift:	Gamma	Surv.Wide 	1
+shiftcurrency__shift:	Gamma	Surv.NotWide 	5
+shiftcurrency__shift:	Gamma	Dead.Wide 	0
+shiftcurrency__shift:	Gamma	Dead.NotWide 	0
+shiftcurrency__shift:	Gamma	Wide 	1
+------------------------------------------------

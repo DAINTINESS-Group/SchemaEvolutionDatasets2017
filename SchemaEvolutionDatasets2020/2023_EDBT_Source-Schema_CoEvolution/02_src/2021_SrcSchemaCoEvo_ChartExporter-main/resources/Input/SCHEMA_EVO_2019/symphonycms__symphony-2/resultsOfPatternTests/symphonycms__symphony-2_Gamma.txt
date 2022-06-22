@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- symphonycms__symphony-2 -------------------------
+symphonycms__symphony-2:	Gamma	holds? 	true
+symphonycms__symphony-2:	Gamma	Geometry? 	true
+symphonycms__symphony-2:	Gamma	FisherExecuted? 	false
+symphonycms__symphony-2:	Gamma	p-Value? 	true
+symphonycms__symphony-2:	Gamma	Surv.Wide 	1
+symphonycms__symphony-2:	Gamma	Surv.NotWide 	19
+symphonycms__symphony-2:	Gamma	Dead.Wide 	0
+symphonycms__symphony-2:	Gamma	Dead.NotWide 	1
+symphonycms__symphony-2:	Gamma	Wide 	1
+------------------------------------------------

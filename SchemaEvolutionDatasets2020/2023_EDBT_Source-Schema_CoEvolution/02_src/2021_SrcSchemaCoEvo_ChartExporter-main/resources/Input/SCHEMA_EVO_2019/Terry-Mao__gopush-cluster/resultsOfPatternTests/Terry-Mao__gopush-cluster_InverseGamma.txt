@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- Terry-Mao__gopush-cluster -------------------------
+Terry-Mao__gopush-cluster:	InverseGamma	holds? 	true
+Terry-Mao__gopush-cluster:	InverseGamma	Geometry? 	true
+Terry-Mao__gopush-cluster:	InverseGamma	FisherExecuted? 	false
+Terry-Mao__gopush-cluster:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1501858353.sql" newVersion="1502026790.sql"/>
+    <transition oldVersion="1502026790.sql" newVersion="1502885773.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>de_category</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>seo_description</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>seo_keywords</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>de_content_article</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>seo_description</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>seo_keywords</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1502885773.sql" newVersion="1503104048.sql">
+        <update type="TypeChange">
+            <table>
+                <name>de_content_article</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>detail</name>
+                <type>MEDIUMTEXTCOLLATEUTF8MB4_UNICODE_CI</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1503104048.sql" newVersion="1503191446.sql"/>
+    <transition oldVersion="1503191446.sql" newVersion="1508466746.sql">
+        <update type="TypeChange">
+            <table>
+                <name>de_session</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1508466746.sql" newVersion="1508468504.sql">
+        <update type="TypeChange">
+            <table>
+                <name>de_session</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>expire</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>CHAR(64)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1508468504.sql" newVersion="1509682131.sql"/>
+    <transition oldVersion="1509682131.sql" newVersion="1510237242.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>de_comment</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>parent_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>reply</name>
+                <type>MEDIUMINT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>de_content</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>tag</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>de_content_tag</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tag_id</name>
+                <type>MEDIUMINT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>de_tag</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>MEDIUMINT(8)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>status</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1510237242.sql" newVersion="1510237885.sql"/>
+</transitions>

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dneustadt__majima -------------------------
+dneustadt__majima:	InverseGamma	holds? 	true
+dneustadt__majima:	InverseGamma	Geometry? 	true
+dneustadt__majima:	InverseGamma	FisherExecuted? 	false
+dneustadt__majima:	InverseGamma	p-Value? 	false
+------------------------------------------------

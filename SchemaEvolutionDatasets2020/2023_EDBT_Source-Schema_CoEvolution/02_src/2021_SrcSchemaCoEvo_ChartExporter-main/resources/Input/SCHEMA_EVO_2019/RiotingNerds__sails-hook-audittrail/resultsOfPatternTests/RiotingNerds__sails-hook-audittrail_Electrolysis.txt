@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- RiotingNerds__sails-hook-audittrail -------------------------
+RiotingNerds__sails-hook-audittrail:	Electrolysis	holds? 	true
+RiotingNerds__sails-hook-audittrail:	Electrolysis	Geometry? 	true
+RiotingNerds__sails-hook-audittrail:	Electrolysis	FisherExecuted? 	false
+RiotingNerds__sails-hook-audittrail:	Electrolysis	p-Value? 	false
+------------------------------------------------

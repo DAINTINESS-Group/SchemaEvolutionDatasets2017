@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1287615273.sql;1295034563.sql;jobs;Insertion:UpdateTable;attempts;INTUNSIGNED;false;0;-

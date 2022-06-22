@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1528329887.sql" newVersion="1545113555.sql"/>
+    <transition oldVersion="1545113555.sql" newVersion="1554280670.sql"/>
+    <transition oldVersion="1554280670.sql" newVersion="1555229745.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>zipkin_spans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>remote_service_name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1555229745.sql" newVersion="1556332881.sql"/>
+</transitions>

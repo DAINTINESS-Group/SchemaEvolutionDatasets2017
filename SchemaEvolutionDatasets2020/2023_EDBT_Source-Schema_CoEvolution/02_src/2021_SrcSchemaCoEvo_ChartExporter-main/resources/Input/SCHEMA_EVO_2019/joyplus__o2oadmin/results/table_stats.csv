@@ -1,0 +1,14 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+ltv_app;6;4;-;0;5;5;5.0
+ltv_flight;6;4;-;0;19;19;19.0
+ltv_flight_group;6;4;-;0;3;3;3.0
+pmp_ad_category;5;5;-;0;4;4;4.0
+pmp_advertiser;9;1;-;0;7;7;7.0
+pmp_app_info;10;0;-;0;5;5;5.0
+pmp_campaign;9;1;-;1;20;20;20.0
+pmp_campaign_creative;10;0;-;0;13;13;13.0
+pmp_campaign_daily_config;9;1;-;0;4;4;4.0
+pmp_campaign_daily_report;1;9;-;0;10;10;10.0
+pmp_campaign_group;9;1;-;0;4;4;4.0
+pmp_campaign_targeting;9;1;-;0;4;4;4.0
+pmp_lov;9;1;-;0;5;5;5.0

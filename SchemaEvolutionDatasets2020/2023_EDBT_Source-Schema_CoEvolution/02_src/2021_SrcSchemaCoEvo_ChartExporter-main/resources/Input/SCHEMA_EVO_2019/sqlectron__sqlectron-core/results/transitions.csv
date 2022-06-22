@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1448217995.sql;1458830527.sql;-;-;-;-;-;-;-
+2;1458830527.sql;1461066057.sql;-;-;-;-;-;-;-
+3;1461066057.sql;1463966962.sql;users;Insertion:UpdateTable;createdat;DATETIME;false;0;-
+4;1463966962.sql;1464788084.sql;users;Insertion:UpdateTable;role_id;INT;false;0;id@roles

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1440032561.sql" newVersion="1440908594.sql">
+        <update type="TypeChange">
+            <table>
+                <name>Users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ID</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

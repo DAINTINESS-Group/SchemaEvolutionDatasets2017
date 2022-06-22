@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- aimeos__aimeos-typo3 -------------------------
+aimeos__aimeos-typo3:	Gamma	holds? 	false
+aimeos__aimeos-typo3:	Gamma	Geometry? 	false
+aimeos__aimeos-typo3:	Gamma	FisherExecuted? 	false
+aimeos__aimeos-typo3:	Gamma	p-Value? 	false
+aimeos__aimeos-typo3:	Gamma	Surv.Wide 	0
+aimeos__aimeos-typo3:	Gamma	Surv.NotWide 	1
+aimeos__aimeos-typo3:	Gamma	Dead.Wide 	0
+aimeos__aimeos-typo3:	Gamma	Dead.NotWide 	2
+aimeos__aimeos-typo3:	Gamma	Wide 	0
+------------------------------------------------

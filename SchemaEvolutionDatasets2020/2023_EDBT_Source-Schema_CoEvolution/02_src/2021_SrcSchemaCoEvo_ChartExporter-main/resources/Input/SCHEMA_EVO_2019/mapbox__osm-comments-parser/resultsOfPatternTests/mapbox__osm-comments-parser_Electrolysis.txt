@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mapbox__osm-comments-parser -------------------------
+mapbox__osm-comments-parser:	Electrolysis	holds? 	false
+mapbox__osm-comments-parser:	Electrolysis	Geometry? 	false
+mapbox__osm-comments-parser:	Electrolysis	FisherExecuted? 	false
+mapbox__osm-comments-parser:	Electrolysis	p-Value? 	false
+------------------------------------------------

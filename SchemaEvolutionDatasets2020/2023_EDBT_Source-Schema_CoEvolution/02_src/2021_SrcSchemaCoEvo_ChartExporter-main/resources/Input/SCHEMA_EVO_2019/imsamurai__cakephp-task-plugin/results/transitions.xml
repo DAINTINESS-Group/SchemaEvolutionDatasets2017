@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1370947732.sql" newVersion="1371118944.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>dependent_tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>depends_on_task_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>task_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hash</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>server_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1371118944.sql" newVersion="1371637204.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>sceduled</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>scheduled</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1371637204.sql" newVersion="1388065207.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>process_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1388065207.sql" newVersion="1394641875.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>process_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>server_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1394641875.sql" newVersion="1405437763.sql"/>
+    <transition oldVersion="1405437763.sql" newVersion="1410868591.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>task_statistics</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cpu</name>
+                <type>DECIMAL(4,1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>created</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>memory</name>
+                <type>DECIMAL(4,1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>status</name>
+                <type>VARCHAR(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>task_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1410868591.sql" newVersion="1423658074.sql"/>
+    <transition oldVersion="1423658074.sql" newVersion="1455710033.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tasks</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>command</name>
+                <type>VARCHAR(333)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>server_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1455710033.sql" newVersion="1455713189.sql"/>
+</transitions>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1413146451.sql" newVersion="1430515945.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>statemachine_history</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>exception</name>
+                <type>TINYINT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1430515945.sql" newVersion="1430607950.sql"/>
+    <transition oldVersion="1430607950.sql" newVersion="1430840738.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>statemachine_transitions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>event</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1430840738.sql" newVersion="1432680883.sql"/>
+    <transition oldVersion="1432680883.sql" newVersion="1465544293.sql"/>
+</transitions>

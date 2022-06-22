@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- flynn__flynn-subdomainer -------------------------
+flynn__flynn-subdomainer:	InverseGamma	holds? 	true
+flynn__flynn-subdomainer:	InverseGamma	Geometry? 	true
+flynn__flynn-subdomainer:	InverseGamma	FisherExecuted? 	false
+flynn__flynn-subdomainer:	InverseGamma	p-Value? 	false
+------------------------------------------------

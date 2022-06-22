@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- liujianping__scaffold -------------------------
+liujianping__scaffold:	Gamma	holds? 	true
+liujianping__scaffold:	Gamma	Geometry? 	true
+liujianping__scaffold:	Gamma	FisherExecuted? 	false
+liujianping__scaffold:	Gamma	p-Value? 	true
+liujianping__scaffold:	Gamma	Surv.Wide 	2
+liujianping__scaffold:	Gamma	Surv.NotWide 	3
+liujianping__scaffold:	Gamma	Dead.Wide 	0
+liujianping__scaffold:	Gamma	Dead.NotWide 	1
+liujianping__scaffold:	Gamma	Wide 	2
+------------------------------------------------

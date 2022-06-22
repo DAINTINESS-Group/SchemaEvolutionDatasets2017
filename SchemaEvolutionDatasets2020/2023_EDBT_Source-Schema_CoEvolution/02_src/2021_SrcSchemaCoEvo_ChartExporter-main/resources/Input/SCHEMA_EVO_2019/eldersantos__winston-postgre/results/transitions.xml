@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1407202205.sql" newVersion="1408864923.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>nodelogs</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>meta</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1408864923.sql" newVersion="1409285498.sql">
+        <update type="TypeChange">
+            <table>
+                <name>nodelogs</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>logdate</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <deletion type="UpdateTable">
+            <table>
+                <name>nodelogs</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>meta</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1409285498.sql" newVersion="1409285714.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>nodelogs</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>meta</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

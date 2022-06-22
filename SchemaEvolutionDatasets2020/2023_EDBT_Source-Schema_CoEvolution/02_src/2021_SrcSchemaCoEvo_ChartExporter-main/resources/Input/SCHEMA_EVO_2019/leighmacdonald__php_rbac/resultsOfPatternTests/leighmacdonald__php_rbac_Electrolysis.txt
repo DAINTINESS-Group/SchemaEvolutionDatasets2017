@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- leighmacdonald__php_rbac -------------------------
+leighmacdonald__php_rbac:	Electrolysis	holds? 	true
+leighmacdonald__php_rbac:	Electrolysis	Geometry? 	true
+leighmacdonald__php_rbac:	Electrolysis	FisherExecuted? 	false
+leighmacdonald__php_rbac:	Electrolysis	p-Value? 	false
+------------------------------------------------

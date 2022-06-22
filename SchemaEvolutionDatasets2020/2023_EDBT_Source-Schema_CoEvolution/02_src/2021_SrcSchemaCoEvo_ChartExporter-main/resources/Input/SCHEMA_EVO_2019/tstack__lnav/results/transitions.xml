@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1371010259.sql" newVersion="1428789350.sql"/>
+    <transition oldVersion="1428789350.sql" newVersion="1490968871.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>lnav_example_log</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ex_procname</name>
+                <type>TEXTCOLLATE'BINARY'</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_actual_time</name>
+                <type>DATETIMEHIDDEN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_body</name>
+                <type>TEXTHIDDEN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_idle_msecs</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_level</name>
+                <type>TEXTCOLLATELOGLEVEL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_line</name>
+                <type>INTEGER</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>log_mark</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_part</name>
+                <type>TEXTCOLLATENATURALNOCASE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_path</name>
+                <type>TEXTHIDDENCOLLATENATURALNOCASE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_text</name>
+                <type>TEXTHIDDEN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>log_time</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1490968871.sql" newVersion="1491401119.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>lnav_example_log</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ex_duration</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1491401119.sql" newVersion="1491728239.sql"/>
+</transitions>

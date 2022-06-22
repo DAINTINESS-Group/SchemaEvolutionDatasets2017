@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1393259186.sql" newVersion="1473960145.sql">
+        <update type="TypeChange">
+            <table>
+                <name>sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>TEXTCOLLATEUTF8MB4_BIN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>session_id</name>
+                <type>VARCHAR(128)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

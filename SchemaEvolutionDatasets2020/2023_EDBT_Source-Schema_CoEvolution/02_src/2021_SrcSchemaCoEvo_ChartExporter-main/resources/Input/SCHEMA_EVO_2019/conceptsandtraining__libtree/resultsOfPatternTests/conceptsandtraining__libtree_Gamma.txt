@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- conceptsandtraining__libtree -------------------------
+conceptsandtraining__libtree:	Gamma	holds? 	false
+conceptsandtraining__libtree:	Gamma	Geometry? 	false
+conceptsandtraining__libtree:	Gamma	FisherExecuted? 	false
+conceptsandtraining__libtree:	Gamma	p-Value? 	false
+conceptsandtraining__libtree:	Gamma	Surv.Wide 	0
+conceptsandtraining__libtree:	Gamma	Surv.NotWide 	2
+conceptsandtraining__libtree:	Gamma	Dead.Wide 	0
+conceptsandtraining__libtree:	Gamma	Dead.NotWide 	0
+conceptsandtraining__libtree:	Gamma	Wide 	0
+------------------------------------------------

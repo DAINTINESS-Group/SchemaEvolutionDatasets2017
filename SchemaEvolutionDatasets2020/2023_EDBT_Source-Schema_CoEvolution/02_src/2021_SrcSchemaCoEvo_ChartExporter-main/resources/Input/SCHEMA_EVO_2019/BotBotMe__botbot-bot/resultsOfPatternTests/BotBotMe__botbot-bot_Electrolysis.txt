@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- BotBotMe__botbot-bot -------------------------
+BotBotMe__botbot-bot:	Electrolysis	holds? 	true
+BotBotMe__botbot-bot:	Electrolysis	Geometry? 	true
+BotBotMe__botbot-bot:	Electrolysis	FisherExecuted? 	false
+BotBotMe__botbot-bot:	Electrolysis	p-Value? 	false
+------------------------------------------------

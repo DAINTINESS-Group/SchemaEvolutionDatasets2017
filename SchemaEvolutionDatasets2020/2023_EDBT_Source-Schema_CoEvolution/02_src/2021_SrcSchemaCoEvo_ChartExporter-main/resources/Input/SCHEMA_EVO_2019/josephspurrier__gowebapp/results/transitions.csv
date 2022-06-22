@@ -1,0 +1,8 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1437944316.sql;1461653958.sql;note;Insertion:NewTable;content;TEXT;false;0;-
+1;1437944316.sql;1461653958.sql;note;Insertion:NewTable;created_at;TIMESTAMP;false;0;-
+1;1437944316.sql;1461653958.sql;note;Insertion:NewTable;deleted;TINYINT(1);false;0;-
+1;1437944316.sql;1461653958.sql;note;Insertion:NewTable;id;INT(10);true;0;-
+1;1437944316.sql;1461653958.sql;note;Insertion:NewTable;updated_at;TIMESTAMP;false;0;-
+1;1437944316.sql;1461653958.sql;note;Insertion:NewTable;user_id;INT(10);false;0;-
+2;1461653958.sql;1494912069.sql;-;-;-;-;-;-;-

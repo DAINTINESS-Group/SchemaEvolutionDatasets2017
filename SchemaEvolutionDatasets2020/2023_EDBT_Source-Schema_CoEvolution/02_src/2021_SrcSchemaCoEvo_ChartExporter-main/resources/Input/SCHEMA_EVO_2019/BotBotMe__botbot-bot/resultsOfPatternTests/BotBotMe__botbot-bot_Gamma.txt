@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- BotBotMe__botbot-bot -------------------------
+BotBotMe__botbot-bot:	Gamma	holds? 	false
+BotBotMe__botbot-bot:	Gamma	Geometry? 	false
+BotBotMe__botbot-bot:	Gamma	FisherExecuted? 	false
+BotBotMe__botbot-bot:	Gamma	p-Value? 	false
+BotBotMe__botbot-bot:	Gamma	Surv.Wide 	0
+BotBotMe__botbot-bot:	Gamma	Surv.NotWide 	3
+BotBotMe__botbot-bot:	Gamma	Dead.Wide 	0
+BotBotMe__botbot-bot:	Gamma	Dead.NotWide 	0
+BotBotMe__botbot-bot:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- webinverters__win-with-logs -------------------------
+webinverters__win-with-logs:	Gamma	holds? 	true
+webinverters__win-with-logs:	Gamma	Geometry? 	true
+webinverters__win-with-logs:	Gamma	FisherExecuted? 	false
+webinverters__win-with-logs:	Gamma	p-Value? 	false
+webinverters__win-with-logs:	Gamma	Surv.Wide 	1
+webinverters__win-with-logs:	Gamma	Surv.NotWide 	0
+webinverters__win-with-logs:	Gamma	Dead.Wide 	0
+webinverters__win-with-logs:	Gamma	Dead.NotWide 	0
+webinverters__win-with-logs:	Gamma	Wide 	1
+------------------------------------------------

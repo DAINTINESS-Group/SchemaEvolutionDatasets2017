@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- DevMine__repotool -------------------------
+DevMine__repotool:	InverseGamma	holds? 	true
+DevMine__repotool:	InverseGamma	Geometry? 	true
+DevMine__repotool:	InverseGamma	FisherExecuted? 	false
+DevMine__repotool:	InverseGamma	p-Value? 	false
+------------------------------------------------

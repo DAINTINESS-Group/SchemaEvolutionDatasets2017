@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- Terry-Mao__gopush-cluster -------------------------
+Terry-Mao__gopush-cluster:	Gamma	holds? 	false
+Terry-Mao__gopush-cluster:	Gamma	Geometry? 	false
+Terry-Mao__gopush-cluster:	Gamma	FisherExecuted? 	false
+Terry-Mao__gopush-cluster:	Gamma	p-Value? 	false
+Terry-Mao__gopush-cluster:	Gamma	Surv.Wide 	0
+Terry-Mao__gopush-cluster:	Gamma	Surv.NotWide 	4
+Terry-Mao__gopush-cluster:	Gamma	Dead.Wide 	0
+Terry-Mao__gopush-cluster:	Gamma	Dead.NotWide 	1
+Terry-Mao__gopush-cluster:	Gamma	Wide 	0
+------------------------------------------------

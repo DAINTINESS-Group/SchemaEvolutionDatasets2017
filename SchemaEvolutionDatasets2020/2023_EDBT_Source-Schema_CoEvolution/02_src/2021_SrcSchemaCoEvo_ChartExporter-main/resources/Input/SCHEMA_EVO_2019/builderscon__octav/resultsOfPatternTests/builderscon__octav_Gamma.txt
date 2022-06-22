@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- builderscon__octav -------------------------
+builderscon__octav:	Gamma	holds? 	true
+builderscon__octav:	Gamma	Geometry? 	true
+builderscon__octav:	Gamma	FisherExecuted? 	false
+builderscon__octav:	Gamma	p-Value? 	true
+builderscon__octav:	Gamma	Surv.Wide 	2
+builderscon__octav:	Gamma	Surv.NotWide 	20
+builderscon__octav:	Gamma	Dead.Wide 	0
+builderscon__octav:	Gamma	Dead.NotWide 	5
+builderscon__octav:	Gamma	Wide 	2
+------------------------------------------------

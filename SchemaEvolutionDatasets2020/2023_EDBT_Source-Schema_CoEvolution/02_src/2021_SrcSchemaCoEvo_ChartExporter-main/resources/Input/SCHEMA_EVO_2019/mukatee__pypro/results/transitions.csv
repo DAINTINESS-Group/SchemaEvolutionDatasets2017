@@ -1,0 +1,14 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1423341385.sql;1423772194.sql;-;-;-;-;-;-;-
+2;1423772194.sql;1424372139.sql;cpu_proc;Insertion:UpdateTable;percent;DECIMAL(5,2);false;0;-
+2;1423772194.sql;1424372139.sql;cpu_proc;Update:TypeChange;rec_time;BIGINT(12);false;0;-
+2;1423772194.sql;1424372139.sql;cpu_sys;Update:TypeChange;rec_time;BIGINT(12);false;0;-
+2;1423772194.sql;1424372139.sql;event_log;Insertion:UpdateTable;description;VARCHAR(255);false;0;-
+2;1423772194.sql;1424372139.sql;event_log;Deletion:UpdateTable;proc_id;INT(5);false;0;proc_id@proc_info
+2;1423772194.sql;1424372139.sql;io_sys;Update:TypeChange;rec_time;BIGINT(12);false;0;-
+2;1423772194.sql;1424372139.sql;mem_proc;Update:TypeChange;rec_time;BIGINT(12);false;0;-
+2;1423772194.sql;1424372139.sql;mem_sys;Update:TypeChange;rec_time;BIGINT(12);false;0;-
+2;1423772194.sql;1424372139.sql;mem_sys;Insertion:UpdateTable;swap_used;BIGINT(15);false;0;-
+2;1423772194.sql;1424372139.sql;proc_info;Update:TypeChange;rec_time;BIGINT(12);false;0;-
+2;1423772194.sql;1424372139.sql;session_info;Insertion:UpdateTable;start_time;BIGINT(12);false;0;-
+3;1424372139.sql;1427399956.sql;-;-;-;-;-;-;-

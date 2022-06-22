@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1304730690.sql;1386273473.sql;-;-;-;-;-;-;-
+2;1386273473.sql;1386273617.sql;geocoder_data;Insertion:NewTable;data;BLOB;false;0;-
+2;1386273473.sql;1386273617.sql;geocoder_data;Insertion:NewTable;shard;INTEGER;false;0;-
+2;1386273473.sql;1386273617.sql;geocoder_data;Insertion:NewTable;type;TEXT;false;0;-

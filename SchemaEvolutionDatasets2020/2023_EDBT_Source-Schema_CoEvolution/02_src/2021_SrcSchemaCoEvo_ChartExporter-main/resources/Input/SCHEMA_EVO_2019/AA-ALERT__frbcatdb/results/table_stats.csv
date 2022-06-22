@@ -1,0 +1,17 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+authors;16;0;-;8;9;9;9.0
+frbs;16;0;-;7;5;5;5.0
+frbs_have_publications;16;0;-;4;2;2;2.0
+frbs_notes;16;0;-;5;5;5;5.0
+observations;16;0;-;12;8;9;8.625
+observations_have_publications;16;0;-;4;2;2;2.0
+observations_notes;16;0;-;5;5;5;5.0
+publications;16;0;-;3;5;5;5.0
+radio_images;16;0;-;4;4;4;4.0
+radio_images_have_radio_measured_params;16;0;-;4;2;2;2.0
+radio_measured_params;16;0;-;62;33;38;35.1875
+radio_measured_params_have_publications;16;0;-;4;2;2;2.0
+radio_measured_params_notes;16;0;-;5;5;5;5.0
+radio_observations_params;16;0;-;38;21;24;23.5
+radio_observations_params_have_publications;16;0;-;4;2;2;2.0
+radio_observations_params_notes;16;0;-;5;5;5;5.0

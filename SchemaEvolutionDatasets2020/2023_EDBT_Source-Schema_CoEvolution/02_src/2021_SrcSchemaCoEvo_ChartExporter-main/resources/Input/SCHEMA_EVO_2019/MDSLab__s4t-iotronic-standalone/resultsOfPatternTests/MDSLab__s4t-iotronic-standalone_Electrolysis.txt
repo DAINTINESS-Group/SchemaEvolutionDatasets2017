@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- MDSLab__s4t-iotronic-standalone -------------------------
+MDSLab__s4t-iotronic-standalone:	Electrolysis	holds? 	false
+MDSLab__s4t-iotronic-standalone:	Electrolysis	Geometry? 	false
+MDSLab__s4t-iotronic-standalone:	Electrolysis	FisherExecuted? 	false
+MDSLab__s4t-iotronic-standalone:	Electrolysis	p-Value? 	false
+------------------------------------------------

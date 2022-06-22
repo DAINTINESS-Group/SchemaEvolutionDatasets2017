@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jadekler__git-go-d3-concertsap -------------------------
+jadekler__git-go-d3-concertsap:	InverseGamma	holds? 	true
+jadekler__git-go-d3-concertsap:	InverseGamma	Geometry? 	true
+jadekler__git-go-d3-concertsap:	InverseGamma	FisherExecuted? 	false
+jadekler__git-go-d3-concertsap:	InverseGamma	p-Value? 	false
+------------------------------------------------

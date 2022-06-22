@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- n2n__page -------------------------
+n2n__page:	Electrolysis	holds? 	true
+n2n__page:	Electrolysis	Geometry? 	true
+n2n__page:	Electrolysis	FisherExecuted? 	false
+n2n__page:	Electrolysis	p-Value? 	false
+------------------------------------------------

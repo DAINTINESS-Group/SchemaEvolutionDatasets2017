@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- TwitchScience__rs_ingester -------------------------
+TwitchScience__rs_ingester:	Electrolysis	holds? 	true
+TwitchScience__rs_ingester:	Electrolysis	Geometry? 	true
+TwitchScience__rs_ingester:	Electrolysis	FisherExecuted? 	false
+TwitchScience__rs_ingester:	Electrolysis	p-Value? 	false
+------------------------------------------------

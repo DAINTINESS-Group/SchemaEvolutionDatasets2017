@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1475596539.sql;1476478916.sql;mem_accounts;Insertion:UpdateTable;virgin;SMALLINT;false;0;-

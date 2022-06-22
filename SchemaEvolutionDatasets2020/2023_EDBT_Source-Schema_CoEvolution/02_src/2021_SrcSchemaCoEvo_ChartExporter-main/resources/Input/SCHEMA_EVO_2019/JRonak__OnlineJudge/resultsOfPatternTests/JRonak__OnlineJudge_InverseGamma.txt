@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- JRonak__OnlineJudge -------------------------
+JRonak__OnlineJudge:	InverseGamma	holds? 	true
+JRonak__OnlineJudge:	InverseGamma	Geometry? 	true
+JRonak__OnlineJudge:	InverseGamma	FisherExecuted? 	false
+JRonak__OnlineJudge:	InverseGamma	p-Value? 	false
+------------------------------------------------

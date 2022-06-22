@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- devture__silex-user-bundle -------------------------
+devture__silex-user-bundle:	InverseGamma	holds? 	true
+devture__silex-user-bundle:	InverseGamma	Geometry? 	true
+devture__silex-user-bundle:	InverseGamma	FisherExecuted? 	false
+devture__silex-user-bundle:	InverseGamma	p-Value? 	false
+------------------------------------------------

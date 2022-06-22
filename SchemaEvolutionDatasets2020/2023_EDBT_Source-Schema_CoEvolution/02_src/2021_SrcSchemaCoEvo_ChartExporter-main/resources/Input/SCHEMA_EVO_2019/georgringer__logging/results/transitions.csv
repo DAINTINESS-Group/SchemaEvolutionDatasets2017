@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1414781361.sql;1414791757.sql;sys_log2;Insertion:UpdateTable;pid;INT(11);false;0;-
+1;1414781361.sql;1414791757.sql;sys_log2;Insertion:UpdateTable;record_id;INT(11);false;0;-
+1;1414781361.sql;1414791757.sql;sys_log2;Insertion:UpdateTable;tablename;VARCHAR(200);false;0;-
+2;1414791757.sql;1418804163.sql;-;-;-;-;-;-;-
+3;1418804163.sql;1418807154.sql;sys_log2;Update:KeyChange;uid;INT(11);true;0;-

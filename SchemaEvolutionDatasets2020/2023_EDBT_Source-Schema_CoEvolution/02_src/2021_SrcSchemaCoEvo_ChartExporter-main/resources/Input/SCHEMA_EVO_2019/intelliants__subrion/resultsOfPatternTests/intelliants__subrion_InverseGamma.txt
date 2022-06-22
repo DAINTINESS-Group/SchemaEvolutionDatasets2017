@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- intelliants__subrion -------------------------
+intelliants__subrion:	InverseGamma	holds? 	true
+intelliants__subrion:	InverseGamma	Geometry? 	true
+intelliants__subrion:	InverseGamma	FisherExecuted? 	true
+intelliants__subrion:	InverseGamma	p-Value? 	false
+------------------------------------------------

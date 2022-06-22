@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- NPRA__EmissionCalculatorLib -------------------------
+NPRA__EmissionCalculatorLib:	Electrolysis	holds? 	true
+NPRA__EmissionCalculatorLib:	Electrolysis	Geometry? 	true
+NPRA__EmissionCalculatorLib:	Electrolysis	FisherExecuted? 	false
+NPRA__EmissionCalculatorLib:	Electrolysis	p-Value? 	false
+------------------------------------------------

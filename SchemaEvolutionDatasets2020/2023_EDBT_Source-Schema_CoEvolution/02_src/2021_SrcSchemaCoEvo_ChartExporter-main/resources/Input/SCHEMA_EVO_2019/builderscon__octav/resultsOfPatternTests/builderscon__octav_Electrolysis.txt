@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- builderscon__octav -------------------------
+builderscon__octav:	Electrolysis	holds? 	false
+builderscon__octav:	Electrolysis	Geometry? 	false
+builderscon__octav:	Electrolysis	FisherExecuted? 	false
+builderscon__octav:	Electrolysis	p-Value? 	false
+------------------------------------------------

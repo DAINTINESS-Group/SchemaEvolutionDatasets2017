@@ -1,0 +1,10 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+bar	1	0	0	0	2012-07-14 07:28:39	2012-07-14 07:28:39	0	0	0	3	3	3	1	0	0	0	0		10	0	10
+bars	3	1	-	3	2012-07-30 05:35:38	2013-02-25 13:35:40	1	1	210	3	3	3	1	0	0	0	0		20	0	20
+comps	2	2	-	3	2013-02-14 21:46:41	2013-02-25 13:35:40	1	1	10	6	5	5.5	0.83	1	1	0.5	0.5	1	20	1	21
+entries	4	0	-	3	2012-07-14 07:28:39	2013-02-25 13:35:40	0	1	226	7	7	7	1	0	0	0	0		20	0	20
+foo	1	0	0	0	2012-07-14 07:28:39	2012-07-14 07:28:39	0	0	0	3	3	3	1	0	0	0	0		10	0	10
+foos	3	1	-	3	2012-07-30 05:35:38	2013-02-25 13:35:40	1	1	210	3	3	3	1	0	0	0	0		20	0	20
+keys	2	2	-	3	2013-02-14 21:46:41	2013-02-25 13:35:40	1	1	10	3	3	3	1	0	0	0	0		20	0	20
+schema_migrations	4	0	-	3	2012-07-14 07:28:39	2013-02-25 13:35:40	0	1	226	1	1	1	1	0	0	0	0		20	0	20
+words	4	0	-	3	2012-07-14 07:28:39	2013-02-25 13:35:40	0	1	226	10	11	10.75	1.1	1	1	0.25	0.25	1	20	1	21

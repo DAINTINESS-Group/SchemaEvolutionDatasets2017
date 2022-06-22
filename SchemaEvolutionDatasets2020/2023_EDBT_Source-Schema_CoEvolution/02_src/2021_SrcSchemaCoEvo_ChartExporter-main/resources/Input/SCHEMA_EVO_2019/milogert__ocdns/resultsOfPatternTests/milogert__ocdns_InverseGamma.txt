@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- milogert__ocdns -------------------------
+milogert__ocdns:	InverseGamma	holds? 	false
+milogert__ocdns:	InverseGamma	Geometry? 	false
+milogert__ocdns:	InverseGamma	FisherExecuted? 	false
+milogert__ocdns:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- ichthus-soft__bible-api -------------------------
+ichthus-soft__bible-api:	Gamma	holds? 	false
+ichthus-soft__bible-api:	Gamma	Geometry? 	false
+ichthus-soft__bible-api:	Gamma	FisherExecuted? 	false
+ichthus-soft__bible-api:	Gamma	p-Value? 	false
+ichthus-soft__bible-api:	Gamma	Surv.Wide 	0
+ichthus-soft__bible-api:	Gamma	Surv.NotWide 	1
+ichthus-soft__bible-api:	Gamma	Dead.Wide 	0
+ichthus-soft__bible-api:	Gamma	Dead.NotWide 	0
+ichthus-soft__bible-api:	Gamma	Wide 	0
+------------------------------------------------

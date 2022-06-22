@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- lisong__code-push-server -------------------------
+lisong__code-push-server:	Electrolysis	holds? 	true
+lisong__code-push-server:	Electrolysis	Geometry? 	true
+lisong__code-push-server:	Electrolysis	FisherExecuted? 	false
+lisong__code-push-server:	Electrolysis	p-Value? 	false
+------------------------------------------------

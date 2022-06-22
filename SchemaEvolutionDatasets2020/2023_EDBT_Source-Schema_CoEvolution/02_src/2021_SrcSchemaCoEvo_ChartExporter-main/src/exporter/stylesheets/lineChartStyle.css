@@ -1,0 +1,28 @@
+.chart {
+	-fx-tick-label-font-size: 16pt;
+	-fx-background-color: white, white;
+}
+.axis { -fx-font-size: 16pt; }
+
+ .title {
+    -fx-font-size: 30px;
+    }
+Region { -fx-background-color: white; }
+Label { -fx-font-size: 40pt; }
+Legend { -fx-background-color: white; }
+Line { -fx-opacity: 0.2; }
+
+.chart-series-line {-fx-stroke-width: 2px;}
+
+.default-color0.chart-series-line { -fx-stroke: green;}
+.default-color1.chart-series-line { -fx-stroke: blue; -fx-stroke-dash-array: 2 12 12 2;}
+.default-color2.chart-series-line { -fx-stroke: red;}
+
+.chart-line-symbol {
+    -fx-background-radius: 4px;
+    -fx-padding: 4px;
+}
+
+.default-color0.chart-line-symbol { -fx-background-color: green, lightgreen; -fx-shape: 'M 90 50 10 90 10 10 z'; }
+.default-color1.chart-line-symbol { -fx-background-color: blue, lightblue; }
+.default-color2.chart-line-symbol { -fx-background-color: red, orange; -fx-shape: 'M 0 0 50 0 0 50 z'; }

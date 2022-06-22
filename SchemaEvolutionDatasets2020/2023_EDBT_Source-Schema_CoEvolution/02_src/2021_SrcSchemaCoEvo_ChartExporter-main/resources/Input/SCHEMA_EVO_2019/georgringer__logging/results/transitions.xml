@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1414781361.sql" newVersion="1414791757.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>sys_log2</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>record_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tablename</name>
+                <type>VARCHAR(200)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1414791757.sql" newVersion="1418804163.sql"/>
+    <transition oldVersion="1418804163.sql" newVersion="1418807154.sql">
+        <update type="KeyChange">
+            <table>
+                <name>sys_log2</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>uid</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

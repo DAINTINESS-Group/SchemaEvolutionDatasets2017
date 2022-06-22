@@ -1,0 +1,3 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1483336613.sql;1483342397.sql;snippets;Update:TypeChange;j;TEXT;false;0;-
+1;1483336613.sql;1483342397.sql;snippets;Insertion:UpdateTable;o;JSONB;false;0;-

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mukatee__pypro -------------------------
+mukatee__pypro:	InverseGamma	holds? 	true
+mukatee__pypro:	InverseGamma	Geometry? 	true
+mukatee__pypro:	InverseGamma	FisherExecuted? 	false
+mukatee__pypro:	InverseGamma	p-Value? 	false
+------------------------------------------------

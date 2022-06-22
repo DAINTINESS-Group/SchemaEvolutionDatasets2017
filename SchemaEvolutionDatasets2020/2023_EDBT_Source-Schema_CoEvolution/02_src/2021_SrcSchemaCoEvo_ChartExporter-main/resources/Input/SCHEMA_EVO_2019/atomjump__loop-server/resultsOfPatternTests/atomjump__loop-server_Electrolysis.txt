@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- atomjump__loop-server -------------------------
+atomjump__loop-server:	Electrolysis	holds? 	true
+atomjump__loop-server:	Electrolysis	Geometry? 	true
+atomjump__loop-server:	Electrolysis	FisherExecuted? 	false
+atomjump__loop-server:	Electrolysis	p-Value? 	false
+------------------------------------------------

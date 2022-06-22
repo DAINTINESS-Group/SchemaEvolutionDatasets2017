@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- knightliao__disconf -------------------------
+knightliao__disconf:	InverseGamma	holds? 	true
+knightliao__disconf:	InverseGamma	Geometry? 	true
+knightliao__disconf:	InverseGamma	FisherExecuted? 	false
+knightliao__disconf:	InverseGamma	p-Value? 	false
+------------------------------------------------

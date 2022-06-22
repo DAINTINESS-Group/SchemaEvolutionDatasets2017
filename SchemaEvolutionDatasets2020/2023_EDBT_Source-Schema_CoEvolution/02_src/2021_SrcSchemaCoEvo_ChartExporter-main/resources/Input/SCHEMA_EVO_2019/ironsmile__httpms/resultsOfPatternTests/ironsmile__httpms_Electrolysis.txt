@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ironsmile__httpms -------------------------
+ironsmile__httpms:	Electrolysis	holds? 	true
+ironsmile__httpms:	Electrolysis	Geometry? 	true
+ironsmile__httpms:	Electrolysis	FisherExecuted? 	false
+ironsmile__httpms:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- imsamurai__cakephp-task-plugin -------------------------
+imsamurai__cakephp-task-plugin:	InverseGamma	holds? 	true
+imsamurai__cakephp-task-plugin:	InverseGamma	Geometry? 	true
+imsamurai__cakephp-task-plugin:	InverseGamma	FisherExecuted? 	false
+imsamurai__cakephp-task-plugin:	InverseGamma	p-Value? 	false
+------------------------------------------------

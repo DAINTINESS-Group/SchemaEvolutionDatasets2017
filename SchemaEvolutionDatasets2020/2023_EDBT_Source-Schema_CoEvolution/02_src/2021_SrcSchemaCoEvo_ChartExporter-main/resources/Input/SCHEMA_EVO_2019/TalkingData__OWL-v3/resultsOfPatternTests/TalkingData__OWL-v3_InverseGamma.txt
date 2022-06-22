@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- TalkingData__OWL-v3 -------------------------
+TalkingData__OWL-v3:	InverseGamma	holds? 	true
+TalkingData__OWL-v3:	InverseGamma	Geometry? 	true
+TalkingData__OWL-v3:	InverseGamma	FisherExecuted? 	true
+TalkingData__OWL-v3:	InverseGamma	p-Value? 	true
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- purefn__hipbot -------------------------
+purefn__hipbot:	Electrolysis	holds? 	true
+purefn__hipbot:	Electrolysis	Geometry? 	true
+purefn__hipbot:	Electrolysis	FisherExecuted? 	false
+purefn__hipbot:	Electrolysis	p-Value? 	false
+------------------------------------------------

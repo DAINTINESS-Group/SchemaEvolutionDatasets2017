@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- flynn__flynn-subdomainer -------------------------
+flynn__flynn-subdomainer:	Electrolysis	holds? 	true
+flynn__flynn-subdomainer:	Electrolysis	Geometry? 	true
+flynn__flynn-subdomainer:	Electrolysis	FisherExecuted? 	false
+flynn__flynn-subdomainer:	Electrolysis	p-Value? 	false
+------------------------------------------------

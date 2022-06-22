@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- dneustadt__majima -------------------------
+dneustadt__majima:	Gamma	holds? 	false
+dneustadt__majima:	Gamma	Geometry? 	false
+dneustadt__majima:	Gamma	FisherExecuted? 	false
+dneustadt__majima:	Gamma	p-Value? 	false
+dneustadt__majima:	Gamma	Surv.Wide 	0
+dneustadt__majima:	Gamma	Surv.NotWide 	3
+dneustadt__majima:	Gamma	Dead.Wide 	0
+dneustadt__majima:	Gamma	Dead.NotWide 	0
+dneustadt__majima:	Gamma	Wide 	0
+------------------------------------------------

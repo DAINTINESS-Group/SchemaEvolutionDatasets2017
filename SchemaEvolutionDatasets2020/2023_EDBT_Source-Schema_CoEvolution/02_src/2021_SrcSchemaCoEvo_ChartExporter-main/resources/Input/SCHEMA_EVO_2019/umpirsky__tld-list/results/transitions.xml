@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1452953146.sql" newVersion="1478179587.sql"/>
+    <transition oldVersion="1478179587.sql" newVersion="1519757776.sql">
+        <update type="TypeChange">
+            <table>
+                <name>list</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>VARCHAR(10)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1519757776.sql" newVersion="1523804610.sql">
+        <update type="TypeChange">
+            <table>
+                <name>list</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>VARCHAR(64)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

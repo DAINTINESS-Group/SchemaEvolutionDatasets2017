@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jasongrimes__silex-simpleuser -------------------------
+jasongrimes__silex-simpleuser:	Electrolysis	holds? 	true
+jasongrimes__silex-simpleuser:	Electrolysis	Geometry? 	true
+jasongrimes__silex-simpleuser:	Electrolysis	FisherExecuted? 	false
+jasongrimes__silex-simpleuser:	Electrolysis	p-Value? 	false
+------------------------------------------------

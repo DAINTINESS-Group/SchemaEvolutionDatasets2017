@@ -1,0 +1,12 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1385771850.sql;1417762817.sql;city;Update:TypeChange;district;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;city;Update:TypeChange;name;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;country;Update:TypeChange;continent;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;country;Update:TypeChange;governmentform;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;country;Update:TypeChange;headofstate;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;country;Update:TypeChange;localname;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;country;Update:TypeChange;name;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;country;Update:TypeChange;region;VARCHAR;false;0;-
+1;1385771850.sql;1417762817.sql;countrylanguage;Update:TypeChange;language;VARCHAR;false;0;-
+2;1417762817.sql;1526849148.sql;-;-;-;-;-;-;-
+3;1526849148.sql;1546943252.sql;-;-;-;-;-;-;-

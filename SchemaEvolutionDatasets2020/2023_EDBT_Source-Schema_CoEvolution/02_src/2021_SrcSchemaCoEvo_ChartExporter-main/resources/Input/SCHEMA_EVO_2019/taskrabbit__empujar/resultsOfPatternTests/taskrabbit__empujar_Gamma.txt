@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- taskrabbit__empujar -------------------------
+taskrabbit__empujar:	Gamma	holds? 	false
+taskrabbit__empujar:	Gamma	Geometry? 	false
+taskrabbit__empujar:	Gamma	FisherExecuted? 	false
+taskrabbit__empujar:	Gamma	p-Value? 	false
+taskrabbit__empujar:	Gamma	Surv.Wide 	0
+taskrabbit__empujar:	Gamma	Surv.NotWide 	3
+taskrabbit__empujar:	Gamma	Dead.Wide 	0
+taskrabbit__empujar:	Gamma	Dead.NotWide 	0
+taskrabbit__empujar:	Gamma	Wide 	0
+------------------------------------------------

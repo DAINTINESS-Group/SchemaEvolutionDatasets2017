@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- lamassu__lamassu-scripts -------------------------
+lamassu__lamassu-scripts:	InverseGamma	holds? 	true
+lamassu__lamassu-scripts:	InverseGamma	Geometry? 	true
+lamassu__lamassu-scripts:	InverseGamma	FisherExecuted? 	false
+lamassu__lamassu-scripts:	InverseGamma	p-Value? 	false
+------------------------------------------------

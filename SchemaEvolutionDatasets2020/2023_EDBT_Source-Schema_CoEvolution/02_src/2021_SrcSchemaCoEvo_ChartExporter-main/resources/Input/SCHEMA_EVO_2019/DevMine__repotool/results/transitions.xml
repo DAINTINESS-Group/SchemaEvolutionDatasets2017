@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1421079087.sql" newVersion="1421255567.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>commit_diff_deltas</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>commit_id</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>file_status</name>
+                <type>CHARACTERVARYING</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>is_file_binary</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>new_file_path</name>
+                <type>CHARACTERVARYING</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>old_file_path</name>
+                <type>CHARACTERVARYING</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>similarity</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1421255567.sql" newVersion="1429971177.sql"/>
+    <transition oldVersion="1429971177.sql" newVersion="1433706311.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>commits</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hash</name>
+                <type>CHARACTERVARYING</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

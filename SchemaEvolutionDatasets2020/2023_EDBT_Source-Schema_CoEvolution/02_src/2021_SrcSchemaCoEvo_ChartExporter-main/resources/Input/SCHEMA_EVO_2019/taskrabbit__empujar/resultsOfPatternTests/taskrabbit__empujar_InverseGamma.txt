@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- taskrabbit__empujar -------------------------
+taskrabbit__empujar:	InverseGamma	holds? 	true
+taskrabbit__empujar:	InverseGamma	Geometry? 	true
+taskrabbit__empujar:	InverseGamma	FisherExecuted? 	false
+taskrabbit__empujar:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mozilla-services__autograph -------------------------
+mozilla-services__autograph:	Gamma	holds? 	false
+mozilla-services__autograph:	Gamma	Geometry? 	false
+mozilla-services__autograph:	Gamma	FisherExecuted? 	false
+mozilla-services__autograph:	Gamma	p-Value? 	false
+mozilla-services__autograph:	Gamma	Surv.Wide 	0
+mozilla-services__autograph:	Gamma	Surv.NotWide 	2
+mozilla-services__autograph:	Gamma	Dead.Wide 	0
+mozilla-services__autograph:	Gamma	Dead.NotWide 	0
+mozilla-services__autograph:	Gamma	Wide 	0
+------------------------------------------------

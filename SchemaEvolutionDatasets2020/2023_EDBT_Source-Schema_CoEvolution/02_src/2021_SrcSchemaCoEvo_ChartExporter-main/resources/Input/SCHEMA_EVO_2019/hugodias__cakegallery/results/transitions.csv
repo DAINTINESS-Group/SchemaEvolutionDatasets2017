@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1399692771.sql;1433683548.sql;gallery_pictures;Insertion:UpdateTable;caption;VARCHAR(255);false;0;-

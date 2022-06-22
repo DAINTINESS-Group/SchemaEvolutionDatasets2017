@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- williamespindola__field -------------------------
+williamespindola__field:	Electrolysis	holds? 	false
+williamespindola__field:	Electrolysis	Geometry? 	false
+williamespindola__field:	Electrolysis	FisherExecuted? 	false
+williamespindola__field:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ranaroussi__qtpylib -------------------------
+ranaroussi__qtpylib:	InverseGamma	holds? 	false
+ranaroussi__qtpylib:	InverseGamma	Geometry? 	false
+ranaroussi__qtpylib:	InverseGamma	FisherExecuted? 	true
+ranaroussi__qtpylib:	InverseGamma	p-Value? 	false
+------------------------------------------------

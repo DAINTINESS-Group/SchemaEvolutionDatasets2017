@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- simplepie__simplepie -------------------------
+simplepie__simplepie:	Electrolysis	holds? 	true
+simplepie__simplepie:	Electrolysis	Geometry? 	true
+simplepie__simplepie:	Electrolysis	FisherExecuted? 	false
+simplepie__simplepie:	Electrolysis	p-Value? 	false
+------------------------------------------------

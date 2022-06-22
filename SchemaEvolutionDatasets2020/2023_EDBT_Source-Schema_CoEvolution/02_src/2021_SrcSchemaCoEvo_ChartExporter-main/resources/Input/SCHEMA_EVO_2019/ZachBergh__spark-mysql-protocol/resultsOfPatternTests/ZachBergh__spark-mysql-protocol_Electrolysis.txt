@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ZachBergh__spark-mysql-protocol -------------------------
+ZachBergh__spark-mysql-protocol:	Electrolysis	holds? 	true
+ZachBergh__spark-mysql-protocol:	Electrolysis	Geometry? 	true
+ZachBergh__spark-mysql-protocol:	Electrolysis	FisherExecuted? 	false
+ZachBergh__spark-mysql-protocol:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- azzlack__Sentinel.OAuth -------------------------
+azzlack__Sentinel.OAuth:	Gamma	holds? 	false
+azzlack__Sentinel.OAuth:	Gamma	Geometry? 	false
+azzlack__Sentinel.OAuth:	Gamma	FisherExecuted? 	false
+azzlack__Sentinel.OAuth:	Gamma	p-Value? 	false
+azzlack__Sentinel.OAuth:	Gamma	Surv.Wide 	0
+azzlack__Sentinel.OAuth:	Gamma	Surv.NotWide 	3
+azzlack__Sentinel.OAuth:	Gamma	Dead.Wide 	0
+azzlack__Sentinel.OAuth:	Gamma	Dead.NotWide 	0
+azzlack__Sentinel.OAuth:	Gamma	Wide 	0
+------------------------------------------------

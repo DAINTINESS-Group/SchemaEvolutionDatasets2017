@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- EPICPaaS__appmsgsrv -------------------------
+EPICPaaS__appmsgsrv:	InverseGamma	holds? 	false
+EPICPaaS__appmsgsrv:	InverseGamma	Geometry? 	false
+EPICPaaS__appmsgsrv:	InverseGamma	FisherExecuted? 	true
+EPICPaaS__appmsgsrv:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1505264780.sql" newVersion="1505525259.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>Channels</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>maxage</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>maxbytes</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>maxmsgs</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1505525259.sql" newVersion="1506101806.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>Messages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>expiration</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1506101806.sql" newVersion="1507933525.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>Subscriptions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>lastsent</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1507933525.sql" newVersion="1509475693.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>SubsPending</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>acks</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>lastsent</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>pending</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>row</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+        <update type="KeyChange">
+            <table>
+                <name>SubsPending</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>seq</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1509475693.sql" newVersion="1511912678.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>StoreLock</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>VARCHAR(30)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tick</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1511912678.sql" newVersion="1522349717.sql">
+        <update type="KeyChange">
+            <table>
+                <name>SubsPending</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>row</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1522349717.sql" newVersion="1526787672.sql"/>
+    <transition oldVersion="1526787672.sql" newVersion="1526856551.sql"/>
+</transitions>

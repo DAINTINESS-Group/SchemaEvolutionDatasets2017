@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1460670767.sql" newVersion="1475185413.sql"/>
+    <transition oldVersion="1475185413.sql" newVersion="1478056828.sql"/>
+    <transition oldVersion="1478056828.sql" newVersion="1478056867.sql"/>
+    <transition oldVersion="1478056867.sql" newVersion="1479674104.sql"/>
+    <transition oldVersion="1479674104.sql" newVersion="1479678735.sql"/>
+    <transition oldVersion="1479678735.sql" newVersion="1484337321.sql"/>
+    <transition oldVersion="1484337321.sql" newVersion="1485912032.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tbl_layer</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>var_owner_string</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla-services__autograph -------------------------
+mozilla-services__autograph:	Electrolysis	holds? 	true
+mozilla-services__autograph:	Electrolysis	Geometry? 	true
+mozilla-services__autograph:	Electrolysis	FisherExecuted? 	false
+mozilla-services__autograph:	Electrolysis	p-Value? 	false
+------------------------------------------------

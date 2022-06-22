@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jalkoby__squasher -------------------------
+jalkoby__squasher:	Electrolysis	holds? 	true
+jalkoby__squasher:	Electrolysis	Geometry? 	true
+jalkoby__squasher:	Electrolysis	FisherExecuted? 	false
+jalkoby__squasher:	Electrolysis	p-Value? 	false
+------------------------------------------------

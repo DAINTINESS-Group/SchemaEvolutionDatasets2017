@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1365669192.sql" newVersion="1365860233.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>status</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>fieldstatus</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1365860233.sql" newVersion="1368901619.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>dataset</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ckanid</name>
+                <type>CHARACTERVARYING(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1368901619.sql" newVersion="1370162552.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>dataset</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>geobbox</name>
+                <type>CHARACTERVARYING(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>geotoponym</name>
+                <type>CHARACTERVARYING(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1370162552.sql" newVersion="1382277655.sql"/>
+</transitions>

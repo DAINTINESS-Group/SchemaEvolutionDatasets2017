@@ -1,0 +1,7 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1494950276.sql;1504825823.sql;-;-;-;-;-;-;-
+2;1504825823.sql;1526506785.sql;-;-;-;-;-;-;-
+3;1526506785.sql;1526509105.sql;-;-;-;-;-;-;-
+4;1526509105.sql;1528822799.sql;tusers;Update:TypeChange;Email;VARCHAR(255);false;0;-
+4;1526509105.sql;1528822799.sql;tusers;Update:TypeChange;GroupName;VARCHAR(255);false;0;-
+4;1526509105.sql;1528822799.sql;tusers;Update:TypeChange;UserName;VARCHAR(255);false;0;-

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- voxpelli__node-connect-pg-simple -------------------------
+voxpelli__node-connect-pg-simple:	Gamma	holds? 	false
+voxpelli__node-connect-pg-simple:	Gamma	Geometry? 	false
+voxpelli__node-connect-pg-simple:	Gamma	FisherExecuted? 	false
+voxpelli__node-connect-pg-simple:	Gamma	p-Value? 	false
+voxpelli__node-connect-pg-simple:	Gamma	Surv.Wide 	0
+voxpelli__node-connect-pg-simple:	Gamma	Surv.NotWide 	1
+voxpelli__node-connect-pg-simple:	Gamma	Dead.Wide 	0
+voxpelli__node-connect-pg-simple:	Gamma	Dead.NotWide 	0
+voxpelli__node-connect-pg-simple:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,14 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1359469507.sql;1362951849.sql;user;Deletion:DeleteTable;COMMENT;'JSON';false;0;-
+1;1359469507.sql;1362951849.sql;user;Deletion:DeleteTable;_id;INT(10);false;0;-
+1;1359469507.sql;1362951849.sql;user;Deletion:DeleteTable;name;VARCHAR(255);false;0;-
+1;1359469507.sql;1362951849.sql;user;Deletion:DeleteTable;password;VARCHAR(255);false;0;-
+1;1359469507.sql;1362951849.sql;user;Deletion:DeleteTable;roles;TEXT;false;0;-
+1;1359469507.sql;1362951849.sql;user;Deletion:DeleteTable;username;VARCHAR(255);false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;COMMENT;'JSON';false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;_id;INT(10);false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;email;VARCHAR(255);false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;name;VARCHAR(255);false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;password;VARCHAR(255);false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;roles;TEXT;false;0;-
+1;1359469507.sql;1362951849.sql;usrrrer;Insertion:NewTable;username;VARCHAR(255);false;0;-

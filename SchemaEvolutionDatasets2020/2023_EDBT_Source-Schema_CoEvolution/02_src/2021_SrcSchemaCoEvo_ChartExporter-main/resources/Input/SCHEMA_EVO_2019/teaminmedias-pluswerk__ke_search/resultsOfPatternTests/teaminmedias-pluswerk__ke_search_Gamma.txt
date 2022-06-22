@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- teaminmedias-pluswerk__ke_search -------------------------
+teaminmedias-pluswerk__ke_search:	Gamma	holds? 	true
+teaminmedias-pluswerk__ke_search:	Gamma	Geometry? 	true
+teaminmedias-pluswerk__ke_search:	Gamma	FisherExecuted? 	false
+teaminmedias-pluswerk__ke_search:	Gamma	p-Value? 	false
+teaminmedias-pluswerk__ke_search:	Gamma	Surv.Wide 	4
+teaminmedias-pluswerk__ke_search:	Gamma	Surv.NotWide 	3
+teaminmedias-pluswerk__ke_search:	Gamma	Dead.Wide 	0
+teaminmedias-pluswerk__ke_search:	Gamma	Dead.NotWide 	0
+teaminmedias-pluswerk__ke_search:	Gamma	Wide 	4
+------------------------------------------------

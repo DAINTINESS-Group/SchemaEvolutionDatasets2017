@@ -1,0 +1,14 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+apps;7;0;-;3;6;9;7.285714
+collaborators;7;0;-;0;7;7;7.0
+deployments;7;0;-;0;10;10;10.0
+deployments_history;7;0;-;0;5;5;5.0
+deployments_versions;7;0;-;4;6;9;7.571429
+log_report_deploy;4;3;-;0;7;7;7.0
+log_report_download;4;3;-;0;4;4;4.0
+packages;7;0;-;3;16;19;17.857143
+packages_diff;7;0;-;1;7;8;7.714286
+packages_metrics;7;0;-;1;8;9;8.714286
+user_tokens;7;0;-;0;10;10;10.0
+users;7;0;-;0;8;8;8.0
+versions;7;0;-;0;4;4;4.0

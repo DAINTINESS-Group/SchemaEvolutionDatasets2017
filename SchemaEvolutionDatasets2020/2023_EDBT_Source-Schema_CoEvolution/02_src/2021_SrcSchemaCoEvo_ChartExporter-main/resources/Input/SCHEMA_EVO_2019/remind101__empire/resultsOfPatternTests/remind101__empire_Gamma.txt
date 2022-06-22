@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- remind101__empire -------------------------
+remind101__empire:	Gamma	holds? 	false
+remind101__empire:	Gamma	Geometry? 	false
+remind101__empire:	Gamma	FisherExecuted? 	false
+remind101__empire:	Gamma	p-Value? 	false
+remind101__empire:	Gamma	Surv.Wide 	0
+remind101__empire:	Gamma	Surv.NotWide 	11
+remind101__empire:	Gamma	Dead.Wide 	0
+remind101__empire:	Gamma	Dead.NotWide 	0
+remind101__empire:	Gamma	Wide 	0
+------------------------------------------------

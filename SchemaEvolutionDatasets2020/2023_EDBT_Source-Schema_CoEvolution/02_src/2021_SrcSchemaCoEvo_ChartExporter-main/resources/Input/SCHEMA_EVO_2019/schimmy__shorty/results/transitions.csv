@@ -1,0 +1,14 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1438468845.sql;1438832979.sql;shortener;Insertion:NewTable;expires;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+1;1438468845.sql;1438832979.sql;shortener;Insertion:NewTable;long_url;VARCHAR(4000);false;0;-
+1;1438468845.sql;1438832979.sql;shortener;Insertion:NewTable;modified;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+1;1438468845.sql;1438832979.sql;shortener;Insertion:NewTable;slug;VARCHAR(255);true;0;-
+1;1438468845.sql;1438832979.sql;url_shortener;Deletion:DeleteTable;expires;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+1;1438468845.sql;1438832979.sql;url_shortener;Deletion:DeleteTable;long_url;VARCHAR(4000);false;0;-
+1;1438468845.sql;1438832979.sql;url_shortener;Deletion:DeleteTable;modified;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+1;1438468845.sql;1438832979.sql;url_shortener;Deletion:DeleteTable;slug;VARCHAR(255);true;0;-
+2;1438832979.sql;1439512516.sql;shortener;Insertion:UpdateTable;owner;VARCHAR(50);false;0;-
+3;1439512516.sql;1439665583.sql;shortener;Update:TypeChange;owner;VARCHAR(255);false;0;-
+4;1439665583.sql;1439670938.sql;-;-;-;-;-;-;-
+5;1439670938.sql;1441324747.sql;-;-;-;-;-;-;-
+6;1441324747.sql;1442109590.sql;-;-;-;-;-;-;-

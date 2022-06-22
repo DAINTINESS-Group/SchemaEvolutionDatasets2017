@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- yiier__forum -------------------------
+yiier__forum:	InverseGamma	holds? 	true
+yiier__forum:	InverseGamma	Geometry? 	true
+yiier__forum:	InverseGamma	FisherExecuted? 	false
+yiier__forum:	InverseGamma	p-Value? 	false
+------------------------------------------------

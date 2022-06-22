@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- senecajs__seneca-postgres-store -------------------------
+senecajs__seneca-postgres-store:	Electrolysis	holds? 	true
+senecajs__seneca-postgres-store:	Electrolysis	Geometry? 	true
+senecajs__seneca-postgres-store:	Electrolysis	FisherExecuted? 	false
+senecajs__seneca-postgres-store:	Electrolysis	p-Value? 	false
+------------------------------------------------

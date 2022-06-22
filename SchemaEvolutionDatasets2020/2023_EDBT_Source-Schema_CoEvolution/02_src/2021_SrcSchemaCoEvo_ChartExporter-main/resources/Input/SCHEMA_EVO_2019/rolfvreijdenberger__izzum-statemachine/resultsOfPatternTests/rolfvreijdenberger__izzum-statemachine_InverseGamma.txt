@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rolfvreijdenberger__izzum-statemachine -------------------------
+rolfvreijdenberger__izzum-statemachine:	InverseGamma	holds? 	true
+rolfvreijdenberger__izzum-statemachine:	InverseGamma	Geometry? 	true
+rolfvreijdenberger__izzum-statemachine:	InverseGamma	FisherExecuted? 	false
+rolfvreijdenberger__izzum-statemachine:	InverseGamma	p-Value? 	false
+------------------------------------------------

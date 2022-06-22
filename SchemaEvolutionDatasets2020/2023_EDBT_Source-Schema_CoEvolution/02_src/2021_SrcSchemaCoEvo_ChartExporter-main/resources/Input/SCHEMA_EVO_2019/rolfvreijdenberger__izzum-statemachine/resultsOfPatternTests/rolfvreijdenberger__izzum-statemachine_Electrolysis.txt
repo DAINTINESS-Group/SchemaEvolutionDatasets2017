@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rolfvreijdenberger__izzum-statemachine -------------------------
+rolfvreijdenberger__izzum-statemachine:	Electrolysis	holds? 	true
+rolfvreijdenberger__izzum-statemachine:	Electrolysis	Geometry? 	true
+rolfvreijdenberger__izzum-statemachine:	Electrolysis	FisherExecuted? 	false
+rolfvreijdenberger__izzum-statemachine:	Electrolysis	p-Value? 	false
+------------------------------------------------

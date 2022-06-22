@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jingweno__jqplay -------------------------
+jingweno__jqplay:	InverseGamma	holds? 	true
+jingweno__jqplay:	InverseGamma	Geometry? 	true
+jingweno__jqplay:	InverseGamma	FisherExecuted? 	false
+jingweno__jqplay:	InverseGamma	p-Value? 	false
+------------------------------------------------

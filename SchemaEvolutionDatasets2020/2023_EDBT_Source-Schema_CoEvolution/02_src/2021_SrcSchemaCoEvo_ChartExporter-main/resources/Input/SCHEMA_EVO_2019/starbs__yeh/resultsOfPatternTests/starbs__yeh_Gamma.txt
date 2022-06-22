@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- starbs__yeh -------------------------
+starbs__yeh:	Gamma	holds? 	false
+starbs__yeh:	Gamma	Geometry? 	false
+starbs__yeh:	Gamma	FisherExecuted? 	false
+starbs__yeh:	Gamma	p-Value? 	false
+starbs__yeh:	Gamma	Surv.Wide 	0
+starbs__yeh:	Gamma	Surv.NotWide 	1
+starbs__yeh:	Gamma	Dead.Wide 	0
+starbs__yeh:	Gamma	Dead.NotWide 	0
+starbs__yeh:	Gamma	Wide 	0
+------------------------------------------------

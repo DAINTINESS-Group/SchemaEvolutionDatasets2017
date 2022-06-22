@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- magikcypress__slim-boot-boilerplate -------------------------
+magikcypress__slim-boot-boilerplate:	Gamma	holds? 	false
+magikcypress__slim-boot-boilerplate:	Gamma	Geometry? 	false
+magikcypress__slim-boot-boilerplate:	Gamma	FisherExecuted? 	false
+magikcypress__slim-boot-boilerplate:	Gamma	p-Value? 	false
+magikcypress__slim-boot-boilerplate:	Gamma	Surv.Wide 	0
+magikcypress__slim-boot-boilerplate:	Gamma	Surv.NotWide 	2
+magikcypress__slim-boot-boilerplate:	Gamma	Dead.Wide 	0
+magikcypress__slim-boot-boilerplate:	Gamma	Dead.NotWide 	0
+magikcypress__slim-boot-boilerplate:	Gamma	Wide 	0
+------------------------------------------------

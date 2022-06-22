@@ -1,0 +1,12 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1452788595.sql;1454308663.sql;core_key;Insertion:UpdateTable;claim_code;VARCHAR(255);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;access_token;VARCHAR(500);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;claim_code;VARCHAR(255);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;create_time;TIMESTAMP;false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;id;INT(11);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;level;TINYINT(1);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;password;VARCHAR(255);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;salt;VARCHAR(255);false;0;-
+2;1454308663.sql;1456281134.sql;user;Insertion:NewTable;username;VARCHAR(50);false;0;-
+3;1456281134.sql;1457946183.sql;core;Insertion:UpdateTable;firmware_version;VARCHAR(50);false;0;-
+4;1457946183.sql;1458032921.sql;core;Insertion:UpdateTable;group;INT(11);false;0;-

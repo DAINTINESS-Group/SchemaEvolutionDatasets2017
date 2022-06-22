@@ -1,0 +1,14 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+accounts;14;2;-;5;5;6;6.142857
+applications;8;8;-;3;6;6;6.0
+characters;16;0;-;3;6;7;6.4375
+corporations;16;0;-;1;7;8;7.25
+csrffailures;3;13;-;0;4;4;4.0
+grouproles;16;0;-;0;5;5;5.0
+groups;16;0;-;0;3;3;3.0
+loginattempts;10;6;-;0;6;6;6.0
+roles;16;0;-;1;3;4;3.125
+userapikeys;2;0;1;0;5;5;5.0
+usergroups;16;0;-;0;4;4;4.0
+userroles;16;0;-;0;5;5;5.0
+users;16;0;-;4;4;6;5.625

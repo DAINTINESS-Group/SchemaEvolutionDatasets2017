@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- matthewfranglen__postgres-elasticsearch-fdw -------------------------
+matthewfranglen__postgres-elasticsearch-fdw:	Electrolysis	holds? 	true
+matthewfranglen__postgres-elasticsearch-fdw:	Electrolysis	Geometry? 	true
+matthewfranglen__postgres-elasticsearch-fdw:	Electrolysis	FisherExecuted? 	false
+matthewfranglen__postgres-elasticsearch-fdw:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- schimmy__shorty -------------------------
+schimmy__shorty:	Gamma	holds? 	false
+schimmy__shorty:	Gamma	Geometry? 	false
+schimmy__shorty:	Gamma	FisherExecuted? 	false
+schimmy__shorty:	Gamma	p-Value? 	false
+schimmy__shorty:	Gamma	Surv.Wide 	0
+schimmy__shorty:	Gamma	Surv.NotWide 	1
+schimmy__shorty:	Gamma	Dead.Wide 	0
+schimmy__shorty:	Gamma	Dead.NotWide 	1
+schimmy__shorty:	Gamma	Wide 	0
+------------------------------------------------

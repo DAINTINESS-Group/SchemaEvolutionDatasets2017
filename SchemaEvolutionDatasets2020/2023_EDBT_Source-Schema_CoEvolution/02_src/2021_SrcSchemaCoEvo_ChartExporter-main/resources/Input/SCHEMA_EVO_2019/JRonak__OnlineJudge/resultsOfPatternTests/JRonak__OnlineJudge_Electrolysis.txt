@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- JRonak__OnlineJudge -------------------------
+JRonak__OnlineJudge:	Electrolysis	holds? 	true
+JRonak__OnlineJudge:	Electrolysis	Geometry? 	true
+JRonak__OnlineJudge:	Electrolysis	FisherExecuted? 	false
+JRonak__OnlineJudge:	Electrolysis	p-Value? 	false
+------------------------------------------------

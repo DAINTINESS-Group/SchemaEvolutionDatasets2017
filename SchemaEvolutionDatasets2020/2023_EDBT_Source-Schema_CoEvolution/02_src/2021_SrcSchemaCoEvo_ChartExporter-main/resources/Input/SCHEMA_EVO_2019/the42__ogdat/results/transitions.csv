@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1365669192.sql;1365860233.sql;status;Insertion:UpdateTable;fieldstatus;INTEGER;false;0;-
+2;1365860233.sql;1368901619.sql;dataset;Insertion:UpdateTable;ckanid;CHARACTERVARYING(255);false;0;-
+3;1368901619.sql;1370162552.sql;dataset;Insertion:UpdateTable;geobbox;CHARACTERVARYING(255);false;0;-
+3;1368901619.sql;1370162552.sql;dataset;Insertion:UpdateTable;geotoponym;CHARACTERVARYING(255);false;0;-
+4;1370162552.sql;1382277655.sql;-;-;-;-;-;-;-

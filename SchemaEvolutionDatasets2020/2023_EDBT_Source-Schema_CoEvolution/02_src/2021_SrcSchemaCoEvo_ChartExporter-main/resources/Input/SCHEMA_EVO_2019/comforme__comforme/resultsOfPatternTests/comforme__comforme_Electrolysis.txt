@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- comforme__comforme -------------------------
+comforme__comforme:	Electrolysis	holds? 	true
+comforme__comforme:	Electrolysis	Geometry? 	true
+comforme__comforme:	Electrolysis	FisherExecuted? 	false
+comforme__comforme:	Electrolysis	p-Value? 	false
+------------------------------------------------

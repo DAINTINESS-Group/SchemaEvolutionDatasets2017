@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1505905020.sql" newVersion="1506601943.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>attributes</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>status</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>update_time</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1506601943.sql" newVersion="1523288545.sql"/>
+    <transition oldVersion="1523288545.sql" newVersion="1535057062.sql"/>
+    <transition oldVersion="1535057062.sql" newVersion="1537050388.sql"/>
+    <transition oldVersion="1537050388.sql" newVersion="1547243923.sql"/>
+    <transition oldVersion="1547243923.sql" newVersion="1552639170.sql"/>
+    <transition oldVersion="1552639170.sql" newVersion="1552778495.sql"/>
+    <transition oldVersion="1552778495.sql" newVersion="1554622418.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>groups</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>attributes</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>TEXT</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tags</name>
+                <type>TEXT[]</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>text</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>update_time</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>users</name>
+                <type>TEXT[]</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1554622418.sql" newVersion="1554731369.sql"/>
+    <transition oldVersion="1554731369.sql" newVersion="1556014519.sql"/>
+    <transition oldVersion="1556014519.sql" newVersion="1556059525.sql"/>
+    <transition oldVersion="1556059525.sql" newVersion="1556484303.sql"/>
+</transitions>

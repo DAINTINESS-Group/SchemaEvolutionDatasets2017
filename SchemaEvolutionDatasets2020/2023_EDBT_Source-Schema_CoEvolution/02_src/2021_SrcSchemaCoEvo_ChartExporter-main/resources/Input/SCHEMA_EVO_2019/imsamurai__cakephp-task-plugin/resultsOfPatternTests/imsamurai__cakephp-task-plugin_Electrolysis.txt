@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- imsamurai__cakephp-task-plugin -------------------------
+imsamurai__cakephp-task-plugin:	Electrolysis	holds? 	true
+imsamurai__cakephp-task-plugin:	Electrolysis	Geometry? 	true
+imsamurai__cakephp-task-plugin:	Electrolysis	FisherExecuted? 	false
+imsamurai__cakephp-task-plugin:	Electrolysis	p-Value? 	false
+------------------------------------------------

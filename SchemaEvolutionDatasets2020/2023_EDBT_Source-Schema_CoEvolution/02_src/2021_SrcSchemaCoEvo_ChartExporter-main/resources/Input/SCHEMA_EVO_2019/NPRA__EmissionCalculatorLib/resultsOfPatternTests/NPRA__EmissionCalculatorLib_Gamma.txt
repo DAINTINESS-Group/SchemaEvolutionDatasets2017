@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- NPRA__EmissionCalculatorLib -------------------------
+NPRA__EmissionCalculatorLib:	Gamma	holds? 	false
+NPRA__EmissionCalculatorLib:	Gamma	Geometry? 	false
+NPRA__EmissionCalculatorLib:	Gamma	FisherExecuted? 	true
+NPRA__EmissionCalculatorLib:	Gamma	p-Value? 	false
+NPRA__EmissionCalculatorLib:	Gamma	Surv.Wide 	1
+NPRA__EmissionCalculatorLib:	Gamma	Surv.NotWide 	17
+NPRA__EmissionCalculatorLib:	Gamma	Dead.Wide 	1
+NPRA__EmissionCalculatorLib:	Gamma	Dead.NotWide 	19
+NPRA__EmissionCalculatorLib:	Gamma	Wide 	2
+------------------------------------------------

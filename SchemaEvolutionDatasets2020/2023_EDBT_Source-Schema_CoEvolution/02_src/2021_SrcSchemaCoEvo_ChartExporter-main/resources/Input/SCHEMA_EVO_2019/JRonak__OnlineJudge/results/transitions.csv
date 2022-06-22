@@ -1,0 +1,12 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1437081629.sql;1437426355.sql;user;Update:TypeChange;password;VARCHAR(100);false;0;-
+2;1437426355.sql;1438624074.sql;contest;Insertion:NewTable;description;MEDIUMTEXT;false;0;-
+2;1437426355.sql;1438624074.sql;contest;Insertion:NewTable;endTime;DATETIME;false;0;-
+2;1437426355.sql;1438624074.sql;contest;Insertion:NewTable;id;INTAUTO_INCREMENT;true;0;-
+2;1437426355.sql;1438624074.sql;contest;Insertion:NewTable;name;VARCHAR(30);false;0;-
+2;1437426355.sql;1438624074.sql;contest;Insertion:NewTable;startTime;DATETIME;false;0;-
+2;1437426355.sql;1438624074.sql;contestlogs;Insertion:NewTable;cid;INT;false;0;-
+2;1437426355.sql;1438624074.sql;contestlogs;Insertion:NewTable;id;INTAUTO_INCREMENT;true;0;-
+2;1437426355.sql;1438624074.sql;contestlogs;Insertion:NewTable;points;INT;false;0;-
+2;1437426355.sql;1438624074.sql;contestlogs;Insertion:NewTable;time;DATETIME;false;0;-
+2;1437426355.sql;1438624074.sql;contestlogs;Insertion:NewTable;uid;INT;false;0;-

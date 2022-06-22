@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1438468845.sql" newVersion="1438832979.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>shortener</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>expires</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>long_url</name>
+                <type>VARCHAR(4000)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modified</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>slug</name>
+                <type>VARCHAR(255)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>url_shortener</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>expires</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>long_url</name>
+                <type>VARCHAR(4000)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>modified</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>slug</name>
+                <type>VARCHAR(255)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1438832979.sql" newVersion="1439512516.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>shortener</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>owner</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1439512516.sql" newVersion="1439665583.sql">
+        <update type="TypeChange">
+            <table>
+                <name>shortener</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>owner</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1439665583.sql" newVersion="1439670938.sql"/>
+    <transition oldVersion="1439670938.sql" newVersion="1441324747.sql"/>
+    <transition oldVersion="1441324747.sql" newVersion="1442109590.sql"/>
+</transitions>

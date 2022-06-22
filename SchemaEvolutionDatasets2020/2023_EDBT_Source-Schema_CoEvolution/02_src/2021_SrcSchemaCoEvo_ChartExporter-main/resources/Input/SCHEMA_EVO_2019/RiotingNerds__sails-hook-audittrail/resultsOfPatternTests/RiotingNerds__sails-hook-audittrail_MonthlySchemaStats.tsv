@@ -1,0 +1,12 @@
+mID	humanTime	#numCommits	#numTables	#numAttrs	tablesInssSum	tablesDelSum	attrsInsWithTableInsSum	attrsbDelWithTableDelSum	attrsInjectedSum	attrsEjectedSum	attrsWithTypeUpdSum	attrsInPKUpdSum	tableDeltaSum	attrDeltaSum	attrBirthsSum	attrDeathsSum	attrUpdsSum	TotalExpansion	TotalMaintenance	TotalAttrActivity
+0	2015-07	1	1	10	1	0	10	0	0	0	0	0	0	0	10	0	0	10	0	10
+1	2015-08	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+2	2015-09	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+3	2015-10	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+4	2015-11	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5	2015-12	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+6	2016-01	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7	2016-02	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+8	2016-03	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+9	2016-04	0	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+10	2016-05	1	1	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

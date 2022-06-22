@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tstack__lnav -------------------------
+tstack__lnav:	InverseGamma	holds? 	false
+tstack__lnav:	InverseGamma	Geometry? 	false
+tstack__lnav:	InverseGamma	FisherExecuted? 	false
+tstack__lnav:	InverseGamma	p-Value? 	false
+------------------------------------------------

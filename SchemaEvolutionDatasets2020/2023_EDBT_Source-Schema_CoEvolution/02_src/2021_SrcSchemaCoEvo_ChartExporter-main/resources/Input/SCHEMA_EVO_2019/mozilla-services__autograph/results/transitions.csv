@@ -1,0 +1,7 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1550158525.sql;1550275301.sql;endentities;Insertion:UpdateTable;hsm_handle;BIGINT;false;0;-
+2;1550275301.sql;1550781635.sql;endentities_lock;Insertion:NewTable;created_at;TIMESTAMPWITHTIMEZONE;false;0;-
+2;1550275301.sql;1550781635.sql;endentities_lock;Insertion:NewTable;freed_at;TIMESTAMPWITHTIMEZONE;false;0;-
+2;1550275301.sql;1550781635.sql;endentities_lock;Insertion:NewTable;id;SERIAL;false;0;-
+2;1550275301.sql;1550781635.sql;endentities_lock;Insertion:NewTable;is_locked;BOOLEAN;false;0;-
+3;1550781635.sql;1551899549.sql;-;-;-;-;-;-;-

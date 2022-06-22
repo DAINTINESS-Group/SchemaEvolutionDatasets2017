@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- sqlectron__sqlectron-core -------------------------
+sqlectron__sqlectron-core:	Electrolysis	holds? 	true
+sqlectron__sqlectron-core:	Electrolysis	Geometry? 	true
+sqlectron__sqlectron-core:	Electrolysis	FisherExecuted? 	false
+sqlectron__sqlectron-core:	Electrolysis	p-Value? 	false
+------------------------------------------------

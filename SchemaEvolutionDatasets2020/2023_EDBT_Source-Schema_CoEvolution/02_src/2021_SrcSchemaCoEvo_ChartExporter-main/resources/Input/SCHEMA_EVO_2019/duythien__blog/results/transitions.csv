@@ -1,0 +1,25 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;categoriesId;INT(10);false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;created;INT(10);false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;description;TEXT;false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;fileCaption;VARCHAR(200);false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;fileData;MEDIUMBLOB;false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;fileName;VARCHAR(200);false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;id;INT(10);false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;mimeType;VARCHAR(50);false;0;-
+1;1390372155.sql;1393555723.sql;file_store;Insertion:NewTable;userId;INT(10);false;0;-
+1;1390372155.sql;1393555723.sql;posts;Update:TypeChange;COMMENT;'USER POST ARTICLE';false;0;-
+1;1390372155.sql;1393555723.sql;posts;Insertion:UpdateTable;userId;INT(25);false;0;-
+1;1390372155.sql;1393555723.sql;posts;Deletion:UpdateTable;userPost;VARCHAR(25);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;categoriesId;VARCHAR(50);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;content;TEXT;false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;created;INT(10);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;id;INT(10);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;name;VARCHAR(72);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;numberViews;INT(20);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;slug;VARCHAR(64);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;tags;VARCHAR(50);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;title;VARCHAR(128);false;0;-
+1;1390372155.sql;1393555723.sql;posts_all;Deletion:DeleteTable;userPost;VARCHAR(25);false;0;-
+2;1393555723.sql;1396111324.sql;-;-;-;-;-;-;-
+3;1396111324.sql;1415604258.sql;-;-;-;-;-;-;-

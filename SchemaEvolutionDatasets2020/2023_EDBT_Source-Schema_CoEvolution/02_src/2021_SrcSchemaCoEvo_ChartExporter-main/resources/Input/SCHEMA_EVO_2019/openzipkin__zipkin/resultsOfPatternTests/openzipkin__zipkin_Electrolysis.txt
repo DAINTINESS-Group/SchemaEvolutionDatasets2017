@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- openzipkin__zipkin -------------------------
+openzipkin__zipkin:	Electrolysis	holds? 	true
+openzipkin__zipkin:	Electrolysis	Geometry? 	true
+openzipkin__zipkin:	Electrolysis	FisherExecuted? 	false
+openzipkin__zipkin:	Electrolysis	p-Value? 	false
+------------------------------------------------

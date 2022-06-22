@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- dotkernel__frontend -------------------------
+dotkernel__frontend:	Gamma	holds? 	false
+dotkernel__frontend:	Gamma	Geometry? 	false
+dotkernel__frontend:	Gamma	FisherExecuted? 	false
+dotkernel__frontend:	Gamma	p-Value? 	false
+dotkernel__frontend:	Gamma	Surv.Wide 	0
+dotkernel__frontend:	Gamma	Surv.NotWide 	6
+dotkernel__frontend:	Gamma	Dead.Wide 	0
+dotkernel__frontend:	Gamma	Dead.NotWide 	0
+dotkernel__frontend:	Gamma	Wide 	0
+------------------------------------------------

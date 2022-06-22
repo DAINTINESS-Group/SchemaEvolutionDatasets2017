@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- remind101__empire -------------------------
+remind101__empire:	Electrolysis	holds? 	true
+remind101__empire:	Electrolysis	Geometry? 	true
+remind101__empire:	Electrolysis	FisherExecuted? 	false
+remind101__empire:	Electrolysis	p-Value? 	false
+------------------------------------------------

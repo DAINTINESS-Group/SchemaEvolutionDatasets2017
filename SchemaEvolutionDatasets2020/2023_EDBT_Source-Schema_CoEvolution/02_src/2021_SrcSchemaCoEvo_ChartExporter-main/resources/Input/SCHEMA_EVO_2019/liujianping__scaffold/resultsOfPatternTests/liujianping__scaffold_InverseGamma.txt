@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- liujianping__scaffold -------------------------
+liujianping__scaffold:	InverseGamma	holds? 	true
+liujianping__scaffold:	InverseGamma	Geometry? 	true
+liujianping__scaffold:	InverseGamma	FisherExecuted? 	false
+liujianping__scaffold:	InverseGamma	p-Value? 	false
+------------------------------------------------

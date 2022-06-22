@@ -1,0 +1,2 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+verbs	2	0	-	1	2015-08-06 15:22:42	2015-08-07 12:43:12	0	1	0	4	4	4	1	0	0	0	0		20	0	20

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- the42__ogdat -------------------------
+the42__ogdat:	InverseGamma	holds? 	true
+the42__ogdat:	InverseGamma	Geometry? 	true
+the42__ogdat:	InverseGamma	FisherExecuted? 	false
+the42__ogdat:	InverseGamma	p-Value? 	false
+------------------------------------------------

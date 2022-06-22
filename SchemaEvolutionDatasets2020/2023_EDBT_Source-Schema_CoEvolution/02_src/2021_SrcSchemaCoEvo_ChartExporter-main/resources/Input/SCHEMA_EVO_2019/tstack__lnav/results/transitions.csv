@@ -1,0 +1,15 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1371010259.sql;1428789350.sql;-;-;-;-;-;-;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;ex_procname;TEXTCOLLATE'BINARY';false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_actual_time;DATETIMEHIDDEN;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_body;TEXTHIDDEN;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_idle_msecs;INT;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_level;TEXTCOLLATELOGLEVEL;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_line;INTEGER;true;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_mark;BOOLEAN;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_part;TEXTCOLLATENATURALNOCASE;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_path;TEXTHIDDENCOLLATENATURALNOCASE;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_text;TEXTHIDDEN;false;0;-
+2;1428789350.sql;1490968871.sql;lnav_example_log;Insertion:NewTable;log_time;DATETIME;false;0;-
+3;1490968871.sql;1491401119.sql;lnav_example_log;Insertion:UpdateTable;ex_duration;INTEGER;false;0;-
+4;1491401119.sql;1491728239.sql;-;-;-;-;-;-;-

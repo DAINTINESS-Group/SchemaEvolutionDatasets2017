@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1483204242.sql" newVersion="1484247880.sql">
+        <update type="KeyChange">
+            <table>
+                <name>register</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

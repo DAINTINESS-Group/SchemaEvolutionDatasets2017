@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jasdel__harvester -------------------------
+jasdel__harvester:	Electrolysis	holds? 	false
+jasdel__harvester:	Electrolysis	Geometry? 	false
+jasdel__harvester:	Electrolysis	FisherExecuted? 	false
+jasdel__harvester:	Electrolysis	p-Value? 	false
+------------------------------------------------

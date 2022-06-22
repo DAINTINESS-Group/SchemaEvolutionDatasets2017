@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- HaliteChallenge__Halite-II -------------------------
+HaliteChallenge__Halite-II:	InverseGamma	holds? 	false
+HaliteChallenge__Halite-II:	InverseGamma	Geometry? 	false
+HaliteChallenge__Halite-II:	InverseGamma	FisherExecuted? 	false
+HaliteChallenge__Halite-II:	InverseGamma	p-Value? 	false
+------------------------------------------------

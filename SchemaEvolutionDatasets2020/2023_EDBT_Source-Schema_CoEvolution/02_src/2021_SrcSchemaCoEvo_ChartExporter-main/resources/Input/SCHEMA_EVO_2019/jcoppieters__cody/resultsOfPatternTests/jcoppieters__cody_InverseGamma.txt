@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jcoppieters__cody -------------------------
+jcoppieters__cody:	InverseGamma	holds? 	true
+jcoppieters__cody:	InverseGamma	Geometry? 	true
+jcoppieters__cody:	InverseGamma	FisherExecuted? 	false
+jcoppieters__cody:	InverseGamma	p-Value? 	false
+------------------------------------------------

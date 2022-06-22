@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- gem__oq-engine -------------------------
+gem__oq-engine:	InverseGamma	holds? 	true
+gem__oq-engine:	InverseGamma	Geometry? 	true
+gem__oq-engine:	InverseGamma	FisherExecuted? 	false
+gem__oq-engine:	InverseGamma	p-Value? 	false
+------------------------------------------------

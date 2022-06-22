@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- nawork__nawork-uri -------------------------
+nawork__nawork-uri:	Electrolysis	holds? 	true
+nawork__nawork-uri:	Electrolysis	Geometry? 	true
+nawork__nawork-uri:	Electrolysis	FisherExecuted? 	false
+nawork__nawork-uri:	Electrolysis	p-Value? 	false
+------------------------------------------------

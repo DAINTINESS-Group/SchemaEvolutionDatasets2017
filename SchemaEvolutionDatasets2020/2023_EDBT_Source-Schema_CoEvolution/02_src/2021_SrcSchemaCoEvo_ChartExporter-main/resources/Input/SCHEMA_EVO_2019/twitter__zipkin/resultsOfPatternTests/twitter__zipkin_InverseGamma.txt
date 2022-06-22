@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- twitter__zipkin -------------------------
+twitter__zipkin:	InverseGamma	holds? 	true
+twitter__zipkin:	InverseGamma	Geometry? 	true
+twitter__zipkin:	InverseGamma	FisherExecuted? 	false
+twitter__zipkin:	InverseGamma	p-Value? 	false
+------------------------------------------------

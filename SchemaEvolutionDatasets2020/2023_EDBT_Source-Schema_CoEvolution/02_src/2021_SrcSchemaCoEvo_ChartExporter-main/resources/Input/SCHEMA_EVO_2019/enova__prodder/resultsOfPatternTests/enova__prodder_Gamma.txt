@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- enova__prodder -------------------------
+enova__prodder:	Gamma	holds? 	false
+enova__prodder:	Gamma	Geometry? 	false
+enova__prodder:	Gamma	FisherExecuted? 	false
+enova__prodder:	Gamma	p-Value? 	false
+enova__prodder:	Gamma	Surv.Wide 	0
+enova__prodder:	Gamma	Surv.NotWide 	5
+enova__prodder:	Gamma	Dead.Wide 	0
+enova__prodder:	Gamma	Dead.NotWide 	0
+enova__prodder:	Gamma	Wide 	0
+------------------------------------------------

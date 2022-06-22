@@ -1,0 +1,4 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+bots_channel	2	0	-	1	2014-01-19 18:14:42	2017-05-31 17:04:34	0	4	1227	8	14	11	1.75	12	1	6	0.5	12	20	2	22
+bots_chatbot	2	0	-	1	2014-01-19 18:14:42	2017-05-31 17:04:34	0	4	1227	8	10	9	1.25	10	1	5	0.5	10	20	2	22
+bots_usercount	2	0	-	1	2014-01-19 18:14:42	2017-05-31 17:04:34	0	4	1227	4	4	4	1	2	1	1	0.5	2	20	1	21

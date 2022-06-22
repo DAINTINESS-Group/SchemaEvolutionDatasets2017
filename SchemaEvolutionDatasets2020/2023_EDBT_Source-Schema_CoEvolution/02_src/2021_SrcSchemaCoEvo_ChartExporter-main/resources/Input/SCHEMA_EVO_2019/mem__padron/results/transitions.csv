@@ -1,0 +1,7 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1390793435.sql;1454818393.sql;centros;Insertion:UpdateTable;distrito_electoral_id;INTEGER;false;0;id@distritos_electorales
+1;1390793435.sql;1454818393.sql;centros;Deletion:UpdateTable;distrito_id;INTEGER;false;0;id@distritos
+1;1390793435.sql;1454818393.sql;distritos_electorales;Insertion:NewTable;distrito_id;INTEGER;false;0;id@distritos
+1;1390793435.sql;1454818393.sql;distritos_electorales;Insertion:NewTable;id;INTEGER;true;0;-
+1;1390793435.sql;1454818393.sql;distritos_electorales;Insertion:NewTable;nombre;TEXT;false;0;-
+1;1390793435.sql;1454818393.sql;personas;Deletion:UpdateTable;distrito_id;INTEGER;false;0;id@distritos

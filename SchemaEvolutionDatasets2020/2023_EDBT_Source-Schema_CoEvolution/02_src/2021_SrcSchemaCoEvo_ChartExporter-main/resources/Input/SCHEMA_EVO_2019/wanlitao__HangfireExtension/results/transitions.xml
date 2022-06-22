@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1503398287.sql" newVersion="1504172037.sql">
+        <update type="TypeChange">
+            <table>
+                <name>JobQueue</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>Queue</name>
+                <type>NVARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>Server</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>Id</name>
+                <type>NVARCHAR(100)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

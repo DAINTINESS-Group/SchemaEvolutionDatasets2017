@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- senecajs__seneca-postgres-store -------------------------
+senecajs__seneca-postgres-store:	InverseGamma	holds? 	true
+senecajs__seneca-postgres-store:	InverseGamma	Geometry? 	true
+senecajs__seneca-postgres-store:	InverseGamma	FisherExecuted? 	false
+senecajs__seneca-postgres-store:	InverseGamma	p-Value? 	false
+------------------------------------------------

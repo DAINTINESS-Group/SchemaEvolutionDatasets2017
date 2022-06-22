@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dburry__indexed_search -------------------------
+dburry__indexed_search:	InverseGamma	holds? 	true
+dburry__indexed_search:	InverseGamma	Geometry? 	true
+dburry__indexed_search:	InverseGamma	FisherExecuted? 	true
+dburry__indexed_search:	InverseGamma	p-Value? 	false
+------------------------------------------------

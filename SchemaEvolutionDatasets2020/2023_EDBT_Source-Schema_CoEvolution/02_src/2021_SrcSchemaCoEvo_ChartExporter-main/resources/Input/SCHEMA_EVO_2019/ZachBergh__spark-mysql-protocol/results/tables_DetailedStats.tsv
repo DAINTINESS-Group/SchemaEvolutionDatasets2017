@@ -1,0 +1,4 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+core	5	0	-	4	2016-01-14 16:23:15	2016-03-15 09:08:41	0	1	60	5	7	5.6	1.4	2	2	0.4	0.4	1	20	1	21
+core_key	5	0	-	4	2016-01-14 16:23:15	2016-03-15 09:08:41	0	1	60	2	3	2.8	1.5	1	1	0.2	0.2	1	20	1	21
+user	3	2	-	4	2016-02-24 02:32:14	2016-03-15 09:08:41	1	1	20	8	8	8	1	0	0	0	0		20	0	20

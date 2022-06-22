@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- anchorcms__anchor-cms -------------------------
+anchorcms__anchor-cms:	Gamma	holds? 	false
+anchorcms__anchor-cms:	Gamma	Geometry? 	false
+anchorcms__anchor-cms:	Gamma	FisherExecuted? 	true
+anchorcms__anchor-cms:	Gamma	p-Value? 	false
+anchorcms__anchor-cms:	Gamma	Surv.Wide 	1
+anchorcms__anchor-cms:	Gamma	Surv.NotWide 	9
+anchorcms__anchor-cms:	Gamma	Dead.Wide 	1
+anchorcms__anchor-cms:	Gamma	Dead.NotWide 	9
+anchorcms__anchor-cms:	Gamma	Wide 	2
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- RichMercer__ContentMetadata -------------------------
+RichMercer__ContentMetadata:	Gamma	holds? 	false
+RichMercer__ContentMetadata:	Gamma	Geometry? 	false
+RichMercer__ContentMetadata:	Gamma	FisherExecuted? 	false
+RichMercer__ContentMetadata:	Gamma	p-Value? 	false
+RichMercer__ContentMetadata:	Gamma	Surv.Wide 	0
+RichMercer__ContentMetadata:	Gamma	Surv.NotWide 	1
+RichMercer__ContentMetadata:	Gamma	Dead.Wide 	0
+RichMercer__ContentMetadata:	Gamma	Dead.NotWide 	0
+RichMercer__ContentMetadata:	Gamma	Wide 	0
+------------------------------------------------

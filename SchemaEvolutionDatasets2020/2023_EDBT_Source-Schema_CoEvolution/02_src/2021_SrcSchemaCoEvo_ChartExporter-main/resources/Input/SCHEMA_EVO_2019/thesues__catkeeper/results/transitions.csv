@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1403004108.sql;1403087313.sql;virtualmachine;Insertion:UpdateTable;HostIpAddress;VARCHAR(255);false;0;-
+2;1403087313.sql;1405509517.sql;macipmappingcache;Insertion:NewTable;IP;VARCHAR(255);false;0;-
+2;1403087313.sql;1405509517.sql;macipmappingcache;Insertion:NewTable;MAC;VARCHAR(255);true;0;-
+2;1403087313.sql;1405509517.sql;vmmacmapping;Insertion:NewTable;MAC;VARCHAR(255);false;0;-
+2;1403087313.sql;1405509517.sql;vmmacmapping;Insertion:NewTable;VmId;INTEGER;false;0;-

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- studygolang__studygolang -------------------------
+studygolang__studygolang:	Gamma	holds? 	true
+studygolang__studygolang:	Gamma	Geometry? 	true
+studygolang__studygolang:	Gamma	FisherExecuted? 	false
+studygolang__studygolang:	Gamma	p-Value? 	false
+studygolang__studygolang:	Gamma	Surv.Wide 	12
+studygolang__studygolang:	Gamma	Surv.NotWide 	47
+studygolang__studygolang:	Gamma	Dead.Wide 	0
+studygolang__studygolang:	Gamma	Dead.NotWide 	0
+studygolang__studygolang:	Gamma	Wide 	12
+------------------------------------------------

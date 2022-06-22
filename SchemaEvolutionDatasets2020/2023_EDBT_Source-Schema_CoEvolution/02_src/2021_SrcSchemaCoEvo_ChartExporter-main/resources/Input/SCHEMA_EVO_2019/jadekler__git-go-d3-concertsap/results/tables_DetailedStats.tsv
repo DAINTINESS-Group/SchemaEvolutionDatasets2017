@@ -1,0 +1,9 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+band	8	0	-	7	2014-03-14 00:59:48	2014-04-13 16:56:53	0	1	30	3	3	3	1	0	0	0	0		20	0	20
+band_concert	8	0	-	7	2014-03-14 00:59:48	2014-04-13 16:56:53	0	1	30	5	3	4.5	0.6	2	1	0.25	0.12	2	20	1	21
+band_concert_record	2	6	-	7	2014-03-29 14:00:55	2014-04-13 16:56:53	1	1	15	5	5	5	1	0	0	0	0		20	0	20
+concert	8	0	-	7	2014-03-14 00:59:48	2014-04-13 16:56:53	0	1	30	7	7	7	1	2	1	0.25	0.12	2	20	1	21
+retailer	8	0	-	7	2014-03-14 00:59:48	2014-04-13 16:56:53	0	1	30	3	3	3	1	0	0	0	0		20	0	20
+state	8	0	-	7	2014-03-14 00:59:48	2014-04-13 16:56:53	0	1	30	3	3	3	1	0	0	0	0		20	0	20
+ticket_record	2	6	-	7	2014-03-29 14:00:55	2014-04-13 16:56:53	1	1	15	5	5	5	1	0	0	0	0		20	0	20
+ticket_records	6	0	5	5	2014-03-14 00:59:48	2014-03-25 01:30:02	0	1	11	5	5	5	1	0	0	0	0		10	0	10

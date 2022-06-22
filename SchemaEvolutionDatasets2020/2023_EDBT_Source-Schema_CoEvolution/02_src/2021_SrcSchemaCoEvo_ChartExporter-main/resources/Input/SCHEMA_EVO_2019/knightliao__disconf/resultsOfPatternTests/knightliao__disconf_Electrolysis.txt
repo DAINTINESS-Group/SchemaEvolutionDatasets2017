@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- knightliao__disconf -------------------------
+knightliao__disconf:	Electrolysis	holds? 	true
+knightliao__disconf:	Electrolysis	Geometry? 	true
+knightliao__disconf:	Electrolysis	FisherExecuted? 	false
+knightliao__disconf:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- thewhitetulip__Tasks -------------------------
+thewhitetulip__Tasks:	InverseGamma	holds? 	false
+thewhitetulip__Tasks:	InverseGamma	Geometry? 	false
+thewhitetulip__Tasks:	InverseGamma	FisherExecuted? 	false
+thewhitetulip__Tasks:	InverseGamma	p-Value? 	false
+------------------------------------------------

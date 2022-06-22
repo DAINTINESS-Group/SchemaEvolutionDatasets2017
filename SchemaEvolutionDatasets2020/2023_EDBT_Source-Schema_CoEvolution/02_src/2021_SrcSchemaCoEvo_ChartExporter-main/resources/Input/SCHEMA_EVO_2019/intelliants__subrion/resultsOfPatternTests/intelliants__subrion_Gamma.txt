@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- intelliants__subrion -------------------------
+intelliants__subrion:	Gamma	holds? 	true
+intelliants__subrion:	Gamma	Geometry? 	true
+intelliants__subrion:	Gamma	FisherExecuted? 	true
+intelliants__subrion:	Gamma	p-Value? 	false
+intelliants__subrion:	Gamma	Surv.Wide 	10
+intelliants__subrion:	Gamma	Surv.NotWide 	41
+intelliants__subrion:	Gamma	Dead.Wide 	3
+intelliants__subrion:	Gamma	Dead.NotWide 	2
+intelliants__subrion:	Gamma	Wide 	13
+------------------------------------------------

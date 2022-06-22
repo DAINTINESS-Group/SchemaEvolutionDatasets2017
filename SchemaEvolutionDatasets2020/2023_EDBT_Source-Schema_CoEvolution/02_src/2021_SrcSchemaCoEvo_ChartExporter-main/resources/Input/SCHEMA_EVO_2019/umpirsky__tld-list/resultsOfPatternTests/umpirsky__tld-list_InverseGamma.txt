@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- umpirsky__tld-list -------------------------
+umpirsky__tld-list:	InverseGamma	holds? 	true
+umpirsky__tld-list:	InverseGamma	Geometry? 	true
+umpirsky__tld-list:	InverseGamma	FisherExecuted? 	false
+umpirsky__tld-list:	InverseGamma	p-Value? 	false
+------------------------------------------------

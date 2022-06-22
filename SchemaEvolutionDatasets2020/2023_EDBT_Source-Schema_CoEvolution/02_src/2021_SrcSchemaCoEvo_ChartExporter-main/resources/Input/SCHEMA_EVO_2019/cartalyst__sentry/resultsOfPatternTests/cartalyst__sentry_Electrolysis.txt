@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- cartalyst__sentry -------------------------
+cartalyst__sentry:	Electrolysis	holds? 	true
+cartalyst__sentry:	Electrolysis	Geometry? 	true
+cartalyst__sentry:	Electrolysis	FisherExecuted? 	false
+cartalyst__sentry:	Electrolysis	p-Value? 	false
+------------------------------------------------

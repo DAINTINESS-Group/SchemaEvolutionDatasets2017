@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- travis-ci__jupiter-brain -------------------------
+travis-ci__jupiter-brain:	Gamma	holds? 	false
+travis-ci__jupiter-brain:	Gamma	Geometry? 	false
+travis-ci__jupiter-brain:	Gamma	FisherExecuted? 	false
+travis-ci__jupiter-brain:	Gamma	p-Value? 	false
+travis-ci__jupiter-brain:	Gamma	Surv.Wide 	0
+travis-ci__jupiter-brain:	Gamma	Surv.NotWide 	1
+travis-ci__jupiter-brain:	Gamma	Dead.Wide 	0
+travis-ci__jupiter-brain:	Gamma	Dead.NotWide 	1
+travis-ci__jupiter-brain:	Gamma	Wide 	0
+------------------------------------------------

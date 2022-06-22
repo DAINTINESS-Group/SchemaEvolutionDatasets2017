@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mozilla__mig -------------------------
+mozilla__mig:	Gamma	holds? 	true
+mozilla__mig:	Gamma	Geometry? 	true
+mozilla__mig:	Gamma	FisherExecuted? 	false
+mozilla__mig:	Gamma	p-Value? 	true
+mozilla__mig:	Gamma	Surv.Wide 	3
+mozilla__mig:	Gamma	Surv.NotWide 	9
+mozilla__mig:	Gamma	Dead.Wide 	0
+mozilla__mig:	Gamma	Dead.NotWide 	1
+mozilla__mig:	Gamma	Wide 	3
+------------------------------------------------

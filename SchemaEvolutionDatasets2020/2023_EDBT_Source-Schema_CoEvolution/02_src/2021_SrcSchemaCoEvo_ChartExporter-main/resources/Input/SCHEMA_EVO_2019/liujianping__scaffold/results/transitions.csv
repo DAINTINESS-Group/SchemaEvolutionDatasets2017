@@ -1,0 +1,41 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;COMMENT;'CAPTION:"描述" UPDATE:"Y" WIDGET:"TEXT"';false;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;code;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;description;VARCHAR(256);false;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;id;INTUNSIGNED;true;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;name;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;option_code;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;option_name;VARCHAR(256);false;0;-
+1;1465109600.sql;1468202294.sql;options;Deletion:DeleteTable;option_value;INT;false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;COMMENT;'CAPTION:"删除时间" GOTYPE:"*TIME.TIME" IGNORE:"Y" WIDGET:"DATETIME"';false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;created_at;TIMESTAMP;false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;deleted_at;TIMESTAMP;false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;id;INTUNSIGNED;true;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;mailbox;VARCHAR(255);false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;name;VARCHAR(255);false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;password;VARCHAR(64);false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;role;TINYINT(1);false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;status;TINYINT(1);false;0;-
+1;1465109600.sql;1468202294.sql;system_accounts;Insertion:NewTable;updated_at;TIMESTAMP;false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;COMMENT;'CAPTION:"描述" UPDATE:"Y" WIDGET:"TEXT"';false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;code;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;description;VARCHAR(256);false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;id;INTUNSIGNED;true;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;name;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;option_code;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;option_name;VARCHAR(256);false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;option_value;INT;false;0;-
+1;1465109600.sql;1468202294.sql;system_system_options;Insertion:NewTable;relate_code;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;COMMENT;'CAPTION:"删除时间" GOTYPE:"*TIME.TIME" IGNORE:"Y" WIDGET:"DATETIME"';false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;created_at;TIMESTAMP;false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;deleted_at;TIMESTAMP;false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;expired_at;TIMESTAMP;false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;hits;INTUNSIGNED;false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;id;INTUNSIGNED;true;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;remote;VARCHAR(32);false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;secret;VARCHAR(64);false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;strict;TINYINT(1);false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;system_account_id;INTUNSIGNED;false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;times;INTUNSIGNED;false;0;-
+1;1465109600.sql;1468202294.sql;system_tokens;Insertion:NewTable;updated_at;TIMESTAMP;false;0;-
+2;1468202294.sql;1468215056.sql;-;-;-;-;-;-;-

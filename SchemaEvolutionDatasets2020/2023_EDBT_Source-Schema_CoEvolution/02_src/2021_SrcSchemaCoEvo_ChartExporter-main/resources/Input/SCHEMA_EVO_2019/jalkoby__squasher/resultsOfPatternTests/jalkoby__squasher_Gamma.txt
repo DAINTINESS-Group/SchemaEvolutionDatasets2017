@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jalkoby__squasher -------------------------
+jalkoby__squasher:	Gamma	holds? 	false
+jalkoby__squasher:	Gamma	Geometry? 	false
+jalkoby__squasher:	Gamma	FisherExecuted? 	false
+jalkoby__squasher:	Gamma	p-Value? 	false
+jalkoby__squasher:	Gamma	Surv.Wide 	0
+jalkoby__squasher:	Gamma	Surv.NotWide 	5
+jalkoby__squasher:	Gamma	Dead.Wide 	0
+jalkoby__squasher:	Gamma	Dead.NotWide 	0
+jalkoby__squasher:	Gamma	Wide 	0
+------------------------------------------------

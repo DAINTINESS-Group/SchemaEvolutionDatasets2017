@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- matthewfranglen__postgres-elasticsearch-fdw -------------------------
+matthewfranglen__postgres-elasticsearch-fdw:	InverseGamma	holds? 	true
+matthewfranglen__postgres-elasticsearch-fdw:	InverseGamma	Geometry? 	true
+matthewfranglen__postgres-elasticsearch-fdw:	InverseGamma	FisherExecuted? 	false
+matthewfranglen__postgres-elasticsearch-fdw:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- aiyi__go-user -------------------------
+aiyi__go-user:	Electrolysis	holds? 	true
+aiyi__go-user:	Electrolysis	Geometry? 	true
+aiyi__go-user:	Electrolysis	FisherExecuted? 	false
+aiyi__go-user:	Electrolysis	p-Value? 	false
+------------------------------------------------

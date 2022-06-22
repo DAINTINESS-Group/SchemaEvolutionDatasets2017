@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+#__activities	2	6	-	8	2015-02-20 22:18:52	2015-08-24 12:09:55	1	1	184	14	14	14	1	0	0	0	0		20	0	20
+#__activities_activities	6	1	7	7	2014-11-14 13:06:50	2015-07-29 10:49:09	1	1	256	14	14	14	1	0	0	0	0		10	0	10
+#__todo_activities	1	0	0	0	2014-11-12 11:37:05	2014-11-12 11:37:05	0	0	0	14	14	14	1	0	0	0	0		10	0	10
+#__todo_items	4	0	4	4	2014-11-12 11:37:05	2015-01-09 16:06:31	0	1	58	13	13	13	1	0	0	0	0		10	0	10
+#__todo_tasks	5	3	-	8	2014-12-18 14:04:37	2015-08-24 12:09:55	1	1	248	13	13	13	1	0	0	0	0		20	0	20

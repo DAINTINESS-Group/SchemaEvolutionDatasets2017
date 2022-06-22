@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- Attendly__maillist -------------------------
+Attendly__maillist:	Electrolysis	holds? 	true
+Attendly__maillist:	Electrolysis	Geometry? 	true
+Attendly__maillist:	Electrolysis	FisherExecuted? 	false
+Attendly__maillist:	Electrolysis	p-Value? 	false
+------------------------------------------------

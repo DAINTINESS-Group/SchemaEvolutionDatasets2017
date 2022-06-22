@@ -1,0 +1,12 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1492706090.sql;1493727116.sql;identities;Insertion:UpdateTable;account_id;BIGINTUNSIGNED;false;0;-
+1;1492706090.sql;1493727116.sql;identities;Insertion:UpdateTable;parent_id;BIGINTUNSIGNED;false;0;-
+1;1492706090.sql;1493727116.sql;identities;Deletion:UpdateTable;user_id;BIGINTUNSIGNED;false;0;-
+1;1492706090.sql;1493727116.sql;users;Deletion:DeleteTable;created_on;TIMESTAMP;false;0;-
+1;1492706090.sql;1493727116.sql;users;Deletion:DeleteTable;name;TEXT;false;0;-
+1;1492706090.sql;1493727116.sql;users;Deletion:DeleteTable;user_id;SERIAL;true;0;-
+2;1493727116.sql;1494349152.sql;identities;Update:TypeChange;created_on;INT(11);false;0;-
+2;1493727116.sql;1494349152.sql;identities;Update:TypeChange;expires_on;INT(11);false;0;-
+2;1493727116.sql;1494349152.sql;identities;Update:TypeChange;token_expires_on;INT(11);false;0;-
+2;1493727116.sql;1494349152.sql;identities;Update:TypeChange;used_on;INT(11);false;0;-
+3;1494349152.sql;1494457342.sql;-;-;-;-;-;-;-

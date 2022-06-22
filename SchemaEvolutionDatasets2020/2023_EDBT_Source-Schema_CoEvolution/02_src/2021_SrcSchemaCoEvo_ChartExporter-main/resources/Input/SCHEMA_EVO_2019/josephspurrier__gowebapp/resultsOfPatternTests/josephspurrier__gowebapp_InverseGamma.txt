@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- josephspurrier__gowebapp -------------------------
+josephspurrier__gowebapp:	InverseGamma	holds? 	true
+josephspurrier__gowebapp:	InverseGamma	Geometry? 	true
+josephspurrier__gowebapp:	InverseGamma	FisherExecuted? 	false
+josephspurrier__gowebapp:	InverseGamma	p-Value? 	false
+------------------------------------------------

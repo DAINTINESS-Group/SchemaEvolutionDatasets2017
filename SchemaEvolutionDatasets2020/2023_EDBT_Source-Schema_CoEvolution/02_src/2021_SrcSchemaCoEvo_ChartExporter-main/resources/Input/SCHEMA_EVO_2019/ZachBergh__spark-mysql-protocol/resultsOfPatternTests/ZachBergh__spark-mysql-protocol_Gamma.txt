@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- ZachBergh__spark-mysql-protocol -------------------------
+ZachBergh__spark-mysql-protocol:	Gamma	holds? 	false
+ZachBergh__spark-mysql-protocol:	Gamma	Geometry? 	false
+ZachBergh__spark-mysql-protocol:	Gamma	FisherExecuted? 	false
+ZachBergh__spark-mysql-protocol:	Gamma	p-Value? 	false
+ZachBergh__spark-mysql-protocol:	Gamma	Surv.Wide 	0
+ZachBergh__spark-mysql-protocol:	Gamma	Surv.NotWide 	3
+ZachBergh__spark-mysql-protocol:	Gamma	Dead.Wide 	0
+ZachBergh__spark-mysql-protocol:	Gamma	Dead.NotWide 	0
+ZachBergh__spark-mysql-protocol:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- purefn__hipbot -------------------------
+purefn__hipbot:	Gamma	holds? 	false
+purefn__hipbot:	Gamma	Geometry? 	false
+purefn__hipbot:	Gamma	FisherExecuted? 	false
+purefn__hipbot:	Gamma	p-Value? 	false
+purefn__hipbot:	Gamma	Surv.Wide 	0
+purefn__hipbot:	Gamma	Surv.NotWide 	1
+purefn__hipbot:	Gamma	Dead.Wide 	0
+purefn__hipbot:	Gamma	Dead.NotWide 	0
+purefn__hipbot:	Gamma	Wide 	0
+------------------------------------------------

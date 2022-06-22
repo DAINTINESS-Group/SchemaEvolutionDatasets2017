@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jaredbeck__paper_trail-sinatra -------------------------
+jaredbeck__paper_trail-sinatra:	Electrolysis	holds? 	true
+jaredbeck__paper_trail-sinatra:	Electrolysis	Geometry? 	true
+jaredbeck__paper_trail-sinatra:	Electrolysis	FisherExecuted? 	false
+jaredbeck__paper_trail-sinatra:	Electrolysis	p-Value? 	false
+------------------------------------------------

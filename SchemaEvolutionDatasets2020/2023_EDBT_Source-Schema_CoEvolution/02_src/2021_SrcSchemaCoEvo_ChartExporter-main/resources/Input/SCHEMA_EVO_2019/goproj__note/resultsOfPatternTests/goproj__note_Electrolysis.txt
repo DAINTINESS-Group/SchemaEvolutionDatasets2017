@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- goproj__note -------------------------
+goproj__note:	Electrolysis	holds? 	true
+goproj__note:	Electrolysis	Geometry? 	true
+goproj__note:	Electrolysis	FisherExecuted? 	false
+goproj__note:	Electrolysis	p-Value? 	false
+------------------------------------------------

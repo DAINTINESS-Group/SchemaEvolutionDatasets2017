@@ -1,0 +1,15 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1412274775.sql;1424862560.sql;fe_users;Insertion:UpdateTable;vdate;DATE;false;0;-
+2;1424862560.sql;1480432130.sql;fe_users;Insertion:UpdateTable;latitude;DECIMAL(8,6);false;0;-
+2;1424862560.sql;1480432130.sql;fe_users;Insertion:UpdateTable;longitude;DECIMAL(8,6);false;0;-
+3;1480432130.sql;1495228848.sql;fe_users;Insertion:UpdateTable;siteid;INT(11);false;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache;Deletion:DeleteTable;content;MEDIUMBLOB;false;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache;Deletion:DeleteTable;crdate;INT(11);false;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache;Deletion:DeleteTable;id;INT(11);true;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache;Deletion:DeleteTable;identifier;VARCHAR(250);false;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache;Deletion:DeleteTable;lifetime;INT(11);false;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache_tags;Deletion:DeleteTable;id;INT(11);true;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache_tags;Deletion:DeleteTable;identifier;VARCHAR(250);false;0;-
+4;1495228848.sql;1539788202.sql;tx_aimeos_cache_tags;Deletion:DeleteTable;tag;VARCHAR(250);false;0;-
+5;1539788202.sql;1552667628.sql;fe_users;Update:TypeChange;first_name;VARCHAR(64);false;0;-
+5;1539788202.sql;1552667628.sql;fe_users;Update:TypeChange;last_name;VARCHAR(64);false;0;-

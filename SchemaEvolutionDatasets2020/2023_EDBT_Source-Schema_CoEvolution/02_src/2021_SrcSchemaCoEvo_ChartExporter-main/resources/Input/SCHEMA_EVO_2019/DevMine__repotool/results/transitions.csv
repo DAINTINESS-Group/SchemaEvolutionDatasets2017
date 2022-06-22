@@ -1,0 +1,10 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;commit_id;BIGINT;false;0;-
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;file_status;CHARACTERVARYING;false;0;-
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;id;BIGINT;false;0;-
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;is_file_binary;BOOLEAN;false;0;-
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;new_file_path;CHARACTERVARYING;false;0;-
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;old_file_path;CHARACTERVARYING;false;0;-
+1;1421079087.sql;1421255567.sql;commit_diff_deltas;Insertion:NewTable;similarity;INTEGER;false;0;-
+2;1421255567.sql;1429971177.sql;-;-;-;-;-;-;-
+3;1429971177.sql;1433706311.sql;commits;Deletion:UpdateTable;hash;CHARACTERVARYING;false;0;-

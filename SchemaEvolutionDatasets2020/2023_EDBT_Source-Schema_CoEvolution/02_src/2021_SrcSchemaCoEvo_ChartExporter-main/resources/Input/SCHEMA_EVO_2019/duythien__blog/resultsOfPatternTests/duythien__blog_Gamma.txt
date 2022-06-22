@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- duythien__blog -------------------------
+duythien__blog:	Gamma	holds? 	false
+duythien__blog:	Gamma	Geometry? 	false
+duythien__blog:	Gamma	FisherExecuted? 	false
+duythien__blog:	Gamma	p-Value? 	false
+duythien__blog:	Gamma	Surv.Wide 	0
+duythien__blog:	Gamma	Surv.NotWide 	14
+duythien__blog:	Gamma	Dead.Wide 	0
+duythien__blog:	Gamma	Dead.NotWide 	1
+duythien__blog:	Gamma	Wide 	0
+------------------------------------------------

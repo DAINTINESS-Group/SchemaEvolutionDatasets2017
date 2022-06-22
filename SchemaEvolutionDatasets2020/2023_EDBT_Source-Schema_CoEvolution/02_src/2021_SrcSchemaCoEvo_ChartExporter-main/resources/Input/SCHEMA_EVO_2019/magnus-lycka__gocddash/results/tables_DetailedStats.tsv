@@ -1,0 +1,12 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+agent	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	2	2	2	1	0	0	0	0		20	0	20
+email_notifications	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	4	4	4	1	1	1	0.33	0.33	1	20	1	21
+failure_information	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	3	3	3	1	1	1	0.33	0.33	1	20	1	21
+instance_claim	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	5	5	5	1	1	1	0.33	0.33	1	20	1	21
+job	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	9	9	9	1	0	0	0	0		20	0	20
+junit_failure	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	4	4	4	1	1	1	0.33	0.33	1	20	1	21
+pipeline	2	1	-	2	2016-11-08 16:36:13	2016-11-15 18:05:45	1	1	7	3	3	3	1	0	0	0	0		20	0	20
+pipeline_instance	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	4	10	8	2.5	7	1	2.33	0.33	7	20	2	22
+pipeline_sync_rule	2	1	-	2	2016-11-08 16:36:13	2016-11-15 18:05:45	1	1	7	5	5	5	1	0	0	0	0		20	0	20
+stage	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	7	8	7.67	1.14	1	1	0.33	0.33	1	20	1	21
+texttest_failure	3	0	-	2	2016-10-04 12:07:12	2016-11-15 18:05:45	0	1	42	5	5	5	1	1	1	0.33	0.33	1	20	1	21

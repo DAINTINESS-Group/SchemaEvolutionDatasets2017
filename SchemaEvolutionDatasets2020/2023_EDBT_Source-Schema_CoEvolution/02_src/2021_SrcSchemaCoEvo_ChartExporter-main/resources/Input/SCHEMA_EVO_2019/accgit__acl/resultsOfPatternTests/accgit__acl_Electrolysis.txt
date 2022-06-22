@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- accgit__acl -------------------------
+accgit__acl:	Electrolysis	holds? 	true
+accgit__acl:	Electrolysis	Geometry? 	true
+accgit__acl:	Electrolysis	FisherExecuted? 	false
+accgit__acl:	Electrolysis	p-Value? 	false
+------------------------------------------------

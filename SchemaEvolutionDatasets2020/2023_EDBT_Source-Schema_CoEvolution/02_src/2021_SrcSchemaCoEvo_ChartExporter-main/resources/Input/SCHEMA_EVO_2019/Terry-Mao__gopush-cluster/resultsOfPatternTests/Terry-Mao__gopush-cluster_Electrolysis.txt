@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- Terry-Mao__gopush-cluster -------------------------
+Terry-Mao__gopush-cluster:	Electrolysis	holds? 	false
+Terry-Mao__gopush-cluster:	Electrolysis	Geometry? 	false
+Terry-Mao__gopush-cluster:	Electrolysis	FisherExecuted? 	false
+Terry-Mao__gopush-cluster:	Electrolysis	p-Value? 	false
+------------------------------------------------

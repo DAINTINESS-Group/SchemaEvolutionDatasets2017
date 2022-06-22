@@ -1,0 +1,6 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+post_json_collections;2;0;1;0;12;12;12.0
+post_json_documents;3;0;-;2;4;4;4.0
+post_json_dynamic_indexes;3;0;-;2;5;5;5.0
+post_json_model_settings;2;1;-;0;12;12;12.0
+schema_migrations;3;0;-;0;1;1;1.0

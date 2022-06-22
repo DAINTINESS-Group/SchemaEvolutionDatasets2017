@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1427878746.sql" newVersion="1456497980.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>item_map_varchar_locale</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>attr_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>country</name>
+                <type>CHAR(2)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>item_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>language</name>
+                <type>CHAR(2)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>items_recent_popularity_new</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>decay_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>item_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>last_update</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>score</name>
+                <type>FLOAT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

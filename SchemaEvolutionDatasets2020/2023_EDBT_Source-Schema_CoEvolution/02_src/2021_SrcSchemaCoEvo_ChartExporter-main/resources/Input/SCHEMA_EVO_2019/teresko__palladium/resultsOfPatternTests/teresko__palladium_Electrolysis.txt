@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- teresko__palladium -------------------------
+teresko__palladium:	Electrolysis	holds? 	true
+teresko__palladium:	Electrolysis	Geometry? 	true
+teresko__palladium:	Electrolysis	FisherExecuted? 	false
+teresko__palladium:	Electrolysis	p-Value? 	false
+------------------------------------------------

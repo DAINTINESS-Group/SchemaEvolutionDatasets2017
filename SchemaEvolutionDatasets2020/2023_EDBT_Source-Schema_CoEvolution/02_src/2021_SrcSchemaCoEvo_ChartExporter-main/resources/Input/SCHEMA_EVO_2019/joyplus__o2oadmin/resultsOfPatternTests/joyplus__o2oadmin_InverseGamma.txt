@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- joyplus__o2oadmin -------------------------
+joyplus__o2oadmin:	InverseGamma	holds? 	true
+joyplus__o2oadmin:	InverseGamma	Geometry? 	true
+joyplus__o2oadmin:	InverseGamma	FisherExecuted? 	false
+joyplus__o2oadmin:	InverseGamma	p-Value? 	false
+------------------------------------------------

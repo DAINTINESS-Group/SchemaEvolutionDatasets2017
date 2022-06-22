@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1393833351.sql" newVersion="1400901781.sql"/>
+    <transition oldVersion="1400901781.sql" newVersion="1400906757.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>tbl_node</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>level</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>lft</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>rgt</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>summary</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>topics_count</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

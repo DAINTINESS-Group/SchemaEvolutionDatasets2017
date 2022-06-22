@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- umpirsky__tld-list -------------------------
+umpirsky__tld-list:	Gamma	holds? 	false
+umpirsky__tld-list:	Gamma	Geometry? 	false
+umpirsky__tld-list:	Gamma	FisherExecuted? 	false
+umpirsky__tld-list:	Gamma	p-Value? 	false
+umpirsky__tld-list:	Gamma	Surv.Wide 	0
+umpirsky__tld-list:	Gamma	Surv.NotWide 	1
+umpirsky__tld-list:	Gamma	Dead.Wide 	0
+umpirsky__tld-list:	Gamma	Dead.NotWide 	0
+umpirsky__tld-list:	Gamma	Wide 	0
+------------------------------------------------

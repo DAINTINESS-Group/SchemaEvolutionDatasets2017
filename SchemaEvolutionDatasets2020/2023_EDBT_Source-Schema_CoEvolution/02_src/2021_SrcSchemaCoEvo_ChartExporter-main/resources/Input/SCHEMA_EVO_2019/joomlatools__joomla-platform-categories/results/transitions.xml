@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1436568708.sql" newVersion="1486525482.sql">
+        <update type="TypeChange">
+            <table>
+                <name>categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>COLLATE</name>
+                <type>UTF8MB4_BIN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>alias</name>
+                <type>VARCHAR(400)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>path</name>
+                <type>VARCHAR(400)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

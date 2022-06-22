@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- outbrain__orchestrator -------------------------
+outbrain__orchestrator:	InverseGamma	holds? 	true
+outbrain__orchestrator:	InverseGamma	Geometry? 	true
+outbrain__orchestrator:	InverseGamma	FisherExecuted? 	false
+outbrain__orchestrator:	InverseGamma	p-Value? 	false
+------------------------------------------------

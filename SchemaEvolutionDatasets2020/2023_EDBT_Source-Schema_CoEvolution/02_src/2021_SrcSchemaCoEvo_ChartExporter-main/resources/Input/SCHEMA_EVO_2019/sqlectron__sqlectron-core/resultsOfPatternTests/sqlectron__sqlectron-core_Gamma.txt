@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- sqlectron__sqlectron-core -------------------------
+sqlectron__sqlectron-core:	Gamma	holds? 	false
+sqlectron__sqlectron-core:	Gamma	Geometry? 	false
+sqlectron__sqlectron-core:	Gamma	FisherExecuted? 	false
+sqlectron__sqlectron-core:	Gamma	p-Value? 	false
+sqlectron__sqlectron-core:	Gamma	Surv.Wide 	0
+sqlectron__sqlectron-core:	Gamma	Surv.NotWide 	2
+sqlectron__sqlectron-core:	Gamma	Dead.Wide 	0
+sqlectron__sqlectron-core:	Gamma	Dead.NotWide 	0
+sqlectron__sqlectron-core:	Gamma	Wide 	0
+------------------------------------------------

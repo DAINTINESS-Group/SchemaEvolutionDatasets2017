@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- seatgeek__djjob -------------------------
+seatgeek__djjob:	Gamma	holds? 	false
+seatgeek__djjob:	Gamma	Geometry? 	false
+seatgeek__djjob:	Gamma	FisherExecuted? 	false
+seatgeek__djjob:	Gamma	p-Value? 	false
+seatgeek__djjob:	Gamma	Surv.Wide 	0
+seatgeek__djjob:	Gamma	Surv.NotWide 	1
+seatgeek__djjob:	Gamma	Dead.Wide 	0
+seatgeek__djjob:	Gamma	Dead.NotWide 	0
+seatgeek__djjob:	Gamma	Wide 	0
+------------------------------------------------

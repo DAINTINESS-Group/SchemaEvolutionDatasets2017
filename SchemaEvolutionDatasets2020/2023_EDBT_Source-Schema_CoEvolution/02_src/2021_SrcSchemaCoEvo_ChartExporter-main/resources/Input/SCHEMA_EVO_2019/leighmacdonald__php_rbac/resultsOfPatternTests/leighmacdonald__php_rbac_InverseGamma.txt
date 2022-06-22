@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- leighmacdonald__php_rbac -------------------------
+leighmacdonald__php_rbac:	InverseGamma	holds? 	true
+leighmacdonald__php_rbac:	InverseGamma	Geometry? 	true
+leighmacdonald__php_rbac:	InverseGamma	FisherExecuted? 	false
+leighmacdonald__php_rbac:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1533865974.sql" newVersion="1533866960.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>apps</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>deleted_at</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

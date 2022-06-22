@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tronsha__cerberus -------------------------
+tronsha__cerberus:	InverseGamma	holds? 	false
+tronsha__cerberus:	InverseGamma	Geometry? 	false
+tronsha__cerberus:	InverseGamma	FisherExecuted? 	true
+tronsha__cerberus:	InverseGamma	p-Value? 	false
+------------------------------------------------

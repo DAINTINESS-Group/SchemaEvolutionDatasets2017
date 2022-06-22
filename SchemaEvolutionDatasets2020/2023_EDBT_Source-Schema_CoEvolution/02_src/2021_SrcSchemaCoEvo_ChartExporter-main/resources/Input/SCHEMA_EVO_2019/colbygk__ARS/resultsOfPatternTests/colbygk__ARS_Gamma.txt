@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- colbygk__ARS -------------------------
+colbygk__ARS:	Gamma	holds? 	false
+colbygk__ARS:	Gamma	Geometry? 	false
+colbygk__ARS:	Gamma	FisherExecuted? 	false
+colbygk__ARS:	Gamma	p-Value? 	false
+colbygk__ARS:	Gamma	Surv.Wide 	0
+colbygk__ARS:	Gamma	Surv.NotWide 	2
+colbygk__ARS:	Gamma	Dead.Wide 	0
+colbygk__ARS:	Gamma	Dead.NotWide 	0
+colbygk__ARS:	Gamma	Wide 	0
+------------------------------------------------

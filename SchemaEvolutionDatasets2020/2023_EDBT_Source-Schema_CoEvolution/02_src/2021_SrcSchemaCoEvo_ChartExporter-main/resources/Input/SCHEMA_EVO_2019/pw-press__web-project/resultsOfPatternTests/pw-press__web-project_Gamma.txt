@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- pw-press__web-project -------------------------
+pw-press__web-project:	Gamma	holds? 	true
+pw-press__web-project:	Gamma	Geometry? 	true
+pw-press__web-project:	Gamma	FisherExecuted? 	false
+pw-press__web-project:	Gamma	p-Value? 	true
+pw-press__web-project:	Gamma	Surv.Wide 	1
+pw-press__web-project:	Gamma	Surv.NotWide 	10
+pw-press__web-project:	Gamma	Dead.Wide 	0
+pw-press__web-project:	Gamma	Dead.NotWide 	4
+pw-press__web-project:	Gamma	Wide 	1
+------------------------------------------------

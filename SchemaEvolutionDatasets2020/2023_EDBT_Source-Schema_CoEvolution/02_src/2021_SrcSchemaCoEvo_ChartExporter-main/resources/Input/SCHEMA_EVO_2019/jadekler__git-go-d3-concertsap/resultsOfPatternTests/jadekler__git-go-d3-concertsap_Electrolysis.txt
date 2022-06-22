@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jadekler__git-go-d3-concertsap -------------------------
+jadekler__git-go-d3-concertsap:	Electrolysis	holds? 	false
+jadekler__git-go-d3-concertsap:	Electrolysis	Geometry? 	false
+jadekler__git-go-d3-concertsap:	Electrolysis	FisherExecuted? 	false
+jadekler__git-go-d3-concertsap:	Electrolysis	p-Value? 	false
+------------------------------------------------

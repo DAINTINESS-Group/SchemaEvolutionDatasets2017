@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- RichMercer__ContentMetadata -------------------------
+RichMercer__ContentMetadata:	InverseGamma	holds? 	true
+RichMercer__ContentMetadata:	InverseGamma	Geometry? 	true
+RichMercer__ContentMetadata:	InverseGamma	FisherExecuted? 	false
+RichMercer__ContentMetadata:	InverseGamma	p-Value? 	false
+------------------------------------------------

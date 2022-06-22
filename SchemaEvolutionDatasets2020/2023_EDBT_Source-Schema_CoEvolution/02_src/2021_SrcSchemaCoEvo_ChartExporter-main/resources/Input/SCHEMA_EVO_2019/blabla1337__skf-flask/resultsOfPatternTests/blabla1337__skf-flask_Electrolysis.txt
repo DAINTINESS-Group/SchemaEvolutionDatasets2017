@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- blabla1337__skf-flask -------------------------
+blabla1337__skf-flask:	Electrolysis	holds? 	false
+blabla1337__skf-flask:	Electrolysis	Geometry? 	false
+blabla1337__skf-flask:	Electrolysis	FisherExecuted? 	false
+blabla1337__skf-flask:	Electrolysis	p-Value? 	false
+------------------------------------------------

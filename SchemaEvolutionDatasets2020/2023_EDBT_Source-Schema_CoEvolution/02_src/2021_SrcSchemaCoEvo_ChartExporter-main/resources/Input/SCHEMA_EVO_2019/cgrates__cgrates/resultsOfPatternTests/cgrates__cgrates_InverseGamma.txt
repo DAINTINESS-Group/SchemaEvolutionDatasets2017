@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- cgrates__cgrates -------------------------
+cgrates__cgrates:	InverseGamma	holds? 	true
+cgrates__cgrates:	InverseGamma	Geometry? 	false
+cgrates__cgrates:	InverseGamma	FisherExecuted? 	true
+cgrates__cgrates:	InverseGamma	p-Value? 	true
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- taskrabbit__empujar -------------------------
+taskrabbit__empujar:	Electrolysis	holds? 	true
+taskrabbit__empujar:	Electrolysis	Geometry? 	true
+taskrabbit__empujar:	Electrolysis	FisherExecuted? 	false
+taskrabbit__empujar:	Electrolysis	p-Value? 	false
+------------------------------------------------

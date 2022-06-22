@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jasongrimes__silex-simpleuser -------------------------
+jasongrimes__silex-simpleuser:	Gamma	holds? 	false
+jasongrimes__silex-simpleuser:	Gamma	Geometry? 	false
+jasongrimes__silex-simpleuser:	Gamma	FisherExecuted? 	false
+jasongrimes__silex-simpleuser:	Gamma	p-Value? 	false
+jasongrimes__silex-simpleuser:	Gamma	Surv.Wide 	0
+jasongrimes__silex-simpleuser:	Gamma	Surv.NotWide 	2
+jasongrimes__silex-simpleuser:	Gamma	Dead.Wide 	0
+jasongrimes__silex-simpleuser:	Gamma	Dead.NotWide 	0
+jasongrimes__silex-simpleuser:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- georgringer__logging -------------------------
+georgringer__logging:	Electrolysis	holds? 	true
+georgringer__logging:	Electrolysis	Geometry? 	true
+georgringer__logging:	Electrolysis	FisherExecuted? 	false
+georgringer__logging:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- MorpheusXAUT__eveauth -------------------------
+MorpheusXAUT__eveauth:	Electrolysis	holds? 	true
+MorpheusXAUT__eveauth:	Electrolysis	Geometry? 	true
+MorpheusXAUT__eveauth:	Electrolysis	FisherExecuted? 	false
+MorpheusXAUT__eveauth:	Electrolysis	p-Value? 	false
+------------------------------------------------

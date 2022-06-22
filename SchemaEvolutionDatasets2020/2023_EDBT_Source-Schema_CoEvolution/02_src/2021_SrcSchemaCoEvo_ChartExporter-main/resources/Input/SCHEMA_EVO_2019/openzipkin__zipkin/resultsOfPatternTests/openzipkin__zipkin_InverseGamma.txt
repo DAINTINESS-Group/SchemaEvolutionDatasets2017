@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- openzipkin__zipkin -------------------------
+openzipkin__zipkin:	InverseGamma	holds? 	true
+openzipkin__zipkin:	InverseGamma	Geometry? 	true
+openzipkin__zipkin:	InverseGamma	FisherExecuted? 	false
+openzipkin__zipkin:	InverseGamma	p-Value? 	false
+------------------------------------------------

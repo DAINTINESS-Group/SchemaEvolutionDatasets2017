@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- arnoldasgudas__Hangfire.MySqlStorage -------------------------
+arnoldasgudas__Hangfire.MySqlStorage:	InverseGamma	holds? 	true
+arnoldasgudas__Hangfire.MySqlStorage:	InverseGamma	Geometry? 	true
+arnoldasgudas__Hangfire.MySqlStorage:	InverseGamma	FisherExecuted? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- chill117__express-mysql-session -------------------------
+chill117__express-mysql-session:	Gamma	holds? 	false
+chill117__express-mysql-session:	Gamma	Geometry? 	false
+chill117__express-mysql-session:	Gamma	FisherExecuted? 	false
+chill117__express-mysql-session:	Gamma	p-Value? 	false
+chill117__express-mysql-session:	Gamma	Surv.Wide 	0
+chill117__express-mysql-session:	Gamma	Surv.NotWide 	1
+chill117__express-mysql-session:	Gamma	Dead.Wide 	0
+chill117__express-mysql-session:	Gamma	Dead.NotWide 	0
+chill117__express-mysql-session:	Gamma	Wide 	0
+------------------------------------------------

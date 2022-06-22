@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1304730690.sql" newVersion="1386273473.sql"/>
+    <transition oldVersion="1386273473.sql" newVersion="1386273617.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>geocoder_data</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>BLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>shard</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>type</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

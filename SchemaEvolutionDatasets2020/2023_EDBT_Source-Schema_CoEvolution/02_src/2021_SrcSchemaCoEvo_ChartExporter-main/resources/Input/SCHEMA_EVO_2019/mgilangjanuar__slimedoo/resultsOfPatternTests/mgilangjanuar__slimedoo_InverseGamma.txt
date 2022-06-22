@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mgilangjanuar__slimedoo -------------------------
+mgilangjanuar__slimedoo:	InverseGamma	holds? 	true
+mgilangjanuar__slimedoo:	InverseGamma	Geometry? 	true
+mgilangjanuar__slimedoo:	InverseGamma	FisherExecuted? 	false
+mgilangjanuar__slimedoo:	InverseGamma	p-Value? 	false
+------------------------------------------------

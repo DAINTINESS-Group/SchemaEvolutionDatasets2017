@@ -1,0 +1,16 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1505264780.sql;1505525259.sql;Channels;Insertion:UpdateTable;maxage;BIGINT;false;0;-
+1;1505264780.sql;1505525259.sql;Channels;Insertion:UpdateTable;maxbytes;BIGINT;false;0;-
+1;1505264780.sql;1505525259.sql;Channels;Insertion:UpdateTable;maxmsgs;INTEGER;false;0;-
+2;1505525259.sql;1506101806.sql;Messages;Deletion:UpdateTable;expiration;BIGINT;false;0;-
+3;1506101806.sql;1507933525.sql;Subscriptions;Insertion:UpdateTable;lastsent;BIGINTUNSIGNED;false;0;-
+4;1507933525.sql;1509475693.sql;SubsPending;Insertion:UpdateTable;acks;BLOB;false;0;-
+4;1507933525.sql;1509475693.sql;SubsPending;Insertion:UpdateTable;lastsent;BIGINTUNSIGNED;false;0;-
+4;1507933525.sql;1509475693.sql;SubsPending;Insertion:UpdateTable;pending;BLOB;false;0;-
+4;1507933525.sql;1509475693.sql;SubsPending;Insertion:UpdateTable;row;BIGINTUNSIGNED;true;0;-
+4;1507933525.sql;1509475693.sql;SubsPending;Update:KeyChange;seq;BIGINTUNSIGNED;false;0;-
+5;1509475693.sql;1511912678.sql;StoreLock;Insertion:NewTable;id;VARCHAR(30);false;0;-
+5;1509475693.sql;1511912678.sql;StoreLock;Insertion:NewTable;tick;BIGINTUNSIGNED;false;0;-
+6;1511912678.sql;1522349717.sql;SubsPending;Update:KeyChange;row;BIGINTUNSIGNED;false;0;-
+7;1522349717.sql;1526787672.sql;-;-;-;-;-;-;-
+8;1526787672.sql;1526856551.sql;-;-;-;-;-;-;-

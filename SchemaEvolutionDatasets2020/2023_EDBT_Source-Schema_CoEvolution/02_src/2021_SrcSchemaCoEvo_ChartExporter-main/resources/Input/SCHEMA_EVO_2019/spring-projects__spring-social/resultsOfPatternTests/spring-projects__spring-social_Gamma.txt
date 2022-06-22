@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- spring-projects__spring-social -------------------------
+spring-projects__spring-social:	Gamma	holds? 	true
+spring-projects__spring-social:	Gamma	Geometry? 	true
+spring-projects__spring-social:	Gamma	FisherExecuted? 	false
+spring-projects__spring-social:	Gamma	p-Value? 	false
+spring-projects__spring-social:	Gamma	Surv.Wide 	1
+spring-projects__spring-social:	Gamma	Surv.NotWide 	0
+spring-projects__spring-social:	Gamma	Dead.Wide 	0
+spring-projects__spring-social:	Gamma	Dead.NotWide 	0
+spring-projects__spring-social:	Gamma	Wide 	1
+------------------------------------------------

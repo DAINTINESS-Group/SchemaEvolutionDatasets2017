@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- thewhitetulip__Tasks -------------------------
+thewhitetulip__Tasks:	Gamma	holds? 	false
+thewhitetulip__Tasks:	Gamma	Geometry? 	false
+thewhitetulip__Tasks:	Gamma	FisherExecuted? 	false
+thewhitetulip__Tasks:	Gamma	p-Value? 	false
+thewhitetulip__Tasks:	Gamma	Surv.Wide 	0
+thewhitetulip__Tasks:	Gamma	Surv.NotWide 	6
+thewhitetulip__Tasks:	Gamma	Dead.Wide 	0
+thewhitetulip__Tasks:	Gamma	Dead.NotWide 	0
+thewhitetulip__Tasks:	Gamma	Wide 	0
+------------------------------------------------

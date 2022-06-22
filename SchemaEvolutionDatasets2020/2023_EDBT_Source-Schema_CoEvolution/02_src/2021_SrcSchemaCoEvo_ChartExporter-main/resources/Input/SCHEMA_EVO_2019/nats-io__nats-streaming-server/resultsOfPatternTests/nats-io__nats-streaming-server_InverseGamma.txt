@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- nats-io__nats-streaming-server -------------------------
+nats-io__nats-streaming-server:	InverseGamma	holds? 	true
+nats-io__nats-streaming-server:	InverseGamma	Geometry? 	true
+nats-io__nats-streaming-server:	InverseGamma	FisherExecuted? 	false
+nats-io__nats-streaming-server:	InverseGamma	p-Value? 	false
+------------------------------------------------

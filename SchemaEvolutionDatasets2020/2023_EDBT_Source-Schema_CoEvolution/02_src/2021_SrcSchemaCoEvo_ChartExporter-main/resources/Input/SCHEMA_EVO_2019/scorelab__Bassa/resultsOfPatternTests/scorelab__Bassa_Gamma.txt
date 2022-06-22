@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- scorelab__Bassa -------------------------
+scorelab__Bassa:	Gamma	holds? 	false
+scorelab__Bassa:	Gamma	Geometry? 	false
+scorelab__Bassa:	Gamma	FisherExecuted? 	false
+scorelab__Bassa:	Gamma	p-Value? 	false
+scorelab__Bassa:	Gamma	Surv.Wide 	0
+scorelab__Bassa:	Gamma	Surv.NotWide 	3
+scorelab__Bassa:	Gamma	Dead.Wide 	0
+scorelab__Bassa:	Gamma	Dead.NotWide 	0
+scorelab__Bassa:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- studygolang__studygolang -------------------------
+studygolang__studygolang:	InverseGamma	holds? 	true
+studygolang__studygolang:	InverseGamma	Geometry? 	true
+studygolang__studygolang:	InverseGamma	FisherExecuted? 	true
+studygolang__studygolang:	InverseGamma	p-Value? 	false
+------------------------------------------------

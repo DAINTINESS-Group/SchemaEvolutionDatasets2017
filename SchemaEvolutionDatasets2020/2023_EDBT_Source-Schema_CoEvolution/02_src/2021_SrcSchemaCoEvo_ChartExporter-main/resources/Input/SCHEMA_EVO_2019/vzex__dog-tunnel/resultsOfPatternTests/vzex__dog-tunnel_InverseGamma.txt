@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- vzex__dog-tunnel -------------------------
+vzex__dog-tunnel:	InverseGamma	holds? 	true
+vzex__dog-tunnel:	InverseGamma	Geometry? 	true
+vzex__dog-tunnel:	InverseGamma	FisherExecuted? 	false
+vzex__dog-tunnel:	InverseGamma	p-Value? 	false
+------------------------------------------------

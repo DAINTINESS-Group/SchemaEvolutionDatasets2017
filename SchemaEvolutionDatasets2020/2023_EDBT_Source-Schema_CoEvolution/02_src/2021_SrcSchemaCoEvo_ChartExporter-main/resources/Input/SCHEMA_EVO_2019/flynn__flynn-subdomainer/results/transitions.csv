@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1431022933.sql;1433279438.sql;domains;Insertion:UpdateTable;ip_addresses;JSON;false;0;-

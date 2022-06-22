@@ -1,0 +1,66 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1442640296.sql;1442726473.sql;user_email;Insertion:UpdateTable;has_bound;TINYINT(4);false;0;-
+1;1442640296.sql;1442726473.sql;user_email;Insertion:UpdateTable;user_id;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_email;Deletion:UpdateTable;userid;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_phone;Insertion:UpdateTable;has_bound;TINYINT(4);false;0;-
+1;1442640296.sql;1442726473.sql;user_phone;Insertion:UpdateTable;user_id;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_phone;Deletion:UpdateTable;userid;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_qq;Insertion:UpdateTable;has_bound;TINYINT(4);false;0;-
+1;1442640296.sql;1442726473.sql;user_qq;Insertion:UpdateTable;user_id;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_qq;Deletion:UpdateTable;userid;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_wechat;Insertion:UpdateTable;has_bound;TINYINT(4);false;0;-
+1;1442640296.sql;1442726473.sql;user_wechat;Insertion:UpdateTable;user_id;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_wechat;Deletion:UpdateTable;userid;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_weibo;Insertion:UpdateTable;has_bound;TINYINT(4);false;0;-
+1;1442640296.sql;1442726473.sql;user_weibo;Insertion:UpdateTable;user_id;BIGINT(20);false;0;-
+1;1442640296.sql;1442726473.sql;user_weibo;Deletion:UpdateTable;userid;BIGINT(20);false;0;-
+2;1442726473.sql;1442727243.sql;user;Insertion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+3;1442727243.sql;1442729598.sql;user;Insertion:UpdateTable;COMMENT;'是否已经固定，不固定的帐号视为临时帐号，不能绑定其他帐号';false;0;-
+3;1442727243.sql;1442729598.sql;user;Insertion:UpdateTable;nickname;VARCHAR(255);false;0;-
+3;1442727243.sql;1442729598.sql;user_email;Insertion:UpdateTable;COMMENT;'是否已经在USER表绑定一个帐号，用户确认绑定的。';false;0;-
+3;1442727243.sql;1442729598.sql;user_email;Insertion:UpdateTable;nickname;VARCHAR(255);false;0;-
+3;1442727243.sql;1442729598.sql;user_phone;Insertion:UpdateTable;COMMENT;'是否已经在USER表绑定一个帐号，用户确认绑定的。';false;0;-
+3;1442727243.sql;1442729598.sql;user_phone;Insertion:UpdateTable;nickname;VARCHAR(255);false;0;-
+3;1442727243.sql;1442729598.sql;user_qq;Insertion:UpdateTable;COMMENT;'是否已经在USER表绑定一个帐号，用户确认绑定的。';false;0;-
+3;1442727243.sql;1442729598.sql;user_qq;Insertion:UpdateTable;nickname;VARCHAR(255);false;0;-
+3;1442727243.sql;1442729598.sql;user_wechat;Insertion:UpdateTable;COMMENT;'是否已经在USER表绑定一个帐号，用户确认绑定的。';false;0;-
+3;1442727243.sql;1442729598.sql;user_wechat;Insertion:UpdateTable;nickname;VARCHAR(255);false;0;-
+3;1442727243.sql;1442729598.sql;user_weibo;Insertion:UpdateTable;COMMENT;'是否已经在USER表绑定一个帐号，用户确认绑定的。';false;0;-
+3;1442727243.sql;1442729598.sql;user_weibo;Insertion:UpdateTable;nickname;VARCHAR(255);false;0;-
+4;1442729598.sql;1442804693.sql;user_email;Update:TypeChange;COMMENT;'对于新帐户, 为0, 只有当用户确认绑定到某个帐户或者确认新建帐户后才为1';false;0;-
+4;1442729598.sql;1442804693.sql;user_email;Deletion:UpdateTable;has_bound;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_email;Insertion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_phone;Update:TypeChange;COMMENT;'对于新帐户, 为0, 只有当用户确认绑定到某个帐户或者确认新建帐户后才为1';false;0;-
+4;1442729598.sql;1442804693.sql;user_phone;Deletion:UpdateTable;has_bound;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_phone;Insertion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_qq;Update:TypeChange;COMMENT;'对于新帐户, 为0, 只有当用户确认绑定到某个帐户或者确认新建帐户后才为1';false;0;-
+4;1442729598.sql;1442804693.sql;user_qq;Deletion:UpdateTable;has_bound;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_qq;Insertion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_wechat;Update:TypeChange;COMMENT;'对于新帐户, 为0, 只有当用户确认绑定到某个帐户或者确认新建帐户后才为1';false;0;-
+4;1442729598.sql;1442804693.sql;user_wechat;Deletion:UpdateTable;has_bound;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_wechat;Insertion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_weibo;Update:TypeChange;COMMENT;'对于新帐户, 为0, 只有当用户确认绑定到某个帐户或者确认新建帐户后才为1';false;0;-
+4;1442729598.sql;1442804693.sql;user_weibo;Deletion:UpdateTable;has_bound;TINYINT(4);false;0;-
+4;1442729598.sql;1442804693.sql;user_weibo;Insertion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+5;1442804693.sql;1442895222.sql;-;-;-;-;-;-;-
+6;1442895222.sql;1442899100.sql;-;-;-;-;-;-;-
+7;1442899100.sql;1442916015.sql;user;Deletion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user;Insertion:UpdateTable;verified;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_email;Deletion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_email;Insertion:UpdateTable;verified;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_phone;Deletion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_phone;Insertion:UpdateTable;verified;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_qq;Deletion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_qq;Insertion:UpdateTable;verified;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_wechat;Deletion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_wechat;Insertion:UpdateTable;verified;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_weibo;Deletion:UpdateTable;has_fixed;TINYINT(4);false;0;-
+7;1442899100.sql;1442916015.sql;user_weibo;Insertion:UpdateTable;verified;TINYINT(4);false;0;-
+8;1442916015.sql;1443151663.sql;user;Deletion:UpdateTable;auth_types;BIGINT(20);false;0;-
+8;1442916015.sql;1443151663.sql;user;Insertion:UpdateTable;bind_types;BIGINT(20);false;0;-
+8;1442916015.sql;1443151663.sql;user;Insertion:UpdateTable;password_tag;VARBINARY(255);false;0;-
+9;1443151663.sql;1443177812.sql;user_email;Deletion:UpdateTable;nickname;VARCHAR(255);false;0;-
+9;1443151663.sql;1443177812.sql;user_phone;Deletion:UpdateTable;nickname;VARCHAR(255);false;0;-
+9;1443151663.sql;1443177812.sql;user_qq;Deletion:UpdateTable;nickname;VARCHAR(255);false;0;-
+9;1443151663.sql;1443177812.sql;user_wechat;Deletion:UpdateTable;nickname;VARCHAR(255);false;0;-
+9;1443151663.sql;1443177812.sql;user_weibo;Deletion:UpdateTable;nickname;VARCHAR(255);false;0;-

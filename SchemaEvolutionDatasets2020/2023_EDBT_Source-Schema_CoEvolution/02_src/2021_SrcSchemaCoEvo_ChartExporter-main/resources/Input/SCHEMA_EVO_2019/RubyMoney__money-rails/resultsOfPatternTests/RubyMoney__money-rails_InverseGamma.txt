@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- RubyMoney__money-rails -------------------------
+RubyMoney__money-rails:	InverseGamma	holds? 	true
+RubyMoney__money-rails:	InverseGamma	Geometry? 	true
+RubyMoney__money-rails:	InverseGamma	FisherExecuted? 	false
+RubyMoney__money-rails:	InverseGamma	p-Value? 	false
+------------------------------------------------

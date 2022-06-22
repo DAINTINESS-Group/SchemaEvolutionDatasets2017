@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- TalkingData__OWL-v3 -------------------------
+TalkingData__OWL-v3:	Electrolysis	holds? 	false
+TalkingData__OWL-v3:	Electrolysis	Geometry? 	false
+TalkingData__OWL-v3:	Electrolysis	FisherExecuted? 	false
+TalkingData__OWL-v3:	Electrolysis	p-Value? 	false
+------------------------------------------------

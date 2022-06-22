@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1439439658.sql" newVersion="1439845291.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>instances</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created_at</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>vsphere_id</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="NewTable">
+            <table>
+                <name>jupiter_brain.instances</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created_at</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>vsphere_id</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1439845291.sql" newVersion="1439846172.sql">
+        <update type="TypeChange">
+            <table>
+                <name>jupiter_brain.instances</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <deletion type="UpdateTable">
+            <table>
+                <name>jupiter_brain.instances</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>vsphere_id</name>
+                <type>UUID</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1439846172.sql" newVersion="1439912395.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>jupiter_brain.instances</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>destroyed_at</name>
+                <type>TIMESTAMPWITHOUTTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

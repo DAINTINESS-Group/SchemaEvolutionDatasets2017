@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- scherersoftware__cake-wiki -------------------------
+scherersoftware__cake-wiki:	Gamma	holds? 	false
+scherersoftware__cake-wiki:	Gamma	Geometry? 	false
+scherersoftware__cake-wiki:	Gamma	FisherExecuted? 	false
+scherersoftware__cake-wiki:	Gamma	p-Value? 	false
+scherersoftware__cake-wiki:	Gamma	Surv.Wide 	0
+scherersoftware__cake-wiki:	Gamma	Surv.NotWide 	1
+scherersoftware__cake-wiki:	Gamma	Dead.Wide 	0
+scherersoftware__cake-wiki:	Gamma	Dead.NotWide 	0
+scherersoftware__cake-wiki:	Gamma	Wide 	0
+------------------------------------------------

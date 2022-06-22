@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- joomlatools__joomla-platform-categories -------------------------
+joomlatools__joomla-platform-categories:	Gamma	holds? 	true
+joomlatools__joomla-platform-categories:	Gamma	Geometry? 	true
+joomlatools__joomla-platform-categories:	Gamma	FisherExecuted? 	false
+joomlatools__joomla-platform-categories:	Gamma	p-Value? 	false
+joomlatools__joomla-platform-categories:	Gamma	Surv.Wide 	1
+joomlatools__joomla-platform-categories:	Gamma	Surv.NotWide 	0
+joomlatools__joomla-platform-categories:	Gamma	Dead.Wide 	0
+joomlatools__joomla-platform-categories:	Gamma	Dead.NotWide 	0
+joomlatools__joomla-platform-categories:	Gamma	Wide 	1
+------------------------------------------------

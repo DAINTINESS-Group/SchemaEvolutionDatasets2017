@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dotkernel__frontend -------------------------
+dotkernel__frontend:	Electrolysis	holds? 	true
+dotkernel__frontend:	Electrolysis	Geometry? 	true
+dotkernel__frontend:	Electrolysis	FisherExecuted? 	false
+dotkernel__frontend:	Electrolysis	p-Value? 	false
+------------------------------------------------

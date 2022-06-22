@@ -1,0 +1,10 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1427878746.sql;1456497980.sql;item_map_varchar_locale;Insertion:NewTable;attr_id;INT(11);false;0;-
+1;1427878746.sql;1456497980.sql;item_map_varchar_locale;Insertion:NewTable;country;CHAR(2);false;0;-
+1;1427878746.sql;1456497980.sql;item_map_varchar_locale;Insertion:NewTable;item_id;BIGINT(20);false;0;-
+1;1427878746.sql;1456497980.sql;item_map_varchar_locale;Insertion:NewTable;language;CHAR(2);false;0;-
+1;1427878746.sql;1456497980.sql;item_map_varchar_locale;Insertion:NewTable;value;VARCHAR(255);false;0;-
+1;1427878746.sql;1456497980.sql;items_recent_popularity_new;Insertion:NewTable;decay_id;INT(11);false;0;-
+1;1427878746.sql;1456497980.sql;items_recent_popularity_new;Insertion:NewTable;item_id;INT(11);false;0;-
+1;1427878746.sql;1456497980.sql;items_recent_popularity_new;Insertion:NewTable;last_update;TIMESTAMP;false;0;-
+1;1427878746.sql;1456497980.sql;items_recent_popularity_new;Insertion:NewTable;score;FLOAT;false;0;-

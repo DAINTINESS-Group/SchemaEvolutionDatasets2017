@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- n2n__page -------------------------
+n2n__page:	Gamma	holds? 	true
+n2n__page:	Gamma	Geometry? 	true
+n2n__page:	Gamma	FisherExecuted? 	false
+n2n__page:	Gamma	p-Value? 	false
+n2n__page:	Gamma	Surv.Wide 	1
+n2n__page:	Gamma	Surv.NotWide 	7
+n2n__page:	Gamma	Dead.Wide 	0
+n2n__page:	Gamma	Dead.NotWide 	0
+n2n__page:	Gamma	Wide 	1
+------------------------------------------------

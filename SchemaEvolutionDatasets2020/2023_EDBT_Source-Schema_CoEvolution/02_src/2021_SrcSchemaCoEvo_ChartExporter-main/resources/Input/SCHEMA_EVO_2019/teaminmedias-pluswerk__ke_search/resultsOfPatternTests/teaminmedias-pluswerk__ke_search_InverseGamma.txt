@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- teaminmedias-pluswerk__ke_search -------------------------
+teaminmedias-pluswerk__ke_search:	InverseGamma	holds? 	true
+teaminmedias-pluswerk__ke_search:	InverseGamma	Geometry? 	true
+teaminmedias-pluswerk__ke_search:	InverseGamma	FisherExecuted? 	false
+teaminmedias-pluswerk__ke_search:	InverseGamma	p-Value? 	false
+------------------------------------------------

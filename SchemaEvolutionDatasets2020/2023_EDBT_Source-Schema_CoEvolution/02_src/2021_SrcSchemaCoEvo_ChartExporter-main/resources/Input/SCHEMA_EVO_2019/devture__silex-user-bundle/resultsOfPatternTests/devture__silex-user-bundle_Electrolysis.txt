@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- devture__silex-user-bundle -------------------------
+devture__silex-user-bundle:	Electrolysis	holds? 	false
+devture__silex-user-bundle:	Electrolysis	Geometry? 	false
+devture__silex-user-bundle:	Electrolysis	FisherExecuted? 	false
+devture__silex-user-bundle:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,4 @@
+trID	epochTime	oldVer	newVer	humanTime	distFromV0InDays	runningYearFromV0	runningMonthFromV0	#numOldTables	#numNewTables	#numOldAttrs	#numNewAttrs	tablesIns	tablesDel	attrsInsWithTableIns	attrsbDelWithTableDel	attrsInjected	attrsEjected	attrsWithTypeUpd	attrsInPKUpd	tableDelta	attrDelta	attrBirthsSum	attrDeathsSum	attrUpdsSum	Expansion	Maintenance	TotalAttrActivity	
+0	1520953054		1520953054.sql	2018-03-13 14:57:34	0	0	0		2		15	2	0	15	0	0	0	0	0			15	0	0	15	0	15	
+1	1523558873	1520953054.sql	1523558873.sql	2018-04-12 18:47:53	30	1	1	2	2	15	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+2	1523888831	1523558873.sql	1523888831.sql	2018-04-16 14:27:11	33	1	2	2	2	15	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	

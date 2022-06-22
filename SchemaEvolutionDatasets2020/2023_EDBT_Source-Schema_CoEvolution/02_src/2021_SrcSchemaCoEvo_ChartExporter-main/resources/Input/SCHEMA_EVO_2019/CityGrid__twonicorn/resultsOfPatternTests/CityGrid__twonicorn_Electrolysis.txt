@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- CityGrid__twonicorn -------------------------
+CityGrid__twonicorn:	Electrolysis	holds? 	true
+CityGrid__twonicorn:	Electrolysis	Geometry? 	true
+CityGrid__twonicorn:	Electrolysis	FisherExecuted? 	false
+CityGrid__twonicorn:	Electrolysis	p-Value? 	false
+------------------------------------------------

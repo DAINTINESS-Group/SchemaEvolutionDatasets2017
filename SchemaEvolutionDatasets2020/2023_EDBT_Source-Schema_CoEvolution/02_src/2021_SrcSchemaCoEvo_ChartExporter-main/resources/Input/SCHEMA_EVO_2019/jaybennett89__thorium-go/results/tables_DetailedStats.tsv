@@ -1,0 +1,10 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+account_data	7	0	-	6	2015-12-27 10:27:17	2016-01-28 08:26:38	0	1	31	7	7	7	1	0	0	0	0		20	0	20
+characters	7	0	-	6	2015-12-27 10:27:17	2016-01-28 08:26:38	0	1	31	5	5	5	1	0	0	0	0		20	0	20
+game_servers	3	0	2	2	2015-12-27 10:27:17	2016-01-04 09:10:20	0	1	7	3	3	3	1	0	0	0	0		10	0	10
+games	7	0	-	6	2015-12-27 10:27:17	2016-01-28 08:26:38	0	1	31	3	6	5.57	2	3	1	0.43	0.14	3	20	1	21
+hosts	4	3	-	6	2016-01-10 07:24:06	2016-01-28 08:26:38	1	1	18	3	3	3	1	0	0	0	0		20	0	20
+loading_hosts	4	3	-	6	2016-01-10 07:24:06	2016-01-28 08:26:38	1	1	18	3	3	3	1	0	0	0	0		20	0	20
+machines	7	0	-	6	2015-12-27 10:27:17	2016-01-28 08:26:38	0	1	31	3	3	3	1	0	0	0	0		20	0	20
+machines_metadata	7	0	-	6	2015-12-27 10:27:17	2016-01-28 08:26:38	0	1	31	6	6	6	1	0	0	0	0		20	0	20
+pending_players	1	5	5	5	2016-01-25 10:12:51	2016-01-25 10:12:51	1	1	0	2	2	2	1	0	0	0	0		10	0	10

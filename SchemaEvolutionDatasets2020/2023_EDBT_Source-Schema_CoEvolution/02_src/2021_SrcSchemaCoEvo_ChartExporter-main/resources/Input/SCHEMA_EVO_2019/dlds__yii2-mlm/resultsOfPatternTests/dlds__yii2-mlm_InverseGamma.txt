@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dlds__yii2-mlm -------------------------
+dlds__yii2-mlm:	InverseGamma	holds? 	false
+dlds__yii2-mlm:	InverseGamma	Geometry? 	false
+dlds__yii2-mlm:	InverseGamma	FisherExecuted? 	false
+dlds__yii2-mlm:	InverseGamma	p-Value? 	false
+------------------------------------------------

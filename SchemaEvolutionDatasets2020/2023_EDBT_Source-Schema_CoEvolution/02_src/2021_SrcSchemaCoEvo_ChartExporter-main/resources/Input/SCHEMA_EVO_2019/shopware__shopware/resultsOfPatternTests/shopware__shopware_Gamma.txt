@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- shopware__shopware -------------------------
+shopware__shopware:	Gamma	holds? 	true
+shopware__shopware:	Gamma	Geometry? 	true
+shopware__shopware:	Gamma	FisherExecuted? 	false
+shopware__shopware:	Gamma	p-Value? 	false
+shopware__shopware:	Gamma	Surv.Wide 	46
+shopware__shopware:	Gamma	Surv.NotWide 	181
+shopware__shopware:	Gamma	Dead.Wide 	0
+shopware__shopware:	Gamma	Dead.NotWide 	0
+shopware__shopware:	Gamma	Wide 	46
+------------------------------------------------

@@ -1,0 +1,8 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+Channels	9	0	-	8	2017-09-13 01:06:20	2018-05-20 22:49:11	0	1	249	4	7	6.67	1.75	3	1	0.33	0.11	3	20	1	21
+Clients	9	0	-	8	2017-09-13 01:06:20	2018-05-20 22:49:11	0	1	249	2	2	2	1	0	0	0	0		20	0	20
+Messages	9	0	-	8	2017-09-13 01:06:20	2018-05-20 22:49:11	0	1	249	6	5	5.22	0.83	1	1	0.11	0.11	1	20	1	21
+ServerInfo	9	0	-	8	2017-09-13 01:06:20	2018-05-20 22:49:11	0	1	249	4	4	4	1	0	0	0	0		20	0	20
+StoreLock	4	5	-	8	2017-11-28 23:44:38	2018-05-20 22:49:11	1	1	172	2	2	2	1	0	0	0	0		20	0	20
+SubsPending	9	0	-	8	2017-09-13 01:06:20	2018-05-20 22:49:11	0	1	249	2	6	4.22	3	5	2	0.56	0.22	2.5	20	1	21
+Subscriptions	9	0	-	8	2017-09-13 01:06:20	2018-05-20 22:49:11	0	1	249	4	5	4.67	1.25	1	1	0.11	0.11	1	20	1	21

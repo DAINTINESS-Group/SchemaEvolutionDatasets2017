@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tronsha__cerberus -------------------------
+tronsha__cerberus:	Electrolysis	holds? 	true
+tronsha__cerberus:	Electrolysis	Geometry? 	true
+tronsha__cerberus:	Electrolysis	FisherExecuted? 	false
+tronsha__cerberus:	Electrolysis	p-Value? 	false
+------------------------------------------------

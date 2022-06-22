@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- keybase__node-client -------------------------
+keybase__node-client:	InverseGamma	holds? 	true
+keybase__node-client:	InverseGamma	Geometry? 	true
+keybase__node-client:	InverseGamma	FisherExecuted? 	false
+keybase__node-client:	InverseGamma	p-Value? 	false
+------------------------------------------------

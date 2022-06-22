@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- magikcypress__slim-boot-boilerplate -------------------------
+magikcypress__slim-boot-boilerplate:	Electrolysis	holds? 	true
+magikcypress__slim-boot-boilerplate:	Electrolysis	Geometry? 	true
+magikcypress__slim-boot-boilerplate:	Electrolysis	FisherExecuted? 	false
+magikcypress__slim-boot-boilerplate:	Electrolysis	p-Value? 	false
+------------------------------------------------

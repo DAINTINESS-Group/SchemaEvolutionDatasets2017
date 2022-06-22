@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1390793435.sql" newVersion="1454818393.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>centros</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>distrito_electoral_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>centros</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>distrito_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="NewTable">
+            <table>
+                <name>distritos_electorales</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>distrito_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INTEGER</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>nombre</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>personas</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>distrito_id</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

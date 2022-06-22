@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- dburry__indexed_search -------------------------
+dburry__indexed_search:	Gamma	holds? 	false
+dburry__indexed_search:	Gamma	Geometry? 	false
+dburry__indexed_search:	Gamma	FisherExecuted? 	false
+dburry__indexed_search:	Gamma	p-Value? 	false
+dburry__indexed_search:	Gamma	Surv.Wide 	0
+dburry__indexed_search:	Gamma	Surv.NotWide 	7
+dburry__indexed_search:	Gamma	Dead.Wide 	0
+dburry__indexed_search:	Gamma	Dead.NotWide 	2
+dburry__indexed_search:	Gamma	Wide 	0
+------------------------------------------------

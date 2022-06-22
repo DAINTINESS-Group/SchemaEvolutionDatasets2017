@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jaredbeck__paper_trail-sinatra -------------------------
+jaredbeck__paper_trail-sinatra:	InverseGamma	holds? 	true
+jaredbeck__paper_trail-sinatra:	InverseGamma	Geometry? 	true
+jaredbeck__paper_trail-sinatra:	InverseGamma	FisherExecuted? 	false
+jaredbeck__paper_trail-sinatra:	InverseGamma	p-Value? 	false
+------------------------------------------------

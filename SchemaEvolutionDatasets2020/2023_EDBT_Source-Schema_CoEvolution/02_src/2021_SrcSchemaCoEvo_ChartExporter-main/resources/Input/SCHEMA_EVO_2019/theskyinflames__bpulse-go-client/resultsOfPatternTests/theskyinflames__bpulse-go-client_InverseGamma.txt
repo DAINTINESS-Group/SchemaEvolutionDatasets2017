@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- theskyinflames__bpulse-go-client -------------------------
+theskyinflames__bpulse-go-client:	InverseGamma	holds? 	true
+theskyinflames__bpulse-go-client:	InverseGamma	Geometry? 	true
+theskyinflames__bpulse-go-client:	InverseGamma	FisherExecuted? 	false
+theskyinflames__bpulse-go-client:	InverseGamma	p-Value? 	false
+------------------------------------------------

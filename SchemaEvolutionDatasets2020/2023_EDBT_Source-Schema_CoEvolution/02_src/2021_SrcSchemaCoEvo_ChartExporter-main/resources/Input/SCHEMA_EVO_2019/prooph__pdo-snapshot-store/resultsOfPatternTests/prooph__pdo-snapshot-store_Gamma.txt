@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- prooph__pdo-snapshot-store -------------------------
+prooph__pdo-snapshot-store:	Gamma	holds? 	false
+prooph__pdo-snapshot-store:	Gamma	Geometry? 	false
+prooph__pdo-snapshot-store:	Gamma	FisherExecuted? 	false
+prooph__pdo-snapshot-store:	Gamma	p-Value? 	false
+prooph__pdo-snapshot-store:	Gamma	Surv.Wide 	0
+prooph__pdo-snapshot-store:	Gamma	Surv.NotWide 	1
+prooph__pdo-snapshot-store:	Gamma	Dead.Wide 	0
+prooph__pdo-snapshot-store:	Gamma	Dead.NotWide 	0
+prooph__pdo-snapshot-store:	Gamma	Wide 	0
+------------------------------------------------

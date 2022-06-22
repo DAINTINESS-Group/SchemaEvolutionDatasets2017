@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- symfony__security-acl -------------------------
+symfony__security-acl:	Gamma	holds? 	true
+symfony__security-acl:	Gamma	Geometry? 	true
+symfony__security-acl:	Gamma	FisherExecuted? 	false
+symfony__security-acl:	Gamma	p-Value? 	false
+symfony__security-acl:	Gamma	Surv.Wide 	1
+symfony__security-acl:	Gamma	Surv.NotWide 	4
+symfony__security-acl:	Gamma	Dead.Wide 	0
+symfony__security-acl:	Gamma	Dead.NotWide 	0
+symfony__security-acl:	Gamma	Wide 	1
+------------------------------------------------

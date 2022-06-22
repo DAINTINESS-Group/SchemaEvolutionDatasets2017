@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- skarllot__netpaper -------------------------
+skarllot__netpaper:	InverseGamma	holds? 	true
+skarllot__netpaper:	InverseGamma	Geometry? 	true
+skarllot__netpaper:	InverseGamma	FisherExecuted? 	false
+skarllot__netpaper:	InverseGamma	p-Value? 	false
+------------------------------------------------

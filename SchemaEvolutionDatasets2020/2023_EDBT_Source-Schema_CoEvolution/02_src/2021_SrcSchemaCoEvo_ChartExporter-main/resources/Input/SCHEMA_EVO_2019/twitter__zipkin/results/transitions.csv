@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1528329887.sql;1545113555.sql;-;-;-;-;-;-;-
+2;1545113555.sql;1554280670.sql;-;-;-;-;-;-;-
+3;1554280670.sql;1555229745.sql;zipkin_spans;Insertion:UpdateTable;remote_service_name;VARCHAR(255);false;0;-
+4;1555229745.sql;1556332881.sql;-;-;-;-;-;-;-

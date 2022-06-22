@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1422288945.sql" newVersion="1422289899.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>user</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>admin</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>is_ldap</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>user</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>isAdmin</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>isLdap</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1422289899.sql" newVersion="1422302402.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>user</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>isAdmin</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>isLdap</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>user</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>is_admin</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>is_ldap</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

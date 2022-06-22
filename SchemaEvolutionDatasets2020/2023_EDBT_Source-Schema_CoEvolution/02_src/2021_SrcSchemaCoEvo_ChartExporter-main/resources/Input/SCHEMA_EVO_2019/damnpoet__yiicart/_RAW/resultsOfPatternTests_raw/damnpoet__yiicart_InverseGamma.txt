@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- damnpoet__yiicart -------------------------
+damnpoet__yiicart:	InverseGamma	holds? 	true
+damnpoet__yiicart:	InverseGamma	Geometry? 	true
+damnpoet__yiicart:	InverseGamma	FisherExecuted? 	false
+damnpoet__yiicart:	InverseGamma	p-Value? 	false
+------------------------------------------------

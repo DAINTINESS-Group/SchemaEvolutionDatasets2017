@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- neocogent__sqlchain -------------------------
+neocogent__sqlchain:	Gamma	holds? 	false
+neocogent__sqlchain:	Gamma	Geometry? 	false
+neocogent__sqlchain:	Gamma	FisherExecuted? 	false
+neocogent__sqlchain:	Gamma	p-Value? 	false
+neocogent__sqlchain:	Gamma	Surv.Wide 	0
+neocogent__sqlchain:	Gamma	Surv.NotWide 	9
+neocogent__sqlchain:	Gamma	Dead.Wide 	0
+neocogent__sqlchain:	Gamma	Dead.NotWide 	0
+neocogent__sqlchain:	Gamma	Wide 	0
+------------------------------------------------

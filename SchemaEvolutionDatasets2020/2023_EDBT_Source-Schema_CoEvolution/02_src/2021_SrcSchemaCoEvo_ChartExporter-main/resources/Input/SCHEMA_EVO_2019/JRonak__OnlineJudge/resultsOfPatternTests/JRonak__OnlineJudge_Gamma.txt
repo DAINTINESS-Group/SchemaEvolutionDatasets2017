@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- JRonak__OnlineJudge -------------------------
+JRonak__OnlineJudge:	Gamma	holds? 	true
+JRonak__OnlineJudge:	Gamma	Geometry? 	true
+JRonak__OnlineJudge:	Gamma	FisherExecuted? 	false
+JRonak__OnlineJudge:	Gamma	p-Value? 	false
+JRonak__OnlineJudge:	Gamma	Surv.Wide 	1
+JRonak__OnlineJudge:	Gamma	Surv.NotWide 	5
+JRonak__OnlineJudge:	Gamma	Dead.Wide 	0
+JRonak__OnlineJudge:	Gamma	Dead.NotWide 	0
+JRonak__OnlineJudge:	Gamma	Wide 	1
+------------------------------------------------

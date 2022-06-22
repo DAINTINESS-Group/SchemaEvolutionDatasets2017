@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- marssa__footprint -------------------------
+marssa__footprint:	InverseGamma	holds? 	true
+marssa__footprint:	InverseGamma	Geometry? 	true
+marssa__footprint:	InverseGamma	FisherExecuted? 	false
+marssa__footprint:	InverseGamma	p-Value? 	false
+------------------------------------------------

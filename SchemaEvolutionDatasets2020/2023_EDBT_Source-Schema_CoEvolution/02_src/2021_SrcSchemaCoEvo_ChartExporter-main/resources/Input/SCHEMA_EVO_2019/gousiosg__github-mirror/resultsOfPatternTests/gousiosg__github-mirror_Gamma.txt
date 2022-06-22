@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- gousiosg__github-mirror -------------------------
+gousiosg__github-mirror:	Gamma	holds? 	true
+gousiosg__github-mirror:	Gamma	Geometry? 	true
+gousiosg__github-mirror:	Gamma	FisherExecuted? 	false
+gousiosg__github-mirror:	Gamma	p-Value? 	false
+gousiosg__github-mirror:	Gamma	Surv.Wide 	1
+gousiosg__github-mirror:	Gamma	Surv.NotWide 	22
+gousiosg__github-mirror:	Gamma	Dead.Wide 	0
+gousiosg__github-mirror:	Gamma	Dead.NotWide 	0
+gousiosg__github-mirror:	Gamma	Wide 	1
+------------------------------------------------

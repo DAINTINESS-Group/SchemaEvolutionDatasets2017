@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mozilla-services__go-bouncer -------------------------
+mozilla-services__go-bouncer:	Gamma	holds? 	true
+mozilla-services__go-bouncer:	Gamma	Geometry? 	true
+mozilla-services__go-bouncer:	Gamma	FisherExecuted? 	false
+mozilla-services__go-bouncer:	Gamma	p-Value? 	false
+mozilla-services__go-bouncer:	Gamma	Surv.Wide 	1
+mozilla-services__go-bouncer:	Gamma	Surv.NotWide 	28
+mozilla-services__go-bouncer:	Gamma	Dead.Wide 	0
+mozilla-services__go-bouncer:	Gamma	Dead.NotWide 	0
+mozilla-services__go-bouncer:	Gamma	Wide 	1
+------------------------------------------------

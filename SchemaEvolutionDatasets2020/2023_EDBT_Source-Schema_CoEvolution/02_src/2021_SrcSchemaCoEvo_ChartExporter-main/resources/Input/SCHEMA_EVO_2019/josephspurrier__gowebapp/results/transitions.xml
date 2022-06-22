@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1437944316.sql" newVersion="1461653958.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>note</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>created_at</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>deleted</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>updated_at</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1461653958.sql" newVersion="1494912069.sql"/>
+</transitions>

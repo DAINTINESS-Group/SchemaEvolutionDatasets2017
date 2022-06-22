@@ -1,0 +1,9 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+band;8;0;-;0;3;3;3.0
+band_concert;8;0;-;2;5;3;4.5
+band_concert_record;2;6;-;0;5;5;5.0
+concert;8;0;-;2;7;7;7.0
+retailer;8;0;-;0;3;3;3.0
+state;8;0;-;0;3;3;3.0
+ticket_record;2;6;-;0;5;5;5.0
+ticket_records;6;0;5;0;5;5;5.0

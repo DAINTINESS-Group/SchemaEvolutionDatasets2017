@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- symphonycms__symphony-2 -------------------------
+symphonycms__symphony-2:	Electrolysis	holds? 	true
+symphonycms__symphony-2:	Electrolysis	Geometry? 	true
+symphonycms__symphony-2:	Electrolysis	FisherExecuted? 	false
+symphonycms__symphony-2:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1523456283.sql" newVersion="1524220539.sql"/>
+    <transition oldVersion="1524220539.sql" newVersion="1524225031.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>execution</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>kind</name>
+                <type>VARCHAR(256)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1524225031.sql" newVersion="1524225497.sql"/>
+</transitions>

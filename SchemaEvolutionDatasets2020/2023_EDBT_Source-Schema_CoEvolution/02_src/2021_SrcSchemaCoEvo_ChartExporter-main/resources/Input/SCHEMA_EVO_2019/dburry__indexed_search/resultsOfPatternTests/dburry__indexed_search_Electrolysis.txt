@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dburry__indexed_search -------------------------
+dburry__indexed_search:	Electrolysis	holds? 	true
+dburry__indexed_search:	Electrolysis	Geometry? 	true
+dburry__indexed_search:	Electrolysis	FisherExecuted? 	false
+dburry__indexed_search:	Electrolysis	p-Value? 	false
+------------------------------------------------

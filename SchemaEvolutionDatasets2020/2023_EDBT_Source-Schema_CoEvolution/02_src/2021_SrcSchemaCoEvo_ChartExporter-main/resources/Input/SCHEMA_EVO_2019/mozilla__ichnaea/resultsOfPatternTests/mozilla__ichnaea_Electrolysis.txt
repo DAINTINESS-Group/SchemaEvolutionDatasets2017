@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla__ichnaea -------------------------
+mozilla__ichnaea:	Electrolysis	holds? 	true
+mozilla__ichnaea:	Electrolysis	Geometry? 	true
+mozilla__ichnaea:	Electrolysis	FisherExecuted? 	false
+mozilla__ichnaea:	Electrolysis	p-Value? 	false
+------------------------------------------------

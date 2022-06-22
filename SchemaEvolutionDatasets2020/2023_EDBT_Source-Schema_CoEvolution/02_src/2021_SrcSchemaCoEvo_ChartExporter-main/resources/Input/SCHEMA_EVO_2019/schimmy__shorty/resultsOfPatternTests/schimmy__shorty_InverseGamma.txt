@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- schimmy__shorty -------------------------
+schimmy__shorty:	InverseGamma	holds? 	true
+schimmy__shorty:	InverseGamma	Geometry? 	true
+schimmy__shorty:	InverseGamma	FisherExecuted? 	false
+schimmy__shorty:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- rolfvreijdenberger__izzum-statemachine -------------------------
+rolfvreijdenberger__izzum-statemachine:	Gamma	holds? 	false
+rolfvreijdenberger__izzum-statemachine:	Gamma	Geometry? 	false
+rolfvreijdenberger__izzum-statemachine:	Gamma	FisherExecuted? 	false
+rolfvreijdenberger__izzum-statemachine:	Gamma	p-Value? 	false
+rolfvreijdenberger__izzum-statemachine:	Gamma	Surv.Wide 	0
+rolfvreijdenberger__izzum-statemachine:	Gamma	Surv.NotWide 	5
+rolfvreijdenberger__izzum-statemachine:	Gamma	Dead.Wide 	0
+rolfvreijdenberger__izzum-statemachine:	Gamma	Dead.NotWide 	0
+rolfvreijdenberger__izzum-statemachine:	Gamma	Wide 	0
+------------------------------------------------

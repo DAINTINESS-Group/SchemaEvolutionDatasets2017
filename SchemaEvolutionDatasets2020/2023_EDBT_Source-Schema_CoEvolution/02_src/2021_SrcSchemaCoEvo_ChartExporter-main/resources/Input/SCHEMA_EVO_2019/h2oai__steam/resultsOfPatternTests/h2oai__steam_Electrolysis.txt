@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- h2oai__steam -------------------------
+h2oai__steam:	Electrolysis	holds? 	true
+h2oai__steam:	Electrolysis	Geometry? 	true
+h2oai__steam:	Electrolysis	FisherExecuted? 	false
+h2oai__steam:	Electrolysis	p-Value? 	false
+------------------------------------------------

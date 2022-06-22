@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- snakerflow__snakerflow -------------------------
+snakerflow__snakerflow:	InverseGamma	holds? 	true
+snakerflow__snakerflow:	InverseGamma	Geometry? 	true
+snakerflow__snakerflow:	InverseGamma	FisherExecuted? 	false
+snakerflow__snakerflow:	InverseGamma	p-Value? 	false
+------------------------------------------------

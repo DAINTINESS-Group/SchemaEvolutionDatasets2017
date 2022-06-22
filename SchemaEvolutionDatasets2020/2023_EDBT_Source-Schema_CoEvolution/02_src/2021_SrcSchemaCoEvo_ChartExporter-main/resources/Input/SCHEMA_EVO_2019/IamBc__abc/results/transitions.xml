@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1451250901.sql" newVersion="1451250995.sql"/>
+    <transition oldVersion="1451250995.sql" newVersion="1451423894.sql"/>
+    <transition oldVersion="1451423894.sql" newVersion="1451473405.sql"/>
+    <transition oldVersion="1451473405.sql" newVersion="1451481666.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>boards</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>image_board_cluster_id</name>
+                <type>INTREFERENCESIMAGE_BOARD_CLUSTERS</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1451481666.sql" newVersion="1451837460.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>image_board_clusters</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>api_key</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1451837460.sql" newVersion="1452721110.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>boards</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>thread_setting_max_active_thread_count</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1452721110.sql" newVersion="1452721902.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>threads</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>is_active</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1452721902.sql" newVersion="1457175806.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>thread_posts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>inserted_at</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>source_ip</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1457175806.sql" newVersion="1457182556.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>threads</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>max_post_length</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>min_post_length</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1457182556.sql" newVersion="1460919928.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>apis</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>api_key</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>https_cert_file</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>is_https</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>key_get_param_name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1460919928.sql" newVersion="1461567210.sql"/>
+    <transition oldVersion="1461567210.sql" newVersion="1462908026.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>image_board_clusters</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>settings_json</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1462908026.sql" newVersion="1462912127.sql"/>
+</transitions>

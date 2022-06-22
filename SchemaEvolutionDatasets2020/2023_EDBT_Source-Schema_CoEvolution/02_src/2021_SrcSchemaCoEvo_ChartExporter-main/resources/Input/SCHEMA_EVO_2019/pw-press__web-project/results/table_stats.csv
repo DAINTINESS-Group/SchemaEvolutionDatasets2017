@@ -1,0 +1,16 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+bootstraps;11;0;-;0;10;10;10.0
+images;11;0;-;2;5;5;5.0
+layouts;8;3;-;0;2;2;2.0
+localization;1;0;0;0;6;6;6.0
+localization_text;1;0;0;0;4;4;4.0
+obligations;10;1;-;0;6;6;6.0
+page;1;0;0;0;5;5;5.0
+posts;11;0;-;10;6;9;8.181818
+posts_tags;11;0;-;5;3;2;2.2727273
+roles;11;0;-;0;2;2;2.0
+settings;8;3;-;8;2;10;7.5
+tags;11;0;-;7;10;6;6.909091
+themes;7;4;-;0;2;2;2.0
+user;1;0;0;0;6;6;6.0
+users;11;0;-;0;15;15;15.0

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- foodcoopshop__foodcoopshop -------------------------
+foodcoopshop__foodcoopshop:	InverseGamma	holds? 	true
+foodcoopshop__foodcoopshop:	InverseGamma	Geometry? 	true
+foodcoopshop__foodcoopshop:	InverseGamma	FisherExecuted? 	true
+foodcoopshop__foodcoopshop:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- TalkingData__OWL-v3 -------------------------
+TalkingData__OWL-v3:	Gamma	holds? 	true
+TalkingData__OWL-v3:	Gamma	Geometry? 	true
+TalkingData__OWL-v3:	Gamma	FisherExecuted? 	false
+TalkingData__OWL-v3:	Gamma	p-Value? 	true
+TalkingData__OWL-v3:	Gamma	Surv.Wide 	7
+TalkingData__OWL-v3:	Gamma	Surv.NotWide 	26
+TalkingData__OWL-v3:	Gamma	Dead.Wide 	0
+TalkingData__OWL-v3:	Gamma	Dead.NotWide 	8
+TalkingData__OWL-v3:	Gamma	Wide 	7
+------------------------------------------------

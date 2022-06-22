@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1436568757.sql" newVersion="1440868948.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>finder_terms</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>language</name>
+                <type>VARCHAR(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>finder_tokens</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>language</name>
+                <type>CHAR(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>finder_tokens_aggregate</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>language</name>
+                <type>CHAR(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1440868948.sql" newVersion="1488340616.sql">
+        <update type="TypeChange">
+            <table>
+                <name>finder_links</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>title</name>
+                <type>VARCHAR(400)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>finder_terms</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>language</name>
+                <type>CHAR(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

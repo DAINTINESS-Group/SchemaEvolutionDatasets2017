@@ -1,0 +1,4 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1339103517.sql;1358998594.sql;products;Insertion:UpdateTable;price_in_a_range_cents;INTEGER;false;0;-
+2;1358998594.sql;1382480969.sql;products;Insertion:UpdateTable;sale_price_amount;INTEGER;false;0;-
+2;1358998594.sql;1382480969.sql;products;Insertion:UpdateTable;sale_price_currency_code;VARCHAR(255);false;0;-

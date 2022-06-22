@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jcoppieters__cody -------------------------
+jcoppieters__cody:	Electrolysis	holds? 	true
+jcoppieters__cody:	Electrolysis	Geometry? 	true
+jcoppieters__cody:	Electrolysis	FisherExecuted? 	false
+jcoppieters__cody:	Electrolysis	p-Value? 	false
+------------------------------------------------

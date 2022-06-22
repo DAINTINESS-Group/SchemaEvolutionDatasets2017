@@ -1,0 +1,4 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1421781284.sql;1424945390.sql;scenario_test_runs;Deletion:UpdateTable;scenario_tag_id;INT(11);false;0;-
+2;1424945390.sql;1425579496.sql;-;-;-;-;-;-;-
+3;1425579496.sql;1434633710.sql;scenarios;Insertion:UpdateTable;failure_rate;INT(11);false;0;-

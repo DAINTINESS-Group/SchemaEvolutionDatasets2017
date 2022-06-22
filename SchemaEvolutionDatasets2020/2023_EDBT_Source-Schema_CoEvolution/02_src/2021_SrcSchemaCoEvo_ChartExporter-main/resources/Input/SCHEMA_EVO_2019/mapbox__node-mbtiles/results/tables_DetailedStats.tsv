@@ -1,0 +1,8 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+geocoder_data	1	2	-	2	2013-12-05 20:00:17	2013-12-05 20:00:17	3	3	0	3	3	3	1	0	0	0	0		20	0	20
+grid_key	3	0	-	2	2011-05-07 01:11:30	2013-12-05 20:00:17	0	3	943	2	2	2	1	0	0	0	0		20	0	20
+grid_utfgrid	3	0	-	2	2011-05-07 01:11:30	2013-12-05 20:00:17	0	3	943	2	2	2	1	0	0	0	0		20	0	20
+images	3	0	-	2	2011-05-07 01:11:30	2013-12-05 20:00:17	0	3	943	2	2	2	1	0	0	0	0		20	0	20
+keymap	3	0	-	2	2011-05-07 01:11:30	2013-12-05 20:00:17	0	3	943	2	2	2	1	0	0	0	0		20	0	20
+map	3	0	-	2	2011-05-07 01:11:30	2013-12-05 20:00:17	0	3	943	5	5	5	1	0	0	0	0		20	0	20
+metadata	3	0	-	2	2011-05-07 01:11:30	2013-12-05 20:00:17	0	3	943	2	2	2	1	0	0	0	0		20	0	20

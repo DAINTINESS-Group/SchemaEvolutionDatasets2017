@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- archan937__cached_record -------------------------
+archan937__cached_record:	Electrolysis	holds? 	false
+archan937__cached_record:	Electrolysis	Geometry? 	false
+archan937__cached_record:	Electrolysis	FisherExecuted? 	false
+archan937__cached_record:	Electrolysis	p-Value? 	false
+------------------------------------------------

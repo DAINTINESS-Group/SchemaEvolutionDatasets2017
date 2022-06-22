@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1440032561.sql;1440908594.sql;Users;Update:TypeChange;ID;INT(11);false;0;-

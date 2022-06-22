@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- spring-projects__spring-social -------------------------
+spring-projects__spring-social:	Electrolysis	holds? 	true
+spring-projects__spring-social:	Electrolysis	Geometry? 	true
+spring-projects__spring-social:	Electrolysis	FisherExecuted? 	false
+spring-projects__spring-social:	Electrolysis	p-Value? 	false
+------------------------------------------------

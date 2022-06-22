@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- spring-projects__spring-social -------------------------
+spring-projects__spring-social:	InverseGamma	holds? 	true
+spring-projects__spring-social:	InverseGamma	Geometry? 	true
+spring-projects__spring-social:	InverseGamma	FisherExecuted? 	false
+spring-projects__spring-social:	InverseGamma	p-Value? 	false
+------------------------------------------------

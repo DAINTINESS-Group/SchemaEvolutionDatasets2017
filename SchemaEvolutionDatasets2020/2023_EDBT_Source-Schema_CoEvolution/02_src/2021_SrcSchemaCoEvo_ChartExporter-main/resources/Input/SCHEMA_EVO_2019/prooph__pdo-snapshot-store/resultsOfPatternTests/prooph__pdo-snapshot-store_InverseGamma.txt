@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- prooph__pdo-snapshot-store -------------------------
+prooph__pdo-snapshot-store:	InverseGamma	holds? 	true
+prooph__pdo-snapshot-store:	InverseGamma	Geometry? 	true
+prooph__pdo-snapshot-store:	InverseGamma	FisherExecuted? 	false
+prooph__pdo-snapshot-store:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,9 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1422288945.sql;1422289899.sql;user;Deletion:UpdateTable;admin;TINYINT(1);false;0;-
+1;1422288945.sql;1422289899.sql;user;Deletion:UpdateTable;is_ldap;TINYINT(1);false;0;-
+1;1422288945.sql;1422289899.sql;user;Insertion:UpdateTable;isAdmin;TINYINT(1);false;0;-
+1;1422288945.sql;1422289899.sql;user;Insertion:UpdateTable;isLdap;TINYINT(1);false;0;-
+2;1422289899.sql;1422302402.sql;user;Deletion:UpdateTable;isAdmin;TINYINT(1);false;0;-
+2;1422289899.sql;1422302402.sql;user;Deletion:UpdateTable;isLdap;TINYINT(1);false;0;-
+2;1422289899.sql;1422302402.sql;user;Insertion:UpdateTable;is_admin;TINYINT(1);false;0;-
+2;1422289899.sql;1422302402.sql;user;Insertion:UpdateTable;is_ldap;TINYINT(1);false;0;-

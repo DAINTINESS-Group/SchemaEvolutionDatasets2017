@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- neocogent__sqlchain -------------------------
+neocogent__sqlchain:	InverseGamma	holds? 	true
+neocogent__sqlchain:	InverseGamma	Geometry? 	true
+neocogent__sqlchain:	InverseGamma	FisherExecuted? 	true
+neocogent__sqlchain:	InverseGamma	p-Value? 	false
+------------------------------------------------

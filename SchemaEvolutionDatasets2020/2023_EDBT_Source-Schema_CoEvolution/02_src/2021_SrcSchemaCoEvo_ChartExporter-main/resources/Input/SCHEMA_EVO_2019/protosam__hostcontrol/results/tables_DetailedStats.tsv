@@ -1,0 +1,13 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+domainmetadata	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	4	4	4	1	0	0	0	0		20	0	20
+domains	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	7	7	7	1	0	0	0	0		20	0	20
+hostcontrol_ftpusers	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	4	4	4	1	0	0	0	0		20	0	20
+hostcontrol_ipaddr	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	3	3	3	1	0	0	0	0		20	0	20
+hostcontrol_user_tokens	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	4	4	4	1	0	0	0	0		20	0	20
+hostcontrol_users	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	6	6	6	1	0	0	0	0		20	0	20
+mail_domains	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	3	3	3	1	0	0	0	0		20	0	20
+mail_forwardings	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	4	4	4	1	0	0	0	0		20	0	20
+mail_transport	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	3	3	3	1	0	0	0	0		20	0	20
+mail_users	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	4	4	4	1	0	0	0	0		20	0	20
+records	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	12	12	12	1	0	0	0	0		20	0	20
+website_vhosts	7	0	-	6	2016-01-15 00:27:23	2016-01-27 23:34:30	0	1	12	9	9	9	1	0	0	0	0		20	0	20

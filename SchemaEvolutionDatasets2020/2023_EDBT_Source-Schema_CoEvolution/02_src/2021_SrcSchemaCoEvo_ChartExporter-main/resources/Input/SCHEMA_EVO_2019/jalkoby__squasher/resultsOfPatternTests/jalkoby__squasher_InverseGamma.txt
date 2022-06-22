@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jalkoby__squasher -------------------------
+jalkoby__squasher:	InverseGamma	holds? 	true
+jalkoby__squasher:	InverseGamma	Geometry? 	true
+jalkoby__squasher:	InverseGamma	FisherExecuted? 	false
+jalkoby__squasher:	InverseGamma	p-Value? 	false
+------------------------------------------------

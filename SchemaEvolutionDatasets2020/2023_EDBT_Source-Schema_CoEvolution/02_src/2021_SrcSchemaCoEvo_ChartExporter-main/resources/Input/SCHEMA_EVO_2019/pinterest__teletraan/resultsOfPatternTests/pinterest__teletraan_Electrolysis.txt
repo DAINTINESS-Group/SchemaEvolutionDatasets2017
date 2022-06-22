@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- pinterest__teletraan -------------------------
+pinterest__teletraan:	Electrolysis	holds? 	false
+pinterest__teletraan:	Electrolysis	Geometry? 	false
+pinterest__teletraan:	Electrolysis	FisherExecuted? 	false
+pinterest__teletraan:	Electrolysis	p-Value? 	false
+------------------------------------------------

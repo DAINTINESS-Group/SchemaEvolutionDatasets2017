@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- hugodias__cakegallery -------------------------
+hugodias__cakegallery:	Electrolysis	holds? 	true
+hugodias__cakegallery:	Electrolysis	Geometry? 	true
+hugodias__cakegallery:	Electrolysis	FisherExecuted? 	false
+hugodias__cakegallery:	Electrolysis	p-Value? 	false
+------------------------------------------------

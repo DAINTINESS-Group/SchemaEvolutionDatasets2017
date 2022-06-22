@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mem__padron -------------------------
+mem__padron:	Electrolysis	holds? 	true
+mem__padron:	Electrolysis	Geometry? 	true
+mem__padron:	Electrolysis	FisherExecuted? 	false
+mem__padron:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- lamassu__lamassu-admin -------------------------
+lamassu__lamassu-admin:	InverseGamma	holds? 	false
+lamassu__lamassu-admin:	InverseGamma	Geometry? 	false
+lamassu__lamassu-admin:	InverseGamma	FisherExecuted? 	false
+lamassu__lamassu-admin:	InverseGamma	p-Value? 	false
+------------------------------------------------

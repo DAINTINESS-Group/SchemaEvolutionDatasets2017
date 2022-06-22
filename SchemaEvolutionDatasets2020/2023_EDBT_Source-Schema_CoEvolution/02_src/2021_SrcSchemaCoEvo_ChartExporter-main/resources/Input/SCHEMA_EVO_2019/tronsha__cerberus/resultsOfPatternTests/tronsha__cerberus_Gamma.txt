@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- tronsha__cerberus -------------------------
+tronsha__cerberus:	Gamma	holds? 	true
+tronsha__cerberus:	Gamma	Geometry? 	true
+tronsha__cerberus:	Gamma	FisherExecuted? 	false
+tronsha__cerberus:	Gamma	p-Value? 	false
+tronsha__cerberus:	Gamma	Surv.Wide 	1
+tronsha__cerberus:	Gamma	Surv.NotWide 	21
+tronsha__cerberus:	Gamma	Dead.Wide 	0
+tronsha__cerberus:	Gamma	Dead.NotWide 	0
+tronsha__cerberus:	Gamma	Wide 	1
+------------------------------------------------

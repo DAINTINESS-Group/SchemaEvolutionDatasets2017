@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1483204242.sql;1484247880.sql;register;Update:KeyChange;id;INT(11);true;0;-

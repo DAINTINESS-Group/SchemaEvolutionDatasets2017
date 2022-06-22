@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1421781284.sql" newVersion="1424945390.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>scenario_test_runs</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>scenario_tag_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1424945390.sql" newVersion="1425579496.sql"/>
+    <transition oldVersion="1425579496.sql" newVersion="1434633710.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>scenarios</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>failure_rate</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- protosam__hostcontrol -------------------------
+protosam__hostcontrol:	Electrolysis	holds? 	true
+protosam__hostcontrol:	Electrolysis	Geometry? 	true
+protosam__hostcontrol:	Electrolysis	FisherExecuted? 	false
+protosam__hostcontrol:	Electrolysis	p-Value? 	false
+------------------------------------------------

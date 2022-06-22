@@ -1,0 +1,4 @@
+trID;time;oldVer;newVer;#oldT;#newT;#oldA;#newA;tIns;tDel;aIns;aDel;aTypeAlt;keyAlt;aTabIns;aTabDel
+1;1450340942;1449760570.sql;1450340942.sql;3;3;17;17;0;0;0;0;0;3;0;0
+2;1457787487;1450340942.sql;1457787487.sql;3;3;17;17;0;0;0;0;0;0;0;0
+3;1460045483;1457787487.sql;1460045483.sql;3;3;17;19;0;0;2;0;0;0;0;0

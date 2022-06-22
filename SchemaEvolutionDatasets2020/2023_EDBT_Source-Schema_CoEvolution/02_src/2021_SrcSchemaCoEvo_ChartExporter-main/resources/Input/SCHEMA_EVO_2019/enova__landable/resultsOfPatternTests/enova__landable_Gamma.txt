@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- enova__landable -------------------------
+enova__landable:	Gamma	holds? 	true
+enova__landable:	Gamma	Geometry? 	true
+enova__landable:	Gamma	FisherExecuted? 	false
+enova__landable:	Gamma	p-Value? 	false
+enova__landable:	Gamma	Surv.Wide 	6
+enova__landable:	Gamma	Surv.NotWide 	53
+enova__landable:	Gamma	Dead.Wide 	0
+enova__landable:	Gamma	Dead.NotWide 	0
+enova__landable:	Gamma	Wide 	6
+------------------------------------------------

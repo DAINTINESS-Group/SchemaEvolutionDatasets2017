@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+statemachine_entities	6	0	-	5	2014-10-12 20:40:51	2016-06-10 07:38:13	0	2	606	4	4	4	1	0	0	0	0		20	0	20
+statemachine_history	6	0	-	5	2014-10-12 20:40:51	2016-06-10 07:38:13	0	2	606	6	7	6.83	1.17	1	1	0.17	0.17	1	20	1	21
+statemachine_machines	6	0	-	5	2014-10-12 20:40:51	2016-06-10 07:38:13	0	2	606	3	3	3	1	0	0	0	0		20	0	20
+statemachine_states	6	0	-	5	2014-10-12 20:40:51	2016-06-10 07:38:13	0	2	606	3	3	3	1	0	0	0	0		20	0	20
+statemachine_transitions	6	0	-	5	2014-10-12 20:40:51	2016-06-10 07:38:13	0	2	606	7	8	7.5	1.14	1	1	0.17	0.17	1	20	1	21

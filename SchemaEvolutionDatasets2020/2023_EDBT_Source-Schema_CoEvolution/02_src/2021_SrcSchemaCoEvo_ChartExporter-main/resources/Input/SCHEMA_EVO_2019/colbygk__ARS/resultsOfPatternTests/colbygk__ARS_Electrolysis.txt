@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- colbygk__ARS -------------------------
+colbygk__ARS:	Electrolysis	holds? 	true
+colbygk__ARS:	Electrolysis	Geometry? 	true
+colbygk__ARS:	Electrolysis	FisherExecuted? 	false
+colbygk__ARS:	Electrolysis	p-Value? 	false
+------------------------------------------------

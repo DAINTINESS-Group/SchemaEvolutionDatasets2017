@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- n2n__rocket -------------------------
+n2n__rocket:	Electrolysis	holds? 	true
+n2n__rocket:	Electrolysis	Geometry? 	true
+n2n__rocket:	Electrolysis	FisherExecuted? 	false
+n2n__rocket:	Electrolysis	p-Value? 	false
+------------------------------------------------

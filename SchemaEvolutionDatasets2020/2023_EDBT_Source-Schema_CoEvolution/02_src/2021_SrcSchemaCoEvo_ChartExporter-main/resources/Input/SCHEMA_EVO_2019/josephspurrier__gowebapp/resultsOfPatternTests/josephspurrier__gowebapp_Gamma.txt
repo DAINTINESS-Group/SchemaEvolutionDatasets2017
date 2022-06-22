@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- josephspurrier__gowebapp -------------------------
+josephspurrier__gowebapp:	Gamma	holds? 	false
+josephspurrier__gowebapp:	Gamma	Geometry? 	false
+josephspurrier__gowebapp:	Gamma	FisherExecuted? 	false
+josephspurrier__gowebapp:	Gamma	p-Value? 	false
+josephspurrier__gowebapp:	Gamma	Surv.Wide 	0
+josephspurrier__gowebapp:	Gamma	Surv.NotWide 	3
+josephspurrier__gowebapp:	Gamma	Dead.Wide 	0
+josephspurrier__gowebapp:	Gamma	Dead.NotWide 	0
+josephspurrier__gowebapp:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- fastpress__fastpress -------------------------
+fastpress__fastpress:	InverseGamma	holds? 	true
+fastpress__fastpress:	InverseGamma	Geometry? 	true
+fastpress__fastpress:	InverseGamma	FisherExecuted? 	false
+fastpress__fastpress:	InverseGamma	p-Value? 	false
+------------------------------------------------

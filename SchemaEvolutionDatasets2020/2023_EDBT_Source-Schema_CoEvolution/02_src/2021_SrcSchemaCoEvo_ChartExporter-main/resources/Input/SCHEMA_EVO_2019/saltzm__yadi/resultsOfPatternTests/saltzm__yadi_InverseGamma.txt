@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- saltzm__yadi -------------------------
+saltzm__yadi:	InverseGamma	holds? 	true
+saltzm__yadi:	InverseGamma	Geometry? 	true
+saltzm__yadi:	InverseGamma	FisherExecuted? 	false
+saltzm__yadi:	InverseGamma	p-Value? 	false
+------------------------------------------------

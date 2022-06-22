@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tpolecat__doobie -------------------------
+tpolecat__doobie:	InverseGamma	holds? 	true
+tpolecat__doobie:	InverseGamma	Geometry? 	true
+tpolecat__doobie:	InverseGamma	FisherExecuted? 	false
+tpolecat__doobie:	InverseGamma	p-Value? 	false
+------------------------------------------------

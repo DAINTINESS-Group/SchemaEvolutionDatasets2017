@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- spaceboats__busbus -------------------------
+spaceboats__busbus:	InverseGamma	holds? 	true
+spaceboats__busbus:	InverseGamma	Geometry? 	true
+spaceboats__busbus:	InverseGamma	FisherExecuted? 	false
+spaceboats__busbus:	InverseGamma	p-Value? 	false
+------------------------------------------------

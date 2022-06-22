@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tracer__tracer -------------------------
+tracer__tracer:	Electrolysis	holds? 	true
+tracer__tracer:	Electrolysis	Geometry? 	true
+tracer__tracer:	Electrolysis	FisherExecuted? 	false
+tracer__tracer:	Electrolysis	p-Value? 	false
+------------------------------------------------

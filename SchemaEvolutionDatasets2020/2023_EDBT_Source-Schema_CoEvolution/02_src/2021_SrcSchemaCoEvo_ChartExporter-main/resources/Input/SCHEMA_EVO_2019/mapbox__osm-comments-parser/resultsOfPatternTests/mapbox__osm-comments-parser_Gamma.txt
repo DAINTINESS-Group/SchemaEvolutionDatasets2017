@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mapbox__osm-comments-parser -------------------------
+mapbox__osm-comments-parser:	Gamma	holds? 	false
+mapbox__osm-comments-parser:	Gamma	Geometry? 	false
+mapbox__osm-comments-parser:	Gamma	FisherExecuted? 	false
+mapbox__osm-comments-parser:	Gamma	p-Value? 	false
+mapbox__osm-comments-parser:	Gamma	Surv.Wide 	0
+mapbox__osm-comments-parser:	Gamma	Surv.NotWide 	6
+mapbox__osm-comments-parser:	Gamma	Dead.Wide 	0
+mapbox__osm-comments-parser:	Gamma	Dead.NotWide 	1
+mapbox__osm-comments-parser:	Gamma	Wide 	0
+------------------------------------------------

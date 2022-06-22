@@ -1,0 +1,8 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+changeset_comments	13	0	-	12	2015-12-09 11:17:53	2017-08-03 11:08:23	0	2	602	5	6	5.62	1.2	1	1	0.08	0.08	1	20	1	21
+changeset_tags	4	0	3	3	2015-12-09 11:17:53	2016-11-29 13:03:58	0	1	356	3	3	3	1	0	0	0	0		10	0	10
+changesets	13	0	-	12	2015-12-09 11:17:53	2017-08-03 11:08:23	0	2	602	10	15	13.54	1.5	5	2	0.38	0.15	2.5	20	1	21
+note_comments	13	0	-	12	2015-12-09 11:17:53	2017-08-03 11:08:23	0	2	602	6	6	6	1	0	0	0	0		20	0	20
+notes	13	0	-	12	2015-12-09 11:17:53	2017-08-03 11:08:23	0	2	602	5	5	5	1	0	0	0	0		20	0	20
+stats	6	7	-	12	2017-02-01 09:51:58	2017-08-03 11:08:23	2	2	183	10	19	11.5	1.9	12	4	2	0.67	3	20	2	22
+users	13	0	-	12	2015-12-09 11:17:53	2017-08-03 11:08:23	0	2	602	2	5	3.62	2.5	3	1	0.23	0.08	3	20	1	21

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- theskyinflames__bpulse-go-client -------------------------
+theskyinflames__bpulse-go-client:	Electrolysis	holds? 	true
+theskyinflames__bpulse-go-client:	Electrolysis	Geometry? 	true
+theskyinflames__bpulse-go-client:	Electrolysis	FisherExecuted? 	false
+theskyinflames__bpulse-go-client:	Electrolysis	p-Value? 	false
+------------------------------------------------

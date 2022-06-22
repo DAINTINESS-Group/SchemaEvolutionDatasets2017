@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- prooph__pdo-snapshot-store -------------------------
+prooph__pdo-snapshot-store:	Electrolysis	holds? 	true
+prooph__pdo-snapshot-store:	Electrolysis	Geometry? 	true
+prooph__pdo-snapshot-store:	Electrolysis	FisherExecuted? 	false
+prooph__pdo-snapshot-store:	Electrolysis	p-Value? 	false
+------------------------------------------------

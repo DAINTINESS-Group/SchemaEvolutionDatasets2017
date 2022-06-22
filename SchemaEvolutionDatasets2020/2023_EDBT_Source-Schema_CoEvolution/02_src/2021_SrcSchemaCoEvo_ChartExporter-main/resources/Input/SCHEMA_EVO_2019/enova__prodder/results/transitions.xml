@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1455740158.sql" newVersion="1477345112.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>permissions_test.standard_acl</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>standard_acl_id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1477345112.sql" newVersion="1477346505.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>permissions_test.standard_acl</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>standard_acl_id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

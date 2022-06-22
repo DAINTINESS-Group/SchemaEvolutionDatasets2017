@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+participant	4	0	-	3	2017-06-15 19:37:27	2018-07-04 08:32:01	0	2	383	4	5	4.25	1.25	1	1	0.25	0.25	1	20	1	21
+rwd_basic	3	0	-	3	2017-06-15 19:37:27	2018-07-04 08:32:01	0	2	383	12	13	12.33	1.08	5	1	1.67	0.33	5	20	1	21
+rwd_custom	4	0	-	3	2017-06-15 19:37:27	2018-07-04 08:32:01	0	2	383	12	12	11	1	12	3	3	0.75	4	20	2	22
+rwd_extra	4	0	-	3	2017-06-15 19:37:27	2018-07-04 08:32:01	0	2	383	9	11	9.5	1.22	8	2	2	0.5	4	20	2	22
+subject	4	0	-	3	2017-06-15 19:37:27	2018-07-04 08:32:01	0	2	383	3	4	3.75	1.33	4	3	1	0.75	1.33	20	1	21

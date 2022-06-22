@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- aiyi__go-user -------------------------
+aiyi__go-user:	InverseGamma	holds? 	true
+aiyi__go-user:	InverseGamma	Geometry? 	true
+aiyi__go-user:	InverseGamma	FisherExecuted? 	false
+aiyi__go-user:	InverseGamma	p-Value? 	false
+------------------------------------------------

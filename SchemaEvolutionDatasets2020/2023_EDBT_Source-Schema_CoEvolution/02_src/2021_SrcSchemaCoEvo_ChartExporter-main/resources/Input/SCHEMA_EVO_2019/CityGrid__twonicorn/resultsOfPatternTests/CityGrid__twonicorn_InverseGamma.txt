@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- CityGrid__twonicorn -------------------------
+CityGrid__twonicorn:	InverseGamma	holds? 	true
+CityGrid__twonicorn:	InverseGamma	Geometry? 	true
+CityGrid__twonicorn:	InverseGamma	FisherExecuted? 	true
+CityGrid__twonicorn:	InverseGamma	p-Value? 	false
+------------------------------------------------

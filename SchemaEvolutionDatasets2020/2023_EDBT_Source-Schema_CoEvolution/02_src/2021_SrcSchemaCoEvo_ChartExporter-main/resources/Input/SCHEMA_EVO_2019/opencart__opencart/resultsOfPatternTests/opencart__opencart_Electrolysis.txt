@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- opencart__opencart -------------------------
+opencart__opencart:	Electrolysis	holds? 	false
+opencart__opencart:	Electrolysis	Geometry? 	false
+opencart__opencart:	Electrolysis	FisherExecuted? 	false
+opencart__opencart:	Electrolysis	p-Value? 	false
+------------------------------------------------

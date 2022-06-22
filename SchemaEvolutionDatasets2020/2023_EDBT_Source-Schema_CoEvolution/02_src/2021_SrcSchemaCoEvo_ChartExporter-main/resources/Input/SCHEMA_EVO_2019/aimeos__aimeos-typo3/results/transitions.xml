@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1412274775.sql" newVersion="1424862560.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>fe_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>vdate</name>
+                <type>DATE</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1424862560.sql" newVersion="1480432130.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>fe_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>latitude</name>
+                <type>DECIMAL(8,6)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>longitude</name>
+                <type>DECIMAL(8,6)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1480432130.sql" newVersion="1495228848.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>fe_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>siteid</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1495228848.sql" newVersion="1539788202.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>tx_aimeos_cache</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>content</name>
+                <type>MEDIUMBLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>crdate</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>identifier</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>lifetime</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>tx_aimeos_cache_tags</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>identifier</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tag</name>
+                <type>VARCHAR(250)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1539788202.sql" newVersion="1552667628.sql">
+        <update type="TypeChange">
+            <table>
+                <name>fe_users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>first_name</name>
+                <type>VARCHAR(64)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>last_name</name>
+                <type>VARCHAR(64)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

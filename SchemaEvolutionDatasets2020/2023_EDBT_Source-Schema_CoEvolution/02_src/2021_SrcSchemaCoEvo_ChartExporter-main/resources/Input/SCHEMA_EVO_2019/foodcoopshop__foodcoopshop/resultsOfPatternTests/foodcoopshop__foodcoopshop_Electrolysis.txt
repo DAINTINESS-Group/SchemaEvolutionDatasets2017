@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- foodcoopshop__foodcoopshop -------------------------
+foodcoopshop__foodcoopshop:	Electrolysis	holds? 	false
+foodcoopshop__foodcoopshop:	Electrolysis	Geometry? 	false
+foodcoopshop__foodcoopshop:	Electrolysis	FisherExecuted? 	false
+foodcoopshop__foodcoopshop:	Electrolysis	p-Value? 	false
+------------------------------------------------

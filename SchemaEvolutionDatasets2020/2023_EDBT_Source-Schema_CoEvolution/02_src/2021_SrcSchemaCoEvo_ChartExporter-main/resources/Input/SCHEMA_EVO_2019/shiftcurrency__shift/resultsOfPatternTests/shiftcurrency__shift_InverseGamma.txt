@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- shiftcurrency__shift -------------------------
+shiftcurrency__shift:	InverseGamma	holds? 	true
+shiftcurrency__shift:	InverseGamma	Geometry? 	true
+shiftcurrency__shift:	InverseGamma	FisherExecuted? 	false
+shiftcurrency__shift:	InverseGamma	p-Value? 	false
+------------------------------------------------

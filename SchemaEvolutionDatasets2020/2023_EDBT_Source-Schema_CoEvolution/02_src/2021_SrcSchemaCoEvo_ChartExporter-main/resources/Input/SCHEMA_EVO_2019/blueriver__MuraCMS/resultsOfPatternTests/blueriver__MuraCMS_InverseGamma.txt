@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- blueriver__MuraCMS -------------------------
+blueriver__MuraCMS:	InverseGamma	holds? 	true
+blueriver__MuraCMS:	InverseGamma	Geometry? 	true
+blueriver__MuraCMS:	InverseGamma	FisherExecuted? 	false
+blueriver__MuraCMS:	InverseGamma	p-Value? 	false
+------------------------------------------------

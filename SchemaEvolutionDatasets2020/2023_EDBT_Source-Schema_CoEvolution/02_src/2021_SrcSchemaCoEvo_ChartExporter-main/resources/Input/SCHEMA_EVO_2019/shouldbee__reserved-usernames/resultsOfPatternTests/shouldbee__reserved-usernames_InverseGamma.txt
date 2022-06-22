@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- shouldbee__reserved-usernames -------------------------
+shouldbee__reserved-usernames:	InverseGamma	holds? 	true
+shouldbee__reserved-usernames:	InverseGamma	Geometry? 	true
+shouldbee__reserved-usernames:	InverseGamma	FisherExecuted? 	false
+shouldbee__reserved-usernames:	InverseGamma	p-Value? 	false
+------------------------------------------------

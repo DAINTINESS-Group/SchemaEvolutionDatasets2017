@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- archan937__cached_record -------------------------
+archan937__cached_record:	InverseGamma	holds? 	false
+archan937__cached_record:	InverseGamma	Geometry? 	false
+archan937__cached_record:	InverseGamma	FisherExecuted? 	true
+archan937__cached_record:	InverseGamma	p-Value? 	false
+------------------------------------------------

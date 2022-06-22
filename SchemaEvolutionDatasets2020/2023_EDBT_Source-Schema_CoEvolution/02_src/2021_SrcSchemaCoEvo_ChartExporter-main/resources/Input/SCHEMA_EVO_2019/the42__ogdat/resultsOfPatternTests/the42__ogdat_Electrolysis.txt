@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- the42__ogdat -------------------------
+the42__ogdat:	Electrolysis	holds? 	true
+the42__ogdat:	Electrolysis	Geometry? 	true
+the42__ogdat:	Electrolysis	FisherExecuted? 	false
+the42__ogdat:	Electrolysis	p-Value? 	false
+------------------------------------------------

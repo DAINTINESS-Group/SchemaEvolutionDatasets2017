@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- gem__oq-engine -------------------------
+gem__oq-engine:	Electrolysis	holds? 	true
+gem__oq-engine:	Electrolysis	Geometry? 	true
+gem__oq-engine:	Electrolysis	FisherExecuted? 	false
+gem__oq-engine:	Electrolysis	p-Value? 	false
+------------------------------------------------

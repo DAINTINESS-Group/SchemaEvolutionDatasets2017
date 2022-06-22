@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- conceptsandtraining__libtree -------------------------
+conceptsandtraining__libtree:	InverseGamma	holds? 	true
+conceptsandtraining__libtree:	InverseGamma	Geometry? 	true
+conceptsandtraining__libtree:	InverseGamma	FisherExecuted? 	false
+conceptsandtraining__libtree:	InverseGamma	p-Value? 	false
+------------------------------------------------

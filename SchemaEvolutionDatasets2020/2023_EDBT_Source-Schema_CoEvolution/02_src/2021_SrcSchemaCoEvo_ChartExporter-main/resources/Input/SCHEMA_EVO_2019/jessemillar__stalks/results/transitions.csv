@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1447438358.sql;1447622836.sql;hallOfFame;Deletion:UpdateTable;firstName;TEXT;false;0;-
+1;1447438358.sql;1447622836.sql;hallOfFame;Deletion:UpdateTable;lastName;TEXT;false;0;-
+1;1447438358.sql;1447622836.sql;users;Deletion:UpdateTable;firstName;TEXT;false;0;-
+1;1447438358.sql;1447622836.sql;users;Deletion:UpdateTable;lastName;TEXT;false;0;-
+1;1447438358.sql;1447622836.sql;users;Update:TypeChange;username;TEXT;false;0;-

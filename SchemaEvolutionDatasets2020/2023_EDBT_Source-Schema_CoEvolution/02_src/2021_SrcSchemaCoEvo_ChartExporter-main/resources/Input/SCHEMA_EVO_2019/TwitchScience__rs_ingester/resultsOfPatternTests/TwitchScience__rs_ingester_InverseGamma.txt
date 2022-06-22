@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- TwitchScience__rs_ingester -------------------------
+TwitchScience__rs_ingester:	InverseGamma	holds? 	true
+TwitchScience__rs_ingester:	InverseGamma	Geometry? 	true
+TwitchScience__rs_ingester:	InverseGamma	FisherExecuted? 	false
+TwitchScience__rs_ingester:	InverseGamma	p-Value? 	false
+------------------------------------------------

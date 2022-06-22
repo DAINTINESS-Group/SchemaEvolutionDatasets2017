@@ -1,0 +1,7 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+force_load	2	6	-	7	2017-05-04 19:20:52	2017-12-15 23:01:14	3	4	225	5	5	5	1	0	0	0	0		20	0	20
+last_load	1	7	-	7	2017-12-15 23:01:14	2017-12-15 23:01:14	4	4	0	2	2	2	1	0	0	0	0		20	0	20
+load_batch	1	0	0	0	2014-11-14 23:54:27	2014-11-14 23:54:27	0	0	0	4	4	4	1	0	0	0	0		10	0	10
+manifest	7	1	-	7	2016-01-27 01:37:58	2017-12-15 23:01:14	2	4	688	4	4	4	1	0	0	0	0		20	0	20
+pending_load	1	0	0	0	2014-11-14 23:54:27	2014-11-14 23:54:27	0	0	0	5	5	5	1	0	0	0	0		10	0	10
+tsv	7	1	-	7	2016-01-27 01:37:58	2017-12-15 23:01:14	2	4	688	5	6	5.71	1.2	8	3	1.14	0.43	2.67	20	2	22

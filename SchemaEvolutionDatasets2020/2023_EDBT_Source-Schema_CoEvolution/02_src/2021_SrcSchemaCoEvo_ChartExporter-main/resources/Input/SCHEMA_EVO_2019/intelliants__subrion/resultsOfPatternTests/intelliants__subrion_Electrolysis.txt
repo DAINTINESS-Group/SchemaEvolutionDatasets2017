@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- intelliants__subrion -------------------------
+intelliants__subrion:	Electrolysis	holds? 	false
+intelliants__subrion:	Electrolysis	Geometry? 	false
+intelliants__subrion:	Electrolysis	FisherExecuted? 	false
+intelliants__subrion:	Electrolysis	p-Value? 	false
+------------------------------------------------

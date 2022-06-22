@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mem__padron -------------------------
+mem__padron:	Gamma	holds? 	false
+mem__padron:	Gamma	Geometry? 	false
+mem__padron:	Gamma	FisherExecuted? 	false
+mem__padron:	Gamma	p-Value? 	false
+mem__padron:	Gamma	Surv.Wide 	0
+mem__padron:	Gamma	Surv.NotWide 	8
+mem__padron:	Gamma	Dead.Wide 	0
+mem__padron:	Gamma	Dead.NotWide 	0
+mem__padron:	Gamma	Wide 	0
+------------------------------------------------

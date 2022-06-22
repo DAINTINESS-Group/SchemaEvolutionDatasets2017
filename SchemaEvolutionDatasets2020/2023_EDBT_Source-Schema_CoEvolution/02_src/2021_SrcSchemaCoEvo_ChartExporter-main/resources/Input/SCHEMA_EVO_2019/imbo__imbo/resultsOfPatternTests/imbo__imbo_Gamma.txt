@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- imbo__imbo -------------------------
+imbo__imbo:	Gamma	holds? 	true
+imbo__imbo:	Gamma	Geometry? 	true
+imbo__imbo:	Gamma	FisherExecuted? 	false
+imbo__imbo:	Gamma	p-Value? 	true
+imbo__imbo:	Gamma	Surv.Wide 	1
+imbo__imbo:	Gamma	Surv.NotWide 	3
+imbo__imbo:	Gamma	Dead.Wide 	0
+imbo__imbo:	Gamma	Dead.NotWide 	2
+imbo__imbo:	Gamma	Wide 	1
+------------------------------------------------

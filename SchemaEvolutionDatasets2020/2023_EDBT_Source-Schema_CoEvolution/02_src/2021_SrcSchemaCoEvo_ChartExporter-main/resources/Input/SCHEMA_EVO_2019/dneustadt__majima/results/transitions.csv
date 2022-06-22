@@ -1,0 +1,3 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1504359357.sql;1504643617.sql;users_roles;Insertion:NewTable;role;VARCHAR(255);false;0;-
+1;1504359357.sql;1504643617.sql;users_roles;Insertion:NewTable;userID;INT(11);false;0;-

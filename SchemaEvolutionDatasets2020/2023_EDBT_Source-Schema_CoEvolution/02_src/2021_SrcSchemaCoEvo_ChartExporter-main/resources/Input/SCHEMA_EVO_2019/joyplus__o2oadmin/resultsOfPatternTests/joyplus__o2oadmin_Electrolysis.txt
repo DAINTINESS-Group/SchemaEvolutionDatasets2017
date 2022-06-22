@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- joyplus__o2oadmin -------------------------
+joyplus__o2oadmin:	Electrolysis	holds? 	false
+joyplus__o2oadmin:	Electrolysis	Geometry? 	false
+joyplus__o2oadmin:	Electrolysis	FisherExecuted? 	false
+joyplus__o2oadmin:	Electrolysis	p-Value? 	false
+------------------------------------------------

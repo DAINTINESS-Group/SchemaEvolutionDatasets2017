@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jessemillar__stalks -------------------------
+jessemillar__stalks:	Electrolysis	holds? 	true
+jessemillar__stalks:	Electrolysis	Geometry? 	true
+jessemillar__stalks:	Electrolysis	FisherExecuted? 	false
+jessemillar__stalks:	Electrolysis	p-Value? 	false
+------------------------------------------------

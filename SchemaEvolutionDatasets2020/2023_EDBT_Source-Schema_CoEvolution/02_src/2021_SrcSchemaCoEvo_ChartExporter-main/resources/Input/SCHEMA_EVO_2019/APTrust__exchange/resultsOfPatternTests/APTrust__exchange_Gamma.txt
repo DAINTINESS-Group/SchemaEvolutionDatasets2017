@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- APTrust__exchange -------------------------
+APTrust__exchange:	Gamma	holds? 	true
+APTrust__exchange:	Gamma	Geometry? 	true
+APTrust__exchange:	Gamma	FisherExecuted? 	false
+APTrust__exchange:	Gamma	p-Value? 	false
+APTrust__exchange:	Gamma	Surv.Wide 	1
+APTrust__exchange:	Gamma	Surv.NotWide 	2
+APTrust__exchange:	Gamma	Dead.Wide 	0
+APTrust__exchange:	Gamma	Dead.NotWide 	0
+APTrust__exchange:	Gamma	Wide 	1
+------------------------------------------------

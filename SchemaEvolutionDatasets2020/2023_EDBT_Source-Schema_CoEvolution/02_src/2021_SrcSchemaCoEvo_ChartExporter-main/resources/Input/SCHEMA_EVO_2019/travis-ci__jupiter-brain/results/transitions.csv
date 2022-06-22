@@ -1,0 +1,10 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1439439658.sql;1439845291.sql;instances;Deletion:DeleteTable;created_at;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+1;1439439658.sql;1439845291.sql;instances;Deletion:DeleteTable;id;BIGINT;false;0;-
+1;1439439658.sql;1439845291.sql;instances;Deletion:DeleteTable;vsphere_id;UUID;false;0;-
+1;1439439658.sql;1439845291.sql;jupiter_brain.instances;Insertion:NewTable;created_at;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+1;1439439658.sql;1439845291.sql;jupiter_brain.instances;Insertion:NewTable;id;BIGINT;false;0;-
+1;1439439658.sql;1439845291.sql;jupiter_brain.instances;Insertion:NewTable;vsphere_id;UUID;false;0;-
+2;1439845291.sql;1439846172.sql;jupiter_brain.instances;Update:TypeChange;id;UUID;false;0;-
+2;1439845291.sql;1439846172.sql;jupiter_brain.instances;Deletion:UpdateTable;vsphere_id;UUID;false;0;-
+3;1439846172.sql;1439912395.sql;jupiter_brain.instances;Insertion:UpdateTable;destroyed_at;TIMESTAMPWITHOUTTIMEZONE;false;0;-

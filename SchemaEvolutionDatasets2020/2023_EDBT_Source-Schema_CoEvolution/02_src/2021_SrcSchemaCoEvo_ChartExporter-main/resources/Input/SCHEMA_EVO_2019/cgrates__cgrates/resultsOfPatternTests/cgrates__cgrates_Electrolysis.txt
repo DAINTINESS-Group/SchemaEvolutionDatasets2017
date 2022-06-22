@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- cgrates__cgrates -------------------------
+cgrates__cgrates:	Electrolysis	holds? 	false
+cgrates__cgrates:	Electrolysis	Geometry? 	false
+cgrates__cgrates:	Electrolysis	FisherExecuted? 	false
+cgrates__cgrates:	Electrolysis	p-Value? 	false
+------------------------------------------------

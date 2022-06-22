@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- comforme__comforme -------------------------
+comforme__comforme:	Gamma	holds? 	false
+comforme__comforme:	Gamma	Geometry? 	false
+comforme__comforme:	Gamma	FisherExecuted? 	false
+comforme__comforme:	Gamma	p-Value? 	false
+comforme__comforme:	Gamma	Surv.Wide 	0
+comforme__comforme:	Gamma	Surv.NotWide 	7
+comforme__comforme:	Gamma	Dead.Wide 	0
+comforme__comforme:	Gamma	Dead.NotWide 	1
+comforme__comforme:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- atomjump__loop-server -------------------------
+atomjump__loop-server:	Gamma	holds? 	true
+atomjump__loop-server:	Gamma	Geometry? 	true
+atomjump__loop-server:	Gamma	FisherExecuted? 	false
+atomjump__loop-server:	Gamma	p-Value? 	false
+atomjump__loop-server:	Gamma	Surv.Wide 	2
+atomjump__loop-server:	Gamma	Surv.NotWide 	8
+atomjump__loop-server:	Gamma	Dead.Wide 	0
+atomjump__loop-server:	Gamma	Dead.NotWide 	0
+atomjump__loop-server:	Gamma	Wide 	2
+------------------------------------------------

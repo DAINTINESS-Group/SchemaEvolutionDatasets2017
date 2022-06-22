@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- 3ev__tev_label -------------------------
+3ev__tev_label:	InverseGamma	holds? 	true
+3ev__tev_label:	InverseGamma	Geometry? 	true
+3ev__tev_label:	InverseGamma	FisherExecuted? 	false
+3ev__tev_label:	InverseGamma	p-Value? 	false
+------------------------------------------------

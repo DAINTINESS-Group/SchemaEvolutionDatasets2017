@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- twitter__zipkin -------------------------
+twitter__zipkin:	Electrolysis	holds? 	true
+twitter__zipkin:	Electrolysis	Geometry? 	true
+twitter__zipkin:	Electrolysis	FisherExecuted? 	false
+twitter__zipkin:	Electrolysis	p-Value? 	false
+------------------------------------------------

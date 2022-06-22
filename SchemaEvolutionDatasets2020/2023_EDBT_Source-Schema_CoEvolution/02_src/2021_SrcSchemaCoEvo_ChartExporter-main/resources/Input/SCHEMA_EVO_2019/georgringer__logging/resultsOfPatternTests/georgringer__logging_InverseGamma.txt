@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- georgringer__logging -------------------------
+georgringer__logging:	InverseGamma	holds? 	true
+georgringer__logging:	InverseGamma	Geometry? 	true
+georgringer__logging:	InverseGamma	FisherExecuted? 	false
+georgringer__logging:	InverseGamma	p-Value? 	false
+------------------------------------------------

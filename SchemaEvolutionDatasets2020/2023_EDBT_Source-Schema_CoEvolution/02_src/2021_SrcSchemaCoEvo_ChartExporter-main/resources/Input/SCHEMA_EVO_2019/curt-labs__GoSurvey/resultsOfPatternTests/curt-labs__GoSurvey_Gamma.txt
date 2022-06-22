@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- curt-labs__GoSurvey -------------------------
+curt-labs__GoSurvey:	Gamma	holds? 	true
+curt-labs__GoSurvey:	Gamma	Geometry? 	true
+curt-labs__GoSurvey:	Gamma	FisherExecuted? 	false
+curt-labs__GoSurvey:	Gamma	p-Value? 	false
+curt-labs__GoSurvey:	Gamma	Surv.Wide 	3
+curt-labs__GoSurvey:	Gamma	Surv.NotWide 	8
+curt-labs__GoSurvey:	Gamma	Dead.Wide 	0
+curt-labs__GoSurvey:	Gamma	Dead.NotWide 	0
+curt-labs__GoSurvey:	Gamma	Wide 	3
+------------------------------------------------

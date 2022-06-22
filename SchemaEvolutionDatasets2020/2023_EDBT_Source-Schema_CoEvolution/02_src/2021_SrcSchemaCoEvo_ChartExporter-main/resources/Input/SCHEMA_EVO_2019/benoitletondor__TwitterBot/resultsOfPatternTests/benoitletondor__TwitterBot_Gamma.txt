@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- benoitletondor__TwitterBot -------------------------
+benoitletondor__TwitterBot:	Gamma	holds? 	false
+benoitletondor__TwitterBot:	Gamma	Geometry? 	false
+benoitletondor__TwitterBot:	Gamma	FisherExecuted? 	false
+benoitletondor__TwitterBot:	Gamma	p-Value? 	false
+benoitletondor__TwitterBot:	Gamma	Surv.Wide 	0
+benoitletondor__TwitterBot:	Gamma	Surv.NotWide 	4
+benoitletondor__TwitterBot:	Gamma	Dead.Wide 	0
+benoitletondor__TwitterBot:	Gamma	Dead.NotWide 	0
+benoitletondor__TwitterBot:	Gamma	Wide 	0
+------------------------------------------------

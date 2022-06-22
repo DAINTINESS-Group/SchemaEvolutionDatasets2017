@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- cgrates__cgrates -------------------------
+cgrates__cgrates:	Gamma	holds? 	false
+cgrates__cgrates:	Gamma	Geometry? 	false
+cgrates__cgrates:	Gamma	FisherExecuted? 	true
+cgrates__cgrates:	Gamma	p-Value? 	false
+cgrates__cgrates:	Gamma	Surv.Wide 	7
+cgrates__cgrates:	Gamma	Surv.NotWide 	14
+cgrates__cgrates:	Gamma	Dead.Wide 	11
+cgrates__cgrates:	Gamma	Dead.NotWide 	8
+cgrates__cgrates:	Gamma	Wide 	18
+------------------------------------------------

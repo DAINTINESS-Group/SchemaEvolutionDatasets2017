@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- wskm__deruv -------------------------
+wskm__deruv:	Electrolysis	holds? 	true
+wskm__deruv:	Electrolysis	Geometry? 	true
+wskm__deruv:	Electrolysis	FisherExecuted? 	false
+wskm__deruv:	Electrolysis	p-Value? 	false
+------------------------------------------------

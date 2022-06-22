@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- shopware__shopware -------------------------
+shopware__shopware:	InverseGamma	holds? 	true
+shopware__shopware:	InverseGamma	Geometry? 	true
+shopware__shopware:	InverseGamma	FisherExecuted? 	false
+shopware__shopware:	InverseGamma	p-Value? 	false
+------------------------------------------------

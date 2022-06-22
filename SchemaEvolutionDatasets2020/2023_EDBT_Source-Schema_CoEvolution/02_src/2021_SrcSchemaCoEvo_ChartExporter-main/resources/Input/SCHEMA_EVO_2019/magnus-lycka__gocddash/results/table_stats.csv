@@ -1,0 +1,12 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+agent;3;0;-;0;2;2;2.0
+email_notifications;3;0;-;1;4;4;4.0
+failure_information;3;0;-;1;3;3;3.0
+instance_claim;3;0;-;1;5;5;5.0
+job;3;0;-;0;9;9;9.0
+junit_failure;3;0;-;1;4;4;4.0
+pipeline;2;1;-;0;3;3;3.0
+pipeline_instance;3;0;-;7;4;10;8.0
+pipeline_sync_rule;2;1;-;0;5;5;5.0
+stage;3;0;-;1;7;8;7.6666665
+texttest_failure;3;0;-;1;5;5;5.0

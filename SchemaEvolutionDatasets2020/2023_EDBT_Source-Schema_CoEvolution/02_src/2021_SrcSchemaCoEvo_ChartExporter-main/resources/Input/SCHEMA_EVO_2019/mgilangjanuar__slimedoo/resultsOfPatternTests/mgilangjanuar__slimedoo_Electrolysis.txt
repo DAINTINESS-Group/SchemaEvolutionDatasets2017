@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mgilangjanuar__slimedoo -------------------------
+mgilangjanuar__slimedoo:	Electrolysis	holds? 	true
+mgilangjanuar__slimedoo:	Electrolysis	Geometry? 	true
+mgilangjanuar__slimedoo:	Electrolysis	FisherExecuted? 	false
+mgilangjanuar__slimedoo:	Electrolysis	p-Value? 	false
+------------------------------------------------

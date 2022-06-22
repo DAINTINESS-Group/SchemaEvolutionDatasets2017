@@ -1,0 +1,12 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+apps;2;0;-;1;7;8;7.5
+certificates;2;0;-;0;6;6;6.0
+configs;2;0;-;0;4;4;4.0
+domains;2;0;-;0;4;4;4.0
+ecs_environment;2;0;-;0;2;2;2.0
+ports;2;0;-;0;4;4;4.0
+releases;2;0;-;0;8;8;8.0
+scheduler_migration;2;0;-;0;2;2;2.0
+schema_migrations;2;0;-;0;1;1;1.0
+slugs;2;0;-;0;3;3;3.0
+stacks;2;0;-;0;2;2;2.0

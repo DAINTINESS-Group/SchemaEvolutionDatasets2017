@@ -1,0 +1,8 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+devices	13	5	-	17	2014-03-14 23:15:50	2016-04-13 17:23:41	1	3	760	3	4	3.92	1.33	6	3	0.46	0.23	2	20	2	22
+pairing_tokens	10	8	-	17	2014-03-17 23:23:33	2016-04-13 17:23:41	1	3	757	2	3	2.7	1.5	5	3	0.5	0.3	1.67	20	1	21
+tokens	1	7	7	7	2014-03-17 23:14:31	2014-03-17 23:14:31	1	1	0	2	2	2	1	0	0	0	0		10	0	10
+transactions	4	14	-	17	2014-03-24 23:27:34	2016-04-13 17:23:41	1	3	750	12	11	11.25	0.92	3	1	0.75	0.25	3	20	1	21
+txlog	13	1	13	13	2014-01-18 13:50:19	2014-03-24 22:29:50	1	1	65	7	10	9.77	1.43	6	2	0.46	0.15	3	10	2	12
+user_config	18	0	-	17	2014-01-14 09:59:11	2016-04-13 17:23:41	0	3	820	3	3	3	1	3	1	0.17	0.06	3	20	1	21
+users	8	10	-	17	2014-03-19 22:57:01	2016-04-13 17:23:41	1	3	755	4	4	4	1	4	1	0.5	0.12	4	20	1	21

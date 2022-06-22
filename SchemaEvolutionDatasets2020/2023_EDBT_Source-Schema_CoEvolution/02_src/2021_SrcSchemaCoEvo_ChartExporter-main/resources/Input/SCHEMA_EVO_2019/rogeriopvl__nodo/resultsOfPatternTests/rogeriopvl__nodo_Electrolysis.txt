@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rogeriopvl__nodo -------------------------
+rogeriopvl__nodo:	Electrolysis	holds? 	true
+rogeriopvl__nodo:	Electrolysis	Geometry? 	true
+rogeriopvl__nodo:	Electrolysis	FisherExecuted? 	false
+rogeriopvl__nodo:	Electrolysis	p-Value? 	false
+------------------------------------------------

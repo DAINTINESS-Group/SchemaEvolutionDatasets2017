@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- thesues__catkeeper -------------------------
+thesues__catkeeper:	Electrolysis	holds? 	true
+thesues__catkeeper:	Electrolysis	Geometry? 	true
+thesues__catkeeper:	Electrolysis	FisherExecuted? 	false
+thesues__catkeeper:	Electrolysis	p-Value? 	false
+------------------------------------------------

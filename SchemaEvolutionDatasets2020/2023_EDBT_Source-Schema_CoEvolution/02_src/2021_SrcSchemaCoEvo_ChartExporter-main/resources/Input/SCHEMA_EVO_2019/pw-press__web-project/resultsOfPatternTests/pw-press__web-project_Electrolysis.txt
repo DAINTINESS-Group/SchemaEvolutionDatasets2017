@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- pw-press__web-project -------------------------
+pw-press__web-project:	Electrolysis	holds? 	true
+pw-press__web-project:	Electrolysis	Geometry? 	true
+pw-press__web-project:	Electrolysis	FisherExecuted? 	false
+pw-press__web-project:	Electrolysis	p-Value? 	false
+------------------------------------------------

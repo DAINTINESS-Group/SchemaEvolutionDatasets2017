@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- thesues__catkeeper -------------------------
+thesues__catkeeper:	Gamma	holds? 	false
+thesues__catkeeper:	Gamma	Geometry? 	false
+thesues__catkeeper:	Gamma	FisherExecuted? 	false
+thesues__catkeeper:	Gamma	p-Value? 	false
+thesues__catkeeper:	Gamma	Surv.Wide 	0
+thesues__catkeeper:	Gamma	Surv.NotWide 	4
+thesues__catkeeper:	Gamma	Dead.Wide 	0
+thesues__catkeeper:	Gamma	Dead.NotWide 	0
+thesues__catkeeper:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jgauffin__griffin.mvccontrib -------------------------
+jgauffin__griffin.mvccontrib:	Gamma	holds? 	false
+jgauffin__griffin.mvccontrib:	Gamma	Geometry? 	false
+jgauffin__griffin.mvccontrib:	Gamma	FisherExecuted? 	false
+jgauffin__griffin.mvccontrib:	Gamma	p-Value? 	false
+jgauffin__griffin.mvccontrib:	Gamma	Surv.Wide 	0
+jgauffin__griffin.mvccontrib:	Gamma	Surv.NotWide 	2
+jgauffin__griffin.mvccontrib:	Gamma	Dead.Wide 	0
+jgauffin__griffin.mvccontrib:	Gamma	Dead.NotWide 	0
+jgauffin__griffin.mvccontrib:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,2 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1456925020.sql;1466606990.sql;wiki_pages;Update:TypeChange;status;VARCHAR(255);false;0;-

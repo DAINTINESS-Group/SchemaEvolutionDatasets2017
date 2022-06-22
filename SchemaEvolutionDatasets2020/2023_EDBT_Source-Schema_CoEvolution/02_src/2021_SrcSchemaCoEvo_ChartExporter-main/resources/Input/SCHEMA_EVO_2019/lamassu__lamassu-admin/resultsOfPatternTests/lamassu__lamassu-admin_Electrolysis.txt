@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- lamassu__lamassu-admin -------------------------
+lamassu__lamassu-admin:	Electrolysis	holds? 	true
+lamassu__lamassu-admin:	Electrolysis	Geometry? 	true
+lamassu__lamassu-admin:	Electrolysis	FisherExecuted? 	false
+lamassu__lamassu-admin:	Electrolysis	p-Value? 	false
+------------------------------------------------

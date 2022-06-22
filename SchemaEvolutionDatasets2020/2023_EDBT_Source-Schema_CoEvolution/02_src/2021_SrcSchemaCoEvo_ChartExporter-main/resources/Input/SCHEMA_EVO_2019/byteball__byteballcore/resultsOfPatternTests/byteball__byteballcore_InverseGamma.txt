@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- byteball__byteballcore -------------------------
+byteball__byteballcore:	InverseGamma	holds? 	true
+byteball__byteballcore:	InverseGamma	Geometry? 	true
+byteball__byteballcore:	InverseGamma	FisherExecuted? 	true
+byteball__byteballcore:	InverseGamma	p-Value? 	false
+------------------------------------------------

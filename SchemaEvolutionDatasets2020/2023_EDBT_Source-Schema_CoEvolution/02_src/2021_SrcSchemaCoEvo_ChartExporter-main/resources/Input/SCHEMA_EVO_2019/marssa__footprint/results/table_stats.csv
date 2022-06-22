@@ -1,0 +1,4 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+logging_event;3;0;-;0;16;16;16.0
+logging_event_exception;3;0;-;0;3;3;3.0
+logging_event_property;3;0;-;0;3;3;3.0

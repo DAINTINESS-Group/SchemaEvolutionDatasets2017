@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- MDSLab__s4t-iotronic-standalone -------------------------
+MDSLab__s4t-iotronic-standalone:	Gamma	holds? 	false
+MDSLab__s4t-iotronic-standalone:	Gamma	Geometry? 	false
+MDSLab__s4t-iotronic-standalone:	Gamma	FisherExecuted? 	false
+MDSLab__s4t-iotronic-standalone:	Gamma	p-Value? 	false
+MDSLab__s4t-iotronic-standalone:	Gamma	Surv.Wide 	0
+MDSLab__s4t-iotronic-standalone:	Gamma	Surv.NotWide 	28
+MDSLab__s4t-iotronic-standalone:	Gamma	Dead.Wide 	0
+MDSLab__s4t-iotronic-standalone:	Gamma	Dead.NotWide 	15
+MDSLab__s4t-iotronic-standalone:	Gamma	Wide 	0
+------------------------------------------------

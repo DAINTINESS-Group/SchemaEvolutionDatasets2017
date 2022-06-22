@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- outbrain__orchestrator -------------------------
+outbrain__orchestrator:	Gamma	holds? 	false
+outbrain__orchestrator:	Gamma	Geometry? 	false
+outbrain__orchestrator:	Gamma	FisherExecuted? 	false
+outbrain__orchestrator:	Gamma	p-Value? 	false
+outbrain__orchestrator:	Gamma	Surv.Wide 	0
+outbrain__orchestrator:	Gamma	Surv.NotWide 	1
+outbrain__orchestrator:	Gamma	Dead.Wide 	0
+outbrain__orchestrator:	Gamma	Dead.NotWide 	0
+outbrain__orchestrator:	Gamma	Wide 	0
+------------------------------------------------

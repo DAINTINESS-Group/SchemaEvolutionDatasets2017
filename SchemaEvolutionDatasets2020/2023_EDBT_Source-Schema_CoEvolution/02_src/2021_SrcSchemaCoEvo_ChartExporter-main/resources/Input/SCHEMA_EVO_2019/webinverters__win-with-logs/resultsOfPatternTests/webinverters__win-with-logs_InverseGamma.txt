@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- webinverters__win-with-logs -------------------------
+webinverters__win-with-logs:	InverseGamma	holds? 	true
+webinverters__win-with-logs:	InverseGamma	Geometry? 	true
+webinverters__win-with-logs:	InverseGamma	FisherExecuted? 	false
+webinverters__win-with-logs:	InverseGamma	p-Value? 	false
+------------------------------------------------

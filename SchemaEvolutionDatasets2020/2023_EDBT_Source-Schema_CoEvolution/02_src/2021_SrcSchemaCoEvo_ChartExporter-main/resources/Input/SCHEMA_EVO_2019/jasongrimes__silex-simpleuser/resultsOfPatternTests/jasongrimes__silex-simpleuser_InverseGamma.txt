@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jasongrimes__silex-simpleuser -------------------------
+jasongrimes__silex-simpleuser:	InverseGamma	holds? 	false
+jasongrimes__silex-simpleuser:	InverseGamma	Geometry? 	false
+jasongrimes__silex-simpleuser:	InverseGamma	FisherExecuted? 	false
+jasongrimes__silex-simpleuser:	InverseGamma	p-Value? 	false
+------------------------------------------------

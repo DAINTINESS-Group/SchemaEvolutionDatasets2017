@@ -1,0 +1,7 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+options	1	0	0	0	2016-06-05 06:53:20	2016-06-05 06:53:20	0	0	0	8	8	8	1	0	0	0	0		10	0	10
+system_accounts	2	1	-	2	2016-07-11 01:58:14	2016-07-11 05:30:56	1	1	0	10	10	10	1	0	0	0	0		20	0	20
+system_system_options	2	1	-	2	2016-07-11 01:58:14	2016-07-11 05:30:56	1	1	0	9	9	9	1	0	0	0	0		20	0	20
+system_tokens	2	1	-	2	2016-07-11 01:58:14	2016-07-11 05:30:56	1	1	0	12	12	12	1	0	0	0	0		20	0	20
+user_accounts	3	0	-	2	2016-06-05 06:53:20	2016-07-11 05:30:56	0	1	35	12	12	12	1	0	0	0	0		20	0	20
+user_posts	3	0	-	2	2016-06-05 06:53:20	2016-07-11 05:30:56	0	1	35	10	10	10	1	0	0	0	0		20	0	20

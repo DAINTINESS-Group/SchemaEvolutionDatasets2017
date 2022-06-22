@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- foodcoopshop__foodcoopshop -------------------------
+foodcoopshop__foodcoopshop:	Gamma	holds? 	true
+foodcoopshop__foodcoopshop:	Gamma	Geometry? 	true
+foodcoopshop__foodcoopshop:	Gamma	FisherExecuted? 	true
+foodcoopshop__foodcoopshop:	Gamma	p-Value? 	false
+foodcoopshop__foodcoopshop:	Gamma	Surv.Wide 	8
+foodcoopshop__foodcoopshop:	Gamma	Surv.NotWide 	27
+foodcoopshop__foodcoopshop:	Gamma	Dead.Wide 	1
+foodcoopshop__foodcoopshop:	Gamma	Dead.NotWide 	5
+foodcoopshop__foodcoopshop:	Gamma	Wide 	9
+------------------------------------------------

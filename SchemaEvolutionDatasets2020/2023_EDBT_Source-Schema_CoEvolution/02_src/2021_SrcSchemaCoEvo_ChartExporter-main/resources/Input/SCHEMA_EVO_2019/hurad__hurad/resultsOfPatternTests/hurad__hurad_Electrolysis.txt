@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- hurad__hurad -------------------------
+hurad__hurad:	Electrolysis	holds? 	true
+hurad__hurad:	Electrolysis	Geometry? 	true
+hurad__hurad:	Electrolysis	FisherExecuted? 	false
+hurad__hurad:	Electrolysis	p-Value? 	false
+------------------------------------------------

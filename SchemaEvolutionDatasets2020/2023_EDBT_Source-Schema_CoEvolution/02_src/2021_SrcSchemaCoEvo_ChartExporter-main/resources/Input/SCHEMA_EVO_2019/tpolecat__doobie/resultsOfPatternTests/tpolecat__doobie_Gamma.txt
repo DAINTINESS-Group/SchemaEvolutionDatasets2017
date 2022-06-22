@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- tpolecat__doobie -------------------------
+tpolecat__doobie:	Gamma	holds? 	true
+tpolecat__doobie:	Gamma	Geometry? 	true
+tpolecat__doobie:	Gamma	FisherExecuted? 	false
+tpolecat__doobie:	Gamma	p-Value? 	false
+tpolecat__doobie:	Gamma	Surv.Wide 	1
+tpolecat__doobie:	Gamma	Surv.NotWide 	2
+tpolecat__doobie:	Gamma	Dead.Wide 	0
+tpolecat__doobie:	Gamma	Dead.NotWide 	0
+tpolecat__doobie:	Gamma	Wide 	1
+------------------------------------------------

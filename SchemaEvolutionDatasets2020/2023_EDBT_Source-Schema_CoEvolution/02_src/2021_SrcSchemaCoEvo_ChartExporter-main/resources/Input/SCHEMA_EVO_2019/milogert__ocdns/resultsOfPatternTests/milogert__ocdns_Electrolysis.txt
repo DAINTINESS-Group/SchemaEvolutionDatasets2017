@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- milogert__ocdns -------------------------
+milogert__ocdns:	Electrolysis	holds? 	false
+milogert__ocdns:	Electrolysis	Geometry? 	false
+milogert__ocdns:	Electrolysis	FisherExecuted? 	false
+milogert__ocdns:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- ranaroussi__qtpylib -------------------------
+ranaroussi__qtpylib:	Gamma	holds? 	true
+ranaroussi__qtpylib:	Gamma	Geometry? 	true
+ranaroussi__qtpylib:	Gamma	FisherExecuted? 	false
+ranaroussi__qtpylib:	Gamma	p-Value? 	false
+ranaroussi__qtpylib:	Gamma	Surv.Wide 	2
+ranaroussi__qtpylib:	Gamma	Surv.NotWide 	4
+ranaroussi__qtpylib:	Gamma	Dead.Wide 	0
+ranaroussi__qtpylib:	Gamma	Dead.NotWide 	0
+ranaroussi__qtpylib:	Gamma	Wide 	2
+------------------------------------------------

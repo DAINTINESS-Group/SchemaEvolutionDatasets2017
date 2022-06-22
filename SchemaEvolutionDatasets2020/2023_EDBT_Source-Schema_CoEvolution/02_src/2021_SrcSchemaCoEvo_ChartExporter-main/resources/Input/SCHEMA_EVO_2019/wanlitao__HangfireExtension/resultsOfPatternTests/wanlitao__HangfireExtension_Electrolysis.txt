@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- wanlitao__HangfireExtension -------------------------
+wanlitao__HangfireExtension:	Electrolysis	holds? 	true
+wanlitao__HangfireExtension:	Electrolysis	Geometry? 	true
+wanlitao__HangfireExtension:	Electrolysis	FisherExecuted? 	false
+wanlitao__HangfireExtension:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- SeldonIO__seldon-server -------------------------
+SeldonIO__seldon-server:	Electrolysis	holds? 	true
+SeldonIO__seldon-server:	Electrolysis	Geometry? 	true
+SeldonIO__seldon-server:	Electrolysis	FisherExecuted? 	false
+SeldonIO__seldon-server:	Electrolysis	p-Value? 	false
+------------------------------------------------

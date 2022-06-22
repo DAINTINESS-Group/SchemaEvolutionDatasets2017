@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mattinsler__work-it -------------------------
+mattinsler__work-it:	Electrolysis	holds? 	true
+mattinsler__work-it:	Electrolysis	Geometry? 	true
+mattinsler__work-it:	Electrolysis	FisherExecuted? 	false
+mattinsler__work-it:	Electrolysis	p-Value? 	false
+------------------------------------------------

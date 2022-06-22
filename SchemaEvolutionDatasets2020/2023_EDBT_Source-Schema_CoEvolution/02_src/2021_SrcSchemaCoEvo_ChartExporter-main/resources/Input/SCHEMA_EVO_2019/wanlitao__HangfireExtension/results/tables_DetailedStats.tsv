@@ -1,0 +1,12 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+AggregatedCounter	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	4	4	4	1	0	0	0	0		20	0	20
+Counter	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	4	4	4	1	0	0	0	0		20	0	20
+Hash	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	5	5	5	1	0	0	0	0		20	0	20
+Job	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	8	8	8	1	0	0	0	0		20	0	20
+JobParameter	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	5	5	5	1	0	0	0	0		20	0	20
+JobQueue	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	5	5	5	1	1	1	0.5	0.5	1	20	1	21
+List	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	4	4	4	1	0	0	0	0		20	0	20
+Schema	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	1	1	1	1	0	0	0	0		20	0	20
+Server	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	4	4	4	1	1	1	0.5	0.5	1	20	1	21
+Set	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	5	5	5	1	0	0	0	0		20	0	20
+State	2	0	-	1	2017-08-22 10:38:07	2017-08-31 09:33:57	0	1	8	7	7	7	1	0	0	0	0		20	0	20

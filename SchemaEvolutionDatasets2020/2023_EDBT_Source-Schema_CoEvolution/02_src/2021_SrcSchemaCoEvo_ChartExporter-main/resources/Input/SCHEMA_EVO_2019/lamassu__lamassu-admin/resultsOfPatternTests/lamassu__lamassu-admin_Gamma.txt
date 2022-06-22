@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- lamassu__lamassu-admin -------------------------
+lamassu__lamassu-admin:	Gamma	holds? 	true
+lamassu__lamassu-admin:	Gamma	Geometry? 	true
+lamassu__lamassu-admin:	Gamma	FisherExecuted? 	false
+lamassu__lamassu-admin:	Gamma	p-Value? 	true
+lamassu__lamassu-admin:	Gamma	Surv.Wide 	1
+lamassu__lamassu-admin:	Gamma	Surv.NotWide 	4
+lamassu__lamassu-admin:	Gamma	Dead.Wide 	0
+lamassu__lamassu-admin:	Gamma	Dead.NotWide 	2
+lamassu__lamassu-admin:	Gamma	Wide 	1
+------------------------------------------------

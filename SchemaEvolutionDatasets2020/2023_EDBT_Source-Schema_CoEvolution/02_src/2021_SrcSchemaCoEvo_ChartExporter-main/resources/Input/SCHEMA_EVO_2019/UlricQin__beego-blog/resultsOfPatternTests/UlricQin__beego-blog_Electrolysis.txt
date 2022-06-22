@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- UlricQin__beego-blog -------------------------
+UlricQin__beego-blog:	Electrolysis	holds? 	false
+UlricQin__beego-blog:	Electrolysis	Geometry? 	false
+UlricQin__beego-blog:	Electrolysis	FisherExecuted? 	false
+UlricQin__beego-blog:	Electrolysis	p-Value? 	false
+------------------------------------------------

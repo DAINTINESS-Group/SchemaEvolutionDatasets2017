@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ichthus-soft__bible-api -------------------------
+ichthus-soft__bible-api:	Electrolysis	holds? 	true
+ichthus-soft__bible-api:	Electrolysis	Geometry? 	true
+ichthus-soft__bible-api:	Electrolysis	FisherExecuted? 	false
+ichthus-soft__bible-api:	Electrolysis	p-Value? 	false
+------------------------------------------------

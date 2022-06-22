@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1407202205.sql;1408864923.sql;nodelogs;Insertion:UpdateTable;meta;TEXT;false;0;-
+2;1408864923.sql;1409285498.sql;nodelogs;Update:TypeChange;logdate;TIMESTAMPWITHOUTTIMEZONE;false;0;-
+2;1408864923.sql;1409285498.sql;nodelogs;Deletion:UpdateTable;meta;TEXT;false;0;-
+3;1409285498.sql;1409285714.sql;nodelogs;Insertion:UpdateTable;meta;TEXT;false;0;-

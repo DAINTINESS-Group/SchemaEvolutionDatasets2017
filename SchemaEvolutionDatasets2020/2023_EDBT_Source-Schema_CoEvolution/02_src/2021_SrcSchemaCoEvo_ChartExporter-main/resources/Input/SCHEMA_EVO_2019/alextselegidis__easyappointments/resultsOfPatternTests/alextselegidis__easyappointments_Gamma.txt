@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- alextselegidis__easyappointments -------------------------
+alextselegidis__easyappointments:	Gamma	holds? 	true
+alextselegidis__easyappointments:	Gamma	Geometry? 	true
+alextselegidis__easyappointments:	Gamma	FisherExecuted? 	false
+alextselegidis__easyappointments:	Gamma	p-Value? 	false
+alextselegidis__easyappointments:	Gamma	Surv.Wide 	3
+alextselegidis__easyappointments:	Gamma	Surv.NotWide 	8
+alextselegidis__easyappointments:	Gamma	Dead.Wide 	0
+alextselegidis__easyappointments:	Gamma	Dead.NotWide 	0
+alextselegidis__easyappointments:	Gamma	Wide 	3
+------------------------------------------------

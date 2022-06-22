@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- openzipkin__zipkin -------------------------
+openzipkin__zipkin:	Gamma	holds? 	true
+openzipkin__zipkin:	Gamma	Geometry? 	true
+openzipkin__zipkin:	Gamma	FisherExecuted? 	false
+openzipkin__zipkin:	Gamma	p-Value? 	false
+openzipkin__zipkin:	Gamma	Surv.Wide 	1
+openzipkin__zipkin:	Gamma	Surv.NotWide 	2
+openzipkin__zipkin:	Gamma	Dead.Wide 	0
+openzipkin__zipkin:	Gamma	Dead.NotWide 	0
+openzipkin__zipkin:	Gamma	Wide 	1
+------------------------------------------------

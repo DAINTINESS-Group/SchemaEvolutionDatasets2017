@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- dlds__yii2-mlm -------------------------
+dlds__yii2-mlm:	Electrolysis	holds? 	true
+dlds__yii2-mlm:	Electrolysis	Geometry? 	true
+dlds__yii2-mlm:	Electrolysis	FisherExecuted? 	false
+dlds__yii2-mlm:	Electrolysis	p-Value? 	false
+------------------------------------------------

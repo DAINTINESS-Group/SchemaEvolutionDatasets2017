@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- rogeriopvl__nodo -------------------------
+rogeriopvl__nodo:	Gamma	holds? 	true
+rogeriopvl__nodo:	Gamma	Geometry? 	true
+rogeriopvl__nodo:	Gamma	FisherExecuted? 	false
+rogeriopvl__nodo:	Gamma	p-Value? 	false
+rogeriopvl__nodo:	Gamma	Surv.Wide 	1
+rogeriopvl__nodo:	Gamma	Surv.NotWide 	1
+rogeriopvl__nodo:	Gamma	Dead.Wide 	0
+rogeriopvl__nodo:	Gamma	Dead.NotWide 	0
+rogeriopvl__nodo:	Gamma	Wide 	1
+------------------------------------------------

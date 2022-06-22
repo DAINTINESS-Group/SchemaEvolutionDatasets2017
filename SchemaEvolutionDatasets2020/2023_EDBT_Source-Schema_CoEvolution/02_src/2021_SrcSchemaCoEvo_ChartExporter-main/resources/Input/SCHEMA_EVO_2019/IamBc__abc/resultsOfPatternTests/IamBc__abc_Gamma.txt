@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- IamBc__abc -------------------------
+IamBc__abc:	Gamma	holds? 	false
+IamBc__abc:	Gamma	Geometry? 	false
+IamBc__abc:	Gamma	FisherExecuted? 	false
+IamBc__abc:	Gamma	p-Value? 	false
+IamBc__abc:	Gamma	Surv.Wide 	0
+IamBc__abc:	Gamma	Surv.NotWide 	6
+IamBc__abc:	Gamma	Dead.Wide 	0
+IamBc__abc:	Gamma	Dead.NotWide 	0
+IamBc__abc:	Gamma	Wide 	0
+------------------------------------------------

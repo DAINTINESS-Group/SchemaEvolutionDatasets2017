@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- aimeos__aimeos-typo3 -------------------------
+aimeos__aimeos-typo3:	InverseGamma	holds? 	true
+aimeos__aimeos-typo3:	InverseGamma	Geometry? 	true
+aimeos__aimeos-typo3:	InverseGamma	FisherExecuted? 	false
+aimeos__aimeos-typo3:	InverseGamma	p-Value? 	false
+------------------------------------------------

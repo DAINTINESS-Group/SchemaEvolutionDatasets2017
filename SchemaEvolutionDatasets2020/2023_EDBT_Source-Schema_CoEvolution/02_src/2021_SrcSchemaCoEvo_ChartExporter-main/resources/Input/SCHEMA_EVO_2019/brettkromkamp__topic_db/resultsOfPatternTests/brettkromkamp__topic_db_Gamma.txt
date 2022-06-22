@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- brettkromkamp__topic_db -------------------------
+brettkromkamp__topic_db:	Gamma	holds? 	false
+brettkromkamp__topic_db:	Gamma	Geometry? 	false
+brettkromkamp__topic_db:	Gamma	FisherExecuted? 	false
+brettkromkamp__topic_db:	Gamma	p-Value? 	false
+brettkromkamp__topic_db:	Gamma	Surv.Wide 	0
+brettkromkamp__topic_db:	Gamma	Surv.NotWide 	7
+brettkromkamp__topic_db:	Gamma	Dead.Wide 	0
+brettkromkamp__topic_db:	Gamma	Dead.NotWide 	8
+brettkromkamp__topic_db:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jaybennett89__thorium-go -------------------------
+jaybennett89__thorium-go:	InverseGamma	holds? 	true
+jaybennett89__thorium-go:	InverseGamma	Geometry? 	true
+jaybennett89__thorium-go:	InverseGamma	FisherExecuted? 	false
+jaybennett89__thorium-go:	InverseGamma	p-Value? 	false
+------------------------------------------------

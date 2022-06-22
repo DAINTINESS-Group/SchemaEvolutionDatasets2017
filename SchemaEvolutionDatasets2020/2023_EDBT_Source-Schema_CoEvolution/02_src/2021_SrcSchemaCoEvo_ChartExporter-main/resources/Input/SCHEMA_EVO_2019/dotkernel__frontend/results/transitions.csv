@@ -1,0 +1,9 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1491574533.sql;1493764532.sql;user_message;Insertion:NewTable;created;TIMESTAMP;false;0;-
+1;1491574533.sql;1493764532.sql;user_message;Insertion:NewTable;email;VARCHAR(150);false;0;-
+1;1491574533.sql;1493764532.sql;user_message;Insertion:NewTable;id;INT(11);false;0;-
+1;1491574533.sql;1493764532.sql;user_message;Insertion:NewTable;message;TEXT;false;0;-
+1;1491574533.sql;1493764532.sql;user_message;Insertion:NewTable;name;TEXT;false;0;-
+1;1491574533.sql;1493764532.sql;user_message;Insertion:NewTable;subject;TEXT;false;0;-
+2;1493764532.sql;1493764935.sql;-;-;-;-;-;-;-
+3;1493764935.sql;1506442698.sql;-;-;-;-;-;-;-

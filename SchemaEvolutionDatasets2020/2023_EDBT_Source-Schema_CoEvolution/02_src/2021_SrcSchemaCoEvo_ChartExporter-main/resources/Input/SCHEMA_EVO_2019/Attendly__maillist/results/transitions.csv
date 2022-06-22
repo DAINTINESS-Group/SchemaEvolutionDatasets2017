@@ -1,0 +1,16 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1449535568.sql;1449630375.sql;variable;Insertion:NewTable;name;VARCHAR(255);false;0;-
+1;1449535568.sql;1449630375.sql;variable;Insertion:NewTable;value;VARCHAR(255);false;0;-
+2;1449630375.sql;1449718384.sql;account;Insertion:UpdateTable;create_time;BIGINT(20);false;0;-
+2;1449630375.sql;1449718384.sql;campaign;Insertion:UpdateTable;create_time;BIGINT(20);false;0;-
+2;1449630375.sql;1449718384.sql;campaign;Update:TypeChange;scheduled;BIGINT(20);false;0;-
+2;1449630375.sql;1449718384.sql;list;Insertion:UpdateTable;create_time;BIGINT(20);false;0;-
+2;1449630375.sql;1449718384.sql;list_subscriber;Insertion:UpdateTable;create_time;BIGINT(20);false;0;-
+2;1449630375.sql;1449718384.sql;message;Insertion:UpdateTable;create_time;BIGINT(20);false;0;-
+2;1449630375.sql;1449718384.sql;subscriber;Insertion:UpdateTable;create_time;BIGINT(20);false;0;-
+3;1449718384.sql;1449722988.sql;-;-;-;-;-;-;-
+4;1449722988.sql;1449725911.sql;subscriber;Update:TypeChange;status;ENUM('ACTIVE','DELETED','UNSUBSCRIBED');false;0;-
+5;1449725911.sql;1449793182.sql;list_subscriber;Deletion:UpdateTable;status;ENUM('ACTIVE','DELETED');false;0;-
+6;1449793182.sql;1449804504.sql;message;Update:TypeChange;status;ENUM('PENDING','SENT','CANCELLED','FAILED');false;0;-
+7;1449804504.sql;1450139220.sql;-;-;-;-;-;-;-
+8;1450139220.sql;1458709536.sql;account;Insertion:UpdateTable;application_id;BIGINT(20);false;0;-

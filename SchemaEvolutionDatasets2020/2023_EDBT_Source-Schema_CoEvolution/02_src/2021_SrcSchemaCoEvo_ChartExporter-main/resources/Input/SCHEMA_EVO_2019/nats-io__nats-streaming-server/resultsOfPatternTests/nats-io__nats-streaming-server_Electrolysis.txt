@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- nats-io__nats-streaming-server -------------------------
+nats-io__nats-streaming-server:	Electrolysis	holds? 	true
+nats-io__nats-streaming-server:	Electrolysis	Geometry? 	true
+nats-io__nats-streaming-server:	Electrolysis	FisherExecuted? 	false
+nats-io__nats-streaming-server:	Electrolysis	p-Value? 	false
+------------------------------------------------

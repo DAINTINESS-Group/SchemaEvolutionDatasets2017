@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+dummy_products	3	0	-	2	2012-06-07 21:11:57	2013-10-22 22:29:29	0	2	502	5	5	5	1	0	0	0	0		20	0	20
+products	3	0	-	2	2012-06-07 21:11:57	2013-10-22 22:29:29	0	2	502	7	10	8.33	1.43	3	2	1	0.67	1.5	20	1	21
+schema_migrations	3	0	-	2	2012-06-07 21:11:57	2013-10-22 22:29:29	0	2	502	1	1	1	1	0	0	0	0		20	0	20
+services	3	0	-	2	2012-06-07 21:11:57	2013-10-22 22:29:29	0	2	502	5	5	5	1	0	0	0	0		20	0	20
+transactions	3	0	-	2	2012-06-07 21:11:57	2013-10-22 22:29:29	0	2	502	6	6	6	1	0	0	0	0		20	0	20

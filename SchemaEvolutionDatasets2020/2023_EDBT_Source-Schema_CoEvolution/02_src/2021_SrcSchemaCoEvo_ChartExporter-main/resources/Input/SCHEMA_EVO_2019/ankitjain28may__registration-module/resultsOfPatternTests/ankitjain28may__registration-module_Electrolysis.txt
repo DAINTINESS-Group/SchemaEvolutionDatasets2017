@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ankitjain28may__registration-module -------------------------
+ankitjain28may__registration-module:	Electrolysis	holds? 	true
+ankitjain28may__registration-module:	Electrolysis	Geometry? 	true
+ankitjain28may__registration-module:	Electrolysis	FisherExecuted? 	false
+ankitjain28may__registration-module:	Electrolysis	p-Value? 	false
+------------------------------------------------

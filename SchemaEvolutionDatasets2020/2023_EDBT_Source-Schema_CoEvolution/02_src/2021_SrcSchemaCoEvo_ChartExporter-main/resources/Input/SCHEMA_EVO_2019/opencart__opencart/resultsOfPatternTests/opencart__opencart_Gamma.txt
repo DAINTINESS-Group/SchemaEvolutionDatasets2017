@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- opencart__opencart -------------------------
+opencart__opencart:	Gamma	holds? 	false
+opencart__opencart:	Gamma	Geometry? 	false
+opencart__opencart:	Gamma	FisherExecuted? 	true
+opencart__opencart:	Gamma	p-Value? 	false
+opencart__opencart:	Gamma	Surv.Wide 	14
+opencart__opencart:	Gamma	Surv.NotWide 	121
+opencart__opencart:	Gamma	Dead.Wide 	13
+opencart__opencart:	Gamma	Dead.NotWide 	135
+opencart__opencart:	Gamma	Wide 	27
+------------------------------------------------

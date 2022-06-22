@@ -1,0 +1,7 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1429523571.sql;1429564178.sql;execution_errors;Insertion:NewTable;error;TEXT;false;0;-
+1;1429523571.sql;1429564178.sql;execution_errors;Insertion:NewTable;id;BINARY(32);true;0;-
+1;1429523571.sql;1429564178.sql;executions;Deletion:UpdateTable;error;TEXT;false;0;-
+1;1429523571.sql;1429564178.sql;executions;Insertion:UpdateTable;error_id;BINARY(32);false;0;-
+2;1429564178.sql;1429697642.sql;-;-;-;-;-;-;-
+3;1429697642.sql;1430870267.sql;-;-;-;-;-;-;-

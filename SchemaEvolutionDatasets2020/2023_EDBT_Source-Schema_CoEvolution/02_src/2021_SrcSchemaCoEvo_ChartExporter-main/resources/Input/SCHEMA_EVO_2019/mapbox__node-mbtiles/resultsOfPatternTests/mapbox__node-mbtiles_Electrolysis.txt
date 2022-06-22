@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mapbox__node-mbtiles -------------------------
+mapbox__node-mbtiles:	Electrolysis	holds? 	true
+mapbox__node-mbtiles:	Electrolysis	Geometry? 	true
+mapbox__node-mbtiles:	Electrolysis	FisherExecuted? 	false
+mapbox__node-mbtiles:	Electrolysis	p-Value? 	false
+------------------------------------------------

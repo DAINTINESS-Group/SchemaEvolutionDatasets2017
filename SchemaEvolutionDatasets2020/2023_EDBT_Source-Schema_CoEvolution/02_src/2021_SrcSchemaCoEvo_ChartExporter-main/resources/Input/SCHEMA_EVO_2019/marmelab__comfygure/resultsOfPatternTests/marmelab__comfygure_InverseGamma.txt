@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- marmelab__comfygure -------------------------
+marmelab__comfygure:	InverseGamma	holds? 	true
+marmelab__comfygure:	InverseGamma	Geometry? 	true
+marmelab__comfygure:	InverseGamma	FisherExecuted? 	false
+marmelab__comfygure:	InverseGamma	p-Value? 	false
+------------------------------------------------

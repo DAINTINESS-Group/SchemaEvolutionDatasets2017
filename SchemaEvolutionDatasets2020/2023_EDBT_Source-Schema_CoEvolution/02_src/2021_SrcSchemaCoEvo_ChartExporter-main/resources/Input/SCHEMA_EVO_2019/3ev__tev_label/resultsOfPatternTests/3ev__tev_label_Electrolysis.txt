@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- 3ev__tev_label -------------------------
+3ev__tev_label:	Electrolysis	holds? 	false
+3ev__tev_label:	Electrolysis	Geometry? 	false
+3ev__tev_label:	Electrolysis	FisherExecuted? 	false
+3ev__tev_label:	Electrolysis	p-Value? 	false
+------------------------------------------------

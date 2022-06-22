@@ -1,0 +1,7 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+abundances	1	0	0	0	2015-01-15 13:46:03	2015-01-15 13:46:03	0	0	0	3	3	3	1	0	0	0	0		10	0	10
+magnitudes	1	1	-	1	2015-01-25 08:44:41	2015-01-25 08:44:41	1	1	0	7	7	7	1	0	0	0	0		20	0	20
+names	1	1	-	1	2015-01-25 08:44:41	2015-01-25 08:44:41	1	1	0	3	3	3	1	0	0	0	0		20	0	20
+stars	2	0	-	1	2015-01-15 13:46:03	2015-01-25 08:44:41	0	1	9	4	4	4	1	1	1	0.5	0.5	1	20	1	21
+temperatures	2	0	-	1	2015-01-15 13:46:03	2015-01-25 08:44:41	0	1	9	2	3	2.5	1.5	2	1	1	0.5	2	20	1	21
+vr	1	0	0	0	2015-01-15 13:46:03	2015-01-15 13:46:03	0	0	0	3	3	3	1	0	0	0	0		10	0	10

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- webadmin87__rzwebsys7 -------------------------
+webadmin87__rzwebsys7:	Electrolysis	holds? 	true
+webadmin87__rzwebsys7:	Electrolysis	Geometry? 	true
+webadmin87__rzwebsys7:	Electrolysis	FisherExecuted? 	false
+webadmin87__rzwebsys7:	Electrolysis	p-Value? 	false
+------------------------------------------------

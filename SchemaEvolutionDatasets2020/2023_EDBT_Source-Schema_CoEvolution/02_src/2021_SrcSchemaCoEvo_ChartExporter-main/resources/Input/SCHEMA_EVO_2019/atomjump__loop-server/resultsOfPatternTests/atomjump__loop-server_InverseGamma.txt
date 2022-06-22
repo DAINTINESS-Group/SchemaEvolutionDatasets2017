@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- atomjump__loop-server -------------------------
+atomjump__loop-server:	InverseGamma	holds? 	true
+atomjump__loop-server:	InverseGamma	Geometry? 	true
+atomjump__loop-server:	InverseGamma	FisherExecuted? 	false
+atomjump__loop-server:	InverseGamma	p-Value? 	false
+------------------------------------------------

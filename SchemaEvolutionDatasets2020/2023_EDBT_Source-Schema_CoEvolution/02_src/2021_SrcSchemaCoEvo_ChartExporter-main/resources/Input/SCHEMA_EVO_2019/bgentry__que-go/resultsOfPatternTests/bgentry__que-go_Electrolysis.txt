@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- bgentry__que-go -------------------------
+bgentry__que-go:	Electrolysis	holds? 	true
+bgentry__que-go:	Electrolysis	Geometry? 	true
+bgentry__que-go:	Electrolysis	FisherExecuted? 	false
+bgentry__que-go:	Electrolysis	p-Value? 	false
+------------------------------------------------

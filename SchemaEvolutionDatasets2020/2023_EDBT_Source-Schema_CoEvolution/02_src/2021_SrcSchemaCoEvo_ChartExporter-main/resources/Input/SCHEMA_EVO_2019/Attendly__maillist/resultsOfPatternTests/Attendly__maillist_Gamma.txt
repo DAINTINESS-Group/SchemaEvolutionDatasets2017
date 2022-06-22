@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- Attendly__maillist -------------------------
+Attendly__maillist:	Gamma	holds? 	false
+Attendly__maillist:	Gamma	Geometry? 	false
+Attendly__maillist:	Gamma	FisherExecuted? 	false
+Attendly__maillist:	Gamma	p-Value? 	false
+Attendly__maillist:	Gamma	Surv.Wide 	0
+Attendly__maillist:	Gamma	Surv.NotWide 	7
+Attendly__maillist:	Gamma	Dead.Wide 	0
+Attendly__maillist:	Gamma	Dead.NotWide 	0
+Attendly__maillist:	Gamma	Wide 	0
+------------------------------------------------

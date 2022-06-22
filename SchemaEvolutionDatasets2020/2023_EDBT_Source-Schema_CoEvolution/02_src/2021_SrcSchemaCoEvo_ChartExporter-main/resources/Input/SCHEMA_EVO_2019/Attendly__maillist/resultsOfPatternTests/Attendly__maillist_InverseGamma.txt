@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- Attendly__maillist -------------------------
+Attendly__maillist:	InverseGamma	holds? 	true
+Attendly__maillist:	InverseGamma	Geometry? 	true
+Attendly__maillist:	InverseGamma	FisherExecuted? 	false
+Attendly__maillist:	InverseGamma	p-Value? 	false
+------------------------------------------------

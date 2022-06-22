@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- benoitletondor__TwitterBot -------------------------
+benoitletondor__TwitterBot:	InverseGamma	holds? 	false
+benoitletondor__TwitterBot:	InverseGamma	Geometry? 	false
+benoitletondor__TwitterBot:	InverseGamma	FisherExecuted? 	false
+benoitletondor__TwitterBot:	InverseGamma	p-Value? 	false
+------------------------------------------------

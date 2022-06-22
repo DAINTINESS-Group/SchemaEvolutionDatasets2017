@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- eldersantos__winston-postgre -------------------------
+eldersantos__winston-postgre:	InverseGamma	holds? 	true
+eldersantos__winston-postgre:	InverseGamma	Geometry? 	true
+eldersantos__winston-postgre:	InverseGamma	FisherExecuted? 	false
+eldersantos__winston-postgre:	InverseGamma	p-Value? 	false
+------------------------------------------------

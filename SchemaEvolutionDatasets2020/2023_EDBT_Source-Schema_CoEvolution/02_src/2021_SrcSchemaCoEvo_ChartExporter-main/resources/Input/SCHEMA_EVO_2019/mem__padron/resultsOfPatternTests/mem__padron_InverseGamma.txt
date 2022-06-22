@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mem__padron -------------------------
+mem__padron:	InverseGamma	holds? 	true
+mem__padron:	InverseGamma	Geometry? 	true
+mem__padron:	InverseGamma	FisherExecuted? 	false
+mem__padron:	InverseGamma	p-Value? 	false
+------------------------------------------------

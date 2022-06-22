@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+geo_countrys	3	0	-	2	2014-08-11 12:05:20	2015-05-18 13:02:33	0	1	280	7	9	7.67	1.29	15	2	5	0.67	7.5	20	2	22
+geo_np	3	0	-	2	2014-08-11 12:05:20	2015-05-18 13:02:33	0	1	280	12	14	12.67	1.17	25	2	8.33	0.67	12.5	20	2	22
+geo_rajon	3	0	-	2	2014-08-11 12:05:20	2015-05-18 13:02:33	0	1	280	12	14	12.67	1.17	25	2	8.33	0.67	12.5	20	2	22
+geo_region	3	0	-	2	2014-08-11 12:05:20	2015-05-18 13:02:33	0	1	280	12	14	12.67	1.17	25	2	8.33	0.67	12.5	20	2	22
+geo_street	2	1	-	2	2014-11-19 12:25:25	2015-05-18 13:02:33	1	1	180	13	15	14	1.15	14	1	7	0.5	14	20	2	22

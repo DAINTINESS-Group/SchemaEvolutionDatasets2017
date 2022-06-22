@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- n2n__rocket -------------------------
+n2n__rocket:	InverseGamma	holds? 	false
+n2n__rocket:	InverseGamma	Geometry? 	false
+n2n__rocket:	InverseGamma	FisherExecuted? 	true
+n2n__rocket:	InverseGamma	p-Value? 	false
+------------------------------------------------

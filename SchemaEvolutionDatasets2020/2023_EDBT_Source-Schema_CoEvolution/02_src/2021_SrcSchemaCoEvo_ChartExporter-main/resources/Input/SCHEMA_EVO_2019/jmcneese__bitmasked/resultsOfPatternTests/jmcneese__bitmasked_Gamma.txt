@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jmcneese__bitmasked -------------------------
+jmcneese__bitmasked:	Gamma	holds? 	false
+jmcneese__bitmasked:	Gamma	Geometry? 	false
+jmcneese__bitmasked:	Gamma	FisherExecuted? 	false
+jmcneese__bitmasked:	Gamma	p-Value? 	false
+jmcneese__bitmasked:	Gamma	Surv.Wide 	0
+jmcneese__bitmasked:	Gamma	Surv.NotWide 	1
+jmcneese__bitmasked:	Gamma	Dead.Wide 	0
+jmcneese__bitmasked:	Gamma	Dead.NotWide 	0
+jmcneese__bitmasked:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,10 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+bar;1;0;0;0;3;3;3.0
+bars;3;1;-;0;3;3;3.0
+comps;2;2;-;1;6;5;5.5
+entries;4;0;-;0;7;7;7.0
+foo;1;0;0;0;3;3;3.0
+foos;3;1;-;0;3;3;3.0
+keys;2;2;-;0;3;3;3.0
+schema_migrations;4;0;-;0;1;1;1.0
+words;4;0;-;1;10;11;10.75

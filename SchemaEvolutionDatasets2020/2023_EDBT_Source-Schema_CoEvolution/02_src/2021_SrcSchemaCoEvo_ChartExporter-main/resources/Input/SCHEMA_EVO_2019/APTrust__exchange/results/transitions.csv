@@ -1,0 +1,10 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1492718837.sql;1493125666.sql;fixed_files;Insertion:UpdateTable;batch_number;INT;false;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Insertion:UpdateTable;error_message;TEXT;false;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Insertion:UpdateTable;id;INTEGER;true;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Insertion:UpdateTable;restore_completed_at;DATETIME;false;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Insertion:UpdateTable;restore_requested_at;DATETIME;false;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Insertion:UpdateTable;size;BIGINT;false;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Deletion:UpdateTable;from_url;VARCHAR(255);false;0;-
+1;1492718837.sql;1493125666.sql;fixed_files;Deletion:UpdateTable;to_url;VARCHAR(255);false;0;-
+1;1492718837.sql;1493125666.sql;stored_files;Deletion:UpdateTable;id;INTEGER;true;0;-

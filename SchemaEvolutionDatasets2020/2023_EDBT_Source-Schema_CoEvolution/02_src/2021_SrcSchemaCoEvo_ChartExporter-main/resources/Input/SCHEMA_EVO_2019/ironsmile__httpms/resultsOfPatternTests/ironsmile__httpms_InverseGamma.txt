@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ironsmile__httpms -------------------------
+ironsmile__httpms:	InverseGamma	holds? 	true
+ironsmile__httpms:	InverseGamma	Geometry? 	true
+ironsmile__httpms:	InverseGamma	FisherExecuted? 	false
+ironsmile__httpms:	InverseGamma	p-Value? 	false
+------------------------------------------------

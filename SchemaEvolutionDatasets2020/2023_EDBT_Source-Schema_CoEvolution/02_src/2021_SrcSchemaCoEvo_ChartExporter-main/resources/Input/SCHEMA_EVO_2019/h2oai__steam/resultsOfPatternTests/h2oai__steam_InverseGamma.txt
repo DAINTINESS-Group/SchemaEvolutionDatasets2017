@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- h2oai__steam -------------------------
+h2oai__steam:	InverseGamma	holds? 	true
+h2oai__steam:	InverseGamma	Geometry? 	true
+h2oai__steam:	InverseGamma	FisherExecuted? 	false
+h2oai__steam:	InverseGamma	p-Value? 	false
+------------------------------------------------

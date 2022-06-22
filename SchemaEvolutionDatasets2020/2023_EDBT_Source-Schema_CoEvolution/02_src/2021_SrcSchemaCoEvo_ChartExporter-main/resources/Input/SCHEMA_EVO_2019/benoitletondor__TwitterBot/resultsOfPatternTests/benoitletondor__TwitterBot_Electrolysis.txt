@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- benoitletondor__TwitterBot -------------------------
+benoitletondor__TwitterBot:	Electrolysis	holds? 	true
+benoitletondor__TwitterBot:	Electrolysis	Geometry? 	true
+benoitletondor__TwitterBot:	Electrolysis	FisherExecuted? 	false
+benoitletondor__TwitterBot:	Electrolysis	p-Value? 	false
+------------------------------------------------

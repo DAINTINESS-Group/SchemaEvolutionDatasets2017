@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- shouldbee__reserved-usernames -------------------------
+shouldbee__reserved-usernames:	Gamma	holds? 	false
+shouldbee__reserved-usernames:	Gamma	Geometry? 	false
+shouldbee__reserved-usernames:	Gamma	FisherExecuted? 	false
+shouldbee__reserved-usernames:	Gamma	p-Value? 	false
+shouldbee__reserved-usernames:	Gamma	Surv.Wide 	0
+shouldbee__reserved-usernames:	Gamma	Surv.NotWide 	1
+shouldbee__reserved-usernames:	Gamma	Dead.Wide 	0
+shouldbee__reserved-usernames:	Gamma	Dead.NotWide 	0
+shouldbee__reserved-usernames:	Gamma	Wide 	0
+------------------------------------------------

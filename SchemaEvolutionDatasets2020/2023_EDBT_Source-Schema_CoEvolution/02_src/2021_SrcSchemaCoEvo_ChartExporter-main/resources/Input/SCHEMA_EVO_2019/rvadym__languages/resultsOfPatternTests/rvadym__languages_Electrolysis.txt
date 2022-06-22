@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rvadym__languages -------------------------
+rvadym__languages:	Electrolysis	holds? 	true
+rvadym__languages:	Electrolysis	Geometry? 	true
+rvadym__languages:	Electrolysis	FisherExecuted? 	false
+rvadym__languages:	Electrolysis	p-Value? 	false
+------------------------------------------------

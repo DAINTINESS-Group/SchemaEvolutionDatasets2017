@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- chill117__express-mysql-session -------------------------
+chill117__express-mysql-session:	Electrolysis	holds? 	true
+chill117__express-mysql-session:	Electrolysis	Geometry? 	true
+chill117__express-mysql-session:	Electrolysis	FisherExecuted? 	false
+chill117__express-mysql-session:	Electrolysis	p-Value? 	false
+------------------------------------------------

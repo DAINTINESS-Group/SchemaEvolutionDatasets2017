@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- saltzm__yadi -------------------------
+saltzm__yadi:	Electrolysis	holds? 	true
+saltzm__yadi:	Electrolysis	Geometry? 	true
+saltzm__yadi:	Electrolysis	FisherExecuted? 	false
+saltzm__yadi:	Electrolysis	p-Value? 	false
+------------------------------------------------

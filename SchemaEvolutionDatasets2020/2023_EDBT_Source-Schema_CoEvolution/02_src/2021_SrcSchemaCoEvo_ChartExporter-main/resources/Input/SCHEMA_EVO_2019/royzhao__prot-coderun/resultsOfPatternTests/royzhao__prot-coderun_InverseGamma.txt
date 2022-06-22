@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- royzhao__prot-coderun -------------------------
+royzhao__prot-coderun:	InverseGamma	holds? 	true
+royzhao__prot-coderun:	InverseGamma	Geometry? 	true
+royzhao__prot-coderun:	InverseGamma	FisherExecuted? 	false
+royzhao__prot-coderun:	InverseGamma	p-Value? 	false
+------------------------------------------------

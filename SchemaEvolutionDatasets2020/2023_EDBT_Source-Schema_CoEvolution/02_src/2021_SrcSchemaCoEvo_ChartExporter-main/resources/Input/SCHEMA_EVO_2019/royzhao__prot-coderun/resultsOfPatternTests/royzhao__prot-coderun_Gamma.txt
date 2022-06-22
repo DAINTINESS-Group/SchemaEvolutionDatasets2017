@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- royzhao__prot-coderun -------------------------
+royzhao__prot-coderun:	Gamma	holds? 	false
+royzhao__prot-coderun:	Gamma	Geometry? 	false
+royzhao__prot-coderun:	Gamma	FisherExecuted? 	false
+royzhao__prot-coderun:	Gamma	p-Value? 	false
+royzhao__prot-coderun:	Gamma	Surv.Wide 	0
+royzhao__prot-coderun:	Gamma	Surv.NotWide 	5
+royzhao__prot-coderun:	Gamma	Dead.Wide 	0
+royzhao__prot-coderun:	Gamma	Dead.NotWide 	0
+royzhao__prot-coderun:	Gamma	Wide 	0
+------------------------------------------------

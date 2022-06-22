@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- soapboxsys__ombudslib -------------------------
+soapboxsys__ombudslib:	Gamma	holds? 	false
+soapboxsys__ombudslib:	Gamma	Geometry? 	false
+soapboxsys__ombudslib:	Gamma	FisherExecuted? 	false
+soapboxsys__ombudslib:	Gamma	p-Value? 	false
+soapboxsys__ombudslib:	Gamma	Surv.Wide 	0
+soapboxsys__ombudslib:	Gamma	Surv.NotWide 	4
+soapboxsys__ombudslib:	Gamma	Dead.Wide 	0
+soapboxsys__ombudslib:	Gamma	Dead.NotWide 	1
+soapboxsys__ombudslib:	Gamma	Wide 	0
+------------------------------------------------

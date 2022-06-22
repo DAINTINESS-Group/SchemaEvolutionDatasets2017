@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1440422932.sql;1446128000.sql;-;-;-;-;-;-;-
+2;1446128000.sql;1467290702.sql;ancestors;Update:TypeChange;ancestor;UUID;false;0;-
+2;1446128000.sql;1467290702.sql;ancestors;Update:TypeChange;node;UUID;false;0;-
+2;1446128000.sql;1467290702.sql;nodes;Update:TypeChange;id;UUID;true;0;-
+2;1446128000.sql;1467290702.sql;nodes;Update:TypeChange;parent;UUID;false;0;-

@@ -1,0 +1,12 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+apps	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	7	8	7.5	1.14	1	1	0.5	0.5	1	20	1	21
+certificates	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	6	6	6	1	0	0	0	0		20	0	20
+configs	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	4	4	4	1	0	0	0	0		20	0	20
+domains	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	4	4	4	1	0	0	0	0		20	0	20
+ecs_environment	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	2	2	2	1	0	0	0	0		20	0	20
+ports	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	4	4	4	1	0	0	0	0		20	0	20
+releases	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	8	8	8	1	0	0	0	0		20	0	20
+scheduler_migration	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	2	2	2	1	0	0	0	0		20	0	20
+schema_migrations	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	1	1	1	1	0	0	0	0		20	0	20
+slugs	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	3	3	3	1	0	0	0	0		20	0	20
+stacks	2	0	-	1	2018-08-10 01:52:54	2018-08-10 02:09:20	0	1	0	2	2	2	1	0	0	0	0		20	0	20

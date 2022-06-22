@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- nats-io__nats-streaming-server -------------------------
+nats-io__nats-streaming-server:	Gamma	holds? 	false
+nats-io__nats-streaming-server:	Gamma	Geometry? 	false
+nats-io__nats-streaming-server:	Gamma	FisherExecuted? 	false
+nats-io__nats-streaming-server:	Gamma	p-Value? 	false
+nats-io__nats-streaming-server:	Gamma	Surv.Wide 	0
+nats-io__nats-streaming-server:	Gamma	Surv.NotWide 	7
+nats-io__nats-streaming-server:	Gamma	Dead.Wide 	0
+nats-io__nats-streaming-server:	Gamma	Dead.NotWide 	0
+nats-io__nats-streaming-server:	Gamma	Wide 	0
+------------------------------------------------

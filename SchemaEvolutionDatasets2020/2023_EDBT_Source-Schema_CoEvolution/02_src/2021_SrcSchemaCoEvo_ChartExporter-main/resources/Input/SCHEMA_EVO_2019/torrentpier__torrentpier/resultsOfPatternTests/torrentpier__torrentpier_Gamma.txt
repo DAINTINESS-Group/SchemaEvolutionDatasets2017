@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- torrentpier__torrentpier -------------------------
+torrentpier__torrentpier:	Gamma	holds? 	true
+torrentpier__torrentpier:	Gamma	Geometry? 	true
+torrentpier__torrentpier:	Gamma	FisherExecuted? 	true
+torrentpier__torrentpier:	Gamma	p-Value? 	false
+torrentpier__torrentpier:	Gamma	Surv.Wide 	11
+torrentpier__torrentpier:	Gamma	Surv.NotWide 	39
+torrentpier__torrentpier:	Gamma	Dead.Wide 	2
+torrentpier__torrentpier:	Gamma	Dead.NotWide 	20
+torrentpier__torrentpier:	Gamma	Wide 	13
+------------------------------------------------

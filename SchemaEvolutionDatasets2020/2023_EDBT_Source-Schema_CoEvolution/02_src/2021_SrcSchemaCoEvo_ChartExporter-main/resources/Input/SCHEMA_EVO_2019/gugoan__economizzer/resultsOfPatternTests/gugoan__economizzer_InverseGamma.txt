@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- gugoan__economizzer -------------------------
+gugoan__economizzer:	InverseGamma	holds? 	true
+gugoan__economizzer:	InverseGamma	Geometry? 	true
+gugoan__economizzer:	InverseGamma	FisherExecuted? 	true
+gugoan__economizzer:	InverseGamma	p-Value? 	false
+------------------------------------------------

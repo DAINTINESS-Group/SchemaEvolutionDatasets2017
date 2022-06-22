@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- BotBotMe__botbot-bot -------------------------
+BotBotMe__botbot-bot:	InverseGamma	holds? 	true
+BotBotMe__botbot-bot:	InverseGamma	Geometry? 	true
+BotBotMe__botbot-bot:	InverseGamma	FisherExecuted? 	false
+BotBotMe__botbot-bot:	InverseGamma	p-Value? 	false
+------------------------------------------------

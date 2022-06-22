@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- webnuts__post_json -------------------------
+webnuts__post_json:	Gamma	holds? 	false
+webnuts__post_json:	Gamma	Geometry? 	false
+webnuts__post_json:	Gamma	FisherExecuted? 	false
+webnuts__post_json:	Gamma	p-Value? 	false
+webnuts__post_json:	Gamma	Surv.Wide 	1
+webnuts__post_json:	Gamma	Surv.NotWide 	3
+webnuts__post_json:	Gamma	Dead.Wide 	1
+webnuts__post_json:	Gamma	Dead.NotWide 	0
+webnuts__post_json:	Gamma	Wide 	2
+------------------------------------------------

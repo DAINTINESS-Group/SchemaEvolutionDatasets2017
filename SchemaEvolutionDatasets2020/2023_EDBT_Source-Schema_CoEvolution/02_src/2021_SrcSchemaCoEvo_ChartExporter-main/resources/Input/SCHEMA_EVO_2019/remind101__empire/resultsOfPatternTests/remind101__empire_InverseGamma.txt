@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- remind101__empire -------------------------
+remind101__empire:	InverseGamma	holds? 	true
+remind101__empire:	InverseGamma	Geometry? 	true
+remind101__empire:	InverseGamma	FisherExecuted? 	false
+remind101__empire:	InverseGamma	p-Value? 	false
+------------------------------------------------

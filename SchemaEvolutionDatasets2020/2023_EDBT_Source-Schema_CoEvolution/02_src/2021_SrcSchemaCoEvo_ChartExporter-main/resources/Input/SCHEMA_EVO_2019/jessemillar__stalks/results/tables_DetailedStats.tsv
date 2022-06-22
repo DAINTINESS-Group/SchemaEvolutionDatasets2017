@@ -1,0 +1,5 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+dailyLogs	2	0	-	1	2015-11-13 18:12:38	2015-11-15 21:27:16	0	1	2	4	4	4	1	0	0	0	0		20	0	20
+hallOfFame	2	0	-	1	2015-11-13 18:12:38	2015-11-15 21:27:16	0	1	2	6	4	5	0.67	2	1	1	0.5	2	20	1	21
+portfolios	2	0	-	1	2015-11-13 18:12:38	2015-11-15 21:27:16	0	1	2	4	4	4	1	0	0	0	0		20	0	20
+users	2	0	-	1	2015-11-13 18:12:38	2015-11-15 21:27:16	0	1	2	5	3	4	0.6	3	1	1.5	0.5	3	20	1	21

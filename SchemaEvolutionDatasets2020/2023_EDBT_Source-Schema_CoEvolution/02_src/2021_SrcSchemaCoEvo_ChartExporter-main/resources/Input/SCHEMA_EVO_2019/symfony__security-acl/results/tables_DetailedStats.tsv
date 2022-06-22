@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+acl_classes	2	0	-	1	2013-09-16 08:03:00	2014-12-29 15:36:06	0	2	469	2	2	2	1	0	0	0	0		20	0	20
+acl_entries	2	0	-	1	2013-09-16 08:03:00	2014-12-29 15:36:06	0	2	469	11	11	11	1	0	0	0	0		20	0	20
+acl_object_identities	2	0	-	1	2013-09-16 08:03:00	2014-12-29 15:36:06	0	2	469	5	5	5	1	0	0	0	0		20	0	20
+acl_object_identity_ancestors	2	0	-	1	2013-09-16 08:03:00	2014-12-29 15:36:06	0	2	469	2	2	2	1	0	0	0	0		20	0	20
+acl_security_identities	2	0	-	1	2013-09-16 08:03:00	2014-12-29 15:36:06	0	2	469	3	3	3	1	0	0	0	0		20	0	20

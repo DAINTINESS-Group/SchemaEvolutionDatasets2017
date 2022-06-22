@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1492706090.sql" newVersion="1493727116.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>identities</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>account_id</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>parent_id</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>identities</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_id</name>
+                <type>BIGINTUNSIGNED</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created_on</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1493727116.sql" newVersion="1494349152.sql">
+        <update type="TypeChange">
+            <table>
+                <name>identities</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created_on</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>expires_on</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>token_expires_on</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>used_on</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1494349152.sql" newVersion="1494457342.sql"/>
+</transitions>

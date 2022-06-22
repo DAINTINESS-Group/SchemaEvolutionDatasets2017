@@ -1,0 +1,7 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+options;1;0;0;0;8;8;8.0
+system_accounts;2;1;-;0;10;10;10.0
+system_system_options;2;1;-;0;9;9;9.0
+system_tokens;2;1;-;0;12;12;12.0
+user_accounts;3;0;-;0;12;12;12.0
+user_posts;3;0;-;0;10;10;10.0

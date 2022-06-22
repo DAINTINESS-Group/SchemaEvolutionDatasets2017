@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- cartalyst__sentry -------------------------
+cartalyst__sentry:	InverseGamma	holds? 	true
+cartalyst__sentry:	InverseGamma	Geometry? 	true
+cartalyst__sentry:	InverseGamma	FisherExecuted? 	false
+cartalyst__sentry:	InverseGamma	p-Value? 	false
+------------------------------------------------

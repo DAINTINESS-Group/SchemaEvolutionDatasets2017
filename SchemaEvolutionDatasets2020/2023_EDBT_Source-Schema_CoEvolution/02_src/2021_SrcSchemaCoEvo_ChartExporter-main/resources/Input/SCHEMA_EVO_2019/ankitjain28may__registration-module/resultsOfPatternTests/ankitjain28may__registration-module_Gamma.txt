@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- ankitjain28may__registration-module -------------------------
+ankitjain28may__registration-module:	Gamma	holds? 	false
+ankitjain28may__registration-module:	Gamma	Geometry? 	false
+ankitjain28may__registration-module:	Gamma	FisherExecuted? 	false
+ankitjain28may__registration-module:	Gamma	p-Value? 	false
+ankitjain28may__registration-module:	Gamma	Surv.Wide 	0
+ankitjain28may__registration-module:	Gamma	Surv.NotWide 	2
+ankitjain28may__registration-module:	Gamma	Dead.Wide 	0
+ankitjain28may__registration-module:	Gamma	Dead.NotWide 	0
+ankitjain28may__registration-module:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- nooku__joomla-todo -------------------------
+nooku__joomla-todo:	Gamma	holds? 	false
+nooku__joomla-todo:	Gamma	Geometry? 	false
+nooku__joomla-todo:	Gamma	FisherExecuted? 	false
+nooku__joomla-todo:	Gamma	p-Value? 	false
+nooku__joomla-todo:	Gamma	Surv.Wide 	2
+nooku__joomla-todo:	Gamma	Surv.NotWide 	0
+nooku__joomla-todo:	Gamma	Dead.Wide 	3
+nooku__joomla-todo:	Gamma	Dead.NotWide 	0
+nooku__joomla-todo:	Gamma	Wide 	5
+------------------------------------------------

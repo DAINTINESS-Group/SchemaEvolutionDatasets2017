@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- arnoldasgudas__Hangfire.MySqlStorage -------------------------
+arnoldasgudas__Hangfire.MySqlStorage:	Electrolysis	holds? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Electrolysis	Geometry? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Electrolysis	FisherExecuted? 	false
+arnoldasgudas__Hangfire.MySqlStorage:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- teresko__palladium -------------------------
+teresko__palladium:	Gamma	holds? 	true
+teresko__palladium:	Gamma	Geometry? 	true
+teresko__palladium:	Gamma	FisherExecuted? 	false
+teresko__palladium:	Gamma	p-Value? 	true
+teresko__palladium:	Gamma	Surv.Wide 	1
+teresko__palladium:	Gamma	Surv.NotWide 	0
+teresko__palladium:	Gamma	Dead.Wide 	0
+teresko__palladium:	Gamma	Dead.NotWide 	1
+teresko__palladium:	Gamma	Wide 	1
+------------------------------------------------

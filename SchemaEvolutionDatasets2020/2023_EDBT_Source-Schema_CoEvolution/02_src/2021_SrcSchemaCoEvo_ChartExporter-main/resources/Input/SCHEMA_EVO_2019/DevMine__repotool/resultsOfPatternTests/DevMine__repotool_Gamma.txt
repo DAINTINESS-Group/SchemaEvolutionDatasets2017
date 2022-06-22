@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- DevMine__repotool -------------------------
+DevMine__repotool:	Gamma	holds? 	true
+DevMine__repotool:	Gamma	Geometry? 	true
+DevMine__repotool:	Gamma	FisherExecuted? 	false
+DevMine__repotool:	Gamma	p-Value? 	false
+DevMine__repotool:	Gamma	Surv.Wide 	1
+DevMine__repotool:	Gamma	Surv.NotWide 	1
+DevMine__repotool:	Gamma	Dead.Wide 	0
+DevMine__repotool:	Gamma	Dead.NotWide 	0
+DevMine__repotool:	Gamma	Wide 	1
+------------------------------------------------

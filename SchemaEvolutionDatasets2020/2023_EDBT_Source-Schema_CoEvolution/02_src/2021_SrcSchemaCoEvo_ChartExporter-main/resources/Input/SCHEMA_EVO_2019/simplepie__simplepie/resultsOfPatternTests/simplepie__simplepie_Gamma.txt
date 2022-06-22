@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- simplepie__simplepie -------------------------
+simplepie__simplepie:	Gamma	holds? 	false
+simplepie__simplepie:	Gamma	Geometry? 	false
+simplepie__simplepie:	Gamma	FisherExecuted? 	false
+simplepie__simplepie:	Gamma	p-Value? 	false
+simplepie__simplepie:	Gamma	Surv.Wide 	0
+simplepie__simplepie:	Gamma	Surv.NotWide 	2
+simplepie__simplepie:	Gamma	Dead.Wide 	0
+simplepie__simplepie:	Gamma	Dead.NotWide 	0
+simplepie__simplepie:	Gamma	Wide 	0
+------------------------------------------------

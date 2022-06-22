@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- opencart__opencart -------------------------
+opencart__opencart:	InverseGamma	holds? 	true
+opencart__opencart:	InverseGamma	Geometry? 	true
+opencart__opencart:	InverseGamma	FisherExecuted? 	true
+opencart__opencart:	InverseGamma	p-Value? 	true
+------------------------------------------------

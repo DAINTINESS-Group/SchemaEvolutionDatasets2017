@@ -1,0 +1,14 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+apps	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	6	9	7.29	1.5	3	2	0.43	0.29	1.5	20	1	21
+collaborators	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	7	7	7	1	0	0	0	0		20	0	20
+deployments	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	10	10	10	1	0	0	0	0		20	0	20
+deployments_history	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	5	5	5	1	0	0	0	0		20	0	20
+deployments_versions	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	6	9	7.57	1.5	4	2	0.57	0.29	2	20	1	21
+log_report_deploy	4	3	-	6	2018-08-19 07:19:31	2018-09-08 12:54:43	2	2	20	7	7	7	1	0	0	0	0		20	0	20
+log_report_download	4	3	-	6	2018-08-19 07:19:31	2018-09-08 12:54:43	2	2	20	4	4	4	1	0	0	0	0		20	0	20
+packages	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	16	19	17.86	1.19	3	2	0.43	0.29	1.5	20	1	21
+packages_diff	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	7	8	7.71	1.14	1	1	0.14	0.14	1	20	1	21
+packages_metrics	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	8	9	8.71	1.12	1	1	0.14	0.14	1	20	1	21
+user_tokens	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	10	10	10	1	0	0	0	0		20	0	20
+users	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	8	8	8	1	0	0	0	0		20	0	20
+versions	7	0	-	6	2017-01-02 10:06:21	2018-09-08 12:54:43	0	2	614	4	4	4	1	0	0	0	0		20	0	20

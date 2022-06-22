@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- fastpress__fastpress -------------------------
+fastpress__fastpress:	Gamma	holds? 	false
+fastpress__fastpress:	Gamma	Geometry? 	false
+fastpress__fastpress:	Gamma	FisherExecuted? 	false
+fastpress__fastpress:	Gamma	p-Value? 	false
+fastpress__fastpress:	Gamma	Surv.Wide 	0
+fastpress__fastpress:	Gamma	Surv.NotWide 	4
+fastpress__fastpress:	Gamma	Dead.Wide 	0
+fastpress__fastpress:	Gamma	Dead.NotWide 	1
+fastpress__fastpress:	Gamma	Wide 	0
+------------------------------------------------

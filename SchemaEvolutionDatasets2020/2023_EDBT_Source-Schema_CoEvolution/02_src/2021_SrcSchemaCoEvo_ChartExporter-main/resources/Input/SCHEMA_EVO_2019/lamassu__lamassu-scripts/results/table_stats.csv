@@ -1,0 +1,8 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+bills;2;14;-;0;9;9;9.0
+device_events;2;14;-;0;6;6;6.0
+devices;16;0;-;1;4;5;4.5625
+pairing_tokens;16;0;-;0;3;3;3.0
+transactions;16;0;-;11;12;11;11.1875
+user_config;16;0;-;0;3;3;3.0
+users;16;0;-;0;4;4;4.0

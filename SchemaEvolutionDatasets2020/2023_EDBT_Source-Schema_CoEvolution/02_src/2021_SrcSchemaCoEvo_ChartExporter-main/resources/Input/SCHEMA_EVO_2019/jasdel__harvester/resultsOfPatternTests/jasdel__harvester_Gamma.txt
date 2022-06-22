@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jasdel__harvester -------------------------
+jasdel__harvester:	Gamma	holds? 	false
+jasdel__harvester:	Gamma	Geometry? 	false
+jasdel__harvester:	Gamma	FisherExecuted? 	false
+jasdel__harvester:	Gamma	p-Value? 	false
+jasdel__harvester:	Gamma	Surv.Wide 	0
+jasdel__harvester:	Gamma	Surv.NotWide 	6
+jasdel__harvester:	Gamma	Dead.Wide 	0
+jasdel__harvester:	Gamma	Dead.NotWide 	2
+jasdel__harvester:	Gamma	Wide 	0
+------------------------------------------------

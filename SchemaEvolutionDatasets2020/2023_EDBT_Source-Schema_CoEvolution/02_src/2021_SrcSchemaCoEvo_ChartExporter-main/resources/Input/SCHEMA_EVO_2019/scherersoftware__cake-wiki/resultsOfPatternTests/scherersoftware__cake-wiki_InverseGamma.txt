@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- scherersoftware__cake-wiki -------------------------
+scherersoftware__cake-wiki:	InverseGamma	holds? 	true
+scherersoftware__cake-wiki:	InverseGamma	Geometry? 	true
+scherersoftware__cake-wiki:	InverseGamma	FisherExecuted? 	false
+scherersoftware__cake-wiki:	InverseGamma	p-Value? 	false
+------------------------------------------------

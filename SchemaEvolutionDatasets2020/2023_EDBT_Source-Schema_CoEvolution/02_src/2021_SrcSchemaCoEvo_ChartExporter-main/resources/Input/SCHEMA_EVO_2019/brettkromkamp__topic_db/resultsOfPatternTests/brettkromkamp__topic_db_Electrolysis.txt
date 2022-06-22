@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- brettkromkamp__topic_db -------------------------
+brettkromkamp__topic_db:	Electrolysis	holds? 	true
+brettkromkamp__topic_db:	Electrolysis	Geometry? 	true
+brettkromkamp__topic_db:	Electrolysis	FisherExecuted? 	false
+brettkromkamp__topic_db:	Electrolysis	p-Value? 	false
+------------------------------------------------

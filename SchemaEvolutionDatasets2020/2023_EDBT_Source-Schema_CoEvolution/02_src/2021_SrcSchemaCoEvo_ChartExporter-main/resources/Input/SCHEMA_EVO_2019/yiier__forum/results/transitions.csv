@@ -1,0 +1,9 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1393833351.sql;1400901781.sql;-;-;-;-;-;-;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;id;INT(10);false;0;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;level;SMALLINT(5);false;0;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;lft;INT(10);false;0;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;name;VARCHAR(255);false;0;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;rgt;INT(10);false;0;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;summary;VARCHAR(255);false;0;-
+2;1400901781.sql;1400906757.sql;tbl_node;Deletion:DeleteTable;topics_count;INT(11);false;0;-

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- zphalcon__phalcon-tip -------------------------
+zphalcon__phalcon-tip:	Electrolysis	holds? 	true
+zphalcon__phalcon-tip:	Electrolysis	Geometry? 	true
+zphalcon__phalcon-tip:	Electrolysis	FisherExecuted? 	false
+zphalcon__phalcon-tip:	Electrolysis	p-Value? 	false
+------------------------------------------------

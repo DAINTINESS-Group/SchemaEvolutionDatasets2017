@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- damnpoet__yiicart -------------------------
+damnpoet__yiicart:	Electrolysis	holds? 	true
+damnpoet__yiicart:	Electrolysis	Geometry? 	true
+damnpoet__yiicart:	Electrolysis	FisherExecuted? 	false
+damnpoet__yiicart:	Electrolysis	p-Value? 	false
+------------------------------------------------

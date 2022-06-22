@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jingweno__jqplay -------------------------
+jingweno__jqplay:	Electrolysis	holds? 	true
+jingweno__jqplay:	Electrolysis	Geometry? 	true
+jingweno__jqplay:	Electrolysis	FisherExecuted? 	false
+jingweno__jqplay:	Electrolysis	p-Value? 	false
+------------------------------------------------

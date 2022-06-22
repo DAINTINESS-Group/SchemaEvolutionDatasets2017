@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- imsamurai__cakephp-task-plugin -------------------------
+imsamurai__cakephp-task-plugin:	Gamma	holds? 	true
+imsamurai__cakephp-task-plugin:	Gamma	Geometry? 	true
+imsamurai__cakephp-task-plugin:	Gamma	FisherExecuted? 	false
+imsamurai__cakephp-task-plugin:	Gamma	p-Value? 	false
+imsamurai__cakephp-task-plugin:	Gamma	Surv.Wide 	1
+imsamurai__cakephp-task-plugin:	Gamma	Surv.NotWide 	2
+imsamurai__cakephp-task-plugin:	Gamma	Dead.Wide 	0
+imsamurai__cakephp-task-plugin:	Gamma	Dead.NotWide 	0
+imsamurai__cakephp-task-plugin:	Gamma	Wide 	1
+------------------------------------------------

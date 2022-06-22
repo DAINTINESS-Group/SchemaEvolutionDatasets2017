@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- enova__prodder -------------------------
+enova__prodder:	Electrolysis	holds? 	true
+enova__prodder:	Electrolysis	Geometry? 	true
+enova__prodder:	Electrolysis	FisherExecuted? 	false
+enova__prodder:	Electrolysis	p-Value? 	false
+------------------------------------------------

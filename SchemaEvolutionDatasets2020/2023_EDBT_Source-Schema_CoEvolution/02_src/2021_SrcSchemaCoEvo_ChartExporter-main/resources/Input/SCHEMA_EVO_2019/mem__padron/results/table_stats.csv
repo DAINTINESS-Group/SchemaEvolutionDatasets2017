@@ -1,0 +1,9 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+cantones;2;0;-;0;3;3;3.0
+centros;2;0;-;2;5;5;5.0
+distritos;2;0;-;0;3;3;3.0
+distritos_electorales;1;1;-;0;3;3;3.0
+juntas;2;0;-;0;2;2;2.0
+padron;2;0;-;0;2;2;2.0
+personas;2;0;-;1;8;7;7.5
+provincias;2;0;-;0;2;2;2.0

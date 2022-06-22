@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- energine-cmf__energine -------------------------
+energine-cmf__energine:	Gamma	holds? 	true
+energine-cmf__energine:	Gamma	Geometry? 	true
+energine-cmf__energine:	Gamma	FisherExecuted? 	false
+energine-cmf__energine:	Gamma	p-Value? 	true
+energine-cmf__energine:	Gamma	Surv.Wide 	3
+energine-cmf__energine:	Gamma	Surv.NotWide 	57
+energine-cmf__energine:	Gamma	Dead.Wide 	0
+energine-cmf__energine:	Gamma	Dead.NotWide 	5
+energine-cmf__energine:	Gamma	Wide 	3
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jaybennett89__thorium-go -------------------------
+jaybennett89__thorium-go:	Electrolysis	holds? 	false
+jaybennett89__thorium-go:	Electrolysis	Geometry? 	false
+jaybennett89__thorium-go:	Electrolysis	FisherExecuted? 	false
+jaybennett89__thorium-go:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- magnus-lycka__gocddash -------------------------
+magnus-lycka__gocddash:	InverseGamma	holds? 	true
+magnus-lycka__gocddash:	InverseGamma	Geometry? 	true
+magnus-lycka__gocddash:	InverseGamma	FisherExecuted? 	false
+magnus-lycka__gocddash:	InverseGamma	p-Value? 	false
+------------------------------------------------

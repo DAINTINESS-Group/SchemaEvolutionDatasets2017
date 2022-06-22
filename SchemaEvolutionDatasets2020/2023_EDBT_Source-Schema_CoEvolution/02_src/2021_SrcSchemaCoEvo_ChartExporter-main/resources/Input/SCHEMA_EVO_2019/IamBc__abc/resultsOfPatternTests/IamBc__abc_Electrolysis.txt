@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- IamBc__abc -------------------------
+IamBc__abc:	Electrolysis	holds? 	true
+IamBc__abc:	Electrolysis	Geometry? 	true
+IamBc__abc:	Electrolysis	FisherExecuted? 	false
+IamBc__abc:	Electrolysis	p-Value? 	false
+------------------------------------------------

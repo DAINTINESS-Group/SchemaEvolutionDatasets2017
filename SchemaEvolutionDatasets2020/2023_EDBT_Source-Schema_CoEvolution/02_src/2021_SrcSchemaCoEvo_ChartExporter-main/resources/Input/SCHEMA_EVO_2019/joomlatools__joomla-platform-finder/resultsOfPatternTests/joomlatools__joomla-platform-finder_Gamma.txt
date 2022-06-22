@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- joomlatools__joomla-platform-finder -------------------------
+joomlatools__joomla-platform-finder:	Gamma	holds? 	true
+joomlatools__joomla-platform-finder:	Gamma	Geometry? 	true
+joomlatools__joomla-platform-finder:	Gamma	FisherExecuted? 	false
+joomlatools__joomla-platform-finder:	Gamma	p-Value? 	false
+joomlatools__joomla-platform-finder:	Gamma	Surv.Wide 	2
+joomlatools__joomla-platform-finder:	Gamma	Surv.NotWide 	23
+joomlatools__joomla-platform-finder:	Gamma	Dead.Wide 	0
+joomlatools__joomla-platform-finder:	Gamma	Dead.NotWide 	0
+joomlatools__joomla-platform-finder:	Gamma	Wide 	2
+------------------------------------------------

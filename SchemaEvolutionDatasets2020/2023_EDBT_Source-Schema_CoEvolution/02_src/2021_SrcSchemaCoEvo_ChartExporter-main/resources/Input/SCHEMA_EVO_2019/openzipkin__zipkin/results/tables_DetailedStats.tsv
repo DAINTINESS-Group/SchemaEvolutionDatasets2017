@@ -1,0 +1,4 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+zipkin_annotations	5	0	-	4	2018-06-07 00:04:47	2019-04-27 02:41:21	0	1	324	12	12	12	1	0	0	0	0		20	0	20
+zipkin_dependencies	5	0	-	4	2018-06-07 00:04:47	2019-04-27 02:41:21	0	1	324	5	5	5	1	0	0	0	0		20	0	20
+zipkin_spans	5	0	-	4	2018-06-07 00:04:47	2019-04-27 02:41:21	0	1	324	9	10	9.4	1.11	1	1	0.2	0.2	1	20	1	21

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jessemillar__stalks -------------------------
+jessemillar__stalks:	InverseGamma	holds? 	true
+jessemillar__stalks:	InverseGamma	Geometry? 	true
+jessemillar__stalks:	InverseGamma	FisherExecuted? 	false
+jessemillar__stalks:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mozilla__tls-observatory -------------------------
+mozilla__tls-observatory:	Gamma	holds? 	true
+mozilla__tls-observatory:	Gamma	Geometry? 	true
+mozilla__tls-observatory:	Gamma	FisherExecuted? 	false
+mozilla__tls-observatory:	Gamma	p-Value? 	false
+mozilla__tls-observatory:	Gamma	Surv.Wide 	2
+mozilla__tls-observatory:	Gamma	Surv.NotWide 	2
+mozilla__tls-observatory:	Gamma	Dead.Wide 	0
+mozilla__tls-observatory:	Gamma	Dead.NotWide 	0
+mozilla__tls-observatory:	Gamma	Wide 	2
+------------------------------------------------

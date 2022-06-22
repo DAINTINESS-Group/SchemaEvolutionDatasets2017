@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- purefn__hipbot -------------------------
+purefn__hipbot:	InverseGamma	holds? 	true
+purefn__hipbot:	InverseGamma	Geometry? 	true
+purefn__hipbot:	InverseGamma	FisherExecuted? 	false
+purefn__hipbot:	InverseGamma	p-Value? 	false
+------------------------------------------------

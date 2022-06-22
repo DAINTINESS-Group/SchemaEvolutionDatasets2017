@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jasdel__harvester -------------------------
+jasdel__harvester:	InverseGamma	holds? 	false
+jasdel__harvester:	InverseGamma	Geometry? 	false
+jasdel__harvester:	InverseGamma	FisherExecuted? 	true
+jasdel__harvester:	InverseGamma	p-Value? 	false
+------------------------------------------------

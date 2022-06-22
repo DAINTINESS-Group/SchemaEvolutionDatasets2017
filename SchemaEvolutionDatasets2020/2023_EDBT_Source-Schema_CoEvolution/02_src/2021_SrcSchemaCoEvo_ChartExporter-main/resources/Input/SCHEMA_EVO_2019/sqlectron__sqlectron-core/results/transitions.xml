@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1448217995.sql" newVersion="1458830527.sql"/>
+    <transition oldVersion="1458830527.sql" newVersion="1461066057.sql"/>
+    <transition oldVersion="1461066057.sql" newVersion="1463966962.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>createdat</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1463966962.sql" newVersion="1464788084.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>role_id</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

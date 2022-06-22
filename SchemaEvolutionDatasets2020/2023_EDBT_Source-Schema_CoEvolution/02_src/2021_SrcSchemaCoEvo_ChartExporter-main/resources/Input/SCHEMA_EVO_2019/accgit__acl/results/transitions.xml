@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1495537733.sql" newVersion="1496380364.sql"/>
+    <transition oldVersion="1496380364.sql" newVersion="1498731648.sql"/>
+    <transition oldVersion="1498731648.sql" newVersion="1501145279.sql"/>
+    <transition oldVersion="1501145279.sql" newVersion="1501153860.sql"/>
+    <transition oldVersion="1501153860.sql" newVersion="1501153920.sql"/>
+    <transition oldVersion="1501153920.sql" newVersion="1501153982.sql"/>
+    <transition oldVersion="1501153982.sql" newVersion="1501495780.sql">
+        <deletion type="DeleteTable">
+            <table>
+                <name>access</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>role</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="NewTable">
+            <table>
+                <name>acl</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>roleId</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>userId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>permissions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>privilege</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>resource</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>role</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>permissions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>privilegeId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>resourceId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>roleId</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>privileges</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>privileges</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>privilegeId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>resources</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>resources</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>resourceId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>roles</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>roles</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>roleId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userId</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1501495780.sql" newVersion="1501563843.sql"/>
+    <transition oldVersion="1501563843.sql" newVersion="1501741868.sql"/>
+    <transition oldVersion="1501741868.sql" newVersion="1501741912.sql"/>
+    <transition oldVersion="1501741912.sql" newVersion="1501742020.sql"/>
+    <transition oldVersion="1501742020.sql" newVersion="1505798090.sql"/>
+    <transition oldVersion="1505798090.sql" newVersion="1505883019.sql">
+        <update type="TypeChange">
+            <table>
+                <name>acl</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>roleId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>userId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>permissions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>privilegeId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>resourceId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>roleId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>privileges</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>privilegeId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>resources</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>resourceId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>roles</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>roleId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userId</name>
+                <type>SMALLINT(5)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1505883019.sql" newVersion="1516273328.sql"/>
+    <transition oldVersion="1516273328.sql" newVersion="1516273624.sql"/>
+    <transition oldVersion="1516273624.sql" newVersion="1532695820.sql"/>
+</transitions>

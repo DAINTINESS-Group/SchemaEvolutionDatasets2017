@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- wanlitao__HangfireExtension -------------------------
+wanlitao__HangfireExtension:	InverseGamma	holds? 	true
+wanlitao__HangfireExtension:	InverseGamma	Geometry? 	true
+wanlitao__HangfireExtension:	InverseGamma	FisherExecuted? 	false
+wanlitao__HangfireExtension:	InverseGamma	p-Value? 	false
+------------------------------------------------

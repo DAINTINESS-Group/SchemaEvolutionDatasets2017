@@ -1,0 +1,4 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1523456283.sql;1524220539.sql;-;-;-;-;-;-;-
+2;1524220539.sql;1524225031.sql;execution;Insertion:UpdateTable;kind;VARCHAR(256);false;0;-
+3;1524225031.sql;1524225497.sql;-;-;-;-;-;-;-

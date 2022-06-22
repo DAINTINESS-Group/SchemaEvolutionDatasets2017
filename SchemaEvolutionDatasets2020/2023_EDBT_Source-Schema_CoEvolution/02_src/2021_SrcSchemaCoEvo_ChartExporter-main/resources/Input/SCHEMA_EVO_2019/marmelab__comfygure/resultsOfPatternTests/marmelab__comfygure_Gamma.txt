@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- marmelab__comfygure -------------------------
+marmelab__comfygure:	Gamma	holds? 	false
+marmelab__comfygure:	Gamma	Geometry? 	false
+marmelab__comfygure:	Gamma	FisherExecuted? 	false
+marmelab__comfygure:	Gamma	p-Value? 	false
+marmelab__comfygure:	Gamma	Surv.Wide 	0
+marmelab__comfygure:	Gamma	Surv.NotWide 	6
+marmelab__comfygure:	Gamma	Dead.Wide 	0
+marmelab__comfygure:	Gamma	Dead.NotWide 	0
+marmelab__comfygure:	Gamma	Wide 	0
+------------------------------------------------

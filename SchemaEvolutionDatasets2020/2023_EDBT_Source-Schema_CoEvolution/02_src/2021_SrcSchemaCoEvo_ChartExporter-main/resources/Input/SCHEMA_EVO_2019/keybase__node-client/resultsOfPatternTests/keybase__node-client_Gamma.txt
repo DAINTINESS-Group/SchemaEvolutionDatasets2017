@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- keybase__node-client -------------------------
+keybase__node-client:	Gamma	holds? 	false
+keybase__node-client:	Gamma	Geometry? 	false
+keybase__node-client:	Gamma	FisherExecuted? 	false
+keybase__node-client:	Gamma	p-Value? 	false
+keybase__node-client:	Gamma	Surv.Wide 	0
+keybase__node-client:	Gamma	Surv.NotWide 	2
+keybase__node-client:	Gamma	Dead.Wide 	1
+keybase__node-client:	Gamma	Dead.NotWide 	2
+keybase__node-client:	Gamma	Wide 	1
+------------------------------------------------

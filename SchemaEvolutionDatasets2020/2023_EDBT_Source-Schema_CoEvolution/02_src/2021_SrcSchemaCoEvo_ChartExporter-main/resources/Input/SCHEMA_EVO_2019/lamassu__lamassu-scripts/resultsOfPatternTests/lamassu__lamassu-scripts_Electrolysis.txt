@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- lamassu__lamassu-scripts -------------------------
+lamassu__lamassu-scripts:	Electrolysis	holds? 	true
+lamassu__lamassu-scripts:	Electrolysis	Geometry? 	true
+lamassu__lamassu-scripts:	Electrolysis	FisherExecuted? 	false
+lamassu__lamassu-scripts:	Electrolysis	p-Value? 	false
+------------------------------------------------

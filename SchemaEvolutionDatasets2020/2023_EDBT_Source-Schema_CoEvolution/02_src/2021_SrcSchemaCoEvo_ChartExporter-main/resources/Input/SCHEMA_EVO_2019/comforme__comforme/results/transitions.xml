@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1420863183.sql" newVersion="1420863569.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="DeleteTable">
+            <table>
+                <name>categorys</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1420863569.sql" newVersion="1420869138.sql"/>
+    <transition oldVersion="1420869138.sql" newVersion="1420871667.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_date</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>TEXT</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>userid</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1420871667.sql" newVersion="1420918795.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>reset_required</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1420918795.sql" newVersion="1420942986.sql"/>
+    <transition oldVersion="1420942986.sql" newVersion="1420944618.sql"/>
+    <transition oldVersion="1420944618.sql" newVersion="1421005768.sql"/>
+    <transition oldVersion="1421005768.sql" newVersion="1421007229.sql"/>
+    <transition oldVersion="1421007229.sql" newVersion="1421007419.sql"/>
+    <transition oldVersion="1421007419.sql" newVersion="1421010076.sql"/>
+    <transition oldVersion="1421010076.sql" newVersion="1421010629.sql"/>
+    <transition oldVersion="1421010629.sql" newVersion="1421028322.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>user_id</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>sessions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>userid</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1421028322.sql" newVersion="1424501307.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>categories</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>slug</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1424501307.sql" newVersion="1424501380.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>posts</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>date_created</name>
+                <type>TIMESTAMP</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1424501380.sql" newVersion="1424561802.sql"/>
+    <transition oldVersion="1424561802.sql" newVersion="1424668916.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>website</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1424668916.sql" newVersion="1424669757.sql"/>
+    <transition oldVersion="1424669757.sql" newVersion="1432067030.sql"/>
+    <transition oldVersion="1432067030.sql" newVersion="1442842740.sql"/>
+    <transition oldVersion="1442842740.sql" newVersion="1442844152.sql"/>
+</transitions>

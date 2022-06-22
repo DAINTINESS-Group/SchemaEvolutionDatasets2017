@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- pinterest__teletraan -------------------------
+pinterest__teletraan:	Gamma	holds? 	true
+pinterest__teletraan:	Gamma	Geometry? 	true
+pinterest__teletraan:	Gamma	FisherExecuted? 	true
+pinterest__teletraan:	Gamma	p-Value? 	false
+pinterest__teletraan:	Gamma	Surv.Wide 	5
+pinterest__teletraan:	Gamma	Surv.NotWide 	17
+pinterest__teletraan:	Gamma	Dead.Wide 	2
+pinterest__teletraan:	Gamma	Dead.NotWide 	16
+pinterest__teletraan:	Gamma	Wide 	7
+------------------------------------------------

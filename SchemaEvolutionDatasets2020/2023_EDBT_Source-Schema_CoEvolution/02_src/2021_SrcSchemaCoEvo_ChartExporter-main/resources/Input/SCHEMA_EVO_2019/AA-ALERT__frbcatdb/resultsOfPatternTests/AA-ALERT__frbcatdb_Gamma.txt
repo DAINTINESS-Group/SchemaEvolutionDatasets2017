@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- AA-ALERT__frbcatdb -------------------------
+AA-ALERT__frbcatdb:	Gamma	holds? 	true
+AA-ALERT__frbcatdb:	Gamma	Geometry? 	true
+AA-ALERT__frbcatdb:	Gamma	FisherExecuted? 	false
+AA-ALERT__frbcatdb:	Gamma	p-Value? 	false
+AA-ALERT__frbcatdb:	Gamma	Surv.Wide 	2
+AA-ALERT__frbcatdb:	Gamma	Surv.NotWide 	14
+AA-ALERT__frbcatdb:	Gamma	Dead.Wide 	0
+AA-ALERT__frbcatdb:	Gamma	Dead.NotWide 	0
+AA-ALERT__frbcatdb:	Gamma	Wide 	2
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- aiyi__go-user -------------------------
+aiyi__go-user:	Gamma	holds? 	false
+aiyi__go-user:	Gamma	Geometry? 	false
+aiyi__go-user:	Gamma	FisherExecuted? 	false
+aiyi__go-user:	Gamma	p-Value? 	false
+aiyi__go-user:	Gamma	Surv.Wide 	0
+aiyi__go-user:	Gamma	Surv.NotWide 	6
+aiyi__go-user:	Gamma	Dead.Wide 	0
+aiyi__go-user:	Gamma	Dead.NotWide 	0
+aiyi__go-user:	Gamma	Wide 	0
+------------------------------------------------

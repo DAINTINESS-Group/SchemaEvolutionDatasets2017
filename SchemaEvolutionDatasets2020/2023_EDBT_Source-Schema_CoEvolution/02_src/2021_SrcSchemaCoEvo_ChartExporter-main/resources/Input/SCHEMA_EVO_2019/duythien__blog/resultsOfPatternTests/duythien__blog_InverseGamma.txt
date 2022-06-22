@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- duythien__blog -------------------------
+duythien__blog:	InverseGamma	holds? 	true
+duythien__blog:	InverseGamma	Geometry? 	true
+duythien__blog:	InverseGamma	FisherExecuted? 	false
+duythien__blog:	InverseGamma	p-Value? 	false
+------------------------------------------------

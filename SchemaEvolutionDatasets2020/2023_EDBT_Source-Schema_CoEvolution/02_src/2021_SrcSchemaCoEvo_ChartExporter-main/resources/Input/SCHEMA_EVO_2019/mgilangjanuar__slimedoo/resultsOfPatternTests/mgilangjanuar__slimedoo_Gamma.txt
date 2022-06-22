@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- mgilangjanuar__slimedoo -------------------------
+mgilangjanuar__slimedoo:	Gamma	holds? 	false
+mgilangjanuar__slimedoo:	Gamma	Geometry? 	false
+mgilangjanuar__slimedoo:	Gamma	FisherExecuted? 	false
+mgilangjanuar__slimedoo:	Gamma	p-Value? 	false
+mgilangjanuar__slimedoo:	Gamma	Surv.Wide 	0
+mgilangjanuar__slimedoo:	Gamma	Surv.NotWide 	1
+mgilangjanuar__slimedoo:	Gamma	Dead.Wide 	0
+mgilangjanuar__slimedoo:	Gamma	Dead.NotWide 	0
+mgilangjanuar__slimedoo:	Gamma	Wide 	0
+------------------------------------------------

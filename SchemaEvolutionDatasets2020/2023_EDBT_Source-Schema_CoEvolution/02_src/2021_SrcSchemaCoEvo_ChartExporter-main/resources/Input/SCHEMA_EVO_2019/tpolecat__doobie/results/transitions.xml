@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1385771850.sql" newVersion="1417762817.sql">
+        <update type="TypeChange">
+            <table>
+                <name>city</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>district</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>country</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>continent</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>governmentform</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>headofstate</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>localname</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>region</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>countrylanguage</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>language</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1417762817.sql" newVersion="1526849148.sql"/>
+    <transition oldVersion="1526849148.sql" newVersion="1546943252.sql"/>
+</transitions>

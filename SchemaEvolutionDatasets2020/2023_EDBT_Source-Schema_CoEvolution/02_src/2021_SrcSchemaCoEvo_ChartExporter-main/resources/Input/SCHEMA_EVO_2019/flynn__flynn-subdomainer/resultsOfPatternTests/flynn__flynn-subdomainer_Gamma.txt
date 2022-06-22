@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- flynn__flynn-subdomainer -------------------------
+flynn__flynn-subdomainer:	Gamma	holds? 	false
+flynn__flynn-subdomainer:	Gamma	Geometry? 	false
+flynn__flynn-subdomainer:	Gamma	FisherExecuted? 	false
+flynn__flynn-subdomainer:	Gamma	p-Value? 	false
+flynn__flynn-subdomainer:	Gamma	Surv.Wide 	0
+flynn__flynn-subdomainer:	Gamma	Surv.NotWide 	1
+flynn__flynn-subdomainer:	Gamma	Dead.Wide 	0
+flynn__flynn-subdomainer:	Gamma	Dead.NotWide 	0
+flynn__flynn-subdomainer:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- webadmin87__rzwebsys7 -------------------------
+webadmin87__rzwebsys7:	Gamma	holds? 	true
+webadmin87__rzwebsys7:	Gamma	Geometry? 	true
+webadmin87__rzwebsys7:	Gamma	FisherExecuted? 	false
+webadmin87__rzwebsys7:	Gamma	p-Value? 	false
+webadmin87__rzwebsys7:	Gamma	Surv.Wide 	4
+webadmin87__rzwebsys7:	Gamma	Surv.NotWide 	1
+webadmin87__rzwebsys7:	Gamma	Dead.Wide 	0
+webadmin87__rzwebsys7:	Gamma	Dead.NotWide 	0
+webadmin87__rzwebsys7:	Gamma	Wide 	4
+------------------------------------------------

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="exporter" project="Fation_CoEvolutionStatsCharts" 
+    file="/Fation_CoEvolutionStatsCharts/src/exporter" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="181" y="340"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="dataload" project="Fation_CoEvolutionStatsCharts" 
+    file="/Fation_CoEvolutionStatsCharts/src/dataload" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="242" y="160"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="client" project="Fation_CoEvolutionStatsCharts" 
+    file="/Fation_CoEvolutionStatsCharts/src/client" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="80" y="160"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="datamodel" project="Fation_CoEvolutionStatsCharts" 
+    file="/Fation_CoEvolutionStatsCharts/src/datamodel" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="303" y="430"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="engine" project="Fation_CoEvolutionStatsCharts" 
+    file="/Fation_CoEvolutionStatsCharts/src/engine" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="202" y="250"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="7">    
+    <bendpoint x="333" y="250"/>    
+    <bendpoint x="333" y="340"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="9">    
+    <bendpoint x="312" y="340"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

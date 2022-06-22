@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1428195491.sql" newVersion="1428196111.sql"/>
+    <transition oldVersion="1428196111.sql" newVersion="1428196437.sql"/>
+    <transition oldVersion="1428196437.sql" newVersion="1428196590.sql"/>
+    <transition oldVersion="1428196590.sql" newVersion="1428196664.sql"/>
+    <transition oldVersion="1428196664.sql" newVersion="1428196904.sql"/>
+    <transition oldVersion="1428196904.sql" newVersion="1428299414.sql"/>
+    <transition oldVersion="1428299414.sql" newVersion="1428468500.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>flights</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>price</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

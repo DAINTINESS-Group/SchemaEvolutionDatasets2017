@@ -1,0 +1,10 @@
+;0;1;2;3;
+cpu_proc;0;0;1;0;
+cpu_sys;0;0;0;0;
+event_log;0;0;1;0;
+event_type;0;0;0;0;
+io_sys;0;0;0;0;
+mem_proc;0;0;0;0;
+mem_sys;0;0;1;0;
+proc_info;0;0;0;0;
+session_info;0;0;1;0;

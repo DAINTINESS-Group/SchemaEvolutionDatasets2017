@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- symfony__security-acl -------------------------
+symfony__security-acl:	Electrolysis	holds? 	true
+symfony__security-acl:	Electrolysis	Geometry? 	true
+symfony__security-acl:	Electrolysis	FisherExecuted? 	false
+symfony__security-acl:	Electrolysis	p-Value? 	false
+------------------------------------------------

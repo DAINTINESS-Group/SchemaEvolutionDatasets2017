@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- marmelab__comfygure -------------------------
+marmelab__comfygure:	Electrolysis	holds? 	true
+marmelab__comfygure:	Electrolysis	Geometry? 	true
+marmelab__comfygure:	Electrolysis	FisherExecuted? 	false
+marmelab__comfygure:	Electrolysis	p-Value? 	false
+------------------------------------------------

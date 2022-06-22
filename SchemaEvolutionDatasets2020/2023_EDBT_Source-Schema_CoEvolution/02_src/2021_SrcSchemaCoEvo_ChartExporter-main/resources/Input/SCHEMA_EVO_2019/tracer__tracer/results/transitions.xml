@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1467513222.sql" newVersion="1467523625.sql"/>
+    <transition oldVersion="1467523625.sql" newVersion="1467775329.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>spans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>service_name</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1467775329.sql" newVersion="1467787633.sql"/>
+    <transition oldVersion="1467787633.sql" newVersion="1468032292.sql"/>
+    <transition oldVersion="1468032292.sql" newVersion="1468343429.sql"/>
+</transitions>

@@ -1,0 +1,4 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+fe_users	6	0	-	5	2014-10-02 18:32:55	2019-03-15 16:33:48	0	5	1624	10	14	12.67	1.4	6	4	1	0.67	1.5	20	2	22
+tx_aimeos_cache	4	0	3	3	2014-10-02 18:32:55	2017-05-19 21:20:48	0	3	960	5	5	5	1	0	0	0	0		10	0	10
+tx_aimeos_cache_tags	4	0	3	3	2014-10-02 18:32:55	2017-05-19 21:20:48	0	3	960	3	3	3	1	0	0	0	0		10	0	10

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- imbo__imbo -------------------------
+imbo__imbo:	InverseGamma	holds? 	false
+imbo__imbo:	InverseGamma	Geometry? 	false
+imbo__imbo:	InverseGamma	FisherExecuted? 	false
+imbo__imbo:	InverseGamma	p-Value? 	false
+------------------------------------------------

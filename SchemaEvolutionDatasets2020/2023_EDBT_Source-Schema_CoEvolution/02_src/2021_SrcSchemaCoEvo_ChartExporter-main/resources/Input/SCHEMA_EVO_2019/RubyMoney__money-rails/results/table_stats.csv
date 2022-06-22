@@ -1,0 +1,6 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+dummy_products;3;0;-;0;5;5;5.0
+products;3;0;-;3;7;10;8.333333
+schema_migrations;3;0;-;0;1;1;1.0
+services;3;0;-;0;5;5;5.0
+transactions;3;0;-;0;6;6;6.0

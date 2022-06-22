@@ -1,0 +1,166 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1427746192.sql;1427841504.sql;-;-;-;-;-;-;-
+2;1427841504.sql;1428033115.sql;-;-;-;-;-;-;-
+3;1428033115.sql;1428081812.sql;field_instances;Insertion:UpdateTable;type;VARCHAR(10);false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Update:TypeChange;COMMENT;'INSTANCE''S DATA TYPE FOR THIS FIELD (DATETIME, DECIMAL, INT, TEXT, VARCHAR)';false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;extra;TEXTCOLLATEUTF8_UNICODE_CICOMMENT'EXTRA INFORMATION REQUIRED BY THIS FIELD HADNLER';false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;type;VARCHAR(10);false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;value_datetime;DATETIME;false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;value_decimal;DECIMAL(10,0);false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;value_int;INT(11);false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;value_text;TEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Insertion:UpdateTable;value_varchar;VARCHAR(255);false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Deletion:UpdateTable;raw;TEXTCOLLATEUTF8_UNICODE_CICOMMENT'EXTRA INFORMATION REQUIRED BY THIS FIELD HADNLER';false;0;-
+3;1428033115.sql;1428081812.sql;field_values;Deletion:UpdateTable;value;TEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+4;1428081812.sql;1428117679.sql;-;-;-;-;-;-;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;COMMENT;'ID OF THE ENTITY IN `TABLE`';false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;attribute;VARCHAR(100);false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;entity_id;VARCHAR(50);false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;extra;TEXTCOLLATEUTF8_UNICODE_CICOMMENT'SERIALIZED ADDITIONAL INFORMATION';false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;id;INT(20);false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;table_alias;VARCHAR(100);false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;value_datetime;DATETIME;false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;value_decimal;DECIMAL(10,0);false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;value_int;INT(11);false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;value_text;TEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+5;1428117679.sql;1428234144.sql;eav_values;Insertion:NewTable;value_varchar;VARCHAR(255);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;COMMENT;'INSTANCE''S DATA TYPE FOR THIS FIELD (DATETIME, DECIMAL, INT, TEXT, VARCHAR)';false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;entity_id;VARCHAR(50);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;extra;TEXTCOLLATEUTF8_UNICODE_CICOMMENT'EXTRA INFORMATION REQUIRED BY THIS FIELD HADNLER';false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;field_instance_id;INT(10);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;field_instance_slug;VARCHAR(200);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;id;INT(20);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;table_alias;VARCHAR(100);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;type;VARCHAR(10);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;value_datetime;DATETIME;false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;value_decimal;DECIMAL(10,0);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;value_int;INT(11);false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;value_text;TEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+5;1428117679.sql;1428234144.sql;field_values;Deletion:DeleteTable;value_varchar;VARCHAR(255);false;0;-
+6;1428234144.sql;1428244072.sql;eav_values;Insertion:UpdateTable;bundle;VARCHAR(50);false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;bundle;VARCHAR(50);false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;extra;TEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;id;INT(11);false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;name;VARCHAR(50);false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;searchable;TINYINT(1);false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;table_alias;VARCHAR(50);false;0;-
+7;1428244072.sql;1428286642.sql;eav_attributes;Insertion:NewTable;type;VARCHAR(10);false;0;-
+7;1428244072.sql;1428286642.sql;eav_values;Deletion:UpdateTable;attribute;VARCHAR(100);false;0;-
+7;1428244072.sql;1428286642.sql;eav_values;Deletion:UpdateTable;bundle;VARCHAR(50);false;0;-
+7;1428244072.sql;1428286642.sql;eav_values;Deletion:UpdateTable;table_alias;VARCHAR(100);false;0;-
+7;1428244072.sql;1428286642.sql;eav_values;Insertion:UpdateTable;eav_attribute_id;INT(11);false;0;-
+7;1428244072.sql;1428286642.sql;field_instances;Insertion:UpdateTable;eav_attribute_id;INT(11);false;0;-
+7;1428244072.sql;1428286642.sql;field_instances;Deletion:UpdateTable;slug;VARCHAR(200);false;0;-
+7;1428244072.sql;1428286642.sql;field_instances;Deletion:UpdateTable;table_alias;VARCHAR(100);false;0;-
+8;1428286642.sql;1430005946.sql;-;-;-;-;-;-;-
+9;1430005946.sql;1430154714.sql;-;-;-;-;-;-;-
+10;1430154714.sql;1430168736.sql;-;-;-;-;-;-;-
+11;1430168736.sql;1430170276.sql;-;-;-;-;-;-;-
+12;1430170276.sql;1430247845.sql;-;-;-;-;-;-;-
+13;1430247845.sql;1430760206.sql;-;-;-;-;-;-;-
+14;1430760206.sql;1430834340.sql;node_revisions;Insertion:UpdateTable;summary;VARCHAR(160);false;0;-
+14;1430760206.sql;1430834340.sql;node_type_permissions;Insertion:NewTable;COMMENT;'CREATE, EDIT, DELETE, PUBLISH';false;0;-
+14;1430760206.sql;1430834340.sql;node_type_permissions;Insertion:NewTable;action;VARCHAR(15);false;0;-
+14;1430760206.sql;1430834340.sql;node_type_permissions;Insertion:NewTable;id;INT(11);false;0;-
+14;1430760206.sql;1430834340.sql;node_type_permissions;Insertion:NewTable;node_type_id;INT(11);false;0;-
+14;1430760206.sql;1430834340.sql;node_type_permissions;Insertion:NewTable;role_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_revisions;Insertion:NewTable;content_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_revisions;Insertion:NewTable;created;DATETIME;false;0;-
+15;1430834340.sql;1430917913.sql;content_revisions;Insertion:NewTable;data;LONGTEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+15;1430834340.sql;1430917913.sql;content_revisions;Insertion:NewTable;hash;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;content_revisions;Insertion:NewTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_revisions;Insertion:NewTable;summary;VARCHAR(160);false;0;-
+15;1430834340.sql;1430917913.sql;content_type_permissions;Insertion:NewTable;COMMENT;'CREATE, EDIT, DELETE, PUBLISH';false;0;-
+15;1430834340.sql;1430917913.sql;content_type_permissions;Insertion:NewTable;action;VARCHAR(15);false;0;-
+15;1430834340.sql;1430917913.sql;content_type_permissions;Insertion:NewTable;content_type_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_type_permissions;Insertion:NewTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_type_permissions;Insertion:NewTable;role_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;COMMENT;'THE LABEL DISPLAYED FOR THE TITLE FIELD ON THE EDIT FORM.';false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;defaults;LONGTEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;description;VARCHAR(255);false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;name;VARCHAR(200);false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;slug;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;content_types;Insertion:NewTable;title_label;VARCHAR(80);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;COMMENT;'0=CLOSED, 1=OPEN, 2=READONLY';false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;comment_status;TINYINT(2);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;content_type_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;content_type_slug;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;created;DATETIME;false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;created_by;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;description;VARCHAR(200);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;language;CHAR(10);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;modified;DATETIME;false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;modified_by;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;promote;TINYINT(1);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;slug;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;status;TINYINT(1);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;sticky;TINYINT(1);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;title;VARCHAR(250);false;0;-
+15;1430834340.sql;1430917913.sql;contents;Insertion:NewTable;translation_for;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents_roles;Insertion:NewTable;COMMENT;'THE USER’S ROLE ID FROM ROLES TABLE';false;0;-
+15;1430834340.sql;1430917913.sql;contents_roles;Insertion:NewTable;content_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents_roles;Insertion:NewTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;contents_roles;Insertion:NewTable;role_id;INT(10);false;0;-
+15;1430834340.sql;1430917913.sql;node_revisions;Deletion:DeleteTable;created;DATETIME;false;0;-
+15;1430834340.sql;1430917913.sql;node_revisions;Deletion:DeleteTable;data;LONGTEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+15;1430834340.sql;1430917913.sql;node_revisions;Deletion:DeleteTable;hash;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;node_revisions;Deletion:DeleteTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;node_revisions;Deletion:DeleteTable;node_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;node_revisions;Deletion:DeleteTable;summary;VARCHAR(160);false;0;-
+15;1430834340.sql;1430917913.sql;node_type_permissions;Deletion:DeleteTable;COMMENT;'CREATE, EDIT, DELETE, PUBLISH';false;0;-
+15;1430834340.sql;1430917913.sql;node_type_permissions;Deletion:DeleteTable;action;VARCHAR(15);false;0;-
+15;1430834340.sql;1430917913.sql;node_type_permissions;Deletion:DeleteTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;node_type_permissions;Deletion:DeleteTable;node_type_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;node_type_permissions;Deletion:DeleteTable;role_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;COMMENT;'THE LABEL DISPLAYED FOR THE TITLE FIELD ON THE EDIT FORM.';false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;defaults;LONGTEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;description;VARCHAR(255);false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;name;VARCHAR(200);false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;slug;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;node_types;Deletion:DeleteTable;title_label;VARCHAR(80);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;COMMENT;'0=CLOSED, 1=OPEN, 2=READONLY';false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;comment_status;TINYINT(2);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;created;DATETIME;false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;created_by;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;description;VARCHAR(200);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;language;CHAR(10);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;modified;DATETIME;false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;modified_by;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;node_type_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;node_type_slug;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;promote;TINYINT(1);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;slug;VARCHAR(100);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;status;TINYINT(1);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;sticky;TINYINT(1);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;title;VARCHAR(250);false;0;-
+15;1430834340.sql;1430917913.sql;nodes;Deletion:DeleteTable;translation_for;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes_roles;Deletion:DeleteTable;COMMENT;'THE USER’S ROLE ID FROM ROLES TABLE';false;0;-
+15;1430834340.sql;1430917913.sql;nodes_roles;Deletion:DeleteTable;id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes_roles;Deletion:DeleteTable;node_id;INT(11);false;0;-
+15;1430834340.sql;1430917913.sql;nodes_roles;Deletion:DeleteTable;role_id;INT(10);false;0;-
+16;1430917913.sql;1431051761.sql;-;-;-;-;-;-;-
+17;1431051761.sql;1431122538.sql;-;-;-;-;-;-;-
+18;1431122538.sql;1431145756.sql;blocks;Deletion:UpdateTable;delta;VARCHAR(30);false;0;-
+19;1431145756.sql;1431226417.sql;-;-;-;-;-;-;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_biginteger;BIGINT(20);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_binary;BLOB;false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_boolean;TINYINT(1);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_date;DATE;false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_float;DECIMAL(10,0);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_integer;INT(11);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_string;VARCHAR(255);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_time;TIME;false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Insertion:UpdateTable;value_uuid;VARCHAR(36);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Deletion:UpdateTable;value_decimal;DECIMAL(10,0);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Deletion:UpdateTable;value_int;INT(11);false;0;-
+20;1431226417.sql;1431464200.sql;eav_values;Deletion:UpdateTable;value_varchar;VARCHAR(255);false;0;-
+21;1431464200.sql;1432463770.sql;-;-;-;-;-;-;-
+22;1432463770.sql;1432464385.sql;-;-;-;-;-;-;-
+23;1432464385.sql;1432470474.sql;-;-;-;-;-;-;-
+24;1432470474.sql;1432667331.sql;-;-;-;-;-;-;-
+25;1432667331.sql;1432670053.sql;-;-;-;-;-;-;-
+26;1432670053.sql;1490131485.sql;search_datasets;Update:TypeChange;entity_id;INT(20);false;0;-

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- vzex__dog-tunnel -------------------------
+vzex__dog-tunnel:	Electrolysis	holds? 	true
+vzex__dog-tunnel:	Electrolysis	Geometry? 	true
+vzex__dog-tunnel:	Electrolysis	FisherExecuted? 	false
+vzex__dog-tunnel:	Electrolysis	p-Value? 	false
+------------------------------------------------

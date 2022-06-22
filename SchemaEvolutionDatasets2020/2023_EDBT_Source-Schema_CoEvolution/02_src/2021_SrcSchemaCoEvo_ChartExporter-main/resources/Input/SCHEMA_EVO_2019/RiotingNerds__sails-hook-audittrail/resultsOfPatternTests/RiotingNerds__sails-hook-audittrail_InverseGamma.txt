@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- RiotingNerds__sails-hook-audittrail -------------------------
+RiotingNerds__sails-hook-audittrail:	InverseGamma	holds? 	true
+RiotingNerds__sails-hook-audittrail:	InverseGamma	Geometry? 	true
+RiotingNerds__sails-hook-audittrail:	InverseGamma	FisherExecuted? 	false
+RiotingNerds__sails-hook-audittrail:	InverseGamma	p-Value? 	false
+------------------------------------------------

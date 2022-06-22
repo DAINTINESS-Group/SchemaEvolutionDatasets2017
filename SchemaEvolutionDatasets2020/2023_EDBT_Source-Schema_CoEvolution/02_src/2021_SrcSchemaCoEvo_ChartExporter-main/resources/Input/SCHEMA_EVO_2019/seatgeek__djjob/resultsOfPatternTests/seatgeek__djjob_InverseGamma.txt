@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- seatgeek__djjob -------------------------
+seatgeek__djjob:	InverseGamma	holds? 	true
+seatgeek__djjob:	InverseGamma	Geometry? 	true
+seatgeek__djjob:	InverseGamma	FisherExecuted? 	false
+seatgeek__djjob:	InverseGamma	p-Value? 	false
+------------------------------------------------

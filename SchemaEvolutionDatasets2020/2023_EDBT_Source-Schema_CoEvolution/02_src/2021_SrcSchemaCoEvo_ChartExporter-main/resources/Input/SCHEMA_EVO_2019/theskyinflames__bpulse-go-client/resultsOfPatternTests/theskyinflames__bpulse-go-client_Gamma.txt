@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- theskyinflames__bpulse-go-client -------------------------
+theskyinflames__bpulse-go-client:	Gamma	holds? 	false
+theskyinflames__bpulse-go-client:	Gamma	Geometry? 	false
+theskyinflames__bpulse-go-client:	Gamma	FisherExecuted? 	false
+theskyinflames__bpulse-go-client:	Gamma	p-Value? 	false
+theskyinflames__bpulse-go-client:	Gamma	Surv.Wide 	0
+theskyinflames__bpulse-go-client:	Gamma	Surv.NotWide 	2
+theskyinflames__bpulse-go-client:	Gamma	Dead.Wide 	0
+theskyinflames__bpulse-go-client:	Gamma	Dead.NotWide 	0
+theskyinflames__bpulse-go-client:	Gamma	Wide 	0
+------------------------------------------------

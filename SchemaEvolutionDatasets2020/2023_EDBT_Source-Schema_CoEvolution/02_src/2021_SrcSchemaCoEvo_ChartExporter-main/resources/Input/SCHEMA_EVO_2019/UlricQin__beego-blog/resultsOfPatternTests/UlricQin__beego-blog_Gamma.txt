@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- UlricQin__beego-blog -------------------------
+UlricQin__beego-blog:	Gamma	holds? 	true
+UlricQin__beego-blog:	Gamma	Geometry? 	true
+UlricQin__beego-blog:	Gamma	FisherExecuted? 	false
+UlricQin__beego-blog:	Gamma	p-Value? 	true
+UlricQin__beego-blog:	Gamma	Surv.Wide 	1
+UlricQin__beego-blog:	Gamma	Surv.NotWide 	2
+UlricQin__beego-blog:	Gamma	Dead.Wide 	0
+UlricQin__beego-blog:	Gamma	Dead.NotWide 	1
+UlricQin__beego-blog:	Gamma	Wide 	1
+------------------------------------------------

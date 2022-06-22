@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- NPRA__EmissionCalculatorLib -------------------------
+NPRA__EmissionCalculatorLib:	InverseGamma	holds? 	true
+NPRA__EmissionCalculatorLib:	InverseGamma	Geometry? 	true
+NPRA__EmissionCalculatorLib:	InverseGamma	FisherExecuted? 	false
+NPRA__EmissionCalculatorLib:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- accgit__acl -------------------------
+accgit__acl:	InverseGamma	holds? 	true
+accgit__acl:	InverseGamma	Geometry? 	true
+accgit__acl:	InverseGamma	FisherExecuted? 	false
+accgit__acl:	InverseGamma	p-Value? 	false
+------------------------------------------------

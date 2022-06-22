@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- gugoan__economizzer -------------------------
+gugoan__economizzer:	Electrolysis	holds? 	true
+gugoan__economizzer:	Electrolysis	Geometry? 	true
+gugoan__economizzer:	Electrolysis	FisherExecuted? 	false
+gugoan__economizzer:	Electrolysis	p-Value? 	false
+------------------------------------------------

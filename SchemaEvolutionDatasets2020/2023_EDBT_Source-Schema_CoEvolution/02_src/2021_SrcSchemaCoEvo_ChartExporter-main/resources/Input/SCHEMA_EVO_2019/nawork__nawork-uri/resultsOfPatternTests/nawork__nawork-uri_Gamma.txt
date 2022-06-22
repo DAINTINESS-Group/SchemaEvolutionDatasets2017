@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- nawork__nawork-uri -------------------------
+nawork__nawork-uri:	Gamma	holds? 	false
+nawork__nawork-uri:	Gamma	Geometry? 	false
+nawork__nawork-uri:	Gamma	FisherExecuted? 	false
+nawork__nawork-uri:	Gamma	p-Value? 	false
+nawork__nawork-uri:	Gamma	Surv.Wide 	1
+nawork__nawork-uri:	Gamma	Surv.NotWide 	3
+nawork__nawork-uri:	Gamma	Dead.Wide 	1
+nawork__nawork-uri:	Gamma	Dead.NotWide 	0
+nawork__nawork-uri:	Gamma	Wide 	2
+------------------------------------------------

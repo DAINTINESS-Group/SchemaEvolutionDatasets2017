@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1334262448.sql" newVersion="1393864757.sql"/>
+    <transition oldVersion="1393864757.sql" newVersion="1430168752.sql">
+        <update type="TypeChange">
+            <table>
+                <name>UserConnection</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>accessToken</name>
+                <type>VARCHAR(512)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>refreshToken</name>
+                <type>VARCHAR(512)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>secret</name>
+                <type>VARCHAR(512)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

@@ -1,0 +1,15 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1436568924.sql;1439748431.sql;-;-;-;-;-;-;-
+2;1439748431.sql;1439932623.sql;-;-;-;-;-;-;-
+3;1439932623.sql;1486526619.sql;content;Update:TypeChange;COLLATE;UTF8MB4_BIN;false;0;-
+3;1439932623.sql;1486526619.sql;content;Update:TypeChange;alias;VARCHAR(400);false;0;-
+3;1439932623.sql;1486526619.sql;content_types;Update:TypeChange;type_alias;VARCHAR(400);false;0;-
+3;1439932623.sql;1486526619.sql;content_ucm_core;Update:TypeChange;COLLATE;UTF8MB4_BIN;false;0;-
+3;1439932623.sql;1486526619.sql;content_ucm_core;Update:TypeChange;core_alias;VARCHAR(400);false;0;-
+3;1439932623.sql;1486526619.sql;content_ucm_core;Update:TypeChange;core_title;VARCHAR(400);false;0;-
+3;1439932623.sql;1486526619.sql;content_ucm_core;Update:TypeChange;core_type_alias;VARCHAR(400);false;0;-
+4;1486526619.sql;1508214854.sql;-;-;-;-;-;-;-
+5;1508214854.sql;1508215008.sql;-;-;-;-;-;-;-
+6;1508215008.sql;1508215049.sql;-;-;-;-;-;-;-
+7;1508215049.sql;1508219834.sql;-;-;-;-;-;-;-
+8;1508219834.sql;1508231057.sql;-;-;-;-;-;-;-

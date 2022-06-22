@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- kronusme__dota2-api -------------------------
+kronusme__dota2-api:	Gamma	holds? 	true
+kronusme__dota2-api:	Gamma	Geometry? 	true
+kronusme__dota2-api:	Gamma	FisherExecuted? 	false
+kronusme__dota2-api:	Gamma	p-Value? 	false
+kronusme__dota2-api:	Gamma	Surv.Wide 	4
+kronusme__dota2-api:	Gamma	Surv.NotWide 	9
+kronusme__dota2-api:	Gamma	Dead.Wide 	0
+kronusme__dota2-api:	Gamma	Dead.NotWide 	0
+kronusme__dota2-api:	Gamma	Wide 	4
+------------------------------------------------

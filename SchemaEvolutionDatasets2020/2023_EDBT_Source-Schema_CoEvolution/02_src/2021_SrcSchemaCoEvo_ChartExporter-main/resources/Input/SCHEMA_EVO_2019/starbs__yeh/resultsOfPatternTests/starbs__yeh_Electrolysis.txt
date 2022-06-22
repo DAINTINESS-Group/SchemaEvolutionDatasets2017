@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- starbs__yeh -------------------------
+starbs__yeh:	Electrolysis	holds? 	true
+starbs__yeh:	Electrolysis	Geometry? 	true
+starbs__yeh:	Electrolysis	FisherExecuted? 	false
+starbs__yeh:	Electrolysis	p-Value? 	false
+------------------------------------------------

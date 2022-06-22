@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1437081629.sql" newVersion="1437426355.sql">
+        <update type="TypeChange">
+            <table>
+                <name>user</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>password</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1437426355.sql" newVersion="1438624074.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>contest</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>description</name>
+                <type>MEDIUMTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>endTime</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INTAUTO_INCREMENT</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(30)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>startTime</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="NewTable">
+            <table>
+                <name>contestlogs</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cid</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INTAUTO_INCREMENT</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>points</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>time</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>uid</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

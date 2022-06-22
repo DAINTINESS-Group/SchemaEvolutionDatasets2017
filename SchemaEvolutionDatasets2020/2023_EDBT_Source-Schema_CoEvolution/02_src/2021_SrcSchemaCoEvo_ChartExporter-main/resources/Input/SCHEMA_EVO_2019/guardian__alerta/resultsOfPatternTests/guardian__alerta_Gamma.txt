@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- guardian__alerta -------------------------
+guardian__alerta:	Gamma	holds? 	true
+guardian__alerta:	Gamma	Geometry? 	true
+guardian__alerta:	Gamma	FisherExecuted? 	false
+guardian__alerta:	Gamma	p-Value? 	false
+guardian__alerta:	Gamma	Surv.Wide 	2
+guardian__alerta:	Gamma	Surv.NotWide 	7
+guardian__alerta:	Gamma	Dead.Wide 	0
+guardian__alerta:	Gamma	Dead.NotWide 	0
+guardian__alerta:	Gamma	Wide 	2
+------------------------------------------------

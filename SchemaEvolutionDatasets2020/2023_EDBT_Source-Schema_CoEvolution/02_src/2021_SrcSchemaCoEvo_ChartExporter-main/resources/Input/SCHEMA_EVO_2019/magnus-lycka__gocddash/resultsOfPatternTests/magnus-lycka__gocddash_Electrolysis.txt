@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- magnus-lycka__gocddash -------------------------
+magnus-lycka__gocddash:	Electrolysis	holds? 	true
+magnus-lycka__gocddash:	Electrolysis	Geometry? 	true
+magnus-lycka__gocddash:	Electrolysis	FisherExecuted? 	false
+magnus-lycka__gocddash:	Electrolysis	p-Value? 	false
+------------------------------------------------

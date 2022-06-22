@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- tpolecat__doobie -------------------------
+tpolecat__doobie:	Electrolysis	holds? 	true
+tpolecat__doobie:	Electrolysis	Geometry? 	true
+tpolecat__doobie:	Electrolysis	FisherExecuted? 	false
+tpolecat__doobie:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- HXLStandard__hxl-proxy -------------------------
+HXLStandard__hxl-proxy:	InverseGamma	holds? 	true
+HXLStandard__hxl-proxy:	InverseGamma	Geometry? 	true
+HXLStandard__hxl-proxy:	InverseGamma	FisherExecuted? 	false
+HXLStandard__hxl-proxy:	InverseGamma	p-Value? 	false
+------------------------------------------------

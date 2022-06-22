@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1492718837.sql" newVersion="1493125666.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>fixed_files</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>batch_number</name>
+                <type>INT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>error_message</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>INTEGER</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>restore_completed_at</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>restore_requested_at</name>
+                <type>DATETIME</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>size</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>fixed_files</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>from_url</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>to_url</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>stored_files</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INTEGER</type>
+                <isKey>true</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+</transitions>

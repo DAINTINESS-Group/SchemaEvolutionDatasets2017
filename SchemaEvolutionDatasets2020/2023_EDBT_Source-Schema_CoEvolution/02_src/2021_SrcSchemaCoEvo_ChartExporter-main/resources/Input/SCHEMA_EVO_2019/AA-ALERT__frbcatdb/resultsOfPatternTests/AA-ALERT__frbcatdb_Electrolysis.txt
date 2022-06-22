@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- AA-ALERT__frbcatdb -------------------------
+AA-ALERT__frbcatdb:	Electrolysis	holds? 	true
+AA-ALERT__frbcatdb:	Electrolysis	Geometry? 	true
+AA-ALERT__frbcatdb:	Electrolysis	FisherExecuted? 	false
+AA-ALERT__frbcatdb:	Electrolysis	p-Value? 	false
+------------------------------------------------

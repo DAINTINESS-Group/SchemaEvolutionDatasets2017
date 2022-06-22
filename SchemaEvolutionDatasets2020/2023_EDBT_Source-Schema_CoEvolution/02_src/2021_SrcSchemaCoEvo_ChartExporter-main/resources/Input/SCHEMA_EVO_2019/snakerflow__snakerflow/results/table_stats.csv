@@ -1,0 +1,10 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+wf_cc_order;4;0;-;5;3;6;5.0
+wf_hist_order;4;0;-;5;11;11;11.0
+wf_hist_task;4;0;-;4;14;14;14.0
+wf_hist_task_actor;4;0;-;2;2;2;2.0
+wf_order;4;0;-;6;13;13;13.0
+wf_process;4;0;-;1;10;10;10.0
+wf_surrogate;4;0;-;3;8;8;8.0
+wf_task;4;0;-;4;14;14;14.0
+wf_task_actor;4;0;-;2;2;2;2.0

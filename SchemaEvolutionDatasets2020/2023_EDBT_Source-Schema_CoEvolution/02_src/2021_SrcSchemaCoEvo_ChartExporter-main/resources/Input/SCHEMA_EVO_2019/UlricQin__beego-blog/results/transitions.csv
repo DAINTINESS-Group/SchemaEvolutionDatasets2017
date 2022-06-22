@@ -1,0 +1,4 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1397561001.sql;1397613054.sql;bb_option;Deletion:DeleteTable;id;INTEGERAUTO_INCREMENT;true;0;-
+1;1397561001.sql;1397613054.sql;bb_option;Deletion:DeleteTable;name;VARCHAR(255);false;0;-
+1;1397561001.sql;1397613054.sql;bb_option;Deletion:DeleteTable;value;VARCHAR(255);false;0;-

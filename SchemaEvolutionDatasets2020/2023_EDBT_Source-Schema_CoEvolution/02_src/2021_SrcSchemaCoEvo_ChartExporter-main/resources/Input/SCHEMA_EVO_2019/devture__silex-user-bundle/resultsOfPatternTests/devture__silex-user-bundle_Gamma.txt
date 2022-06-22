@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- devture__silex-user-bundle -------------------------
+devture__silex-user-bundle:	Gamma	holds? 	false
+devture__silex-user-bundle:	Gamma	Geometry? 	false
+devture__silex-user-bundle:	Gamma	FisherExecuted? 	false
+devture__silex-user-bundle:	Gamma	p-Value? 	false
+devture__silex-user-bundle:	Gamma	Surv.Wide 	0
+devture__silex-user-bundle:	Gamma	Surv.NotWide 	1
+devture__silex-user-bundle:	Gamma	Dead.Wide 	0
+devture__silex-user-bundle:	Gamma	Dead.NotWide 	1
+devture__silex-user-bundle:	Gamma	Wide 	0
+------------------------------------------------

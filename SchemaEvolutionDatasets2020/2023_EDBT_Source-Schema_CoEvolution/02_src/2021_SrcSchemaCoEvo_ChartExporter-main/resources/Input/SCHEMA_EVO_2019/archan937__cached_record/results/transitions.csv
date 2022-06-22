@@ -1,0 +1,17 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1382134557.sql;1382186127.sql;-;-;-;-;-;-;-
+2;1382186127.sql;1384907448.sql;articles;Insertion:UpdateTable;foo_id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;articles_tags;Insertion:NewTable;article_id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;articles_tags;Insertion:NewTable;tag_id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;comments;Insertion:NewTable;article_id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;comments;Insertion:NewTable;content;TEXTCOLLATEUTF8_UNICODE_CI;false;0;-
+2;1382186127.sql;1384907448.sql;comments;Insertion:NewTable;created_at;DATETIME;false;0;-
+2;1382186127.sql;1384907448.sql;comments;Insertion:NewTable;id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;comments;Insertion:NewTable;poster_id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;comments;Insertion:NewTable;updated_at;DATETIME;false;0;-
+2;1382186127.sql;1384907448.sql;tags;Insertion:NewTable;created_at;DATETIME;false;0;-
+2;1382186127.sql;1384907448.sql;tags;Insertion:NewTable;id;INT(11);false;0;-
+2;1382186127.sql;1384907448.sql;tags;Insertion:NewTable;name;VARCHAR(255);false;0;-
+2;1382186127.sql;1384907448.sql;tags;Insertion:NewTable;updated_at;DATETIME;false;0;-
+3;1384907448.sql;1385424735.sql;articles_tags;Insertion:UpdateTable;id;INT(11);false;0;-
+4;1385424735.sql;1385517021.sql;-;-;-;-;-;-;-

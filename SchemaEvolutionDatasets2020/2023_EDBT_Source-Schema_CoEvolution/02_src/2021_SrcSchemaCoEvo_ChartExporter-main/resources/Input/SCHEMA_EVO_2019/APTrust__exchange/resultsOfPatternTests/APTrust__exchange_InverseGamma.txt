@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- APTrust__exchange -------------------------
+APTrust__exchange:	InverseGamma	holds? 	true
+APTrust__exchange:	InverseGamma	Geometry? 	true
+APTrust__exchange:	InverseGamma	FisherExecuted? 	false
+APTrust__exchange:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- symphonycms__symphony-2 -------------------------
+symphonycms__symphony-2:	InverseGamma	holds? 	true
+symphonycms__symphony-2:	InverseGamma	Geometry? 	true
+symphonycms__symphony-2:	InverseGamma	FisherExecuted? 	false
+symphonycms__symphony-2:	InverseGamma	p-Value? 	false
+------------------------------------------------

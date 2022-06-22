@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+authors	3	0	-	2	2016-02-17 20:15:58	2016-10-24 22:01:45	0	1	250	2	2	2	1	0	0	0	0		20	0	20
+comments	3	0	-	2	2016-02-17 20:15:58	2016-10-24 22:01:45	0	1	250	4	4	4	1	0	0	0	0		20	0	20
+permissions_test.column_acl	3	0	-	2	2016-02-17 20:15:58	2016-10-24 22:01:45	0	1	250	3	3	3	1	0	0	0	0		20	0	20
+permissions_test.standard_acl	2	0	-	2	2016-02-17 20:15:58	2016-10-24 22:01:45	0	1	250	2	2	2	1	0	0	0	0		20	0	20
+posts	3	0	-	2	2016-02-17 20:15:58	2016-10-24 22:01:45	0	1	250	3	3	3	1	0	0	0	0		20	0	20

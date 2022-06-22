@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1447713257.sql" newVersion="1447721870.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>scans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>ack</name>
+                <type>BOOL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1447721870.sql" newVersion="1447779013.sql"/>
+    <transition oldVersion="1447779013.sql" newVersion="1448121932.sql">
+        <update type="TypeChange">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>x509_crlDistributionPoints</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>x509_extendedKeyUsage</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>x509_keyUsage</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>x509_subjectAltName</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1448121932.sql" newVersion="1450205846.sql">
+        <update type="TypeChange">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>issuer</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>subject</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1450205846.sql" newVersion="1450289207.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>domains</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1450289207.sql" newVersion="1450817754.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>scans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>attempts</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1450817754.sql" newVersion="1450817944.sql"/>
+    <transition oldVersion="1450817944.sql" newVersion="1450880557.sql"/>
+    <transition oldVersion="1450880557.sql" newVersion="1451317245.sql"/>
+    <transition oldVersion="1451317245.sql" newVersion="1452519066.sql"/>
+    <transition oldVersion="1452519066.sql" newVersion="1462563850.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>key_alg</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1462563850.sql" newVersion="1462568244.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>pkp_sha256</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1462568244.sql" newVersion="1474573913.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>sha256_subject_spki</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1474573913.sql" newVersion="1474928436.sql"/>
+    <transition oldVersion="1474928436.sql" newVersion="1476283058.sql"/>
+    <transition oldVersion="1476283058.sql" newVersion="1476308312.sql">
+        <update type="TypeChange">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>x509_certificatePolicies</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1476308312.sql" newVersion="1476308426.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>is_name_constrained</name>
+                <type>BOOL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>permitted_names</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1476308426.sql" newVersion="1476617169.sql"/>
+    <transition oldVersion="1476617169.sql" newVersion="1477778699.sql">
+        <update type="KeyChange">
+            <table>
+                <name>analysis</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="KeyChange">
+            <table>
+                <name>scans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="KeyChange">
+            <table>
+                <name>trust</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1477778699.sql" newVersion="1479401897.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>scans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>analysis_params</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1479401897.sql" newVersion="1480371613.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>analysis</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>success</name>
+                <type>BOOL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1480371613.sql" newVersion="1481053832.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>excluded_dns_domains</name>
+                <type>VARCHAR[]</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>excluded_ip_addresses</name>
+                <type>VARCHAR[]</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>is_technically_constrained</name>
+                <type>BOOL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>permitted_dns_domains</name>
+                <type>VARCHAR[]</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>permitted_ip_addresses</name>
+                <type>VARCHAR[]</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1481053832.sql" newVersion="1486042379.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cisco_umbrella_rank</name>
+                <type>INTEGER</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1486042379.sql" newVersion="1489513071.sql"/>
+    <transition oldVersion="1489513071.sql" newVersion="1490306413.sql"/>
+    <transition oldVersion="1490306413.sql" newVersion="1497203066.sql"/>
+    <transition oldVersion="1497203066.sql" newVersion="1502892504.sql"/>
+    <transition oldVersion="1502892504.sql" newVersion="1503062652.sql"/>
+    <transition oldVersion="1503062652.sql" newVersion="1503062880.sql"/>
+    <transition oldVersion="1503062880.sql" newVersion="1503603757.sql"/>
+    <transition oldVersion="1503603757.sql" newVersion="1520002046.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>scans</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>scan_error</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1520002046.sql" newVersion="1520518432.sql"/>
+    <transition oldVersion="1520518432.sql" newVersion="1521234840.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>revoked_via_crl</name>
+                <type>BOOL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1521234840.sql" newVersion="1522608576.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>revoked_via_crl</name>
+                <type>BOOL</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1522608576.sql" newVersion="1524272232.sql"/>
+    <transition oldVersion="1524272232.sql" newVersion="1524504578.sql"/>
+    <transition oldVersion="1524504578.sql" newVersion="1524528621.sql"/>
+    <transition oldVersion="1524528621.sql" newVersion="1524580774.sql"/>
+    <transition oldVersion="1524580774.sql" newVersion="1525790471.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mozillaPolicyV2_5</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>x509_extendedKeyUsageOID</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1525790471.sql" newVersion="1525791672.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mozillaPolicyV2_5</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1525791672.sql" newVersion="1525792434.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>mozillaPolicyV2_5</name>
+                <type>JSONB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1525792434.sql" newVersion="1527886906.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>certificates</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>sha256_spki</name>
+                <type>VARCHAR</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

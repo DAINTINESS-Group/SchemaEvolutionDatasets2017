@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- 3ev__tev_label -------------------------
+3ev__tev_label:	Gamma	holds? 	false
+3ev__tev_label:	Gamma	Geometry? 	false
+3ev__tev_label:	Gamma	FisherExecuted? 	false
+3ev__tev_label:	Gamma	p-Value? 	false
+3ev__tev_label:	Gamma	Surv.Wide 	0
+3ev__tev_label:	Gamma	Surv.NotWide 	1
+3ev__tev_label:	Gamma	Dead.Wide 	0
+3ev__tev_label:	Gamma	Dead.NotWide 	1
+3ev__tev_label:	Gamma	Wide 	0
+------------------------------------------------

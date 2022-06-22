@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- marssa__footprint -------------------------
+marssa__footprint:	Gamma	holds? 	true
+marssa__footprint:	Gamma	Geometry? 	true
+marssa__footprint:	Gamma	FisherExecuted? 	false
+marssa__footprint:	Gamma	p-Value? 	false
+marssa__footprint:	Gamma	Surv.Wide 	1
+marssa__footprint:	Gamma	Surv.NotWide 	2
+marssa__footprint:	Gamma	Dead.Wide 	0
+marssa__footprint:	Gamma	Dead.NotWide 	0
+marssa__footprint:	Gamma	Wide 	1
+------------------------------------------------

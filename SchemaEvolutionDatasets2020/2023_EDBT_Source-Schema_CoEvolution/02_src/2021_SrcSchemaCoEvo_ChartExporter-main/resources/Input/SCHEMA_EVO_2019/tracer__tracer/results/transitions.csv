@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1467513222.sql;1467523625.sql;-;-;-;-;-;-;-
+2;1467523625.sql;1467775329.sql;spans;Insertion:UpdateTable;service_name;TEXT;false;0;-
+3;1467775329.sql;1467787633.sql;-;-;-;-;-;-;-
+4;1467787633.sql;1468032292.sql;-;-;-;-;-;-;-
+5;1468032292.sql;1468343429.sql;-;-;-;-;-;-;-

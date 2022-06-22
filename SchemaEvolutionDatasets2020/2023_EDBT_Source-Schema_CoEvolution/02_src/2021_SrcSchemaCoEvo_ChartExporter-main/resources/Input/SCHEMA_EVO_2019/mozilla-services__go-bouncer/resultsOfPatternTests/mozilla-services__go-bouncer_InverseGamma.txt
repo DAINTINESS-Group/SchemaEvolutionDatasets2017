@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla-services__go-bouncer -------------------------
+mozilla-services__go-bouncer:	InverseGamma	holds? 	true
+mozilla-services__go-bouncer:	InverseGamma	Geometry? 	true
+mozilla-services__go-bouncer:	InverseGamma	FisherExecuted? 	false
+mozilla-services__go-bouncer:	InverseGamma	p-Value? 	false
+------------------------------------------------

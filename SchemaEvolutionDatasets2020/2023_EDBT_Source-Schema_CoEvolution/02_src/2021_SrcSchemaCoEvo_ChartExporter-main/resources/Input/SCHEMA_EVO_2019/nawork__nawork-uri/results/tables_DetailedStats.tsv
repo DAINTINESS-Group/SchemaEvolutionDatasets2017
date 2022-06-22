@@ -1,0 +1,6 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+pages	26	0	-	25	2008-12-16 10:26:19	2017-03-28 10:12:08	0	9	3023	2	2	2	1	5	2	0.19	0.08	2.5	20	1	21
+pages_language_overlay	23	3	-	25	2009-01-07 12:33:17	2017-03-28 10:12:08	1	9	3001	2	2	2	1	1	1	0.04	0.04	1	20	1	21
+sys_domain	16	10	-	25	2010-08-18 07:44:52	2017-03-28 10:12:08	2	9	2414	1	2	1.31	2	1	1	0.06	0.06	1	20	1	21
+tx_naworkuri_redirect	1	1	1	1	2008-12-16 16:29:26	2008-12-16 16:29:26	1	1	0	13	13	13	1	0	0	0	0		10	0	10
+tx_naworkuri_uri	25	1	-	25	2008-12-16 16:29:26	2017-03-28 10:12:08	1	9	3023	14	17	16.92	1.21	38	17	1.52	0.68	2.24	20	2	22

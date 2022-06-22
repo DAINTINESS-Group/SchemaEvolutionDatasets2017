@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- rvadym__languages -------------------------
+rvadym__languages:	Gamma	holds? 	false
+rvadym__languages:	Gamma	Geometry? 	false
+rvadym__languages:	Gamma	FisherExecuted? 	false
+rvadym__languages:	Gamma	p-Value? 	false
+rvadym__languages:	Gamma	Surv.Wide 	0
+rvadym__languages:	Gamma	Surv.NotWide 	2
+rvadym__languages:	Gamma	Dead.Wide 	0
+rvadym__languages:	Gamma	Dead.NotWide 	0
+rvadym__languages:	Gamma	Wide 	0
+------------------------------------------------

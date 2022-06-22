@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- tracer__tracer -------------------------
+tracer__tracer:	Gamma	holds? 	false
+tracer__tracer:	Gamma	Geometry? 	false
+tracer__tracer:	Gamma	FisherExecuted? 	false
+tracer__tracer:	Gamma	p-Value? 	false
+tracer__tracer:	Gamma	Surv.Wide 	0
+tracer__tracer:	Gamma	Surv.NotWide 	3
+tracer__tracer:	Gamma	Dead.Wide 	0
+tracer__tracer:	Gamma	Dead.NotWide 	0
+tracer__tracer:	Gamma	Wide 	0
+------------------------------------------------

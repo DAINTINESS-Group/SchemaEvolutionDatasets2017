@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- AA-ALERT__frbcatdb -------------------------
+AA-ALERT__frbcatdb:	InverseGamma	holds? 	true
+AA-ALERT__frbcatdb:	InverseGamma	Geometry? 	true
+AA-ALERT__frbcatdb:	InverseGamma	FisherExecuted? 	false
+AA-ALERT__frbcatdb:	InverseGamma	p-Value? 	false
+------------------------------------------------

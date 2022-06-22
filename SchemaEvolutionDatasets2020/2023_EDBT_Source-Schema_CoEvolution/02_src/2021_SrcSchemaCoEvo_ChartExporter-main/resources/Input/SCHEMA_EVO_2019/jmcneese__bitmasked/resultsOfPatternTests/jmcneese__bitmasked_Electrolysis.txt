@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jmcneese__bitmasked -------------------------
+jmcneese__bitmasked:	Electrolysis	holds? 	true
+jmcneese__bitmasked:	Electrolysis	Geometry? 	true
+jmcneese__bitmasked:	Electrolysis	FisherExecuted? 	false
+jmcneese__bitmasked:	Electrolysis	p-Value? 	false
+------------------------------------------------

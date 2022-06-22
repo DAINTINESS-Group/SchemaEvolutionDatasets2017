@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- GoBelieveIO__im_service -------------------------
+GoBelieveIO__im_service:	InverseGamma	holds? 	true
+GoBelieveIO__im_service:	InverseGamma	Geometry? 	true
+GoBelieveIO__im_service:	InverseGamma	FisherExecuted? 	false
+GoBelieveIO__im_service:	InverseGamma	p-Value? 	false
+------------------------------------------------

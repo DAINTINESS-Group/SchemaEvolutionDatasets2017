@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- nawork__nawork-uri -------------------------
+nawork__nawork-uri:	InverseGamma	holds? 	true
+nawork__nawork-uri:	InverseGamma	Geometry? 	true
+nawork__nawork-uri:	InverseGamma	FisherExecuted? 	false
+nawork__nawork-uri:	InverseGamma	p-Value? 	false
+------------------------------------------------

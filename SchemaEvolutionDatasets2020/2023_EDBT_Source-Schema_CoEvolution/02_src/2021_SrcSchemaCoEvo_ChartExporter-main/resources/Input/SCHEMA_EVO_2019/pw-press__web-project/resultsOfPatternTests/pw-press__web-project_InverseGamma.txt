@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- pw-press__web-project -------------------------
+pw-press__web-project:	InverseGamma	holds? 	true
+pw-press__web-project:	InverseGamma	Geometry? 	true
+pw-press__web-project:	InverseGamma	FisherExecuted? 	true
+pw-press__web-project:	InverseGamma	p-Value? 	false
+------------------------------------------------

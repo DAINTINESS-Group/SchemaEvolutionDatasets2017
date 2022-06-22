@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- fastpress__fastpress -------------------------
+fastpress__fastpress:	Electrolysis	holds? 	true
+fastpress__fastpress:	Electrolysis	Geometry? 	true
+fastpress__fastpress:	Electrolysis	FisherExecuted? 	false
+fastpress__fastpress:	Electrolysis	p-Value? 	false
+------------------------------------------------

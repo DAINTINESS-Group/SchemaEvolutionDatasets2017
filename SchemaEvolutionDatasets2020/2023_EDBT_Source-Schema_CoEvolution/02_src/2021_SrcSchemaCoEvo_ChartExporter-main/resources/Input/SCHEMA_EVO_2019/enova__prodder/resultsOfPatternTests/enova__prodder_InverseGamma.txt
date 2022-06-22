@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- enova__prodder -------------------------
+enova__prodder:	InverseGamma	holds? 	true
+enova__prodder:	InverseGamma	Geometry? 	true
+enova__prodder:	InverseGamma	FisherExecuted? 	false
+enova__prodder:	InverseGamma	p-Value? 	false
+------------------------------------------------

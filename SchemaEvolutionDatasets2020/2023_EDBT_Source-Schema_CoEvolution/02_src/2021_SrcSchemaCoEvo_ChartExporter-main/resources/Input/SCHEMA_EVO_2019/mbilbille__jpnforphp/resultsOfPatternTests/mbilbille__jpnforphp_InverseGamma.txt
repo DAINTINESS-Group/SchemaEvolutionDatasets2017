@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mbilbille__jpnforphp -------------------------
+mbilbille__jpnforphp:	InverseGamma	holds? 	true
+mbilbille__jpnforphp:	InverseGamma	Geometry? 	true
+mbilbille__jpnforphp:	InverseGamma	FisherExecuted? 	false
+mbilbille__jpnforphp:	InverseGamma	p-Value? 	false
+------------------------------------------------

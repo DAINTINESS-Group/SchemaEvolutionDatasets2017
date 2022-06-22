@@ -1,0 +1,5 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1389833233.sql;1389890653.sql;tracks;Insertion:UpdateTable;number;INTEGER;false;0;-
+2;1389890653.sql;1390824627.sql;-;-;-;-;-;-;-
+3;1390824627.sql;1482682426.sql;albums;Deletion:UpdateTable;artist_id;INTEGER;false;0;-
+3;1390824627.sql;1482682426.sql;albums;Insertion:UpdateTable;fs_path;TEXT;false;0;-

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1449535568.sql" newVersion="1449630375.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>variable</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>name</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1449630375.sql" newVersion="1449718384.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>account</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_time</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>campaign</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_time</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>campaign</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>scheduled</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <insertion type="UpdateTable">
+            <table>
+                <name>list</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_time</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>list_subscriber</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_time</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>message</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_time</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <insertion type="UpdateTable">
+            <table>
+                <name>subscriber</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>create_time</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1449718384.sql" newVersion="1449722988.sql"/>
+    <transition oldVersion="1449722988.sql" newVersion="1449725911.sql">
+        <update type="TypeChange">
+            <table>
+                <name>subscriber</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>status</name>
+                <type>ENUM('ACTIVE','DELETED','UNSUBSCRIBED')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1449725911.sql" newVersion="1449793182.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>list_subscriber</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>status</name>
+                <type>ENUM('ACTIVE','DELETED')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1449793182.sql" newVersion="1449804504.sql">
+        <update type="TypeChange">
+            <table>
+                <name>message</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>status</name>
+                <type>ENUM('PENDING','SENT','CANCELLED','FAILED')</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1449804504.sql" newVersion="1450139220.sql"/>
+    <transition oldVersion="1450139220.sql" newVersion="1458709536.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>account</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>application_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+</transitions>

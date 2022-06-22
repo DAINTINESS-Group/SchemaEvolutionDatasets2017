@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- EricDepagne__Astrodb -------------------------
+EricDepagne__Astrodb:	Gamma	holds? 	false
+EricDepagne__Astrodb:	Gamma	Geometry? 	false
+EricDepagne__Astrodb:	Gamma	FisherExecuted? 	false
+EricDepagne__Astrodb:	Gamma	p-Value? 	false
+EricDepagne__Astrodb:	Gamma	Surv.Wide 	0
+EricDepagne__Astrodb:	Gamma	Surv.NotWide 	4
+EricDepagne__Astrodb:	Gamma	Dead.Wide 	0
+EricDepagne__Astrodb:	Gamma	Dead.NotWide 	2
+EricDepagne__Astrodb:	Gamma	Wide 	0
+------------------------------------------------

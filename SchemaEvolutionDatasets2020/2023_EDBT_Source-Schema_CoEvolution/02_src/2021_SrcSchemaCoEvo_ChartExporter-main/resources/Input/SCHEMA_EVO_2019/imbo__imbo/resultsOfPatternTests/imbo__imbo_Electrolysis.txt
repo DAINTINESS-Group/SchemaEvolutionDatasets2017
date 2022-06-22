@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- imbo__imbo -------------------------
+imbo__imbo:	Electrolysis	holds? 	false
+imbo__imbo:	Electrolysis	Geometry? 	false
+imbo__imbo:	Electrolysis	FisherExecuted? 	false
+imbo__imbo:	Electrolysis	p-Value? 	false
+------------------------------------------------

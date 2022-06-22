@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- azzlack__Sentinel.OAuth -------------------------
+azzlack__Sentinel.OAuth:	Electrolysis	holds? 	true
+azzlack__Sentinel.OAuth:	Electrolysis	Geometry? 	true
+azzlack__Sentinel.OAuth:	Electrolysis	FisherExecuted? 	false
+azzlack__Sentinel.OAuth:	Electrolysis	p-Value? 	false
+------------------------------------------------

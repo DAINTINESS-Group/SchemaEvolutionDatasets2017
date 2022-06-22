@@ -1,0 +1,14 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+actions;31;0;-;0;14;14;14.0
+agent_action_relation;2;27;28;0;3;3;3.0
+agents;31;0;-;2;12;14;12.903226
+agents_stats;31;0;-;0;11;11;11.0
+agtmodreq;31;0;-;0;3;3;3.0
+commands;31;0;-;0;7;7;7.0
+invagtmodperm;31;0;-;0;4;4;4.0
+investigators;31;0;-;9;8;11;9.129032
+loaders;29;0;-;10;6;12;8.965517
+manifests;29;0;-;0;6;6;6.0
+manifestsig;29;0;-;0;3;3;3.0
+modules;31;0;-;0;2;2;2.0
+signatures;31;0;-;0;3;3;3.0

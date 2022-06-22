@@ -1,0 +1,4 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+logging_event	3	0	-	2	2012-02-14 11:20:59	2012-04-09 08:44:25	0	1	54	16	16	16	1	0	0	0	0		20	0	20
+logging_event_exception	3	0	-	2	2012-02-14 11:20:59	2012-04-09 08:44:25	0	1	54	3	3	3	1	0	0	0	0		20	0	20
+logging_event_property	3	0	-	2	2012-02-14 11:20:59	2012-04-09 08:44:25	0	1	54	3	3	3	1	0	0	0	0		20	0	20

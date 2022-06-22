@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jadekler__git-go-d3-concertsap -------------------------
+jadekler__git-go-d3-concertsap:	Gamma	holds? 	false
+jadekler__git-go-d3-concertsap:	Gamma	Geometry? 	false
+jadekler__git-go-d3-concertsap:	Gamma	FisherExecuted? 	false
+jadekler__git-go-d3-concertsap:	Gamma	p-Value? 	false
+jadekler__git-go-d3-concertsap:	Gamma	Surv.Wide 	0
+jadekler__git-go-d3-concertsap:	Gamma	Surv.NotWide 	7
+jadekler__git-go-d3-concertsap:	Gamma	Dead.Wide 	0
+jadekler__git-go-d3-concertsap:	Gamma	Dead.NotWide 	1
+jadekler__git-go-d3-concertsap:	Gamma	Wide 	0
+------------------------------------------------

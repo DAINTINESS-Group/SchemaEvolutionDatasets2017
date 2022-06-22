@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- portrino__px_hybrid_auth -------------------------
+portrino__px_hybrid_auth:	Electrolysis	holds? 	true
+portrino__px_hybrid_auth:	Electrolysis	Geometry? 	true
+portrino__px_hybrid_auth:	Electrolysis	FisherExecuted? 	false
+portrino__px_hybrid_auth:	Electrolysis	p-Value? 	false
+------------------------------------------------

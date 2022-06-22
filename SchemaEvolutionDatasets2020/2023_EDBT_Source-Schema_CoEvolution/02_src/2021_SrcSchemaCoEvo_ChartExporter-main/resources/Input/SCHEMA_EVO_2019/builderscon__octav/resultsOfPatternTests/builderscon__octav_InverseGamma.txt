@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- builderscon__octav -------------------------
+builderscon__octav:	InverseGamma	holds? 	true
+builderscon__octav:	InverseGamma	Geometry? 	true
+builderscon__octav:	InverseGamma	FisherExecuted? 	true
+builderscon__octav:	InverseGamma	p-Value? 	false
+------------------------------------------------

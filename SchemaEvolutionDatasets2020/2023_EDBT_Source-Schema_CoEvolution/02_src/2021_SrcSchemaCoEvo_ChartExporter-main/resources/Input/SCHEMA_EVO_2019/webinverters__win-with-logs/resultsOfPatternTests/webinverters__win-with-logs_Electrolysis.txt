@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- webinverters__win-with-logs -------------------------
+webinverters__win-with-logs:	Electrolysis	holds? 	true
+webinverters__win-with-logs:	Electrolysis	Geometry? 	true
+webinverters__win-with-logs:	Electrolysis	FisherExecuted? 	false
+webinverters__win-with-logs:	Electrolysis	p-Value? 	false
+------------------------------------------------

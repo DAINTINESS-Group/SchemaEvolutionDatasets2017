@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- lisong__code-push-server -------------------------
+lisong__code-push-server:	InverseGamma	holds? 	true
+lisong__code-push-server:	InverseGamma	Geometry? 	true
+lisong__code-push-server:	InverseGamma	FisherExecuted? 	false
+lisong__code-push-server:	InverseGamma	p-Value? 	false
+------------------------------------------------

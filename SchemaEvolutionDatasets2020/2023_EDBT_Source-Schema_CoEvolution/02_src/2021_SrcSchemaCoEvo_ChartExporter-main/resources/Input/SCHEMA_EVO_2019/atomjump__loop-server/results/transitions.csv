@@ -1,0 +1,8 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1460670767.sql;1475185413.sql;-;-;-;-;-;-;-
+2;1475185413.sql;1478056828.sql;-;-;-;-;-;-;-
+3;1478056828.sql;1478056867.sql;-;-;-;-;-;-;-
+4;1478056867.sql;1479674104.sql;-;-;-;-;-;-;-
+5;1479674104.sql;1479678735.sql;-;-;-;-;-;-;-
+6;1479678735.sql;1484337321.sql;-;-;-;-;-;-;-
+7;1484337321.sql;1485912032.sql;tbl_layer;Deletion:UpdateTable;var_owner_string;VARCHAR(255);false;0;-

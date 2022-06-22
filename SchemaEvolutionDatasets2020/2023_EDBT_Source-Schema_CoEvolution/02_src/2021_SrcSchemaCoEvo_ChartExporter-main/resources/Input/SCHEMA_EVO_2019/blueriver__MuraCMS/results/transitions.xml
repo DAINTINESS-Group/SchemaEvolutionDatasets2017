@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1494950276.sql" newVersion="1504825823.sql"/>
+    <transition oldVersion="1504825823.sql" newVersion="1526506785.sql"/>
+    <transition oldVersion="1526506785.sql" newVersion="1526509105.sql"/>
+    <transition oldVersion="1526509105.sql" newVersion="1528822799.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tusers</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>Email</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>GroupName</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>UserName</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rvadym__languages -------------------------
+rvadym__languages:	InverseGamma	holds? 	true
+rvadym__languages:	InverseGamma	Geometry? 	true
+rvadym__languages:	InverseGamma	FisherExecuted? 	false
+rvadym__languages:	InverseGamma	p-Value? 	false
+------------------------------------------------

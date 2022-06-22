@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- joomlatools__joomla-platform-finder -------------------------
+joomlatools__joomla-platform-finder:	Electrolysis	holds? 	true
+joomlatools__joomla-platform-finder:	Electrolysis	Geometry? 	true
+joomlatools__joomla-platform-finder:	Electrolysis	FisherExecuted? 	false
+joomlatools__joomla-platform-finder:	Electrolysis	p-Value? 	false
+------------------------------------------------

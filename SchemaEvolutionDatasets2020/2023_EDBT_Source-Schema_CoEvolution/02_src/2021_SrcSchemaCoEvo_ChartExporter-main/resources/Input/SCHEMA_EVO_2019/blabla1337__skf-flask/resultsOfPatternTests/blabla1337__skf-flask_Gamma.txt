@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- blabla1337__skf-flask -------------------------
+blabla1337__skf-flask:	Gamma	holds? 	true
+blabla1337__skf-flask:	Gamma	Geometry? 	true
+blabla1337__skf-flask:	Gamma	FisherExecuted? 	false
+blabla1337__skf-flask:	Gamma	p-Value? 	true
+blabla1337__skf-flask:	Gamma	Surv.Wide 	1
+blabla1337__skf-flask:	Gamma	Surv.NotWide 	18
+blabla1337__skf-flask:	Gamma	Dead.Wide 	0
+blabla1337__skf-flask:	Gamma	Dead.NotWide 	6
+blabla1337__skf-flask:	Gamma	Wide 	1
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- pods-framework__pods -------------------------
+pods-framework__pods:	Electrolysis	holds? 	false
+pods-framework__pods:	Electrolysis	Geometry? 	false
+pods-framework__pods:	Electrolysis	FisherExecuted? 	false
+pods-framework__pods:	Electrolysis	p-Value? 	false
+------------------------------------------------

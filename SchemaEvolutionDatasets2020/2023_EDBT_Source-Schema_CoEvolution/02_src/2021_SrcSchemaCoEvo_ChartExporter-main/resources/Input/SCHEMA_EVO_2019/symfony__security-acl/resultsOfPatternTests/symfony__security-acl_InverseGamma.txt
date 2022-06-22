@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- symfony__security-acl -------------------------
+symfony__security-acl:	InverseGamma	holds? 	true
+symfony__security-acl:	InverseGamma	Geometry? 	true
+symfony__security-acl:	InverseGamma	FisherExecuted? 	false
+symfony__security-acl:	InverseGamma	p-Value? 	false
+------------------------------------------------

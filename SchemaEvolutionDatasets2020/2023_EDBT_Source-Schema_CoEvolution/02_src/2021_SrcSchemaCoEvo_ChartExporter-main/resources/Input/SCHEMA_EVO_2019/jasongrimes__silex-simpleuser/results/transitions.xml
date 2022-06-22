@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1365951202.sql" newVersion="1408884981.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>user_custom_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>attribute</name>
+                <type>VARCHAR(50)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>true</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1408884981.sql" newVersion="1408886313.sql">
+        <update type="KeyChange">
+            <table>
+                <name>user_custom_fields</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>attribute</name>
+                <type>VARCHAR(50)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>user_id</name>
+                <type>INT(11)</type>
+                <isKey>true</isKey>
+            </attribute>
+            <attribute>
+                <name>value</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1408886313.sql" newVersion="1408887068.sql"/>
+    <transition oldVersion="1408887068.sql" newVersion="1408888929.sql"/>
+    <transition oldVersion="1408888929.sql" newVersion="1413861447.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>confirmationToken</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>isEnabled</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>timePasswordResetRequested</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>username</name>
+                <type>VARCHAR(100)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <update type="TypeChange">
+            <table>
+                <name>users</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>time_created</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jcoppieters__cody -------------------------
+jcoppieters__cody:	Gamma	holds? 	true
+jcoppieters__cody:	Gamma	Geometry? 	true
+jcoppieters__cody:	Gamma	FisherExecuted? 	false
+jcoppieters__cody:	Gamma	p-Value? 	false
+jcoppieters__cody:	Gamma	Surv.Wide 	2
+jcoppieters__cody:	Gamma	Surv.NotWide 	8
+jcoppieters__cody:	Gamma	Dead.Wide 	0
+jcoppieters__cody:	Gamma	Dead.NotWide 	0
+jcoppieters__cody:	Gamma	Wide 	2
+------------------------------------------------

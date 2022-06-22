@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1437671993.sql" newVersion="1471623112.sql">
+        <update type="TypeChange">
+            <table>
+                <name>mirror_lmm_lang_exceptions</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>location_mirror_map_id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+        <update type="TypeChange">
+            <table>
+                <name>mirror_location_mirror_map</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>BIGINT(20)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1471623112.sql" newVersion="1510873774.sql"/>
+    <transition oldVersion="1510873774.sql" newVersion="1510938592.sql"/>
+</transitions>

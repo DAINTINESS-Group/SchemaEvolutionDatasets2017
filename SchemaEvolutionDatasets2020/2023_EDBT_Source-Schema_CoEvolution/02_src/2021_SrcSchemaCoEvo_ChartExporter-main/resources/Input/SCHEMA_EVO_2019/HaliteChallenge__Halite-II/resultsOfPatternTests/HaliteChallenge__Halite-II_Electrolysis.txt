@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- HaliteChallenge__Halite-II -------------------------
+HaliteChallenge__Halite-II:	Electrolysis	holds? 	false
+HaliteChallenge__Halite-II:	Electrolysis	Geometry? 	false
+HaliteChallenge__Halite-II:	Electrolysis	FisherExecuted? 	false
+HaliteChallenge__Halite-II:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rill-event-sourcing__rill -------------------------
+rill-event-sourcing__rill:	InverseGamma	holds? 	true
+rill-event-sourcing__rill:	InverseGamma	Geometry? 	true
+rill-event-sourcing__rill:	InverseGamma	FisherExecuted? 	false
+rill-event-sourcing__rill:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- schimmy__shorty -------------------------
+schimmy__shorty:	Electrolysis	holds? 	true
+schimmy__shorty:	Electrolysis	Geometry? 	true
+schimmy__shorty:	Electrolysis	FisherExecuted? 	false
+schimmy__shorty:	Electrolysis	p-Value? 	false
+------------------------------------------------

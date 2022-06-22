@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- ironsmile__httpms -------------------------
+ironsmile__httpms:	Gamma	holds? 	false
+ironsmile__httpms:	Gamma	Geometry? 	false
+ironsmile__httpms:	Gamma	FisherExecuted? 	false
+ironsmile__httpms:	Gamma	p-Value? 	false
+ironsmile__httpms:	Gamma	Surv.Wide 	0
+ironsmile__httpms:	Gamma	Surv.NotWide 	3
+ironsmile__httpms:	Gamma	Dead.Wide 	0
+ironsmile__httpms:	Gamma	Dead.NotWide 	0
+ironsmile__httpms:	Gamma	Wide 	0
+------------------------------------------------

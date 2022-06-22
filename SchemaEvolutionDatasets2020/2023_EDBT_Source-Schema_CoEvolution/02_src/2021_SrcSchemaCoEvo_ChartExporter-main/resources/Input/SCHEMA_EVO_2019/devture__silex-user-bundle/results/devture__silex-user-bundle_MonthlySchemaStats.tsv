@@ -1,0 +1,4 @@
+mID	humanTime	#numCommits	#numTables	#numAttrs	tablesInssSum	tablesDelSum	attrsInsWithTableInsSum	attrsbDelWithTableDelSum	attrsInjectedSum	attrsEjectedSum	attrsWithTypeUpdSum	attrsInPKUpdSum	tableDeltaSum	attrDeltaSum	attrBirthsSum	attrDeathsSum	attrUpdsSum	TotalExpansion	TotalMaintenance	TotalAttrActivity	Reeds	ReedRatioAComm	ReedRatioTComm	ActivityDueToReeds	Turfs	TurfRatioAComm	TurfRatioTComm	ActivityDueToTurfs	ActiveCommits	ActiveCommitRatio
+0	2013-01	1	1	6	1	0	6	0	0	0	0	0	0	0	6	0	0	6	0	6	0	0.0	0.0	0	1	1.0	1.0	6	1	1.0
+1	2013-02	0	1	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.0	0.0	0	0	0.0	0.0	0	0	0.0
+2	2013-03	1	1	7	1	1	7	6	0	0	0	0	0	1	7	6	0	7	6	13	0	0.0	0.0	0	1	1.0	1.0	13	1	1.0

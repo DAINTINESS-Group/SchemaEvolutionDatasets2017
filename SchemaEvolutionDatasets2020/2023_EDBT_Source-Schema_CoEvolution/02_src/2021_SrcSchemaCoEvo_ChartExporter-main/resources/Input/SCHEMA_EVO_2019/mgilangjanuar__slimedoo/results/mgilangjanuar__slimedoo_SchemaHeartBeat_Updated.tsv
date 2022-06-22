@@ -1,0 +1,3 @@
+trID	epochTime	oldVer	newVer	humanTime	distFromV0InDays	runningYearFromV0	runningMonthFromV0	#numOldTables	#numNewTables	#numOldAttrs	#numNewAttrs	tablesIns	tablesDel	attrsInsWithTableIns	attrsbDelWithTableDel	attrsInjected	attrsEjected	attrsWithTypeUpd	attrsInPKUpd	tableDelta	attrDelta	attrBirthsSum	attrDeathsSum	attrUpdsSum	Expansion	Maintenance	TotalAttrActivity	isReed	isTurf	isActive
+0	1440032561		1440032561.sql	2015-08-20 01:02:41	0	0	0	0	1	0	9	1	0	9	0	0	0	0	0	0	0	9	0	0	9	0	9	0	1	1
+1	1440908594	1440032561.sql	1440908594.sql	2015-08-30 04:23:14	10	1	1	1	1	9	9	0	0	0	0	0	0	1	0	0	0	0	0	1	0	1	1	0	1	1

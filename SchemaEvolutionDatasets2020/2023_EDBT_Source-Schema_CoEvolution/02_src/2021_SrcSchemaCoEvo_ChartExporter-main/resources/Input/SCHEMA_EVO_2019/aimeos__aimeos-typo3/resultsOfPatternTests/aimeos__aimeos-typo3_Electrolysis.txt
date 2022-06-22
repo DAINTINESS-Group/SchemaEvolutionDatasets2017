@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- aimeos__aimeos-typo3 -------------------------
+aimeos__aimeos-typo3:	Electrolysis	holds? 	false
+aimeos__aimeos-typo3:	Electrolysis	Geometry? 	false
+aimeos__aimeos-typo3:	Electrolysis	FisherExecuted? 	false
+aimeos__aimeos-typo3:	Electrolysis	p-Value? 	false
+------------------------------------------------

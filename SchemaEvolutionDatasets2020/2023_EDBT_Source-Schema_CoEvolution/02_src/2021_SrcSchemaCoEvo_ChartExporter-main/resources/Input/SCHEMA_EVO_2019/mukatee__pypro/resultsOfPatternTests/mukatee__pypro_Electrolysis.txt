@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mukatee__pypro -------------------------
+mukatee__pypro:	Electrolysis	holds? 	true
+mukatee__pypro:	Electrolysis	Geometry? 	true
+mukatee__pypro:	Electrolysis	FisherExecuted? 	false
+mukatee__pypro:	Electrolysis	p-Value? 	false
+------------------------------------------------

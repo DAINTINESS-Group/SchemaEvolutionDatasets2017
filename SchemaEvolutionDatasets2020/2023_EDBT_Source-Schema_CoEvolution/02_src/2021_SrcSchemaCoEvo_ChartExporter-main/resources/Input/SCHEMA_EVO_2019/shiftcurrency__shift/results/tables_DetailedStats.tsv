@@ -1,0 +1,7 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+mem_accounts	2	0	-	1	2016-10-04 15:55:39	2016-10-14 21:01:56	0	1	10	28	29	28.5	1.04	1	1	0.5	0.5	1	20	1	21
+mem_accounts2delegates	2	0	-	1	2016-10-04 15:55:39	2016-10-14 21:01:56	0	1	10	2	2	2	1	0	0	0	0		20	0	20
+mem_accounts2multisignatures	2	0	-	1	2016-10-04 15:55:39	2016-10-14 21:01:56	0	1	10	2	2	2	1	0	0	0	0		20	0	20
+mem_accounts2u_delegates	2	0	-	1	2016-10-04 15:55:39	2016-10-14 21:01:56	0	1	10	2	2	2	1	0	0	0	0		20	0	20
+mem_accounts2u_multisignatures	2	0	-	1	2016-10-04 15:55:39	2016-10-14 21:01:56	0	1	10	2	2	2	1	0	0	0	0		20	0	20
+mem_round	2	0	-	1	2016-10-04 15:55:39	2016-10-14 21:01:56	0	1	10	5	5	5	1	0	0	0	0		20	0	20

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1199915562.sql" newVersion="1372115182.sql">
+        <update type="TypeChange">
+            <table>
+                <name>items</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>MEDIUMBLOBCHARACTERSETUTF8</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1372115182.sql" newVersion="1458075421.sql">
+        <update type="TypeChange">
+            <table>
+                <name>items</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>data</name>
+                <type>MEDIUMBLOB</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+</transitions>

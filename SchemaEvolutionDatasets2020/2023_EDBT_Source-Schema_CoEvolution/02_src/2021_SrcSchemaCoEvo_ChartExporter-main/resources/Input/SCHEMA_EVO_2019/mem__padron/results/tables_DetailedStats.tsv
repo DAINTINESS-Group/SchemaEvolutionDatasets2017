@@ -1,0 +1,9 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+cantones	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	3	3	3	1	0	0	0	0		20	0	20
+centros	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	5	5	5	1	2	1	1	0.5	2	20	1	21
+distritos	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	3	3	3	1	0	0	0	0		20	0	20
+distritos_electorales	1	1	-	1	2016-02-07 04:13:13	2016-02-07 04:13:13	3	3	0	3	3	3	1	0	0	0	0		20	0	20
+juntas	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	2	2	2	1	0	0	0	0		20	0	20
+padron	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	2	2	2	1	0	0	0	0		20	0	20
+personas	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	8	7	7.5	0.88	1	1	0.5	0.5	1	20	1	21
+provincias	2	0	-	1	2014-01-27 03:30:35	2016-02-07 04:13:13	0	3	741	2	2	2	1	0	0	0	0		20	0	20

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla__ichnaea -------------------------
+mozilla__ichnaea:	InverseGamma	holds? 	true
+mozilla__ichnaea:	InverseGamma	Geometry? 	true
+mozilla__ichnaea:	InverseGamma	FisherExecuted? 	false
+mozilla__ichnaea:	InverseGamma	p-Value? 	false
+------------------------------------------------

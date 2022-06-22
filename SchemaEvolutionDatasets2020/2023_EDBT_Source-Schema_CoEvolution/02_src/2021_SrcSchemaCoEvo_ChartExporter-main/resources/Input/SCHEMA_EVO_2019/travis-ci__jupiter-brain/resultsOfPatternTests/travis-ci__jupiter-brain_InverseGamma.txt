@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- travis-ci__jupiter-brain -------------------------
+travis-ci__jupiter-brain:	InverseGamma	holds? 	true
+travis-ci__jupiter-brain:	InverseGamma	Geometry? 	true
+travis-ci__jupiter-brain:	InverseGamma	FisherExecuted? 	false
+travis-ci__jupiter-brain:	InverseGamma	p-Value? 	false
+------------------------------------------------

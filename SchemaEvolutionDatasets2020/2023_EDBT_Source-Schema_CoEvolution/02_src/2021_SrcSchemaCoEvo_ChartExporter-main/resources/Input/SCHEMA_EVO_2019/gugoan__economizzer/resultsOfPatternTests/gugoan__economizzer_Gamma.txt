@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- gugoan__economizzer -------------------------
+gugoan__economizzer:	Gamma	holds? 	false
+gugoan__economizzer:	Gamma	Geometry? 	false
+gugoan__economizzer:	Gamma	FisherExecuted? 	true
+gugoan__economizzer:	Gamma	p-Value? 	false
+gugoan__economizzer:	Gamma	Surv.Wide 	2
+gugoan__economizzer:	Gamma	Surv.NotWide 	6
+gugoan__economizzer:	Gamma	Dead.Wide 	2
+gugoan__economizzer:	Gamma	Dead.NotWide 	9
+gugoan__economizzer:	Gamma	Wide 	4
+------------------------------------------------

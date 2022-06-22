@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- jgauffin__griffin.mvccontrib -------------------------
+jgauffin__griffin.mvccontrib:	Electrolysis	holds? 	true
+jgauffin__griffin.mvccontrib:	Electrolysis	Geometry? 	true
+jgauffin__griffin.mvccontrib:	Electrolysis	FisherExecuted? 	false
+jgauffin__griffin.mvccontrib:	Electrolysis	p-Value? 	false
+------------------------------------------------

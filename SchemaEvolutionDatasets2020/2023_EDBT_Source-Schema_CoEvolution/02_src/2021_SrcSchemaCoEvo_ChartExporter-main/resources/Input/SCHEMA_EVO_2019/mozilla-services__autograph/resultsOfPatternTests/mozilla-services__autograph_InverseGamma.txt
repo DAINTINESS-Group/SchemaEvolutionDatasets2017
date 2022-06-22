@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mozilla-services__autograph -------------------------
+mozilla-services__autograph:	InverseGamma	holds? 	true
+mozilla-services__autograph:	InverseGamma	Geometry? 	true
+mozilla-services__autograph:	InverseGamma	FisherExecuted? 	false
+mozilla-services__autograph:	InverseGamma	p-Value? 	false
+------------------------------------------------

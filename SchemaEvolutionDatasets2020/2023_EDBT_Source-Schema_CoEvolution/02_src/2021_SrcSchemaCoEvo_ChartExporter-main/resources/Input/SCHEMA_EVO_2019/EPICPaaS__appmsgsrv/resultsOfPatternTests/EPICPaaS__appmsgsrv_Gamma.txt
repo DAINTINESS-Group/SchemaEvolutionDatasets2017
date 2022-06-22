@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- EPICPaaS__appmsgsrv -------------------------
+EPICPaaS__appmsgsrv:	Gamma	holds? 	true
+EPICPaaS__appmsgsrv:	Gamma	Geometry? 	true
+EPICPaaS__appmsgsrv:	Gamma	FisherExecuted? 	false
+EPICPaaS__appmsgsrv:	Gamma	p-Value? 	true
+EPICPaaS__appmsgsrv:	Gamma	Surv.Wide 	2
+EPICPaaS__appmsgsrv:	Gamma	Surv.NotWide 	21
+EPICPaaS__appmsgsrv:	Gamma	Dead.Wide 	0
+EPICPaaS__appmsgsrv:	Gamma	Dead.NotWide 	1
+EPICPaaS__appmsgsrv:	Gamma	Wide 	2
+------------------------------------------------

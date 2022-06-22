@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- snakerflow__snakerflow -------------------------
+snakerflow__snakerflow:	Gamma	holds? 	true
+snakerflow__snakerflow:	Gamma	Geometry? 	true
+snakerflow__snakerflow:	Gamma	FisherExecuted? 	false
+snakerflow__snakerflow:	Gamma	p-Value? 	false
+snakerflow__snakerflow:	Gamma	Surv.Wide 	4
+snakerflow__snakerflow:	Gamma	Surv.NotWide 	5
+snakerflow__snakerflow:	Gamma	Dead.Wide 	0
+snakerflow__snakerflow:	Gamma	Dead.NotWide 	0
+snakerflow__snakerflow:	Gamma	Wide 	4
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- blueriver__MuraCMS -------------------------
+blueriver__MuraCMS:	Electrolysis	holds? 	true
+blueriver__MuraCMS:	Electrolysis	Geometry? 	true
+blueriver__MuraCMS:	Electrolysis	FisherExecuted? 	false
+blueriver__MuraCMS:	Electrolysis	p-Value? 	false
+------------------------------------------------

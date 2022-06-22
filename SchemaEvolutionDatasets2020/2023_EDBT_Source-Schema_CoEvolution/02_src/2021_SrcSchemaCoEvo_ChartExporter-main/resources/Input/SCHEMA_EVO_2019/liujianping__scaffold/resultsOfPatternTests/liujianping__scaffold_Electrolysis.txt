@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- liujianping__scaffold -------------------------
+liujianping__scaffold:	Electrolysis	holds? 	false
+liujianping__scaffold:	Electrolysis	Geometry? 	false
+liujianping__scaffold:	Electrolysis	FisherExecuted? 	false
+liujianping__scaffold:	Electrolysis	p-Value? 	false
+------------------------------------------------

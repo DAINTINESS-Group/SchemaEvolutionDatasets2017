@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- thewhitetulip__Tasks -------------------------
+thewhitetulip__Tasks:	Electrolysis	holds? 	false
+thewhitetulip__Tasks:	Electrolysis	Geometry? 	false
+thewhitetulip__Tasks:	Electrolysis	FisherExecuted? 	false
+thewhitetulip__Tasks:	Electrolysis	p-Value? 	false
+------------------------------------------------

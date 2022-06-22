@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- webnuts__post_json -------------------------
+webnuts__post_json:	InverseGamma	holds? 	true
+webnuts__post_json:	InverseGamma	Geometry? 	true
+webnuts__post_json:	InverseGamma	FisherExecuted? 	false
+webnuts__post_json:	InverseGamma	p-Value? 	false
+------------------------------------------------

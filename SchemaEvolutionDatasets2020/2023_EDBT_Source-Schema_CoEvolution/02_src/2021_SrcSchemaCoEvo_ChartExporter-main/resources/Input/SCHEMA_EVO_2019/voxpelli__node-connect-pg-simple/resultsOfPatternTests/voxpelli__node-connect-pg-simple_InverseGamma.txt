@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- voxpelli__node-connect-pg-simple -------------------------
+voxpelli__node-connect-pg-simple:	InverseGamma	holds? 	true
+voxpelli__node-connect-pg-simple:	InverseGamma	Geometry? 	true
+voxpelli__node-connect-pg-simple:	InverseGamma	FisherExecuted? 	false
+voxpelli__node-connect-pg-simple:	InverseGamma	p-Value? 	false
+------------------------------------------------

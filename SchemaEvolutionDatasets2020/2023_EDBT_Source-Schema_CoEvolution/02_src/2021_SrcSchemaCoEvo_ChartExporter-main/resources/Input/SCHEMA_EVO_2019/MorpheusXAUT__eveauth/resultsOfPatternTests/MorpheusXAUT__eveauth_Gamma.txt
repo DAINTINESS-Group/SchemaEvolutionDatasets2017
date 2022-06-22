@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- MorpheusXAUT__eveauth -------------------------
+MorpheusXAUT__eveauth:	Gamma	holds? 	false
+MorpheusXAUT__eveauth:	Gamma	Geometry? 	false
+MorpheusXAUT__eveauth:	Gamma	FisherExecuted? 	false
+MorpheusXAUT__eveauth:	Gamma	p-Value? 	false
+MorpheusXAUT__eveauth:	Gamma	Surv.Wide 	0
+MorpheusXAUT__eveauth:	Gamma	Surv.NotWide 	12
+MorpheusXAUT__eveauth:	Gamma	Dead.Wide 	0
+MorpheusXAUT__eveauth:	Gamma	Dead.NotWide 	1
+MorpheusXAUT__eveauth:	Gamma	Wide 	0
+------------------------------------------------

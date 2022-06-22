@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- quickapps__cms -------------------------
+quickapps__cms:	InverseGamma	holds? 	true
+quickapps__cms:	InverseGamma	Geometry? 	true
+quickapps__cms:	InverseGamma	FisherExecuted? 	true
+quickapps__cms:	InverseGamma	p-Value? 	false
+------------------------------------------------

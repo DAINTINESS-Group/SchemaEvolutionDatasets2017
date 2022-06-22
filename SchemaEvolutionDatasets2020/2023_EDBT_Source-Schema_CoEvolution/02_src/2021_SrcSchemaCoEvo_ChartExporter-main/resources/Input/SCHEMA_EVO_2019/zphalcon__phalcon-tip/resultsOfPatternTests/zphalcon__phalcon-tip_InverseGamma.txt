@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- zphalcon__phalcon-tip -------------------------
+zphalcon__phalcon-tip:	InverseGamma	holds? 	true
+zphalcon__phalcon-tip:	InverseGamma	Geometry? 	true
+zphalcon__phalcon-tip:	InverseGamma	FisherExecuted? 	false
+zphalcon__phalcon-tip:	InverseGamma	p-Value? 	false
+------------------------------------------------

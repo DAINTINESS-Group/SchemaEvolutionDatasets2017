@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- saltzm__yadi -------------------------
+saltzm__yadi:	Gamma	holds? 	false
+saltzm__yadi:	Gamma	Geometry? 	false
+saltzm__yadi:	Gamma	FisherExecuted? 	false
+saltzm__yadi:	Gamma	p-Value? 	false
+saltzm__yadi:	Gamma	Surv.Wide 	0
+saltzm__yadi:	Gamma	Surv.NotWide 	8
+saltzm__yadi:	Gamma	Dead.Wide 	0
+saltzm__yadi:	Gamma	Dead.NotWide 	0
+saltzm__yadi:	Gamma	Wide 	0
+------------------------------------------------

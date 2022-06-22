@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- wskm__deruv -------------------------
+wskm__deruv:	Gamma	holds? 	true
+wskm__deruv:	Gamma	Geometry? 	true
+wskm__deruv:	Gamma	FisherExecuted? 	false
+wskm__deruv:	Gamma	p-Value? 	false
+wskm__deruv:	Gamma	Surv.Wide 	2
+wskm__deruv:	Gamma	Surv.NotWide 	20
+wskm__deruv:	Gamma	Dead.Wide 	0
+wskm__deruv:	Gamma	Dead.NotWide 	0
+wskm__deruv:	Gamma	Wide 	2
+------------------------------------------------

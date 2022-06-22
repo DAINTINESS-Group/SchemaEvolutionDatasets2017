@@ -1,0 +1,8 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1428195491.sql;1428196111.sql;-;-;-;-;-;-;-
+2;1428196111.sql;1428196437.sql;-;-;-;-;-;-;-
+3;1428196437.sql;1428196590.sql;-;-;-;-;-;-;-
+4;1428196590.sql;1428196664.sql;-;-;-;-;-;-;-
+5;1428196664.sql;1428196904.sql;-;-;-;-;-;-;-
+6;1428196904.sql;1428299414.sql;-;-;-;-;-;-;-
+7;1428299414.sql;1428468500.sql;flights;Insertion:UpdateTable;price;INT;false;0;-

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- MDSLab__s4t-iotronic-standalone -------------------------
+MDSLab__s4t-iotronic-standalone:	InverseGamma	holds? 	true
+MDSLab__s4t-iotronic-standalone:	InverseGamma	Geometry? 	true
+MDSLab__s4t-iotronic-standalone:	InverseGamma	FisherExecuted? 	true
+MDSLab__s4t-iotronic-standalone:	InverseGamma	p-Value? 	true
+------------------------------------------------

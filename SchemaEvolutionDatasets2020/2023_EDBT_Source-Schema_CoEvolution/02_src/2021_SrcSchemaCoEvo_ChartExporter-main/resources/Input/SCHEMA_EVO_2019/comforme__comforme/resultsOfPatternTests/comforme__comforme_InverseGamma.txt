@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- comforme__comforme -------------------------
+comforme__comforme:	InverseGamma	holds? 	true
+comforme__comforme:	InverseGamma	Geometry? 	true
+comforme__comforme:	InverseGamma	FisherExecuted? 	true
+comforme__comforme:	InverseGamma	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- sqlectron__sqlectron-core -------------------------
+sqlectron__sqlectron-core:	InverseGamma	holds? 	true
+sqlectron__sqlectron-core:	InverseGamma	Geometry? 	true
+sqlectron__sqlectron-core:	InverseGamma	FisherExecuted? 	false
+sqlectron__sqlectron-core:	InverseGamma	p-Value? 	false
+------------------------------------------------

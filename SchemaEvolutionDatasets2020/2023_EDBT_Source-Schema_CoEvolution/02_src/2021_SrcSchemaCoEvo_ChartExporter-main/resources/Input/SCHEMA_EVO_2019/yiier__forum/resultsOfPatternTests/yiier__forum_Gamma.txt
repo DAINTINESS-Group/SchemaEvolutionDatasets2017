@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- yiier__forum -------------------------
+yiier__forum:	Gamma	holds? 	true
+yiier__forum:	Gamma	Geometry? 	true
+yiier__forum:	Gamma	FisherExecuted? 	false
+yiier__forum:	Gamma	p-Value? 	true
+yiier__forum:	Gamma	Surv.Wide 	1
+yiier__forum:	Gamma	Surv.NotWide 	2
+yiier__forum:	Gamma	Dead.Wide 	0
+yiier__forum:	Gamma	Dead.NotWide 	1
+yiier__forum:	Gamma	Wide 	1
+------------------------------------------------

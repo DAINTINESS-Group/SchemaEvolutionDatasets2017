@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1550158525.sql" newVersion="1550275301.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>endentities</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>hsm_handle</name>
+                <type>BIGINT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1550275301.sql" newVersion="1550781635.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>endentities_lock</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>created_at</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>freed_at</name>
+                <type>TIMESTAMPWITHTIMEZONE</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>id</name>
+                <type>SERIAL</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>is_locked</name>
+                <type>BOOLEAN</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1550781635.sql" newVersion="1551899549.sql"/>
+</transitions>

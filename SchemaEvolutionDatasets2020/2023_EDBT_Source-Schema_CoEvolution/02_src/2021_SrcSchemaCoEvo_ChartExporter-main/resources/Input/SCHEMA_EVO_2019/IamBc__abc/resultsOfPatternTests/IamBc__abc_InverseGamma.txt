@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- IamBc__abc -------------------------
+IamBc__abc:	InverseGamma	holds? 	true
+IamBc__abc:	InverseGamma	Geometry? 	true
+IamBc__abc:	InverseGamma	FisherExecuted? 	false
+IamBc__abc:	InverseGamma	p-Value? 	false
+------------------------------------------------

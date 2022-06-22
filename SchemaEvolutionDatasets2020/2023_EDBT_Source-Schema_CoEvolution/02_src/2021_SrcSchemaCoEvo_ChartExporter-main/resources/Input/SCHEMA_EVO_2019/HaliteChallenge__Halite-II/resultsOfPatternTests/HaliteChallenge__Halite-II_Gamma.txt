@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- HaliteChallenge__Halite-II -------------------------
+HaliteChallenge__Halite-II:	Gamma	holds? 	true
+HaliteChallenge__Halite-II:	Gamma	Geometry? 	true
+HaliteChallenge__Halite-II:	Gamma	FisherExecuted? 	true
+HaliteChallenge__Halite-II:	Gamma	p-Value? 	false
+HaliteChallenge__Halite-II:	Gamma	Surv.Wide 	3
+HaliteChallenge__Halite-II:	Gamma	Surv.NotWide 	19
+HaliteChallenge__Halite-II:	Gamma	Dead.Wide 	2
+HaliteChallenge__Halite-II:	Gamma	Dead.NotWide 	9
+HaliteChallenge__Halite-II:	Gamma	Wide 	5
+------------------------------------------------

@@ -1,0 +1,3 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1393259186.sql;1473960145.sql;sessions;Update:TypeChange;data;TEXTCOLLATEUTF8MB4_BIN;false;0;-
+1;1393259186.sql;1473960145.sql;sessions;Update:TypeChange;session_id;VARCHAR(128);false;0;-

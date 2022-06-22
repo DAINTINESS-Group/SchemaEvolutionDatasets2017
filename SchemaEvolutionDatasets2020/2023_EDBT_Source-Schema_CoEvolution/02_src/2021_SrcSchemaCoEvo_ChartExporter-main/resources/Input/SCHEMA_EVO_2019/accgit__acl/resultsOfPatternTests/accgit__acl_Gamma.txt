@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- accgit__acl -------------------------
+accgit__acl:	Gamma	holds? 	false
+accgit__acl:	Gamma	Geometry? 	false
+accgit__acl:	Gamma	FisherExecuted? 	false
+accgit__acl:	Gamma	p-Value? 	false
+accgit__acl:	Gamma	Surv.Wide 	0
+accgit__acl:	Gamma	Surv.NotWide 	6
+accgit__acl:	Gamma	Dead.Wide 	0
+accgit__acl:	Gamma	Dead.NotWide 	1
+accgit__acl:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,3 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1503398287.sql;1504172037.sql;JobQueue;Update:TypeChange;Queue;NVARCHAR(50);false;0;-
+1;1503398287.sql;1504172037.sql;Server;Update:TypeChange;Id;NVARCHAR(100);true;0;-

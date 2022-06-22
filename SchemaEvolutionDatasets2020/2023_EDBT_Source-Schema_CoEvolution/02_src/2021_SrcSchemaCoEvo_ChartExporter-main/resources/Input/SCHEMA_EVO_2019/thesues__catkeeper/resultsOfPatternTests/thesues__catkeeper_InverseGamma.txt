@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- thesues__catkeeper -------------------------
+thesues__catkeeper:	InverseGamma	holds? 	true
+thesues__catkeeper:	InverseGamma	Geometry? 	true
+thesues__catkeeper:	InverseGamma	FisherExecuted? 	false
+thesues__catkeeper:	InverseGamma	p-Value? 	false
+------------------------------------------------

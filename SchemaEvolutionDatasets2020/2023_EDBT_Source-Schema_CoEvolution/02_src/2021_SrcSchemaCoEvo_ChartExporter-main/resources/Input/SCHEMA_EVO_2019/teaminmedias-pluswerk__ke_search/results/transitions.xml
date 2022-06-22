@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1442423961.sql" newVersion="1442851455.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_filters</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cssclass</name>
+                <type>VARCHAR(90)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>expandbydefault</name>
+                <type>TINYINT(1)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>wrap</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1442851455.sql" newVersion="1443089538.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>contenttypes</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1443089538.sql" newVersion="1444057346.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>index_dam_categories</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>index_dam_categories_recursive</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>index_dam_without_categories</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1444057346.sql" newVersion="1449574338.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>index_news_archived</name>
+                <type>TINYINT(4)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1449574338.sql" newVersion="1449575004.sql"/>
+    <transition oldVersion="1449575004.sql" newVersion="1458050723.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>cal_expired_events</name>
+                <type>TINYINT(3)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1458050723.sql" newVersion="1459426630.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>contenttypes</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1459426630.sql" newVersion="1462522113.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>index_page_doctypes</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1462522113.sql" newVersion="1508231554.sql"/>
+    <transition oldVersion="1508231554.sql" newVersion="1523884791.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>tx_kesearch_description</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>tx_kesearch_resultimage</name>
+                <type>INT(11)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1523884791.sql" newVersion="1523890280.sql">
+        <insertion type="UpdateTable">
+            <table>
+                <name>pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>tx_kesearch_abstract</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+        <deletion type="UpdateTable">
+            <table>
+                <name>pages</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>tx_kesearch_description</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1523890280.sql" newVersion="1527509513.sql">
+        <update type="TypeChange">
+            <table>
+                <name>tx_kesearch_index</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>orig_uid</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </update>
+    </transition>
+    <transition oldVersion="1527509513.sql" newVersion="1537534697.sql">
+        <deletion type="UpdateTable">
+            <table>
+                <name>tx_kesearch_indexerconfig</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>commenttypes</name>
+                <type>TINYTEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>index_passed_events</name>
+                <type>TEXT</type>
+                <isKey>false</isKey>
+            </attribute>
+        </deletion>
+    </transition>
+    <transition oldVersion="1537534697.sql" newVersion="1547486286.sql"/>
+</transitions>

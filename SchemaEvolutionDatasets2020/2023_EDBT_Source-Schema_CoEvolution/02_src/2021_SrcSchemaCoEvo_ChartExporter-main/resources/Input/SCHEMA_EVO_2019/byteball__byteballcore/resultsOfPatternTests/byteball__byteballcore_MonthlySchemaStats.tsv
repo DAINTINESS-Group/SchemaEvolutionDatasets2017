@@ -1,0 +1,5 @@
+mID	humanTime	#numCommits	#numTables	#numAttrs	tablesInssSum	tablesDelSum	attrsInsWithTableInsSum	attrsbDelWithTableDelSum	attrsInjectedSum	attrsEjectedSum	attrsWithTypeUpdSum	attrsInPKUpdSum	tableDeltaSum	attrDeltaSum	attrBirthsSum	attrDeathsSum	attrUpdsSum	TotalExpansion	TotalMaintenance	TotalAttrActivity
+0	2019-01	3	65	319	65	0	319	0	0	0	2	0	0	0	319	0	2	319	2	321
+1	2019-02	4	68	337	3	0	17	0	1	0	0	1	3	18	18	0	1	18	1	19
+2	2019-03	3	68	337	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+3	2019-04	2	68	338	0	0	0	0	1	0	14	0	0	1	1	0	14	1	14	15

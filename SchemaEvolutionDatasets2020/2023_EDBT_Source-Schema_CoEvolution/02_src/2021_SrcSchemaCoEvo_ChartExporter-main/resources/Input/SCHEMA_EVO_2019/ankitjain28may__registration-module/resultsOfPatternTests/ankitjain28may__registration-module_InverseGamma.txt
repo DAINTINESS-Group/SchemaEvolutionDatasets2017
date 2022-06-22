@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- ankitjain28may__registration-module -------------------------
+ankitjain28may__registration-module:	InverseGamma	holds? 	true
+ankitjain28may__registration-module:	InverseGamma	Geometry? 	true
+ankitjain28may__registration-module:	InverseGamma	FisherExecuted? 	false
+ankitjain28may__registration-module:	InverseGamma	p-Value? 	false
+------------------------------------------------

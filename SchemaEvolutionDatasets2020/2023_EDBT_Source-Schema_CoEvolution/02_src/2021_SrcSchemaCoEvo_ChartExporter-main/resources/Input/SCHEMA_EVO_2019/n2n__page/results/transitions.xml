@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transitions>
+    <transition oldVersion="1471564601.sql" newVersion="1488295348.sql">
+        <insertion type="NewTable">
+            <table>
+                <name>page_link</name>
+                <primaryKey>
+                    <mode>0</mode>
+                </primaryKey>
+                <foreignKey/>
+            </table>
+            <attribute>
+                <name>id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>label</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>linked_page_id</name>
+                <type>INT(10)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>type</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+            <attribute>
+                <name>url</name>
+                <type>VARCHAR(255)</type>
+                <isKey>false</isKey>
+            </attribute>
+        </insertion>
+    </transition>
+    <transition oldVersion="1488295348.sql" newVersion="1492598869.sql"/>
+    <transition oldVersion="1492598869.sql" newVersion="1516135645.sql"/>
+    <transition oldVersion="1516135645.sql" newVersion="1516141532.sql"/>
+    <transition oldVersion="1516141532.sql" newVersion="1519647737.sql"/>
+    <transition oldVersion="1519647737.sql" newVersion="1529313416.sql"/>
+</transitions>

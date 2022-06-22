@@ -1,0 +1,10 @@
+table;dur;birth;death;chngs;s@s;s@e;sAvg
+cpu_proc;4;0;-;2;8;9;8.5
+cpu_sys;4;0;-;1;6;6;6.0
+event_log;4;0;-;2;5;5;5.0
+event_type;4;0;-;0;2;2;2.0
+io_sys;4;0;-;1;10;10;10.0
+mem_proc;4;0;-;1;6;6;6.0
+mem_sys;4;0;-;2;11;12;11.5
+proc_info;4;0;-;1;4;4;4.0
+session_info;4;0;-;1;2;3;2.5

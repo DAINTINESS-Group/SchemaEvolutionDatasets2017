@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- wskm__deruv -------------------------
+wskm__deruv:	InverseGamma	holds? 	true
+wskm__deruv:	InverseGamma	Geometry? 	true
+wskm__deruv:	InverseGamma	FisherExecuted? 	false
+wskm__deruv:	InverseGamma	p-Value? 	false
+------------------------------------------------

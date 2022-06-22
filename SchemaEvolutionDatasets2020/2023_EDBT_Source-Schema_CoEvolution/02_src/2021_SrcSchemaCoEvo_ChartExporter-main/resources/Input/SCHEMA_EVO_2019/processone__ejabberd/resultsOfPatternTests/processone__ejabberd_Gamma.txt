@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- processone__ejabberd -------------------------
+processone__ejabberd:	Gamma	holds? 	true
+processone__ejabberd:	Gamma	Geometry? 	true
+processone__ejabberd:	Gamma	FisherExecuted? 	false
+processone__ejabberd:	Gamma	p-Value? 	true
+processone__ejabberd:	Gamma	Surv.Wide 	4
+processone__ejabberd:	Gamma	Surv.NotWide 	36
+processone__ejabberd:	Gamma	Dead.Wide 	0
+processone__ejabberd:	Gamma	Dead.NotWide 	2
+processone__ejabberd:	Gamma	Wide 	4
+------------------------------------------------

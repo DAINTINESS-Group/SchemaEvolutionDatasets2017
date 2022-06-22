@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- energine-cmf__energine -------------------------
+energine-cmf__energine:	InverseGamma	holds? 	true
+energine-cmf__energine:	InverseGamma	Geometry? 	true
+energine-cmf__energine:	InverseGamma	FisherExecuted? 	true
+energine-cmf__energine:	InverseGamma	p-Value? 	false
+------------------------------------------------

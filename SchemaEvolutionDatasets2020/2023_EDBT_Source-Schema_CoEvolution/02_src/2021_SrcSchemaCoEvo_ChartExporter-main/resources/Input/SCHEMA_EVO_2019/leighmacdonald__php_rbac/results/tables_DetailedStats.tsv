@@ -1,0 +1,5 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+auth_permission	2	0	-	1	2013-05-12 10:27:29	2013-07-03 21:14:59	0	1	52	6	6	6	1	0	0	0	0		20	0	20
+auth_role	2	0	-	1	2013-05-12 10:27:29	2013-07-03 21:14:59	0	1	52	6	6	6	1	0	0	0	0		20	0	20
+auth_role_permissions	2	0	-	1	2013-05-12 10:27:29	2013-07-03 21:14:59	0	1	52	4	4	4	1	0	0	0	0		20	0	20
+auth_subject_role	2	0	-	1	2013-05-12 10:27:29	2013-07-03 21:14:59	0	1	52	3	3	3	1	0	0	0	0		20	0	20

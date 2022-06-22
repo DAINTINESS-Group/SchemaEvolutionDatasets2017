@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- jaredbeck__paper_trail-sinatra -------------------------
+jaredbeck__paper_trail-sinatra:	Gamma	holds? 	false
+jaredbeck__paper_trail-sinatra:	Gamma	Geometry? 	false
+jaredbeck__paper_trail-sinatra:	Gamma	FisherExecuted? 	false
+jaredbeck__paper_trail-sinatra:	Gamma	p-Value? 	false
+jaredbeck__paper_trail-sinatra:	Gamma	Surv.Wide 	0
+jaredbeck__paper_trail-sinatra:	Gamma	Surv.NotWide 	2
+jaredbeck__paper_trail-sinatra:	Gamma	Dead.Wide 	0
+jaredbeck__paper_trail-sinatra:	Gamma	Dead.NotWide 	0
+jaredbeck__paper_trail-sinatra:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- guardian__alerta -------------------------
+guardian__alerta:	InverseGamma	holds? 	true
+guardian__alerta:	InverseGamma	Geometry? 	true
+guardian__alerta:	InverseGamma	FisherExecuted? 	false
+guardian__alerta:	InverseGamma	p-Value? 	false
+------------------------------------------------

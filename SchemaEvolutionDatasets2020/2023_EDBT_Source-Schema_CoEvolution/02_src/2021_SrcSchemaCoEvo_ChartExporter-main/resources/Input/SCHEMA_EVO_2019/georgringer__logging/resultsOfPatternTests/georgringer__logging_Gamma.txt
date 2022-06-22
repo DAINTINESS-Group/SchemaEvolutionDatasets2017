@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- georgringer__logging -------------------------
+georgringer__logging:	Gamma	holds? 	true
+georgringer__logging:	Gamma	Geometry? 	true
+georgringer__logging:	Gamma	FisherExecuted? 	false
+georgringer__logging:	Gamma	p-Value? 	false
+georgringer__logging:	Gamma	Surv.Wide 	1
+georgringer__logging:	Gamma	Surv.NotWide 	0
+georgringer__logging:	Gamma	Dead.Wide 	0
+georgringer__logging:	Gamma	Dead.NotWide 	0
+georgringer__logging:	Gamma	Wide 	1
+------------------------------------------------

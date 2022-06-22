@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- scorelab__Bassa -------------------------
+scorelab__Bassa:	Electrolysis	holds? 	true
+scorelab__Bassa:	Electrolysis	Geometry? 	true
+scorelab__Bassa:	Electrolysis	FisherExecuted? 	false
+scorelab__Bassa:	Electrolysis	p-Value? 	false
+------------------------------------------------

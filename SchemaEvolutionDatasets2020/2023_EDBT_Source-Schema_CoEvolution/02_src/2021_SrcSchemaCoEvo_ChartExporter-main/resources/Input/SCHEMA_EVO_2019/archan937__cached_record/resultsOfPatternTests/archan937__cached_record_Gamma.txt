@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- archan937__cached_record -------------------------
+archan937__cached_record:	Gamma	holds? 	false
+archan937__cached_record:	Gamma	Geometry? 	false
+archan937__cached_record:	Gamma	FisherExecuted? 	false
+archan937__cached_record:	Gamma	p-Value? 	false
+archan937__cached_record:	Gamma	Surv.Wide 	0
+archan937__cached_record:	Gamma	Surv.NotWide 	5
+archan937__cached_record:	Gamma	Dead.Wide 	0
+archan937__cached_record:	Gamma	Dead.NotWide 	0
+archan937__cached_record:	Gamma	Wide 	0
+------------------------------------------------

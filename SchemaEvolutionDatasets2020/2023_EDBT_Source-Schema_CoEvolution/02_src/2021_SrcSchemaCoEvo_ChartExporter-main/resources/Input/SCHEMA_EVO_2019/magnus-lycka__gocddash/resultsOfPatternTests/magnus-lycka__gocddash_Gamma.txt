@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- magnus-lycka__gocddash -------------------------
+magnus-lycka__gocddash:	Gamma	holds? 	false
+magnus-lycka__gocddash:	Gamma	Geometry? 	false
+magnus-lycka__gocddash:	Gamma	FisherExecuted? 	false
+magnus-lycka__gocddash:	Gamma	p-Value? 	false
+magnus-lycka__gocddash:	Gamma	Surv.Wide 	0
+magnus-lycka__gocddash:	Gamma	Surv.NotWide 	11
+magnus-lycka__gocddash:	Gamma	Dead.Wide 	0
+magnus-lycka__gocddash:	Gamma	Dead.NotWide 	0
+magnus-lycka__gocddash:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,9 @@
+Table	Duration	Birth	Death	LastKnownVersion	BirthDate	LKVDate	YearOfBirth	YearOfLKV	DurationDays	SchemaSize@Birth	SchemaSize@LKV	SchemaSizeAvg	SchemaSizeResizeRatio	SumUpd	CountVwUpd	ATU	UpdRate	AvgUpdVolume	SurvivalClass	ActivityClass	LADClass
+categories	20	1	-	20	2015-01-10 04:19:29	2015-09-21 14:02:32	1	1	254	2	3	2.4	1.5	1	1	0.05	0.05	1	20	1	21
+categorys	1	0	0	0	2015-01-10 04:13:03	2015-01-10 04:13:03	0	0	0	2	2	2	1	0	0	0	0		10	0	10
+communities	21	0	-	20	2015-01-10 04:13:03	2015-09-21 14:02:32	0	1	254	2	2	2	1	0	0	0	0		20	0	20
+community_memberships	21	0	-	20	2015-01-10 04:13:03	2015-09-21 14:02:32	0	1	254	2	2	2	1	0	0	0	0		20	0	20
+pages	21	0	-	20	2015-01-10 04:13:03	2015-09-21 14:02:32	0	1	254	9	10	9.24	1.11	1	1	0.05	0.05	1	20	1	21
+posts	21	0	-	20	2015-01-10 04:13:03	2015-09-21 14:02:32	0	1	254	4	5	4.33	1.25	1	1	0.05	0.05	1	20	1	21
+sessions	18	3	-	20	2015-01-10 06:34:27	2015-09-21 14:02:32	1	1	254	3	3	3	1	2	1	0.11	0.06	2	20	1	21
+users	21	0	-	20	2015-01-10 04:13:03	2015-09-21 14:02:32	0	1	254	6	7	6.81	1.17	1	1	0.05	0.05	1	20	1	21

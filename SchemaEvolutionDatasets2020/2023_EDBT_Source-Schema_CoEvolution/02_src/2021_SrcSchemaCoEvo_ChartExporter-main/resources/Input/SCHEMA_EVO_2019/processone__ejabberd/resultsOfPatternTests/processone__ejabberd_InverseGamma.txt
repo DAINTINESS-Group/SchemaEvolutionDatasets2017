@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- processone__ejabberd -------------------------
+processone__ejabberd:	InverseGamma	holds? 	true
+processone__ejabberd:	InverseGamma	Geometry? 	true
+processone__ejabberd:	InverseGamma	FisherExecuted? 	false
+processone__ejabberd:	InverseGamma	p-Value? 	false
+------------------------------------------------

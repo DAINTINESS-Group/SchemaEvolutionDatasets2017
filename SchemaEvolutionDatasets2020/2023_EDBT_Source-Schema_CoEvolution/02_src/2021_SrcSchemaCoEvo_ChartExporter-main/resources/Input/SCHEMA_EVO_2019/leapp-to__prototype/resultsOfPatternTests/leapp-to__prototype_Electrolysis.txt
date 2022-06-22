@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- leapp-to__prototype -------------------------
+leapp-to__prototype:	Electrolysis	holds? 	true
+leapp-to__prototype:	Electrolysis	Geometry? 	true
+leapp-to__prototype:	Electrolysis	FisherExecuted? 	false
+leapp-to__prototype:	Electrolysis	p-Value? 	false
+------------------------------------------------

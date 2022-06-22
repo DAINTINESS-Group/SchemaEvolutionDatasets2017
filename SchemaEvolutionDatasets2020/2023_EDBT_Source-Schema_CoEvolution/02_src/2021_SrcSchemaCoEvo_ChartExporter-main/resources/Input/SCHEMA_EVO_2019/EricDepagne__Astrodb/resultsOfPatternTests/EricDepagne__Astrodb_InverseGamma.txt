@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- EricDepagne__Astrodb -------------------------
+EricDepagne__Astrodb:	InverseGamma	holds? 	true
+EricDepagne__Astrodb:	InverseGamma	Geometry? 	true
+EricDepagne__Astrodb:	InverseGamma	FisherExecuted? 	false
+EricDepagne__Astrodb:	InverseGamma	p-Value? 	false
+------------------------------------------------

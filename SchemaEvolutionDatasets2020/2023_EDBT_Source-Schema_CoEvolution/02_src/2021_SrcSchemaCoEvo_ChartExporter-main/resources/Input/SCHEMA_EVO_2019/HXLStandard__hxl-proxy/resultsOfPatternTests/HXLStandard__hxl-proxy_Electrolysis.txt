@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- HXLStandard__hxl-proxy -------------------------
+HXLStandard__hxl-proxy:	Electrolysis	holds? 	true
+HXLStandard__hxl-proxy:	Electrolysis	Geometry? 	true
+HXLStandard__hxl-proxy:	Electrolysis	FisherExecuted? 	false
+HXLStandard__hxl-proxy:	Electrolysis	p-Value? 	false
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- blueriver__MuraCMS -------------------------
+blueriver__MuraCMS:	Gamma	holds? 	true
+blueriver__MuraCMS:	Gamma	Geometry? 	true
+blueriver__MuraCMS:	Gamma	FisherExecuted? 	false
+blueriver__MuraCMS:	Gamma	p-Value? 	false
+blueriver__MuraCMS:	Gamma	Surv.Wide 	12
+blueriver__MuraCMS:	Gamma	Surv.NotWide 	29
+blueriver__MuraCMS:	Gamma	Dead.Wide 	0
+blueriver__MuraCMS:	Gamma	Dead.NotWide 	0
+blueriver__MuraCMS:	Gamma	Wide 	12
+------------------------------------------------

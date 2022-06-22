@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- torrentpier__torrentpier -------------------------
+torrentpier__torrentpier:	InverseGamma	holds? 	true
+torrentpier__torrentpier:	InverseGamma	Geometry? 	true
+torrentpier__torrentpier:	InverseGamma	FisherExecuted? 	false
+torrentpier__torrentpier:	InverseGamma	p-Value? 	false
+------------------------------------------------

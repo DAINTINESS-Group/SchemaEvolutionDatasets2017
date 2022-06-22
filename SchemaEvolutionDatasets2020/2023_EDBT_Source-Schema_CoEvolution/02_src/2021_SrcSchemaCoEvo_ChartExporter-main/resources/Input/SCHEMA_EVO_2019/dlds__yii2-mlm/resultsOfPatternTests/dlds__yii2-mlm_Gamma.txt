@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- dlds__yii2-mlm -------------------------
+dlds__yii2-mlm:	Gamma	holds? 	true
+dlds__yii2-mlm:	Gamma	Geometry? 	true
+dlds__yii2-mlm:	Gamma	FisherExecuted? 	false
+dlds__yii2-mlm:	Gamma	p-Value? 	false
+dlds__yii2-mlm:	Gamma	Surv.Wide 	2
+dlds__yii2-mlm:	Gamma	Surv.NotWide 	3
+dlds__yii2-mlm:	Gamma	Dead.Wide 	0
+dlds__yii2-mlm:	Gamma	Dead.NotWide 	0
+dlds__yii2-mlm:	Gamma	Wide 	2
+------------------------------------------------

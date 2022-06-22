@@ -1,0 +1,6 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1436568757.sql;1440868948.sql;finder_terms;Insertion:UpdateTable;language;VARCHAR(3);false;0;-
+1;1436568757.sql;1440868948.sql;finder_tokens;Insertion:UpdateTable;language;CHAR(3);false;0;-
+1;1436568757.sql;1440868948.sql;finder_tokens_aggregate;Insertion:UpdateTable;language;CHAR(3);false;0;-
+2;1440868948.sql;1488340616.sql;finder_links;Update:TypeChange;title;VARCHAR(400);false;0;-
+2;1440868948.sql;1488340616.sql;finder_terms;Update:TypeChange;language;CHAR(3);false;0;-

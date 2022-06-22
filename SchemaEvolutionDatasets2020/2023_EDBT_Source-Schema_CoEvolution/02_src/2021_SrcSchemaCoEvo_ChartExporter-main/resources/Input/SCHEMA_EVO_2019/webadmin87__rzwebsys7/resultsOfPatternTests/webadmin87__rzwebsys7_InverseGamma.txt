@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- webadmin87__rzwebsys7 -------------------------
+webadmin87__rzwebsys7:	InverseGamma	holds? 	false
+webadmin87__rzwebsys7:	InverseGamma	Geometry? 	false
+webadmin87__rzwebsys7:	InverseGamma	FisherExecuted? 	false
+webadmin87__rzwebsys7:	InverseGamma	p-Value? 	false
+------------------------------------------------

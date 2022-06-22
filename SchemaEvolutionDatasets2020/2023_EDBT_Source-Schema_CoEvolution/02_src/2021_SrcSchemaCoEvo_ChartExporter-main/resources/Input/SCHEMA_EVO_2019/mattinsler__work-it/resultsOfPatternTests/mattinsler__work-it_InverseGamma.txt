@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mattinsler__work-it -------------------------
+mattinsler__work-it:	InverseGamma	holds? 	true
+mattinsler__work-it:	InverseGamma	Geometry? 	true
+mattinsler__work-it:	InverseGamma	FisherExecuted? 	false
+mattinsler__work-it:	InverseGamma	p-Value? 	false
+------------------------------------------------

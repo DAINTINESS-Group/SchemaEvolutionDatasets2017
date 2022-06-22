@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- HXLStandard__hxl-proxy -------------------------
+HXLStandard__hxl-proxy:	Gamma	holds? 	false
+HXLStandard__hxl-proxy:	Gamma	Geometry? 	false
+HXLStandard__hxl-proxy:	Gamma	FisherExecuted? 	false
+HXLStandard__hxl-proxy:	Gamma	p-Value? 	false
+HXLStandard__hxl-proxy:	Gamma	Surv.Wide 	0
+HXLStandard__hxl-proxy:	Gamma	Surv.NotWide 	2
+HXLStandard__hxl-proxy:	Gamma	Dead.Wide 	0
+HXLStandard__hxl-proxy:	Gamma	Dead.NotWide 	0
+HXLStandard__hxl-proxy:	Gamma	Wide 	0
+------------------------------------------------

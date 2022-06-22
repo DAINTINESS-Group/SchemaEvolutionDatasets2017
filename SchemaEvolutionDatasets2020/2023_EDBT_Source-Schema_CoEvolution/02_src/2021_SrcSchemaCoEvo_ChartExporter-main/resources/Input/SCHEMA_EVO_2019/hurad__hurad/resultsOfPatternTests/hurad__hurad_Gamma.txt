@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- hurad__hurad -------------------------
+hurad__hurad:	Gamma	holds? 	false
+hurad__hurad:	Gamma	Geometry? 	false
+hurad__hurad:	Gamma	FisherExecuted? 	true
+hurad__hurad:	Gamma	p-Value? 	false
+hurad__hurad:	Gamma	Surv.Wide 	5
+hurad__hurad:	Gamma	Surv.NotWide 	8
+hurad__hurad:	Gamma	Dead.Wide 	6
+hurad__hurad:	Gamma	Dead.NotWide 	9
+hurad__hurad:	Gamma	Wide 	11
+------------------------------------------------

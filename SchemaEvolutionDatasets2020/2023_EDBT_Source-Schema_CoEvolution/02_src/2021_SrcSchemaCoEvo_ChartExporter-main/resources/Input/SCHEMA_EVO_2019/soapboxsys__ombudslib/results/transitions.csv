@@ -1,0 +1,16 @@
+trID;oldVer;newVer;Table;EventType;attrName;attrType;iskey;pkey;fkey
+1;1448320470.sql;1449014289.sql;-;-;-;-;-;-;-
+2;1449014289.sql;1449076014.sql;bulletins;Insertion:UpdateTable;height;INT;false;0;-
+2;1449014289.sql;1449076014.sql;endorsements;Insertion:UpdateTable;bid;TEXT;false;0;-
+2;1449014289.sql;1449076014.sql;tags;Deletion:UpdateTable;tag;TEXT;false;0;-
+2;1449014289.sql;1449076014.sql;tags;Insertion:UpdateTable;value;TEXT;false;0;-
+3;1449076014.sql;1449159118.sql;-;-;-;-;-;-;-
+4;1449159118.sql;1450110580.sql;endorsements;Insertion:UpdateTable;block;TEXT;false;0;-
+5;1450110580.sql;1450367937.sql;blacklist;Deletion:DeleteTable;reason;TEXT;false;0;-
+5;1450110580.sql;1450367937.sql;blacklist;Deletion:DeleteTable;txid;TEXT;true;0;txid@bulletins
+6;1450367937.sql;1450376301.sql;-;-;-;-;-;-;-
+7;1450376301.sql;1452975264.sql;bulletins;Update:TypeChange;height;REAL;false;0;-
+7;1450376301.sql;1452975264.sql;bulletins;Update:TypeChange;latitude;REAL;false;0;-
+7;1450376301.sql;1452975264.sql;bulletins;Update:TypeChange;longitude;REAL;false;0;-
+8;1452975264.sql;1452984251.sql;tags;Update:KeyChange;txid;TEXT;true;0;txid@bulletins
+8;1452975264.sql;1452984251.sql;tags;Update:KeyChange;value;TEXT;true;0;-

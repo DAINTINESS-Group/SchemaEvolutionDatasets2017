@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- neos__flow-development-collection -------------------------
+neos__flow-development-collection:	Gamma	holds? 	false
+neos__flow-development-collection:	Gamma	Geometry? 	false
+neos__flow-development-collection:	Gamma	FisherExecuted? 	false
+neos__flow-development-collection:	Gamma	p-Value? 	false
+neos__flow-development-collection:	Gamma	Surv.Wide 	0
+neos__flow-development-collection:	Gamma	Surv.NotWide 	2
+neos__flow-development-collection:	Gamma	Dead.Wide 	0
+neos__flow-development-collection:	Gamma	Dead.NotWide 	0
+neos__flow-development-collection:	Gamma	Wide 	0
+------------------------------------------------

@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- matthewfranglen__postgres-elasticsearch-fdw -------------------------
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	holds? 	false
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	Geometry? 	false
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	FisherExecuted? 	false
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	p-Value? 	false
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	Surv.Wide 	0
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	Surv.NotWide 	1
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	Dead.Wide 	0
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	Dead.NotWide 	0
+matthewfranglen__postgres-elasticsearch-fdw:	Gamma	Wide 	0
+------------------------------------------------

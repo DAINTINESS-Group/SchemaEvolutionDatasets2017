@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- rogeriopvl__nodo -------------------------
+rogeriopvl__nodo:	InverseGamma	holds? 	true
+rogeriopvl__nodo:	InverseGamma	Geometry? 	true
+rogeriopvl__nodo:	InverseGamma	FisherExecuted? 	false
+rogeriopvl__nodo:	InverseGamma	p-Value? 	false
+------------------------------------------------

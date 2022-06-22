@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- mbilbille__jpnforphp -------------------------
+mbilbille__jpnforphp:	Electrolysis	holds? 	true
+mbilbille__jpnforphp:	Electrolysis	Geometry? 	true
+mbilbille__jpnforphp:	Electrolysis	FisherExecuted? 	false
+mbilbille__jpnforphp:	Electrolysis	p-Value? 	false
+------------------------------------------------

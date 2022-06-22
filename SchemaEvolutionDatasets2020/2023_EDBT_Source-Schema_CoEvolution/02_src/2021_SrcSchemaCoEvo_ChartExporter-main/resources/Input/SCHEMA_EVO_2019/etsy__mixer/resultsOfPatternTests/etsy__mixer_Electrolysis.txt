@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- etsy__mixer -------------------------
+etsy__mixer:	Electrolysis	holds? 	true
+etsy__mixer:	Electrolysis	Geometry? 	true
+etsy__mixer:	Electrolysis	FisherExecuted? 	false
+etsy__mixer:	Electrolysis	p-Value? 	false
+------------------------------------------------

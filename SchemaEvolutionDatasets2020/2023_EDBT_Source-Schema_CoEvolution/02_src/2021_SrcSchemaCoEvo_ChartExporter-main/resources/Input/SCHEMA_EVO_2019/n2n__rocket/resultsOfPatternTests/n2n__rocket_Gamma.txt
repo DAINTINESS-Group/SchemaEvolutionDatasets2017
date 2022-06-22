@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- n2n__rocket -------------------------
+n2n__rocket:	Gamma	holds? 	false
+n2n__rocket:	Gamma	Geometry? 	false
+n2n__rocket:	Gamma	FisherExecuted? 	false
+n2n__rocket:	Gamma	p-Value? 	false
+n2n__rocket:	Gamma	Surv.Wide 	0
+n2n__rocket:	Gamma	Surv.NotWide 	10
+n2n__rocket:	Gamma	Dead.Wide 	0
+n2n__rocket:	Gamma	Dead.NotWide 	5
+n2n__rocket:	Gamma	Wide 	0
+------------------------------------------------

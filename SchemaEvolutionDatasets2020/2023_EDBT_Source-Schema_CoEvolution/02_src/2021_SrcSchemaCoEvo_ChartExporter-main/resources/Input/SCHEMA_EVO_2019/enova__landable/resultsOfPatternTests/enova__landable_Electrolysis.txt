@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- enova__landable -------------------------
+enova__landable:	Electrolysis	holds? 	true
+enova__landable:	Electrolysis	Geometry? 	true
+enova__landable:	Electrolysis	FisherExecuted? 	false
+enova__landable:	Electrolysis	p-Value? 	false
+------------------------------------------------

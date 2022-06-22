@@ -1,0 +1,12 @@
+
+NEW PRJ ----------- zphalcon__phalcon-tip -------------------------
+zphalcon__phalcon-tip:	Gamma	holds? 	true
+zphalcon__phalcon-tip:	Gamma	Geometry? 	true
+zphalcon__phalcon-tip:	Gamma	FisherExecuted? 	false
+zphalcon__phalcon-tip:	Gamma	p-Value? 	false
+zphalcon__phalcon-tip:	Gamma	Surv.Wide 	3
+zphalcon__phalcon-tip:	Gamma	Surv.NotWide 	15
+zphalcon__phalcon-tip:	Gamma	Dead.Wide 	0
+zphalcon__phalcon-tip:	Gamma	Dead.NotWide 	0
+zphalcon__phalcon-tip:	Gamma	Wide 	3
+------------------------------------------------

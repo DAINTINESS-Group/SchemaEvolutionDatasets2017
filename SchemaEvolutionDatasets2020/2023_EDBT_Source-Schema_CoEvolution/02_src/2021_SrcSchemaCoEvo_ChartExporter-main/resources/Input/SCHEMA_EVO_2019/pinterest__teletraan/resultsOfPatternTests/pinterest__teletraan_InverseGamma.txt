@@ -1,0 +1,7 @@
+
+NEW PRJ ----------- pinterest__teletraan -------------------------
+pinterest__teletraan:	InverseGamma	holds? 	true
+pinterest__teletraan:	InverseGamma	Geometry? 	true
+pinterest__teletraan:	InverseGamma	FisherExecuted? 	true
+pinterest__teletraan:	InverseGamma	p-Value? 	false
+------------------------------------------------
