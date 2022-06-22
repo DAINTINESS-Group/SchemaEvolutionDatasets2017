@@ -5,4 +5,5 @@ This project takes as input the results of the ChartExporter, and specifically t
 and produces: 
 
 - A detailed file with the cumulative progress and lags between schema, src code, and, time
-- a console output with a single line per input schema history
+- A console output with a single line per input schema history
+- A powerpoint file with the profile of the schema histories
