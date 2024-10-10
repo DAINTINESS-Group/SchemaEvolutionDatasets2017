@@ -1,0 +1,80 @@
+This research has been accepted in EDBT 2025, Barcelona Spain. Please cite as:
+[EDBT25] Panos Vassiliadis, Alexandros Karakasidis. Time-Related Patterns Of Schema Evolution. 28th International Conference on Extending Database Technology (EDBT), 25th March-28th March, 2025, ISBN 978-3-89318-098-1. 
+Available at OpenProceedings.org.
+
+This research is using data publicly available from
+[ICDE21] Panos Vassiliadis. Profiles of Schema Evolution in Free Open Source Software Projects. 37th IEEE International Conference on Data Engineering (ICDE), 19-22 April 2021, Chania, Crete, Greece.
+  and
+[EDBT23] Panos Vassiliadis, Fation Shehaj, George Kalampokis, Apostolos V. Zarras. Joint Source and Schema Evolution: Insights from a Study of 195 FOSS Projects. 26th International Conference on Extending Database Technology (EDBT), 28th March - 31st March, 2023, Ioannina, Greece.
+
+both found in 
+  https://github.com/DAINTINESS-Group/Schema_Evolution_Datasets/tree/master/SchemaEvolutionDatasets2020
+
+
+INPUT data
+-------------------
+The input data are placed in the folder:
+    resources/incoming/13_CumulativeProgress_Src-n-Schema 
+which is a copy of the data available at
+  https://github.com/DAINTINESS-Group/Schema_Evolution_Datasets/blob/master/SchemaEvolutionDatasets2020/2023_EDBT_Source-Schema_CoEvolution/01_data/13_Output_CumulativeProgress_Src-n-Schema.zip
+
+Also available in the folder
+  01_src_n_inputData
+of this repeatability-oriented submission material
+
+
+MANUAL Classification
+--------------------------------------
+The data when first through a manual classification, s.t., they are meaningful indeed.
+We don't know/expect that this is also part of the repeatability test of our submission.
+Anyway, the material is found in the folder
+  00_inputForVisualInspection
+of this repeatability-oriented submission material
+
+
+Installation
+-----------------
+Src code is found in the  folder
+  01_src_n_inputData
+of this repeatability-oriented submission material.
+We use Eclipse with Java 1.8 and it suffices
+
+Post-processing. 
+- Microsoft Excel.
+- Orange Data Mining 3.35.0 (  https://orangedatamining.com/ )
+
+Execution & production of xls files
+-----------------------------------------------
+0. Import the .zip file as project into Eclipse
+
+1. run the main class:
+   highlights.CheckForHighLightsApp
+
+2. copy the result printed in the console into a new .tsv file  or a new xls sheet.
+Here, also available as  OutputOfSrcExecution.xlsx  in folder:   01_src_n_inputData\ 
+This has resulted in the very first sheet '20211223_rawOutputFromEclipse' of
+   02_workingXlsFiles/040_TimingEvoPatterns.xlsx
+which is the main working spreadsheet
+
+3. (manually) 
+With  the aforementioned 02_workingXlsFiles/040_TimingEvoPatterns.xlsx:
+Take the aforementioned 20211223_rawOutputFromEclipse sheet and join its contents with the contents of:
+https://github.com/DAINTINESS-Group/Schema_Evolution_Datasets/blob/master/SchemaEvolutionDatasets2020/2021_ICDE_AnalysisForTaxa_results/20210608_GlobalSchemaLevelInfo_Reference.xlsx
+on the condition filename = projectname (both of which are unique and represent the same project).
+This results in the sheet 'SchemaLevelInfo_FULL_CLEAN' of 040_TimingEvoPatterns.xlsx
+
+
+Production of results
+--------------------------
+The rest of the work includes working with 040_TimingEvoPatterns.xlsx, each time producing new sheets
+0. manual inspection to derive the time patterns and make sure they are meaningful.
+1. derivation of "bucketing" limits as discussed in the xls
+2. identification of statistical properties by working with Orange and Excel 
+Specifically:
+2.1 Excel: The results are in the folder 02_workingXlsFiles with:
+  - 040_TimingEvoPatterns.xlsx holding limits and the core data set
+  - 041_PivotsAndCharts.xlsx as the name implies
+2.2. Orange: The folder 03_Working with Orange, contains (a) the .ows setup for the ML tests we used for the paper's results, and, (b) a local copy of the 040_TimingEvoPatterns.xlsx, feeding the data to the Orange ML tasks
+
+
+
